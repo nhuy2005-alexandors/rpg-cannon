@@ -1,0 +1,64 @@
+{
+  "schema_version": "HN-ACTION-CATALOG-V1",
+  "snapshot_turn": 153,
+  "generation_policy": "Evidence-based contextual suggestions, NOT commands, quests accepted, or world events",
+  "actions": [
+    {
+      "id": "action:ask-edran-tam-nha",
+      "title": "Hỏi Edran về bí mật Tam Nha",
+      "description": "Đối chiếu những gì Vô Danh đã biết về Cấm Lao, ba quan tài và Trạm Tam Trảo.",
+      "category": "INVESTIGATE",
+      "arc_id": "arc:tam-nha",
+      "requires": [
+        "location:dien-te-huyet"
+      ],
+      "confidence": "AVAILABLE_NOT_SELECTED",
+      "source": "canon/npc/edran.md"
+    },
+    {
+      "id": "action:ask-kharzug-health",
+      "title": "Kiểm tra Kharzug, Maela và sói con",
+      "description": "Hỏi Edran về lần gần nhất gặp họ, kiểm tra thương tích và sự hiện diện thay vì giả định.",
+      "category": "SOCIAL",
+      "arc_id": "arc:kharzug-pup",
+      "requires": [
+        "location:dien-te-huyet"
+      ],
+      "confidence": "AVAILABLE_NOT_SELECTED",
+      "source": "events/0050-0095.md"
+    },
+    {
+      "id": "action:plan-tam-trao",
+      "title": "Lập kế hoạch khám phá Trạm Tam Trảo",
+      "description": "Xem lại sơ đồ, chìa khóa và bẫy xương còn hoạt động; không tự khởi hành.",
+      "category": "EXPLORATION",
+      "arc_id": "arc:tam-nha",
+      "requires": [
+        "base_storage.TamTrao_map>=1",
+        "base_storage.TamTrao_key>=1"
+      ],
+      "confidence": "AVAILABLE_NOT_SELECTED",
+      "source": "events/0096-0153.md"
+    },
+    {
+      "id": "action:review-sealed-vessel",
+      "title": "Xem xét Bình Đá Niêm Phong",
+      "description": "Tham khảo Edran về bình và mảnh ấn, không tự mở bình.",
+      "category": "INVESTIGATE",
+      "arc_id": "arc:sealed-vessel",
+      "requires": [],
+      "confidence": "POSSIBLE_UNCONFIRMED_INVENTORY",
+      "source": "events/0096-0153.md"
+    }
+  ],
+  "forbidden_as_open_suggestions": [
+    {
+      "title": "Cứu Maela",
+      "reason": "Maela đã sống sót qua Lượt 93; không có bằng chứng cô đang cần giải cứu ở T153"
+    },
+    {
+      "title": "Tiếp tục săn Huyết Lang Vương Lv.6",
+      "reason": "Boss đã chết T139 sau replay; loot một lần, tuyến RESOLVED"
+    }
+  ]
+}
