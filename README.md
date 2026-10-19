@@ -1,6 +1,6 @@
 # HẮC NHẬT — KỶ NGUYÊN TÀN THẦN
 
-**Canonical saved checkpoint T158; next turn T159.** This PUBLIC repo contains only fictional RPG lore/context, released with the owner's explicit approval 2026-10-19.
+**Canonical saved checkpoint T159; next turn T160.** This PUBLIC repo contains only fictional RPG lore/context, released with the owner's explicit approval 2026-10-19.
 
 ## Read first (<60 seconds)
 1. [Fast start](state/quick-start.md)
@@ -21,7 +21,7 @@
 - [Relationships database](https://app.notion.com/p/4ea8c07ae96d4312b585acab207bc370) — seven directed evidence-backed edges
 - [Registry and saved Notion views](graph/notion-registry.json); [initial verification receipts](verification/graph-receipts/initial-import.md)
 
-Notion is only a read-optimized graph, **not a second source of truth**. GitHub remains canon for RPG numerical state and accepted world events. The projected source commit was `c47ba6254b042f016f8f53aafb2af346173674e4` (later docs/test commits do not imply changed gameplay). Current last verified RPG turn is T158; T159 has not started. T158 rested safely for 2h: HP115/170, STA110/110, BLOOD15/50, TH0, souls5. Hấp Huyết Lv1 remains learned; Huyết Bộc Lv1 was offered, NOT learned or tried; no cost was paid to explore it. Lv2 Hấp Huyết remains unearned. Notion graph remains a T153 historical projection until updated. No background chat ingestion or timed auto-sync is installed.
+Notion is only a read-optimized graph, **not a second source of truth**. GitHub remains canon for RPG numerical state and accepted world events. The projected source commit was `c47ba6254b042f016f8f53aafb2af346173674e4` (later docs/test commits do not imply changed gameplay). Current last verified RPG turn is T159; T160 has not started. T159 only discussed Huyết Bộc specialization (Cân Bằng/Tốc Mạch/Bạo Lực), no branch selected, no trial or blood expense. HP115/170, STA110/110, BLOOD15/50, TH0, souls5. Hấp Huyết Lv1 remains learned; Huyết Bộc Lv1 still NOT learned. Huyết Bộc Cực Hạn remains an unquantified theory. Lv2 Hấp Huyết remains unearned. Notion graph remains a T153 historical projection until updated. No background chat ingestion or timed auto-sync is installed.
 
 ## GM storyline mechanics V1
 
