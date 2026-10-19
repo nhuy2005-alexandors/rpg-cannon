@@ -1,7 +1,7 @@
 {
-  "snapshot_version": "HN-S158-V1",
-  "last_completed_turn": 158,
-  "next_turn": 159,
+  "snapshot_version": "HN-S159-V1",
+  "last_completed_turn": 159,
+  "next_turn": 160,
   "as_of": "2026-10-20",
   "location": "Điện Tế Huyết / căn cứ Tư Tế Xương, Hắc Nha Thành",
   "player": {
@@ -211,6 +211,28 @@
       "potions_spent": 0,
       "materials_spent": 0,
       "no_pact": true
+    },
+    "T159": {
+      "conversation_only": true,
+      "skill_unlocked": false,
+      "training_started": false,
+      "minutes_elapsed_approx": 15,
+      "HP_before": 115,
+      "HP_after": 115,
+      "STA_before": 110,
+      "STA_after": 110,
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "potions_spent": 0,
+      "other_consumables_spent": 0,
+      "variant_selected": false,
+      "no_pact": true
     }
   },
   "provenance": {
@@ -278,6 +300,55 @@
       "duration_minutes": 20,
       "outcome": "not guaranteed, must adjudicate; no pact"
     },
-    "note": "Not yet learned or tested. At current BLOOD15/50, doing future proposed trial leaves BLOOD7, insufficient for actual skill cast cost12 until BLOOD is replenished."
+    "note": "Not yet learned or tested. At current BLOOD15/50, doing future proposed trial leaves BLOOD7, insufficient for actual skill cast cost12 until BLOOD is replenished.",
+    "specialization_consultation_T159": {
+      "status": "PROPOSED_ONLY_NO_BRANCH_SELECTED",
+      "activation_timing": "instant within one normal combat turn; not an extra action",
+      "shared_duration_combat_turns": 1,
+      "cannot_stack_with": "Cuồng Huyết",
+      "variants": [
+        {
+          "id": "CAN_BANG",
+          "name": "Huyết Bộc — Cân Bằng",
+          "activation_cost_BLOOD": 12,
+          "physical_damage_bonus_fraction": 0.2,
+          "movement_speed_bonus_fraction": 0.2,
+          "attack_speed_bonus_fraction": 0,
+          "cooldown_turns": 3,
+          "origin": "T158 original proposal",
+          "status": "OFFERED_NOT_LEARNED"
+        },
+        {
+          "id": "TOC_MACH",
+          "name": "Huyết Bộc — Tốc Mạch",
+          "activation_cost_BLOOD": 12,
+          "physical_damage_bonus_fraction": 0,
+          "movement_speed_bonus_fraction": 0.35,
+          "attack_speed_bonus_fraction": 0.15,
+          "cooldown_turns": 3,
+          "origin": "T159 provisional alternate",
+          "status": "THEORY_NOT_SELECTED"
+        },
+        {
+          "id": "BAO_LUC",
+          "name": "Huyết Bộc — Bạo Lực",
+          "activation_cost_BLOOD": 15,
+          "physical_damage_bonus_fraction": 0.35,
+          "movement_speed_bonus_fraction": 0,
+          "attack_speed_bonus_fraction": 0,
+          "cooldown_turns": 4,
+          "origin": "T159 provisional alternate",
+          "status": "THEORY_NOT_SELECTED"
+        }
+      ],
+      "variant_selection": "NONE",
+      "specialized_trial_costs": "UNKNOWN (original T158 8 BLOOD/10 STA/20m remains offered for initial balanced proposal only)",
+      "extreme_theory": {
+        "name": "Huyết Bộc Cực Hạn",
+        "status": "THEORETICAL_NOT_AVAILABLE",
+        "costs_and_stats": "UNKNOWN",
+        "note": "Not teachable or activated at T159; requires future mastery and verification"
+      }
+    }
   }
 }
