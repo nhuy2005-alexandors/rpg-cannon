@@ -1,7 +1,7 @@
 {
-  "snapshot_version": "HN-S156-V1",
-  "last_completed_turn": 156,
-  "next_turn": 157,
+  "snapshot_version": "HN-S157-V1",
+  "last_completed_turn": 157,
+  "next_turn": 158,
   "as_of": "2026-10-20",
   "location": "Điện Tế Huyết / căn cứ Tư Tế Xương, Hắc Nha Thành",
   "player": {
@@ -23,11 +23,11 @@
         "max": 170
       },
       "STA": {
-        "current": 85,
+        "current": 75,
         "max": 110
       },
       "BLOOD": {
-        "current": 25,
+        "current": 15,
         "max": 50
       },
       "TuHuyet": {
@@ -35,6 +35,30 @@
         "max": 20
       },
       "souls": 5
+    },
+    "passives": {
+      "HapHuyet": {
+        "name": "Hấp Huyết",
+        "level": 1,
+        "rarity": "Rare",
+        "unlocked_turn": 157,
+        "heal_fraction_of_actual_damage": 0.1,
+        "heal_rounding": "FLOOR",
+        "min_heal_if_positive_qualifying_damage": 1,
+        "max_total_heal_HP_per_combat_turn": 5,
+        "heal_resource": "HP",
+        "target_requirements": "Living blood-bearing, successfully hit by melee sword attack, positive actual post-defense HP damage",
+        "exclusions": [
+          "miss",
+          "damage over time",
+          "undead",
+          "inorganic",
+          "bloodless",
+          "no actual HP damage"
+        ],
+        "requires_further_attack_to_first_trigger": true,
+        "weapon_independence": "Huyết Nha +3 retains independent +7 BLOOD on eligible ordinary landed strikes, NOT sword-skill strikes; Hấp Huyết does not directly restore BLOOD"
+      }
     }
   },
   "equipment": {
@@ -143,6 +167,29 @@
       "potions_spent": 0,
       "skill_unlocked": false,
       "trial_started": false
+    },
+    "T157": {
+      "result": "SUCCESS_CAUSALLY_ADJUDICATED",
+      "trial_started": true,
+      "skill_unlocked": true,
+      "minutes_elapsed": 30,
+      "HP_before": 115,
+      "HP_after": 115,
+      "STA_before": 85,
+      "STA_after": 75,
+      "BLOOD_before": 25,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "potions_spent": 0,
+      "arrows_spent": 0,
+      "materials_spent": 0,
+      "no_pact": true,
+      "first_combat_trigger_observed": false
     }
   },
   "provenance": {
@@ -157,7 +204,7 @@
   },
   "pending_training": {
     "name": "Hấp Huyết Lv1",
-    "status": "OFFERED_NOT_LEARNED",
+    "status": "COMPLETED_LEARNED",
     "source": "Vaelthar oral teaching at temple, T155",
     "trial": "Huyết Mạch Đồng Điệu",
     "trial_cost_if_commenced": {
@@ -168,7 +215,7 @@
     "proposed_effect": "Recover 10% of actual post-defense melee sword HP damage vs living blood-bearing target, min 1 on a qualifying damaging hit, max 5 HP/turn; no missed hits, DoT, undead or inorganics; independent of Huyết Nha +7 BLOOD ordinary-hit passive",
     "no_pact": true,
     "lv2_candidate": {
-      "status": "POTENTIAL_NOT_AVAILABLE",
+      "status": "POTENTIAL_NOT_LEARNED",
       "proposed_heal_fraction": 0.15,
       "proposed_hp_cap_per_turn": 8,
       "prerequisites": "Learn Lv1, demonstrate stable lifesteal in actual combat, then pass future advanced trial; exact trial cost unknown"
@@ -177,6 +224,13 @@
       "A failed Lv1 trial spends its 10 BLOOD and 10 STA initiation cost once started; failure can cause narrative fatigue subject to adjudication, not automatic extra charge",
       "No gain from misses, non-blood targets, undead, DoT, or beyond cap/max HP",
       "No automatic pact, no mind-control consent"
-    ]
+    ],
+    "completed_turn": 157,
+    "trial_result": "PASSED_AFTER_INITIAL_INSTABILITY",
+    "trial_cost_paid": {
+      "BLOOD": 10,
+      "STA": 10
+    },
+    "trial_minutes_actual": 30
   }
 }
