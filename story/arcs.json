@@ -1,6 +1,6 @@
 {
   "schema_version": "HN-ARCS-V1",
-  "as_of_turn": 153,
+  "as_of_turn": 154,
   "authoritative": "GitHub canonical story thread registry; not quest acceptance",
   "status_enum": [
     "RUMORED",
@@ -30,15 +30,17 @@
       "status": "DISCOVERED",
       "knowledge": "CONFIRMED_PARTIAL",
       "introduced_turn": 68,
-      "last_evidence_turn": 145,
+      "last_evidence_turn": 154,
       "source": [
         "events/0050-0095.md",
         "events/0096-0153.md",
-        "canon/world/places.md"
+        "canon/world/places.md",
+        "events/0154.md"
       ],
       "hooks": [
         "Ba quan tài và cổng Cấm Lao vẫn còn bí ẩn",
-        "Sơ đồ và chìa khóa Trạm Tam Trảo đã được tìm thấy"
+        "Sơ đồ và chìa khóa Trạm Tam Trảo đã được tìm thấy",
+        "T154: Edran phân biệt ba vết cào trên hòm với biểu tượng ba nanh trên vòng cổ; liên hệ tổ chức vẫn chỉ là giả thuyết"
       ],
       "unresolved": [
         "Ý nghĩa Tam Nha, ba quan tài, quyền chỉ huy tạm thời và Trạm Tam Trảo"
@@ -63,21 +65,23 @@
       "name": "Kharzug và Huyết Lang non",
       "type": "CHARACTER_THREAD",
       "status": "DISCOVERED",
-      "knowledge": "LAST_VERIFIED",
+      "knowledge": "CONFIRMED_AT_T154",
       "introduced_turn": 68,
-      "last_evidence_turn": 93,
+      "last_evidence_turn": 154,
       "source": [
         "events/0050-0095.md",
         "canon/npc/kharzug.md",
-        "canon/npc/huyet-lang-non.md"
+        "canon/npc/huyet-lang-non.md",
+        "events/0154.md"
       ],
       "hooks": [
         "Kharzug từng che chở sói con",
-        "Kharzug còn thương tích cuối Lượt 93"
+        "Kharzug còn thương tích cuối Lượt 93",
+        "T154: Edran, Maela, Kharzug và sói con đều được xác nhận tại đền; Kharzug còn bị thương chân sau"
       ],
       "unresolved": [
         "Nguồn gốc vòng Tam Nha",
-        "Tình trạng và vị trí hiện tại cần kiểm tra tại chỗ"
+        "Khả năng hồi phục chân sau của Kharzug về sau chưa được xác minh"
       ],
       "dependencies": [],
       "npc_ids": [
