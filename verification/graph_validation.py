@@ -64,11 +64,21 @@ def diff_projection(desired: list[dict], fetched: list[dict], key: str, complete
         else:out['update'].append(x)
     return out
 
-def projection_changed(changed_paths: list[str], state_changed_fields: set[str]) -> bool:
-    if any(p.startswith(('canon/','events/','graph/seed/')) for p in changed_paths):return True
-    if 'state/current.json' in changed_paths:
-        return any(not field.startswith(('player.resources.HP.','player.resources.STA.','player.resources.BLOOD.','player.resources.TuHuyet.')) for field in state_changed_fields)
-    return False
+GRAPH_EVENTS={"NPC_DEATH","NPC_RECRUITMENT","NPC_DEPARTURE","NPC_RELATION_CHANGED","FACTION_CHANGED","LOCATION_DISCOVERED","ENTITY_CREATED","RELATIONSHIP_CHANGED"}
+
+def projection_changed(changed_paths: list[str], state_changed_fields: set[str], event_types: set[str] | None = None) -> bool:
+    """Whether graph Entities/Relationships need Notion projection, not GitHub persistence.
+
+    Event-only commits require explicit classification. Do not project every
+    combat log merely because it has an events/ path.
+    """
+    if any(p.startswith(("graph/seed/","canon/npc/","canon/world/")) for p in changed_paths):
+        return True
+    if any(f.startswith(("npc_","entities.","relationships.","locations.","factions.")) for f in state_changed_fields):
+        return True
+    if any(p.startswith("events/") for p in changed_paths) and event_types is None:
+        raise ValueError("event classification required for graph projection")
+    return bool(GRAPH_EVENTS.intersection(event_types or set()))
 
 def may_advance_marker(expected_count: int, verified_count: int, all_valid: bool) -> bool:
     return all_valid and verified_count==expected_count

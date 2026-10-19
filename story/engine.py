@@ -13,7 +13,7 @@ TRANSITIONS = {
  "FAILED":set(),
  "SUPERSEDED":set(),
 }
-MAJOR_EVENTS={"NPC_DEATH","NPC_RECRUITMENT","NPC_DEPARTURE","QUEST_ACCEPTED","QUEST_RESOLVED","ARC_CREATED","ARC_RESOLVED","FACTION_CHANGED","LOCATION_DISCOVERED","WORLD_FLAG_CHANGED","IRREVERSIBLE_CHOICE"}
+MAJOR_EVENTS={"NPC_DEATH","NPC_RECRUITMENT","NPC_DEPARTURE","NPC_RELATION_CHANGED","ENTITY_CREATED","RELATIONSHIP_CHANGED","QUEST_ACCEPTED","QUEST_RESOLVED","ARC_CREATED","ARC_RESOLVED","FACTION_CHANGED","LOCATION_DISCOVERED","WORLD_FLAG_CHANGED","IRREVERSIBLE_CHOICE"}
 
 def validate_arc(arc: dict, known_ids: set[str]) -> list[str]:
     errors=[]
@@ -30,21 +30,33 @@ def validate_arc(arc: dict, known_ids: set[str]) -> list[str]:
 def transition(arc: dict, new_status: str, event: dict) -> dict:
     old=arc["status"]
     if new_status not in TRANSITIONS.get(old,set()):raise ValueError(f"illegal lifecycle {old}->{new_status}")
-    if not event.get("source") or not isinstance(event.get("turn"),int):raise ValueError("transition requires verified turn/source")
-    if event.get("outcome_verified") is not True:raise ValueError("user request alone is not confirmed outcome")
-    updated=dict(arc,status=new_status,last_evidence_turn=event["turn"])
+    turn=event.get("turn")
+    if not event.get("source") or type(turn) is not int or turn < arc.get("last_evidence_turn",0):
+        raise ValueError("transition requires chronological source and turn")
+    if event.get("outcome_verified") is not True:
+        raise ValueError("user request alone is not confirmed outcome")
+    if new_status=="ACTIVE" and event.get("player_committed") is not True:
+        raise ValueError("player must actively choose to pursue the arc")
+    updated=dict(arc,status=new_status,last_evidence_turn=turn)
+    if new_status in {"RESOLVED","FAILED","SUPERSEDED"}:
+        updated["next_action_ids"]=[]
+    if new_status=="RESOLVED" and old=="ACTIVE":
+        updated["player_commitment"]="COMPLETED"
     return updated
 
 def eligible_actions(arcs: list[dict], actions: list[dict], state: dict) -> list[dict]:
     by_id={x["id"]:x for x in arcs}
     location=state["location"]
     storage=state["base_storage"]
+    supported={"location:dien-te-huyet","base_storage.TamTrao_map>=1","base_storage.TamTrao_key>=1"}
     choices=[]
     for a in actions:
         arc=by_id.get(a["arc_id"])
         if arc is None or arc["status"] in {"RESOLVED","FAILED","SUPERSEDED","BLOCKED"}:continue
         if a["id"] not in arc.get("next_action_ids",[]):continue
         requirements=a.get("requires",[])
+        if a.get("confidence") != "AVAILABLE_NOT_SELECTED":continue
+        if not isinstance(requirements,list) or any(not isinstance(r,str) or r not in supported for r in requirements):continue
         if "location:dien-te-huyet" in requirements and "Điện Tế Huyết" not in location:continue
         if "base_storage.TamTrao_map>=1" in requirements and storage.get("TamTrao_map",0)<1:continue
         if "base_storage.TamTrao_key>=1" in requirements and storage.get("TamTrao_key",0)<1:continue
@@ -69,3 +81,20 @@ def checkpoint_integrity(state: dict, arcs: list[dict]) -> list[str]:
     for arc in arcs:errors.extend(validate_arc(arc,ids))
     if any(x["id"]=="arc:wolf-king-hunt" and x["status"]!="RESOLVED" for x in arcs):errors.append("wolf boss should remain resolved")
     return errors
+
+def post_turn(outcome: dict) -> dict:
+    """Single fast after-turn decision; makes NO network calls or canon writes.
+
+    The GM passes adjudicated events only. Any returned checkpoint must be
+    committed and read back using the connector before claiming persistence.
+    """
+    if outcome.get("confirmed") is not True:
+        raise ValueError("GM outcome must be confirmed before checkpoint planning")
+    types=set(outcome.get("event_types",()))
+    discovery=bool(outcome.get("unique_thread_evidence"))
+    if discovery:types.add("ARC_CREATED")
+    turns=outcome.get("turns_since_flush",0)
+    due=checkpoint_needed(turns,types,outcome.get("switching_chat",False),outcome.get("requested",False))
+    from verification.graph_validation import projection_changed
+    dirty=projection_changed(outcome.get("changed_paths",[]),set(outcome.get("state_changed_fields",())),types)
+    return {"arc_review":discovery,"checkpoint_due":due,"notion_projection_due":due and dirty}

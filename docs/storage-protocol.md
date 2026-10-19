@@ -31,3 +31,10 @@
 - Flush during active session at most every five turns, upon significant canonical NPC/quest/world change, or before changing conversations. Write GitHub first using commit head checks, verify commit/readback, then project changed entities/edges to Notion. Do not update the Hub sync marker until every projected row was verified. Notion partial failure makes projection STALE; replay must reuse IDs, not duplicate pages.
 - There is **no background agent, webhook or scheduler ingesting this chat**. No assumption of automatic saving between replies; only successful tool writes produce durable changes. If Notion cannot be queried or has exhausted limits, read GitHub canon directly and do not invent graph edges.
 
+
+## Minimal GM after-turn guard (v1.1)
+
+- Evaluate `story.engine.post_turn` **only after adjudicating a confirmed turn**, using explicit `event_types` and `changed_paths`. This is a pure decision function; it does not call connectors, run in the background, or guarantee automatic invocation by the ChatGPT host.
+- When `checkpoint_due`: save GitHub canon and event/state/storyline changes, guard the branch head and verify readback. No remote write for an ordinary non-checkpoint combat turn.
+- When `notion_projection_due`: project **only changed NPC/entity/relationship evidence** to the existing Notion Entities/Relationships. `events/` alone (combat log) is insufficient; classify graph-relevant event types. If classification is absent, fail closed instead of claiming graph synchronization. A docs-only or HP/STA-only commit does not trigger Notion.
+- A failed Notion projection leaves the GitHub commit authoritative and the Notion Hub visibly STALE. Mark it SYNCED only after reading back changed rows and source SHA. These rules avoid updating Notion after every turn; they do **not** install an unattended sync service.

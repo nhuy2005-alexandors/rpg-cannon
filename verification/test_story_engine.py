@@ -1,7 +1,8 @@
 import json
 import unittest
 from pathlib import Path
-from story.engine import validate_arc, transition, eligible_actions, checkpoint_needed, classify_discovery, checkpoint_integrity
+from story.engine import validate_arc, transition, eligible_actions, checkpoint_needed, classify_discovery, checkpoint_integrity, post_turn
+from verification.graph_validation import projection_changed
 
 ROOT=Path(__file__).resolve().parents[1]
 def load(path):
@@ -19,7 +20,7 @@ class TestStoryMechanics(unittest.TestCase):
         arcs,actions,state=fixtures()
         ids=[a["id"] for a in eligible_actions(arcs,actions,state)]
         self.assertNotIn("action:boss-wolf-king",ids)
-        self.assertEqual(4,len(ids))
+        self.assertEqual(3,len(ids))  # unverified inventory action must be hidden
 
     def test_action_is_a_suggestion_not_accepted_quest(self):
         arcs,_,_=fixtures()
@@ -29,7 +30,7 @@ class TestStoryMechanics(unittest.TestCase):
         arcs,_,_=fixtures()
         with self.assertRaises(ValueError):
             transition(arcs[0],"ACTIVE",{"turn":154,"source":"events/0154.md","outcome_verified":False})
-        x=transition(arcs[0],"ACTIVE",{"turn":154,"source":"events/0154.md","outcome_verified":True})
+        x=transition(arcs[0],"ACTIVE",{"turn":154,"source":"events/0154.md","outcome_verified":True,"player_committed":True})
         self.assertEqual("ACTIVE",x["status"])
 
     def test_resolved_not_reopened_without_explicit_supersession(self):
@@ -64,5 +65,58 @@ class TestStoryMechanics(unittest.TestCase):
         st=dict(state,base_storage=dict(state["base_storage"],TamTrao_key=0))
         ids=[a["id"] for a in eligible_actions(arcs,actions,st)]
         self.assertNotIn("action:plan-tam-trao",ids)
+
+    def test_unknown_requirement_fails_closed(self):
+        arcs,actions,state=fixtures()
+        fake=dict(actions[0],requires=["unrecognized.cooldown<=0"])
+        self.assertEqual([],eligible_actions(arcs,[fake],state))
+
+    def test_malformed_requirement_fails_closed(self):
+        arcs,actions,state=fixtures()
+        fake=dict(actions[0],requires=[{"unsupported":"condition"}])
+        self.assertEqual([],eligible_actions(arcs,[fake],state))
+
+    def test_unconfirmed_item_action_hidden(self):
+        arcs,actions,state=fixtures()
+        self.assertNotIn("action:review-sealed-vessel",[a["id"] for a in eligible_actions(arcs,actions,state)])
+
+    def test_active_requires_player_commitment(self):
+        arcs,_,_=fixtures()
+        with self.assertRaises(ValueError):
+            transition(arcs[0],"ACTIVE",{"turn":155,"source":"events/0155.md","outcome_verified":True})
+
+    def test_transition_rejects_historical_turn(self):
+        arcs,_,_=fixtures()
+        with self.assertRaises(ValueError):
+            transition(arcs[0],"AVAILABLE",{"turn":153,"source":"events/0153.md","outcome_verified":True})
+
+    def test_resolved_arc_clears_stale_actions(self):
+        arcs,_,_=fixtures()
+        done=transition(arcs[0],"RESOLVED",{"turn":156,"source":"events/0156.md","outcome_verified":True})
+        self.assertEqual([],done["next_action_ids"])
+
+    def test_post_turn_rumor_no_checkpoint(self):
+        result=post_turn({"confirmed":True,"event_types":set(),"unique_thread_evidence":False,
+                          "turns_since_flush":1,"changed_paths":["events/0157.md"],"state_changed_fields":set()})
+        self.assertFalse(result["arc_review"])
+        self.assertFalse(result["checkpoint_due"])
+        self.assertFalse(result["notion_projection_due"])
+
+    def test_post_turn_discovery_flushes_but_not_notions_graph(self):
+        result=post_turn({"confirmed":True,"event_types":set(),"unique_thread_evidence":True,
+                          "turns_since_flush":1,"changed_paths":["events/0157.md"],"state_changed_fields":set()})
+        self.assertTrue(result["arc_review"])
+        self.assertTrue(result["checkpoint_due"])
+        self.assertFalse(result["notion_projection_due"])
+
+    def test_post_turn_npc_relation_triggers_changed_only_projection(self):
+        result=post_turn({"confirmed":True,"event_types":{"NPC_RELATION_CHANGED"},
+                          "turns_since_flush":1,"changed_paths":["events/0157.md"],"state_changed_fields":set()})
+        self.assertTrue(result["checkpoint_due"])
+        self.assertTrue(result["notion_projection_due"])
+
+    def test_unconfirmed_turn_never_plans_persistence(self):
+        with self.assertRaises(ValueError):
+            post_turn({"confirmed":False,"event_types":{"NPC_DEATH"},"turns_since_flush":5})
 
 if __name__=="__main__": unittest.main()

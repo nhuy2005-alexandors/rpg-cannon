@@ -106,6 +106,19 @@ class GraphValidationTests(unittest.TestCase):
         self.assertFalse(projection_changed(['state/current.json'],{'player.resources.HP.current'}))
         self.assertTrue(projection_changed(['state/current.json'],{'npc_last_verified_T93'}))
 
+    def test_combat_log_does_not_change_notions_graph(self):
+        self.assertFalse(projection_changed(["events/0157.md"],{"player.resources.HP.current"},set()))
+
+    def test_relation_event_changes_notions_graph(self):
+        self.assertTrue(projection_changed(["events/0157.md"],set(),{"NPC_RELATION_CHANGED"}))
+
+    def test_missing_event_classification_fails_closed(self):
+        with self.assertRaises(ValueError):
+            projection_changed(["events/0157.md"],set())
+
+    def test_hp_only_does_not_change_notions_graph(self):
+        self.assertFalse(projection_changed(["state/current.json"],{"player.resources.HP.current"},set()))
+
     def test_stale_endpoint_blocks_edge(self):
         e,r=fixtures();copy=[dict(x) for x in r]; copy[0]['to_id']='npc:renamed'
         self.assertTrue(validate_seed(e,copy))
