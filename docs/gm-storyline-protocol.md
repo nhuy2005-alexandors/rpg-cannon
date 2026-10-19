@@ -2,6 +2,17 @@
 
 **Authority:** GitHub main, `state/current.json`, `events/`, `canon/`, `story/arcs.json`; Notion is a relation lookup/projection. **This is operational GM guidance**, not a new narrated turn or accepted quest.
 
+## GM Turn Response-Time Policy (Owner-approved 2026-10-20)
+
+**Owner acceptance:** 1–2 minutes for a normal RPG turn is acceptable; roughly 3 minutes is still acceptable for a complex turn. A 7-minute turn caused by routine tool/plugin orchestration is NOT the desired operating mode. These are practical targets rather than hard response-time guarantees. Narrative quality, combat math, resource accuracy, and continuity still take priority over arbitrary speed.
+
+- **Default game turn:** Narrate and adjudicate directly from active-chat working memory; do not invoke Superpowers for normal RPG gameplay, and do not call GitHub/Notion simply to generate action choices.
+- **When to retrieve:** At the start of a new chat or after evidence is missing/contradictory, fetch the minimal canonical GitHub snapshot and only scene-relevant lore. Use Notion only for important unresolved NPC/relationship context. Avoid full repository scans, global audits, extra agents, and running test suites inside ordinary gameplay turns.
+- **When to persist:** Honor the existing checkpoint policy: at most five completed turns, significant irreversible/story/NPC event, explicit save request, or session handoff. Batch related GitHub changes, verify the written commit, and project to Notion only if graph data actually changed. Never claim unsaved turns are durable.
+- **If persistence takes time:** Do not silently let routine bookkeeping dominate the turn. Report an actual sync blocker or failure succinctly when relevant; do not assert a background sync, invent a successful write, or postpone an explicitly requested checkpoint.
+- **Superpowers boundary:** Use for explicit brainstorming/engineering design, audit, and maintenance only; never require it to start or finish a player action.
+- **Budget and evidence:** Judge cost by observed latency and necessary work rather than invented timings. Do not add new services, workers, scheduled tasks, or databases for speculative optimization.
+
 ## Per-turn execution
 
 1. Start of a session: read current snapshot, `story/arcs.json`, `story/actions.json`, `state/quick-start.md`. When an NPC/location is relevant, load that canonical file or corresponding Notion neighborhood (Notion saved views preferred if query quota limited).
