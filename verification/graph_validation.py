@@ -45,14 +45,20 @@ def validate_seed(entities: list[dict], relationships: list[dict]) -> list[str]:
 def diff_projection(desired: list[dict], fetched: list[dict], key: str, complete: bool) -> dict[str, list[dict]]:
     if not complete:raise IncompleteLookup('Incomplete query coverage; no new creates permitted')
     records={};dupes=[]
+    notion_labels={'canonical_id':'Canonical ID','edge_id':'Edge ID'}
+    def lookup_id(row):
+        value=row.get(key, row.get(notion_labels.get(key,'')))
+        if key=='edge_id' and isinstance(value,str):
+            value=value.replace('\\|','|')
+        return value
     for x in fetched:
-        k=x.get(key)
+        k=lookup_id(x)
         if not k or k in records:dupes.append(x)
         else:records[k]=x
     out={'create':[],'update':[],'unchanged':[],'duplicate':dupes}
     if dupes:return out
     for x in desired:
-        k=x[key]
+        k=lookup_id(x)
         if k not in records:out['create'].append(x)
         elif x==records[k]:out['unchanged'].append(x)
         else:out['update'].append(x)
