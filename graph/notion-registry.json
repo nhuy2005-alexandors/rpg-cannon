@@ -1,0 +1,51 @@
+{
+  "schema_version": "HN-NOTION-GRAPH-REGISTRY-V1",
+  "recorded_at": "2026-10-19",
+  "canonical_repo": "nhuy2005-alexandors/rpg-cannon",
+  "canonical_gameplay_turn": 153,
+  "projected_source_sha": "c47ba6254b042f016f8f53aafb2af346173674e4",
+  "document_commits_do_not_invalidate_graph": true,
+  "notion_hub": "https://app.notion.com/p/3fe864d295ce817895aed0bcfde6ac34",
+  "databases": {
+    "Entities": {
+      "url": "https://app.notion.com/p/3e1a70d007444496874d9e9535071d6a",
+      "data_source_id": "6f40f9fb-1bb7-48b9-9c84-a8f8bff91579"
+    },
+    "Relationships": {
+      "url": "https://app.notion.com/p/4ea8c07ae96d4312b585acab207bc370",
+      "data_source_id": "b3eeb1ac-138f-4dab-b7ad-6b63321f2b86"
+    }
+  },
+  "entity_pages": {
+    "player:vo-danh": "3fe864d2-95ce-81c2-aaf6-c9cd90df5518",
+    "npc:edran": "3fe864d2-95ce-8184-8d71-d5f6ad7a41ba",
+    "npc:maela": "3fe864d2-95ce-8177-9a3e-dca5417f8002",
+    "npc:kharzug": "3fe864d2-95ce-8147-a9f7-c77d7c2e1432",
+    "npc:huyet-lang-non": "3fe864d2-95ce-81b3-ba7f-c969fff646bf",
+    "npc:huyet-lang-doc-nhan": "3fe864d2-95ce-810f-a76e-f5d7dda182ca",
+    "location:dien-te-huyet": "3fe864d2-95ce-81b8-8e1a-c5d433e956c2",
+    "location:cam-lao": "3fe864d2-95ce-8158-bf67-c044dbbbd9a0",
+    "location:rung-xuong": "3fe864d2-95ce-8185-a31f-ebc4d3979c4c"
+  },
+  "relationship_pages": {
+    "npc:edran|MENTORS|player:vo-danh|T50-T54": "3fe864d2-95ce-8192-9dfe-f8b6a0393fd2",
+    "npc:maela|COMBAT_ALLY_OF|player:vo-danh|T90-T93": "3fe864d2-95ce-81a0-872e-ef2f4f64abe8",
+    "player:vo-danh|RESCUED|npc:kharzug|T73-T90": "3fe864d2-95ce-818c-a1a9-e7a3eea5a840",
+    "npc:kharzug|PROTECTS|npc:huyet-lang-non|T90-T93": "3fe864d2-95ce-8103-8636-cc77d04e92cc",
+    "npc:maela|FOUND|npc:huyet-lang-non|T68-T69": "3fe864d2-95ce-8155-9903-eb956808e5e3",
+    "npc:edran|LOCATED_AT_LAST_SEEN|location:dien-te-huyet|T93": "3fe864d2-95ce-81a4-a66e-f8f0a740c214",
+    "npc:kharzug|LOCATED_AT_LAST_SEEN|location:dien-te-huyet|T93": "3fe864d2-95ce-81d2-8e87-fa1119d97978"
+  },
+  "views": {
+    "entities": "view://3fe864d2-95ce-8116-9ad7-000c62f533e1",
+    "relationships": "view://3fe864d2-95ce-810d-8c5c-000c3621bfb9",
+    "temple_last_seen": "view://3fe864d2-95ce-81e1-abc2-000cbcede468",
+    "kharzug_outbound": "view://3fe864d2-95ce-81f7-bf1e-000c4512af16",
+    "kharzug_inbound": "view://3fe864d2-95ce-81f2-8064-000ce0741e17"
+  },
+  "limitations": [
+    "Notion rows-mode relation_contains filter returned unfiltered rows; verify directions on readback or use saved views / SQL.",
+    "Normal SQL/rows query allowance exhausted during testing; view-mode returned expected results.",
+    "No background chat ingestion or automatic synchronization configured."
+  ]
+}
