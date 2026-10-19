@@ -1,6 +1,6 @@
-# HẮC NHẬT — QUICK START (T154)
+# HẮC NHẬT — QUICK START (T155)
 
-**Next RPG turn 155.** Vô Danh Lv6, EXP185/400, HP115/170, STA85/110, BLOOD25/50, Tử Huyết0/20, souls5, DEF22, STR hiệu dụng20.
+**Next RPG turn 156.** Vô Danh Lv6, EXP185/400, HP115/170, STA85/110, BLOOD25/50, Tử Huyết0/20, souls5, DEF22, STR hiệu dụng20.
 
 Location: Điện Tế Huyết (căn cứ Edran, Tư Tế Xương). Huyết Nha+3 Rare ATK28–36. Huyết Dược Quân Dụng x2 unused.
 
