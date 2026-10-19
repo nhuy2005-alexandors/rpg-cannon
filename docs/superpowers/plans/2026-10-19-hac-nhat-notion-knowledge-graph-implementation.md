@@ -118,9 +118,9 @@ Every row includes `github_source` / `github_evidence` pointing to a real repo f
 
 **Files:** Extend `verification/graph_validation.py`, `verification/test_graph_validation.py`; modify `docs/storage-protocol.md` after fetching its current GitHub blob SHA; draft `verification/graph-receipts/initial-import.md`.
 
-**Interfaces:** `diff_projection(..., complete=False)` must block writes; `source_changed(canonical_changed_paths: list[str]) -> bool` is true only for material input paths (`state/current.json`, `events/`, `canon/`, `graph/seed/`) relevant to projection, not generic docs changes. Note that a change to `state/current.json` with HP alone needs GitHub checkpoint but not NPC/edge projection.
+**Interfaces:** `diff_projection(..., complete=False)` must block writes; `projection_changed(changed_paths: list[str], state_changed_fields: set[str]) -> bool` is true for material NPC/relationship input changes (`events/`, `canon/`, `graph/seed/`, or relevant `state/current.json` fields such as NPC/quest/world flags), false for docs-only changes or `state/current.json` HP/STA-only arithmetic. GitHub still persists the numeric checkpoint; Notion graph is not rewritten without graph-relevant change.
 
-- [ ] Add tests `test_partial_failure_no_marker_advance`, `test_docs_only_commit_not_dirty`, `test_stale_endpoint_blocks_edge`, `test_duplicate_edge_ids_fail`, `test_unknown_current_npc_presence_not_inferred`.
+- [ ] Add tests `test_partial_failure_no_marker_advance`, `test_docs_only_commit_not_dirty`, `test_hp_only_checkpoint_not_graph_dirty`, `test_stale_endpoint_blocks_edge`, `test_duplicate_edge_ids_fail`, `test_unknown_current_npc_presence_not_inferred`.
 - [ ] Run `python -m unittest verification.test_graph_validation -v` to show RED failures for new behavior.
 - [ ] Implement only pure validation/change detection and documented connector-runbook: GitHub-first, expected-head check when game state changes, Notion Entities then Relationships, readback all changes, Hub marker last. Failed Notion batch retains prior Hub SHA and allows deterministic retry by IDs.
 - [ ] Run the test suite and `python verification/check_state.py` to GREEN; ensure T153 numeric snapshot unchanged.
@@ -153,7 +153,7 @@ Every row includes `github_source` / `github_evidence` pointing to a real repo f
 
 - Scope/spec coverage: Task1→identity/evidence, Task2→schema, Task3–4→seed/graph query, Task5→idempotency/failure/performance, Task6→Hub rollout. G0 (state preflight) and G1–G7 all assigned.
 - Step scan: all actions have an explicit object/file/tool and a checkable result; no open-ended "build sync service" placeholder.
-- Interface consistency: `validate_seed`, `diff_projection`, `source_changed`, `Canonical ID`, `Edge ID`, `From`, `To`, `Last Synced SHA` use consistent names.
+- Interface consistency: `validate_seed`, `diff_projection`, `projection_changed`, `Canonical ID`, `Edge ID`, `From`, `To`, `Last Synced SHA` use consistent names.
 - Review Focus: all five failure inputs have named tests or provider readbacks. Red→green tests required for code changes, readback required for connector writes.
 - Proportion: plan is bounded to existing repository and two Notion databases; no extra infrastructure. This is not a claim of executed tests or implemented graph.
 - **Next gate:** owner reviews this PLAN and chooses `Native` or `Subagent-driven` execution; approval of the spec alone did not authorize implementation.
