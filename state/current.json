@@ -1,7 +1,7 @@
 {
-  "snapshot_version": "HN-S157-V1",
-  "last_completed_turn": 157,
-  "next_turn": 158,
+  "snapshot_version": "HN-S158-V1",
+  "last_completed_turn": 158,
+  "next_turn": 159,
   "as_of": "2026-10-20",
   "location": "Điện Tế Huyết / căn cứ Tư Tế Xương, Hắc Nha Thành",
   "player": {
@@ -23,7 +23,7 @@
         "max": 170
       },
       "STA": {
-        "current": 75,
+        "current": 110,
         "max": 110
       },
       "BLOOD": {
@@ -190,6 +190,27 @@
       "materials_spent": 0,
       "no_pact": true,
       "first_combat_trigger_observed": false
+    },
+    "T158": {
+      "rest_hours": 2,
+      "STA_after_first_hour": 95,
+      "HP_before": 115,
+      "HP_after": 115,
+      "STA_before": 75,
+      "STA_after": 110,
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "training_started": false,
+      "skill_unlocked": false,
+      "potions_spent": 0,
+      "materials_spent": 0,
+      "no_pact": true
     }
   },
   "provenance": {
@@ -232,5 +253,31 @@
       "STA": 10
     },
     "trial_minutes_actual": 30
+  },
+  "pending_skill_HuyetBoc": {
+    "name": "Huyết Bộc",
+    "level": 1,
+    "rarity": "Rare",
+    "status": "OFFERED_NOT_LEARNED",
+    "source": "Vaelthar proposed at T158 after consultation with Edran",
+    "effect_if_learned": {
+      "activation_cost_BLOOD": 12,
+      "cost_HP": 0,
+      "cost_STA": 0,
+      "physical_damage_bonus_fraction": 0.2,
+      "movement_speed_bonus_fraction": 0.2,
+      "duration_combat_turns": 1,
+      "cooldown_turns": 3,
+      "activation": "instant before attack during normal combat turn, no extra attack/movement",
+      "cannot_stack_with": "Cuồng Huyết"
+    },
+    "trial_if_player_authorizes": {
+      "name": "Huyết Mạch Bộc Phát",
+      "cost_BLOOD": 8,
+      "cost_STA": 10,
+      "duration_minutes": 20,
+      "outcome": "not guaranteed, must adjudicate; no pact"
+    },
+    "note": "Not yet learned or tested. At current BLOOD15/50, doing future proposed trial leaves BLOOD7, insufficient for actual skill cast cost12 until BLOOD is replenished."
   }
 }
