@@ -20,7 +20,7 @@ def validate_arc(arc: dict, known_ids: set[str]) -> list[str]:
     if not arc.get("id","").startswith("arc:"):errors.append("bad arc id")
     if arc.get("status") not in ALLOWED:errors.append("invalid status")
     if not arc.get("source"):errors.append("missing provenance")
-    if arc.get("last_evidence_turn",0)>153 and arc.get("as_of_turn",153)<=153:errors.append("future turn without current evidence")
+    if not isinstance(arc.get("last_evidence_turn"),int) or arc["last_evidence_turn"]<0:errors.append("invalid evidence turn")
     if arc.get("status")=="RESOLVED" and arc.get("next_action_ids"):errors.append("resolved arc has open actions")
     for dep in arc.get("dependencies",[]):
         if dep not in known_ids:errors.append("unknown arc dependency")
@@ -62,8 +62,8 @@ def classify_discovery(event: dict) -> str:
 
 def checkpoint_integrity(state: dict, arcs: list[dict]) -> list[str]:
     errors=[]
-    if state["last_completed_turn"]!=153 or state["next_turn"]!=154:
-        errors.append("current accepted snapshot changed")
+    if state["next_turn"]!=state["last_completed_turn"]+1:
+        errors.append("nonsequential snapshot")
     ids={x["id"] for x in arcs}
     if len(ids)!=len(arcs):errors.append("duplicate arcs")
     for arc in arcs:errors.extend(validate_arc(arc,ids))
