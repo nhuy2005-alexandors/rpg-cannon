@@ -1,0 +1,79 @@
+[
+  {
+    "edge_id": "npc:edran|MENTORS|player:vo-danh|T50-T54",
+    "from_id": "npc:edran",
+    "predicate": "MENTORS",
+    "to_id": "player:vo-danh",
+    "first_verified_turn": 50,
+    "last_verified_turn": 54,
+    "evidence_quality": "LAST_VERIFIED",
+    "lifecycle": "LAST_VERIFIED",
+    "github_evidence": "events/0050-0095.md"
+  },
+  {
+    "edge_id": "npc:maela|COMBAT_ALLY_OF|player:vo-danh|T90-T93",
+    "from_id": "npc:maela",
+    "predicate": "COMBAT_ALLY_OF",
+    "to_id": "player:vo-danh",
+    "first_verified_turn": 90,
+    "last_verified_turn": 93,
+    "evidence_quality": "LAST_VERIFIED",
+    "lifecycle": "LAST_VERIFIED",
+    "github_evidence": "events/0050-0095.md"
+  },
+  {
+    "edge_id": "player:vo-danh|RESCUED|npc:kharzug|T73-T90",
+    "from_id": "player:vo-danh",
+    "predicate": "RESCUED",
+    "to_id": "npc:kharzug",
+    "first_verified_turn": 73,
+    "last_verified_turn": 90,
+    "evidence_quality": "CONFIRMED",
+    "lifecycle": "ENDED",
+    "github_evidence": "canon/npc/kharzug.md"
+  },
+  {
+    "edge_id": "npc:kharzug|PROTECTS|npc:huyet-lang-non|T90-T93",
+    "from_id": "npc:kharzug",
+    "predicate": "PROTECTS",
+    "to_id": "npc:huyet-lang-non",
+    "first_verified_turn": 90,
+    "last_verified_turn": 93,
+    "evidence_quality": "LAST_VERIFIED",
+    "lifecycle": "LAST_VERIFIED",
+    "github_evidence": "canon/npc/kharzug.md"
+  },
+  {
+    "edge_id": "npc:maela|FOUND|npc:huyet-lang-non|T68-T69",
+    "from_id": "npc:maela",
+    "predicate": "FOUND",
+    "to_id": "npc:huyet-lang-non",
+    "first_verified_turn": 68,
+    "last_verified_turn": 69,
+    "evidence_quality": "CONFIRMED",
+    "lifecycle": "ENDED",
+    "github_evidence": "canon/npc/maela.md"
+  },
+  {
+    "edge_id": "npc:edran|LOCATED_AT_LAST_SEEN|location:dien-te-huyet|T93",
+    "from_id": "npc:edran",
+    "predicate": "LOCATED_AT_LAST_SEEN",
+    "to_id": "location:dien-te-huyet",
+    "first_verified_turn": 93,
+    "last_verified_turn": 93,
+    "evidence_quality": "LAST_VERIFIED",
+    "lifecycle": "LAST_VERIFIED",
+    "github_evidence": "canon/npc/edran.md"
+  },
+  {
+    "edge_id": "npc:kharzug|LOCATED_AT_LAST_SEEN|location:dien-te-huyet|T93",
+    "from_id": "npc:kharzug",
+    "predicate": "LOCATED_AT_LAST_SEEN",
+    "to_id": "location:dien-te-huyet",
+    "first_verified_turn": 93,
+    "last_verified_turn": 93,
+    "evidence_quality": "LAST_VERIFIED",
+    "lifecycle": "LAST_VERIFIED",
+    "github_evidence": "canon/npc/kharzug.md"
+  }
+]
