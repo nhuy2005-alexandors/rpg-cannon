@@ -1,12 +1,12 @@
 {
   "schema_version": "HN-ACTION-CATALOG-V1",
-  "snapshot_turn": 153,
+  "snapshot_turn": 154,
   "generation_policy": "Evidence-based contextual suggestions, NOT commands, quests accepted, or world events",
   "actions": [
     {
       "id": "action:ask-edran-tam-nha",
       "title": "Hỏi Edran về bí mật Tam Nha",
-      "description": "Đối chiếu những gì Vô Danh đã biết về Cấm Lao, ba quan tài và Trạm Tam Trảo.",
+      "description": "Đối chiếu biểu tượng ba vết cào với vòng ba nanh sau hội nghị T154; giả thuyết chưa được xác nhận.",
       "category": "INVESTIGATE",
       "arc_id": "arc:tam-nha",
       "requires": [
@@ -17,8 +17,8 @@
     },
     {
       "id": "action:ask-kharzug-health",
-      "title": "Kiểm tra Kharzug, Maela và sói con",
-      "description": "Hỏi Edran về lần gần nhất gặp họ, kiểm tra thương tích và sự hiện diện thay vì giả định.",
+      "title": "Trao đổi tiếp với Kharzug và Edran",
+      "description": "Hỏi về chân sau Kharzug, vòng Tam Nha trên sói con và ký ức Quân Lệnh 19; không tự nhận nhiệm vụ.",
       "category": "SOCIAL",
       "arc_id": "arc:kharzug-pup",
       "requires": [
