@@ -1,0 +1,92 @@
+[
+  {
+    "canonical_id": "player:vo-danh",
+    "name": "Vô Danh",
+    "kind": "PLAYER",
+    "life_world_status": "ALIVE",
+    "evidence_quality": "CONFIRMED",
+    "last_verified_turn": 153,
+    "github_source": "state/current.json",
+    "summary": "Nhân vật người chơi, Huyết Kiếm Sĩ Lv6; trạng thái chính xác ở GitHub."
+  },
+  {
+    "canonical_id": "npc:edran",
+    "name": "Edran — Tư Tế Xương",
+    "kind": "NPC",
+    "life_world_status": "ALIVE",
+    "evidence_quality": "LAST_VERIFIED",
+    "last_verified_turn": 93,
+    "github_source": "canon/npc/edran.md",
+    "summary": "Tư tế Điện Tế Huyết; chữa thương và dạy Vô Danh. Lần cuối xác nhận sống tại đền T93; vị trí T153 chưa rõ."
+  },
+  {
+    "canonical_id": "npc:maela",
+    "name": "Maela — nữ thợ săn",
+    "kind": "NPC",
+    "life_world_status": "ALIVE",
+    "evidence_quality": "LAST_VERIFIED",
+    "last_verified_turn": 93,
+    "github_source": "canon/npc/maela.md",
+    "summary": "Thợ săn tự do; tìm thấy sói con và cùng chiến đấu T91–93. Không bị thương sau T93; vị trí T153 chưa rõ."
+  },
+  {
+    "canonical_id": "npc:kharzug",
+    "name": "Kharzug — chiến thú già",
+    "kind": "NPC",
+    "life_world_status": "INJURED",
+    "evidence_quality": "LAST_VERIFIED",
+    "last_verified_turn": 93,
+    "github_source": "canon/npc/kharzug.md",
+    "summary": "Chiến thú cổ Tam Nha, được Vô Danh giải cứu khỏi Cấm Lao. Vẫn bị thương T93; vị trí/phục hồi T153 chưa xác nhận."
+  },
+  {
+    "canonical_id": "npc:huyet-lang-non",
+    "name": "Huyết Lang non — sói con",
+    "kind": "NPC",
+    "life_world_status": "ALIVE",
+    "evidence_quality": "LAST_VERIFIED",
+    "last_verified_turn": 93,
+    "github_source": "canon/npc/huyet-lang-non.md",
+    "summary": "Sói con chưa tên, vòng cổ Tam Nha; Maela tìm thấy, Kharzug bảo vệ. Quan hệ huyết thống chưa rõ."
+  },
+  {
+    "canonical_id": "npc:huyet-lang-doc-nhan",
+    "name": "Huyết Lang Độc Nhãn",
+    "kind": "NPC",
+    "life_world_status": "DECEASED",
+    "evidence_quality": "CONFIRMED",
+    "last_verified_turn": 66,
+    "github_source": "canon/npc/huyet-lang-doc-nhan.md",
+    "summary": "Huyết Lang một mắt Lv5 bị Vô Danh giết T66. Không phải Kharzug."
+  },
+  {
+    "canonical_id": "location:dien-te-huyet",
+    "name": "Điện Tế Huyết",
+    "kind": "LOCATION",
+    "life_world_status": "ACTIVE",
+    "evidence_quality": "CONFIRMED",
+    "last_verified_turn": 153,
+    "github_source": "canon/world/places.md",
+    "summary": "Đền Edran ở Hắc Nha Thành, căn cứ và kho vật phẩm của Vô Danh; NPC khác chỉ có bằng chứng tới T93."
+  },
+  {
+    "canonical_id": "location:cam-lao",
+    "name": "Cấm Lao",
+    "kind": "LOCATION",
+    "life_world_status": "ACTIVE",
+    "evidence_quality": "LAST_VERIFIED",
+    "last_verified_turn": 90,
+    "github_source": "canon/world/places.md",
+    "summary": "Kharzug từng bị giam như khóa sinh thể; cổng chính vẫn SEALED sau giải cứu."
+  },
+  {
+    "canonical_id": "location:rung-xuong",
+    "name": "Rừng Xương",
+    "kind": "LOCATION",
+    "life_world_status": "ACTIVE",
+    "evidence_quality": "LAST_VERIFIED",
+    "last_verified_turn": 69,
+    "github_source": "canon/world/places.md",
+    "summary": "Maela tìm thấy sói con dưới gốc cây cháy; khu vực săn Huyết Lang."
+  }
+]
