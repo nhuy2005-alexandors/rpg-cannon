@@ -10,7 +10,7 @@ LIFECYCLE={'LAST_VERIFIED','ONGOING_CONFIRMED','ENDED','SUPERSEDED','UNKNOWN'}
 class IncompleteLookup(ValueError):
     """Fail closed: provider results may be truncated, so absence is unproved."""
 
-def validate_seed(entities: list[dict], relationships: list[dict]) -> list[str]:
+def validate_seed(entities: list[dict], relationships: list[dict], max_verified_turn: int | None = None) -> list[str]:
     errors=[]
     entity_ids=[e.get('canonical_id') for e in entities]
     for k,c in Counter(entity_ids).items():
@@ -21,7 +21,7 @@ def validate_seed(entities: list[dict], relationships: list[dict]) -> list[str]:
         if e.get('kind') not in KINDS:errors.append(f'entity {i} invalid kind')
         if e.get('life_world_status') not in LIFE:errors.append(f'entity {i} invalid status')
         if e.get('evidence_quality') not in QUALITY:errors.append(f'entity {i} invalid evidence quality')
-        if not isinstance(e.get('last_verified_turn'),int) or e['last_verified_turn']>153:errors.append(f'entity {i} invalid last turn')
+        if not isinstance(e.get('last_verified_turn'),int) or e['last_verified_turn']<0 or (max_verified_turn is not None and e['last_verified_turn']>max_verified_turn):errors.append(f'entity {i} invalid last turn')
         if not e.get('github_source'):errors.append(f'entity {i} missing evidence source')
         if not key or ':' not in key:errors.append(f'entity {i} invalid ID')
     edge_ids=[r.get('edge_id') for r in relationships]
@@ -34,7 +34,7 @@ def validate_seed(entities: list[dict], relationships: list[dict]) -> list[str]:
         if r.get('evidence_quality') not in QUALITY:errors.append(f'edge {i} invalid evidence quality')
         if r.get('lifecycle') not in LIFECYCLE:errors.append(f'edge {i} invalid lifecycle')
         s,t=r.get('first_verified_turn'),r.get('last_verified_turn')
-        if not isinstance(s,int) or not isinstance(t,int) or s>t or t>153:errors.append(f'edge {i} invalid turn interval')
+        if not isinstance(s,int) or not isinstance(t,int) or s<0 or t<0 or s>t or (max_verified_turn is not None and t>max_verified_turn):errors.append(f'edge {i} invalid turn interval')
         if not r.get('github_evidence'):errors.append(f'edge {i} missing evidence')
         expected_range=f'T{s}' if s==t else f'T{s}-T{t}'
         if r.get('edge_id')!=f'{a}|{p}|{b}|{expected_range}':errors.append(f'edge {i} id does not match source')

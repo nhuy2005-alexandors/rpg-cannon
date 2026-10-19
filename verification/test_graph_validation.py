@@ -75,6 +75,23 @@ class GraphValidationTests(unittest.TestCase):
         self.assertEqual(0,len(result["create"]))
         self.assertFalse(result["duplicate"])
 
+    def test_future_turn_not_hardcoded_to_153(self):
+        e,edges=fixtures()
+        changed=[dict(x) for x in e]
+        changed[0]['last_verified_turn']=154
+        self.assertEqual([],validate_seed(changed,edges))
+        self.assertTrue(validate_seed(changed,edges,max_verified_turn=153))
+        self.assertEqual([],validate_seed(changed,edges,max_verified_turn=154))
+
+    def test_negative_turns_rejected(self):
+        e,edges=fixtures()
+        changed=[dict(x) for x in e]
+        changed[0]['last_verified_turn']=-1
+        self.assertTrue(validate_seed(changed,edges))
+        bad=[dict(x) for x in edges]
+        bad[0]['first_verified_turn']=-1
+        self.assertTrue(validate_seed(e,bad))
+
     def test_partial_failure_no_marker_advance(self):
         from verification.graph_validation import may_advance_marker
         self.assertFalse(may_advance_marker(7,6,True))
