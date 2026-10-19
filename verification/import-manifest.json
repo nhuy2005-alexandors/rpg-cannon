@@ -1,0 +1,37 @@
+{
+  "version": "HN-T153-public-migration-v1",
+  "repo": "nhuy2005-alexandors/rpg-cannon",
+  "visibility": "public",
+  "authorized_by_owner": true,
+  "turn": 153,
+  "sources": [
+    "1UdiBYsWGz7qf278q6MLcNaLaYf-kSQ0wG6A_kkMRo0s",
+    "1Oi3QfhM7BUaHQ6q1THQCLk4Mcus9ON8N-nUAGc964k8",
+    "1erK2YSRAfjqxzreuklmE41QqjjOUoo_K7zYIwU5BSG4",
+    "1XSZeEOubKwFMPkbhNuLG2JIfYT3JiTz7g5bkAFgEcww"
+  ],
+  "paths": [
+    "README.md",
+    "canon/npc/edran.md",
+    "canon/npc/huyet-lang-doc-nhan.md",
+    "canon/npc/huyet-lang-non.md",
+    "canon/npc/kharzug.md",
+    "canon/npc/maela.md",
+    "canon/rules.md",
+    "canon/world/places.md",
+    "docs/storage-protocol.md",
+    "events/0050-0095.md",
+    "events/0096-0153.md",
+    "provenance/sources.md",
+    "schemas/current-state.schema.json",
+    "sources/drive/00-current-state.md",
+    "sources/drive/01-npc-world.md",
+    "sources/drive/02-event-ledger.md",
+    "sources/drive/03-gm-rules.md",
+    "state/current.json",
+    "state/quick-start.md",
+    "verification/check_state.py",
+    "verification/import-manifest.json"
+  ],
+  "file_count": 21
+}

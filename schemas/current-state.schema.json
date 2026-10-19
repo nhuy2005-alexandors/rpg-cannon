@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "snapshot_version",
+    "last_completed_turn",
+    "next_turn",
+    "player",
+    "inventory",
+    "world_flags",
+    "receipts"
+  ],
+  "properties": {
+    "last_completed_turn": {
+      "type": "integer"
+    },
+    "next_turn": {
+      "type": "integer"
+    },
+    "snapshot_version": {
+      "type": "string"
+    },
+    "player": {
+      "type": "object"
+    },
+    "inventory": {
+      "type": "object"
+    },
+    "world_flags": {
+      "type": "object"
+    },
+    "receipts": {
+      "type": "object"
+    }
+  }
+}

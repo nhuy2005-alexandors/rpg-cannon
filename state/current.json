@@ -1,0 +1,108 @@
+{
+  "snapshot_version": "HN-S153-V1",
+  "last_completed_turn": 153,
+  "next_turn": 154,
+  "as_of": "2026-10-19",
+  "location": "Điện Tế Huyết / căn cứ Tư Tế Xương, Hắc Nha Thành",
+  "player": {
+    "name": "Vô Danh",
+    "class": "Huyết Kiếm Sĩ",
+    "level": 6,
+    "exp": 185,
+    "exp_next": 400,
+    "unallocated_points": 0,
+    "attributes": {
+      "STR_base": 19,
+      "STR_effective": 20,
+      "VIT": 15,
+      "DEF_total": 22
+    },
+    "resources": {
+      "HP": {
+        "current": 115,
+        "max": 170
+      },
+      "STA": {
+        "current": 85,
+        "max": 110
+      },
+      "BLOOD": {
+        "current": 25,
+        "max": 50
+      },
+      "TuHuyet": {
+        "current": 0,
+        "max": 20
+      },
+      "souls": 5
+    }
+  },
+  "equipment": {
+    "primary": "Huyết Nha +3 Rare (ATK 28–36; +7 BLOOD normal landed hit vs viable blood-bearing living target)",
+    "secondary": "Hắc Nha Trọng Kiếm VII (ATK 29–38)",
+    "ranged": "Liên Nỏ Hắc Nha",
+    "armor": "Lang Vương Huyết Bì Giáp Rare; DEF total 22",
+    "armguards": "+1 STR",
+    "old_armor": "Giáp Da Hắc Nha +2; stored"
+  },
+  "inventory": {
+    "HuyetDuocQuanDung": 2,
+    "heal_HP_each": 30,
+    "TinhLucDuoc": 0,
+    "steel_bolts": 5,
+    "NanhCotTien": 1
+  },
+  "base_storage": {
+    "NanhLangVuong": 2,
+    "TraoLangVuong": 4,
+    "HuyetCotLangVuong": 1,
+    "GanLangVuong_bundles": 1,
+    "DaLangVuong": 0,
+    "HacThietTinhLuyen": 0,
+    "HuyetTinhTinhAnh": 0,
+    "old_armor": 1,
+    "TamTrao_map": 1,
+    "TamTrao_key": 1
+  },
+  "uncertain_other_loot": {
+    "ordinary_wolf_fangs": 7,
+    "ordinary_wolf_pelts": 2,
+    "huyet_cot_manh": 2,
+    "status": "LAST_KNOWN_NOT_RECOUNTED"
+  },
+  "world_flags": {
+    "cam_lao_gate": "SEALED",
+    "tam_trao_tripwire": "BYPASSED_NOT_DISARMED",
+    "boss_replay": "T128-139 replay replaces original; loot counted once",
+    "kharzug_distinct_from_dead_wolf": true
+  },
+  "npc_last_verified_T93": {
+    "Edran": "alive at temple",
+    "Maela": "uninjured at temple",
+    "Kharzug": "alive at temple; injured and recovering",
+    "HuyetLangNon": "alive and safe at temple"
+  },
+  "npc_exact_presence_T153": "UNKNOWN; no verified later departures or deaths",
+  "receipts": {
+    "T152": {
+      "STA_before": 35,
+      "STA_after": 110,
+      "HP": 55,
+      "BLOOD": 25
+    },
+    "T153": {
+      "casts": 5,
+      "HP_before": 55,
+      "HP_after": 115,
+      "STA_before": 110,
+      "STA_after": 85,
+      "TuHuyet_before": 5,
+      "TuHuyet_after": 0,
+      "potions_spent": 0
+    }
+  },
+  "provenance": {
+    "original_chat": "https://chatgpt.com/share/6ad62d7a-9428-83ec-943e-0424b34bdfe3",
+    "drive_snapshot": "https://drive.google.com/drive/folders/1iXW64pOptqil5mgijBKbMcGeWFeT_nV2"
+  }
+}

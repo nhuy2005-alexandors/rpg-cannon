@@ -1,0 +1,11 @@
+# HẮC NHẬT — QUICK START (T153)
+
+**Next RPG turn 154.** Vô Danh Lv6, EXP185/400, HP115/170, STA85/110, BLOOD25/50, Tử Huyết0/20, souls5, DEF22, STR hiệu dụng20.
+
+Location: Điện Tế Huyết (căn cứ Edran, Tư Tế Xương). Huyết Nha+3 Rare ATK28–36. Huyết Dược Quân Dụng x2 unused.
+
+Edran=bone priest; Maela=free hunter; Kharzug=old wounded Tam Nha guardian; Huyết Lang non=unnamed wolf pup. All last verified at the temple T93; EXACT T153 whereabouts unknown. Do not silently erase them. Kharzug is NOT Huyết Lang Độc Nhãn (dead T66).
+
+Trạm Tam Trảo bone-spike tripwire bypassed but NOT disarmed. Cấm Lao gate remains sealed. T128–139 boss replay supersedes initial branch; boss loot once. T153: 5 casts heal 55→115HP, STA110→85, Tử Huyết5→0; no potion.
+
+Read state/current.json first and only relevant NPC files. See canon/rules.md and docs/storage-protocol.md. Notion is a derived index; GitHub commit is canonical. Public upload was explicitly authorized by the player.
