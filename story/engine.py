@@ -65,7 +65,7 @@ def eligible_actions(arcs: list[dict], actions: list[dict], state: dict) -> list
 
 def checkpoint_needed(turns_since_flush: int, event_types: set[str], switching_chat: bool=False, requested: bool=False) -> bool:
     if turns_since_flush < 0:raise ValueError("negative turn count")
-    return turns_since_flush>=5 or bool(MAJOR_EVENTS & event_types) or switching_chat or requested
+    return turns_since_flush>=10 or bool(MAJOR_EVENTS & event_types) or switching_chat or requested
 
 def classify_discovery(event: dict) -> str:
     """A mention is not an accepted quest or verified arc."""

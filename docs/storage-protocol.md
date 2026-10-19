@@ -2,7 +2,7 @@
 
 - GitHub main: single current numeric snapshot at state/current.json, immutable event history in events/, NPC/world lore in canon/, imported evidence in sources/drive/.
 - Notion: read-optimized index of changed NPCs, quests and latest checkpoint. Store last_synced_commit_sha; do not override GitHub canon.
-- During normal gameplay: resolve turns in ChatGPT; track deltas locally in the chat. Flush to GitHub every 5 turns maximum, on major NPC/quest event, before moving chats, or on user demand (whichever first).
+- During normal gameplay: resolve turns in ChatGPT; track deltas locally in the chat. Flush to GitHub every 10 completed turns since the latest verified GitHub checkpoint maximum, on major NPC/quest event, before moving chats, or on user demand (whichever first).
 - Each flush: read head -> resolve delta -> check arithmetic/causality -> commit with expected-head guard -> fetch/read-back -> update Notion projection. On write failure, distinguish UNSAVED delta from canonical state.
 - **No automatic ingestion or background timer is currently configured.** A scheduled reminder alone cannot access new chat turn events.
 - Special invariants: Edran=Tư Tế Xương, Maela hunter, Kharzug old Tam Nha war beast NOT Huyết Lang Độc Nhãn killed T66, unnamed pup safe T93; no arbitrary deaths/teleports; Cam Lao gate still sealed; Tam Trao tripwire bypassed not disarmed; no boss loot double count after accepted replay.
@@ -28,7 +28,7 @@
   - Kharzug Inbound: `view://3fe864d2-95ce-81f2-8064-000ce0741e17` (RESCUED)
 - The Notion Rows response can escape pipes in `Edge ID` as `\\|`; canonical IDs use unescaped `|`. Normalize before equality comparison; fail closed on incomplete retrieval or duplicate IDs. `verification/graph_validation.py` implements stable-key normalization and dry-run diff.
 - The GitHub file `state/current.json` is still the sole authority for actual gameplay numbers and flags. At T153 all major NPCs only have last-seen evidence T93; unknown current location is not death or movement.
-- Flush during active session at most every five turns, upon significant canonical NPC/quest/world change, or before changing conversations. Write GitHub first using commit head checks, verify commit/readback, then project changed entities/edges to Notion. Do not update the Hub sync marker until every projected row was verified. Notion partial failure makes projection STALE; replay must reuse IDs, not duplicate pages.
+- Flush during active session at most every ten completed turns since the latest verified checkpoint, upon significant canonical NPC/quest/world change, or before changing conversations. Write GitHub first using commit head checks, verify commit/readback, then project changed entities/edges to Notion. Do not update the Hub sync marker until every projected row was verified. Notion partial failure makes projection STALE; replay must reuse IDs, not duplicate pages.
 - There is **no background agent, webhook or scheduler ingesting this chat**. No assumption of automatic saving between replies; only successful tool writes produce durable changes. If Notion cannot be queried or has exhausted limits, read GitHub canon directly and do not invent graph edges.
 
 
@@ -38,3 +38,9 @@
 - When `checkpoint_due`: save GitHub canon and event/state/storyline changes, guard the branch head and verify readback. No remote write for an ordinary non-checkpoint combat turn.
 - When `notion_projection_due`: project **only changed NPC/entity/relationship evidence** to the existing Notion Entities/Relationships. `events/` alone (combat log) is insufficient; classify graph-relevant event types. If classification is absent, fail closed instead of claiming graph synchronization. A docs-only or HP/STA-only commit does not trigger Notion.
 - A failed Notion projection leaves the GitHub commit authoritative and the Notion Hub visibly STALE. Mark it SYNCED only after reading back changed rows and source SHA. These rules avoid updating Notion after every turn; they do **not** install an unattended sync service.
+
+## Owner-approved autonomous cadence (2026-10-20)
+
+- During an active game session the GM initiates GitHub checkpoint automatically after **10 completed turns since the last verified GitHub checkpoint**, without requiring a save command. Reset counter only after successful GitHub commit + readback. Failed write keeps pending deltas UNSAVED.
+- Major NPC/quest/world events, impending context loss, chat change and direct save request override the 10-turn cadence and trigger earlier saving. This also limits reliance on long-context retention; ten turns are a preferred batch size, not a guaranteed memory horizon.
+- Notion remains selective for actual graph changes; no scheduled polling, external timer, automatic ingestion or background execution is installed. Checkpoint turns may run longer than ordinary turns to ensure verification.

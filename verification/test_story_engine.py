@@ -43,8 +43,11 @@ class TestStoryMechanics(unittest.TestCase):
         self.assertEqual("DISCOVERED",classify_discovery({"unique_thread_evidence":True,"confirmed_outcome":True}))
 
     def test_checkpoint_turns_and_major_events(self):
-        self.assertFalse(checkpoint_needed(4,set()))
-        self.assertTrue(checkpoint_needed(5,set()))
+        for turn_count in range(10):
+            with self.subTest(turns_since_flush=turn_count):
+                self.assertFalse(checkpoint_needed(turn_count,set()))
+        self.assertTrue(checkpoint_needed(10,set()))
+        self.assertTrue(checkpoint_needed(11,set()))
         self.assertTrue(checkpoint_needed(1,{"ARC_CREATED"}))
         self.assertTrue(checkpoint_needed(0,set(),switching_chat=True))
         self.assertTrue(checkpoint_needed(0,set(),requested=True))
