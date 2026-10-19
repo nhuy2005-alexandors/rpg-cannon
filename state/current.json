@@ -1,7 +1,7 @@
 {
-  "snapshot_version": "HN-S155-V1",
-  "last_completed_turn": 155,
-  "next_turn": 156,
+  "snapshot_version": "HN-S156-V1",
+  "last_completed_turn": 156,
+  "next_turn": 157,
   "as_of": "2026-10-20",
   "location": "Điện Tế Huyết / căn cứ Tư Tế Xương, Hắc Nha Thành",
   "player": {
@@ -126,6 +126,23 @@
       "EXP_after": 185,
       "potions_spent": 0,
       "skill_unlocked": false
+    },
+    "T156": {
+      "HP_before": 115,
+      "HP_after": 115,
+      "STA_before": 85,
+      "STA_after": 85,
+      "BLOOD_before": 25,
+      "BLOOD_after": 25,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "potions_spent": 0,
+      "skill_unlocked": false,
+      "trial_started": false
     }
   },
   "provenance": {
@@ -149,6 +166,17 @@
     },
     "trial_duration_minutes": 30,
     "proposed_effect": "Recover 10% of actual post-defense melee sword HP damage vs living blood-bearing target, min 1 on a qualifying damaging hit, max 5 HP/turn; no missed hits, DoT, undead or inorganics; independent of Huyết Nha +7 BLOOD ordinary-hit passive",
-    "no_pact": true
+    "no_pact": true,
+    "lv2_candidate": {
+      "status": "POTENTIAL_NOT_AVAILABLE",
+      "proposed_heal_fraction": 0.15,
+      "proposed_hp_cap_per_turn": 8,
+      "prerequisites": "Learn Lv1, demonstrate stable lifesteal in actual combat, then pass future advanced trial; exact trial cost unknown"
+    },
+    "known_risks": [
+      "A failed Lv1 trial spends its 10 BLOOD and 10 STA initiation cost once started; failure can cause narrative fatigue subject to adjudication, not automatic extra charge",
+      "No gain from misses, non-blood targets, undead, DoT, or beyond cap/max HP",
+      "No automatic pact, no mind-control consent"
+    ]
   }
 }
