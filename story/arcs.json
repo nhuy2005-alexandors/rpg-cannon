@@ -1,0 +1,153 @@
+{
+  "schema_version": "HN-ARCS-V1",
+  "as_of_turn": 153,
+  "authoritative": "GitHub canonical story thread registry; not quest acceptance",
+  "status_enum": [
+    "RUMORED",
+    "DISCOVERED",
+    "AVAILABLE",
+    "ACTIVE",
+    "BLOCKED",
+    "RESOLVED",
+    "FAILED",
+    "SUPERSEDED"
+  ],
+  "status_meanings": {
+    "RUMORED": "Manh mối nghe được, chưa xác minh",
+    "DISCOVERED": "Đã biết một phần tuyến truyện, chưa xác nhận nhận nhiệm vụ",
+    "AVAILABLE": "Có lựa chọn tiếp cận, chưa nhận",
+    "ACTIVE": "Người chơi xác nhận theo đuổi hoặc đang tiến hành",
+    "BLOCKED": "Không thể tiến hành do điều kiện đã có bằng chứng",
+    "RESOLVED": "Đã giải quyết bằng kết quả xác minh",
+    "FAILED": "Có bằng chứng thất bại",
+    "SUPERSEDED": "Bị kết quả replay hoặc correction thay thế"
+  },
+  "arcs": [
+    {
+      "id": "arc:tam-nha",
+      "name": "Bí mật Tam Nha và Cấm Lao",
+      "type": "MAIN_THREAD",
+      "status": "DISCOVERED",
+      "knowledge": "CONFIRMED_PARTIAL",
+      "introduced_turn": 68,
+      "last_evidence_turn": 145,
+      "source": [
+        "events/0050-0095.md",
+        "events/0096-0153.md",
+        "canon/world/places.md"
+      ],
+      "hooks": [
+        "Ba quan tài và cổng Cấm Lao vẫn còn bí ẩn",
+        "Sơ đồ và chìa khóa Trạm Tam Trảo đã được tìm thấy"
+      ],
+      "unresolved": [
+        "Ý nghĩa Tam Nha, ba quan tài, quyền chỉ huy tạm thời và Trạm Tam Trảo"
+      ],
+      "dependencies": [],
+      "npc_ids": [
+        "npc:edran",
+        "npc:kharzug"
+      ],
+      "location_ids": [
+        "location:cam-lao"
+      ],
+      "player_commitment": "NONE",
+      "next_action_ids": [
+        "action:ask-edran-tam-nha",
+        "action:plan-tam-trao"
+      ],
+      "disclosure": "PLAYER_KNOWN"
+    },
+    {
+      "id": "arc:kharzug-pup",
+      "name": "Kharzug và Huyết Lang non",
+      "type": "CHARACTER_THREAD",
+      "status": "DISCOVERED",
+      "knowledge": "LAST_VERIFIED",
+      "introduced_turn": 68,
+      "last_evidence_turn": 93,
+      "source": [
+        "events/0050-0095.md",
+        "canon/npc/kharzug.md",
+        "canon/npc/huyet-lang-non.md"
+      ],
+      "hooks": [
+        "Kharzug từng che chở sói con",
+        "Kharzug còn thương tích cuối Lượt 93"
+      ],
+      "unresolved": [
+        "Nguồn gốc vòng Tam Nha",
+        "Tình trạng và vị trí hiện tại cần kiểm tra tại chỗ"
+      ],
+      "dependencies": [],
+      "npc_ids": [
+        "npc:kharzug",
+        "npc:maela",
+        "npc:edran",
+        "npc:huyet-lang-non"
+      ],
+      "location_ids": [
+        "location:dien-te-huyet"
+      ],
+      "player_commitment": "NONE",
+      "next_action_ids": [
+        "action:ask-kharzug-health"
+      ],
+      "disclosure": "PLAYER_KNOWN"
+    },
+    {
+      "id": "arc:sealed-vessel",
+      "name": "Bình Đá Niêm Phong và Ấn Chuông Gãy",
+      "type": "MYSTERY_HOOK",
+      "status": "DISCOVERED",
+      "knowledge": "PARTIAL",
+      "introduced_turn": 96,
+      "last_evidence_turn": 103,
+      "source": [
+        "events/0096-0153.md"
+      ],
+      "hooks": [
+        "Edran đã xem xét bình và mảnh ấn theo nhật ký tóm lược"
+      ],
+      "unresolved": [
+        "Nguồn gốc và tác dụng của bình; không mở khi chưa có quyết định của người chơi"
+      ],
+      "dependencies": [],
+      "npc_ids": [
+        "npc:edran"
+      ],
+      "location_ids": [
+        "location:dien-te-huyet"
+      ],
+      "player_commitment": "NONE",
+      "next_action_ids": [
+        "action:review-sealed-vessel"
+      ],
+      "disclosure": "PLAYER_KNOWN"
+    },
+    {
+      "id": "arc:wolf-king-hunt",
+      "name": "Săn Huyết Lang Vương",
+      "type": "BOSS_ARC",
+      "status": "RESOLVED",
+      "knowledge": "CONFIRMED",
+      "introduced_turn": 120,
+      "last_evidence_turn": 150,
+      "source": [
+        "events/0096-0153.md"
+      ],
+      "hooks": [
+        "Lang Vương bị tiêu diệt trong bản replay đã được chấp nhận Lượt 139",
+        "Chiến lợi phẩm chỉ nhận một lần, vật liệu đã dùng để rèn"
+      ],
+      "unresolved": [],
+      "dependencies": [],
+      "npc_ids": [],
+      "location_ids": [],
+      "player_commitment": "COMPLETED",
+      "next_action_ids": [],
+      "disclosure": "PLAYER_KNOWN",
+      "supersession": "T128–139 lần đầu bị thay thế bởi replay; không tạo boss hunt mới"
+    }
+  ]
+}
