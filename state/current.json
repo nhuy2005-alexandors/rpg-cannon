@@ -1,7 +1,7 @@
 {
-  "snapshot_version": "HN-S154-V1",
-  "last_completed_turn": 154,
-  "next_turn": 155,
+  "snapshot_version": "HN-S155-V1",
+  "last_completed_turn": 155,
+  "next_turn": 156,
   "as_of": "2026-10-20",
   "location": "Điện Tế Huyết / căn cứ Tư Tế Xương, Hắc Nha Thành",
   "player": {
@@ -110,6 +110,22 @@
       "EXP": 185,
       "resource_changes": 0,
       "elapsed_minutes_approx": 25
+    },
+    "T155": {
+      "HP_before": 115,
+      "HP_after": 115,
+      "STA_before": 85,
+      "STA_after": 85,
+      "BLOOD_before": 25,
+      "BLOOD_after": 25,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "potions_spent": 0,
+      "skill_unlocked": false
     }
   },
   "provenance": {
@@ -121,5 +137,18 @@
     "Maela": "confirmed present at temple; free hunter, uninjured",
     "Kharzug": "confirmed present at temple; still recuperating injured hind leg",
     "HuyetLangNon": "confirmed at temple beside Kharzug; collar unchanged"
+  },
+  "pending_training": {
+    "name": "Hấp Huyết Lv1",
+    "status": "OFFERED_NOT_LEARNED",
+    "source": "Vaelthar oral teaching at temple, T155",
+    "trial": "Huyết Mạch Đồng Điệu",
+    "trial_cost_if_commenced": {
+      "BLOOD": 10,
+      "STA": 10
+    },
+    "trial_duration_minutes": 30,
+    "proposed_effect": "Recover 10% of actual post-defense melee sword HP damage vs living blood-bearing target, min 1 on a qualifying damaging hit, max 5 HP/turn; no missed hits, DoT, undead or inorganics; independent of Huyết Nha +7 BLOOD ordinary-hit passive",
+    "no_pact": true
   }
 }
