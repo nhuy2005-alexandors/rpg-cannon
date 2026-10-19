@@ -1,8 +1,8 @@
 {
-  "snapshot_version": "HN-S153-V1",
-  "last_completed_turn": 153,
-  "next_turn": 154,
-  "as_of": "2026-10-19",
+  "snapshot_version": "HN-S154-V1",
+  "last_completed_turn": 154,
+  "next_turn": 155,
+  "as_of": "2026-10-20",
   "location": "Điện Tế Huyết / căn cứ Tư Tế Xương, Hắc Nha Thành",
   "player": {
     "name": "Vô Danh",
@@ -74,7 +74,8 @@
     "cam_lao_gate": "SEALED",
     "tam_trao_tripwire": "BYPASSED_NOT_DISARMED",
     "boss_replay": "T128-139 replay replaces original; loot counted once",
-    "kharzug_distinct_from_dead_wolf": true
+    "kharzug_distinct_from_dead_wolf": true,
+    "tam_trao_council": "T154 discussion at temple; no departure, no deeper station exploration"
   },
   "npc_last_verified_T93": {
     "Edran": "alive at temple",
@@ -99,10 +100,26 @@
       "TuHuyet_before": 5,
       "TuHuyet_after": 0,
       "potions_spent": 0
+    },
+    "T154": {
+      "HP": 115,
+      "STA": 85,
+      "BLOOD": 25,
+      "TuHuyet": 0,
+      "souls": 5,
+      "EXP": 185,
+      "resource_changes": 0,
+      "elapsed_minutes_approx": 25
     }
   },
   "provenance": {
     "original_chat": "https://chatgpt.com/share/6ad62d7a-9428-83ec-943e-0424b34bdfe3",
     "drive_snapshot": "https://drive.google.com/drive/folders/1iXW64pOptqil5mgijBKbMcGeWFeT_nV2"
+  },
+  "npc_verified_T154": {
+    "Edran": "confirmed present at temple; tending Kharzug",
+    "Maela": "confirmed present at temple; free hunter, uninjured",
+    "Kharzug": "confirmed present at temple; still recuperating injured hind leg",
+    "HuyetLangNon": "confirmed at temple beside Kharzug; collar unchanged"
   }
 }
