@@ -1,7 +1,7 @@
 {
-  "snapshot_version": "HN-S159-V1",
-  "last_completed_turn": 159,
-  "next_turn": 160,
+  "snapshot_version": "HN-S160-V1",
+  "last_completed_turn": 160,
+  "next_turn": 161,
   "as_of": "2026-10-20",
   "location": "Điện Tế Huyết / căn cứ Tư Tế Xương, Hắc Nha Thành",
   "player": {
@@ -233,6 +233,28 @@
       "other_consumables_spent": 0,
       "variant_selected": false,
       "no_pact": true
+    },
+    "T160": {
+      "discussion_only": true,
+      "training_started": false,
+      "skill_unlocked": false,
+      "selected_research_direction": "TOC_MACH",
+      "minutes_elapsed_approx": 15,
+      "HP_before": 115,
+      "HP_after": 115,
+      "STA_before": 110,
+      "STA_after": 110,
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "potions_spent": 0,
+      "other_consumables_spent": 0,
+      "no_pact": true
     }
   },
   "provenance": {
@@ -302,7 +324,7 @@
     },
     "note": "Not yet learned or tested. At current BLOOD15/50, doing future proposed trial leaves BLOOD7, insufficient for actual skill cast cost12 until BLOOD is replenished.",
     "specialization_consultation_T159": {
-      "status": "PROPOSED_ONLY_NO_BRANCH_SELECTED",
+      "status": "TOC_MACH_RESEARCH_SELECTED_NO_SKILL_UNLOCK",
       "activation_timing": "instant within one normal combat turn; not an extra action",
       "shared_duration_combat_turns": 1,
       "cannot_stack_with": "Cuồng Huyết",
@@ -327,7 +349,7 @@
           "attack_speed_bonus_fraction": 0.15,
           "cooldown_turns": 3,
           "origin": "T159 provisional alternate",
-          "status": "THEORY_NOT_SELECTED"
+          "status": "SELECTED_FOR_RESEARCH_NOT_LEARNED"
         },
         {
           "id": "BAO_LUC",
@@ -341,13 +363,34 @@
           "status": "THEORY_NOT_SELECTED"
         }
       ],
-      "variant_selection": "NONE",
+      "variant_selection": "TOC_MACH_RESEARCH_ONLY_REVERSIBLE",
       "specialized_trial_costs": "UNKNOWN (original T158 8 BLOOD/10 STA/20m remains offered for initial balanced proposal only)",
       "extreme_theory": {
         "name": "Huyết Bộc Cực Hạn",
         "status": "THEORETICAL_NOT_AVAILABLE",
         "costs_and_stats": "UNKNOWN",
         "note": "Not teachable or activated at T159; requires future mastery and verification"
+      },
+      "specialized_trials": {
+        "TOC_MACH": {
+          "name": "Tam Đoạn Tốc Mạch",
+          "status": "OFFERED_NOT_STARTED",
+          "cost_if_started": {
+            "BLOOD": 9,
+            "STA": 15
+          },
+          "duration_minutes_approx": 25,
+          "location": "Điện Tế Huyết training court",
+          "stages": [
+            "Khởi Tốc: accelerate along ~5 m straight lane and stop at marker safely",
+            "Chuyển Mạch: safely redirect through 3 turning posts, regulate BLOOD and balance",
+            "Thu Kiếm: close to wooden dummy, execute single slash, recover guard and terminate surge"
+          ],
+          "adjudication": "Non-guaranteed; requires all 3 technically stable stages; failures may cause plausible strain only if evidenced, no preset extra HP tax",
+          "no_pact": true,
+          "replaces_original_balanced_trial": false,
+          "note": "The T158 8 BLOOD/10 STA/20m trial remains only for original balanced form, not for specialized Tốc Mạch"
+        }
       }
     }
   }
