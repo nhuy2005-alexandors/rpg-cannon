@@ -61,6 +61,20 @@ class GraphValidationTests(unittest.TestCase):
         with self.assertRaises(IncompleteLookup):
             diff_projection(e,[],'canonical_id',complete=False)
 
+    def test_notion_escaped_edge_id_reimport_has_no_create(self):
+        e,edges=fixtures()
+        fetched=[{"Edge ID":r["edge_id"].replace("|",r"\|")} for r in edges]
+        result=diff_projection(edges,fetched,"edge_id",complete=True)
+        self.assertEqual([],result["create"])
+        self.assertFalse(result["duplicate"])
+
+    def test_notion_entity_titlecase_id_reimport_has_no_create(self):
+        e,_=fixtures()
+        fetched=[{"Canonical ID":r["canonical_id"]} for r in e]
+        result=diff_projection(e,fetched,"canonical_id",complete=True)
+        self.assertEqual(0,len(result["create"]))
+        self.assertFalse(result["duplicate"])
+
     def test_partial_failure_no_marker_advance(self):
         from verification.graph_validation import may_advance_marker
         self.assertFalse(may_advance_marker(7,6,True))
