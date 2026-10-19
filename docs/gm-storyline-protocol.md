@@ -18,8 +18,8 @@
 - Show a small section **Hành động tiếp theo** at the end of a normal GM reply, preferably 2–4 clickable choices when the chat UI supports interaction; a short plain-text list is an acceptable fallback. Avoid decorative UI that adds latency. Option cards should contain a clear short title and a one-line grounded rationale, using DIL `pressable` or `button` with `GenUI.issueNewTurn` when appropriate.
 - Always permit a free-form player instruction. Choosing an option is a new user command, not an automatic action by GM.
 - If the world state or user intent makes suggestions irrelevant, omit choices rather than force a stale menu.
-- Last accepted state is T153: **do not suggest “Cứu Maela” as if still captive, or “Săn Huyết Lang Vương Lv6” as an uncleared boss**. They appeared in a screenshot of an old GM turn, not the current situation.
-- Safe T153 choices: ask Edran about Tam Nha, check last verified condition of Maela/Kharzug/pup, inspect Tam Trảo map/key while staying at base, or ask about the sealed stone vessel only after inventory/availability is confirmed. These are directions to choose, not guaranteed NPC presence.
+- Last accepted state is T154 (see `events/0154.md`): **do not suggest “Cứu Maela” as if still captive, or “Săn Huyết Lang Vương Lv6” as an uncleared boss**. They appeared in a screenshot of an old GM turn, not the current situation.
+- Safe T153 choices: ask Edran about Tam Nha, check last verified condition of Maela/Kharzug/pup (now confirmed physically present at the T154 council), inspect Tam Trảo map/key while staying at base, or ask about the sealed stone vessel only after inventory/availability is confirmed. These are directions to choose, not guaranteed NPC presence.
 - Display combat tactical map if combat requires it, not merely as decoration in social scenes.
 
 ## Arc lifecycle and authority
@@ -37,3 +37,7 @@
 ## Acceptance / limitations
 
 This V1 creates static seed registries and a pure Python policy library with regression test definitions. It does **not** create a connected runtime command or host hook to run these functions automatically on every incoming chat message. GM must follow the runbook and explicitly use connected GitHub/Notion tools when writing. The tests need real Python execution evidence before their passing status may be asserted.
+
+## T154 continuity delta (read from GitHub)
+
+The player already held a council at the temple with Edran, Maela and Kharzug at T154; the unnamed pup was also present. Kharzug's hind-leg injury persists. Edran explicitly said the three-claw marks and interlocking three-fang collar may relate but do not establish the same organization. No quest acceptance, permanent party recruitment, departure, item consumption or battle. Resources unchanged. These facts supersede T153 uncertainty about NPC presence at the temple **at T154**, but do not prove where NPCs will be on later turns. GitHub `events/0154.md` is the source.
