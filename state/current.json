@@ -1,5 +1,5 @@
 {
-  "snapshot_version": "HN-S194-LOOT-SKILL-V1.2-CORRECTION",
+  "snapshot_version": "HN-S194-V1.3-LEAN-RULES-NO-TURN",
   "last_completed_turn": 194,
   "next_turn": 195,
   "as_of": "2026-10-20",
@@ -181,7 +181,7 @@
       }
     },
     "skill_mastery": {
-      "policy": "canon/loot-skill-progression-v1.2.md §3",
+      "policy": "canon/progression-rules-v1.3.md §§skill/RNG; manual pure-helper call per legitimate action only",
       "accrual_start_turn": 195,
       "retroactive_awards_before_T195": 0,
       "bonus_chance_effective_use": 0.25,
@@ -198,8 +198,10 @@
           "skill_exp_current": 0,
           "next_threshold": 90,
           "mastery_receipts": [],
-          "next_level_effect_approved": false,
-          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+          "next_level_effect_approved": true,
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
+          "use_receipts": {},
+          "next_level_contract": "V1.3-PARRY-L3"
         },
         "HuyetTram": {
           "name": "Huyết Trảm",
@@ -211,7 +213,8 @@
           "mastery_receipts": [],
           "next_level_effect_approved": false,
           "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
-          "rarity_note": "Existing canon did not establish a Common or Rare classification for this ability. Track earned Skill EXP normally but do not apply class-specific promotion threshold until rarity is verified/approved."
+          "rarity_note": "Existing canon did not establish a Common or Rare classification for this ability. Track earned Skill EXP normally but do not apply class-specific promotion threshold until rarity is verified/approved.",
+          "use_receipts": {}
         },
         "ThietCotTram": {
           "name": "Thiết Cốt Trảm",
@@ -223,7 +226,8 @@
           "mastery_receipts": [],
           "next_level_effect_approved": false,
           "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
-          "rarity_note": "Existing canon did not establish a Common or Rare classification for this ability. Track earned Skill EXP normally but do not apply class-specific promotion threshold until rarity is verified/approved."
+          "rarity_note": "Existing canon did not establish a Common or Rare classification for this ability. Track earned Skill EXP normally but do not apply class-specific promotion threshold until rarity is verified/approved.",
+          "use_receipts": {}
         },
         "HuyetNguyetTram": {
           "name": "Huyết Nguyệt Trảm",
@@ -234,7 +238,8 @@
           "next_threshold": 60,
           "mastery_receipts": [],
           "next_level_effect_approved": false,
-          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
+          "use_receipts": {}
         },
         "HuyetAnhBo": {
           "name": "Huyết Ảnh Bộ",
@@ -245,7 +250,8 @@
           "next_threshold": 60,
           "mastery_receipts": [],
           "next_level_effect_approved": false,
-          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
+          "use_receipts": {}
         },
         "CuongHuyet": {
           "name": "Cuồng Huyết",
@@ -256,7 +262,8 @@
           "next_threshold": 60,
           "mastery_receipts": [],
           "next_level_effect_approved": false,
-          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
+          "use_receipts": {}
         },
         "HuyetGiap": {
           "name": "Huyết Giáp",
@@ -267,7 +274,8 @@
           "next_threshold": 60,
           "mastery_receipts": [],
           "next_level_effect_approved": false,
-          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
+          "use_receipts": {}
         },
         "HuyetTramNhiLien": {
           "name": "Huyết Trảm Nhị Liên",
@@ -277,8 +285,10 @@
           "skill_exp_current": 0,
           "next_threshold": 135,
           "mastery_receipts": [],
-          "next_level_effect_approved": false,
-          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+          "next_level_effect_approved": true,
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
+          "use_receipts": {},
+          "next_level_contract": "V1.3-TWO-SLASH-L3"
         },
         "TuHuyetHoiSinh": {
           "name": "Tử Huyết Hồi Sinh",
@@ -290,7 +300,8 @@
           "mastery_receipts": [],
           "next_level_effect_approved": false,
           "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
-          "rarity_note": "Existing canon did not establish a Common or Rare classification for this ability. Track earned Skill EXP normally but do not apply class-specific promotion threshold until rarity is verified/approved."
+          "rarity_note": "Existing canon did not establish a Common or Rare classification for this ability. Track earned Skill EXP normally but do not apply class-specific promotion threshold until rarity is verified/approved.",
+          "use_receipts": {}
         },
         "TuHuyetCamTri": {
           "name": "Tử Huyết Cảm Tri",
@@ -303,7 +314,8 @@
           "next_level_effect_approved": false,
           "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
           "rarity_note": "Existing canon did not establish a Common or Rare classification for this ability. Track earned Skill EXP normally but do not apply class-specific promotion threshold until rarity is verified/approved.",
-          "level_note": "Exact skill rank not shown in verified baseline; treat the ability as learned but rank unverified, no automatic upgrade yet."
+          "level_note": "Exact skill rank not shown in verified baseline; treat the ability as learned but rank unverified, no automatic upgrade yet.",
+          "use_receipts": {}
         },
         "HapHuyet": {
           "name": "Hấp Huyết",
@@ -314,7 +326,8 @@
           "next_threshold": 60,
           "mastery_receipts": [],
           "next_level_effect_approved": false,
-          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
+          "use_receipts": {}
         },
         "NgamBanOnDinh": {
           "name": "Ngắm Bắn Ổn Định",
@@ -325,7 +338,8 @@
           "next_threshold": 90,
           "mastery_receipts": [],
           "next_level_effect_approved": false,
-          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
+          "use_receipts": {}
         },
         "PhoiHopKiemNo": {
           "name": "Phối Hợp Kiếm–Nỏ",
@@ -336,9 +350,12 @@
           "next_threshold": 90,
           "mastery_receipts": [],
           "next_level_effect_approved": false,
-          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
+          "use_receipts": {}
         }
-      }
+      },
+      "rng_reference": "campaign_public_rng",
+      "anti_farming": "max3 equivalent meaningful uses per practice_context; new valid context requires real changed threat/pattern or certified test"
     }
   },
   "equipment": {
@@ -2188,9 +2205,9 @@
     "soul_claims_A_B_complete": true,
     "current_souls_after_rules_correction": 29
   },
-  "ruleset_version": "HN-LOOT-SKILL-V1.2",
-  "ruleset_reference": "canon/loot-skill-progression-v1.2.md",
-  "rules_change_status": "OWNER_APPROVED_BASELINE_IMPLEMENTED_RULE_TEXT_AND_T194_CORRECTION__SUPERPOWERS_AUDIT_PENDING",
+  "ruleset_version": "HN-PROGRESSION-V1.3-LEAN",
+  "ruleset_reference": "canon/progression-rules-v1.3.md",
+  "rules_change_status": "V1.3_LEAN_POLICY_WITH_PURE_HELPERS; no automatic runtime hook; M1 reward-only, hidden combat stats unverified",
   "rules_effective_from_turn": 195,
   "soul_loot": {
     "policy": "S=CEIL((2*L_reward+2)*rank_multiplier*relative_difficulty_multiplier), first verified eligible loot on corpse triggers reward once",
@@ -2252,6 +2269,90 @@
       "resources_changed": false,
       "story_turn_advanced": false,
       "source": "Audit self-review of canon rule addendum"
+    },
+    {
+      "id": "HN-V1.3-LEAN-POLICY-PRE-T195",
+      "kind": "RULE_ONLY_NON_COMBAT_CHANGE",
+      "source": "canon/progression-rules-v1.3.md",
+      "transition_from": "HN-LOOT-SKILL-V1.2",
+      "gameplay_turn_advanced": false,
+      "player_resources_delta": 0,
+      "enemy_damage_delta": 0,
+      "loot_delta": 0,
+      "skills_exp_delta": 0
     }
-  ]
+  ],
+  "campaign_public_rng": {
+    "version": "HN-RNG-V1.3",
+    "seed": "61b10a392a33acfbb077a5a746ebaee1cac42c307b7c3255ba59dab53d3181d6",
+    "method": "SHA256 domain-separated public UTF8 fixed-length fields; first 32 bits big-endian, success if draw<2**30",
+    "action_id_policy": "T###/A<sequential-ordinal> assigned prior to roll, use_id unique by skill activation; no reroll",
+    "source": "Generated with Python secrets.token_hex(32) during 2026-10-20 rules-only activation, no game draw",
+    "future_predictable": true
+  },
+  "migration_pre_T195_V13": {
+    "migration_id": "M1-BLACKCLAW-C-PRET195",
+    "time_semantics": "RULES_ONLY_SYSTEM_MIGRATION_AFTER_NARRATED_T194_BEFORE_GAMEPLAY_T195",
+    "instance_id": "enemy:blackclaw-C",
+    "reward_contract_version": "HN-M1-ENEMY-C-V1.3",
+    "calibration_basis": "Same black-claw hyena species and two already paid ordinary Lv5 reward-calibrations A/B; conservative reward-only classification, not discovered true level",
+    "reward_threat_level": 5,
+    "reward_rank": "normal",
+    "player_level_at_future_defeat_expected": 6,
+    "reward_before_future_action": "0 (C alive, no loot)",
+    "example_future_reward_if_player_still_lv6_and_first_valid_loot": 12,
+    "encounter_bonus_rate": 0,
+    "source_TH": "UNVERIFIED: no positive TH award authorized",
+    "public_precommit_hash_sha256": "78aba9f325e62df78aa662a7750609a8d16993332453c6f6f7f4d95f67388e3c",
+    "private_record_access": "Private Notion draft, read back verified; visibility permissions not externally audited",
+    "combat_ATK_DEF_abilities": "UNVERIFIED; NOT artificially predefined, do not add retroactive elite traits",
+    "status": "REWARD_ONLY_M1_LOCKED; FULL_PRIVATE_COMBAT_TEMPLATE_UNDEFINED",
+    "no_turn_advance": true
+  },
+  "skill_levelup_contracts_v13": {
+    "GatKiemCanChien": {
+      "from_level": 2,
+      "to_level": 3,
+      "rarity": "Common",
+      "threshold_skill_exp": 90,
+      "approved": true,
+      "version": "V1.3-PARRY-L3",
+      "changes": {
+        "STA_cost_per_attempt": {
+          "before": 7,
+          "after": 6
+        }
+      },
+      "unchanged": [
+        "DEFENSIVE_REACTION_ONLY",
+        "NO_FREE_COUNTER",
+        "NO_EXTRA_REACTIONS"
+      ]
+    },
+    "HuyetTramNhiLien": {
+      "from_level": 2,
+      "to_level": 3,
+      "rarity": "Rare",
+      "threshold_skill_exp": 135,
+      "approved": true,
+      "version": "V1.3-TWO-SLASH-L3",
+      "changes": {
+        "first_hit_multiplier": {
+          "before": 1.25,
+          "after": 1.3
+        },
+        "second_hit_multiplier": {
+          "before": 1,
+          "after": 1.05
+        }
+      },
+      "unchanged": [
+        "hp_cost=12",
+        "sta_cost=25",
+        "cooldown_turns=3",
+        "exactly_2_separately_resolved_hits",
+        "NO_PLUS7_BLOOD_ON_SKILL"
+      ]
+    }
+  }
 }
