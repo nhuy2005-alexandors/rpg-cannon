@@ -44,6 +44,10 @@
 - **REJECTED, do not use as canon:** Canva `DAHYi1nKV3E` (“Bản đồ Hắc Nhật”, 2 pages), screenshot supplied 2026-10-20. This auto-generated design fabricated e.g. “Thung Lũng Tro Tàn”, “Rừng Lai Khói”, “Hồ Mực”, “Bến Than Đen”. The generated mountains, rivers, coastlines and decorative geography in such designs or ImageGen artwork are **artistic, not canon**.
 - **Images vs design:** a rasterized page/image is a snapshot, not an editable Canva layer. Keep stable Canva design IDs and `atlas-v1.json` separate from exported PNG/SVG screenshots. Every illustration/export needs a source/design ID and a `grounded_through_turn` or clear “decorative/noncanon” label.
 
+## D2. Persisted map SVG snapshots
+
+Two static image snapshots of the data-backed overview maps are saved in GitHub: [World Map SVG, T204](../maps/exports/hac-nhat-world-t204.svg), [Hắc Nha Regional Map SVG, T204](../maps/exports/vung-hac-nha-t204.svg), with [source/provenance manifest](../maps/exports/README.md). **These are derived schematic vector snapshots, not full Canva page PNG exports**. They are not the active game scene and should not be overwritten on T205; create versioned exports after grounded discoveries. Earlier stylized ImageGen art with unverified terrain is not a geographic truth source.
+
 ## E. Current implementation/gates (read before claiming completion)
 
 At latest branch inspection: **19 drawable map IDs, 25 evidence coverage entries**, 17 pre-existing maps retained and two higher-level maps appended; six place/topic entries remain unlocated. `maps/render.py` has a sidebar for `unplaced_known_names`; it refuses overcrowded panels rather than silently hiding names. New hierarchy tests at `verification/test_atlas_hierarchy.py` exist. The implementation resides on `feat/full-atlas-v1-20261020` only and is **NOT MERGED** into main. Some focused map tests were exercised in an isolated local mirror and GitHub data structure was read back; that is **not** a full in-repository CI run or independent code-review acceptance. Don't upgrade gate to ACCEPT or merge until actually verified.
