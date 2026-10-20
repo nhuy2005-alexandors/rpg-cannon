@@ -19,7 +19,7 @@ Expand the existing three-map atlas to cover **every known story-relevant area a
 - **SCHEMATIC:** name/connection or broad terrain known (e.g. western road beyond west gate, Dốc Đá Xám and Suối Cạn, Hắc Nha hub and temple). Place an icon/node or diagram only, **no fabricated exact coordinates or route length**.
 - **PLACEHOLDER:** named/mentioned but layout, exact entrance, direction or access is uncertain. Render an explicit unknown/undiscovered panel; no fake room walls and no token movement into an invented area.
 - **UNVERIFIED:** rumor, witness inference or an old uncorroborated alias; record text note in source-backed registry but do not draw as factual landmark. Secret GM-only data stays outside public maps entirely.
-- Every map entry gains `evidence_level`, `evidence_sources` (canonical repo paths), and optional `known_limitations`; every drawable object keeps a stable ID, type, label and normalized coordinates. Existing entries may be annotated, not moved without source.
+- Every map entry gains `evidence_level`, `evidence_sources` (canonical repo paths), and optional `known_limitations`; every drawable object keeps a stable ID, type, label and normalized coordinates. `maps/coverage.json` lists all relevant named places with evidence grade and an optional link to a drawable `map_id`, but never holds coordinates. Existing entries may be annotated, not moved without source.
 - Recorded map paths/links are **known connectivity only** unless actual lengths, terrain and traversal were observed. If a node has no proven location, display it in an *unplaced* panel instead of assigning a coordinate.
 
 ## 3. Area coverage inventory
@@ -55,7 +55,7 @@ Unverified label “Cấm Lao/Hầm Giam” may be displayed as an alias pending
 
 ## 4. Architecture and rendering contract
 
-1. Reuse the **same `atlas-v1.json` file** and `active-scene.json`. Append map entries only for certified scene maps; add verified location nodes and unplaced names to a compact coverage index in `maps/coverage.md` (evidence receipts, not a second truth for object coordinates).
+1. Reuse the **same `atlas-v1.json` file** and `active-scene.json`. Append map entries only for certified scene maps; add verified location identities and unplaced names to a compact `maps/coverage.json` index (`schema: HN-MAP-COVERAGE-V1`; fields: `id`, `label`, `grade`, `sources`, `map_id` or null, optional `aliases`, `notes`). This index is evidence and map-resolution metadata ONLY, never a second source for coordinates.
 2. Static object renderer honors existing `room`, `cover`, `clue`, `path`, `door`, etc.; may add one optional `evidence_level` rendering treatment and a **placeholder panel** for maps with no floor geometry. No metrical scale or navigation engine.
 3. At most a readable number of numbered terrain pins per SVG panel (currently 1100×700 with sidebar labels, avoid >14 unless a single split into local scene/overview is necessary). Never clip the legend silently.
 4. The live SVG has arrows for **character facing** (solid) and **movement** (dashed), separate from background topology. No corpse facing arrows. Area switch requires legitimate narrated player motion; never change current scene at planning or atlas expansion time.
