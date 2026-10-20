@@ -2,6 +2,12 @@
 
 **LATEST VERIFIED RPG CHECKPOINT: T204; NEXT PLAYER-DIRECTED TURN T205.** The complete ten-turn T195–T204 progression and source are recorded in `events/0195.md` through `events/0204.md` and numeric authority `state/current.json`. **V1.3 LEAN remains active.** A note below under "HISTORIC QUICK START" concerns the old T194 snapshot and is not the current situation.
 
+## FULL WORLD ATLAS V1.1 — FEATURE BRANCH (NOT MERGED)
+
+Atlas coverage is expanded on `feat/full-atlas-v1-20261020`: [evidence inventory](../maps/coverage.json) (23 entries), [reusable map data](../maps/atlas-v1.json) (17 map scenes, including original 3), [renderer](../maps/render.py), [guide](../maps/README.md). Seven? No: **six** locations/topics stay unplaced as `PLACEHOLDER` or `UNVERIFIED` (Trạm Tam Trảo, Trạm Gác Số Bốn, western bandit hideout, unseen cave depths, unopened coffins, unspecified private NPC location). This is deliberate: no fabricated geometry, hidden loot or additional encounters. Canva supplementary design is separate and not a live data authority; the original 3-page editable Canva design stays intact.
+
+**Gameplay remains frozen at T204: T205 NOT PLAYED.** No new player HP, Souls, EXP, potions, item claims, bandit bounty or quest hand-in. Location/facing still northeast iron shed ENE. Normal turns update token overlay instead of rebuilding terrain; the atlas is not a reason for a network call on every turn.
+
 ## EDITABLE MAP ATLAS V1 — mandatory reuse for future maps
 
 **IMPLEMENTED renderer:** `python maps/render.py --output maps/exports/current.svg` reads the SAME atlas and active scene and produces an SVG with numbered terrain, token, facing arrow and travel arrow; `--map bai-sat-ri --base-only` renders the reusable fixed scrapyard. See [renderer](../maps/render.py), [tests](../verification/test_map_renderer.py), [map instructions](../maps/README.md). No external dependencies, no automatic Canva sync, no T205 game action.
