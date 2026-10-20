@@ -84,13 +84,29 @@ class TestSVGAtlas(unittest.TestCase):
         root = Path(__file__).resolve().parents[1] / 'maps'
         atlas = json.loads((root / 'atlas-v1.json').read_text(encoding='utf-8'))
         scene = json.loads((root / 'active-scene.json').read_text(encoding='utf-8'))
-        self.assertEqual(len(atlas['maps']), 3)
+        self.assertGreaterEqual(len(atlas['maps']), 17)
         for area in atlas['maps']:
             svg = render_map(atlas, None, area['id'])
             self.assertTrue(ET.fromstring(svg).tag.endswith('svg'))
         current = render_map(atlas, scene, scene['map_id'])
         self.assertIn('data-token-id="vo-danh"', current)
         self.assertIn(f"Cuối T{scene['last_completed_turn']}", current)
+
+    def test_dense_map_fails_readably(self):
+        a = copy.deepcopy(ATLAS)
+        a['maps'][0]['objects'] = [
+            {'id': f'pin-{i}', 'type':'point', 'label':f'Pin {i}', 'x':i+1, 'y':20}
+            for i in range(15)]
+        with self.assertRaisesRegex(ValueError, 'split'):
+            render_map(a, SCENE, 'shed')
+
+    def test_placeholder_has_no_fake_floorplan(self):
+        a = copy.deepcopy(ATLAS)
+        a['maps'][0]['objects'] = []
+        a['maps'][0]['evidence_level'] = 'PLACEHOLDER'
+        svg = render_map(a, None, 'shed')
+        self.assertIn('CHƯA CÓ BỐ CỤC ĐƯỢC XÁC MINH', svg)
+        self.assertNotIn('data-object-id=', svg)
 
     def test_duplicate_objects_fail_closed(self):
         a = copy.deepcopy(ATLAS)
