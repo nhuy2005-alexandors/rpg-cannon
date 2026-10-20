@@ -265,6 +265,34 @@
       "map_id": null,
       "aliases": [],
       "notes": []
+    },
+    {
+      "id": "hac-nhat-world",
+      "label": "Hắc Nhật — bản đồ thế giới",
+      "grade": "SCHEMATIC",
+      "sources": [
+        "canon/world/places.md"
+      ],
+      "map_id": "hac-nhat-world",
+      "aliases": [],
+      "notes": [
+        "Schematic atlas hierarchy, not surveyed coordinates"
+      ]
+    },
+    {
+      "id": "vung-hac-nha",
+      "label": "Vùng Hắc Nha — bản đồ vùng",
+      "grade": "SCHEMATIC",
+      "sources": [
+        "canon/world/places.md",
+        "events/0163.md",
+        "events/0204.md"
+      ],
+      "map_id": "vung-hac-nha",
+      "aliases": [],
+      "notes": [
+        "Schematic atlas hierarchy, not surveyed coordinates"
+      ]
     }
   ]
 }
