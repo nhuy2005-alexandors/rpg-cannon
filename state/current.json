@@ -1,9 +1,9 @@
 {
-  "snapshot_version": "HN-S182-V1",
-  "last_completed_turn": 182,
-  "next_turn": 183,
+  "snapshot_version": "HN-S184-V1",
+  "last_completed_turn": 184,
+  "next_turn": 185,
   "as_of": "2026-10-20",
-  "location": "Điện Tế Huyết / sân tập và gian nghỉ, Hắc Nha Thành",
+  "location": "Bãi Sắt Rỉ, bờ tây bãi phế thải ngoài Cổng Đông Hắc Nha Thành; đang nấp quan sát sau xe quặng lật bên gờ đất",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
@@ -1138,6 +1138,58 @@
       "parry_previous_cost_STA": 8,
       "skill_upgraded": "Gạt Kiếm Cận Chiến Common Lv2",
       "HuyetNhanHoThe_still_unverified": true
+    },
+    "T183": {
+      "action": "At city market board consults three small bounty offers only, none accepted yet",
+      "HP_before": 93,
+      "HP_after": 93,
+      "STA_before": 110,
+      "STA_after": 110,
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "training_spent_STA": 0,
+      "rest_hours": 0,
+      "combat_started": false,
+      "quests_newly_accepted": 0,
+      "travel_minutes_approx": 20,
+      "items_spent": 0
+    },
+    "T184": {
+      "action": "Accept B Linh Cẩu Móng Đen bounty at market, travel to Bãi Sắt Rỉ east, recon from western overturned wagon, no fights",
+      "HP_before": 93,
+      "HP_after": 93,
+      "STA_before": 110,
+      "STA_after": 110,
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "training_spent_STA": 0,
+      "travel_minutes_approx": 35,
+      "scout_minutes_approx": 10,
+      "rest_hours": 0,
+      "combat_started": false,
+      "enemy_sighted_count_confirmed": 2,
+      "third_enemy_confirmed": false,
+      "quest_accepted": "quest:black-claw-hyenas-east-scrapyard",
+      "quest_status": "ACTIVE",
+      "quest_proof_collected_pairs": 0,
+      "quest_reward_paid": false,
+      "bandit_quest_reward_paid": false,
+      "enemies_killed": 0,
+      "items_spent": 0,
+      "owned_ammo_spent": 0,
+      "owned_potions_spent": 0
     }
   },
   "provenance": {
@@ -1341,6 +1393,67 @@
           "Actual bandit strength, line of retreat and ambush trigger"
         ],
         "cannot_be_treated_as_recovered_history": true
+      }
+    },
+    "black_claw_hyenas_east_scrapyard": {
+      "id": "quest:black-claw-hyenas-east-scrapyard",
+      "name": "Linh Cẩu Móng Đen",
+      "status": "ACTIVE",
+      "accepted_turn": 184,
+      "issuer": "Người coi bảng ủy thác khu chợ Hắc Nha Thành (chưa biết tên)",
+      "category": "BOUNTY_MINOR_HUNT",
+      "target": "Linh Cẩu Móng Đen có răng nanh đặc trưng; số lượng thực tế chưa xác minh",
+      "estimated_targets_from_scavenger": "Khoảng 3 cá thể, nghe kể, chưa xác minh",
+      "hunting_area": "Bãi Sắt Rỉ/đống phế thải ngoài tường thành phía đông, gần Đường Vành Tro",
+      "evidence_required": "Ba cặp nanh đặc trưng còn nhận diện được, mang về bàn ủy thác để kiểm tra",
+      "evidence_collected_pairs": 0,
+      "evidence_required_pairs": 3,
+      "reward_on_verified_completion": {
+        "souls": 20,
+        "EXP": 30
+      },
+      "reward_received": false,
+      "source": "events/0184.md",
+      "progress": "Đã nhận nhiệm vụ; đã đi tới bãi phế thải và trinh sát bí mật ở rìa tây. Hai linh cẩu nhìn thấy; nguồn tiếng gầm sau lán đông bắc chưa rõ. CHƯA CHIẾN ĐẤU.",
+      "next_step": "Chờ người chơi quyết định thêm trinh sát, cách tiếp cận, công kích, đặt bẫy hoặc rút lui; không tự kích hoạt đụng độ hay nhận thưởng",
+      "reconnaissance_T184": {
+        "observation_position": "Bờ tây sau xe quặng lật nghiêng bên gờ đất thấp",
+        "enemy_A": {
+          "kind": "Linh Cẩu Móng Đen",
+          "observed": true,
+          "position": "Bên lồng sắt đổ",
+          "distance_m_approx": 16,
+          "behavior": "Gặm xương, một lần ngẩng đầu đánh hơi rồi tiếp tục"
+        },
+        "enemy_B": {
+          "kind": "Linh Cẩu Móng Đen",
+          "observed": true,
+          "position": "Cạnh hố rác/thịt thối",
+          "distance_m_approx": 24,
+          "behavior": "Đánh hơi; kích thước có vẻ nhỉnh hơn, nhưng sức mạnh/HP chưa xác minh"
+        },
+        "third": {
+          "observed": false,
+          "source": "Tiếng gầm trầm phía sau lán sắt đông bắc",
+          "count_or_identity": "UNCONFIRMED"
+        },
+        "terrain": {
+          "west": "Gờ đất thấp và xe quặng lật che tầm nhìn một phần",
+          "center": "Khoảng đất trống khoảng 9m giữa các đống phế liệu",
+          "north": "Sắt vụn lỏng/noisy/unstable footing",
+          "northeast": "Lán sắt mục che khuất tầm nhìn"
+        },
+        "detection": "NOT_CONFIRMED_DETECTED",
+        "travel_from_market_minutes_approx": 35,
+        "scout_minutes_approx": 10,
+        "blood_bearing": "Likely suitable living targets but requires successful qualifying landed ordinary sword hits; not yet tested",
+        "unresolved": [
+          "Exact total number",
+          "Third sound's source",
+          "Hyenas' full stats or alpha status",
+          "Line of escape when moving into debris",
+          "Whether enemies have noticed anything suspicious"
+        ]
       }
     }
   },
@@ -1641,5 +1754,33 @@
       "BLOOD_spent": 0,
       "skill_upgrade": "Common Parry Lv2,7STA per valid combat attempt"
     }
+  },
+  "quest_board_offers_T183": {
+    "location": "Bảng ủy thác chợ Hắc Nha Thành",
+    "alternatives_offered": [
+      {
+        "name": "Ổ Chuột Huyết",
+        "status": "OFFERED_NOT_ACCEPTED",
+        "reward": {
+          "souls": 12,
+          "EXP": 20
+        },
+        "proof": "5 đuôi",
+        "target_count": "4–6 nghe kể, chưa xác minh",
+        "area": "Kho lương bỏ hoang khu chợ cũ"
+      },
+      {
+        "name": "Hài Cốt Lang Thang",
+        "status": "OFFERED_NOT_ACCEPTED",
+        "reward": {
+          "souls": 16,
+          "EXP": 25
+        },
+        "proof": "3 lõi xương",
+        "area": "Hầm chôn cũ ngoài khu dân cư",
+        "blood_bearing": false
+      }
+    ],
+    "offer_B_accepted_turn": 184
   }
 }
