@@ -92,6 +92,14 @@ class TestSVGAtlas(unittest.TestCase):
         self.assertIn('data-token-id="vo-danh"', current)
         self.assertIn(f"Cuối T{scene['last_completed_turn']}", current)
 
+    def test_every_new_atlas_map_renders_xml(self):
+        root = Path(__file__).resolve().parents[1] / 'maps'
+        atlas = json.loads((root / 'atlas-v1.json').read_text(encoding='utf-8'))
+        for area in atlas['maps']:
+            with self.subTest(map_id=area['id']):
+                svg = render_map(atlas, None, area['id'])
+                self.assertTrue(ET.fromstring(svg).tag.endswith('svg'))
+
     def test_dense_map_fails_readably(self):
         a = copy.deepcopy(ATLAS)
         a['maps'][0]['objects'] = [
