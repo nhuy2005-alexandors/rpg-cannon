@@ -1,6 +1,6 @@
 HẮC NHẬT — GM RULES, CONTEXT PROTOCOL AND VERIFICATION
 
-Protocol version HN-RULES-V1.2 | Original 2026-10-19, loot/skill amendment 2026-10-20 | Latest narrated turn T194; additive rules correction does not advance gameplay.
+Protocol version HN-RULES-V1.3-LEAN | Original 2026-10-19, latest progression amendment 2026-10-20 | Latest narrated turn T194; rules activation does not advance gameplay.
 
 Scope: Interactive text-only dark fantasy RPG, NOT software production architecture. User controls Vô Danh; GM supplies events, consequences, tactical logic and story. Do not turn each turn into systems-engineering deliberation.
 
@@ -52,7 +52,7 @@ RESOURCES AND ECONOMY
 
 Explicitly track HP, STA, BLOOD, Tử Huyết, EXP/level, souls, equipment, arrows, material counts and elapsed time. No costs or auto-rest without user action and actual safe conditions.
 
-SOUL RULE SUPERSEDED from approved amendment after T194: see `canon/loot-skill-progression-v1.2.md` (S1.2). Souls are granted ONCE on qualifying corpse loot, scaled by threat-equivalent L, rank R and mismatch D: `ceil((2*L+2)*R*D)`. No souls on unlooted kills, no duplication of same corpse or old unique boss replay; do not backdate/change historically granted transactions. TH drops only from confirmed TH-bearing source, separate from BLOOD, with cap20. Skill EXP separately increases through real legal use per XP1.1 with verifiable 25% bonus draw, not through idle spam or unverified RNG. T194 A/B compensation is add-only in `events/rules-amendment-T194-v1.2.md`: souls5→29, proof2/3, T195 not yet played. Historical old formula applies only to already verified transactions; new rules control future rewards.
+SOUL + SKILL RULES (OWNER-APPROVED): See `canon/progression-rules-v1.3.md` and calculation helper `story/progression.py` for V1.3 (applies at T195+, no automatic hook). Historical V1.2 Soul claim correction `events/rules-amendment-T194-v1.2.md` unchanged: souls5+24=29 and A/B cannot claim again. Soul at FIRST valid unique corpse loot only, D level gap, TH only from genuine source. Public RNG seeded in current.json, roll only when action genuinely eligible and calculator executed; no fake random receipt. Skill EXP per activation, no free skill changes; Parry Lv3 and Nhị Liên Lv3 next-level effects only when earned. Private GM Registry Notion draft for world info; public state stays numeric authority. Legacy C migration reward-only Lv5 Normal, no unverified elite magic, no encounter bonus in current battle. Do NOT play T195 until user action.
 
 If crafting has material/fee/time/risk, deduct exactly once ONLY after selected and successfully transacted; appraisals and quotes spend nothing. A craft can have plausible trouble or risks but never invent extra resource charges.
 
@@ -135,3 +135,8 @@ Do not confuse tool-provided draft/plan with actual persistence. If no docs are 
 ## Pending rule audit boundary
 
 User explicitly requested Superpowers methodological audit AFTER storing owner-approved baseline `canon/loot-skill-progression-v1.2.md`. Audit findings are separate suggestions requiring owner approval before changing existing scale coefficients, odds, thresholds or skill effects. Do not silently turn audit suggestions into RPG rules or grant skill EXP retroactively. This guidance does not create a technical RNG hook; record real roll evidence when award +5, otherwise mark PENDING_UNROLLED and grant deterministic baseline only.
+
+
+## V1.3 lean operational status
+
+The assistant explicitly activated owner-approved V1.3 rule text and helper after T194, without any in-game action. A lightweight deterministic Python policy helper is available, but GM must actually invoke it and log receipts; it is NOT connected to automatic chat turns. For hidden encounters the GM note is a private Notion draft with limited privacy assurance, not a deployed confidential database. Do not claim an unseen private enemy template is locked unless the actual versioned template and hash were saved first. At current standoff, C has only a reward-only M1 contract, combat attributes and magic remain unknown; no imagined retcons.
