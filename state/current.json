@@ -1,5 +1,5 @@
 {
-  "snapshot_version": "HN-S194-V1",
+  "snapshot_version": "HN-S194-LOOT-SKILL-V1.2-CORRECTION",
   "last_completed_turn": 194,
   "next_turn": 195,
   "as_of": "2026-10-20",
@@ -34,7 +34,7 @@
         "current": 0,
         "max": 20
       },
-      "souls": 5
+      "souls": 29
     },
     "passives": {
       "HapHuyet": {
@@ -178,6 +178,161 @@
           "limits": "No guaranteed second parry, no extra reaction/action/attack, no auto parry heavy or blind-side attacks, no stun/riposte or invulnerability."
         },
         "lv1_cost_superseded_STA": 8
+      }
+    },
+    "skill_mastery": {
+      "policy": "canon/loot-skill-progression-v1.2.md §3",
+      "accrual_start_turn": 195,
+      "retroactive_awards_before_T195": 0,
+      "bonus_chance_effective_use": 0.25,
+      "bonus_exp_if_verified_roll": 5,
+      "success_exp_base": 2,
+      "failure_exp_base": 1,
+      "skill_exp_separate_from_player_exp": true,
+      "skills": {
+        "GatKiemCanChien": {
+          "name": "Gạt Kiếm Cận Chiến",
+          "rarity": "Common",
+          "level": 2,
+          "trigger": "DEFENSIVE_REACTION",
+          "skill_exp_current": 0,
+          "next_threshold": 90,
+          "mastery_receipts": [],
+          "next_level_effect_approved": false,
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+        },
+        "HuyetTram": {
+          "name": "Huyết Trảm",
+          "rarity": "Common",
+          "level": 1,
+          "trigger": "ACTIVE",
+          "skill_exp_current": 0,
+          "next_threshold": 40,
+          "mastery_receipts": [],
+          "next_level_effect_approved": false,
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+        },
+        "ThietCotTram": {
+          "name": "Thiết Cốt Trảm",
+          "rarity": "Common",
+          "level": 1,
+          "trigger": "ACTIVE",
+          "skill_exp_current": 0,
+          "next_threshold": 40,
+          "mastery_receipts": [],
+          "next_level_effect_approved": false,
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+        },
+        "HuyetNguyetTram": {
+          "name": "Huyết Nguyệt Trảm",
+          "rarity": "Rare",
+          "level": 1,
+          "trigger": "ACTIVE",
+          "skill_exp_current": 0,
+          "next_threshold": 60,
+          "mastery_receipts": [],
+          "next_level_effect_approved": false,
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+        },
+        "HuyetAnhBo": {
+          "name": "Huyết Ảnh Bộ",
+          "rarity": "Rare",
+          "level": 1,
+          "trigger": "ACTIVE",
+          "skill_exp_current": 0,
+          "next_threshold": 60,
+          "mastery_receipts": [],
+          "next_level_effect_approved": false,
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+        },
+        "CuongHuyet": {
+          "name": "Cuồng Huyết",
+          "rarity": "Rare",
+          "level": 1,
+          "trigger": "ACTIVE",
+          "skill_exp_current": 0,
+          "next_threshold": 60,
+          "mastery_receipts": [],
+          "next_level_effect_approved": false,
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+        },
+        "HuyetGiap": {
+          "name": "Huyết Giáp",
+          "rarity": "Rare",
+          "level": 1,
+          "trigger": "ACTIVE",
+          "skill_exp_current": 0,
+          "next_threshold": 60,
+          "mastery_receipts": [],
+          "next_level_effect_approved": false,
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+        },
+        "HuyetTramNhiLien": {
+          "name": "Huyết Trảm Nhị Liên",
+          "rarity": "Rare",
+          "level": 2,
+          "trigger": "ACTIVE",
+          "skill_exp_current": 0,
+          "next_threshold": 135,
+          "mastery_receipts": [],
+          "next_level_effect_approved": false,
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+        },
+        "TuHuyetHoiSinh": {
+          "name": "Tử Huyết Hồi Sinh",
+          "rarity": "Rare",
+          "level": 1,
+          "trigger": "ACTIVE",
+          "skill_exp_current": 0,
+          "next_threshold": 60,
+          "mastery_receipts": [],
+          "next_level_effect_approved": false,
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+        },
+        "TuHuyetCamTri": {
+          "name": "Tử Huyết Cảm Tri",
+          "rarity": "Rare",
+          "level": 1,
+          "trigger": "ACTIVE",
+          "skill_exp_current": 0,
+          "next_threshold": 60,
+          "mastery_receipts": [],
+          "next_level_effect_approved": false,
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+        },
+        "HapHuyet": {
+          "name": "Hấp Huyết",
+          "rarity": "Rare",
+          "level": 1,
+          "trigger": "PASSIVE_QUALIFYING_TRIGGER",
+          "skill_exp_current": 0,
+          "next_threshold": 60,
+          "mastery_receipts": [],
+          "next_level_effect_approved": false,
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+        },
+        "NgamBanOnDinh": {
+          "name": "Ngắm Bắn Ổn Định",
+          "rarity": "Common",
+          "level": 2,
+          "trigger": "PASSIVE_QUALIFYING_TRIGGER",
+          "skill_exp_current": 0,
+          "next_threshold": 90,
+          "mastery_receipts": [],
+          "next_level_effect_approved": false,
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+        },
+        "PhoiHopKiemNo": {
+          "name": "Phối Hợp Kiếm–Nỏ",
+          "rarity": "Common",
+          "level": 2,
+          "trigger": "PASSIVE_QUALIFYING_TRIGGER",
+          "skill_exp_current": 0,
+          "next_threshold": 90,
+          "mastery_receipts": [],
+          "next_level_effect_approved": false,
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+        }
       }
     }
   },
@@ -2024,6 +2179,60 @@
     "proof_pairs_owned": 2,
     "elapsed_T194_minutes_approx": 8,
     "gold_souls_paid": false,
-    "next_turn": 195
-  }
+    "next_turn": 195,
+    "soul_claims_A_B_complete": true,
+    "current_souls_after_rules_correction": 29
+  },
+  "ruleset_version": "HN-LOOT-SKILL-V1.2",
+  "ruleset_reference": "canon/loot-skill-progression-v1.2.md",
+  "rules_change_status": "OWNER_APPROVED_BASELINE_IMPLEMENTED_RULE_TEXT_AND_T194_CORRECTION__SUPERPOWERS_AUDIT_PENDING",
+  "rules_effective_from_turn": 195,
+  "soul_loot": {
+    "policy": "S=CEIL((2*L_reward+2)*rank_multiplier*relative_difficulty_multiplier), first verified eligible loot on corpse triggers reward once",
+    "first_loot_claims": {
+      "enemy:blackclaw-A": {
+        "claim_id": "claim:T194:hyena-A:soul-v1.2",
+        "source": "events/rules-amendment-T194-v1.2.md",
+        "loot_turn": 194,
+        "souls": 12,
+        "L_reward": 5,
+        "rank_multiplier": 1,
+        "D": 1,
+        "claimed": true
+      },
+      "enemy:blackclaw-B": {
+        "claim_id": "claim:T194:hyena-B:soul-v1.2",
+        "source": "events/rules-amendment-T194-v1.2.md",
+        "loot_turn": 194,
+        "souls": 12,
+        "L_reward": 5,
+        "rank_multiplier": 1,
+        "D": 1,
+        "claimed": true
+      }
+    },
+    "C_status": "ALIVE_NO_SOULS_EARNED_UNTIL_FIRST_VERIFIED_LOOT",
+    "TH_from_A_B": 0,
+    "actual_biological_enemy_level": "UNREVEALED; L_reward=5 is reward-calibration only"
+  },
+  "rules_corrections": [
+    {
+      "id": "C194-SOUL-V1.2",
+      "source": "events/rules-amendment-T194-v1.2.md",
+      "kind": "APPEND_ONLY",
+      "applies_to_played_turn": 194,
+      "recorded_after_turn": 194,
+      "souls_before": 5,
+      "souls_delta": 24,
+      "souls_after": 29,
+      "claimed_corpses": [
+        "enemy:blackclaw-A",
+        "enemy:blackclaw-B"
+      ],
+      "TH_delta": 0,
+      "character_EXP_delta": 0,
+      "skill_EXP_backfill": 0,
+      "no_turn_advance": true
+    }
+  ]
 }
