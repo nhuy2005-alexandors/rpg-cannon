@@ -28,6 +28,26 @@ class TestAtlasCoverage(unittest.TestCase):
             self.assertNotIn("y", item)
             # During Task 1, future map IDs are forward references resolved by Tasks 2/3.
 
+    def test_city_and_western_road_maps(self):
+        ids = {"hac-nha-thanh-hub", "dien-te-huyet", "lo-ren-hac-nha",
+               "garrick-bang-nhiem-vu", "duong-gac-tay",
+               "duong-tay-van-tai", "doc-da-xam", "suoi-can"}
+        self.assertTrue(ids.issubset(self.maps))
+        for key in ids:
+            self.assertEqual(self.maps[key]["evidence_level"], "SCHEMATIC")
+            self.assertTrue(self.maps[key]["evidence_sources"])
+        self.assertFalse(any("bandit hideout" in str(obj).lower()
+                             for key in ids for obj in self.maps[key]["objects"]))
+
+    def test_old_static_map_unchanged(self):
+        before = {"hac-nha-east-approach": {"hac-nha-thanh": (18,45), "east-shed": (87,23)},
+                  "bai-sat-ri": {"western-ore-wagon": (19,52), "northeast-ruined-shed": (81,23)},
+                  "nha-sat-dong-bac": {"northwest-ring": (24,24), "moved-board": (70,51)}}
+        for key, objects in before.items():
+            by = {o["id"]: o for o in self.maps[key]["objects"]}
+            for oid, pos in objects.items():
+                self.assertEqual((by[oid]["x"], by[oid]["y"]), pos)
+
     def test_tram_gac_unknown_and_distinct(self):
         self.assertIsNone(self.areas["tram-gac-so-bon"]["map_id"])
         self.assertNotEqual(self.areas["tram-gac-so-bon"]["id"], self.areas["tram-tam-trao"]["id"])
