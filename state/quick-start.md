@@ -2,6 +2,10 @@
 
 **LATEST VERIFIED RPG CHECKPOINT: T204; NEXT PLAYER-DIRECTED TURN T205.** The complete ten-turn T195–T204 progression and source are recorded in `events/0195.md` through `events/0204.md` and numeric authority `state/current.json`. **V1.3 LEAN remains active.** A note below under "HISTORIC QUICK START" concerns the old T194 snapshot and is not the current situation.
 
+## EDITABLE MAP ATLAS V1 — mandatory reuse for future maps
+
+[Canva map atlas — 3 editable pages](https://www.canva.com/d/afa4HjByuyD2Dt6) / [GitHub canonical terrain](../maps/atlas-v1.json) / [T204 dynamic scene & facing](../maps/active-scene.json) / [map workflow](../maps/README.md). From T205 onward, **reuse fixed area terrain and change only player/enemy tokens, facing arrow and movement path**, or confirmed altered terrain objects. Do not regenerate or invent map geography each turn. Canva AI design is a *visual presentation*, not new canon. Notion stores lookup links. No automatic Canva↔GitHub synchronization. The next player action is still T205, no turn advanced by this map setup.
+
 ## CURRENT SCENE — T204 (use for all new gameplay)
 
 Vô Danh Huyết Kiếm Sĩ Lv6, EXP **215/400**, HP **68/170**, STA **28/110**, BLOOD **28/50**, Tử Huyết **0/20**, Souls **41**. **Three intact matching black-claw hyena fang pairs 3/3** physically held but bounty is STILL ACTIVE and **UNPAID**: must deliver to market clerk for validation to collect later **20 Souls +30 EXP**. Potions2 (+30HP each only), steel bolts3 total, Nanh Cốt Tiễn1, Liên Nỏ Hắc Nha UNLOADED/STOWED, Huyết Nha+3 EQUIPPED/READY, heavy sword on back. No free passive rest/recovery or surprise XP/loot. Soul claims A/B T194 12+12, C **T200 first corpse claim 12**, total earned from hyenas36; base5 =>41, and no other soul transaction. C dead T199, body harvested fang pair T200; all three hyenas dead, no verified other hostiles in explored area.
