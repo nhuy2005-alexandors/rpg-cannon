@@ -1,7 +1,7 @@
 {
-  "snapshot_version": "HN-S176-V1",
-  "last_completed_turn": 176,
-  "next_turn": 177,
+  "snapshot_version": "HN-S182-V1",
+  "last_completed_turn": 182,
+  "next_turn": 183,
   "as_of": "2026-10-20",
   "location": "Điện Tế Huyết / sân tập và gian nghỉ, Hắc Nha Thành",
   "player": {
@@ -129,14 +129,14 @@
         "name": "Gạt Kiếm Cận Chiến",
         "english_alias": "Parry",
         "rarity": "Common",
-        "level": 1,
+        "level": 2,
         "earned_turn": 176,
         "category": "DEFENSIVE_MELEE_REACTION",
-        "STA_cost_per_attempt": 8,
+        "STA_cost_per_attempt": 7,
         "BLOOD_cost": 0,
         "HP_cost": 0,
         "eligible": "Wielded and ready sword, incoming perceivable physical melee attack within deflectable contact distance; angle, timing, space and reaction availability must permit attempt",
-        "resolution": "Physical/mechanical defense check vs real attacker; can deflect fully or reduce impact if successful, or fail and incoming attack proceeds. No automatic guaranteed defense.",
+        "resolution": "Must resolve incoming perceivable physical melee strike with feasible position, angle, sword contact and existing combat reaction economy; adjudicate success/partial deflection/failure vs opponent and force. Spend 7STA for legal attempted reaction even if it fails.",
         "action_economy": "Subject to existing combat turn and reaction limits. Does not generate free attacks/ripostes/extra actions or allow arbitrarily many reactions just because STA remains.",
         "exclusions": [
           "blind-side/unperceived strike",
@@ -146,24 +146,38 @@
           "out-of-range strike"
         ],
         "trial_evidence": {
-          "source": "events/0176.md",
-          "basic": {
+          "source": "events/0182.md",
+          "exam": "Phản Kiếm Vô Kẽ",
+          "stageI": {
+            "name": "Hư Thực Kiếm",
             "passed": 7,
             "total": 8,
             "threshold": 7
           },
-          "rapid": {
+          "stageII": {
+            "name": "Phản Thủ Liên Hoàn",
             "passed": 6,
             "total": 8,
             "threshold": 6
           },
-          "close": {
+          "stageIII": {
+            "name": "Kiếm Thế Sinh Tồn",
             "passed": 5,
             "total": 6,
             "threshold": 5
-          }
+          },
+          "verified_by": "Edran",
+          "tutored_by": "Edran & Vaelthar",
+          "status": "ALL_THREE_PASSED_T182"
         },
-        "unverified_upgrade": "Huyết Nhận Hộ Thế hypothetical BLOOD-enhanced blade defense: NOT learned, NOT active and costs unspecified"
+        "unverified_upgrade": "Huyết Nhận Hộ Thế hypothetical BLOOD-enhanced blade defense: NOT learned, NOT active and costs unspecified",
+        "last_upgraded_turn": 182,
+        "refined_recovery": {
+          "name": "Hồi Thế Tinh Luyện",
+          "effect": "Greater controlled post-deflection guard position and reduced excessive blade movement, improving feasibility of later legal defense only if positioning, available reaction, time, and attacker force allow it.",
+          "limits": "No guaranteed second parry, no extra reaction/action/attack, no auto parry heavy or blind-side attacks, no stun/riposte or invulnerability."
+        },
+        "lv1_cost_superseded_STA": 8
       }
     }
   },
@@ -898,6 +912,232 @@
       "rest_hours": 4,
       "quest_reward_paid": false,
       "TocMach_trial_started": false
+    },
+    "T177": {
+      "HP_before": 93,
+      "HP_after": 93,
+      "STA_before": 110,
+      "STA_after": 110,
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "items_spent": 0,
+      "owned_ammo_spent": 0,
+      "real_combat_started": false,
+      "quest_reward_paid": false,
+      "action": "Edran high-pressure Parry Lv1 review, 6/8 fast,5/8 feints,4/6 heavy",
+      "STA_practice_spent": 60,
+      "STA_rest_recovered": 60,
+      "STA_sequence": [
+        110,
+        100,
+        85,
+        70,
+        90,
+        70,
+        90,
+        110
+      ],
+      "rest_hours": 3,
+      "skills_upgraded": 0
+    },
+    "T178": {
+      "HP_before": 93,
+      "HP_after": 93,
+      "STA_before": 110,
+      "STA_after": 110,
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "items_spent": 0,
+      "owned_ammo_spent": 0,
+      "real_combat_started": false,
+      "quest_reward_paid": false,
+      "action": "Edran/Vaelthar research Phản Kiếm Vô Kẽ Lv2 trial, NO PRACTICE",
+      "minutes_discussion_approx": 25,
+      "STA_practice_spent": 0,
+      "STA_rest_recovered": 0,
+      "thresholds": "7/8,6/8,5/6",
+      "proposal_total_STA": 65,
+      "skills_upgraded": 0
+    },
+    "T179": {
+      "HP_before": 93,
+      "HP_after": 93,
+      "STA_before": 110,
+      "STA_after": 110,
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "items_spent": 0,
+      "owned_ammo_spent": 0,
+      "real_combat_started": false,
+      "quest_reward_paid": false,
+      "action": "First Lv2 conditional parry exam, Feints7/8 PASS, Followups5/8 FAIL, Survival NOT ATTEMPTED",
+      "STA_practice_spent": 50,
+      "STA_rest_recovered": 50,
+      "STA_sequence": [
+        110,
+        100,
+        80,
+        100,
+        80,
+        100,
+        110
+      ],
+      "rest_hours": 3,
+      "stageI_result": "7/8 PASS",
+      "stageII_result": "5/8 FAIL",
+      "stageIII_result": "NOT_ATTEMPTED",
+      "skills_upgraded": 0
+    },
+    "T180": {
+      "HP_before": 93,
+      "HP_after": 93,
+      "STA_before": 110,
+      "STA_after": 110,
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "items_spent": 0,
+      "owned_ammo_spent": 0,
+      "real_combat_started": false,
+      "quest_reward_paid": false,
+      "action": "Edran remedial compact parry 5/6, guard return 6/8, exit angle4/6, NO rank",
+      "STA_practice_spent": 55,
+      "STA_rest_recovered": 55,
+      "STA_sequence": [
+        110,
+        100,
+        85,
+        70,
+        90,
+        75,
+        95,
+        110
+      ],
+      "rest_hours": 3,
+      "remediation": {
+        "compact": "5/6",
+        "guard": "6/8",
+        "escape": "4/6"
+      },
+      "skills_upgraded": 0
+    },
+    "T181": {
+      "HP_before": 93,
+      "HP_after": 93,
+      "STA_before": 110,
+      "STA_after": 110,
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "items_spent": 0,
+      "owned_ammo_spent": 0,
+      "real_combat_started": false,
+      "quest_reward_paid": false,
+      "action": "Edran footwork correction danger area6/8, chain escapes5/6, consolidation, NO rank",
+      "STA_practice_spent": 60,
+      "STA_rest_recovered": 60,
+      "STA_sequence": [
+        110,
+        100,
+        80,
+        100,
+        80,
+        70,
+        90,
+        110
+      ],
+      "rest_hours": 3,
+      "remediation": {
+        "danger": "6/8",
+        "chains": "5/6"
+      },
+      "skills_upgraded": 0
+    },
+    "T182": {
+      "HP_before": 93,
+      "HP_after": 93,
+      "STA_before": 110,
+      "STA_after": 110,
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "items_spent": 0,
+      "owned_ammo_spent": 0,
+      "real_combat_started": false,
+      "quest_reward_paid": false,
+      "action": "Second full Phản Kiếm Vô Kẽ exam all stages PASSED:7/8 feints,6/8 followup,5/6 survival; earned Parry Lv2",
+      "STA_practice_spent": 65,
+      "STA_rest_recovered": 65,
+      "STA_sequence": [
+        110,
+        100,
+        80,
+        100,
+        80,
+        100,
+        85,
+        105,
+        110
+      ],
+      "rest_hours": 4,
+      "phase_costs_STA": {
+        "warmup": 10,
+        "feints": 20,
+        "followup_guard": 20,
+        "mixed_survival": 15
+      },
+      "stageI": {
+        "success": 7,
+        "total": 8,
+        "required": 7
+      },
+      "stageII": {
+        "success": 6,
+        "total": 8,
+        "required": 6
+      },
+      "stageIII": {
+        "success": 5,
+        "total": 6,
+        "required": 5
+      },
+      "parry_lv2_cost_per_attempt_STA": 7,
+      "parry_previous_cost_STA": 8,
+      "skill_upgraded": "Gạt Kiếm Cận Chiến Common Lv2",
+      "HuyetNhanHoThe_still_unverified": true
     }
   },
   "provenance": {
@@ -1236,7 +1476,13 @@
     "site": "Điện Tế Huyết",
     "source": [
       "events/0175.md",
-      "events/0176.md"
+      "events/0176.md",
+      "events/0177.md",
+      "events/0178.md",
+      "events/0179.md",
+      "events/0180.md",
+      "events/0181.md",
+      "events/0182.md"
     ],
     "T175": {
       "status": "FAILED_NOT_LEARNED",
@@ -1287,6 +1533,113 @@
       "status": "UNVERIFIED_HYPOTHESIS_NOT_LEARNED",
       "meaning": "No evidence that paying BLOOD can reinforce Huyết Nha or improve parry; no cast cost finalized",
       "resources_spent": 0
+    },
+    "lv2_proposal_T178": {
+      "name": "Phản Kiếm Vô Kẽ",
+      "stage_costs_STA": {
+        "warmup": 10,
+        "feints": 20,
+        "followup_guard": 20,
+        "mixed_survival": 15
+      },
+      "thresholds": {
+        "feints": "7/8",
+        "followup_guard": "6/8",
+        "mixed_survival": "5/6"
+      },
+      "candidate_effects": {
+        "STA_cost_per_attempt": 7,
+        "improved_guard_recovery": true,
+        "no_free_reaction": true
+      },
+      "status": "PASSED_T182"
+    },
+    "T177": {
+      "status": "ADVANCED_REVIEW_NO_UPGRADE",
+      "fast_sword": {
+        "success": 6,
+        "total": 8
+      },
+      "feints": {
+        "success": 5,
+        "total": 8
+      },
+      "varied_force": {
+        "successful_parries": 4,
+        "total": 6
+      },
+      "STA_spent": 60,
+      "STA_recovered": 60
+    },
+    "T179": {
+      "status": "FAILED_AT_STAGE2_NO_UPGRADE",
+      "feints": {
+        "success": 7,
+        "total": 8,
+        "threshold": 7
+      },
+      "followup": {
+        "success": 5,
+        "total": 8,
+        "threshold": 6
+      },
+      "mixed_survival": "NOT_ATTEMPTED",
+      "STA_spent": 50,
+      "STA_recovered": 50
+    },
+    "T180": {
+      "status": "REMEDIATION_NOT_CERTIFICATION",
+      "compact_parry": {
+        "success": 5,
+        "total": 6
+      },
+      "guard_recovery": {
+        "success": 6,
+        "total": 8
+      },
+      "escape_angle": {
+        "success": 4,
+        "total": 6
+      },
+      "STA_spent": 55,
+      "STA_recovered": 55
+    },
+    "T181": {
+      "status": "REMEDIATION_NOT_CERTIFICATION",
+      "danger_zone": {
+        "success": 6,
+        "total": 8
+      },
+      "followup_escape": {
+        "success": 5,
+        "total": 6
+      },
+      "STA_spent": 60,
+      "STA_recovered": 60
+    },
+    "T182": {
+      "status": "PASSED_LV2_LEARNED",
+      "feints": {
+        "success": 7,
+        "total": 8,
+        "threshold": 7
+      },
+      "followup": {
+        "success": 6,
+        "total": 8,
+        "threshold": 6
+      },
+      "mixed_survival": {
+        "success": 5,
+        "total": 6,
+        "threshold": 5
+      },
+      "STA_spent": 65,
+      "STA_recovered": 65,
+      "rest_hours": 4,
+      "HP_spent": 0,
+      "BLOOD_spent": 0,
+      "skill_upgrade": "Common Parry Lv2,7STA per valid combat attempt"
     }
   }
 }
