@@ -1,9 +1,9 @@
 {
-  "snapshot_version": "HN-S165-V1",
-  "last_completed_turn": 165,
-  "next_turn": 166,
+  "snapshot_version": "HN-S167-V1",
+  "last_completed_turn": 167,
+  "next_turn": 168,
   "as_of": "2026-10-20",
-  "location": "Điện Tế Huyết / sân tập và gian nghỉ của Edran, Hắc Nha Thành",
+  "location": "Điện Tế Huyết / sân tập và gian nghỉ, Hắc Nha Thành",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
@@ -81,6 +81,26 @@
         ],
         "not_bonus": "Not a flat accuracy bonus, auto hit, extra attack or extra action",
         "verified_training": "T164 foundation 2/3; T165 first failed 2/5 bow and 3/5 crossbow then corrected and passed 4/5 EACH at ~12m after short repositioning"
+      },
+      "PhoiHopKiemNo": {
+        "name": "Phối Hợp Kiếm–Nỏ",
+        "level": 1,
+        "rarity": "Common",
+        "unlocked_turn": 167,
+        "modifier_kind": "weapon_switch_specific_aim_hit_penalty_reduction",
+        "penalty_reduction_percentage_points": 5,
+        "valid_transition": "Legally completed sword sheathing -> Liên Nỏ Hắc Nha switching and properly loaded/ready for normally timed aimed shot",
+        "effect": "Reduce only the hit penalty due to legal sword-to-crossbow weapon switching, up to 5 percentage points, never below zero; apply on immediately following valid aimed shot.",
+        "does_not_apply": [
+          "No switching-induced penalty",
+          "Incomplete weapon switch",
+          "Crossbow unready/unloaded",
+          "Free attack or shot out of turn",
+          "Damage bonus or reload speed bonus",
+          "Guarantee hit"
+        ],
+        "stacking_guard": "Ngắm Bắn Ổn Định may separately reduce up to 10 percentage points of actual movement-induced hit penalty only after <=3m move+full stop. Do not subtract both from same source penalty.",
+        "verified_training": "Maela certified 4/5 valid multibeat sequences at T167, after 3/5 not passing in T166; maintained cooldown and reload discipline."
       }
     }
   },
@@ -426,6 +446,83 @@
       "training_arrows_returned": true,
       "quest_reward_paid": false,
       "TocMach_training_started": false
+    },
+    "T166": {
+      "action": "Maela combined Huyết Nha / Huyết Ảnh Bộ / Liên Nỏ drills and rests",
+      "HP_before": 115,
+      "HP_after": 115,
+      "STA_before": 110,
+      "STA_after": 110,
+      "STA_practice_spent": 65,
+      "STA_rest_recovered": 65,
+      "STA_sequence": [
+        110,
+        100,
+        85,
+        80,
+        100,
+        90,
+        75,
+        65,
+        85,
+        105,
+        110
+      ],
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "test_valid_sequences": 3,
+      "test_total_sequences": 5,
+      "skill_unlocked": false,
+      "owned_ammo_spent": 0,
+      "consumables_spent": 0,
+      "HuyetAnhBo_uses": 2,
+      "bandit_quest_still_active": true
+    },
+    "T167": {
+      "action": "Maela reassessment of five sword–crossbow combined sequences, 4/5 valid, learned Common passive",
+      "HP_before": 115,
+      "HP_after": 115,
+      "STA_before": 110,
+      "STA_after": 110,
+      "STA_practice_spent": 80,
+      "STA_rest_recovered": 80,
+      "STA_sequence": [
+        110,
+        100,
+        85,
+        75,
+        95,
+        65,
+        50,
+        70,
+        90,
+        110
+      ],
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "HuyetAnhBo_uses": 3,
+      "passes": 4,
+      "total_sequences": 5,
+      "skill_unlocked": "Phối Hợp Kiếm–Nỏ Lv.1 Common",
+      "required_successes": 4,
+      "practice_shots_only": true,
+      "owned_ammo_spent": 0,
+      "consumables_spent": 0,
+      "rest_hours": 4,
+      "quest_reward_paid": false,
+      "TocMach_training_started": false
     }
   },
   "provenance": {
@@ -642,5 +739,26 @@
     "progress_completed": 3,
     "training_ammunition": "Maela-owned recovered practice arrows and bolts, not player inventory",
     "npc_relation": "Voluntary temporary instructor; no permanent team pact"
+  },
+  "sword_crossbow_coordination_training": {
+    "skill": "Phối Hợp Kiếm–Nỏ",
+    "mentor": "Maela",
+    "introduced_turn": 166,
+    "completed_turn": 167,
+    "status": "COMPLETED_LEARNED",
+    "T166_test": {
+      "complete": 3,
+      "total": 5,
+      "passed": false
+    },
+    "T167_test": {
+      "complete": 4,
+      "total": 5,
+      "passed": true,
+      "failed_sequence": "Premature trigger before crossbow reload complete; no projectile fired"
+    },
+    "owner_bolts_used": 0,
+    "practice_ammunition": "Maela-owned, returned",
+    "note": "Combat technique training, no extra turn/action/weapon switch bypass"
   }
 }
