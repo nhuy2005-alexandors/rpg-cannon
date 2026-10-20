@@ -1,14 +1,14 @@
 {
-  "snapshot_version": "HN-S184-V1",
-  "last_completed_turn": 184,
-  "next_turn": 185,
+  "snapshot_version": "HN-S194-V1",
+  "last_completed_turn": 194,
+  "next_turn": 195,
   "as_of": "2026-10-20",
-  "location": "Bãi Sắt Rỉ, bờ tây bãi phế thải ngoài Cổng Đông Hắc Nha Thành; đang nấp quan sát sau xe quặng lật bên gờ đất",
+  "location": "Bãi Sắt Rỉ, phía tây-trung tâm gần xác Linh Cẩu B; xe quặng đổ ở tây; Linh Cẩu C lộ diện phía tây lán sắt đông bắc cách ~12m",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
     "level": 6,
-    "exp": 185,
+    "exp": 205,
     "exp_next": 400,
     "unallocated_points": 0,
     "attributes": {
@@ -19,15 +19,15 @@
     },
     "resources": {
       "HP": {
-        "current": 93,
+        "current": 90,
         "max": 170
       },
       "STA": {
-        "current": 110,
+        "current": 53,
         "max": 110
       },
       "BLOOD": {
-        "current": 15,
+        "current": 21,
         "max": 50
       },
       "TuHuyet": {
@@ -193,8 +193,9 @@
     "HuyetDuocQuanDung": 2,
     "heal_HP_each": 30,
     "TinhLucDuoc": 0,
-    "steel_bolts": 5,
-    "NanhCotTien": 1
+    "steel_bolts": 4,
+    "NanhCotTien": 1,
+    "black_claw_hyena_fang_pairs": 2
   },
   "base_storage": {
     "NanhLangVuong": 2,
@@ -1190,6 +1191,172 @@
       "items_spent": 0,
       "owned_ammo_spent": 0,
       "owned_potions_spent": 0
+    },
+    "T185": {
+      "action": "Only plans three noise-luring options, no physical lure, ~5min observation",
+      "resources_unchanged": true,
+      "HP_after": 93,
+      "STA_after": 110,
+      "BLOOD_after": 15,
+      "EXP_after": 185,
+      "souls_after": 5,
+      "quest_proof_pairs": 0,
+      "combat": false
+    },
+    "T186": {
+      "action": "Found one pebble, tossed to stone southwest of A, A walks ~2m, B stays alert, unknown NE sound",
+      "HP_after": 93,
+      "STA_after": 110,
+      "BLOOD_after": 15,
+      "EXP_after": 185,
+      "souls_after": 5,
+      "owned_items_spent": 0,
+      "quest_proof_pairs": 0,
+      "combat": false
+    },
+    "T187": {
+      "action": "Legal loaded crossbow attack from west wagon HIT hyena A, assigned18 damage T188 receipt retroactively; A90->72",
+      "HP_after": 93,
+      "STA_after": 110,
+      "BLOOD_after": 15,
+      "EXP_after": 185,
+      "souls_after": 5,
+      "steel_bolts_before": 5,
+      "steel_bolts_after": 4,
+      "LiênNo_after": "UNLOADED",
+      "hyena_A_HP_after": 72,
+      "hyena_B_HP_after": 90,
+      "combat_started": true
+    },
+    "T188": {
+      "action": "Switch safely to Huyết Nha+3 and land ordinary ambush slash on A, damage26, qualifying BLOOD+7 HP+2",
+      "HP_before": 93,
+      "HP_after": 95,
+      "STA_after": 110,
+      "BLOOD_before": 15,
+      "BLOOD_after": 22,
+      "EXP_after": 185,
+      "hyena_A_HP_before": 72,
+      "hyena_A_HP_after": 46,
+      "hyena_B_HP_after": 90,
+      "skill_casts": 0,
+      "enemy_kills": 0
+    },
+    "T189": {
+      "action": "Parry Common Lv2 reaction successfully deflects A low bite (no damage), B advances ~12m->7m",
+      "HP_before": 95,
+      "HP_after": 95,
+      "STA_before": 110,
+      "STA_after": 103,
+      "BLOOD_after": 22,
+      "EXP_after": 185,
+      "hyena_A_HP_after": 46,
+      "hyena_B_HP_after": 90,
+      "Parry_attempts": 1,
+      "STA_Parry_spent": 7,
+      "followup_normal_sword_attacks": 0
+    },
+    "T190": {
+      "action": "ONE normal Huyết Nha sword attack hits A for28, A46->18, +7BLOOD and +2HP, B approaches ~3m",
+      "HP_before": 95,
+      "HP_after": 97,
+      "STA_before": 103,
+      "STA_after": 103,
+      "BLOOD_before": 22,
+      "BLOOD_after": 29,
+      "EXP_after": 185,
+      "hyena_A_HP_before": 46,
+      "hyena_A_HP_after": 18,
+      "hyena_B_HP_after": 90,
+      "enemy_kills": 0
+    },
+    "T191": {
+      "action": "Huyết Ảnh Bộ diagonal ~3m (-15STA) and one normal sword slash with +10% kills A with actual18HP removed",
+      "HP_before": 97,
+      "HP_after": 98,
+      "STA_before": 103,
+      "STA_after": 88,
+      "BLOOD_before": 29,
+      "BLOOD_after": 36,
+      "EXP_before": 185,
+      "EXP_after": 195,
+      "hyena_A_HP_before": 18,
+      "hyena_A_HP_after": 0,
+      "hyena_B_HP_after": 90,
+      "XP_for_kill": 10,
+      "weapon_BLOOD_gained": 7,
+      "life_steal_HP_gained": 1
+    },
+    "T192": {
+      "action": "Huyết Nguyệt Trảm projected blood arc at B in ~4m, damage39, B90->51, no sword-hit BLOOD or HP regen",
+      "HP_after": 98,
+      "STA_before": 88,
+      "STA_after": 78,
+      "BLOOD_before": 36,
+      "BLOOD_after": 21,
+      "EXP_after": 195,
+      "hyena_B_HP_before": 90,
+      "hyena_B_HP_after": 51,
+      "skill_cost": {
+        "BLOOD": 15,
+        "STA": 10
+      },
+      "skill_CD_combat_turns": 2
+    },
+    "T193": {
+      "action": "Huyết Trảm Nhị Liên Rare Lv2 hits B twice, 37+actual14HP (computed 29 second), kills, lifesteal3+1HP, no BLOOD bonus",
+      "HP_before": 98,
+      "HP_after": 90,
+      "HP_skill_paid": 12,
+      "HP_lifesteal_gained": 4,
+      "STA_before": 78,
+      "STA_after": 53,
+      "BLOOD_before": 21,
+      "BLOOD_after": 21,
+      "EXP_before": 195,
+      "EXP_after": 205,
+      "XP_for_kill": 10,
+      "hyena_B_HP_before": 51,
+      "hyena_B_HP_after": 0,
+      "attack_1_actual_damage": 37,
+      "attack_2_calculated_damage": 29,
+      "attack_2_actual_damage": 14,
+      "skill_cost": {
+        "HP": 12,
+        "STA": 25
+      },
+      "skill_CD_combat_turns": 3
+    },
+    "T194": {
+      "action": "Harvest intact fang pairs from two dead hyenas while monitoring shed; C third black-claw hyena emerges and detects player",
+      "HP_before": 90,
+      "HP_after": 90,
+      "STA_before": 53,
+      "STA_after": 53,
+      "BLOOD_before": 21,
+      "BLOOD_after": 21,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 205,
+      "EXP_after": 205,
+      "fang_pairs_before": 0,
+      "fang_pairs_after": 2,
+      "fang_pairs_required": 3,
+      "hyena_A_HP_after": 0,
+      "hyena_B_HP_after": 0,
+      "hyena_C_HP_max": 100,
+      "hyena_C_HP_current": 100,
+      "third_observed": true,
+      "third_has_detected_player": true,
+      "third_has_attacked": false,
+      "quest_reward_paid": false,
+      "other_loot_spent_or_harvested": false,
+      "minutes_elapsed_approx": 8,
+      "rest_hours": 0,
+      "STA_rest_recovered": 0,
+      "skill_casts": 0
     }
   },
   "provenance": {
@@ -1406,7 +1573,7 @@
       "estimated_targets_from_scavenger": "Khoảng 3 cá thể, nghe kể, chưa xác minh",
       "hunting_area": "Bãi Sắt Rỉ/đống phế thải ngoài tường thành phía đông, gần Đường Vành Tro",
       "evidence_required": "Ba cặp nanh đặc trưng còn nhận diện được, mang về bàn ủy thác để kiểm tra",
-      "evidence_collected_pairs": 0,
+      "evidence_collected_pairs": 2,
       "evidence_required_pairs": 3,
       "reward_on_verified_completion": {
         "souls": 20,
@@ -1414,8 +1581,8 @@
       },
       "reward_received": false,
       "source": "events/0184.md",
-      "progress": "Đã nhận nhiệm vụ; đã đi tới bãi phế thải và trinh sát bí mật ở rìa tây. Hai linh cẩu nhìn thấy; nguồn tiếng gầm sau lán đông bắc chưa rõ. CHƯA CHIẾN ĐẤU.",
-      "next_step": "Chờ người chơi quyết định thêm trinh sát, cách tiếp cận, công kích, đặt bẫy hoặc rút lui; không tự kích hoạt đụng độ hay nhận thưởng",
+      "progress": "A killed T191 and B killed T193; characteristic paired fangs from both carcasses physically extracted, inspected intact at T194, 2/3 pairs IN INVENTORY but UNVERIFIED by clerk, reward UNPAID. Third living black-claw hyena C confirmed at northeast shed, 100/100HP, detected Vô Danh ~12m away. Next action required.",
+      "next_step": "C has found Vô Danh; choose action to engage, assess, retreat or use cover. Do NOT auto-charge/kill third, grant evidence pair, hand-in bounty, or assume safety.",
       "reconnaissance_T184": {
         "observation_position": "Bờ tây sau xe quặng lật nghiêng bên gờ đất thấp",
         "enemy_A": {
@@ -1434,8 +1601,8 @@
         },
         "third": {
           "observed": false,
-          "source": "Tiếng gầm trầm phía sau lán sắt đông bắc",
-          "count_or_identity": "UNCONFIRMED"
+          "source": "T184-T193 sounds previously unverified, T194 a third animal is visually seen emerging from western opening of NE shed",
+          "count_or_identity": "NOW CONFIRMED AT T194 AS Linh Cẩu Móng Đen C, 100/100 HP; no proven alpha status"
         },
         "terrain": {
           "west": "Gờ đất thấp và xe quặng lật che tầm nhìn một phần",
@@ -1454,7 +1621,25 @@
           "Line of escape when moving into debris",
           "Whether enemies have noticed anything suspicious"
         ]
-      }
+      },
+      "last_evidence_turn": 194,
+      "evidence_pending_verification": true,
+      "kill_proof_receipts": [
+        {
+          "source": "events/0191.md",
+          "enemy": "Black-claw Hyena A",
+          "HP_after": 0,
+          "proof_extracted_turn": 194,
+          "pairs": 1
+        },
+        {
+          "source": "events/0193.md",
+          "enemy": "Black-claw Hyena B",
+          "HP_after": 0,
+          "proof_extracted_turn": 194,
+          "pairs": 1
+        }
+      ]
     }
   },
   "archery_training": {
@@ -1782,5 +1967,63 @@
       }
     ],
     "offer_B_accepted_turn": 184
+  },
+  "battle_state_T194": {
+    "status": "THREAT_VISIBLE_NOT_YET_ATTACKED",
+    "location": "Bãi Sắt Rỉ, phía tây-trung tâm gần xác Linh Cẩu B; xe quặng đổ ở tây; Linh Cẩu C lộ diện phía tây lán sắt đông bắc cách ~12m",
+    "player_posture": "Standing up after collecting pairs from A and B beside B's corpse, Huyết Nha +3 in hand, alerted to C",
+    "enemy_A": {
+      "type": "Linh Cẩu Móng Đen",
+      "HP": 0,
+      "max_HP": 90,
+      "status": "DEAD_T191",
+      "remains": "near south/west of V",
+      "fang_pairs_extracted": 1
+    },
+    "enemy_B": {
+      "type": "Linh Cẩu Móng Đen",
+      "HP": 0,
+      "max_HP": 90,
+      "status": "DEAD_T193",
+      "remains": "near V, already extracted",
+      "fang_pairs_extracted": 1
+    },
+    "enemy_C": {
+      "type": "Linh Cẩu Móng Đen",
+      "HP": 100,
+      "max_HP": 100,
+      "status": "ALIVE_VISIBLE_ALERT",
+      "location": "West slit of NE ruined iron shed",
+      "distance_from_player_m_approx": 12,
+      "detection_of_player": "CONFIRMED",
+      "has_attacked": false,
+      "alpha_status": "UNVERIFIED",
+      "magical_capabilities": "UNVERIFIED"
+    },
+    "terrain": {
+      "western_ore_wagon": "Partial cover behind/near player west",
+      "north": "Unstable noisy scrap",
+      "northeast": "Ruined iron shed where C emerged",
+      "center": "Exposed scrap-broken ground",
+      "fallen_cage": "Near A/B bodies",
+      "refuse_pit": "Southeast"
+    },
+    "weapon_status": {
+      "HuyetNha_plus3": "EQUIPPED_READY",
+      "LienNo": "UNLOADED_STOWED",
+      "steel_bolts_owned": 4,
+      "NanhCotTien_owned": 1
+    },
+    "cooldowns_at_start_T195": {
+      "HuyetAnhBo": "READY after ordinary ~8 min elapsed",
+      "HuyetNguyetTram": "READY after ordinary ~8 min elapsed",
+      "HuyetTramNhiLien": "READY after ordinary ~8 min elapsed",
+      "other_skills": "Unchanged or not recently cast"
+    },
+    "active_defense": "Parry Common Lv2 7STA per valid defensive reaction, not free attack",
+    "proof_pairs_owned": 2,
+    "elapsed_T194_minutes_approx": 8,
+    "gold_souls_paid": false,
+    "next_turn": 195
   }
 }
