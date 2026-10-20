@@ -129,9 +129,9 @@ def render_map(atlas: dict, scene: dict | None, map_id: str) -> str:
         # May be clipped visually if labels are very long: keep full title in SVG <title>.
         parts.append(f'<text x="858" y="{y}" font-family="sans-serif" font-size="14" fill="#e5e9e8"><title>{label}</title>{label}</text>')
     parts.extend([
-        '<text x="824" y="566" font-family="sans-serif" font-size="15" fill="#acd5e7">→ hướng mặt (liền)</text>',
-        '<text x="824" y="593" font-family="sans-serif" font-size="15" fill="#84b5c9">⇢ di chuyển (đứt)</text>',
-        '<text x="824" y="620" font-family="sans-serif" font-size="13" fill="#bdc9cd">BẮC ↑ · tọa độ 0–100</text>',
+        '<text x="824" y="566" font-family="sans-serif" font-size="15" fill="#acd5e7">Hướng mặt: đường liền</text>',
+        '<text x="824" y="593" font-family="sans-serif" font-size="15" fill="#84b5c9">Di chuyển: nét đứt</text>',
+        '<text x="824" y="620" font-family="sans-serif" font-size="13" fill="#bdc9cd">BẮC: phía trên · tọa độ 0–100</text>',
         f'<text x="46" y="658" font-family="sans-serif" font-size="14" fill="#adbac1">Map ID: {escape(map_id)}</text>',
     ])
     if scene:
