@@ -740,7 +740,7 @@
         },
         {
           "id": "outer-prison-corridor",
-          "type": "path",
+          "type": "point",
           "label": "Hành lang ngoài Cấm Lao",
           "x": 19,
           "y": 51,
