@@ -1,9 +1,9 @@
 {
-  "snapshot_version": "HN-S161-V1",
-  "last_completed_turn": 161,
-  "next_turn": 162,
+  "snapshot_version": "HN-S162-V1",
+  "last_completed_turn": 162,
+  "next_turn": 163,
   "as_of": "2026-10-20",
-  "location": "Điện Tế Huyết / căn cứ Tư Tế Xương, Hắc Nha Thành",
+  "location": "Bảng nhiệm vụ Garrick / doanh trại Hắc Nha Thành",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
@@ -275,6 +275,28 @@
       "training_started": false,
       "consumables_spent": 0,
       "combat_started": false
+    },
+    "T162": {
+      "action": "accept quest at Garrick board; no excursion out of city",
+      "estimated_elapsed_minutes": 25,
+      "HP_before": 115,
+      "HP_after": 115,
+      "STA_before": 110,
+      "STA_after": 110,
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "quest_accepted": true,
+      "quest_reward_paid": false,
+      "enemies_killed": 0,
+      "consumables_spent": 0,
+      "ammo_spent": 0,
+      "training_started": false
     }
   },
   "provenance": {
@@ -431,5 +453,30 @@
       "Possible blood conversion ritual not established or learned"
     ],
     "arithmetic_if_future_actions_executed": "Starting BLOOD15, 9-BLOOD Tốc Mạch trial ->6 below 12 cast cost. One qualifying Huyết Nha normal strike +7 first would be 22, then trial 9 ->13 sufficient for one cast, conditional on hit and successful learning. No events executed."
+  },
+  "active_quests": {
+    "bandit_leader_west_road": {
+      "id": "quest:bandit-leader-west-road",
+      "name": "Săn Thủ Lĩnh Băng Cướp Đường Tây",
+      "status": "ACTIVE",
+      "accepted_turn": 162,
+      "issuer": "Garrick",
+      "category": "BOUNTY",
+      "historical_note": "Old notice verified as extant in T162 world scene; older detailed text not recoverable from compressed pre-T162 GitHub canon",
+      "target": "Leader of western road bandits; real identity unknown",
+      "estimated_target_level": "6–7 (unconfirmed patrol report)",
+      "estimated_subordinates": "5–8 (unconfirmed)",
+      "last_known_area": "Cargo road west beyond Đường Gác Tây; exact hideout unknown",
+      "evidence_required": "Proof the correct leader was defeated or apprehended, report back to Garrick",
+      "reward_on_verified_completion": {
+        "souls": 65,
+        "EXP": 100
+      },
+      "reward_received": false,
+      "source": "events/0162.md",
+      "progress": "Accepted with Garrick; no scouting, travel out of city, enemy interaction or combat yet",
+      "next_step": "Garrick patrol intel or western cargo road reconnaissance",
+      "notional_target_reputation": "Crossbowman rumored among bandits, unverified"
+    }
   }
 }
