@@ -568,6 +568,210 @@
           "status": "known_context"
         }
       ]
+    },
+    {
+      "id": "nghia-dia-tu-thiet",
+      "name": "Nghĩa Địa Tử Thiết — vùng săn tử thi",
+      "extent": "schematic historical scene; not scale-accurate",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0050-0095.md",
+        "events/0096-0153.md"
+      ],
+      "known_limitations": [
+        "Only publicly discovered historical features; no undiscovered rooms",
+        "Necropolis tomb arrangements unknown"
+      ],
+      "objects": [
+        {
+          "id": "cemetery-sector",
+          "type": "landmark",
+          "label": "Nghĩa Địa Tử Thiết (chưa đo địa hình)",
+          "x": 50,
+          "y": 49,
+          "status": "OBSERVED_HISTORICAL"
+        }
+      ]
+    },
+    {
+      "id": "rung-xuong",
+      "name": "Rừng Xương — vùng Huyết Lang",
+      "extent": "schematic historical scene; not scale-accurate",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0050-0095.md"
+      ],
+      "known_limitations": [
+        "Only publicly discovered historical features; no undiscovered rooms",
+        "Exact tree and trail geometry unknown"
+      ],
+      "objects": [
+        {
+          "id": "bone-forest",
+          "type": "landmark",
+          "label": "Rừng Xương, vùng sói",
+          "x": 51,
+          "y": 50,
+          "status": "OBSERVED_HISTORICAL"
+        }
+      ]
+    },
+    {
+      "id": "huyet-cot-ngoai-dong",
+      "name": "Huyết Cốt Động — khu ngoài / trận Lang Vương",
+      "extent": "schematic historical scene; not scale-accurate",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "events/0096-0153.md"
+      ],
+      "known_limitations": [
+        "Only publicly discovered historical features; no undiscovered rooms",
+        "RESOLVED_REPLAY_T139",
+        "T128–139 initial branch superseded; no revived boss"
+      ],
+      "objects": [
+        {
+          "id": "outer-cave",
+          "type": "landmark",
+          "label": "Lối tiếp cận Huyết Cốt Động",
+          "x": 54,
+          "y": 54,
+          "status": "OBSERVED_HISTORICAL"
+        },
+        {
+          "id": "historical-boss-field",
+          "type": "point",
+          "label": "Khu giao chiến Huyết Lang Vương (lịch sử)",
+          "x": 58,
+          "y": 32,
+          "status": "RESOLVED_REPLAY_T139"
+        }
+      ]
+    },
+    {
+      "id": "huyet-cot-hanh-lang",
+      "name": "Huyết Cốt Động — hành lang đã đi",
+      "extent": "schematic historical scene; not scale-accurate",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "LAYOUT_CONFIRMED",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0096-0153.md"
+      ],
+      "known_limitations": [
+        "Only publicly discovered historical features; no undiscovered rooms",
+        "Corridor geometry schematic; hanging spikes bypassed, NOT disarmed"
+      ],
+      "objects": [
+        {
+          "id": "cave-entrance",
+          "type": "door",
+          "label": "Cửa vào hành lang đã khám phá",
+          "x": 16,
+          "y": 53,
+          "status": "OBSERVED_HISTORICAL"
+        },
+        {
+          "id": "cave-bone-tripwire",
+          "type": "hazard-terrain",
+          "label": "Bẫy gai xương treo, đã lách tránh nhưng vẫn kích hoạt được",
+          "x": 40,
+          "y": 53,
+          "status": "BYPASSED_NOT_DISARMED"
+        },
+        {
+          "id": "cave-iron-chest",
+          "type": "cover",
+          "label": "Hòm sắt dấu ba trảo đã mở",
+          "x": 66,
+          "y": 48,
+          "status": "OPENED_T145"
+        },
+        {
+          "id": "bat-contact",
+          "type": "point",
+          "label": "Nơi từng giao chiến Huyết Phệ Bức",
+          "x": 67,
+          "y": 26,
+          "status": "HISTORICAL_RESOLVED"
+        }
+      ]
+    },
+    {
+      "id": "cam-lao",
+      "name": "Cấm Lao / Hầm Giam — cổng niêm phong",
+      "extent": "schematic historical scene; not scale-accurate",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0050-0095.md"
+      ],
+      "known_limitations": [
+        "Only publicly discovered historical features; no undiscovered rooms",
+        "Gate SEALED; no secret space beyond shown"
+      ],
+      "objects": [
+        {
+          "id": "cam-lao-sealed-gate",
+          "type": "door",
+          "label": "Cổng Cấm Lao còn niêm phong",
+          "x": 73,
+          "y": 46,
+          "status": "SEALED"
+        },
+        {
+          "id": "three-coffins",
+          "type": "point",
+          "label": "Ba quan tài đã thấy (chưa mở)",
+          "x": 38,
+          "y": 46,
+          "status": "UNOPENED_CONFIRMED"
+        },
+        {
+          "id": "outer-prison-corridor",
+          "type": "path",
+          "label": "Hành lang ngoài Cấm Lao",
+          "x": 19,
+          "y": 51,
+          "status": "KNOWN_ACCESS"
+        }
+      ]
+    },
+    {
+      "id": "kho-quan-vu-dong",
+      "name": "Kho Quân Vụ Đông — khu quân giới",
+      "extent": "schematic historical scene; not scale-accurate",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "events/0050-0095.md"
+      ],
+      "known_limitations": [
+        "Only publicly discovered historical features; no undiscovered rooms",
+        "Rhevik and special inventory history known; no invented room geometry"
+      ],
+      "objects": [
+        {
+          "id": "old-military-store",
+          "type": "landmark",
+          "label": "Kho quân vụ đã khám xét T77–89",
+          "x": 52,
+          "y": 47,
+          "status": "OBSERVED_HISTORICAL"
+        }
+      ]
     }
   ],
   "update_contract": {
