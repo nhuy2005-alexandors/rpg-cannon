@@ -1,9 +1,9 @@
 {
-  "snapshot_version": "HN-S170-V1",
-  "last_completed_turn": 170,
-  "next_turn": 171,
+  "snapshot_version": "HN-S174-V1",
+  "last_completed_turn": 174,
+  "next_turn": 175,
   "as_of": "2026-10-20",
-  "location": "Điện Tế Huyết / sân tập và gian nghỉ, Hắc Nha Thành",
+  "location": "Điện Tế Huyết / gian luyện kiếm và nghỉ, Hắc Nha Thành",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
@@ -19,7 +19,7 @@
     },
     "resources": {
       "HP": {
-        "current": 115,
+        "current": 93,
         "max": 170
       },
       "STA": {
@@ -105,6 +105,23 @@
         "stacking_guard": "Separately Ngắm Bắn Ổn Định Lv2 addresses only actual movement-specific hit penalty up to15pp after <=3m move, full stop and valid aimed shot. Never apply both to a single penalty.",
         "verified_training": "T170 Maela's six multibeat loaded/unloaded crossbow sequences: 1 pass loaded, 2 fail premature trigger on unloaded (no shot), 3 pass loaded, 4 pass properly reloaded, 5 pass loaded, 6 pass properly reloaded; 5/6 meets >=5/6 threshold.",
         "last_upgraded_turn": 170
+      }
+    },
+    "active_skill_upgrades": {
+      "HuyetTramNhiLien": {
+        "name": "Huyết Trảm Nhị Liên",
+        "rarity": "Rare",
+        "level": 2,
+        "upgraded_turn": 174,
+        "first_hit_physical_multiplier": 1.25,
+        "second_hit_physical_multiplier": 1,
+        "hp_cost_per_cast": 12,
+        "sta_cost_per_cast": 25,
+        "cooldown_combat_turns": 3,
+        "resolution": "Exactly two sequential melee-sword skill hits, independently evaluated for hit, defense and HP damage; no third hit/guaranteed hit/free action",
+        "lv1_superseded": "Lv1 1.20 first+0.90 second physical coefficients replaced, not added",
+        "earned_via": "Edran Nhị Liên Tiết Huyết three-stage qualifying trial, T174 4/5 shadow chains, 3/3 blood-flow-control drills, 3/3 rotating dummy true-cast criteria",
+        "weapon_interactions": "Huyết Nha +3 +7 BLOOD applies to valid landed ordinary sword hits only, NOT this sword skill; Hấp Huyết HP on valid living blood-bearing damaging melee sword hit, not dummies"
       }
     }
   },
@@ -633,6 +650,122 @@
       "potions_spent": 0,
       "quest_reward_paid": false,
       "TocMach_training_started": false
+    },
+    "T171": {
+      "action": "Edran four-skill sword review with real Huyết Trảm and Thiết Cốt Trảm, shadow-only Nhị Liên and Huyết Nguyệt",
+      "HP_before": 115,
+      "HP_after": 105,
+      "HP_skill_spent": 10,
+      "STA_before": 110,
+      "STA_after": 110,
+      "STA_practice_spent": 65,
+      "STA_rest_recovered": 65,
+      "STA_sequence": [
+        110,
+        95,
+        80,
+        60,
+        45,
+        65,
+        85,
+        105,
+        110
+      ],
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "skills_upgraded": 0,
+      "items_spent": 0,
+      "rest_hours": 4
+    },
+    "T172": {
+      "action": "Edran proposes 2-cast Huyết Trảm Nhị Liên Lv2 trial; conversation only",
+      "minutes_elapsed_approx": 15,
+      "HP_before": 105,
+      "HP_after": 105,
+      "STA_before": 110,
+      "STA_after": 110,
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "training_started": false,
+      "proposal_total_HP": 24,
+      "proposal_total_STA": 60,
+      "items_spent": 0
+    },
+    "T173": {
+      "action": "Edran plans alternate 1-cast lower-HP Nhị Liên Tiết Huyết trial; research only",
+      "minutes_elapsed_approx": 20,
+      "HP_before": 105,
+      "HP_after": 105,
+      "STA_before": 110,
+      "STA_after": 110,
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "training_started": false,
+      "proposal_total_HP": 12,
+      "proposal_total_STA": 60,
+      "items_spent": 0
+    },
+    "T174": {
+      "action": "Edran lower-HP three-phase Huyết Trảm Nhị Liên trial: PASSED and earned Rare Lv2",
+      "HP_before": 105,
+      "HP_after": 93,
+      "STA_before": 110,
+      "STA_after": 110,
+      "STA_practice_spent": 60,
+      "STA_rest_recovered": 60,
+      "STA_sequence": [
+        110,
+        95,
+        75,
+        50,
+        70,
+        90,
+        110
+      ],
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "stage1_valid": 4,
+      "stage1_total": 5,
+      "stage2_valid": 3,
+      "stage2_total": 3,
+      "stage3_conditions_valid": 3,
+      "stage3_conditions_total": 3,
+      "real_NhiLien_casts": 1,
+      "HP_skill_spent": 12,
+      "owned_ammo_spent": 0,
+      "potions_spent": 0,
+      "training_minutes_range": [
+        60,
+        75
+      ],
+      "safe_rest_hours": 3,
+      "skill_upgraded": "Huyết Trảm Nhị Liên Rare Lv2",
+      "quest_reward_paid": false,
+      "TocMach_training_started": false
     }
   },
   "provenance": {
@@ -921,6 +1054,48 @@
         "recommended_criteria": "5/6 valid weapon transfer cycles including preloaded and unloaded crossbow checks; no action/reload skip; candidate switch-specific penalty reduction up to 10pp replacing Lv1 5pp",
         "status": "COMPLETED_T170"
       }
+    }
+  },
+  "sword_art_training_T171_T174": {
+    "mentor": "Edran",
+    "site": "Điện Tế Huyết",
+    "source": [
+      "events/0171.md",
+      "events/0172.md",
+      "events/0173.md",
+      "events/0174.md"
+    ],
+    "T171": "Sword review: 1 actual Huyết Trảm Lv1 cast costing 10HP+15STA, 1 actual Thiết Cốt Trảm Lv1 cast costing20STA, plus ordinary drills 30STA; no skill increased; post HP105 STA110 after rest",
+    "T172": "Original Huyết Mạch Song Kích Lv2 proposal 2 actual Nhị Liên casts, projected 24HP+60STA, discussion ONLY",
+    "T173": "Alternative Nhị Liên Tiết Huyết proposal 1 actual final cast after shadow + restrained flow prerequisites, projected12HP+60STA, discussion ONLY",
+    "T174": {
+      "selected": "Nhị Liên Tiết Huyết",
+      "status": "PASSED_LEARNED",
+      "stage1": {
+        "passes": 4,
+        "total": 5,
+        "requirement": 4,
+        "sta_cost": 15,
+        "hp_cost": 0
+      },
+      "stage2": {
+        "passes": 3,
+        "total": 3,
+        "requirement": 3,
+        "sta_cost": 20,
+        "hp_cost": 0
+      },
+      "stage3": {
+        "passed_conditions": 3,
+        "total_conditions": 3,
+        "real_casts": 1,
+        "sta_cost": 25,
+        "hp_cost": 12
+      },
+      "STA_spent": 60,
+      "STA_safe_rest_recovered": 60,
+      "rest_hours": 3,
+      "upgraded_skill": "Huyết Trảm Nhị Liên Rare Lv2"
     }
   }
 }
