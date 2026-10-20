@@ -44,3 +44,11 @@
 - During an active game session the GM initiates GitHub checkpoint automatically after **10 completed turns since the last verified GitHub checkpoint**, without requiring a save command. Reset counter only after successful GitHub commit + readback. Failed write keeps pending deltas UNSAVED.
 - Major NPC/quest/world events, impending context loss, chat change and direct save request override the 10-turn cadence and trigger earlier saving. This also limits reliance on long-context retention; ten turns are a preferred batch size, not a guaranteed memory horizon.
 - Notion remains selective for actual graph changes; no scheduled polling, external timer, automatic ingestion or background execution is installed. Checkpoint turns may run longer than ordinary turns to ensure verification.
+
+## Read avoidance and sliding-window continuity (2026-10-20)
+
+- One GitHub bootstrap per **new chat** only if no reliable in-chat checkpoint exists. Reuse the last verified checkpoint readback plus the current in-chat state for subsequent turns. Specifically, T163 after a verified T162 in the same chat must NOT re-fetch T162.
+- Track `session_base` (verified checkpoint SHA and turn), `current_state`, a sliding window of up to 10 compact turn deltas, and `unsaved_turns` inside the active conversation. This is a conceptual context ledger; there is no new local cache process or background service.
+- Ordinary turns use in-chat context with zero provider calls by default. Missing evidence, a context reset/compaction, a new chat or a real continuity conflict permits **targeted** GitHub recovery; Notion remains selective for relevant graph lookups.
+- When 10 turns accumulate or a major event/explicit save/session handoff/context risk occurs, commit and verify GitHub ONCE; adopt its readback as the new session base. Do not repeat readback on the next turn. Never reset `unsaved_turns` after failed writes.
+- This rule is operational GM behavior, not a host-installed hook; repository documentation alone does not guarantee compliance by other chat instances.
