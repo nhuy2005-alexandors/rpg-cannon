@@ -2,6 +2,10 @@
 
 **LATEST VERIFIED RPG CHECKPOINT: T204; NEXT PLAYER-DIRECTED TURN T205.** The complete ten-turn T195–T204 progression and source are recorded in `events/0195.md` through `events/0204.md` and numeric authority `state/current.json`. **V1.3 LEAN remains active.** A note below under "HISTORIC QUICK START" concerns the old T194 snapshot and is not the current situation.
 
+## TWO-SCALE OVERVIEW MAPS — WORLD + REGIONAL
+
+Use the [editable 2-page Canva World/Regional map](https://www.canva.com/d/Bpix2upN2ykgShg) (design `DAHYjCS3NKI`) or GitHub `maps/atlas-v1.json` IDs `hac-nhat-world` (World, only Hắc Nha discovered) and `vung-hac-nha` (Regional). The regional map confirms west road/Gray Rock Slope and east scrapyard/NE shed relative to city. Other locations appear in a **not-yet-located** list, not arbitrary pins. Always reuse local maps as lower tier. No hidden regions, meter-scale distances or automatic Canva sync. **T204 unchanged and T205 not played.**
+
 ## FULL WORLD ATLAS V1.1 — FEATURE BRANCH (NOT MERGED)
 
 Atlas coverage is expanded on `feat/full-atlas-v1-20261020`: [evidence inventory](../maps/coverage.json) (23 entries), [reusable map data](../maps/atlas-v1.json) (17 map scenes, including original 3), [renderer](../maps/render.py), [guide](../maps/README.md). Seven? No: **six** locations/topics stay unplaced as `PLACEHOLDER` or `UNVERIFIED` (Trạm Tam Trảo, Trạm Gác Số Bốn, western bandit hideout, unseen cave depths, unopened coffins, unspecified private NPC location). This is deliberate: no fabricated geometry, hidden loot or additional encounters. Verified separate [15-page editable Canva supplement](https://www.canva.com/d/tpCkYiVOf3jAXHj) (design DAHYiz8iryA); original [3-page Canva atlas](https://www.canva.com/d/afa4HjByuyD2Dt6) unchanged. Neither design is a live JSON/data authority.
