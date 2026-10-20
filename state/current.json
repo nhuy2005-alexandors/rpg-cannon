@@ -1,7 +1,7 @@
 {
-  "snapshot_version": "HN-S160-V1",
-  "last_completed_turn": 160,
-  "next_turn": 161,
+  "snapshot_version": "HN-S161-V1",
+  "last_completed_turn": 161,
+  "next_turn": 162,
   "as_of": "2026-10-20",
   "location": "Điện Tế Huyết / căn cứ Tư Tế Xương, Hắc Nha Thành",
   "player": {
@@ -255,6 +255,26 @@
       "potions_spent": 0,
       "other_consumables_spent": 0,
       "no_pact": true
+    },
+    "T161": {
+      "talk_only": true,
+      "estimated_minutes": 15,
+      "HP_before": 115,
+      "HP_after": 115,
+      "STA_before": 110,
+      "STA_after": 110,
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "skills_unlocked": 0,
+      "training_started": false,
+      "consumables_spent": 0,
+      "combat_started": false
     }
   },
   "provenance": {
@@ -393,5 +413,23 @@
         }
       }
     }
+  },
+  "blood_recovery_consultation_T161": {
+    "status": "ADVICE_ONLY_NO_RECOVERY",
+    "verified_mechanism": {
+      "source": "Huyết Nha +3 Rare",
+      "BLOOD_per_eligible_ordinary_landed_hit": 7,
+      "conditions": "Actual hit to living blood-bearing target, with max BLOOD cap50; not sword skills, misses, undead, wooden dummies or bloodless target"
+    },
+    "not_sources": [
+      "Safe resting/STA regeneration",
+      "Hấp Huyết Lv1 (HP-only heal)",
+      "Huyết Dược Quân Dụng (+30 HP-only)"
+    ],
+    "unverified_methods": [
+      "Possible specialized blood restorative item not proven in stock or inventory; unknown properties/pricing",
+      "Possible blood conversion ritual not established or learned"
+    ],
+    "arithmetic_if_future_actions_executed": "Starting BLOOD15, 9-BLOOD Tốc Mạch trial ->6 below 12 cast cost. One qualifying Huyết Nha normal strike +7 first would be 22, then trial 9 ->13 sufficient for one cast, conditional on hit and successful learning. No events executed."
   }
 }
