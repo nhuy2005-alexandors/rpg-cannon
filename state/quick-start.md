@@ -1,5 +1,20 @@
-# HẮC NHẬT — QUICK START (T194)
+# HẮC NHẬT — QUICK START (T204)
 
+**LATEST VERIFIED RPG CHECKPOINT: T204; NEXT PLAYER-DIRECTED TURN T205.** The complete ten-turn T195–T204 progression and source are recorded in `events/0195.md` through `events/0204.md` and numeric authority `state/current.json`. **V1.3 LEAN remains active.** A note below under "HISTORIC QUICK START" concerns the old T194 snapshot and is not the current situation.
+
+## CURRENT SCENE — T204 (use for all new gameplay)
+
+Vô Danh Huyết Kiếm Sĩ Lv6, EXP **215/400**, HP **68/170**, STA **28/110**, BLOOD **28/50**, Tử Huyết **0/20**, Souls **41**. **Three intact matching black-claw hyena fang pairs 3/3** physically held but bounty is STILL ACTIVE and **UNPAID**: must deliver to market clerk for validation to collect later **20 Souls +30 EXP**. Potions2 (+30HP each only), steel bolts3 total, Nanh Cốt Tiễn1, Liên Nỏ Hắc Nha UNLOADED/STOWED, Huyết Nha+3 EQUIPPED/READY, heavy sword on back. No free passive rest/recovery or surprise XP/loot. Soul claims A/B T194 12+12, C **T200 first corpse claim 12**, total earned from hyenas36; base5 =>41, and no other soul transaction. C dead T199, body harvested fang pair T200; all three hyenas dead, no verified other hostiles in explored area.
+
+Mastery earned after T194 only: `NgamBanOnDinh` Common Lv2 **2/90** from effective T196 aim, `HuyetTramNhiLien` Rare Lv2 **2/135** from ONE cast T198, others0. Two bonus draws on public V1.3 RNG VERIFIED and both FAILED (+0): `NgamBanOnDinh/T196/A01` -> 2344874366 and `HuyetTramNhiLien/T198/A01` -> 2348867648; 25% threshold1073741824. No ranks upgraded, no branch evolved. Special combo has resolved its combat cooldown during subsequent noncombat investigation; ordinary legal costs still apply.
+
+**LOCATION:** Inside northeast ruined iron shed on east Bãi Sắt Rỉ, V at **northeast interior by the moved slanted board**, FACING **east-northeast** toward a shallow wall-base recess/air slit. Last movement **NW iron ring -> NE wall**; blade held ready. After caution and board movement T204: old dried leather strap caught on projecting nail, shallow niche too small for human adult, old horizontal scratches tending toward center, low vent with faint draft of unknown destination. Board scraped loudly when shifted; V paused and heard **no confirmed response**. No traps/enemies verified in checked visible region; NOT proof area is entirely safe. NO treasure, TH, bonus XP or item taken. Other room clues: worn ring with twisted broken chain and old floor scratches at NW, overturned iron table plus faint boot trace SE/interior, scattered hyena tracks/bones. No validated identity of occupant of old chain, no true secret passage discovered. V's facing and movement direction MUST be shown clearly in tactical top-down SVG map from T205 onward; no monster-facing arrow for corpses.
+
+Checkpoint T204 was requested by existing 10-turn flush cadence after verified T194. Notion remains projection only and MUST NOT replace GitHub current.json; when resyncing, record concrete new verified GitHub commit. Normal turn T205 requires user direction. Play concise narrative & map, no unrequested extra mechanics.
+
+---
+
+## HISTORIC QUICK START — T194 baseline and prior-turn record (archived, NOT current)
 **Next RPG turn T195.** T185–194 GitHub checkpoint verified. On 2026-10-20 V1.3 LEAN rules activated AFTER T194 without in-world action, alongside earlier append-only V1.2 correction; gameplay has NOT advanced. **GM Fast Mode + Sliding Window V1.2:** ordinary turns use in-session state, NO GitHub call each turn. Checkpoint every 10 completed turns, early on durable event/quest/skill/NPC change or owner request. After verified T194 set unsaved_turns=0 and next195. Notion T153 is historic DERIVED lookup, NOT authority.
 
 
