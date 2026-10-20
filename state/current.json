@@ -1,7 +1,7 @@
 {
-  "snapshot_version": "HN-S167-V1",
-  "last_completed_turn": 167,
-  "next_turn": 168,
+  "snapshot_version": "HN-S169-V1",
+  "last_completed_turn": 169,
+  "next_turn": 170,
   "as_of": "2026-10-20",
   "location": "Điện Tế Huyết / sân tập và gian nghỉ, Hắc Nha Thành",
   "player": {
@@ -61,13 +61,13 @@
       },
       "NgamBanOnDinh": {
         "name": "Ngắm Bắn Ổn Định",
-        "level": 1,
+        "level": 2,
         "rarity": "Common",
         "unlocked_turn": 165,
-        "effect": "After moving <=3m, fully stopping, and aiming a bow or crossbow, reduce ONLY the attack-hit penalty attributed to the preceding movement by up to 10 percentage points, floor the remaining movement penalty at 0.",
+        "effect": "After movement <=3m, complete stop, and valid aimed bow/crossbow shot, reduce by up to 15 percentage points ONLY actual hit penalty caused by preceding movement, not below zero; this replaces Lv1 10pp, does not add.",
         "modifier_kind": "movement_specific_hit_penalty_reduction",
         "movement_limit_meters": 3,
-        "penalty_reduction_percentage_points": 10,
+        "penalty_reduction_percentage_points": 15,
         "valid_weapons": [
           "bow",
           "crossbow"
@@ -80,7 +80,10 @@
           "when no movement-specific penalty exists"
         ],
         "not_bonus": "Not a flat accuracy bonus, auto hit, extra attack or extra action",
-        "verified_training": "T164 foundation 2/3; T165 first failed 2/5 bow and 3/5 crossbow then corrected and passed 4/5 EACH at ~12m after short repositioning"
+        "verified_training": "T164 foundation 2/3; T165 first failed 2/5 bow and 3/5 crossbow then corrected and passed 4/5 EACH at ~12m after short repositioning",
+        "last_upgraded_turn": 169,
+        "verification": "Maela T169 separate 8/10 legal hits with bow and 8/10 with Liên Nỏ after unpredictable <=3m steps, full stops and valid reload, following coached technical practice; not guaranteed.",
+        "nonstacking": "Lv2 replaces Lv1 not additive; does not double-apply same penalty with Phối Hợp Kiếm–Nỏ (which addresses distinct switch-only penalty)."
       },
       "PhoiHopKiemNo": {
         "name": "Phối Hợp Kiếm–Nỏ",
@@ -523,6 +526,65 @@
       "rest_hours": 4,
       "quest_reward_paid": false,
       "TocMach_training_started": false
+    },
+    "T168": {
+      "action": "Discuss Lv2 proposals with Maela, no training",
+      "estimated_minutes": 15,
+      "HP_before": 115,
+      "HP_after": 115,
+      "STA_before": 110,
+      "STA_after": 110,
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "items_spent": 0,
+      "skills_upgraded": 0
+    },
+    "T169": {
+      "action": "Maela coached and assessed 10-shot bow and 10-shot Liên Nỏ direction-change/aim drills",
+      "training_minutes": 130,
+      "rest_hours": 4,
+      "HP_before": 115,
+      "HP_after": 115,
+      "STA_before": 110,
+      "STA_after": 110,
+      "STA_practice_spent": 70,
+      "STA_rest_recovered": 70,
+      "STA_sequence": [
+        110,
+        85,
+        105,
+        85,
+        65,
+        60,
+        80,
+        100,
+        110
+      ],
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "bow_hits": 8,
+      "bow_shots": 10,
+      "crossbow_hits": 8,
+      "crossbow_shots": 10,
+      "pass_threshold_each": 8,
+      "skill_upgraded": "Ngắm Bắn Ổn Định Common Lv2",
+      "PhoiHopKiemNo_upgrade": false,
+      "owned_ammo_spent": 0,
+      "potions_spent": 0,
+      "HuyetBoc_trial_started": false,
+      "bandit_quest_reward_paid": false
     }
   },
   "provenance": {
@@ -732,13 +794,33 @@
   "archery_training": {
     "mentor": "Maela",
     "skill": "Ngắm Bắn Ổn Định",
-    "status": "COMPLETED_LEARNED",
+    "status": "LV2_EARNED",
     "introduced_turn": 164,
     "unlocked_turn": 165,
     "progress_stages": 3,
     "progress_completed": 3,
     "training_ammunition": "Maela-owned recovered practice arrows and bolts, not player inventory",
-    "npc_relation": "Voluntary temporary instructor; no permanent team pact"
+    "npc_relation": "Voluntary temporary instructor; no permanent team pact",
+    "upgraded_turn": 169,
+    "skill_level": 2,
+    "Lv2_training": {
+      "status": "PASSED",
+      "trainer": "Maela",
+      "threshold": "At least 8/10 legitimate hits each bow and Liên Nỏ after <=3m directional changes and full stop",
+      "bow": {
+        "hits": 8,
+        "shots": 10,
+        "passed": true
+      },
+      "crossbow": {
+        "hits": 8,
+        "shots": 10,
+        "passed": true
+      },
+      "shot_ammunition": "Maela-loaned and all recovered, player ammo intact",
+      "inworld_minutes_training": 130,
+      "safe_rest_hours": 4
+    }
   },
   "sword_crossbow_coordination_training": {
     "skill": "Phối Hợp Kiếm–Nỏ",
@@ -760,5 +842,19 @@
     "owner_bolts_used": 0,
     "practice_ammunition": "Maela-owned, returned",
     "note": "Combat technique training, no extra turn/action/weapon switch bypass"
+  },
+  "archery_research_T168": {
+    "status": "DISCUSSION_ONLY_NO_COST",
+    "mentor": "Maela",
+    "plans": {
+      "NgamBanOnDinh_Lv2": {
+        "recommended_criteria": "8/10 scoring-zone hits each practice bow and Liên Nỏ after unpredictable short <=3m movements, full stop and legitimate shot; replace movement penalty reduction 10pp with 15pp",
+        "status": "COMPLETED_T169"
+      },
+      "PhoiHopKiemNo_Lv2": {
+        "recommended_criteria": "5/6 valid weapon transfer cycles including preloaded and unloaded crossbow checks; no action/reload skip; candidate switch-specific penalty reduction up to 10pp replacing Lv1 5pp",
+        "status": "PROPOSED_NOT_STARTED_NOT_LEARNED"
+      }
+    }
   }
 }
