@@ -1,9 +1,9 @@
 {
-  "snapshot_version": "HN-S163-V1",
-  "last_completed_turn": 163,
-  "next_turn": 164,
+  "snapshot_version": "HN-S165-V1",
+  "last_completed_turn": 165,
+  "next_turn": 166,
   "as_of": "2026-10-20",
-  "location": "Phòng làm việc Garrick / doanh trại Hắc Nha Thành",
+  "location": "Điện Tế Huyết / sân tập và gian nghỉ của Edran, Hắc Nha Thành",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
@@ -58,6 +58,29 @@
         ],
         "requires_further_attack_to_first_trigger": true,
         "weapon_independence": "Huyết Nha +3 retains independent +7 BLOOD on eligible ordinary landed strikes, NOT sword-skill strikes; Hấp Huyết does not directly restore BLOOD"
+      },
+      "NgamBanOnDinh": {
+        "name": "Ngắm Bắn Ổn Định",
+        "level": 1,
+        "rarity": "Common",
+        "unlocked_turn": 165,
+        "effect": "After moving <=3m, fully stopping, and aiming a bow or crossbow, reduce ONLY the attack-hit penalty attributed to the preceding movement by up to 10 percentage points, floor the remaining movement penalty at 0.",
+        "modifier_kind": "movement_specific_hit_penalty_reduction",
+        "movement_limit_meters": 3,
+        "penalty_reduction_percentage_points": 10,
+        "valid_weapons": [
+          "bow",
+          "crossbow"
+        ],
+        "requires": "Full stop/stable stance and normal aimed shot; standard action and reload constraints remain",
+        "does_not_apply": [
+          "firing while sprinting",
+          "without stopping and aiming",
+          "other penalties such as cover, range or wind",
+          "when no movement-specific penalty exists"
+        ],
+        "not_bonus": "Not a flat accuracy bonus, auto hit, extra attack or extra action",
+        "verified_training": "T164 foundation 2/3; T165 first failed 2/5 bow and 3/5 crossbow then corrected and passed 4/5 EACH at ~12m after short repositioning"
       }
     }
   },
@@ -318,6 +341,91 @@
       "consumables_spent": 0,
       "ammo_spent": 0,
       "training_started": false
+    },
+    "T164": {
+      "action": "Return to temple; Maela archery basics, Huyết Nha sword drills, alternating STA recovery",
+      "HP_before": 115,
+      "HP_after": 115,
+      "STA_before": 110,
+      "STA_after": 110,
+      "STA_practice_spent": 60,
+      "STA_rest_recovered": 60,
+      "STA_sequence": [
+        110,
+        100,
+        80,
+        100,
+        90,
+        70,
+        90,
+        110
+      ],
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "skill_progress": "Ngắm Bắn Ổn Định: 2/3; not yet learned",
+      "skill_unlocked": false,
+      "HuyetNha_ordinary_hit_blood_gained": 0,
+      "HapHuyet_HP_gained": 0,
+      "potions_spent": 0,
+      "owned_bolts_spent": 0,
+      "city_to_temple_transfer": true,
+      "bandit_quest_still_active": true
+    },
+    "T165": {
+      "action": "Maela final aim-after-reposition test, repeated after initial fail; recovery rest",
+      "HP_before": 115,
+      "HP_after": 115,
+      "STA_before": 110,
+      "STA_after": 110,
+      "STA_practice_spent": 50,
+      "STA_rest_recovered": 50,
+      "STA_sequence": [
+        110,
+        100,
+        90,
+        80,
+        100,
+        90,
+        80,
+        100,
+        110
+      ],
+      "first_attempt": {
+        "bow_hits": 2,
+        "bow_shots": 5,
+        "crossbow_hits": 3,
+        "crossbow_shots": 5,
+        "passed": false
+      },
+      "second_attempt": {
+        "bow_hits": 4,
+        "bow_shots": 5,
+        "crossbow_hits": 4,
+        "crossbow_shots": 5,
+        "passed": true
+      },
+      "minutes_elapsed_approx": 290,
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "skill_unlocked": "Ngắm Bắn Ổn Định Lv.1 (Common)",
+      "potions_spent": 0,
+      "owned_bolts_spent": 0,
+      "owned_NanhCotTien_spent": 0,
+      "training_arrows_returned": true,
+      "quest_reward_paid": false,
+      "TocMach_training_started": false
     }
   },
   "provenance": {
@@ -523,5 +631,16 @@
         "cannot_be_treated_as_recovered_history": true
       }
     }
+  },
+  "archery_training": {
+    "mentor": "Maela",
+    "skill": "Ngắm Bắn Ổn Định",
+    "status": "COMPLETED_LEARNED",
+    "introduced_turn": 164,
+    "unlocked_turn": 165,
+    "progress_stages": 3,
+    "progress_completed": 3,
+    "training_ammunition": "Maela-owned recovered practice arrows and bolts, not player inventory",
+    "npc_relation": "Voluntary temporary instructor; no permanent team pact"
   }
 }
