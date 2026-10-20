@@ -772,6 +772,174 @@
           "status": "OBSERVED_HISTORICAL"
         }
       ]
+    },
+    {
+      "id": "hac-nhat-world",
+      "name": "HẮC NHẬT — Bản đồ thế giới (phần đã biết)",
+      "level": "WORLD",
+      "extent": "unexplored world, conceptual scale",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md"
+      ],
+      "known_limitations": [
+        "Only currently explored Hắc Nha region is mapped; world boundaries and adjacent realms UNKNOWN",
+        "North is a diagram convention; no world-scale distances or coordinates confirmed"
+      ],
+      "objects": [
+        {
+          "id": "vung-hac-nha-marker",
+          "type": "landmark",
+          "label": "Vùng Hắc Nha — khu truyện hiện tại",
+          "x": 50,
+          "y": 52,
+          "status": "KNOWN_REGION_SCHEMATIC"
+        }
+      ],
+      "unplaced_known_names": [
+        "Phần còn lại của thế giới Hắc Nhật — CHƯA KHÁM PHÁ, không đặt địa danh tùy ý"
+      ],
+      "links": [
+        {
+          "map_id": "vung-hac-nha",
+          "point_id": "vung-hac-nha-marker"
+        }
+      ]
+    },
+    {
+      "id": "vung-hac-nha",
+      "name": "VÙNG HẮC NHA — Bản đồ khu vực đã biết",
+      "level": "REGION",
+      "parent_map_id": "hac-nhat-world",
+      "extent": "schematic Hắc Nha region; 0–100 NOT distance",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0163.md",
+        "events/0204.md"
+      ],
+      "known_limitations": [
+        "Only two directions grounded from city: western transport road and eastern scrapyard",
+        "Unknown bearings for cemetery, Bone Forest, cave, military store and prison: listed unplaced below",
+        "Symbols within a location are not surveyed footprints; cardinal direction and separation approximate"
+      ],
+      "objects": [
+        {
+          "id": "hac-nha-thanh",
+          "type": "landmark",
+          "label": "Hắc Nha Thành",
+          "x": 49,
+          "y": 48,
+          "status": "KNOWN_HUB"
+        },
+        {
+          "id": "duong-gac-tay",
+          "type": "point",
+          "label": "Đường Gác Tây",
+          "x": 32,
+          "y": 49,
+          "status": "KNOWN_WEST_GATE"
+        },
+        {
+          "id": "doc-da-xam",
+          "type": "point",
+          "label": "Dốc Đá Xám — xe hỏng",
+          "x": 17,
+          "y": 49,
+          "status": "REPORTED_PATROL_VERIFIED"
+        },
+        {
+          "id": "bai-sat-ri",
+          "type": "landmark",
+          "label": "Bãi Sắt Rỉ (phía Đông)",
+          "x": 78,
+          "y": 48,
+          "status": "KNOWN_EAST"
+        },
+        {
+          "id": "nha-sat-dong-bac",
+          "type": "point",
+          "label": "Nhà Sắt Đông Bắc (thuộc bãi)",
+          "x": 88,
+          "y": 32,
+          "status": "KNOWN_WITHIN_SCRAPYARD"
+        },
+        {
+          "id": "duong-tay",
+          "type": "path",
+          "label": "Đường Tây — nối khái niệm",
+          "points": [
+            [
+              45,
+              49
+            ],
+            [
+              32,
+              49
+            ],
+            [
+              17,
+              49
+            ]
+          ],
+          "status": "KNOWN_CONNECTIVITY_NOT_DISTANCE"
+        },
+        {
+          "id": "duong-dong",
+          "type": "path",
+          "label": "Đường Đông — nối khái niệm",
+          "points": [
+            [
+              54,
+              48
+            ],
+            [
+              65,
+              48
+            ],
+            [
+              75,
+              48
+            ]
+          ],
+          "status": "KNOWN_CONNECTIVITY_NOT_DISTANCE"
+        }
+      ],
+      "unplaced_known_names": [
+        "Suối Cạn — gần Đường Tây, hướng và khoảng cách CHƯA XÁC MINH",
+        "Nghĩa Địa Tử Thiết — đã đến, tọa độ CHƯA XÁC MINH",
+        "Rừng Xương — đã biết, tọa độ CHƯA XÁC MINH",
+        "Huyết Cốt Động / Trạm Tam Trảo — mối liên hệ được biết, vị trí vùng CHƯA XÁC MINH",
+        "Cấm Lao / Hầm Giam — đã biết, vị trí vùng CHƯA XÁC MINH",
+        "Kho Quân Vụ Đông — đã biết, vị trí vùng CHƯA XÁC MINH",
+        "Sào huyệt cướp Đường Tây — CHƯA PHÁT HIỆN"
+      ],
+      "links": [
+        {
+          "map_id": "hac-nha-thanh-hub",
+          "point_id": "hac-nha-thanh"
+        },
+        {
+          "map_id": "duong-gac-tay",
+          "point_id": "duong-gac-tay"
+        },
+        {
+          "map_id": "duong-tay-van-tai",
+          "point_id": "doc-da-xam"
+        },
+        {
+          "map_id": "bai-sat-ri",
+          "point_id": "bai-sat-ri"
+        },
+        {
+          "map_id": "nha-sat-dong-bac",
+          "point_id": "nha-sat-dong-bac"
+        }
+      ]
     }
   ],
   "update_contract": {
