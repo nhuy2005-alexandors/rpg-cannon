@@ -5,12 +5,16 @@
 **Working atlas branch:** `feat/full-atlas-v1-20261020` (**UNMERGED**; do not claim present on `main`).  
 **Gameplay canon authority:** `state/current.json`, `events/`, `canon/`, `story/arcs.json`. The map is a derived PLAYER-KNOWN representation, never an oracle for hidden information.
 
+## A0. Parallel main changes and branch reconciliation
+
+During handoff saving, `main` advanced from `8c3db7439408528cbbba18e33786b157250cea02` to `4923f478bd2d83be9e7b8e09424b930f99258243` with **two documentation/rules commits** affecting `canon/rules.md` and `docs/gm-storyline-protocol.md` (not gameplay `state/current.json`). Verified `state/current.json` has the **same blob SHA** (`93a7982aa0147fdb39fa2495e40e8674d5ec2e02`) on main and feature branch, still T204. New sessions MUST load **latest `main`** for `canon/rules.md` and `docs/gm-storyline-protocol.md`, not the feature branch's older copies; load map files and this handoff from the feature branch until maps are merged. Before any future merge, reconcile these commits, run full tests and obtain owner approval. Do not overwrite later main work or assume the handoff's recorded main SHA remains its latest head.
+
 ## A. New-session start — mandatory minimal restore
 
 1. Read this file and `state/quick-start.md`. Read `state/current.json` (from canonical `main`, or the last **verified** gameplay checkpoint), plus `maps/atlas-v1.json`, `maps/coverage.json`, `maps/active-scene.json` from `feat/full-atlas-v1-20261020` while it is not merged. Do **not** assume the feature atlas already exists on `main`.
 2. If any source or version conflicts, prefer verified gameplay state and original events; distinguish evidence from visualization. Don't hallucinate missing turns or unsaved checkpoints.
 3. Restore historical last finished RPG turn **T204**, next **T205 ONLY after a player action**. Scene: Vô Danh inside NE iron shed at NE recess after moving the slanted board, facing ENE toward shallow niche and low vent. HP 68/170; STA 28/110; BLOOD 28/50; Tử Huyết 0/20; Souls 41; EXP 215/400. Three intact Black-Claw Hyena fang pairs 3/3 carried, quest ACTIVE, bounty **UNPAID**. Cave spike trap BYPASSED_NOT_DISARMED; Cấm Lao gate SEALED; Huyết Lang Vương historical boss RESOLVED after accepted T128–139 replay, no repeat loot.
-4. Read the GM policy in `docs/gm-storyline-protocol.md` once on session bootstrap, not before each turn. Never play T205 or teleport Vô Danh just to validate/print/update atlas.
+4. Read the **latest main-branch** GM policy in `docs/gm-storyline-protocol.md` and `canon/rules.md` once on session bootstrap, not before each turn. Never play T205 or teleport Vô Danh just to validate/print/update atlas.
 
 ## B. Three-tier atlas and persistence contract
 
