@@ -1,6 +1,6 @@
 # HẮC NHẬT — KỶ NGUYÊN TÀN THẦN
 
-**Canonical saved checkpoint T165; next turn T166.** This PUBLIC repo contains only fictional RPG lore/context, released with the owner's explicit approval 2026-10-19.
+**Canonical saved checkpoint T167; next turn T168.** This PUBLIC repo contains only fictional RPG lore/context, released with the owner's explicit approval 2026-10-19.
 
 ## Read first (<60 seconds)
 1. [Fast start](state/quick-start.md)
@@ -21,7 +21,7 @@
 - [Relationships database](https://app.notion.com/p/4ea8c07ae96d4312b585acab207bc370) — seven directed evidence-backed edges
 - [Registry and saved Notion views](graph/notion-registry.json); [initial verification receipts](verification/graph-receipts/initial-import.md)
 
-Notion is only a read-optimized graph, **not a second source of truth**. GitHub remains canon for RPG numerical state and accepted world events. The projected source commit was `c47ba6254b042f016f8f53aafb2af346173674e4` (later docs/test commits do not imply changed gameplay). Current last verified RPG turn is T165; T166 has not started. T164 and T165 Maela's bow/repeating-crossbow and Huyết Nha training with alternating safe rest are flushed. Vô Danh earned Ngắm Bắn Ổn Định Lv1 Common at T165 after a FAILED first test followed by passing 4/5 bow and 4/5 crossbow after short repositioning; passive reduces up to 10 percentage points of movement-only hit penalty on stabilized aimed shot, not a universal +10% accuracy or extra action. HP115/170 STA110/110 BLOOD15/50 TH0 souls5 EXP185/400, 5 steel bolts and one Nanh Cốt Tiễn unchanged; practice ammunition belonged to Maela. Garrick west-road bandit bounty remains ACTIVE, fixed 65 souls +100 EXP reward unpaid; character is back at temple. Tốc Mạch remains unlearned. Notion graph remains a T153 historical projection until updated. No background chat ingestion or timed auto-sync is installed.
+Notion is only a read-optimized graph, **not a second source of truth**. GitHub remains canon for RPG numerical state and accepted world events. The projected source commit was `c47ba6254b042f016f8f53aafb2af346173674e4` (later docs/test commits do not imply changed gameplay). Current last verified RPG turn is T167; T168 has not started. T166 and T167 Maela drills in sword-to-crossbow transition, aimed fire, Huyết Ảnh Bộ cooldown and correct reload were flushed. Vô Danh passed the T167 combined-maneuver test 4/5 after T166 3/5 failure and learned **Phối Hợp Kiếm–Nỏ Lv1 Common**: reduce only any actual weapon-switch-induced shot-hit penalty by up to 5 percentage points when legally switching from secured sword to ready crossbow; no free attack, reload shortcut or flat hit bonus. Separate T165 Ngắm Bắn Ổn Định Lv1 only addresses movement-specific aiming penalty by at most 10pp after <=3m movement and full stop; never double count same penalty. HP115/170 STA110/110 BLOOD15/50 TH0 souls5 EXP185/400, own ammo and consumables unchanged. Garrick west-road bandit leader quest still ACTIVE/unpaid; character remains at temple; Tốc Mạch unlearned. Notion graph remains a T153 historical projection until updated. No background chat ingestion or timed auto-sync is installed.
 
 ## GM storyline mechanics V1
 
