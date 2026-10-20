@@ -28,21 +28,21 @@ This design deliberately does **not** run a background browser, generate new ima
 
 ## SVG renderer V1 — implemented
 
-The reusable zero-dependency script [render.py](render.py) draws the public static map and the current active scene as an SVG. It reads JSON and writes ONLY the requested SVG output: it does not change gameplay, trigger T205, claim loot, edit Canva, synchronize Notion, or save \`state/current.json\` on its own.
+The reusable zero-dependency script [render.py](render.py) draws the public static map and the current active scene as an SVG. It reads JSON and writes ONLY the requested SVG output: it does not change gameplay, trigger T205, claim loot, edit Canva, synchronize Notion, or save `state/current.json` on its own.
 
 Run from the repository root (PowerShell or any shell with Python 3.10+):
 
-\`\`\`powershell
+```powershell
 python maps/render.py --output maps/exports/current.svg
 python maps/render.py --map bai-sat-ri --base-only --output maps/exports/bai-sat-ri.svg
 python maps/render.py --map hac-nha-east-approach --base-only --output maps/exports/region.svg
 python -m unittest discover -s verification -p test_map_renderer.py -v
-\`\`\`
+```
 
-\`--map\` chooses the stable map ID; omit it only when rendering the current scene, which supplies its own \`map_id\`. With \`--base-only\`, \`--map\` is required. Without \`--output\`, the SVG prints to stdout.
+`--map` chooses the stable map ID; omit it only when rendering the current scene, which supplies its own `map_id`. With `--base-only`, `--map` is required. Without `--output`, the SVG prints to stdout.
 
-**Layer convention actually implemented:** static object IDs and coordinates are read without changes from \`atlas-v1.json\`; independently movable tokens and facing vectors come from \`active-scene.json\`. The facing vector is a solid pale arrow and movement is a dashed arrow. The normalized coordinate system (0–100) denotes relative positions only, **not accurate meters**. Numbered object markers have a sidebar legend so previously established features need not be relabelled each turn. Rendering the exact same inputs yields byte-identical SVG output.
+**Layer convention actually implemented:** static object IDs and coordinates are read without changes from `atlas-v1.json`; independently movable tokens and facing vectors come from `active-scene.json`. The facing vector is a solid pale arrow and movement is a dashed arrow. The normalized coordinate system (0–100) denotes relative positions only, **not accurate meters**. Numbered object markers have a sidebar legend so previously established features need not be relabelled each turn. Rendering the exact same inputs yields byte-identical SVG output.
 
-**Important limitation:** this renderer is an executable tool and is not automatically connected to ChatGPT responses or to Canva. In future turns, GM should update **only** \`active-scene.json\` as movements are adjudicated, or a specific map object when a real world change is confirmed; renderer should be run when an updated SVG is needed. Atlas and scene checkpoint updates still follow existing RPG save policy. Canva is a separately editable decorative design, not the rendering engine or numeric authority. No claim of end-to-end speedup was benchmarked; local Python-only render cost was approximately 0.1ms per map with 10 objects on the verification environment.
+**Important limitation:** this renderer is an executable tool and is not automatically connected to ChatGPT responses or to Canva. In future turns, GM should update **only** `active-scene.json` as movements are adjudicated, or a specific map object when a real world change is confirmed; renderer should be run when an updated SVG is needed. Atlas and scene checkpoint updates still follow existing RPG save policy. Canva is a separately editable decorative design, not the rendering engine or numeric authority. No claim of end-to-end speedup was benchmarked; local Python-only render cost was approximately 0.1ms per map with 10 objects on the verification environment.
 
-**Regression receipt (2026-10-20):** focused \`python -m unittest discover -s verification -p test_map_renderer.py -v\` reported **9 tests passing**, covering all three static maps plus active scene, deterministic SVG, unchanged static objects after token moves, correct arrow differentiation, XML validity, invalid coords/facing rejection, duplicate IDs and escaped labels.
+**Regression receipt (2026-10-20):** focused `python -m unittest discover -s verification -p test_map_renderer.py -v` reported **9 tests passing**, covering all three static maps plus active scene, deterministic SVG, unchanged static objects after token moves, correct arrow differentiation, XML validity, invalid coords/facing rejection, duplicate IDs and escaped labels.
