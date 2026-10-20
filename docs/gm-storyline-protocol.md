@@ -25,6 +25,18 @@ Working context consists of `session_base` (last GitHub-verified checkpoint turn
 
 **Important limitation:** There is no installed hook enforcing this rule on future ChatGPT responses, nor a background timer. The GM must observe it while playing. Context can be compacted; if data cannot be reliably reconstructed, checkpoint/recover instead of guessing.
 
+## Runtime authority & continuity guard (merged clarification, 2026-10-21)
+
+This section clarifies existing `canon/rules.md`, `canon/progression-rules-v1.3.md`, and the T204 handoff; it changes NO numeric mechanics, gameplay turn, or save cadence.
+
+- **Authority by scope:** `main/state/current.json` and accepted append-only `events/` are the current public gameplay ledger; approved corrections/replays supersede only their documented scope. `maps/atlas-v1.json` + `maps/active-scene.json` define public terrain and map overlay (read the atlas feature branch until merged). Notion/Canva/old handoffs are references, not competing canon.
+- **Player agency:** distinguish `PROPOSED_INTENT → LEGALITY_CHECK → ADJUDICATED_RESULT → CONFIRMED_IN_SESSION → DURABLY_SAVED`. An offered button, plan, dry-run, document edit, map export or hypothetical turn never advances gameplay. Failure/partial results and autonomous NPC/enemy reactions are possible; do not grant automatic success.
+- **Ledger and persistence:** after each confirmed turn, update *in-session* current state and compact turn delta, checking causal and numerical consistency. Persist the accepted event, current state and changed scene/atlas objects together at the established 10-completed-turn checkpoint (or major irreversible event / explicit save / handoff), then verify GitHub readback before labeling `SAVED`. An attempted write or a policy-helper flag is not a receipt; on failure retain `UNSAVED` deltas.
+- **Resources and mechanics:** account for HP, STA, BLOOD, TH, EXP, Souls, equipment, consumables, cooldown, time and relevant NPC/quest flags exactly once after a legally resolved action. No self-directed spending, quest hand-in, NPC relocation, passive HP recovery, free extra attack/reaction or double-loot. Rest/recovery and persistent injuries follow previously approved canon, not narrative convenience.
+- **Randomness:** do not assert a hidden 2d10 roll, seeded RNG draw, skill bonus or hit/miss randomness as verified unless the required controlled mechanism was actually run and a reproducible receipt exists. Apply approved deterministic mechanics where possible; preserve uncertainty when evidence is insufficient. A discussed dice design is not a deployed game engine.
+- **Map & presentation:** reuse fixed World → Regional → Area/Tactical IDs/objects; only change independently resolved token position, facing and dashed travel path for movement. Change a static object and its revision only after confirmed world change. Use north-up top-down tactical map in combat, solid facing arrow and distinct dashed movement; normalized coordinates are not meters. Unplaced/unknown locations, hidden enemies and loot stay unplaced/unknown. Canva is presentation only; no new fantasy image or automatic renderer/export claim.
+- **Storytelling fast path:** Vietnamese third-person `Vô Danh`, dark-fantasy scene → adjudicated consequence → compact resource display → 2–4 feasible optional actions plus free-form choice. Do not interrupt a normal turn for redundant audits, GitHub/Notion/Canva calls, or Superpowers when trusted in-session context is enough.
+
 ## Per-turn execution
 
 1. NEW-CHAT BOOTSTRAP ONLY: when this chat has no reliable current snapshot, load minimal GitHub state and relevant lore. If a verified checkpoint already exists IN THIS SAME CHAT, reuse that exact state without another GitHub GET. Load arc/action files or Notion only on genuine missing context.
@@ -41,7 +53,7 @@ Working context consists of `session_base` (last GitHub-verified checkpoint turn
 - Show a small section **Hành động tiếp theo** at the end of a normal GM reply, preferably 2–4 clickable choices when the chat UI supports interaction; a short plain-text list is an acceptable fallback. Avoid decorative UI that adds latency. Option cards should contain a clear short title and a one-line grounded rationale, using DIL `pressable` or `button` with `GenUI.issueNewTurn` when appropriate.
 - Always permit a free-form player instruction. Choosing an option is a new user command, not an automatic action by GM.
 - If the world state or user intent makes suggestions irrelevant, omit choices rather than force a stale menu.
-- Last accepted state is T154 (see `events/0154.md`): **do not suggest “Cứu Maela” as if still captive, or “Săn Huyết Lang Vương Lv6” as an uncleared boss**. They appeared in a screenshot of an old GM turn, not the current situation.
+- Historical T154 council is **not** the latest accepted gameplay state; determine the current turn and quest/boss flags from `main/state/current.json` and accepted events. Do not suggest “Cứu Maela” as if still captive or “Săn Huyết Lang Vương Lv6” as an uncleared boss. These are historical screenshot artifacts, not current action choices.
 - Derive choices from the **latest GitHub snapshot and scene**, never a frozen T153 menu. The sealed-vessel choice is excluded until inventory/availability is confirmed. Previously resolved boss rescue/hunt options stay excluded. These are directions to choose, not guaranteed NPC presence.
 - Display combat tactical map if combat requires it, not merely as decoration in social scenes.
 
