@@ -4,6 +4,9 @@
 
 ## EDITABLE MAP ATLAS V1 — mandatory reuse for future maps
 
+**IMPLEMENTED renderer:** `python maps/render.py --output maps/exports/current.svg` reads the SAME atlas and active scene and produces an SVG with numbered terrain, token, facing arrow and travel arrow; `--map bai-sat-ri --base-only` renders the reusable fixed scrapyard. See [renderer](../maps/render.py), [tests](../verification/test_map_renderer.py), [map instructions](../maps/README.md). No external dependencies, no automatic Canva sync, no T205 game action.
+
+
 [Canva map atlas — 3 editable pages](https://www.canva.com/d/afa4HjByuyD2Dt6) / [GitHub canonical terrain](../maps/atlas-v1.json) / [T204 dynamic scene & facing](../maps/active-scene.json) / [map workflow](../maps/README.md). From T205 onward, **reuse fixed area terrain and change only player/enemy tokens, facing arrow and movement path**, or confirmed altered terrain objects. Do not regenerate or invent map geography each turn. Canva AI design is a *visual presentation*, not new canon. Notion stores lookup links. No automatic Canva↔GitHub synchronization. The next player action is still T205, no turn advanced by this map setup.
 
 ## CURRENT SCENE — T204 (use for all new gameplay)
