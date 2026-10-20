@@ -203,25 +203,27 @@
         },
         "HuyetTram": {
           "name": "Huyết Trảm",
-          "rarity": "Common",
+          "rarity": "UNVERIFIED",
           "level": 1,
           "trigger": "ACTIVE",
           "skill_exp_current": 0,
-          "next_threshold": 40,
+          "next_threshold": null,
           "mastery_receipts": [],
           "next_level_effect_approved": false,
-          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
+          "rarity_note": "Existing canon did not establish a Common or Rare classification for this ability. Track earned Skill EXP normally but do not apply class-specific promotion threshold until rarity is verified/approved."
         },
         "ThietCotTram": {
           "name": "Thiết Cốt Trảm",
-          "rarity": "Common",
+          "rarity": "UNVERIFIED",
           "level": 1,
           "trigger": "ACTIVE",
           "skill_exp_current": 0,
-          "next_threshold": 40,
+          "next_threshold": null,
           "mastery_receipts": [],
           "next_level_effect_approved": false,
-          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
+          "rarity_note": "Existing canon did not establish a Common or Rare classification for this ability. Track earned Skill EXP normally but do not apply class-specific promotion threshold until rarity is verified/approved."
         },
         "HuyetNguyetTram": {
           "name": "Huyết Nguyệt Trảm",
@@ -280,25 +282,28 @@
         },
         "TuHuyetHoiSinh": {
           "name": "Tử Huyết Hồi Sinh",
-          "rarity": "Rare",
+          "rarity": "UNVERIFIED",
           "level": 1,
           "trigger": "ACTIVE",
           "skill_exp_current": 0,
-          "next_threshold": 60,
+          "next_threshold": null,
           "mastery_receipts": [],
           "next_level_effect_approved": false,
-          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
+          "rarity_note": "Existing canon did not establish a Common or Rare classification for this ability. Track earned Skill EXP normally but do not apply class-specific promotion threshold until rarity is verified/approved."
         },
         "TuHuyetCamTri": {
           "name": "Tử Huyết Cảm Tri",
-          "rarity": "Rare",
-          "level": 1,
+          "rarity": "UNVERIFIED",
+          "level": null,
           "trigger": "ACTIVE",
           "skill_exp_current": 0,
-          "next_threshold": 60,
+          "next_threshold": null,
           "mastery_receipts": [],
           "next_level_effect_approved": false,
-          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD"
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
+          "rarity_note": "Existing canon did not establish a Common or Rare classification for this ability. Track earned Skill EXP normally but do not apply class-specific promotion threshold until rarity is verified/approved.",
+          "level_note": "Exact skill rank not shown in verified baseline; treat the ability as learned but rank unverified, no automatic upgrade yet."
         },
         "HapHuyet": {
           "name": "Hấp Huyết",
@@ -2233,6 +2238,20 @@
       "character_EXP_delta": 0,
       "skill_EXP_backfill": 0,
       "no_turn_advance": true
+    },
+    {
+      "id": "SKILL-METADATA-REPAIR-2026-10-20",
+      "type": "NON_GAMEPLAY_METADATA_REPAIR",
+      "reason": "First new mastery registry assigned unsupported Common/Rare rarities to four preexisting abilities and level1 to TuHuyetCamTri; explicitly mark unknown instead.",
+      "changes": [
+        "HuyetTram",
+        "ThietCotTram",
+        "TuHuyetHoiSinh",
+        "TuHuyetCamTri"
+      ],
+      "resources_changed": false,
+      "story_turn_advanced": false,
+      "source": "Audit self-review of canon rule addendum"
     }
   ]
 }
