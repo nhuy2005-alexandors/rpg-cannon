@@ -63,6 +63,21 @@ class TestHierarchy(unittest.TestCase):
             self.assertEqual(svg, render_map(copy.deepcopy(self.atlas), None, key))
             self.assertNotIn("data-token-id=", svg)
 
+    def test_unknown_names_are_visible_without_map_pins(self):
+        svg = render_map(self.atlas, None, "vung-hac-nha")
+        self.assertIn("data-unplaced-name=", svg)
+        self.assertIn("CHƯA ĐỊNH VỊ", svg)
+        for word in ("Nghĩa Địa Tử Thiết", "Rừng Xương", "Suối Cạn"):
+            self.assertIn(word, svg)
+        self.assertNotIn('data-object-id="nghia-dia-tu-thiet"', svg)
+
+    def test_unknown_legend_overflow_fails_readably(self):
+        altered = copy.deepcopy(self.atlas)
+        region = next(m for m in altered["maps"] if m["id"] == "vung-hac-nha")
+        region["unplaced_known_names"] *= 4
+        with self.assertRaisesRegex(ValueError, "split"):
+            render_map(altered, None, "vung-hac-nha")
+
     def test_active_game_remains_t204(self):
         game = json.loads((ROOT/"state/current.json").read_text(encoding="utf-8"))
         scene = json.loads((ROOT/"maps/active-scene.json").read_text(encoding="utf-8"))
