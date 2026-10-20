@@ -1,6 +1,6 @@
 {
   "schema_version": "HN-ACTION-CATALOG-V1",
-  "snapshot_turn": 154,
+  "snapshot_turn": 162,
   "generation_policy": "Evidence-based contextual suggestions, NOT commands, quests accepted, or world events",
   "actions": [
     {
@@ -49,6 +49,43 @@
       "requires": [],
       "confidence": "POSSIBLE_UNCONFIRMED_INVENTORY",
       "source": "events/0096-0153.md"
+    },
+    {
+      "id": "action:ask-garrick-bandit-intel",
+      "title": "Hỏi Garrick về báo cáo phục kích",
+      "description": "Đọc lời khai, nơi đoàn xe bị đánh và tin về thủ lĩnh; chưa ra khỏi thành, chưa nhận thưởng.",
+      "category": "INVESTIGATE",
+      "arc_id": "arc:bandit-leader-west-road",
+      "requires": [
+        "active_quests.bandit_leader_west_road.status=ACTIVE",
+        "location:garrick-quest-board"
+      ],
+      "confidence": "AVAILABLE_NOT_SELECTED",
+      "source": "events/0162.md"
+    },
+    {
+      "id": "action:scout-west-road",
+      "title": "Trinh sát đường vận tải phía tây",
+      "description": "Lên đường ra ngoài Đường Gác Tây để tìm dấu vết; địa điểm trại chưa rõ, có thể bị mai phục.",
+      "category": "EXPLORATION",
+      "arc_id": "arc:bandit-leader-west-road",
+      "requires": [
+        "active_quests.bandit_leader_west_road.status=ACTIVE"
+      ],
+      "confidence": "AVAILABLE_NOT_SELECTED",
+      "source": "events/0162.md"
+    },
+    {
+      "id": "action:consult-maela-bandit-scout",
+      "title": "Hỏi Maela về truy tìm toán cướp",
+      "description": "Quay lại Điện Tế Huyết xin ý kiến Maela về trinh sát và địa hình, không tự mặc định nàng tham gia.",
+      "category": "SOCIAL",
+      "arc_id": "arc:bandit-leader-west-road",
+      "requires": [
+        "active_quests.bandit_leader_west_road.status=ACTIVE"
+      ],
+      "confidence": "AVAILABLE_NOT_SELECTED",
+      "source": "events/0162.md"
     }
   ],
   "forbidden_as_open_suggestions": [
