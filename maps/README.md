@@ -70,3 +70,23 @@ Canva presentation assets (both verified by Canva design metadata and editable-e
 - Supplementary **15-page** [Atlas Hắc Nhật V1.1](https://www.canva.com/d/tpCkYiVOf3jAXHj), design `DAHYiz8iryA`: city, safe base, western route, historical caves, military landmarks, and an explicit unknowns page. Created as an independent editable design because the current Canva edit transaction API cannot add new pages to the old file.
 
 Canva presentations may contain stylistic geometry; they do not outrank GitHub's source-backed `coverage.json` and `atlas-v1.json`. The supplement passed design/page-count/readability spot checks but has not been subject to a point-by-point graphical map audit or manual owner preview approval. No automatic synchronization was installed. Notion Hub indexes verified links, not live token positions. **Player state remains T204, next T205**, without gameplay progression from map maintenance.
+
+
+## Three-tier world and region atlas (bounded extension, T204 frozen)
+
+- **World / L0:** `hac-nhat-world` — only **Vùng Hắc Nha** is mapped, all other lands remain unexplored. Future regions are additive.
+- **Region / L1:** `vung-hac-nha` — known topology: Dốc Đá Xám → Đường Gác Tây → Hắc Nha Thành → Bãi Sắt Rỉ; the NE shed belongs to the scrapyard. **No metric distance or surveyed coordinates**.
+- **Area / L2:** reuse the 17 existing `maps[].id` (rooms, camps and historic locations); their objects and IDs remain unchanged.
+- Unlocated but known-by-name locations (Suối Cạn, Nghĩa Địa Tử Thiết, Rừng Xương, Huyết Cốt Động, Cấm Lao, Kho Quân Vụ Đông) appear in the `unplaced_known_names` sidebar, **not as map pins**. Unknown bandit hideout remains undiscovered. Renderer abbreviates visible sidebar text but preserves complete names inside SVG `<title>`. When a sidebar overflows, it rejects with an instruction to split the map rather than silently hide labels.
+
+**Editable Canva master, exact-content import:** [Hắc Nhật — World & Regional Atlas (2 pages)](https://www.canva.com/d/Bpix2upN2ykgShg), design ID `DAHYjCS3NKI`. It was imported from a deterministic, hand-authored HTML layout after a previous generated design was rejected for inventing non-canon place names. Read-back verified separate editable text and shape elements; links and names are preserved. **Canva is only a presentation layer**; GitHub `atlas-v1.json` remains authority.
+
+Sample static renders from the repo root:
+
+```powershell
+python maps/render.py --base-only --map hac-nhat-world --output maps/exports/hac-nhat-world.svg
+python maps/render.py --base-only --map vung-hac-nha --output maps/exports/vung-hac-nha.svg
+python -m unittest discover -s verification -p "test_atlas_hierarchy.py" -v
+```
+
+World/region updates require a newly established region or grounded spatial relation, not every RPG turn. The normal active scene `maps/active-scene.json` continues to target the NE shed; no map hierarchy update starts T205. The supplemental Canva map is not auto-synchronized with GitHub.
