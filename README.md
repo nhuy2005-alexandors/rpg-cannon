@@ -1,6 +1,6 @@
 # HẮC NHẬT — KỶ NGUYÊN TÀN THẦN
 
-**Canonical saved checkpoint T161; next turn T162.** This PUBLIC repo contains only fictional RPG lore/context, released with the owner's explicit approval 2026-10-19.
+**Canonical saved checkpoint T162; next turn T163.** This PUBLIC repo contains only fictional RPG lore/context, released with the owner's explicit approval 2026-10-19.
 
 ## Read first (<60 seconds)
 1. [Fast start](state/quick-start.md)
@@ -21,7 +21,7 @@
 - [Relationships database](https://app.notion.com/p/4ea8c07ae96d4312b585acab207bc370) — seven directed evidence-backed edges
 - [Registry and saved Notion views](graph/notion-registry.json); [initial verification receipts](verification/graph-receipts/initial-import.md)
 
-Notion is only a read-optimized graph, **not a second source of truth**. GitHub remains canon for RPG numerical state and accepted world events. The projected source commit was `c47ba6254b042f016f8f53aafb2af346173674e4` (later docs/test commits do not imply changed gameplay). Current last verified RPG turn is T161; T162 has not started. Edran and Vaelthar clarified that only Huyết Nha +3's eligible ordinary landed sword strikes on living blooded targets grant +7 BLOOD as a currently verified recovery mechanic; neither rest, Hấp Huyết passive nor existing HP potions recover BLOOD. Other medicines/rituals not confirmed. No trial or combat in T161, HP115/170 STA110/110 BLOOD15/50 TH0 souls5. Tam Đoạn Tốc Mạch still OFFERED_NOT_STARTED, skill unlearned. Notion graph remains a T153 historical projection until updated. No background chat ingestion or timed auto-sync is installed.
+Notion is only a read-optimized graph, **not a second source of truth**. GitHub remains canon for RPG numerical state and accepted world events. The projected source commit was `c47ba6254b042f016f8f53aafb2af346173674e4` (later docs/test commits do not imply changed gameplay). Current last verified RPG turn is T162; T163 has not started. Vô Danh accepted Garrick's active bandit-leader bounty 'Săn Thủ Lĩnh Băng Cướp Đường Tây' in Hắc Nha Thành; target hideout and true identity unknown. Fixed reward 65 souls + 100 EXP only after verified completion; none yet awarded. Details first established on screen T162 because the older board sheet is not in the compressed ledger. HP115/170 STA110/110 BLOOD15/50 TH0 souls5 EXP185/400, no combat/training. Tam Đoạn Tốc Mạch still OFFERED_NOT_STARTED and Huyết Bộc unlearned. Notion graph remains a T153 historical projection until updated. No background chat ingestion or timed auto-sync is installed.
 
 ## GM storyline mechanics V1
 
