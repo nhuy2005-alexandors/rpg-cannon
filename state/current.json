@@ -1,7 +1,7 @@
 {
-  "snapshot_version": "HN-S169-V1",
-  "last_completed_turn": 169,
-  "next_turn": 170,
+  "snapshot_version": "HN-S170-V1",
+  "last_completed_turn": 170,
+  "next_turn": 171,
   "as_of": "2026-10-20",
   "location": "Điện Tế Huyết / sân tập và gian nghỉ, Hắc Nha Thành",
   "player": {
@@ -87,13 +87,13 @@
       },
       "PhoiHopKiemNo": {
         "name": "Phối Hợp Kiếm–Nỏ",
-        "level": 1,
+        "level": 2,
         "rarity": "Common",
         "unlocked_turn": 167,
         "modifier_kind": "weapon_switch_specific_aim_hit_penalty_reduction",
-        "penalty_reduction_percentage_points": 5,
+        "penalty_reduction_percentage_points": 10,
         "valid_transition": "Legally completed sword sheathing -> Liên Nỏ Hắc Nha switching and properly loaded/ready for normally timed aimed shot",
-        "effect": "Reduce only the hit penalty due to legal sword-to-crossbow weapon switching, up to 5 percentage points, never below zero; apply on immediately following valid aimed shot.",
+        "effect": "After legally securing sword and changing to ready/loaded Liên Nỏ, reduce by at most 10 percentage points only actual hit penalty due to this weapon switch on immediate legally timed aimed shot, floor remaining switch penalty at zero. Lv2 REPLACES Lv1 5pp, not additive.",
         "does_not_apply": [
           "No switching-induced penalty",
           "Incomplete weapon switch",
@@ -102,8 +102,9 @@
           "Damage bonus or reload speed bonus",
           "Guarantee hit"
         ],
-        "stacking_guard": "Ngắm Bắn Ổn Định may separately reduce up to 10 percentage points of actual movement-induced hit penalty only after <=3m move+full stop. Do not subtract both from same source penalty.",
-        "verified_training": "Maela certified 4/5 valid multibeat sequences at T167, after 3/5 not passing in T166; maintained cooldown and reload discipline."
+        "stacking_guard": "Separately Ngắm Bắn Ổn Định Lv2 addresses only actual movement-specific hit penalty up to15pp after <=3m move, full stop and valid aimed shot. Never apply both to a single penalty.",
+        "verified_training": "T170 Maela's six multibeat loaded/unloaded crossbow sequences: 1 pass loaded, 2 fail premature trigger on unloaded (no shot), 3 pass loaded, 4 pass properly reloaded, 5 pass loaded, 6 pass properly reloaded; 5/6 meets >=5/6 threshold.",
+        "last_upgraded_turn": 170
       }
     }
   },
@@ -585,6 +586,53 @@
       "potions_spent": 0,
       "HuyetBoc_trial_started": false,
       "bandit_quest_reward_paid": false
+    },
+    "T170": {
+      "action": "Maela sword-crossbow Lv2 six-sequence test; proper loaded/unloaded handling, PASS 5/6",
+      "training_minutes_approx": 125,
+      "rest_hours": 4,
+      "STA_before": 110,
+      "STA_after": 110,
+      "STA_practice_spent": 80,
+      "STA_rest_recovered": 80,
+      "STA_sequence": [
+        110,
+        90,
+        60,
+        80,
+        50,
+        70,
+        90,
+        110
+      ],
+      "HP_before": 115,
+      "HP_after": 115,
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "passed_sequences": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "failed_sequences": [
+        2
+      ],
+      "pass_threshold": 5,
+      "skill_upgraded": "Phối Hợp Kiếm–Nỏ Common Lv2",
+      "HuyetAnhBo_uses": 0,
+      "owned_ammo_spent": 0,
+      "owned_NanhCotTien_spent": 0,
+      "potions_spent": 0,
+      "quest_reward_paid": false,
+      "TocMach_training_started": false
     }
   },
   "provenance": {
@@ -827,7 +875,7 @@
     "mentor": "Maela",
     "introduced_turn": 166,
     "completed_turn": 167,
-    "status": "COMPLETED_LEARNED",
+    "status": "LV2_EARNED",
     "T166_test": {
       "complete": 3,
       "total": 5,
@@ -841,7 +889,25 @@
     },
     "owner_bolts_used": 0,
     "practice_ammunition": "Maela-owned, returned",
-    "note": "Combat technique training, no extra turn/action/weapon switch bypass"
+    "note": "Combat technique training, no extra turn/action/weapon switch bypass",
+    "skill_level": 2,
+    "last_upgraded_turn": 170,
+    "Lv2_training": {
+      "status": "PASSED",
+      "mentor": "Maela",
+      "conditions": "At least 5/6 valid multi-beat sword sheath, weapon switch and ready/reload-verified aimed crossbow sequences",
+      "required": 5,
+      "completed": 5,
+      "total": 6,
+      "failed_sequence": 2,
+      "failed_reason": "Attempted trigger on unloaded crossbow, no projectile discharged",
+      "ammo_spent_owner": 0,
+      "training_ammunition": "Maela-owned practice bolts, all recovered",
+      "STA_practice_spent": 80,
+      "STA_rest_recovered": 80,
+      "rest_hours": 4,
+      "practice_minutes_approx": 125
+    }
   },
   "archery_research_T168": {
     "status": "DISCUSSION_ONLY_NO_COST",
@@ -853,7 +919,7 @@
       },
       "PhoiHopKiemNo_Lv2": {
         "recommended_criteria": "5/6 valid weapon transfer cycles including preloaded and unloaded crossbow checks; no action/reload skip; candidate switch-specific penalty reduction up to 10pp replacing Lv1 5pp",
-        "status": "PROPOSED_NOT_STARTED_NOT_LEARNED"
+        "status": "COMPLETED_T170"
       }
     }
   }
