@@ -1,6 +1,6 @@
 {
   "schema_version": "HN-ARCS-V1",
-  "as_of_turn": 154,
+  "as_of_turn": 162,
   "authoritative": "GitHub canonical story thread registry; not quest acceptance",
   "status_enum": [
     "RUMORED",
@@ -152,6 +152,42 @@
       "next_action_ids": [],
       "disclosure": "PLAYER_KNOWN",
       "supersession": "T128–139 lần đầu bị thay thế bởi replay; không tạo boss hunt mới"
+    },
+    {
+      "id": "arc:bandit-leader-west-road",
+      "name": "Truy nã thủ lĩnh băng cướp Đường Tây",
+      "type": "BOUNTY",
+      "status": "ACTIVE",
+      "knowledge": "PARTIAL_CONFIRMED_AT_T162",
+      "introduced_turn": 162,
+      "last_evidence_turn": 162,
+      "source": [
+        "events/0162.md"
+      ],
+      "hooks": [
+        "Garrick confirmed an older unfinished wanted notice as still valid at T162",
+        "Vô Danh signed and accepted the quest; no bounty has been earned"
+      ],
+      "unresolved": [
+        "Identify the correct bandit leader and actual camp/route",
+        "Scout western cargo road beyond Đường Gác Tây",
+        "Defeat or apprehend the leader and submit reliable evidence to Garrick"
+      ],
+      "dependencies": [],
+      "npc_ids": [],
+      "location_ids": [],
+      "player_commitment": "ACCEPTED_T162",
+      "completion_reward_held": {
+        "souls": 65,
+        "EXP": 100
+      },
+      "next_action_ids": [
+        "action:ask-garrick-bandit-intel",
+        "action:scout-west-road",
+        "action:consult-maela-bandit-scout"
+      ],
+      "disclosure": "PLAYER_KNOWN",
+      "historical_note": "Older board mission details are not present in recovered compressed ledger; T162 details newly grounded on-screen rather than retroactively recovered."
     }
   ]
 }
