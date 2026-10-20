@@ -1,9 +1,9 @@
 {
-  "snapshot_version": "HN-S162-V1",
-  "last_completed_turn": 162,
-  "next_turn": 163,
+  "snapshot_version": "HN-S163-V1",
+  "last_completed_turn": 163,
+  "next_turn": 164,
   "as_of": "2026-10-20",
-  "location": "Bảng nhiệm vụ Garrick / doanh trại Hắc Nha Thành",
+  "location": "Phòng làm việc Garrick / doanh trại Hắc Nha Thành",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
@@ -297,6 +297,27 @@
       "consumables_spent": 0,
       "ammo_spent": 0,
       "training_started": false
+    },
+    "T163": {
+      "intent": "Garrick patrol intelligence only; no exit city or combat",
+      "estimated_elapsed_minutes": 20,
+      "HP_before": 115,
+      "HP_after": 115,
+      "STA_before": 110,
+      "STA_after": 110,
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "quest_status": "ACTIVE",
+      "quest_reward_paid": false,
+      "consumables_spent": 0,
+      "ammo_spent": 0,
+      "training_started": false
     }
   },
   "provenance": {
@@ -474,9 +495,33 @@
       },
       "reward_received": false,
       "source": "events/0162.md",
-      "progress": "Accepted with Garrick; no scouting, travel out of city, enemy interaction or combat yet",
-      "next_step": "Garrick patrol intel or western cargo road reconnaissance",
-      "notional_target_reputation": "Crossbowman rumored among bandits, unverified"
+      "progress": "Garrick T163 patrol and witness briefing obtained; Vô Danh remains in Hắc Nha Thành, no scouting or combat yet",
+      "next_step": "Select safe reconnaissance plan from reports or ask additional witnesses, no camp coordinates confirmed",
+      "notional_target_reputation": "Crossbowman rumored among bandits, unverified",
+      "last_evidence_turn": 163,
+      "intelligence_T163": {
+        "source": "events/0163.md",
+        "verified_patrol": [
+          "Damaged abandoned cargo wagon with broken wheel, cargo disturbance, overlapping footprints and drag marks at Dốc Đá Xám west of Đường Gác Tây; counts cannot be inferred",
+          "Some tracks from road edge toward northern rocky high ground, terminate on hard rock; neither leader nor hideout located"
+        ],
+        "terrain_from_briefing": [
+          "Open western wagon road has exposure to high ground",
+          "Suối Cạn dry streambed provides some low cover but constricts approach and is exposed to elevated fire",
+          "Northern rocky slope offers intermittent cover but broken/unstable and noisy footing"
+        ],
+        "witness_unverified": [
+          "Wagoner saw a slope figure hand-signal, then a crossbow shot; curved pale-metal object near figure's left shoulder, unreliable identification",
+          "Separate witness heard two metal clanks before an ambush; possible signal only, not established"
+        ],
+        "unresolved": [
+          "Leader true identity",
+          "Actual hideout location",
+          "Whether figure with metal marker is leader",
+          "Actual bandit strength, line of retreat and ambush trigger"
+        ],
+        "cannot_be_treated_as_recovered_history": true
+      }
     }
   }
 }
