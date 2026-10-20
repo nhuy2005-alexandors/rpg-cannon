@@ -28,6 +28,32 @@ class TestAtlasCoverage(unittest.TestCase):
             self.assertNotIn("y", item)
             # During Task 1, future map IDs are forward references resolved by Tasks 2/3.
 
+    def test_historic_hunts_and_military_coverage(self):
+        ids = {"nghia-dia-tu-thiet", "rung-xuong", "huyet-cot-ngoai-dong",
+               "huyet-cot-hanh-lang", "cam-lao", "kho-quan-vu-dong"}
+        self.assertTrue(ids.issubset(self.maps))
+        for key in ids:
+            self.assertTrue(self.maps[key]["evidence_sources"])
+
+    def test_historical_states_are_preserved(self):
+        cave = {x["id"]: x for x in self.maps["huyet-cot-hanh-lang"]["objects"]}
+        self.assertEqual(cave["cave-bone-tripwire"]["status"], "BYPASSED_NOT_DISARMED")
+        self.assertEqual(cave["cave-iron-chest"]["status"], "OPENED_T145")
+        prison = {x["id"]: x for x in self.maps["cam-lao"]["objects"]}
+        self.assertEqual(prison["cam-lao-sealed-gate"]["status"], "SEALED")
+        self.assertIn("RESOLVED_REPLAY_T139", self.maps["huyet-cot-ngoai-dong"]["known_limitations"])
+
+    def test_no_secret_rooms_plotted(self):
+        self.assertNotIn("tram-tam-trao", self.maps)
+        for key in ("western-bandit-hideout", "deep-cave-unknown",
+                    "coffin-interiors-unknown"):
+            self.assertNotIn(key, self.maps)
+
+    def test_every_mapped_coverage_id_resolved(self):
+        for item in self.coverage["areas"]:
+            if item["map_id"] is not None:
+                self.assertIn(item["map_id"], self.maps)
+
     def test_city_and_western_road_maps(self):
         ids = {"hac-nha-thanh-hub", "dien-te-huyet", "lo-ren-hac-nha",
                "garrick-bang-nhiem-vu", "duong-gac-tay",
