@@ -1,0 +1,67 @@
+{
+  "schema": "HN-MAP-SCENE-V1",
+  "last_completed_turn": 204,
+  "next_turn": 205,
+  "map_id": "nha-sat-dong-bac",
+  "status_source": "state/current.json — battle_state_T204; events/0204.md",
+  "current": {
+    "tokens": [
+      {
+        "id": "vo-danh",
+        "label": "V",
+        "category": "player",
+        "x": 75,
+        "y": 47,
+        "facing": "ENE",
+        "status": "ALIVE",
+        "weapon": "Huyết Nha +3 ready"
+      }
+    ],
+    "movement": [
+      {
+        "entity_id": "vo-danh",
+        "from": [
+          33,
+          34
+        ],
+        "to": [
+          75,
+          47
+        ],
+        "direction": "NW sector → NE sector",
+        "turn": 204
+      }
+    ],
+    "visible_hostiles": [],
+    "notes": [
+      "T204 shifted the board to reveal shallow recess and low ventilation slit",
+      "No hidden chamber/trap/enemy or reward confirmed"
+    ]
+  },
+  "legacy_timeline": {
+    "bai_sat_ri": {
+      "corpses": [
+        {
+          "id": "enemy:blackclaw-A",
+          "x": 22,
+          "y": 68,
+          "status": "DEAD_T191_LOOTED_T194"
+        },
+        {
+          "id": "enemy:blackclaw-B",
+          "x": 38,
+          "y": 64,
+          "status": "DEAD_T193_LOOTED_T194"
+        },
+        {
+          "id": "enemy:blackclaw-C",
+          "x": 64,
+          "y": 46,
+          "status": "DEAD_T199_LOOTED_T200"
+        }
+      ],
+      "no_active_enemy_confirmed": true
+    }
+  },
+  "contract": "Increment only current tokens, movement, confirmed terrain object updates. Never move static terrain because of a narrative turn alone. Display north and facing arrows distinctly."
+}
