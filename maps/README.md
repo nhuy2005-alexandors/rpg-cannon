@@ -65,4 +65,8 @@ python maps/render.py --map duong-tay-van-tai --base-only --output maps/exports/
 
 Renderer refuses **over 14 objects per map** with an actionable split-map error, visibly abbreviates long sidebar labels while preserving the full label as SVG `<title>`, and marks map `evidence_level`. An empty `PLACEHOLDER` has the message “CHƯA CÓ BỐ CỤC ĐƯỢC XÁC MINH”. No generated arrow is a real-world bearing, measured distance or a new active encounter.
 
-Canva's older three-page design `DAHYiYqsXEU` remains a separate presentation asset. New pages are not automatically created from GitHub; follow the plan's preview-before-save approval gate. Notion Hub indexes verified links, not live token positions. **Player state remains T204, next T205**, without gameplay progression from map maintenance.
+Canva presentation assets (both verified by Canva design metadata and editable-element inspection):
+- Original **3-page** [Atlas Hắc Nhật](https://www.canva.com/d/afa4HjByuyD2Dt6), design `DAHYiYqsXEU`: regional city→east scrapyard, scrapyard, NE shed. Not modified in this branch.
+- Supplementary **15-page** [Atlas Hắc Nhật V1.1](https://www.canva.com/d/tpCkYiVOf3jAXHj), design `DAHYiz8iryA`: city, safe base, western route, historical caves, military landmarks, and an explicit unknowns page. Created as an independent editable design because the current Canva edit transaction API cannot add new pages to the old file.
+
+Canva presentations may contain stylistic geometry; they do not outrank GitHub's source-backed `coverage.json` and `atlas-v1.json`. The supplement passed design/page-count/readability spot checks but has not been subject to a point-by-point graphical map audit or manual owner preview approval. No automatic synchronization was installed. Notion Hub indexes verified links, not live token positions. **Player state remains T204, next T205**, without gameplay progression from map maintenance.
