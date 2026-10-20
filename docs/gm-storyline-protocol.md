@@ -7,15 +7,27 @@
 **Owner acceptance:** 1–2 minutes for a normal RPG turn is acceptable; roughly 3 minutes is still acceptable for a complex turn. A 7-minute turn caused by routine tool/plugin orchestration is NOT the desired operating mode. These are practical targets rather than hard response-time guarantees. Narrative quality, combat math, resource accuracy, and continuity still take priority over arbitrary speed.
 
 - **Default game turn:** Narrate and adjudicate directly from active-chat working memory; do not invoke Superpowers for normal RPG gameplay, and do not call GitHub/Notion simply to generate action choices.
-- **When to retrieve:** At the start of a new chat or after evidence is missing/contradictory, fetch the minimal canonical GitHub snapshot and only scene-relevant lore. Use Notion only for important unresolved NPC/relationship context. Avoid full repository scans, global audits, extra agents, and running test suites inside ordinary gameplay turns.
+- **When to retrieve:** Read GitHub ONCE when a new chat lacks a complete trusted in-chat state, or when context/provenance is lost or contradictory. Do not read GitHub merely because a new turn started. Use Notion only for important unresolved NPC/relationship context. Avoid full repository scans, global audits, extra agents, and running test suites inside ordinary gameplay turns.
 - **When to persist:** Automatically checkpoint after 10 completed turns since the last verified GitHub checkpoint (not at every tenth absolute turn), or immediately on significant irreversible/story/NPC event, explicit save request, or session handoff. Batch related GitHub changes, verify the written commit, and project to Notion only if graph data actually changed. Never claim unsaved turns are durable.
 - **If persistence takes time:** Do not silently let routine bookkeeping dominate the turn. Report an actual sync blocker or failure succinctly when relevant; do not assert a background sync, invent a successful write, or postpone an explicitly requested checkpoint.
 - **Superpowers boundary:** Use for explicit brainstorming/engineering design, audit, and maintenance only; never require it to start or finish a player action.
 - **Budget and evidence:** Judge cost by observed latency and necessary work rather than invented timings. Do not add new services, workers, scheduled tasks, or databases for speculative optimization.
 
+## Session-local sliding window — mandatory fast path (2026-10-20)
+
+**No GitHub/Notion read on consecutive normal turns in the same chat when context is complete.** The screenshot case (T162 verified immediately before T163) MUST be a zero-fetch cache hit, not a GitHub bootstrap. Avoid narrating a GitHub check that is unnecessary.
+
+Working context consists of `session_base` (last GitHub-verified checkpoint turn and SHA), `current_state` (latest in-chat player/NPC/world state), `recent_turn_deltas` (rolling at most 10 compact resolved turn summaries with resource, inventory, quest, NPC, timeline and uncertainty deltas), and `unsaved_turns` (completed turns since verified checkpoint). This is logical in-conversation memory, not a new service or actual executable cache. Do not treat the prior checkpoint as stale solely because the player asks for the next turn.
+
+**Normal turn:** use current in-chat state -> resolve player action and mechanics -> update in-chat deltas -> answer and offer choices. No routine GitHub GET, Notion lookup, Python runner, Superpowers or global audit. Selective targeted retrieval is permitted for a real contradiction, missing evidence or context loss; do not invent facts.
+
+**Checkpoint:** After 10 completed unsaved turns, major event, explicit request, impending context loss, or chat handoff, write GitHub with expected-head verification, read back once as part of that checkpoint, then adopt the verified state locally and reset `unsaved_turns`. The following turn must NOT re-fetch that same checkpoint. Notion only for changed graph entities/relationships.
+
+**Important limitation:** There is no installed hook enforcing this rule on future ChatGPT responses, nor a background timer. The GM must observe it while playing. Context can be compacted; if data cannot be reliably reconstructed, checkpoint/recover instead of guessing.
+
 ## Per-turn execution
 
-1. Start of a session: read current snapshot, `story/arcs.json`, `story/actions.json`, `state/quick-start.md`. When an NPC/location is relevant, load that canonical file or corresponding Notion neighborhood (Notion saved views preferred if query quota limited).
+1. NEW-CHAT BOOTSTRAP ONLY: when this chat has no reliable current snapshot, load minimal GitHub state and relevant lore. If a verified checkpoint already exists IN THIS SAME CHAT, reuse that exact state without another GitHub GET. Load arc/action files or Notion only on genuine missing context.
 2. Understand the **player's actual action**. Suggested action buttons are optional proposals, never autoplay, guaranteed success or a formal quest accepted by the player.
 3. Resolve one narrated turn from evidence and rules; audit HP/STA/BLOOD/TH, item inventory, status, time and all named affected NPCs. Offer 2–4 contextual optional next actions after resolution, plus free-form choice.
 4. Before showing suggestions, apply `eligible_actions`: allow only understood preconditions and verified availability. The sealed-vessel option remains hidden until access to the relevant item is confirmed; keep free-form play open. Verify that any action has a source and correct location/preconditions. Do not suggest already RESOLVED arcs as current active objectives.
