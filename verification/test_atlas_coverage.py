@@ -54,6 +54,18 @@ class TestAtlasCoverage(unittest.TestCase):
             if item["map_id"] is not None:
                 self.assertIn(item["map_id"], self.maps)
 
+    def test_frozen_game_state(self):
+        state = json.loads((ROOT / "state/current.json").read_text(encoding="utf-8"))
+        self.assertEqual((state["last_completed_turn"], state["next_turn"]), (204, 205))
+        r = state["player"]["resources"]
+        self.assertEqual(tuple(r[k]["current"] for k in ("HP", "STA", "BLOOD", "TuHuyet")),
+                         (68, 28, 28, 0))
+        self.assertEqual((r["souls"], state["player"]["exp"]), (41, 215))
+        q = state["active_quests"]["black_claw_hyenas_east_scrapyard"]
+        self.assertEqual(q["evidence_collected_pairs"], 3)
+        self.assertEqual(q["status"], "ACTIVE")
+        self.assertFalse(q["reward_received"])
+
     def test_city_and_western_road_maps(self):
         ids = {"hac-nha-thanh-hub", "dien-te-huyet", "lo-ren-hac-nha",
                "garrick-bang-nhiem-vu", "duong-gac-tay",
