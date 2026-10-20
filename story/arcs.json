@@ -1,6 +1,6 @@
 {
   "schema_version": "HN-ARCS-V1",
-  "as_of_turn": 162,
+  "as_of_turn": 163,
   "authoritative": "GitHub canonical story thread registry; not quest acceptance",
   "status_enum": [
     "RUMORED",
@@ -158,20 +158,24 @@
       "name": "Truy nã thủ lĩnh băng cướp Đường Tây",
       "type": "BOUNTY",
       "status": "ACTIVE",
-      "knowledge": "PARTIAL_CONFIRMED_AT_T162",
+      "knowledge": "PATROL_AND_WITNESS_INTELLIGENCE_PARTIAL_T163",
       "introduced_turn": 162,
-      "last_evidence_turn": 162,
+      "last_evidence_turn": 163,
       "source": [
-        "events/0162.md"
+        "events/0162.md",
+        "events/0163.md"
       ],
       "hooks": [
         "Garrick confirmed an older unfinished wanted notice as still valid at T162",
-        "Vô Danh signed and accepted the quest; no bounty has been earned"
+        "Vô Danh signed and accepted the quest; no bounty has been earned",
+        "Patrol verified damaged cargo wagon at Dốc Đá Xám, drag marks, and tracks toward northern high ground with no confirmed hideout",
+        "Witness saw alleged hand-signal from high ground and a curved light-metal shoulder marker, both unverified identification clues",
+        "Another witness heard two metal clanks before ambush; signal hypothesis unconfirmed"
       ],
       "unresolved": [
-        "Identify the correct bandit leader and actual camp/route",
-        "Scout western cargo road beyond Đường Gác Tây",
-        "Defeat or apprehend the leader and submit reliable evidence to Garrick"
+        "Find the actual hideout without confusing road traces for confirmed coordinates",
+        "Identify the correct leader using multiple reliable observations, not just metal shoulder marker",
+        "Defeat or apprehend leader; submit proof to Garrick and claim bounty once"
       ],
       "dependencies": [],
       "npc_ids": [],
@@ -182,7 +186,6 @@
         "EXP": 100
       },
       "next_action_ids": [
-        "action:ask-garrick-bandit-intel",
         "action:scout-west-road",
         "action:consult-maela-bandit-scout"
       ],
