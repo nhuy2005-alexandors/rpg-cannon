@@ -1,0 +1,270 @@
+{
+  "schema": "HN-MAP-COVERAGE-V1",
+  "areas": [
+    {
+      "id": "hac-nha-east-approach",
+      "label": "Hắc Nha Thành — hướng Đông",
+      "grade": "LAYOUT_CONFIRMED",
+      "sources": [
+        "canon/world/places.md"
+      ],
+      "map_id": "hac-nha-east-approach",
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "bai-sat-ri",
+      "label": "Bãi Sắt Rỉ",
+      "grade": "LAYOUT_CONFIRMED",
+      "sources": [
+        "events/0204.md"
+      ],
+      "map_id": "bai-sat-ri",
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "nha-sat-dong-bac",
+      "label": "Nhà sắt Đông Bắc",
+      "grade": "LAYOUT_CONFIRMED",
+      "sources": [
+        "events/0204.md"
+      ],
+      "map_id": "nha-sat-dong-bac",
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "hac-nha-thanh-hub",
+      "label": "Hắc Nha Thành tổng quan",
+      "grade": "SCHEMATIC",
+      "sources": [
+        "canon/world/places.md"
+      ],
+      "map_id": "hac-nha-thanh-hub",
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "dien-te-huyet",
+      "label": "Điện Tế Huyết",
+      "grade": "SCHEMATIC",
+      "sources": [
+        "canon/world/places.md",
+        "events/0096-0153.md"
+      ],
+      "map_id": "dien-te-huyet",
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "lo-ren-hac-nha",
+      "label": "Lò Rèn Hắc Nha",
+      "grade": "SCHEMATIC",
+      "sources": [
+        "canon/world/places.md",
+        "events/0096-0153.md"
+      ],
+      "map_id": "lo-ren-hac-nha",
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "garrick-bang-nhiem-vu",
+      "label": "Bảng nhiệm vụ Garrick",
+      "grade": "SCHEMATIC",
+      "sources": [
+        "canon/world/places.md",
+        "events/0163.md"
+      ],
+      "map_id": "garrick-bang-nhiem-vu",
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "nghia-dia-tu-thiet",
+      "label": "Nghĩa Địa Tử Thiết",
+      "grade": "SCHEMATIC",
+      "sources": [
+        "canon/world/places.md",
+        "events/0096-0153.md"
+      ],
+      "map_id": "nghia-dia-tu-thiet",
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "rung-xuong",
+      "label": "Rừng Xương",
+      "grade": "SCHEMATIC",
+      "sources": [
+        "canon/world/places.md"
+      ],
+      "map_id": "rung-xuong",
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "huyet-cot-ngoai-dong",
+      "label": "Huyết Cốt Động — khu ngoài",
+      "grade": "SCHEMATIC",
+      "sources": [
+        "events/0096-0153.md"
+      ],
+      "map_id": "huyet-cot-ngoai-dong",
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "huyet-cot-hanh-lang",
+      "label": "Huyết Cốt Động — hành lang",
+      "grade": "LAYOUT_CONFIRMED",
+      "sources": [
+        "events/0096-0153.md"
+      ],
+      "map_id": "huyet-cot-hanh-lang",
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "tram-tam-trao",
+      "label": "Trạm Tam Trảo",
+      "grade": "PLACEHOLDER",
+      "sources": [
+        "canon/world/places.md",
+        "events/0096-0153.md"
+      ],
+      "map_id": null,
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "cam-lao",
+      "label": "Cấm Lao / Hầm Giam",
+      "grade": "SCHEMATIC",
+      "sources": [
+        "canon/world/places.md",
+        "events/0050-0095.md"
+      ],
+      "map_id": "cam-lao",
+      "aliases": [
+        "Hầm Giam"
+      ],
+      "notes": []
+    },
+    {
+      "id": "kho-quan-vu-dong",
+      "label": "Kho Quân Vụ Đông",
+      "grade": "SCHEMATIC",
+      "sources": [
+        "events/0050-0095.md"
+      ],
+      "map_id": "kho-quan-vu-dong",
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "tram-gac-so-bon",
+      "label": "Trạm Gác Số Bốn",
+      "grade": "UNVERIFIED",
+      "sources": [
+        "docs/superpowers/specs/2026-10-20-hac-nhat-full-atlas-expansion-design.md"
+      ],
+      "map_id": null,
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "duong-gac-tay",
+      "label": "Đường Gác Tây",
+      "grade": "SCHEMATIC",
+      "sources": [
+        "canon/world/places.md",
+        "events/0096-0153.md"
+      ],
+      "map_id": "duong-gac-tay",
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "duong-tay-van-tai",
+      "label": "Đường vận tải phía Tây",
+      "grade": "SCHEMATIC",
+      "sources": [
+        "canon/world/places.md",
+        "events/0163.md"
+      ],
+      "map_id": "duong-tay-van-tai",
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "doc-da-xam",
+      "label": "Dốc Đá Xám",
+      "grade": "SCHEMATIC",
+      "sources": [
+        "events/0163.md"
+      ],
+      "map_id": "doc-da-xam",
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "suoi-can",
+      "label": "Suối Cạn",
+      "grade": "SCHEMATIC",
+      "sources": [
+        "events/0163.md"
+      ],
+      "map_id": "suoi-can",
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "western-bandit-hideout",
+      "label": "Sào huyệt băng cướp (chưa biết)",
+      "grade": "UNVERIFIED",
+      "sources": [
+        "events/0163.md"
+      ],
+      "map_id": null,
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "deep-cave-unknown",
+      "label": "Phần sâu động chưa khám phá",
+      "grade": "PLACEHOLDER",
+      "sources": [
+        "canon/world/places.md",
+        "events/0096-0153.md"
+      ],
+      "map_id": null,
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "coffin-interiors-unknown",
+      "label": "Bên trong ba quan tài",
+      "grade": "PLACEHOLDER",
+      "sources": [
+        "canon/world/places.md",
+        "events/0050-0095.md"
+      ],
+      "map_id": null,
+      "aliases": [],
+      "notes": []
+    },
+    {
+      "id": "maela-or-kharzug-private-location",
+      "label": "Vị trí riêng NPC chưa xác định",
+      "grade": "UNVERIFIED",
+      "sources": [
+        "events/0050-0095.md"
+      ],
+      "map_id": null,
+      "aliases": [],
+      "notes": []
+    }
+  ]
+}
