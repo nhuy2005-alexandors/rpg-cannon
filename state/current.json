@@ -1,9 +1,9 @@
 {
-  "snapshot_version": "HN-S174-V1",
-  "last_completed_turn": 174,
-  "next_turn": 175,
+  "snapshot_version": "HN-S176-V1",
+  "last_completed_turn": 176,
+  "next_turn": 177,
   "as_of": "2026-10-20",
-  "location": "Điện Tế Huyết / gian luyện kiếm và nghỉ, Hắc Nha Thành",
+  "location": "Điện Tế Huyết / sân tập và gian nghỉ, Hắc Nha Thành",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
@@ -122,6 +122,48 @@
         "lv1_superseded": "Lv1 1.20 first+0.90 second physical coefficients replaced, not added",
         "earned_via": "Edran Nhị Liên Tiết Huyết three-stage qualifying trial, T174 4/5 shadow chains, 3/3 blood-flow-control drills, 3/3 rotating dummy true-cast criteria",
         "weapon_interactions": "Huyết Nha +3 +7 BLOOD applies to valid landed ordinary sword hits only, NOT this sword skill; Hấp Huyết HP on valid living blood-bearing damaging melee sword hit, not dummies"
+      }
+    },
+    "combat_skills": {
+      "GatKiemCanChien": {
+        "name": "Gạt Kiếm Cận Chiến",
+        "english_alias": "Parry",
+        "rarity": "Common",
+        "level": 1,
+        "earned_turn": 176,
+        "category": "DEFENSIVE_MELEE_REACTION",
+        "STA_cost_per_attempt": 8,
+        "BLOOD_cost": 0,
+        "HP_cost": 0,
+        "eligible": "Wielded and ready sword, incoming perceivable physical melee attack within deflectable contact distance; angle, timing, space and reaction availability must permit attempt",
+        "resolution": "Physical/mechanical defense check vs real attacker; can deflect fully or reduce impact if successful, or fail and incoming attack proceeds. No automatic guaranteed defense.",
+        "action_economy": "Subject to existing combat turn and reaction limits. Does not generate free attacks/ripostes/extra actions or allow arbitrarily many reactions just because STA remains.",
+        "exclusions": [
+          "blind-side/unperceived strike",
+          "unreachable attacking vector",
+          "faster attack beyond viable response",
+          "overpowering blow without plausible deflection",
+          "out-of-range strike"
+        ],
+        "trial_evidence": {
+          "source": "events/0176.md",
+          "basic": {
+            "passed": 7,
+            "total": 8,
+            "threshold": 7
+          },
+          "rapid": {
+            "passed": 6,
+            "total": 8,
+            "threshold": 6
+          },
+          "close": {
+            "passed": 5,
+            "total": 6,
+            "threshold": 5
+          }
+        },
+        "unverified_upgrade": "Huyết Nhận Hộ Thế hypothetical BLOOD-enhanced blade defense: NOT learned, NOT active and costs unspecified"
       }
     }
   },
@@ -766,6 +808,96 @@
       "skill_upgraded": "Huyết Trảm Nhị Liên Rare Lv2",
       "quest_reward_paid": false,
       "TocMach_training_started": false
+    },
+    "T175": {
+      "action": "Edran Vaelthar first protected sword parry practice, basic 6/8 rapid 4/8 close 3/6, NO skill",
+      "HP_before": 93,
+      "HP_after": 93,
+      "STA_before": 110,
+      "STA_after": 110,
+      "STA_practice_spent": 55,
+      "STA_rest_recovered": 55,
+      "STA_sequence": [
+        110,
+        100,
+        85,
+        65,
+        55,
+        75,
+        95,
+        110
+      ],
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "parry_skill_learned": false,
+      "Hp_damage": 0,
+      "owned_ammo_spent": 0,
+      "items_spent": 0,
+      "sword_blood_infusion": "UNTESTED_NOT_SPENT"
+    },
+    "T176": {
+      "action": "Edran three-part parry certification, 7/8 basic, 6/8 rapid, 5/6 under1m; Parry Common Lv1 EARNED",
+      "HP_before": 93,
+      "HP_after": 93,
+      "STA_before": 110,
+      "STA_after": 110,
+      "STA_practice_spent": 65,
+      "STA_rest_recovered": 65,
+      "STA_sequence": [
+        110,
+        100,
+        85,
+        65,
+        85,
+        65,
+        85,
+        105,
+        110
+      ],
+      "BLOOD_before": 15,
+      "BLOOD_after": 15,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 5,
+      "souls_after": 5,
+      "EXP_before": 185,
+      "EXP_after": 185,
+      "phase_costs_STA": {
+        "warmup": 10,
+        "basic": 15,
+        "rapid": 20,
+        "close": 20
+      },
+      "trial": {
+        "basic": {
+          "success": 7,
+          "total": 8,
+          "require": 7
+        },
+        "rapid": {
+          "success": 6,
+          "total": 8,
+          "require": 6
+        },
+        "very_close": {
+          "success": 5,
+          "total": 6,
+          "require": 5
+        }
+      },
+      "skill_learned": "Gạt Kiếm Cận Chiến Common Lv1; cost 8 STA per valid real-combat reaction attempt",
+      "real_blood_cost": 0,
+      "owned_ammo_spent": 0,
+      "items_spent": 0,
+      "rest_hours": 4,
+      "quest_reward_paid": false,
+      "TocMach_trial_started": false
     }
   },
   "provenance": {
@@ -1096,6 +1228,65 @@
       "STA_safe_rest_recovered": 60,
       "rest_hours": 3,
       "upgraded_skill": "Huyết Trảm Nhị Liên Rare Lv2"
+    }
+  },
+  "sword_parry_training": {
+    "trainer": "Edran",
+    "advice_source": "Vaelthar (Tử Vương)",
+    "site": "Điện Tế Huyết",
+    "source": [
+      "events/0175.md",
+      "events/0176.md"
+    ],
+    "T175": {
+      "status": "FAILED_NOT_LEARNED",
+      "basic": {
+        "passed": 6,
+        "total": 8,
+        "required": 7
+      },
+      "rapid": {
+        "passed": 4,
+        "total": 8,
+        "required": 6
+      },
+      "very_close": {
+        "passed": 3,
+        "total": 6,
+        "required": 5
+      },
+      "STA_spent": 55,
+      "STA_recovered": 55,
+      "rest_hours": 3
+    },
+    "T176": {
+      "status": "PASSED_LEARNED_LV1",
+      "basic": {
+        "passed": 7,
+        "total": 8,
+        "required": 7
+      },
+      "rapid": {
+        "passed": 6,
+        "total": 8,
+        "required": 6
+      },
+      "very_close": {
+        "passed": 5,
+        "total": 6,
+        "required": 5
+      },
+      "STA_spent": 65,
+      "STA_recovered": 65,
+      "rest_hours": 4,
+      "HP_spent": 0,
+      "BLOOD_spent": 0
+    },
+    "blood_blade_hypothesis": {
+      "name": "Huyết Nhận Hộ Thế",
+      "status": "UNVERIFIED_HYPOTHESIS_NOT_LEARNED",
+      "meaning": "No evidence that paying BLOOD can reinforce Huyết Nha or improve parry; no cast cost finalized",
+      "resources_spent": 0
     }
   }
 }
