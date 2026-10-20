@@ -4,7 +4,7 @@
 
 ## NEW-SESSION MAP BEHAVIOR HANDOFF — READ FIRST
 
-**Required for new ChatGPT session:** [GM Map Behavior & Session Handoff V1](../docs/gm-map-behavior-handoff-v1.md). This records long-lived map rules, official Canva IDs, rejection of AI-invented cartography, static-vs-dynamic updates, world/region discovery policy, verification limitations and checkpoint boundaries. **Read it ONCE at new-session bootstrap**, not every normal turn. Map expansion stays on feature branch `feat/full-atlas-v1-20261020` until verified/merged; gameplay authority and T204 remain unchanged on `main`. No Canva/ImageGen regeneration each turn; never assume automatic Canva↔GitHub sync.
+**Required for new ChatGPT session:** [GM Map Behavior & Session Handoff V1](../docs/gm-map-behavior-handoff-v1.md). [Persisted T204 World/Regional SVG snapshots](../maps/exports/README.md) are available for viewing; Canva designs remain separately editable. This records long-lived map rules, official Canva IDs, rejection of AI-invented cartography, static-vs-dynamic updates, world/region discovery policy, verification limitations and checkpoint boundaries. **Read it ONCE at new-session bootstrap**, not every normal turn. Map expansion stays on feature branch `feat/full-atlas-v1-20261020` until verified/merged; gameplay authority and T204 remain unchanged on `main`. No Canva/ImageGen regeneration each turn; never assume automatic Canva↔GitHub sync.
 
 ## TWO-SCALE OVERVIEW MAPS — WORLD + REGIONAL
 
