@@ -1,6 +1,6 @@
 HẮC NHẬT — GM RULES, CONTEXT PROTOCOL AND VERIFICATION
 
-Protocol version HN-RULES-V1.3-LEAN | Original 2026-10-19, latest progression amendment 2026-10-20 | Latest narrated turn T194; rules activation does not advance gameplay.
+Protocol version HN-RULES-V1.3-LEAN | Original 2026-10-19, latest progression amendment 2026-10-20 | Historical T194 activation note only; for the latest narrated turn consult GitHub main `state/current.json` + accepted events. Rule/document edits do not advance gameplay.
 
 Scope: Interactive text-only dark fantasy RPG, NOT software production architecture. User controls Vô Danh; GM supplies events, consequences, tactical logic and story. Do not turn each turn into systems-engineering deliberation.
 
@@ -16,7 +16,7 @@ ORDER OF EVIDENCE / CANON
 
 Unknown is UNKNOWN. Never present a previously designed plan, quote, option, or intent as completed action. Never silently modify existing equipment, inventory, character history or NPC relationships.
 
-Canonical last-current-state: https://docs.google.com/document/d/1UdiBYsWGz7qf278q6MLcNaLaYf-kSQ0wG6A_kkMRo0s/edit
+Current authoritative numerical state: `main/state/current.json` in https://github.com/nhuy2005-alexandors/rpg-cannon ; Google Docs snapshot (historical reference, not live authority): https://docs.google.com/document/d/1UdiBYsWGz7qf278q6MLcNaLaYf-kSQ0wG6A_kkMRo0s/edit
 
 NPC canon: https://docs.google.com/document/d/1Oi3QfhM7BUaHQ6q1THQCLk4Mcus9ON8N-nUAGc964k8/edit
 
@@ -52,7 +52,7 @@ RESOURCES AND ECONOMY
 
 Explicitly track HP, STA, BLOOD, Tử Huyết, EXP/level, souls, equipment, arrows, material counts and elapsed time. No costs or auto-rest without user action and actual safe conditions.
 
-SOUL + SKILL RULES (OWNER-APPROVED): See `canon/progression-rules-v1.3.md` and calculation helper `story/progression.py` for V1.3 (applies at T195+, no automatic hook). Historical V1.2 Soul claim correction `events/rules-amendment-T194-v1.2.md` unchanged: souls5+24=29 and A/B cannot claim again. Soul at FIRST valid unique corpse loot only, D level gap, TH only from genuine source. Public RNG seeded in current.json, roll only when action genuinely eligible and calculator executed; no fake random receipt. Skill EXP per activation, no free skill changes; Parry Lv3 and Nhị Liên Lv3 next-level effects only when earned. Private GM Registry Notion draft for world info; public state stays numeric authority. Legacy C migration reward-only Lv5 Normal, no unverified elite magic, no encounter bonus in current battle. Do NOT play T195 until user action.
+SOUL + SKILL RULES (OWNER-APPROVED): See `canon/progression-rules-v1.3.md` and calculation helper `story/progression.py` for V1.3 (applies at T195+, no automatic hook). Historical V1.2 Soul claim correction `events/rules-amendment-T194-v1.2.md` unchanged: souls5+24=29 and A/B cannot claim again. Soul at FIRST valid unique corpse loot only, D level gap, TH only from genuine source. Public RNG seeded in current.json, roll only when action genuinely eligible and calculator executed; no fake random receipt. Skill EXP per activation, no free skill changes; Parry Lv3 and Nhị Liên Lv3 next-level effects only when earned. Private GM Registry Notion draft for world info; public state stays numeric authority. Historical pre-T195 migration: C had a reward-only Lv5 Normal commitment, with no unverified elite magic or encounter bonus. Later accepted event outcomes control C's current status. Never advance the **next turn identified by `state/current.json`** without the player's action.
 
 If crafting has material/fee/time/risk, deduct exactly once ONLY after selected and successfully transacted; appraisals and quotes spend nothing. A craft can have plausible trouble or risks but never invent extra resource charges.
 
@@ -72,7 +72,7 @@ When Vô Danh returns to base, GM should naturally check and depict known NPCs, 
 
 Persistent wounds and NPC medical recovery evolve only if time and treatment plausibly pass. On-screen causes for substantial NPC changes.
 
-APPEND-ONLY EVENT PROCEDURE AFTER EVERY TURN
+IN-SESSION TURN DELTAS AND APPEND-ONLY CHECKPOINT PROCEDURE
 
 (1) In active same-session chat, reuse last verified `state/current.json` as in-session truth and pending unsaved deltas. Do NOT re-fetch GitHub every turn; follow `docs/gm-storyline-protocol.md` FAST MODE sliding-window checkpoint. Fetch targeted canonical files only on new-session or real conflict.
 
@@ -82,11 +82,11 @@ APPEND-ONLY EVENT PROCEDURE AFTER EVERY TURN
 
 (4) Audit pre-state -> deltas -> post-state, exact arithmetic and caps, item ownership, quest flags, elapsed time. Check consistency with last verified current state.
 
-(5) Append compact T[number] event to ledger (including evidence source, key NPC/world changes and uncertainty). NEVER rewrite a historical PASS, death or accepted replay without dated correction marker. Deprecate superseded outcomes explicitly.
+(5) Record a compact T[number] *in-session pending event delta* (including player action, evidence, NPC/world changes and uncertainty). When a checkpoint is due, append accepted events to the durable GitHub ledger. NEVER rewrite a historical PASS, death or accepted replay without dated correction marker. Deprecate superseded outcomes explicitly.
 
-(6) Update 00 canonical CURRENT numerical state and name/version after the event. Update NPC canon only if new consequential NPC fact is established. Preserve one numerical authority, no stale copies.
+(6) Update current numerical state in the session after each confirmed turn. At a due checkpoint, update GitHub `state/current.json`, changed scene/atlas objects and consequential NPC canon as appropriate, then verify readback. Keep one numerical authority; no competing stale copies.
 
-(7) Every major arc or every 5–10 turns create dated checkpoint or Drive revision tag; before crossing chats, verify authoritative docs exist and their last modified status, then read them at start.
+(7) Persist after **10 completed turns since the last verified GitHub checkpoint**, or earlier for major irreversible/arc/NPC events, explicit save, handoff, or imminent context loss. Reset the counter only after successful write + readback. If a write fails, keep deltas `UNSAVED`; do not claim a Drive revision or Notion projection as a substitute.
 
 (8) At user request, export portable plain UTF-8 Markdown/JSON backup. Drive revision history is useful but is not a guarantee against deletion, account disconnection, or connector failure; periodic offline backup is advised.
 
@@ -122,7 +122,7 @@ DO NOT mark hanging bone spike tripwire disarmed; T142–146 it was bypassed.
 
 DO NOT reuse spent Huyết Tinh Tinh Anh, Da Lang Vương or Hắc Thiết Tinh Luyện.
 
-DO NOT self-heal HP while sleeping T152 nor use potions T153. Final accepted: HP115, STA85, BLOOD25, TH0, souls5.
+DO NOT retroactively self-heal HP while sleeping T152 or consume potions at T153. The old T153 figures (HP115, STA85, BLOOD25, TH0, Souls5) are **historical**, NOT current; read `state/current.json` for the latest balance.
 
 No external app provider automatically persists updates. If connector read/write unavailable, transparently state and provide snapshot in chat rather than silently drift.
 
@@ -139,4 +139,4 @@ User explicitly requested Superpowers methodological audit AFTER storing owner-a
 
 ## V1.3 lean operational status
 
-The assistant explicitly activated owner-approved V1.3 rule text and helper after T194, without any in-game action. A lightweight deterministic Python policy helper is available, but GM must actually invoke it and log receipts; it is NOT connected to automatic chat turns. For hidden encounters the GM note is a private Notion draft with limited privacy assurance, not a deployed confidential database. Do not claim an unseen private enemy template is locked unless the actual versioned template and hash were saved first. At current standoff, C has only a reward-only M1 contract, combat attributes and magic remain unknown; no imagined retcons.
+The assistant explicitly activated owner-approved V1.3 rule text and helper after T194, without any in-game action. A lightweight deterministic Python policy helper is available, but GM must actually invoke it and log receipts; it is NOT connected to automatic chat turns. For hidden encounters the GM note is a private Notion draft with limited privacy assurance, not a deployed confidential database. Do not claim an unseen private enemy template is locked unless the actual versioned template and hash were saved first. At the historical T194 standoff, C had only a reward-only M1 commitment; do not reinterpret that description as C's current status or retroactively invent combat abilities. Check accepted T195+ events and current state.
