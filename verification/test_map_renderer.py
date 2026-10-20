@@ -1,5 +1,6 @@
 """Focused regression tests for the public reusable maps, no network/dependencies."""
 import copy
+import json
 import sys
 import unittest
 import xml.etree.ElementTree as ET
@@ -78,6 +79,18 @@ class TestSVGAtlas(unittest.TestCase):
         self.assertNotIn('Vòng & móng <sắt>', svg)
         self.assertIn('Vòng &amp; móng &lt;sắt&gt;', svg)
         ET.fromstring(svg)
+
+    def test_repository_fixtures_render_all_three_maps(self):
+        root = Path(__file__).resolve().parents[1] / 'maps'
+        atlas = json.loads((root / 'atlas-v1.json').read_text(encoding='utf-8'))
+        scene = json.loads((root / 'active-scene.json').read_text(encoding='utf-8'))
+        self.assertEqual(len(atlas['maps']), 3)
+        for area in atlas['maps']:
+            svg = render_map(atlas, None, area['id'])
+            self.assertTrue(ET.fromstring(svg).tag.endswith('svg'))
+        current = render_map(atlas, scene, scene['map_id'])
+        self.assertIn('data-token-id="vo-danh"', current)
+        self.assertIn(f"Cuối T{scene['last_completed_turn']}", current)
 
     def test_duplicate_objects_fail_closed(self):
         a = copy.deepcopy(ATLAS)
