@@ -1,0 +1,270 @@
+{
+  "schema": "HN-MAP-ATLAS-V1",
+  "title": "Hắc Nhật — persistent editable area maps",
+  "canonical_geography_policy": "Coordinates are schematic normalized 0..100, NOT meters, not discoverable distances. GitHub state/events outrank illustrations; no non-canon hidden places.",
+  "north": "up",
+  "facing_degrees": {
+    "N": 0,
+    "NE": 45,
+    "ENE": 67.5,
+    "E": 90,
+    "SE": 135,
+    "S": 180,
+    "SW": 225,
+    "W": 270,
+    "NW": 315
+  },
+  "maps": [
+    {
+      "id": "hac-nha-east-approach",
+      "name": "Hắc Nha Thành — tuyến phía đông",
+      "extent": "schematic region",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "objects": [
+        {
+          "id": "hac-nha-thanh",
+          "type": "landmark",
+          "label": "Hắc Nha Thành",
+          "x": 18,
+          "y": 45,
+          "status": "known"
+        },
+        {
+          "id": "market-board",
+          "type": "point",
+          "label": "Bảng ủy thác (trong thành)",
+          "x": 21,
+          "y": 59,
+          "status": "known_within_city"
+        },
+        {
+          "id": "east-route",
+          "type": "path",
+          "label": "Đường tới Bãi Sắt Rỉ",
+          "points": [
+            [
+              25,
+              47
+            ],
+            [
+              38,
+              47
+            ],
+            [
+              50,
+              40
+            ],
+            [
+              67,
+              40
+            ]
+          ],
+          "status": "known_connectivity_not_scale"
+        },
+        {
+          "id": "bai-sat-ri",
+          "type": "landmark",
+          "label": "Bãi Sắt Rỉ (phía đông)",
+          "x": 77,
+          "y": 38,
+          "status": "known"
+        },
+        {
+          "id": "east-shed",
+          "type": "point",
+          "label": "Nhà sắt Đông Bắc",
+          "x": 87,
+          "y": 23,
+          "status": "known_within_scrapyard"
+        }
+      ],
+      "unplaced_known_names": [
+        "Điện Tế Huyết (địa điểm đã đến; bản đồ khu này chưa đủ định vị)",
+        "Khu nhiệm vụ thủ lĩnh cướp đường phía tây (chưa có vị trí chính xác)"
+      ],
+      "links": [
+        {
+          "map_id": "bai-sat-ri",
+          "point_id": "bai-sat-ri"
+        }
+      ]
+    },
+    {
+      "id": "bai-sat-ri",
+      "name": "Bãi Sắt Rỉ — mặt bằng khu vực",
+      "extent": "schematic tactical area",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "objects": [
+        {
+          "id": "western-ore-wagon",
+          "type": "cover",
+          "label": "Xe quặng lật phía tây",
+          "x": 19,
+          "y": 52,
+          "status": "known"
+        },
+        {
+          "id": "north-loose-scrap",
+          "type": "hazard-terrain",
+          "label": "Sắt vụn lỏng phía bắc",
+          "x": 49,
+          "y": 13,
+          "status": "known"
+        },
+        {
+          "id": "central-open",
+          "type": "terrain",
+          "label": "Khoảng trống giao chiến",
+          "x": 45,
+          "y": 49,
+          "status": "known"
+        },
+        {
+          "id": "fallen-iron-cage",
+          "type": "cover",
+          "label": "Lồng sắt đổ",
+          "x": 46,
+          "y": 75,
+          "status": "known_relative"
+        },
+        {
+          "id": "southeast-refuse",
+          "type": "hazard-terrain",
+          "label": "Hố rác đông nam",
+          "x": 77,
+          "y": 78,
+          "status": "known"
+        },
+        {
+          "id": "northeast-ruined-shed",
+          "type": "structure",
+          "label": "Nhà sắt Đông Bắc",
+          "x": 81,
+          "y": 23,
+          "w": 22,
+          "h": 27,
+          "status": "known"
+        },
+        {
+          "id": "shed-west-entrance",
+          "type": "door",
+          "label": "Lối vào phía tây nhà sắt",
+          "x": 70,
+          "y": 36,
+          "status": "known"
+        }
+      ],
+      "links": [
+        {
+          "map_id": "nha-sat-dong-bac",
+          "point_id": "northeast-ruined-shed"
+        }
+      ]
+    },
+    {
+      "id": "nha-sat-dong-bac",
+      "name": "Nhà sắt Đông Bắc — nội thất",
+      "extent": "schematic room, west entrance, north up",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "objects": [
+        {
+          "id": "room-boundary",
+          "type": "room",
+          "label": "Nội thất nhà sắt",
+          "x": 50,
+          "y": 50,
+          "w": 84,
+          "h": 76,
+          "status": "known_approximate"
+        },
+        {
+          "id": "west-door",
+          "type": "door",
+          "label": "Cửa phía tây",
+          "x": 8,
+          "y": 56,
+          "status": "known"
+        },
+        {
+          "id": "northwest-ring",
+          "type": "clue",
+          "label": "Vòng sắt & xích đứt",
+          "x": 24,
+          "y": 24,
+          "status": "observed_T203"
+        },
+        {
+          "id": "overturned-table",
+          "type": "cover",
+          "label": "Bàn sắt đổ",
+          "x": 65,
+          "y": 68,
+          "status": "observed_T202"
+        },
+        {
+          "id": "boot-print",
+          "type": "clue",
+          "label": "Dấu ủng mờ gần bàn",
+          "x": 53,
+          "y": 76,
+          "status": "observed_T202"
+        },
+        {
+          "id": "moved-board",
+          "type": "cover",
+          "label": "Tấm ván đã dời",
+          "x": 70,
+          "y": 51,
+          "status": "moved_T204"
+        },
+        {
+          "id": "shallow-recess",
+          "type": "clue",
+          "label": "Hốc nông sát tường đông",
+          "x": 84,
+          "y": 29,
+          "status": "observed_T204"
+        },
+        {
+          "id": "ventilation-slit",
+          "type": "clue",
+          "label": "Khe thông khí thấp",
+          "x": 91,
+          "y": 37,
+          "status": "observed_T204_destination_unknown"
+        },
+        {
+          "id": "old-leather",
+          "type": "clue",
+          "label": "Dây da đứt mắc đinh",
+          "x": 81,
+          "y": 43,
+          "status": "observed_T204"
+        },
+        {
+          "id": "floor-scratches",
+          "type": "clue",
+          "label": "Vết xước kéo về giữa phòng",
+          "x": 64,
+          "y": 53,
+          "status": "observed_T204_relation_unknown"
+        }
+      ],
+      "unknowns": [
+        "Vent leads where: UNKNOWN",
+        "Iron ring former occupant: UNKNOWN",
+        "No hidden chamber or loot confirmed"
+      ]
+    }
+  ],
+  "update_contract": {
+    "terrain": "immutable between turns unless player action or explicit world event changes it; change only identified object and revision",
+    "tokens": "independent scene layer; update position, facing and movement for each turn, never redraw terrain",
+    "revelation": "add discovered landmarks to public map only after gameplay confirmation",
+    "private_lore": "store in private GM registry only; do not place in public atlas",
+    "rendering": "Canva editable design is the reusable presentation view; JSON is the canonical editable object model"
+  }
+}
