@@ -88,6 +88,13 @@
           "map_id": "bai-sat-ri",
           "point_id": "bai-sat-ri"
         }
+      ],
+      "evidence_level": "LAYOUT_CONFIRMED",
+      "evidence_sources": [
+        "canon/world/places.md"
+      ],
+      "known_limitations": [
+        "Existing schematic approximate layout only"
       ]
     },
     {
@@ -161,6 +168,13 @@
           "map_id": "nha-sat-dong-bac",
           "point_id": "northeast-ruined-shed"
         }
+      ],
+      "evidence_level": "LAYOUT_CONFIRMED",
+      "evidence_sources": [
+        "events/0204.md"
+      ],
+      "known_limitations": [
+        "Existing schematic approximate layout only"
       ]
     },
     {
@@ -257,6 +271,302 @@
         "Vent leads where: UNKNOWN",
         "Iron ring former occupant: UNKNOWN",
         "No hidden chamber or loot confirmed"
+      ],
+      "evidence_level": "LAYOUT_CONFIRMED",
+      "evidence_sources": [
+        "events/0204.md"
+      ],
+      "known_limitations": [
+        "Existing schematic approximate layout only"
+      ]
+    },
+    {
+      "id": "hac-nha-thanh-hub",
+      "name": "Hắc Nha Thành — sơ đồ chức năng",
+      "extent": "schematic; relative only, no metric distance",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0163.md"
+      ],
+      "known_limitations": [
+        "Diagram positions are illustrative, NOT surveyed coordinates",
+        "Internal district adjacency is not canon"
+      ],
+      "objects": [
+        {
+          "id": "city-hub",
+          "type": "landmark",
+          "label": "Hắc Nha Thành",
+          "x": 50,
+          "y": 48,
+          "status": "known_context"
+        },
+        {
+          "id": "temple-node",
+          "type": "point",
+          "label": "Điện Tế Huyết (trong thành)",
+          "x": 34,
+          "y": 25,
+          "status": "known_context"
+        },
+        {
+          "id": "forge-node",
+          "type": "point",
+          "label": "Lò rèn Durgan (trong thành)",
+          "x": 66,
+          "y": 29,
+          "status": "known_context"
+        },
+        {
+          "id": "garrick-office",
+          "type": "point",
+          "label": "Bảng nhiệm vụ Garrick",
+          "x": 48,
+          "y": 73,
+          "status": "known_context"
+        }
+      ]
+    },
+    {
+      "id": "dien-te-huyet",
+      "name": "Điện Tế Huyết — căn cứ",
+      "extent": "schematic; relative only, no metric distance",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0160.md"
+      ],
+      "known_limitations": [
+        "Diagram positions are illustrative, NOT surveyed coordinates",
+        "Training positions are conceptual, no detailed floor plan"
+      ],
+      "objects": [
+        {
+          "id": "temple-base",
+          "type": "landmark",
+          "label": "Điện Tế Huyết, nơi ở an toàn",
+          "x": 50,
+          "y": 47,
+          "status": "known_context"
+        },
+        {
+          "id": "training-court",
+          "type": "point",
+          "label": "Sân luyện tập được nhắc T160",
+          "x": 34,
+          "y": 69,
+          "status": "known_context"
+        }
+      ]
+    },
+    {
+      "id": "lo-ren-hac-nha",
+      "name": "Lò Rèn Hắc Nha — Durgan",
+      "extent": "schematic; relative only, no metric distance",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0096-0153.md"
+      ],
+      "known_limitations": [
+        "Diagram positions are illustrative, NOT surveyed coordinates",
+        "Forge interior arrangement unknown"
+      ],
+      "objects": [
+        {
+          "id": "durgan-forge",
+          "type": "landmark",
+          "label": "Xưởng của Durgan",
+          "x": 50,
+          "y": 50,
+          "status": "known_context"
+        }
+      ]
+    },
+    {
+      "id": "garrick-bang-nhiem-vu",
+      "name": "Bảng ủy thác Garrick",
+      "extent": "schematic; relative only, no metric distance",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0163.md"
+      ],
+      "known_limitations": [
+        "Diagram positions are illustrative, NOT surveyed coordinates",
+        "Bounty 3/3 fangs not yet handed in"
+      ],
+      "objects": [
+        {
+          "id": "garrick-board",
+          "type": "landmark",
+          "label": "Bảng nhiệm vụ và văn phòng Garrick",
+          "x": 50,
+          "y": 50,
+          "status": "known_context"
+        }
+      ]
+    },
+    {
+      "id": "duong-gac-tay",
+      "name": "Đường Gác Tây",
+      "extent": "schematic; relative only, no metric distance",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0096-0153.md"
+      ],
+      "known_limitations": [
+        "Diagram positions are illustrative, NOT surveyed coordinates"
+      ],
+      "objects": [
+        {
+          "id": "west-gate",
+          "type": "landmark",
+          "label": "Đường Gác Tây, lối ra phía tây",
+          "x": 50,
+          "y": 50,
+          "status": "known_context"
+        }
+      ]
+    },
+    {
+      "id": "duong-tay-van-tai",
+      "name": "Đường vận tải phía Tây",
+      "extent": "schematic; relative only, no metric distance",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0163.md"
+      ],
+      "known_limitations": [
+        "Diagram positions are illustrative, NOT surveyed coordinates",
+        "No route to bandit hideout established"
+      ],
+      "objects": [
+        {
+          "id": "road-entry",
+          "type": "point",
+          "label": "Đường phía ngoài Đường Gác Tây",
+          "x": 22,
+          "y": 54,
+          "status": "known_context"
+        },
+        {
+          "id": "road-wagon-zone",
+          "type": "point",
+          "label": "Đoạn xe hàng hư tại Dốc Đá Xám",
+          "x": 70,
+          "y": 52,
+          "status": "known_context"
+        },
+        {
+          "id": "western-route",
+          "type": "path",
+          "label": "Lối đường hàng (chỉ kết nối tương đối)",
+          "points": [
+            [
+              27,
+              54
+            ],
+            [
+              46,
+              52
+            ],
+            [
+              63,
+              52
+            ]
+          ],
+          "status": "reported_verified"
+        }
+      ]
+    },
+    {
+      "id": "doc-da-xam",
+      "name": "Dốc Đá Xám — dấu tích xe hàng",
+      "extent": "schematic; relative only, no metric distance",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "events/0163.md"
+      ],
+      "known_limitations": [
+        "Diagram positions are illustrative, NOT surveyed coordinates",
+        "Witness-signaler/crossbow claims unverified; don't place enemies"
+      ],
+      "objects": [
+        {
+          "id": "broken-wagon",
+          "type": "cover",
+          "label": "Xe hàng hỏng bỏ lại",
+          "x": 51,
+          "y": 57,
+          "status": "known_context"
+        },
+        {
+          "id": "north-high-ground",
+          "type": "terrain",
+          "label": "Địa hình cao nhiều đá phía bắc",
+          "x": 49,
+          "y": 24,
+          "status": "known_context"
+        },
+        {
+          "id": "tracks-disappear",
+          "type": "clue",
+          "label": "Dấu vết mất trên nền đá",
+          "x": 73,
+          "y": 30,
+          "status": "known_context"
+        }
+      ]
+    },
+    {
+      "id": "suoi-can",
+      "name": "Suối Cạn — địa hình gần Đường Tây",
+      "extent": "schematic; relative only, no metric distance",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "events/0163.md"
+      ],
+      "known_limitations": [
+        "Diagram positions are illustrative, NOT surveyed coordinates",
+        "No known safe route or precise width"
+      ],
+      "objects": [
+        {
+          "id": "dry-streambed",
+          "type": "terrain",
+          "label": "Suối Cạn, lòng suối khô",
+          "x": 49,
+          "y": 54,
+          "status": "known_context"
+        },
+        {
+          "id": "narrow-channel",
+          "type": "hazard-terrain",
+          "label": "Lòng suối hẹp, có nguy cơ lộ",
+          "x": 76,
+          "y": 57,
+          "status": "known_context"
+        }
       ]
     }
   ],
