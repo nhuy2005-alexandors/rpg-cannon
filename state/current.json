@@ -1,14 +1,14 @@
 {
-  "snapshot_version": "HN-S194-V1.3-LEAN-RULES-NO-TURN",
-  "last_completed_turn": 194,
-  "next_turn": 195,
+  "snapshot_version": "HN-S204-V1.3-LEAN-CHECKPOINT",
+  "last_completed_turn": 204,
+  "next_turn": 205,
   "as_of": "2026-10-20",
-  "location": "Bãi Sắt Rỉ, phía tây-trung tâm gần xác Linh Cẩu B; xe quặng đổ ở tây; Linh Cẩu C lộ diện phía tây lán sắt đông bắc cách ~12m",
+  "location": "Bãi Sắt Rỉ, phía trong căn nhà sắt bỏ hoang ở đông bắc; Vô Danh tại góc đông bắc, đứng cạnh tấm ván vừa dời, mặt hướng đông-đông bắc nhìn hốc nông và khe thông khí thấp.",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
     "level": 6,
-    "exp": 205,
+    "exp": 215,
     "exp_next": 400,
     "unallocated_points": 0,
     "attributes": {
@@ -19,22 +19,22 @@
     },
     "resources": {
       "HP": {
-        "current": 90,
+        "current": 68,
         "max": 170
       },
       "STA": {
-        "current": 53,
+        "current": 28,
         "max": 110
       },
       "BLOOD": {
-        "current": 21,
+        "current": 28,
         "max": 50
       },
       "TuHuyet": {
         "current": 0,
         "max": 20
       },
-      "souls": 29
+      "souls": 41
     },
     "passives": {
       "HapHuyet": {
@@ -282,12 +282,32 @@
           "rarity": "Rare",
           "level": 2,
           "trigger": "ACTIVE",
-          "skill_exp_current": 0,
+          "skill_exp_current": 2,
           "next_threshold": 135,
-          "mastery_receipts": [],
+          "mastery_receipts": [
+            {
+              "turn": 198,
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "source": "events/0198.md",
+              "action_id": "T198/A01"
+            }
+          ],
           "next_level_effect_approved": true,
-          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
-          "use_receipts": {},
+          "bonus_randomness_status": "VERIFIED_ROLL_T198_NO_BONUS",
+          "use_receipts": {
+            "T198/A01": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "ROLLED_NO_BONUS",
+              "draw": 2348867648,
+              "rng_version": "HN-RNG-V1.3",
+              "rng_action_key": "HuyetTramNhiLien/T198/A01",
+              "source": "events/0198.md",
+              "practice_context_id": "blackclaw-C:melee-combo:T198"
+            }
+          },
           "next_level_contract": "V1.3-TWO-SLASH-L3"
         },
         "TuHuyetHoiSinh": {
@@ -334,12 +354,32 @@
           "rarity": "Common",
           "level": 2,
           "trigger": "PASSIVE_QUALIFYING_TRIGGER",
-          "skill_exp_current": 0,
+          "skill_exp_current": 2,
           "next_threshold": 90,
-          "mastery_receipts": [],
+          "mastery_receipts": [
+            {
+              "turn": 196,
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "source": "events/0196.md",
+              "action_id": "T196/A01"
+            }
+          ],
           "next_level_effect_approved": false,
-          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
-          "use_receipts": {}
+          "bonus_randomness_status": "VERIFIED_ROLL_T196_NO_BONUS",
+          "use_receipts": {
+            "T196/A01": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "ROLLED_NO_BONUS",
+              "draw": 2344874366,
+              "rng_version": "HN-RNG-V1.3",
+              "rng_action_key": "NgamBanOnDinh/T196/A01",
+              "source": "events/0196.md",
+              "practice_context_id": "blackclaw-C:aimed-crossbow-after-short-reposition:T196"
+            }
+          }
         },
         "PhoiHopKiemNo": {
           "name": "Phối Hợp Kiếm–Nỏ",
@@ -370,9 +410,9 @@
     "HuyetDuocQuanDung": 2,
     "heal_HP_each": 30,
     "TinhLucDuoc": 0,
-    "steel_bolts": 4,
+    "steel_bolts": 3,
     "NanhCotTien": 1,
-    "black_claw_hyena_fang_pairs": 2
+    "black_claw_hyena_fang_pairs": 3
   },
   "base_storage": {
     "NanhLangVuong": 2,
@@ -397,7 +437,9 @@
     "tam_trao_tripwire": "BYPASSED_NOT_DISARMED",
     "boss_replay": "T128-139 replay replaces original; loot counted once",
     "kharzug_distinct_from_dead_wolf": true,
-    "tam_trao_council": "T154 discussion at temple; no departure, no deeper station exploration"
+    "tam_trao_council": "T154 discussion at temple; no departure, no deeper station exploration",
+    "ruined_iron_shed_exploration": "T204 NE board moved; shallow recess with strap, scratches, low vent; no new enemy/loot verified",
+    "blackclaw_quest_evidence_collected_pairs": 3
   },
   "npc_last_verified_T93": {
     "Edran": "alive at temple",
@@ -1534,6 +1576,225 @@
       "rest_hours": 0,
       "STA_rest_recovered": 0,
       "skill_casts": 0
+    },
+    "T195": {
+      "action": "Move southwest, stow sword, load crossbow, C advances",
+      "source": "events/0195.md",
+      "HP_before": 90,
+      "HP_after": 90,
+      "STA_before": 53,
+      "STA_after": 53,
+      "BLOOD_before": 21,
+      "BLOOD_after": 21,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 29,
+      "souls_after": 29,
+      "EXP_before": 205,
+      "EXP_after": 205,
+      "ammo_loaded_after": 1,
+      "ammo_reserve_after": 3,
+      "enemy_C_HP_after": 100,
+      "enemy_C_distance_approx_m": 9
+    },
+    "T196": {
+      "action": "Fire one aimed bolt into C, C advances to ~2m",
+      "source": "events/0196.md",
+      "HP_before": 90,
+      "HP_after": 90,
+      "STA_before": 53,
+      "STA_after": 53,
+      "BLOOD_before": 21,
+      "BLOOD_after": 21,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 29,
+      "souls_after": 29,
+      "EXP_before": 205,
+      "EXP_after": 205,
+      "ammo_steel_spent": 1,
+      "ammo_owned_after": 3,
+      "enemy_C_HP_after": 82,
+      "shot_damage": 18,
+      "skill": "NgamBanOnDinh",
+      "skill_exp_gain": 2,
+      "rng_draw": 2344874366
+    },
+    "T197": {
+      "action": "Draw sword, C bite deals 10 HP",
+      "source": "events/0197.md",
+      "HP_before": 90,
+      "HP_after": 80,
+      "STA_before": 53,
+      "STA_after": 53,
+      "BLOOD_before": 21,
+      "BLOOD_after": 21,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 29,
+      "souls_after": 29,
+      "EXP_before": 205,
+      "EXP_after": 205,
+      "enemy_C_HP_after": 82,
+      "enemy_damage": 10,
+      "parry_triggered": false,
+      "sword_ready_after": true
+    },
+    "T198": {
+      "action": "Huyet Tram Nhi Lien two strikes, C counter, lifesteal",
+      "source": "events/0198.md",
+      "HP_before": 80,
+      "HP_after": 66,
+      "STA_before": 53,
+      "STA_after": 28,
+      "BLOOD_before": 21,
+      "BLOOD_after": 21,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 29,
+      "souls_after": 29,
+      "EXP_before": 205,
+      "EXP_after": 205,
+      "enemy_C_HP_after": 21,
+      "hit_damage": [
+        37,
+        24
+      ],
+      "skill_HP_cost": 12,
+      "skill_STA_cost": 25,
+      "lifesteal": 5,
+      "enemy_damage": 7,
+      "skill": "HuyetTramNhiLien",
+      "skill_exp_gain": 2,
+      "rng_draw": 2348867648
+    },
+    "T199": {
+      "action": "Ordinary sword strike kills C, heal2 and blood+7",
+      "source": "events/0199.md",
+      "HP_before": 66,
+      "HP_after": 68,
+      "STA_before": 28,
+      "STA_after": 28,
+      "BLOOD_before": 21,
+      "BLOOD_after": 28,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 29,
+      "souls_after": 29,
+      "EXP_before": 205,
+      "EXP_after": 215,
+      "enemy_C_HP_after": 0,
+      "enemy_C_dead": true,
+      "overkill_capped_damage": 21,
+      "lifesteal": 2,
+      "ordinary_huyet_nha_BLOOD": 7,
+      "kill_EXP": 10
+    },
+    "T200": {
+      "action": "Loot C: fang pair3/3, first corpse souls+12",
+      "source": "events/0200.md",
+      "HP_before": 68,
+      "HP_after": 68,
+      "STA_before": 28,
+      "STA_after": 28,
+      "BLOOD_before": 28,
+      "BLOOD_after": 28,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 29,
+      "souls_after": 41,
+      "EXP_before": 215,
+      "EXP_after": 215,
+      "fang_pairs_before": 2,
+      "fang_pairs_after": 3,
+      "first_loot_souls": 12,
+      "claim_id": "claim:T200:blackclaw-C:soul-v1.3",
+      "TH_award": 0,
+      "quest_reward_paid": false
+    },
+    "T201": {
+      "action": "Cautious reconnaissance outside NE ruined iron shed",
+      "source": "events/0201.md",
+      "HP_before": 68,
+      "HP_after": 68,
+      "STA_before": 28,
+      "STA_after": 28,
+      "BLOOD_before": 28,
+      "BLOOD_after": 28,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 41,
+      "souls_after": 41,
+      "EXP_before": 215,
+      "EXP_after": 215,
+      "position": "~2m outside western entrance of shed",
+      "facing": "NE"
+    },
+    "T202": {
+      "action": "Enter ruined shed; ring chain, boot trace and NE board",
+      "source": "events/0202.md",
+      "HP_before": 68,
+      "HP_after": 68,
+      "STA_before": 28,
+      "STA_after": 28,
+      "BLOOD_before": 28,
+      "BLOOD_after": 28,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 41,
+      "souls_after": 41,
+      "EXP_before": 215,
+      "EXP_after": 215,
+      "position": "center inside shed",
+      "facing": "NW"
+    },
+    "T203": {
+      "action": "Investigate iron ring and distorted chain, no loot",
+      "source": "events/0203.md",
+      "HP_before": 68,
+      "HP_after": 68,
+      "STA_before": 28,
+      "STA_after": 28,
+      "BLOOD_before": 28,
+      "BLOOD_after": 28,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 41,
+      "souls_after": 41,
+      "EXP_before": 215,
+      "EXP_after": 215,
+      "position": "NW iron ring within shed",
+      "facing": "NW",
+      "minutes_elapsed_approx": 4
+    },
+    "T204": {
+      "action": "Move NE inside shed, shift board to reveal shallow cavity, leather, scratches and low vent",
+      "source": "events/0204.md",
+      "HP_before": 68,
+      "HP_after": 68,
+      "STA_before": 28,
+      "STA_after": 28,
+      "BLOOD_before": 28,
+      "BLOOD_after": 28,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "souls_before": 41,
+      "souls_after": 41,
+      "EXP_before": 215,
+      "EXP_after": 215,
+      "position": "NE interior beside moved board",
+      "facing": "E-NE",
+      "move_direction": "from NW ring toward NE wall",
+      "discovery": [
+        "shallow recess",
+        "broken leather strap on old nail",
+        "horizontal floor scrapes",
+        "low ventilation opening with weak draft"
+      ],
+      "confirmed_enemy": false,
+      "hidden_chamber_confirmed": false,
+      "loot_received": false,
+      "quest_reward_paid": false
     }
   },
   "provenance": {
@@ -1750,7 +2011,7 @@
       "estimated_targets_from_scavenger": "Khoảng 3 cá thể, nghe kể, chưa xác minh",
       "hunting_area": "Bãi Sắt Rỉ/đống phế thải ngoài tường thành phía đông, gần Đường Vành Tro",
       "evidence_required": "Ba cặp nanh đặc trưng còn nhận diện được, mang về bàn ủy thác để kiểm tra",
-      "evidence_collected_pairs": 2,
+      "evidence_collected_pairs": 3,
       "evidence_required_pairs": 3,
       "reward_on_verified_completion": {
         "souls": 20,
@@ -1758,8 +2019,8 @@
       },
       "reward_received": false,
       "source": "events/0184.md",
-      "progress": "A killed T191 and B killed T193; characteristic paired fangs from both carcasses physically extracted, inspected intact at T194, 2/3 pairs IN INVENTORY but UNVERIFIED by clerk, reward UNPAID. Third living black-claw hyena C confirmed at northeast shed, 100/100HP, detected Vô Danh ~12m away. Next action required.",
-      "next_step": "C has found Vô Danh; choose action to engage, assess, retreat or use cover. Do NOT auto-charge/kill third, grant evidence pair, hand-in bounty, or assume safety.",
+      "progress": "A/B trophy pairs extracted T194; C defeated T199, third intact pair extracted T200, 3/3 physically held. No clerk verification or hand-in, bounty 20 Souls +30 character EXP STILL UNPAID. V now investigating northeast shed T204.",
+      "next_step": "Hand in three intact characteristic fang pairs to bounty clerk in Hắc Nha Thành to request validation and payment; optionally finish shed investigation. Never grant +20 Souls/+30EXP without successful hand-in.",
       "reconnaissance_T184": {
         "observation_position": "Bờ tây sau xe quặng lật nghiêng bên gờ đất thấp",
         "enemy_A": {
@@ -1799,7 +2060,7 @@
           "Whether enemies have noticed anything suspicious"
         ]
       },
-      "last_evidence_turn": 194,
+      "last_evidence_turn": 200,
       "evidence_pending_verification": true,
       "kill_proof_receipts": [
         {
@@ -1814,6 +2075,13 @@
           "enemy": "Black-claw Hyena B",
           "HP_after": 0,
           "proof_extracted_turn": 194,
+          "pairs": 1
+        },
+        {
+          "source": "events/0200.md",
+          "enemy": "Black-claw Hyena C",
+          "HP_after": 0,
+          "proof_extracted_turn": 200,
           "pairs": 1
         }
       ]
@@ -2231,11 +2499,24 @@
         "rank_multiplier": 1,
         "D": 1,
         "claimed": true
+      },
+      "enemy:blackclaw-C": {
+        "claim_id": "claim:T200:blackclaw-C:soul-v1.3",
+        "source": "events/0200.md",
+        "loot_turn": 200,
+        "souls": 12,
+        "L_reward": 5,
+        "rank_multiplier": 1,
+        "D": 1,
+        "claimed": true,
+        "encounter_bonus": 0,
+        "TH": 0
       }
     },
-    "C_status": "ALIVE_NO_SOULS_EARNED_UNTIL_FIRST_VERIFIED_LOOT",
+    "C_status": "DEAD_T199_FIRST_SOUL_CLAIM_COMPLETE_T200_NO_DUPLICATE",
     "TH_from_A_B": 0,
-    "actual_biological_enemy_level": "UNREVEALED; L_reward=5 is reward-calibration only"
+    "actual_biological_enemy_level": "UNREVEALED; L_reward=5 is reward-calibration only",
+    "TH_from_A_B_C": 0
   },
   "rules_corrections": [
     {
@@ -2354,5 +2635,54 @@
         "NO_PLUS7_BLOOD_ON_SKILL"
       ]
     }
+  },
+  "battle_state_T204": {
+    "status": "COMBAT_ENDED_C_DEAD_NO_NEW_HOSTILE_CONFIRMED_IN_OBSERVED_ROOM",
+    "last_enemy_C": {
+      "type": "Linh Cẩu Móng Đen",
+      "HP": 0,
+      "max_HP": 100,
+      "status": "DEAD_T199",
+      "fangs_extracted_turn": 200,
+      "soul_first_loot_claimed_turn": 200
+    },
+    "player_position": "NE interior of ruined iron shed, next to board shifted aside",
+    "player_facing": "E-NE into shallow recess at east wall base",
+    "last_move_direction": "NW->NE inside shed; sword ready",
+    "enemy_confirmed_here": "NONE_OBSERVED_NOT_PROOF_SAFE",
+    "layout": {
+      "entrance": "west side",
+      "ring": "NW floor old anchor with broken link",
+      "table": "southeast interior overturned",
+      "board": "NE near wall, moved T204",
+      "recess": "low shallow niche behind board along east wall, not enterable by adult",
+      "vent": "low opening weak air draft, destination not established"
+    },
+    "known_clues": [
+      "worn iron ring and twisted chain",
+      "older scratches near ring",
+      "faint boot print near table",
+      "dry broken leather strap on nail behind moved board",
+      "horizontal scrapes toward center",
+      "low ventilation slit"
+    ],
+    "unresolved": [
+      "identity of thing once tied to ring",
+      "origin/date of older scratches and boot print",
+      "where low vent leads",
+      "whether anything beyond visual range"
+    ],
+    "confirmed_traps": "NONE_FOUND_IN_CHECKED_AREA",
+    "reward": "NONE"
+  },
+  "checkpoint": {
+    "id": "HN-T204",
+    "last_completed_turn": 204,
+    "source_events": "events/0195.md..events/0204.md",
+    "previous_checkpoint_last_completed_turn": 194,
+    "number_narrated_turns": 10,
+    "gameplay_retcon": false,
+    "notion_sync_status": "NOT_UPDATED_CURRENT_NUMERIC_AUTHORITY_GITHUB",
+    "chat_only_unsaved_turns_after_verified_write": 0
   }
 }
