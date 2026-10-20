@@ -1,6 +1,6 @@
 {
   "schema_version": "HN-ACTION-CATALOG-V1",
-  "snapshot_turn": 162,
+  "snapshot_turn": 163,
   "generation_policy": "Evidence-based contextual suggestions, NOT commands, quests accepted, or world events",
   "actions": [
     {
@@ -52,40 +52,40 @@
     },
     {
       "id": "action:ask-garrick-bandit-intel",
-      "title": "Hỏi Garrick về báo cáo phục kích",
-      "description": "Đọc lời khai, nơi đoàn xe bị đánh và tin về thủ lĩnh; chưa ra khỏi thành, chưa nhận thưởng.",
+      "title": "Hỏi thêm Garrick về nhân chứng và tuần tra",
+      "description": "Đã đọc báo cáo chung T163; có thể xin gặp người đánh xe hoặc hỏi đội tuần tra bổ sung nếu họ còn ở đây, chưa bảo đảm họ có mặt.",
       "category": "INVESTIGATE",
       "arc_id": "arc:bandit-leader-west-road",
       "requires": [
         "active_quests.bandit_leader_west_road.status=ACTIVE",
         "location:garrick-quest-board"
       ],
-      "confidence": "AVAILABLE_NOT_SELECTED",
-      "source": "events/0162.md"
+      "confidence": "FOLLOWUP_POSSIBLE_NOT_GUARANTEED",
+      "source": "events/0163.md"
     },
     {
       "id": "action:scout-west-road",
       "title": "Trinh sát đường vận tải phía tây",
-      "description": "Lên đường ra ngoài Đường Gác Tây để tìm dấu vết; địa điểm trại chưa rõ, có thể bị mai phục.",
+      "description": "Từ trong thành đi Đường Gác Tây tới Dốc Đá Xám/Suối Cạn để tìm dấu vết; thủ lĩnh và doanh trại chưa có tọa độ, có nguy cơ mai phục.",
       "category": "EXPLORATION",
       "arc_id": "arc:bandit-leader-west-road",
       "requires": [
         "active_quests.bandit_leader_west_road.status=ACTIVE"
       ],
       "confidence": "AVAILABLE_NOT_SELECTED",
-      "source": "events/0162.md"
+      "source": "events/0163.md"
     },
     {
       "id": "action:consult-maela-bandit-scout",
       "title": "Hỏi Maela về truy tìm toán cướp",
-      "description": "Quay lại Điện Tế Huyết xin ý kiến Maela về trinh sát và địa hình, không tự mặc định nàng tham gia.",
+      "description": "Về Điện Tế Huyết hỏi Maela về lối tiếp cận Dốc Đá Xám/Suối Cạn và khả năng tự nguyện cùng trinh sát, không tự nhập đội.",
       "category": "SOCIAL",
       "arc_id": "arc:bandit-leader-west-road",
       "requires": [
         "active_quests.bandit_leader_west_road.status=ACTIVE"
       ],
       "confidence": "AVAILABLE_NOT_SELECTED",
-      "source": "events/0162.md"
+      "source": "events/0163.md"
     }
   ],
   "forbidden_as_open_suggestions": [
