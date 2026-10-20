@@ -2,6 +2,10 @@
 
 **LATEST VERIFIED RPG CHECKPOINT: T204; NEXT PLAYER-DIRECTED TURN T205.** The complete ten-turn T195–T204 progression and source are recorded in `events/0195.md` through `events/0204.md` and numeric authority `state/current.json`. **V1.3 LEAN remains active.** A note below under "HISTORIC QUICK START" concerns the old T194 snapshot and is not the current situation.
 
+## NEW-SESSION MAP BEHAVIOR HANDOFF — READ FIRST
+
+**Required for new ChatGPT session:** [GM Map Behavior & Session Handoff V1](../docs/gm-map-behavior-handoff-v1.md). This records long-lived map rules, official Canva IDs, rejection of AI-invented cartography, static-vs-dynamic updates, world/region discovery policy, verification limitations and checkpoint boundaries. **Read it ONCE at new-session bootstrap**, not every normal turn. Map expansion stays on feature branch `feat/full-atlas-v1-20261020` until verified/merged; gameplay authority and T204 remain unchanged on `main`. No Canva/ImageGen regeneration each turn; never assume automatic Canva↔GitHub sync.
+
 ## TWO-SCALE OVERVIEW MAPS — WORLD + REGIONAL
 
 Use the [editable 2-page Canva World/Regional map](https://www.canva.com/d/Bpix2upN2ykgShg) (design `DAHYjCS3NKI`) or GitHub `maps/atlas-v1.json` IDs `hac-nhat-world` (World, only Hắc Nha discovered) and `vung-hac-nha` (Regional). The regional map confirms west road/Gray Rock Slope and east scrapyard/NE shed relative to city. Other locations appear in a **not-yet-located** list, not arbitrary pins. Always reuse local maps as lower tier. No hidden regions, meter-scale distances or automatic Canva sync. **T204 unchanged and T205 not played.**
