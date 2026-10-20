@@ -2682,7 +2682,9 @@
     "previous_checkpoint_last_completed_turn": 194,
     "number_narrated_turns": 10,
     "gameplay_retcon": false,
-    "notion_sync_status": "NOT_UPDATED_CURRENT_NUMERIC_AUTHORITY_GITHUB",
-    "chat_only_unsaved_turns_after_verified_write": 0
+    "notion_sync_status": "HUB_SUMMARY_VERIFIED; HISTORIC_T153_GRAPH_NOT_REBUILT",
+    "chat_only_unsaved_turns_after_verified_write": 0,
+    "notion_hub_page_id": "3fe864d2-95ce-8178-95ae-d0bcfde6ac34",
+    "notion_summary_sources_git_commit": "1eaac4e68ac6e2d138818eeb609c3916e275d34e"
   }
 }
