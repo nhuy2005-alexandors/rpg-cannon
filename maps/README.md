@@ -46,3 +46,23 @@ python -m unittest discover -s verification -p test_map_renderer.py -v
 **Important limitation:** this renderer is an executable tool and is not automatically connected to ChatGPT responses or to Canva. In future turns, GM should update **only** `active-scene.json` as movements are adjudicated, or a specific map object when a real world change is confirmed; renderer should be run when an updated SVG is needed. Atlas and scene checkpoint updates still follow existing RPG save policy. Canva is a separately editable decorative design, not the rendering engine or numeric authority. No claim of end-to-end speedup was benchmarked; local Python-only render cost was approximately 0.1ms per map with 10 objects on the verification environment.
 
 **Regression receipt (2026-10-20):** focused `python -m unittest discover -s verification -p test_map_renderer.py -v` reported **9 tests passing**, covering all three static maps plus active scene, deterministic SVG, unchanged static objects after token moves, correct arrow differentiation, XML validity, invalid coords/facing rejection, duplicate IDs and escaped labels.
+
+
+## Full known-world expansion — V1.1 branch (pending owner review)
+
+The evidence registry [coverage.json](coverage.json) lists **23 named locations/topics**. The static [atlas-v1.json](atlas-v1.json) now has **17 independently reusable map IDs** (the original three unchanged, eight city/western-road schematics, and six documented historic hunting/cave/prison/military maps). These are *not* 17 surveyed maps: many are schematic one-node diagrams. `PLACEHOLDER` and `UNVERIFIED` entries deliberately have `map_id: null`; examples: western bandit hideout, deep cave, unopened coffin interiors, and Trạm Gác Số Bốn pending evidence. Do not create physical geography from a place name alone.
+
+Verification commands:
+
+```powershell
+python -m unittest discover -s verification -p "test_atlas_coverage.py" -v
+python -m unittest discover -s verification -p "test_map_renderer.py" -v
+python -m unittest discover -s verification -p "test_*.py" -v
+python maps/render.py --map huyet-cot-hanh-lang --base-only --output maps/exports/huyet-cot-hanh-lang.svg
+python maps/render.py --map cam-lao --base-only --output maps/exports/cam-lao.svg
+python maps/render.py --map duong-tay-van-tai --base-only --output maps/exports/duong-tay-van-tai.svg
+```
+
+Renderer refuses **over 14 objects per map** with an actionable split-map error, visibly abbreviates long sidebar labels while preserving the full label as SVG `<title>`, and marks map `evidence_level`. An empty `PLACEHOLDER` has the message “CHƯA CÓ BỐ CỤC ĐƯỢC XÁC MINH”. No generated arrow is a real-world bearing, measured distance or a new active encounter.
+
+Canva's older three-page design `DAHYiYqsXEU` remains a separate presentation asset. New pages are not automatically created from GitHub; follow the plan's preview-before-save approval gate. Notion Hub indexes verified links, not live token positions. **Player state remains T204, next T205**, without gameplay progression from map maintenance.
