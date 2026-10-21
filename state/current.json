@@ -1,9 +1,9 @@
 {
-  "snapshot_version": "HN-S269-WEST-NORTH-BOULDER-APPROACH",
-  "last_completed_turn": 269,
-  "next_turn": 270,
+  "snapshot_version": "HN-S270-CROSSING-UNDER-ARROW",
+  "last_completed_turn": 270,
+  "next_turn": 271,
   "as_of": "2026-10-21",
-  "location": "Dốc Đá Xám: Vô Danh đạt mép bắc vật chắn đá phía tây, Huyết Nha+3 đang cầm; Maela theo sau-trái cạnh vật chắn thấp, cung có tên. Trước mặt vẫn là khoảng đất/sỏi hở tới chân lối đá cao; cung thủ Lv7 HP50/85 đã rút lên chỗ khuất phía bắc.",
+  "location": "Dốc Đá Xám: Vô Danh tại góc ngoài tây-bắc THÙNG THỨ NHẤT, sau lần vượt bãi sỏi hở đầu tiên, Huyết Nha+3 đang cầm. Maela phía tây sau-trái khối đá thấp, vừa bắn một tên; cung thủ Lv7 HP33/85 hiện khuất sau khúc ngoặt cao phía bắc.",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
@@ -19,7 +19,7 @@
     },
     "resources": {
       "HP": {
-        "current": 145,
+        "current": 137,
         "max": 170
       },
       "STA": {
@@ -1372,6 +1372,60 @@
       "new_enemies_confirmed": 0,
       "unsafe_gap_ahead": "exposed loose gravel from boulder edge toward northern approach, NOT CROSSED",
       "bell_already_triggered_T260": true
+    },
+    "doc_da_xam_T270": {
+      "source_event": "events/0270.md",
+      "base_map": "maps/tactical/doc-da-xam-camp-v1.svg",
+      "overlay": "maps/tactical/doc-da-xam-camp-T270-positions.json",
+      "v": {
+        "position": "outer NW edge FIRST existing crate (303,197)",
+        "HP": 137,
+        "STA": 24,
+        "BLOOD": 50,
+        "TuHuyet": 0,
+        "souls": 110,
+        "EXP": 330,
+        "weapon": "Huyết Nha +3 WIELDED",
+        "crossbow": "STOWED UNLOADED",
+        "ordinary_arrow_damage_this_turn": 8,
+        "persistent_injury": "NONE_CONFIRMED",
+        "HuyetAnhBo": "READY_NOT_CAST"
+      },
+      "maela": {
+        "position": "rear-left lower western cover (178,229)",
+        "HP_status": "UNINJURED",
+        "arrow_shots_this_turn": 1,
+        "expedition_personal_arrows_shot_total": 7,
+        "arrow_currently_nocked": false,
+        "next_bow_shot_requires_nock": true,
+        "original_arrows_total": "UNKNOWN"
+      },
+      "archer": {
+        "id": "enemy:doc-da-xam-upper-archer-T265",
+        "level": 7,
+        "rank": "NORMAL",
+        "HP": 33,
+        "maxHP": 85,
+        "DEF": 10,
+        "arrow_shots_this_turn": 1,
+        "shot_V_for_8": true,
+        "took_Maela_damage": 17,
+        "now_hidden": true,
+        "exact_position": "UNKNOWN",
+        "last_exposed_area": [
+          464,
+          94
+        ],
+        "faction": "UNKNOWN",
+        "bandit_leader": "UNVERIFIED"
+      },
+      "movement": {
+        "crossed_initial_exposed_gravel_section": true,
+        "reached_northern_path_foot": false,
+        "used_huyet_anh_bo": false,
+        "why_no_skill": "no confirmed landing within<=4m to desired cover",
+        "remaining_danger": "partly exposed to upper terrain despite crate partial cover"
+      }
     }
   },
   "npc_last_verified_T93": {
@@ -3662,6 +3716,35 @@
       "skill_exp_gain": 0,
       "parry_uses": 0,
       "no_RNG_claim": true
+    },
+    "T270": {
+      "source": "events/0270.md",
+      "map_overlay": "maps/tactical/doc-da-xam-camp-T270-positions.json",
+      "HP_before": 145,
+      "HP_after": 137,
+      "STA_before": 24,
+      "STA_after": 24,
+      "BLOOD_after": 50,
+      "TuHuyet_after": 0,
+      "souls_after": 110,
+      "EXP_after": 330,
+      "enemy_arrow_preDEF": 30,
+      "player_DEF": 22,
+      "damage_to_player": 8,
+      "enemyHP_before": 50,
+      "enemyHP_after": 33,
+      "Maela_arrow_preDEF": 27,
+      "enemy_DEF": 10,
+      "damage_to_enemy": 17,
+      "maela_arrows_spent": 1,
+      "enemy_arrows_spent": 1,
+      "player_bolts_spent": 0,
+      "skill_costs": 0,
+      "parry_used": false,
+      "skill_exp_gain": 0,
+      "loot_received": 0,
+      "verified_RNG_draw": false,
+      "quest_reward_paid": false
     }
   },
   "provenance": {
@@ -3839,10 +3922,10 @@
       },
       "reward_received": false,
       "source": "events/0162.md",
-      "progress": "T245–T264: tarp-and-crates site located on northern rocks at Dốc Đá Xám. Three Lv6 NORMAL humans killed (cloaked lookout T250, axe guard T254, grey-cloak knife fighter T261) and all three unique corpses first looted by T262 (14 Souls each). Old wooden hunting crossbow and route sketch with three marks recovered, but none yet verified as bounty leader/robber identity proof. T257 found low metal-noise warning cord; grey-coat triggered T260, alert recipients UNKNOWN. T263 V loaded one steel bolt into Liên Nỏ. T264 V/M withdrew carefully to west boulder; unknown northern figure may have heard pebble; no active target confirmed. T265: a NEW Lv7 Normal human longbow wielder revealed briefly on northern upper path; Maela shot him for16 actual HP (85→69), he fired one return arrow that hit rock, then withdrew behind cover. Identity/faction/bandit-chief status still UNKNOWN. Player's preloaded Liên Nỏ steel1 unspent, no boss proof. T266: upper Lv7 longbowman sidestepped to lower step of same northern upper path and briefly showed torso; Maela fired one ordinary arrow but it hit adjacent rock, enemy HP remains69. He fired a counter-arrow into western boulder, no injuries, and ducked behind stone. V kept his crossbow loaded one steel bolt because his projectile line remained obstructed. No leader/faction proof. T267: archer shifted along existing north ledge to northwest tarp opening; V got one clear crossbow bolt shot before foe re-concealed. Ordinary bolt preDEF29−DEF10=19, Lv7 archer HP69→50; V's crossbow now unloaded, steel reserve2. Maela did not fire due obstructed individual lane. Enemy leader affiliation unverified. T268: V stowed unloaded Liên Nỏ, drew Huyết Nha+3 and took legal west-rock sword guard; northern Lv7 bowman HP50 visibly moved under cover uphill along existing rock path, exact current location unknown. Maela held nocked arrow without shot, all resources unchanged. No chief proof. T269: V and Maela advanced with cover along north tip of western boulder without crossing open gravel. Upper Lv7 longbowman HP50 retreated up the existing northern path, still unverified identity/faction/chief. No injuries or shots.",
-      "next_step": "T270 is unplayed; choose whether to cross visible loose-gravel approach to north ascending path under archer risk, hold at current north-west boulder, or withdraw. No boss claim.",
+      "progress": "T245–T264: tarp-and-crates site located on northern rocks at Dốc Đá Xám. Three Lv6 NORMAL humans killed (cloaked lookout T250, axe guard T254, grey-cloak knife fighter T261) and all three unique corpses first looted by T262 (14 Souls each). Old wooden hunting crossbow and route sketch with three marks recovered, but none yet verified as bounty leader/robber identity proof. T257 found low metal-noise warning cord; grey-coat triggered T260, alert recipients UNKNOWN. T263 V loaded one steel bolt into Liên Nỏ. T264 V/M withdrew carefully to west boulder; unknown northern figure may have heard pebble; no active target confirmed. T265: a NEW Lv7 Normal human longbow wielder revealed briefly on northern upper path; Maela shot him for16 actual HP (85→69), he fired one return arrow that hit rock, then withdrew behind cover. Identity/faction/bandit-chief status still UNKNOWN. Player's preloaded Liên Nỏ steel1 unspent, no boss proof. T266: upper Lv7 longbowman sidestepped to lower step of same northern upper path and briefly showed torso; Maela fired one ordinary arrow but it hit adjacent rock, enemy HP remains69. He fired a counter-arrow into western boulder, no injuries, and ducked behind stone. V kept his crossbow loaded one steel bolt because his projectile line remained obstructed. No leader/faction proof. T267: archer shifted along existing north ledge to northwest tarp opening; V got one clear crossbow bolt shot before foe re-concealed. Ordinary bolt preDEF29−DEF10=19, Lv7 archer HP69→50; V's crossbow now unloaded, steel reserve2. Maela did not fire due obstructed individual lane. Enemy leader affiliation unverified. T268: V stowed unloaded Liên Nỏ, drew Huyết Nha+3 and took legal west-rock sword guard; northern Lv7 bowman HP50 visibly moved under cover uphill along existing rock path, exact current location unknown. Maela held nocked arrow without shot, all resources unchanged. No chief proof. T269: V and Maela advanced with cover along north tip of western boulder without crossing open gravel. Upper Lv7 longbowman HP50 retreated up the existing northern path, still unverified identity/faction/chief. No injuries or shots. T270 V exposed himself crossing first patch of loose gravel toward NW outside corner of first crate, archer from existing elevated north bend shot raw30-DEF22=8 actual, V145→137. Maela one valid oblique shot raw27-DEF10=17 actual, enemy archer HP50→33 and retreated into rock cover. No Huyết Ảnh Bộ, no full reaching ascending path, no leader identity.",
+      "next_step": "T271 user controls V at NW outside corner of first crate, sword wielded, HP137 STA24; Maela rear-left must nock next arrow, Lv7 archer HP33 behind high northern stone, exact location unknown; no automatic pursuit or free rest.",
       "notional_target_reputation": "Crossbowman rumored among bandits, unverified",
-      "last_evidence_turn": 269,
+      "last_evidence_turn": 270,
       "intelligence_T163": {
         "source": "events/0163.md",
         "verified_patrol": [
@@ -4737,17 +4820,17 @@
     "reward": "NONE"
   },
   "checkpoint": {
-    "id": "HN-T269-WEST-NORTH-STONE-APPROACH",
-    "last_completed_turn": 269,
-    "source_events": "events/0269.md",
-    "previous_checkpoint_last_completed_turn": 268,
+    "id": "HN-T270-ARCHER-EXCHANGE-GRAVEL",
+    "last_completed_turn": 270,
+    "source_events": "events/0270.md",
+    "previous_checkpoint_last_completed_turn": 269,
     "number_narrated_turns": 1,
     "gameplay_retcon": false,
     "notion_sync_status": "NO_NOTION_OR_CANVA_WRITE",
     "chat_only_unsaved_turns_after_verified_write": 0,
     "notion_hub_page_id": "3fe864d2-95ce-8178-95ae-d0bcfde6ac34",
     "notion_summary_sources_git_commit": null,
-    "checkpoint_reason": "TACTICAL_MAP_TOKEN_ADVANCE"
+    "checkpoint_reason": "EARLY_COMBAT_DAMAGE_8_AND_17"
   },
   "battle_state_T237": {
     "enemy_id": "enemy:stone-raker-T234",
@@ -5094,5 +5177,74 @@
     "map_ref": "maps/tactical/doc-da-xam-camp-v1.svg",
     "map_overlay": "maps/tactical/doc-da-xam-camp-T269-positions.json",
     "next": 270
+  },
+  "battle_state_T270": {
+    "status": "PARTIAL_GRAVEL_CROSSING_PLAYER_WOUNDED_ARCHER_WOUNDED",
+    "player": {
+      "HP": 137,
+      "STA": 24,
+      "BLOOD": 50,
+      "TuHuyet": 0,
+      "souls": 110,
+      "EXP": 330,
+      "position_schematic": [
+        303,
+        197
+      ],
+      "position": "outer NW of first crate; partial cover",
+      "weapon": "Huyết Nha +3 ready",
+      "crossbow": "STOWED UNLOADED",
+      "steel_bolts_reserve": 2,
+      "NanhCotTien": 1,
+      "HuyetAnhBo_ready": true,
+      "GatKiem_ready_on_valid_melee_only": true,
+      "not_in_enemy_melee_range": true
+    },
+    "ally": {
+      "id": "Maela",
+      "position_schematic": [
+        178,
+        229
+      ],
+      "uninjured": true,
+      "shot_T270": true,
+      "arrow_count_fired_total": 7,
+      "arrow_nocked_after_shot": false,
+      "known_start_ammo": "UNKNOWN"
+    },
+    "enemy": {
+      "id": "enemy:doc-da-xam-upper-archer-T265",
+      "lvl": 7,
+      "rank": "NORMAL",
+      "HP": 33,
+      "maxHP": 85,
+      "DEF": 10,
+      "arrow_raw_range": "28–34",
+      "arrow_raw_this_turn": 30,
+      "position_exact": "UNKNOWN_BEHIND_EXISTING_NORTHERN_ROCK",
+      "last_exposed_schematic": [
+        464,
+        94
+      ],
+      "currently_targetable": false,
+      "leader_status": "UNVERIFIED",
+      "faction": "UNKNOWN"
+    },
+    "actions": {
+      "normal_cover_advance": true,
+      "exposed_first_gravel_section_crossed": true,
+      "fully_reached_northern_ascending_path": false,
+      "enemy_one_ranged_arrow": true,
+      "enemy_damage_to_V": 8,
+      "Maela_one_ranged_arrow": true,
+      "Maela_damage_to_enemy": 17,
+      "V_sword_strikes": 0,
+      "GatKiem_attempted": false,
+      "HuyetAnhBo_cast": false,
+      "Maela_defensive_shot_valid": true
+    },
+    "map_ref": "maps/tactical/doc-da-xam-camp-v1.svg",
+    "map_overlay": "maps/tactical/doc-da-xam-camp-T270-positions.json",
+    "next": 271
   }
 }
