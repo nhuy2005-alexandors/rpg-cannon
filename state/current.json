@@ -1,14 +1,14 @@
 {
-  "snapshot_version": "HN-S237-V1.3-LEAN-10TURN-CHECKPOINT",
-  "last_completed_turn": 237,
-  "next_turn": 238,
+  "snapshot_version": "HN-S240-V1.3-QUEST-RESOLUTION-CHECKPOINT",
+  "last_completed_turn": 240,
+  "next_turn": 241,
   "as_of": "2026-10-21",
-  "location": "Ngoại vi Hắc Nha Thành, di tích tường đá đổ: Vô Danh cận chiến trên nền đá vững cạnh khối đá nghiêng, ở gần Hài Cốt Gạt Đá. Đất thấp/rễ cây không an toàn. Phương vị/địa điểm tuyệt đối, cửa hầm chôn cũ UNKNOWN.",
+  "location": "Hắc Nha Thành — Điện Tế Huyết (home base), after an uninterrupted full overnight rest. Safe at present; no hostile in active combat. No fee for home base. Next T241 player-directed.",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
     "level": 6,
-    "exp": 265,
+    "exp": 300,
     "exp_next": 400,
     "unallocated_points": 0,
     "attributes": {
@@ -23,7 +23,7 @@
         "max": 170
       },
       "STA": {
-        "current": 63,
+        "current": 110,
         "max": 110
       },
       "BLOOD": {
@@ -34,7 +34,7 @@
         "current": 0,
         "max": 20
       },
-      "souls": 85
+      "souls": 113
     },
     "passives": {
       "HapHuyet": {
@@ -434,7 +434,7 @@
     "steel_bolts": 3,
     "NanhCotTien": 1,
     "black_claw_hyena_fang_pairs": 0,
-    "LoiXuongXam": 2
+    "LoiXuongXam": 0
   },
   "base_storage": {
     "NanhLangVuong": 2,
@@ -483,7 +483,7 @@
       ],
       "last_observation_T217": "silent hiding four minutes; a pebble fell near roots and faint dry tap, cause UNKNOWN",
       "player_hidden_in_cover": false,
-      "hidden_detection_status": "Third undead detected V during T236 attack and is ATTACKING V at T237; no other enemy confirmed",
+      "hidden_detection_status": "Not on-site at end T240; V returned to Hắc Nha Thành. Three known skeletons dead and looted, other hostiles UNKNOWN.",
       "guide_return_status": "LEFT_ALONE_T215; ARRIVAL_HOME_UNCONFIRMED",
       "last_observation_T227": "Wall groove slopes toward low terrain; curved worked-paver alignment and joint on upright buried stone at root gap support engineered drainage/foundation hypothesis, NOT a verified connection or crypt entrance. Weak intermittent airflow and low soil instability; V retreated to firm old wall cover.",
       "observed_undead_T218_T222": {
@@ -532,7 +532,7 @@
         "rank": "NORMAL",
         "level": 5,
         "hp_max": 70,
-        "hp_current": 25,
+        "hp_current": 0,
         "attack_range": "28–35",
         "defense": 9,
         "public_template": "canon/encounters/stone-raker-T236-public.md",
@@ -545,8 +545,15 @@
         "location": "Upper inspected paving adjacent to leaning boulder, lower ground nearby not traversed",
         "quest_material_presence": "UNKNOWN",
         "TH_source": "UNVERIFIED",
-        "alive": true
-      }
+        "alive": false,
+        "defeated_turn": 238,
+        "looted_turn": 239,
+        "looted_once": true,
+        "souls_first_claim": 12,
+        "physical_provisional_core": 1,
+        "ending": "T238 ordinary neck sword raw35−DEF9=26 post-armor capped25 real HP 25->0; T239 exactly one physical core looted and +12 Souls, no TH"
+      },
+      "last_observation_T240": "T238 third Hài Cốt Gạt Đá killed; T239 corpse looted and site inspected with no crypt entrance, chest or proven mechanisms found. T240 player withdrew via safe known pavers; wall location empty of player, presence of any other hostile unverified. Three encountered skeleton corpses each looted exactly once."
     },
     "bounty_board_T208": {
       "remaining_offers": [
@@ -583,8 +590,8 @@
         "enemy:buried-skeleton-T218",
         "enemy:dragging-skeleton-T228"
       ],
-      "evidence_status": "PROVISIONAL_NOT_VALIDATED_AT_ISSUER",
-      "quest_paid": false
+      "evidence_status": "HISTORICAL_2_PROVISIONAL_AT_T233; SUPERSEDED_BY_T240_SUBMISSION",
+      "quest_paid": true
     },
     "T233_T234_safe_rest": {
       "T233": {
@@ -603,6 +610,41 @@
         "HP_stable": 66
       },
       "partial_cover_not_100pct_safe": true
+    },
+    "hai_cot_lang_thang_proof_T240": {
+      "event": "events/0240.md",
+      "quest_id": "quest:wandering-remains-old-burial-crypt",
+      "physical_cores_before_turn_in": 3,
+      "physical_cores_carried_after": 0,
+      "issuer_verified": 3,
+      "proof_submitted": 3,
+      "quest_resolved": true,
+      "reward_souls": 16,
+      "reward_exp": 25,
+      "reward_id": "quest_reward:T240:wandering-remains",
+      "reward_claimed_once": true,
+      "burial_crypt_location": "UNKNOWN",
+      "no_enemy_claim": "NOT_ESTABLISHED"
+    },
+    "market_bounty_reward_claim_T240": {
+      "quest_id": "quest:wandering-remains-old-burial-crypt",
+      "receipt": "quest_reward:T240:wandering-remains",
+      "claimed": true,
+      "souls_paid": 16,
+      "EXP_paid": 25,
+      "no_replay": true
+    },
+    "home_rest_T240": {
+      "place": "Điện Tế Huyết",
+      "rest": "UNINTERRUPTED_FULL_NIGHT",
+      "STA_before": 63,
+      "STA_after": 110,
+      "HP_before": 60,
+      "HP_after": 60,
+      "HP_natural_regen": 0,
+      "fee_souls": 0,
+      "potions_used": 0,
+      "time_of_day_exact": "UNKNOWN"
     }
   },
   "npc_last_verified_T93": {
@@ -2402,6 +2444,71 @@
       "TH_after": 0,
       "souls_after": 85,
       "EXP_after": 265
+    },
+    "T238": {
+      "source": "events/0238.md",
+      "enemy_id": "enemy:stone-raker-T234",
+      "enemy_HP_before": 25,
+      "enemy_HP_after": 0,
+      "raw": 35,
+      "enemy_DEF": 9,
+      "postDEF": 26,
+      "actual_enemy_HP_loss": 25,
+      "enemy_counter": "LEFT_ARM_MISS",
+      "player_incoming_damage": 0,
+      "player_HP_after": 60,
+      "STA_after": 63,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "souls_after": 85,
+      "EXP_after": 275,
+      "EXP_gain": 10,
+      "corpse_loot": false
+    },
+    "T239": {
+      "source": "events/0239.md",
+      "enemy_id": "enemy:stone-raker-T234",
+      "corpse_first_loot": true,
+      "core_delta": 1,
+      "cores_before": 2,
+      "cores_after": 3,
+      "souls_before": 85,
+      "souls_delta": 12,
+      "souls_after": 97,
+      "TH_gain": 0,
+      "HP_after": 60,
+      "STA_after": 63,
+      "EXP_after": 275,
+      "quest_issuer_verified": 0,
+      "entrance_found": false
+    },
+    "T240": {
+      "source": "events/0240.md",
+      "travel": "RUINS_TO_HAC_NHA_CITY_NO_COMBAT",
+      "quest_id": "quest:wandering-remains-old-burial-crypt",
+      "proof_before": 3,
+      "proof_submitted": 3,
+      "proof_after": 0,
+      "issuer_verified": 3,
+      "verification_result": "ACCEPTED",
+      "bounty_reward_paid_once": true,
+      "souls_before": 97,
+      "souls_reward": 16,
+      "souls_after": 113,
+      "exp_before": 275,
+      "exp_reward": 25,
+      "exp_after": 300,
+      "player_lvl_after": 6,
+      "rest_place": "Điện Tế Huyết",
+      "safe_full_night": true,
+      "STA_before": 63,
+      "STA_after": 110,
+      "HP_before": 60,
+      "HP_after": 60,
+      "potions_after": 1,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "remaining_enemy_total_at_ruin": "UNKNOWN"
     }
   },
   "provenance": {
@@ -2699,7 +2806,7 @@
     "hai_cot_lang_thang": {
       "id": "quest:wandering-remains-old-burial-crypt",
       "name": "Hài Cốt Lang Thang",
-      "status": "ACTIVE",
+      "status": "RESOLVED",
       "accepted_turn": 210,
       "issuer": "Người coi bảng ủy thác khu chợ Hắc Nha Thành (chưa biết tên)",
       "category": "BOUNTY_MINOR_UNDEAD",
@@ -2708,15 +2815,15 @@
       "hunting_area": "Hầm chôn cũ ngoài khu dân cư; vị trí chính xác UNKNOWN; KHÔNG xác định trùng Nghĩa Địa Tử Thiết hoặc di tích tường đá",
       "evidence_required": "3 lõi xương hợp lệ; phải mang về bàn ủy thác để xác minh",
       "evidence_required_count": 3,
-      "evidence_collected_count": 2,
+      "evidence_collected_count": 3,
       "reward_on_verified_completion": {
         "souls": 16,
         "EXP": 25
       },
-      "reward_received": false,
-      "source": "events/0208.md..events/0237.md",
-      "progress": "T223 one provisional grey core from Hài Cốt Bị Vùi; T228–T232 second Hài Cốt Lê Chân discovered, defeated and T233 first-looted for +12 Souls and another provisional grey core. T233 used one +30HP potion and rested one safe hour for +20 STA. T234 two further safe hours (+40STA) then sighted third undead at leaning boulder. T235 close flank, T236 T237 damage Hài Cốt Gạt Đá 70->47->25 HP; right arm destroyed T237, left arm active and enemy alerted. Two provisional bone cores 2/3 held, clerk has NOT verified or received them, mission ACTIVE UNPAID. Neither site nor enemies confirmed as exact old burial crypt bounty targets. V currently HP60 STA63, TH0.",
-      "next_step": "T238 player-directed combat with Hài Cốt Gạt Đá Lv5 normal HP25/70, ATK28–35 DEF9, right arm severed left arm operational; enemy alert in adjacent stable paving by leaning rock. Player can attack/guard/disengage; evaluate terrain and retaliation without auto win/loot/quest payment.",
+      "reward_received": true,
+      "source": "events/0208.md..events/0240.md",
+      "progress": "T223, T233 and T239 exactly three Lõi Xương Xám collected on initial corpse loot, one per distinct skeleton; physical carried 2->3 at T239, THEN all 3 inspected and surrendered T240 to original unnamed market bounty clerk. Clerk individually finds 3/3 valid based on physical grey-core features; pays exactly once +16 Souls 97->113 and +25 EXP 275->300. RESOLVED. Acceptance of grey cores does NOT establish masonry site as original burial crypt or prove no other undead. No cores remain carried, no extra loot or TH.",
+      "next_step": "NONE — RESOLVED T240; do not offer or pay this bounty again. Further separate exploration of wall/old burial crypt remains optional and location uncertain.",
       "intelligence": {
         "direct_observation": [
           "A low partially collapsed old masonry wall and flat ground outside residential area; position not precisely mapped",
@@ -2729,7 +2836,8 @@
           "T226 small lower hollow, roughly upright flat worked stone, weak intermittent draft through roots, and local soil slip on light probing",
           "T227 wall-foot groove slopes toward lower terrain; partly paved stone strip and buried dressed slab share plausible direction/joint lines; connection remains UNVERIFIED",
           "T228 second undead drags leg, killed T232 and looted once T233: one additional provisional Lõi Xương Xám",
-          "T234 third undead moves pebbles near leaning stone block; T236–T237 fights on tested paving, currently damaged but alive; no verified crypt entry"
+          "T234 third undead moves pebbles near leaning stone block; T236–T237 fights on tested paving, currently damaged but alive; no verified crypt entry",
+          "T238 third Hài Cốt Gạt Đá killed; T239 third unique corpse first-looted +12 Souls and one last provisional Lõi Xương Xám, then T240 all three cores surrendered and verified by clerk"
         ],
         "eyewitness_prior_history": [
           "Former porter saw an old stone wall and top of downward delivery ramp YEARS ago; uncertain this is same wall",
@@ -2743,11 +2851,47 @@
           "Origin of scraping rumor and dry tapping",
           "Whether lower cavity contains safe access or a second TH-bearing source; NO detection confirmed",
           "Whether Lõi Xương Xám is acceptable quest proof at the issuer; NOT YET INSPECTED",
-          "Third skeleton's potential item/TH yield UNKNOWN until defeated and validly inspected; not necessarily final hostile"
+          "Actual location and entrance of old burial crypt still UNKNOWN despite successfully resolved proof-item bounty",
+          "Whether any additional hostile remains at old stone wall UNKNOWN"
         ]
       },
-      "evidence_provisional_count": 2,
-      "evidence_verified_by_issuer_count": 0
+      "evidence_provisional_count": 0,
+      "evidence_verified_by_issuer_count": 3,
+      "evidence_submitted_count": 3,
+      "completion_turn": 240,
+      "proof_verified_turn": 240,
+      "last_evidence_turn": 240,
+      "evidence_pending_verification": false,
+      "kill_proof_receipts": [
+        {
+          "source": "events/0223.md",
+          "enemy_id": "enemy:buried-skeleton-T218",
+          "proof_extracted_turn": 223,
+          "cores": 1
+        },
+        {
+          "source": "events/0233.md",
+          "enemy_id": "enemy:dragging-skeleton-T228",
+          "proof_extracted_turn": 233,
+          "cores": 1
+        },
+        {
+          "source": "events/0239.md",
+          "enemy_id": "enemy:stone-raker-T234",
+          "proof_extracted_turn": 239,
+          "cores": 1
+        }
+      ],
+      "issuer_inspection_T240": {
+        "source": "events/0240.md",
+        "count": 3,
+        "result": "ACCEPT_ALL_3",
+        "inspected_by": "Unnamed market bounty clerk",
+        "verified_proof_class_only": true,
+        "crypt_location_confirmed": false,
+        "payout_receipt": "quest_reward:T240:wandering-remains",
+        "paid_once": true
+      }
     }
   },
   "archery_training": {
@@ -3205,6 +3349,21 @@
         "TH": 0,
         "source_precommit_status": "Narrated T233 Lv5 normal reward calibration; combat stat block saved T230 but independent L_reward not preregistered before claim. Preserve accepted event, do not claim false prior reward-only commitment.",
         "quest_material_separate": true
+      },
+      "enemy:stone-raker-T234": {
+        "claim_id": "claim:T239:stone-raker:soul-v1.3",
+        "source": "events/0239.md",
+        "loot_turn": 239,
+        "souls": 12,
+        "L_reward": 5,
+        "rank": "normal",
+        "rank_multiplier": 1,
+        "D": 1,
+        "claimed": true,
+        "encounter_bonus": 0,
+        "TH": 0,
+        "quest_material_separate": true,
+        "source_precommit_status": "L_reward5 Normal disclosed in narrated T239 before loot; independent reward L_reward NOT preregistered T236. This accepted event cannot be represented as an earlier hidden precommit."
       }
     },
     "C_status": "DEAD_T199_FIRST_SOUL_CLAIM_COMPLETE_T200_NO_DUPLICATE",
@@ -3370,17 +3529,17 @@
     "reward": "NONE"
   },
   "checkpoint": {
-    "id": "HN-T237-NORMAL-10TURN",
-    "last_completed_turn": 237,
-    "source_events": "events/0228.md..events/0237.md",
-    "previous_checkpoint_last_completed_turn": 227,
-    "number_narrated_turns": 10,
+    "id": "HN-T240-QUEST-RESOLUTION-EARLY",
+    "last_completed_turn": 240,
+    "source_events": "events/0238.md..events/0240.md",
+    "previous_checkpoint_last_completed_turn": 237,
+    "number_narrated_turns": 3,
     "gameplay_retcon": false,
-    "notion_sync_status": "No changed named NPC relation; routine scene remains GitHub-only",
+    "notion_sync_status": "No Notion/Canva writes; current authoritative GitHub state reflects bounty closure",
     "chat_only_unsaved_turns_after_verified_write": 0,
     "notion_hub_page_id": "3fe864d2-95ce-8178-95ae-d0bcfde6ac34",
     "notion_summary_sources_git_commit": "1eaac4e68ac6e2d138818eeb609c3916e275d34e",
-    "checkpoint_reason": "NORMAL_10_COMPLETED_UNSAVED_TURNS"
+    "checkpoint_reason": "EARLY_PERMANENT_QUEST_RESOLUTION_AND_REWARD"
   },
   "battle_state_T237": {
     "enemy_id": "enemy:stone-raker-T234",
@@ -3405,5 +3564,20 @@
     },
     "rng_receipt": "NOT_EXECUTED_T236_T237",
     "next_turn": 238
+  },
+  "battle_state_T240": {
+    "active": false,
+    "player_location": "Điện Tế Huyết, Hắc Nha Thành",
+    "previous_active_hostile": "enemy:stone-raker-T234",
+    "previous_hostile_dead_turn": 238,
+    "previous_hostile_looted_turn": 239,
+    "active_visible_hostiles": [],
+    "third_enemy_HP": 0,
+    "player_HP": 60,
+    "player_STA": 110,
+    "quest_resolved": true,
+    "issuer_reward_paid": true,
+    "day_rest_completed": true,
+    "unknown_enemy_population_at_ruin": true
   }
 }
