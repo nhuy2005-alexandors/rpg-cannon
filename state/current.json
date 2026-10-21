@@ -1,9 +1,9 @@
 {
-  "snapshot_version": "HN-S207-V1.3-LEAN-EARLY-CHECKPOINT",
-  "last_completed_turn": 207,
-  "next_turn": 208,
+  "snapshot_version": "HN-S217-V1.3-LEAN-10TURN-CHECKPOINT",
+  "last_completed_turn": 217,
+  "next_turn": 218,
   "as_of": "2026-10-21",
-  "location": "Hắc Nha Thành — khu chợ, trước bàn ủy thác; Vô Danh vừa nộp chứng vật Linh Cẩu Móng Đen, hướng đi cuối trên tuyến về thành là Tây, hướng mặt chính xác tại quầy chưa được đo.",
+  "location": "Ngoại vi Hắc Nha Thành, tại di tích tường đá đổ chưa định vị trên Regional Map. Vô Danh ẩn nấp sau tường đá và bụi cây phía trên vùng đất thấp có rễ cây; KHÔNG tiến xuống; phương hướng tuyệt đối chưa xác minh.",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
@@ -441,7 +441,31 @@
     "ruined_iron_shed_exploration": "T204 NE board moved; T205 checked vent/leather/scratches without discovery of new passage; T206 examined overturned table and old boot heel with apparently missing nail impression; unresolved identity/connection. Objects unchanged.",
     "blackclaw_quest_evidence_collected_pairs": 3,
     "blackclaw_quest_evidence_submitted_pairs": 3,
-    "blackclaw_quest_reward_paid_T207": true
+    "blackclaw_quest_reward_paid_T207": true,
+    "hai_cot_lang_thang_accepted_T210": true,
+    "outer_city_old_stone_wall_T214_T217": {
+      "observed": true,
+      "proven_crypt_entrance": false,
+      "regional_bearing": "UNKNOWN",
+      "terrain": [
+        "old collapsed stone wall and flat patch",
+        "groove in wall stone with possible drainage but function UNVERIFIED",
+        "curving partly buried stone-paved strip",
+        "lower scrub/root slope with loose stones, never descended"
+      ],
+      "last_observation_T217": "silent hiding four minutes; a pebble fell near roots and faint dry tap, cause UNKNOWN",
+      "player_hidden_in_cover": true,
+      "hidden_detection_status": "NOT_CONFIRMED_DETECTED; NOT_GUARANTEED_INVISIBLE",
+      "guide_return_status": "LEFT_ALONE_T215; ARRIVAL_HOME_UNCONFIRMED"
+    },
+    "bounty_board_T208": {
+      "remaining_offers": [
+        "Ổ Chuột Huyết"
+      ],
+      "hai_cot_lang_thang_accepted_T210": true,
+      "western_road_bandit_remains_active": true,
+      "blackclaw_completed": true
+    }
   },
   "npc_last_verified_T93": {
     "Edran": "alive at temple",
@@ -1837,6 +1861,136 @@
       "quest_status": "RESOLVED",
       "reward_received": true,
       "no_double_pay": true
+    },
+    "T208": {
+      "type": "EXPLORATION_OR_DIALOGUE",
+      "note": "Board offers reviewed only; nothing accepted; no change to resources.",
+      "HP_after": 68,
+      "STA_after": 28,
+      "BLOOD_after": 28,
+      "TuHuyet_after": 0,
+      "souls_after": 61,
+      "EXP_after": 245,
+      "consumables_spent": 0,
+      "combat": false,
+      "reward_paid": false
+    },
+    "T209": {
+      "type": "EXPLORATION_OR_DIALOGUE",
+      "note": "Clerk confirms posting and absence of reliable eyewitness/route; no acceptance.",
+      "HP_after": 68,
+      "STA_after": 28,
+      "BLOOD_after": 28,
+      "TuHuyet_after": 0,
+      "souls_after": 61,
+      "EXP_after": 245,
+      "consumables_spent": 0,
+      "combat": false,
+      "reward_paid": false
+    },
+    "T210": {
+      "type": "EXPLORATION_OR_DIALOGUE",
+      "note": "Hai Cot Lang Thang ACCEPTED, ACTIVE with 0/3 bone cores and reward unpaid.",
+      "HP_after": 68,
+      "STA_after": 28,
+      "BLOOD_after": 28,
+      "TuHuyet_after": 0,
+      "souls_after": 61,
+      "EXP_after": 245,
+      "consumables_spent": 0,
+      "combat": false,
+      "reward_paid": false
+    },
+    "T211": {
+      "type": "EXPLORATION_OR_DIALOGUE",
+      "note": "Asked merchant then former coffin porter near old freight area; former caretaker not found, location unknown; approx30m.",
+      "HP_after": 68,
+      "STA_after": 28,
+      "BLOOD_after": 28,
+      "TuHuyet_after": 0,
+      "souls_after": 61,
+      "EXP_after": 245,
+      "consumables_spent": 0,
+      "combat": false,
+      "reward_paid": false
+    },
+    "T212": {
+      "type": "EXPLORATION_OR_DIALOGUE",
+      "note": "Porter recalls stone wall/flat unloading spot/ramp but no reliable modern directions or ledger; approx10m.",
+      "HP_after": 68,
+      "STA_after": 28,
+      "BLOOD_after": 28,
+      "TuHuyet_after": 0,
+      "souls_after": 61,
+      "EXP_after": 245,
+      "consumables_spent": 0,
+      "combat": false,
+      "reward_paid": false
+    },
+    "T213": {
+      "type": "EXPLORATION_OR_DIALOGUE",
+      "note": "Porter voluntarily conditionally agrees escort after finishing freight, no descending underground; no travel.",
+      "HP_after": 68,
+      "STA_after": 28,
+      "BLOOD_after": 28,
+      "TuHuyet_after": 0,
+      "souls_after": 61,
+      "EXP_after": 245,
+      "consumables_spent": 0,
+      "combat": false,
+      "reward_paid": false
+    },
+    "T214": {
+      "type": "EXPLORATION_OR_DIALOGUE",
+      "note": "Waiting ~40m + ~30m route retracing; old wall observed but porter unsure it is original. No safe entrance found.",
+      "HP_after": 68,
+      "STA_after": 28,
+      "BLOOD_after": 28,
+      "TuHuyet_after": 0,
+      "souls_after": 61,
+      "EXP_after": 245,
+      "consumables_spent": 0,
+      "combat": false,
+      "reward_paid": false
+    },
+    "T215": {
+      "type": "EXPLORATION_OR_DIALOGUE",
+      "note": "Porter leaves for home, safe arrival unknown; wall/groove/paved strip observed, lower slope not entered, ~10m.",
+      "HP_after": 68,
+      "STA_after": 28,
+      "BLOOD_after": 28,
+      "TuHuyet_after": 0,
+      "souls_after": 61,
+      "EXP_after": 245,
+      "consumables_spent": 0,
+      "combat": false,
+      "reward_paid": false
+    },
+    "T216": {
+      "type": "EXPLORATION_OR_DIALOGUE",
+      "note": "Probed paving, groove, lower slope from safe edge; heard noise, sought cover; no confirmed threat; ~15m.",
+      "HP_after": 68,
+      "STA_after": 28,
+      "BLOOD_after": 28,
+      "TuHuyet_after": 0,
+      "souls_after": 61,
+      "EXP_after": 245,
+      "consumables_spent": 0,
+      "combat": false,
+      "reward_paid": false
+    },
+    "T217": {
+      "type": "EXPLORATION_OR_DIALOGUE",
+      "note": "Silent concealment ~4m, pebble rolled and light dry tapping heard; source unknown, no confirmed detection.",
+      "HP_after": 68,
+      "STA_after": 28,
+      "BLOOD_after": 28,
+      "TuHuyet_after": 0,
+      "souls_after": 61,
+      "EXP_after": 245,
+      "consumables_spent": 0,
+      "combat": false,
+      "reward_paid": false
     }
   },
   "provenance": {
@@ -2130,6 +2284,48 @@
       "evidence_submitted_pairs": 3,
       "completion_turn": 207,
       "proof_verified_turn": 207
+    },
+    "hai_cot_lang_thang": {
+      "id": "quest:wandering-remains-old-burial-crypt",
+      "name": "Hài Cốt Lang Thang",
+      "status": "ACTIVE",
+      "accepted_turn": 210,
+      "issuer": "Người coi bảng ủy thác khu chợ Hắc Nha Thành (chưa biết tên)",
+      "category": "BOUNTY_MINOR_UNDEAD",
+      "target": "Hài cốt lang thang tại hầm chôn cũ; hiện chưa thấy mục tiêu trực tiếp",
+      "target_count": "UNKNOWN",
+      "hunting_area": "Hầm chôn cũ ngoài khu dân cư; vị trí chính xác UNKNOWN; KHÔNG xác định trùng Nghĩa Địa Tử Thiết hoặc di tích tường đá",
+      "evidence_required": "3 lõi xương hợp lệ; phải mang về bàn ủy thác để xác minh",
+      "evidence_required_count": 3,
+      "evidence_collected_count": 0,
+      "reward_on_verified_completion": {
+        "souls": 16,
+        "EXP": 25
+      },
+      "reward_received": false,
+      "source": "events/0208.md..events/0217.md",
+      "progress": "Accepted T210, zero cores collected. T211–T212 interviewed coffin porter (former deliveries but no direct deep-crypt access); caretaker called 'lão giữ sổ', whereabouts UNKNOWN. T213 conditional escort agreed. T214 found old stone wall that porter could not positively identify. T215–T217 locally probed wall/groove/paving/unstable lower root slope; no entrance, undead or trap confirmed; obscure faint tap and falling pebble T217. Vô Danh staying concealed behind wall; no enemy detection confirmed.",
+      "next_step": "From cover decide whether to continue passive observation, carefully survey known stable footing, withdraw for recovery or seek corroborating witness; do not reveal hidden crypt or treat wall as confirmed route.",
+      "intelligence": {
+        "direct_observation": [
+          "A low partially collapsed old masonry wall and flat ground outside residential area; position not precisely mapped",
+          "Shallow groove in wall stone of unconfirmed function",
+          "Short narrow paved strip curves near wall then disappears beneath roots",
+          "Loose rubble, roots and partially concealed lower slope: footing hazard, not explored",
+          "T216 dry impact noise and pebbles; T217 a falling pebble and faint tap, source UNKNOWN"
+        ],
+        "eyewitness_prior_history": [
+          "Former porter saw an old stone wall and top of downward delivery ramp YEARS ago; uncertain this is same wall",
+          "Porter did not descend deeper, did not see burial ledger, former caretaker real identity unknown"
+        ],
+        "unresolved": [
+          "Actual crypt location and entrance",
+          "Whether observed wall is old delivery wall",
+          "Present passability of lower slope, any structural cavity",
+          "Any undead, traps, treasure or enemy detection",
+          "Origin of scraping rumor and dry tapping"
+        ]
+      }
     }
   },
   "archery_training": {
@@ -2721,16 +2917,16 @@
     "reward": "NONE"
   },
   "checkpoint": {
-    "id": "HN-T207-EARLY-QUEST",
-    "last_completed_turn": 207,
-    "source_events": "events/0205.md..events/0207.md",
-    "previous_checkpoint_last_completed_turn": 204,
-    "number_narrated_turns": 3,
+    "id": "HN-T217-NORMAL-10TURN",
+    "last_completed_turn": 217,
+    "source_events": "events/0208.md..events/0217.md",
+    "previous_checkpoint_last_completed_turn": 207,
+    "number_narrated_turns": 10,
     "gameplay_retcon": false,
-    "notion_sync_status": "T204_HUB_SUMMARY_ONLY; T207_QUEST_RESOLUTION_NOT_PROJECTED; HISTORIC_T153_GRAPH_NOT_REBUILT",
+    "notion_sync_status": "No T208-T217 NPC graph projection to Notion; GitHub state/events canon",
     "chat_only_unsaved_turns_after_verified_write": 0,
     "notion_hub_page_id": "3fe864d2-95ce-8178-95ae-d0bcfde6ac34",
     "notion_summary_sources_git_commit": "1eaac4e68ac6e2d138818eeb609c3916e275d34e",
-    "checkpoint_reason": "MAJOR_QUEST_RESOLVED_T207"
+    "checkpoint_reason": "NORMAL_10_COMPLETED_UNSAVED_TURNS"
   }
 }
