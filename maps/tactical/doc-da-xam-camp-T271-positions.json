@@ -1,0 +1,52 @@
+{
+  "schema": "HN-COMBAT-OVERLAY-V1",
+  "turn": 271,
+  "base_svg": "maps/tactical/doc-da-xam-camp-v1.svg",
+  "base_blob": "ea2921b0039beee68642971b3a2dcaae448a17d8",
+  "base_immutable": true,
+  "coordinates": "schematic not meters",
+  "V": {
+    "x": 393,
+    "y": 188,
+    "from": [
+      303,
+      197
+    ],
+    "weapon": "Huyết Nha+3",
+    "HP": 137,
+    "STA": 24,
+    "shelter": "north side crate1 near crate2",
+    "not_on_ascent": true
+  },
+  "Maela": {
+    "x": 178,
+    "y": 229,
+    "prepared_arrow": true,
+    "shot": false,
+    "uninjured": true
+  },
+  "enemy": {
+    "id": "enemy:doc-da-xam-upper-archer-T265",
+    "level": 7,
+    "HP": 33,
+    "maxHP": 85,
+    "last_full_sighting": [
+      464,
+      94
+    ],
+    "now": "concealed farther uphill",
+    "precise_location": "UNKNOWN",
+    "shot": false
+  },
+  "resources": {
+    "steel_bolts_loaded": 0,
+    "steel_bolts_reserve": 2
+  },
+  "events": {
+    "no_attack": true,
+    "no_cost": true,
+    "HuyetAnhBo": false,
+    "parry": false
+  },
+  "next": 272
+}
