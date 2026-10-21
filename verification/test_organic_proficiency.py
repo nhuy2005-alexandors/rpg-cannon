@@ -110,6 +110,17 @@ class TestProficiency(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'identity mismatch'):
             proficiency_use(x, event(skill_id='FakeSkill'), seed=None)
 
+    def test_invalid_action_cannot_trigger_otherwise_approved_levelup(self):
+        contract = {'approved': True, 'from_level': 1, 'to_level': 2, 'version': 'approved-elsewhere'}
+        s = {'skill_id': 'Woodcutting', 'rarity': 'Common', 'level': 1,
+             'earned_turn': 10, 'skill_exp_current': 40, 'use_receipts': {}}
+        x = proficiency_use(s, event(skill_id='Woodcutting', turn=12,
+                                     action_adjudicated=False), seed=None,
+                            next_contract=contract)
+        self.assertEqual(x['level'], 1)
+        self.assertEqual(x['skill_exp_current'], 40)
+        self.assertEqual(x['level_up_status'], 'BLOCKED_PENDING_CONTRACT')
+
     def test_no_input_mutation(self):
         entry = learned()
         e = event()
