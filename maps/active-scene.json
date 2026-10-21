@@ -1,19 +1,19 @@
 {
   "schema": "HN-MAP-SCENE-V1",
-  "last_completed_turn": 272,
-  "next_turn": 273,
+  "last_completed_turn": 273,
+  "next_turn": 274,
   "map_id": "duong-tay-doc-da-xam-camp",
-  "status_source": "T272 events/0272.md, state/current.json, same T263 immutable combat SVG, T272 token overlay",
+  "status_source": "T273 events/0273.md, state/current.json, same immutable T263 combat base, T273 token overlay",
   "current": {
     "tokens": [
       {
         "id": "vo-danh",
         "category": "player",
         "label": "V",
-        "x": 68.89,
-        "y": 41.82,
-        "facing": "N",
-        "status": "NORTH_STONE_ASCENT_FOOT_SWORD_READY_HP137"
+        "x": 66.25,
+        "y": 23.86,
+        "facing": "NW",
+        "status": "UPPER_NORTH_ROCK_BEND_SWORD_READY_STA9"
       },
       {
         "id": "maela",
@@ -22,21 +22,21 @@
         "x": 24.72,
         "y": 52.05,
         "facing": "N",
-        "status": "REAR_LEFT_WEST_COVER_ONE_ARROW_NOCKED"
+        "status": "WEST_COVER_BOW_ARROW_NOCKED"
       }
     ],
     "movement": [
       {
         "actor": "vo-danh",
         "from": [
-          54.58,
-          42.73
-        ],
-        "to": [
           68.89,
           41.82
         ],
-        "turn": 272
+        "to": [
+          66.25,
+          23.86
+        ],
+        "turn": 273
       },
       {
         "actor": "maela",
@@ -48,25 +48,34 @@
           24.72,
           52.05
         ],
-        "turn": 272
+        "turn": 273
       }
     ],
-    "visible_hostiles": [],
+    "visible_hostiles": [
+      {
+        "id": "enemy:doc-da-xam-upper-archer-T265",
+        "category": "enemy",
+        "label": "E",
+        "x": 63.89,
+        "y": 19.77,
+        "status": "Lv7_NORMAL_HP9_KNEELING_CONSCIOUS_REQUESTING_QUARTER_DROPPED_BOW"
+      }
+    ],
     "notes": [
-      "STATIC BASE IMMUTABLE since T263: maps/tactical/doc-da-xam-camp-v1.svg blob ea2921b0039beee68642971b3a2dcaae448a17d8. Three crates, tarp, rock switchback, old west boulders, triggered bell wire and three previously looted corpses unmodified.",
-      "T272 V from (393,188) at north edge between crate1/crate2 via original northern tarp/crate edge and tested rock to lower FOOT of same north stone ascent around (496,184). No leap through stone, no higher bend climbed. Drawn Huyết Nha+3, unloaded crossbow stowed.",
-      "T272 Lv7 NORMAL archer HP33/85 autonomously fires ONE arrow from upper bend at temporarily exposed V; V leans behind existing low-path rock and arrow strikes stone, character HP damage0, NOT a sword Parry. Gạt Kiếm not used/charged. Enemy retires behind upper rock, live coordinates unknown.",
-      "T272 Maela from rear-left west cover (178,229) keeps existing arrow nocked but has no safe exposed body line due rock/tarp; zero shots, she remains unhurt, seven personal arrows fired total in known expedition, original stock UNKNOWN.",
-      "V Lv6 HP137/170 STA24/110 BLOOD50 TH0 Souls110 EXP330/400, Huyết Ảnh Bộ ready but NOT CAST, Huyết Trảm Nhị Liên still requires25STA beyond available24. No ordinary melee strike, skill EXP, regen, Souls, reward or verified RNG.",
-      "T273 NOT PLAYED. Bandit chief/faction still UNVERIFIED, Garrick quest ACTIVE UNPAID; archival map preserved."
+      "STATIC BASE remains byte-identical maps/tactical/doc-da-xam-camp-v1.svg Git blob ea2921b0039beee68642971b3a2dcaae448a17d8; do not move three crates, tarp, northern stone turn, western rocks, alert wire, or three looted older corpses.",
+      "T273 player V climbed actual existing north switchback from foot (496,184) on rock cover, observed wounded Lv7 Normal archer at existing bend, only AFTER normal close saw one firm clear adjacent landing estimated ~3m along stone. One Huyết Ảnh Bộ dash of <=4m costs15 STA (24→9) CD3 after turn, no through-stone movement.",
+      "T273 V performed one separate normal sword strike raw34−DEF10=24 on archer HP33→9/85, still ALIVE and conscious. Wounded archer had longbow up, tried to side-step, caught rocky edge and failed to avoid stroke. No crit, no extra sword strike, no auto kill. Dropped longbow on upper ledge (NOT looted). He kneels, requests mercy, can still react in later turns.",
+      "T273 effective Huyết Ảnh Bộ skillXP2→4 and Hấp Huyết skillXP10→12, life-steal floor24×0.1=2 V HP137→139, sword nominal BLOOD+7 but already capped50. CharEXP330 Souls110, no quest bounty.",
+      "T273 Maela unhurt, west rear-left behind lower stones (178,229), own bow arrow nocked unchanged; she did not fire since upper melee exchange not fully visible, known personal trip arrows used7, original stock UNKNOWN.",
+      "Garrick chief bounty ACTIVE UNPAID. Enemy identity and faction still unverified. T274 NOT PLAYED; user must select finish, interrogate, bind, withdraw. Old map archives preserved."
     ],
     "relative_actor_locations": {
-      "vo_danh": "schematic (496,184) at foot of existing north uphill stone path near western rock edge, Huyết Nha+3 wielded; NOT past upper bend or in melee range",
-      "maela": "schematic (178,229) same rear-left west boulder, one arrow already nocked, no shot T272",
-      "upper_archer": "Lv7 Normal HP33, briefly exposed bow arm from earlier upper turn near schematic (462,94), then behind old rock, current coordinates UNKNOWN; NOT targetable"
+      "vo_danh": "schematic (477,105) at upper north existing stone switchback adjacent bowman after legal dash ~3m final segment, drawn Huyết Nha; HP139 STA9",
+      "maela": "schematic (178,229), remains rear-left west cover with nocked arrow, cannot fully see V upper melee exchange",
+      "upper_archer": "schematic (460,87), ACTUALLY visible adjacent to V, kneeling and conscious with HP9/85 after one ordinary Huyết Nha hit, longbow dropped next to him, asking for mercy; faction unknown"
     },
     "base_map_svg": "maps/tactical/doc-da-xam-camp-v1.svg",
-    "position_overlay": "maps/tactical/doc-da-xam-camp-T272-positions.json",
+    "position_overlay": "maps/tactical/doc-da-xam-camp-T273-positions.json",
     "coordinate_note": "Current token x/y in percentages of an UNMEASURED viewBox sketch, NOT physical atlas geography"
   },
   "legacy_timeline": {
