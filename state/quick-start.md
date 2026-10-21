@@ -1,3 +1,19 @@
+# HẮC NHẬT — QUICK START (T266)
+
+**LATEST CHECKPOINT T266; NEXT COMMAND T267 NOT YET PLAYED.** Authority: `state/current.json`, `events/0266.md`, fixed tactical base `maps/tactical/doc-da-xam-camp-v1.svg`, actor/enemy-last-sighting overlay `maps/tactical/doc-da-xam-camp-T266-positions.json`, and `maps/active-scene.json`. The static base remained byte-identical to T263 SHA blob `ea2921b0039beee68642971b3a2dcaae448a17d8`.
+
+**Vô Danh:** Lv6 EXP330/400 HP145/170 STA24/110 BLOOD50/50 TH0/20 Souls110 DEF22. At SAME western stone cover as T265 (schematic SVG V214,270); holds Liên Nỏ Hắc Nha loaded ONE steel bolt, steel reserve2, Nanh Cốt Tiễn1; Huyết Nha+3 sheathed and Hắc Nha Trọng Kiếm VII only carried as backup; Gạt Kiếm unavailable while holding crossbow. Huyết Ảnh Bộ ready15STA, Huyết Trảm Nhị Liên ready but requires25STA (not affordable at current24) plus12HP. No healing/stamina regeneration. All equipment, 3 once-claimed dead guards and quest state from T265 preserved.
+
+**T266 result:** The northern Lv7 NORMAL longbowman (public prior block `canon/encounters/west-road-upper-path-archer-T265-public.md`; DEF10 HP69/85 at T265 end) autonomously tested west positions from behind high stone, then briefly exposed upper torso on lower step ALONG EXISTING northern switchback. Maela (west-left schematic M160,261) completed ordinary renocking and fired precisely ONE bow arrow at a short valid upper oblique lane, but enemy withdrew in time and her arrow struck stone; damage 0, archer remains **HP69/85 ALIVE**. Enemy fired exactly one retaliatory arrow at Maela's known general direction, blocked by western cover; Maela unhurt, V unhurt. Enemy currently behind stone with UNKNOWN exact coords; no current shootable target. V's crossbow trajectory obstructed throughout, so he **did not fire** and retains steel bolt already loaded. Maela personal expedition arrows fired known total6, recovered usable3 previously, recovered damaged1, fifth and sixth unrecovered; initial and total remaining stock UNKNOWN. No skills, XP or loot; no verified dice/RNG performed. Player HP145 STA24 BLOOD50 TH0 Souls110 EXP330 unchanged.
+
+**Map:** Do not redraw or change rocks, crates, tarp, alarm wire, west boulders, northern winding path. Use T263 SAME base and T266 overlay showing unchanged V/M token anchors; uncertain **LAST SEEN** upper enemy around SVG(508,148) only, not current exact position nor currently targetable. All positions schematic, not surveyed range/distance.
+
+**T267:** User must command whether to wait, retreat, shift cover, prepare/swap weapon legally. No free parry while crossbow held and no shots through rocks. No automatic V or Maela shot; enemy stays autonomous. Garrick's western leader bounty ACTIVE UNPAID; archer faction and boss status unverified.
+
+---
+
+## Archived T265 and prior quick starts
+
 # HẮC NHẬT — QUICK START (T265)
 
 **LATEST VERIFIED GAMEPLAY CHECKPOINT T265, NEXT T266 NOT PLAYED.** Source `state/current.json`, `events/0265.md`, `maps/active-scene.json`, fixed `maps/tactical/doc-da-xam-camp-v1.svg` and delta `maps/tactical/doc-da-xam-camp-T265-positions.json`. Early checkpoint because a NEW Lv7 NORMAL enemy became involved with real HP change and public precommit, not because 10 turns elapsed.
