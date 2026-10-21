@@ -1,3 +1,19 @@
+# HẮC NHẬT — QUICK START (T283, next T284)
+
+**LATEST CHECKPOINT T283. T284 NOT YET PLAYED.** Canon: `state/current.json`, append-only `events/0274.md` through `events/0283.md`, historical `events/0273.md`; `maps/active-scene.json` marks T273 camp combat as inactive. If older archived quick starts disagree with T283, this section supersedes them. T278 old rest-and-return narrative was EXPLICITLY REPLACED; canonical T278 is roadside questioning only.
+
+**Where:** Vô Danh at Lò Rèn Hắc Nha, meeting Durgan Hắc Thiết the morning after uninterrupted safe overnight rest. Durgan asks about repair, upgrade or item inspection; NOTHING has been repaired, upgraded, handed over, priced or paid. Maela left to rest, is uninjured and has not agreed to the next hunt. Kerran Lv7 Normal HP9/85 remains alive, restrained, first-aided (HP still9), watched temporarily by Garrick's station staff, WITHOUT formal handover. Garrick's western bandit chief bounty ACTIVE UNPAID. Only claims regarding Ba Vạch, possible curved-metal left shoulder, two clanks, direction toward high northern rock, similar three-stroke documents: leads NOT proof of leader/hideout.
+
+**Player HUD:** Huyết Kiếm Sĩ Lv6 EXP330/400, HP139/170, STA110/110 (T279 hour rest9->29; T283 uninterrupted safe overnight rest29->110), BLOOD50/50, Tử Huyết0/20, Souls110, DEF22. Huyết Nha+3 Rare sword ATK28–36 sheathed/ready; Liên Nỏ Hắc Nha unloaded, steel bolts2, Nanh Cốt Tiễn1, Hắc Nha Trọng Kiếm VII backup, military +30HP potion×1 unused. Huyết Ảnh Bộ cooldown elapsed by T277. No XP, souls, TH, heals or expenses T274–T283.
+
+**Physical inventory:** Crate cargo looted T276 and stored in city storage T281: 6 rations, 2 sealed lamp oil, 1 burlap roll, approx6m rope, rough repair kit, nails/hooks set, 2 transport-cloth rolls. V has 17 physical copper coins (not Souls), Ba Vạch oil-wrapped manifest and 2 ordinary arrows from Kerran in addition to previous state. Maela personally carries Kerran's old longbow, 2 ordinary arrows and a dagger plus her prior bow. Hybrid Inventory V1: capacity/physical carriage matters, no auto portable warehouse.
+
+**Locations/maps:** V no longer at Dốc Đá Xám camp, Maela not at combat scene and Kerran not an enemy standing on upper switchback. T273 tactical base immutable archived. No new city tactical geometry invented. City-world atlas and abandoned camp geography retain accepted static data.
+
+**Next T284:** user can ask Durgan to inspect Huyết Nha+3, Hắc Nha Trọng Kiếm VII or armor, or discuss cost/requirements for improvements. GM must not invent fee, upgrading resources or effects without proper scene adjudication and player approval. No auto-departure on another quest or automatic conversion of physical copper to Souls. Normal turns use cached session state; no repeated GitHub fetch unless verification needs it.
+
+---
+
 # HẮC NHẬT — QUICK START (T273)
 
 **LATEST CHECKPOINT T273; T274 NOT PLAYED.** Authority: `state/current.json`, `events/0273.md`, `maps/active-scene.json`, immutable `maps/tactical/doc-da-xam-camp-v1.svg` (Git blob ea2921b0039beee68642971b3a2dcaae448a17d8), delta `maps/tactical/doc-da-xam-camp-T273-positions.json`.

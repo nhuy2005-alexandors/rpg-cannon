@@ -1,10 +1,114 @@
 {
   "schema": "HN-MAP-SCENE-V1",
-  "last_completed_turn": 273,
-  "next_turn": 274,
+  "last_completed_turn": 283,
+  "next_turn": 284,
   "map_id": "duong-tay-doc-da-xam-camp",
-  "status_source": "T273 events/0273.md, state/current.json, same immutable T263 combat base, T273 token overlay",
+  "status_source": "T283 checkpoint events/0274.md..0283.md; combat camp scene archived after withdrawal by T280, V now at Durgan forge, no confirmed city tactical map coordinates.",
   "current": {
+    "tokens": [],
+    "movement": [],
+    "visible_hostiles": [],
+    "notes": [
+      "No active combat map as of T283: Vô Danh at Durgan Hắc Thiết forge in Hắc Nha Thành, Maela departed to rest, Kerran under temporary Garrick watch. T273 camp base unchanged and archived.",
+      "Do not interpret cleared active-scene tokens as despawn/retcon of previous camp bodies or landscape.",
+      "World/region/area map geometry is not generated from this update."
+    ]
+  },
+  "legacy_timeline": {
+    "bai_sat_ri": {
+      "corpses": [
+        {
+          "id": "enemy:blackclaw-A",
+          "x": 22,
+          "y": 68,
+          "status": "DEAD_T191_LOOTED_T194"
+        },
+        {
+          "id": "enemy:blackclaw-B",
+          "x": 38,
+          "y": 64,
+          "status": "DEAD_T193_LOOTED_T194"
+        },
+        {
+          "id": "enemy:blackclaw-C",
+          "x": 64,
+          "y": 46,
+          "status": "DEAD_T199_LOOTED_T200"
+        }
+      ],
+      "no_active_enemy_confirmed": true
+    },
+    "outer_stone_wall": {
+      "corpse": [
+        {
+          "id": "enemy:buried-skeleton-T218",
+          "x": 70,
+          "y": 72,
+          "status": "DEAD_T222_LOOTED_ONCE_T223",
+          "HP": 0
+        },
+        {
+          "id": "enemy:dragging-skeleton-T228",
+          "x": 70,
+          "y": 74,
+          "status": "DEAD_T232_LOOTED_ONCE_T233",
+          "HP": 0
+        },
+        {
+          "id": "enemy:stone-raker-T234",
+          "x": 88,
+          "y": 63,
+          "status": "DEAD_T238_LOOTED_ONCE_T239",
+          "HP": 0
+        }
+      ],
+      "confirmed_active_hostiles": 0,
+      "actual_enemy_population_remaining": "UNKNOWN",
+      "not_crypt_verified": true,
+      "active_hostiles": []
+    }
+  },
+  "contract": "Increment only current tokens, movement, confirmed terrain object updates. Never move static terrain because of a narrative turn alone. Display north and facing arrows distinctly.",
+  "scene_active": false,
+  "inactive_scene_T240": {
+    "map_id": "ngoai-thanh-tuong-da-do",
+    "last_seen_T239": {
+      "tokens": [
+        {
+          "id": "enemy:stone-raker-T234",
+          "label": "E3",
+          "category": "enemy",
+          "x": 88,
+          "y": 63,
+          "facing": "NW",
+          "status": "DEAD_T238_LOOTED_T239",
+          "HP_current": 0,
+          "HP_max": 70,
+          "ATK": "28–35",
+          "DEF": 9,
+          "rank": "NORMAL",
+          "level": 5,
+          "arm_right": "SEVERED_T237",
+          "arm_left": "INERT_AFTER_DEATH",
+          "actual_geographic_bearing": "UNKNOWN",
+          "position_note": "Enemy on/near checked high pavers at leaning boulder, near unsafe lower lip; alerted to player, melee distance but exact meters UNKNOWN."
+        }
+      ],
+      "movement": [],
+      "visible_hostiles": [],
+      "notes": [
+        "T228–T229 second dragging skeleton initially near unsafe lower roots, V covered by boulder; T230 first and second Nhị Liên strikes (one hit, one miss), enemy counter; T231 normal sword and failed-to-trigger Parry due only 3STA; T232 killed second skeleton; T233 looted it once (one provisional bone core, 12 souls), consumed one +30HP potion and rested safely 1h; T234 rested safely 2h (+40STA).",
+        "T234–T235 third skeleton moving stones beside leaning boulder; V stealth-flanked but pebble alerted target. T236 public enemy stat block committed before first damage; T236 ordinary sword 70->47, enemy attack misses. T237 ordinary sword 47->25 and RIGHT arm severed; counter with LEFT arm causes V -6HP (66->60), no RNG receipts.",
+        "T237 ACTIVE fight: V Lv6 HP60 STA63 BLOOD28 TH0 Souls85 EXP265; third skeleton HP25/70 Lv5 Normal ATK28–35 DEF9, left arm still functional. 2/3 provisional grey cores, bounty issuer verification zero and quest unpaid.",
+        "No other currently visible enemy. 2 previously defeated skeleton corpses have been looted exactly once. Number remaining enemy UNKNOWN. No TH-bearing source or valid burial crypt entrance established.",
+        "Structural objects: old wall and groove, root hollow with weak intermittent breeze and unstable lip, tilting boulder and cracked paver (avoided), tested higher paving. Regional bearing and actual metric distances UNKNOWN; map feature base revision3, no unrelated static object moved."
+      ]
+    },
+    "player_left": true,
+    "notes": "Local tactical positions below refer to historical T239, not present player placement"
+  },
+  "current_player_location": "Hắc Nha Thành — Lò Rèn Hắc Nha (Durgan Hắc Thiết), T283",
+  "archived_current_T273": {
     "tokens": [
       {
         "id": "vo-danh",
@@ -77,99 +181,5 @@
     "base_map_svg": "maps/tactical/doc-da-xam-camp-v1.svg",
     "position_overlay": "maps/tactical/doc-da-xam-camp-T273-positions.json",
     "coordinate_note": "Current token x/y in percentages of an UNMEASURED viewBox sketch, NOT physical atlas geography"
-  },
-  "legacy_timeline": {
-    "bai_sat_ri": {
-      "corpses": [
-        {
-          "id": "enemy:blackclaw-A",
-          "x": 22,
-          "y": 68,
-          "status": "DEAD_T191_LOOTED_T194"
-        },
-        {
-          "id": "enemy:blackclaw-B",
-          "x": 38,
-          "y": 64,
-          "status": "DEAD_T193_LOOTED_T194"
-        },
-        {
-          "id": "enemy:blackclaw-C",
-          "x": 64,
-          "y": 46,
-          "status": "DEAD_T199_LOOTED_T200"
-        }
-      ],
-      "no_active_enemy_confirmed": true
-    },
-    "outer_stone_wall": {
-      "corpse": [
-        {
-          "id": "enemy:buried-skeleton-T218",
-          "x": 70,
-          "y": 72,
-          "status": "DEAD_T222_LOOTED_ONCE_T223",
-          "HP": 0
-        },
-        {
-          "id": "enemy:dragging-skeleton-T228",
-          "x": 70,
-          "y": 74,
-          "status": "DEAD_T232_LOOTED_ONCE_T233",
-          "HP": 0
-        },
-        {
-          "id": "enemy:stone-raker-T234",
-          "x": 88,
-          "y": 63,
-          "status": "DEAD_T238_LOOTED_ONCE_T239",
-          "HP": 0
-        }
-      ],
-      "confirmed_active_hostiles": 0,
-      "actual_enemy_population_remaining": "UNKNOWN",
-      "not_crypt_verified": true,
-      "active_hostiles": []
-    }
-  },
-  "contract": "Increment only current tokens, movement, confirmed terrain object updates. Never move static terrain because of a narrative turn alone. Display north and facing arrows distinctly.",
-  "scene_active": true,
-  "inactive_scene_T240": {
-    "map_id": "ngoai-thanh-tuong-da-do",
-    "last_seen_T239": {
-      "tokens": [
-        {
-          "id": "enemy:stone-raker-T234",
-          "label": "E3",
-          "category": "enemy",
-          "x": 88,
-          "y": 63,
-          "facing": "NW",
-          "status": "DEAD_T238_LOOTED_T239",
-          "HP_current": 0,
-          "HP_max": 70,
-          "ATK": "28–35",
-          "DEF": 9,
-          "rank": "NORMAL",
-          "level": 5,
-          "arm_right": "SEVERED_T237",
-          "arm_left": "INERT_AFTER_DEATH",
-          "actual_geographic_bearing": "UNKNOWN",
-          "position_note": "Enemy on/near checked high pavers at leaning boulder, near unsafe lower lip; alerted to player, melee distance but exact meters UNKNOWN."
-        }
-      ],
-      "movement": [],
-      "visible_hostiles": [],
-      "notes": [
-        "T228–T229 second dragging skeleton initially near unsafe lower roots, V covered by boulder; T230 first and second Nhị Liên strikes (one hit, one miss), enemy counter; T231 normal sword and failed-to-trigger Parry due only 3STA; T232 killed second skeleton; T233 looted it once (one provisional bone core, 12 souls), consumed one +30HP potion and rested safely 1h; T234 rested safely 2h (+40STA).",
-        "T234–T235 third skeleton moving stones beside leaning boulder; V stealth-flanked but pebble alerted target. T236 public enemy stat block committed before first damage; T236 ordinary sword 70->47, enemy attack misses. T237 ordinary sword 47->25 and RIGHT arm severed; counter with LEFT arm causes V -6HP (66->60), no RNG receipts.",
-        "T237 ACTIVE fight: V Lv6 HP60 STA63 BLOOD28 TH0 Souls85 EXP265; third skeleton HP25/70 Lv5 Normal ATK28–35 DEF9, left arm still functional. 2/3 provisional grey cores, bounty issuer verification zero and quest unpaid.",
-        "No other currently visible enemy. 2 previously defeated skeleton corpses have been looted exactly once. Number remaining enemy UNKNOWN. No TH-bearing source or valid burial crypt entrance established.",
-        "Structural objects: old wall and groove, root hollow with weak intermittent breeze and unstable lip, tilting boulder and cracked paver (avoided), tested higher paving. Regional bearing and actual metric distances UNKNOWN; map feature base revision3, no unrelated static object moved."
-      ]
-    },
-    "player_left": true,
-    "notes": "Local tactical positions below refer to historical T239, not present player placement"
-  },
-  "current_player_location": "Dốc Đá Xám: V/M behind western boulder next to tarp-and-crates site; upper northern path partially obscured, unknown person maybe suspicious"
+  }
 }
