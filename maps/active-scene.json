@@ -1,19 +1,19 @@
 {
   "schema": "HN-MAP-SCENE-V1",
-  "last_completed_turn": 271,
-  "next_turn": 272,
+  "last_completed_turn": 272,
+  "next_turn": 273,
   "map_id": "duong-tay-doc-da-xam-camp",
-  "status_source": "T271 events/0271.md and state/current.json; immutable combat map and T271 overlay",
+  "status_source": "T272 events/0272.md, state/current.json, same T263 immutable combat SVG, T272 token overlay",
   "current": {
     "tokens": [
       {
         "id": "vo-danh",
         "category": "player",
         "label": "V",
-        "x": 54.58,
-        "y": 42.73,
-        "facing": "NE",
-        "status": "NORTH_GAP_CRATE1_CRATE2_HUYET_NHA_READY_HP137"
+        "x": 68.89,
+        "y": 41.82,
+        "facing": "N",
+        "status": "NORTH_STONE_ASCENT_FOOT_SWORD_READY_HP137"
       },
       {
         "id": "maela",
@@ -22,21 +22,21 @@
         "x": 24.72,
         "y": 52.05,
         "facing": "N",
-        "status": "WEST_REAR_LEFT_COVER_BOW_ARROW_NOCKED"
+        "status": "REAR_LEFT_WEST_COVER_ONE_ARROW_NOCKED"
       }
     ],
     "movement": [
       {
         "actor": "vo-danh",
         "from": [
-          42.08,
-          44.77
-        ],
-        "to": [
           54.58,
           42.73
         ],
-        "turn": 271
+        "to": [
+          68.89,
+          41.82
+        ],
+        "turn": 272
       },
       {
         "actor": "maela",
@@ -48,25 +48,25 @@
           24.72,
           52.05
         ],
-        "turn": 271
+        "turn": 272
       }
     ],
     "visible_hostiles": [],
     "notes": [
-      "STATIC BASE IMMUTABLE: maps/tactical/doc-da-xam-camp-v1.svg blob ea2921b0039beee68642971b3a2dcaae448a17d8; 3 crates, tarp, west/north rocks, alert wire, 3 looted corpses all retain base positions.",
-      "T271 player moved on tested stone partly behind original crate1 toward original crate2, to schematic SVG(393,188). No reaching the foot of north ascending rocks, no melee range, no invented shortcut.",
-      "T271 Maela remains (178,229), spends time nocking one of her own arrows but NO shot. Total known personal expedition arrows fired7 and initial stock UNKNOWN. Uninjured.",
-      "Lv7 Normal archer HP33/85 independently continued uphill after vague partly visible cloth/bow; no clean body exposure or hostile projectile lane, thus no arrows released by him or Maela. Position currently unknown.",
-      "V Lv6 HP137/170 STA24/110 BLOOD50 TH0 Souls110 EXP330/400. Huyết Nha+3 WIELDED, Liên Nỏ unloaded carried, two reserve steel bolts plus one Nanh Cốt Tiễn; no dash, Parry, HP loss, healing, or passive stamina refill.",
-      "T272 NOT PLAYED. Garrick leader quest active unpaid. Original inactive ruins map and legacy timeline preserved."
+      "STATIC BASE IMMUTABLE since T263: maps/tactical/doc-da-xam-camp-v1.svg blob ea2921b0039beee68642971b3a2dcaae448a17d8. Three crates, tarp, rock switchback, old west boulders, triggered bell wire and three previously looted corpses unmodified.",
+      "T272 V from (393,188) at north edge between crate1/crate2 via original northern tarp/crate edge and tested rock to lower FOOT of same north stone ascent around (496,184). No leap through stone, no higher bend climbed. Drawn Huyết Nha+3, unloaded crossbow stowed.",
+      "T272 Lv7 NORMAL archer HP33/85 autonomously fires ONE arrow from upper bend at temporarily exposed V; V leans behind existing low-path rock and arrow strikes stone, character HP damage0, NOT a sword Parry. Gạt Kiếm not used/charged. Enemy retires behind upper rock, live coordinates unknown.",
+      "T272 Maela from rear-left west cover (178,229) keeps existing arrow nocked but has no safe exposed body line due rock/tarp; zero shots, she remains unhurt, seven personal arrows fired total in known expedition, original stock UNKNOWN.",
+      "V Lv6 HP137/170 STA24/110 BLOOD50 TH0 Souls110 EXP330/400, Huyết Ảnh Bộ ready but NOT CAST, Huyết Trảm Nhị Liên still requires25STA beyond available24. No ordinary melee strike, skill EXP, regen, Souls, reward or verified RNG.",
+      "T273 NOT PLAYED. Bandit chief/faction still UNVERIFIED, Garrick quest ACTIVE UNPAID; archival map preserved."
     ],
     "relative_actor_locations": {
-      "vo_danh": "approx (393,188) northern gap between crate1 and crate2, with partial crate/tarp cover, not yet at north stone ascent foot, Huyết Nha+3 ready",
-      "maela": "(178,229) west rear-left existing rock, bow arrow now legitimately nocked, no shot T271",
-      "upper_archer": "Lv7 Normal HP33 at last full T270 sighting near (464,94), T271 only fleeting dark cloth/bow higher, CURRENT position not known, not shootable"
+      "vo_danh": "schematic (496,184) at foot of existing north uphill stone path near western rock edge, Huyết Nha+3 wielded; NOT past upper bend or in melee range",
+      "maela": "schematic (178,229) same rear-left west boulder, one arrow already nocked, no shot T272",
+      "upper_archer": "Lv7 Normal HP33, briefly exposed bow arm from earlier upper turn near schematic (462,94), then behind old rock, current coordinates UNKNOWN; NOT targetable"
     },
     "base_map_svg": "maps/tactical/doc-da-xam-camp-v1.svg",
-    "position_overlay": "maps/tactical/doc-da-xam-camp-T271-positions.json",
+    "position_overlay": "maps/tactical/doc-da-xam-camp-T272-positions.json",
     "coordinate_note": "Current token x/y in percentages of an UNMEASURED viewBox sketch, NOT physical atlas geography"
   },
   "legacy_timeline": {
