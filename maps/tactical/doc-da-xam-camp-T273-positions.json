@@ -1,0 +1,116 @@
+{
+  "schema": "HN-COMBAT-OVERLAY-V1",
+  "turn": 273,
+  "map_id": "duong-tay-doc-da-xam-camp",
+  "base_svg": "maps/tactical/doc-da-xam-camp-v1.svg",
+  "base_svg_blob_sha": "ea2921b0039beee68642971b3a2dcaae448a17d8",
+  "base_immutable": true,
+  "coordinates": "Schematic 720x440 SVG placements; NOT actual measured distances",
+  "actors": [
+    {
+      "id": "vo-danh",
+      "token": "V",
+      "x": 477,
+      "y": 105,
+      "from": [
+        496,
+        184
+      ],
+      "weapon": "Huyết Nha +3 WIELDED",
+      "HP": 139,
+      "STA": 9,
+      "position": "SAME EXISTING UPPER NORTH SWITCHBACK ADJACENT_TO_WOUNDED_ARCHER",
+      "HuyetAnhBo": "USED_T273_CD3",
+      "sword_strikes_T273": 1
+    },
+    {
+      "id": "maela",
+      "token": "M",
+      "x": 178,
+      "y": 229,
+      "from": [
+        178,
+        229
+      ],
+      "weapon": "personal bow",
+      "arrow_nocked": true,
+      "shot_T273": false,
+      "unhurt": true,
+      "known_personal_arrow_shots": 7,
+      "original_stock": "UNKNOWN"
+    }
+  ],
+  "enemies": [
+    {
+      "id": "enemy:doc-da-xam-upper-archer-T265",
+      "token": "E",
+      "level": 7,
+      "rank": "NORMAL",
+      "HP": 9,
+      "maxHP": 85,
+      "DEF": 10,
+      "weapon": "LONG_BOW_DROPPED_ON_ADJACENT_UPPER_LEDGE_NOT_LOOTED",
+      "current_schematic_x": 460,
+      "current_schematic_y": 87,
+      "current_visible": true,
+      "currently_in_melee_range_of_V": true,
+      "stance": "KNEELING_OFF_BALANCE_CONSCIOUS_REQUESTING_QUARTER",
+      "faction": "UNKNOWN",
+      "leader_status": "UNVERIFIED",
+      "not_yet_dead": true,
+      "enemy_arrows_T273": 0
+    }
+  ],
+  "old_corpses": [
+    {
+      "id": "enemy:west-road-cloaked-lookout-T247",
+      "x": 100,
+      "y": 348,
+      "looted": true
+    },
+    {
+      "id": "enemy:west-road-axe-guard-T251",
+      "x": 126,
+      "y": 372,
+      "looted": true
+    },
+    {
+      "id": "enemy:west-road-grey-coat-T256",
+      "x": 529,
+      "y": 325,
+      "looted": true
+    }
+  ],
+  "geometry": {
+    "V_path": "existing north switchback stone ledge, inner cover, then short clear approach",
+    "dash_precondition": "after normal uphill pursuit, visually accessible firm landing within approx 3m; NOT inferred from SVG coordinates",
+    "through_rock": false,
+    "new_route": false,
+    "maela_stays_west": true
+  },
+  "combat": {
+    "dash_skill": "Huyết Ảnh Bộ Rare Lv1",
+    "dash_STA_cost": 15,
+    "STA_before": 24,
+    "STA_after": 9,
+    "ordinary_sword_raw": 34,
+    "enemy_DEF": 10,
+    "actual_HP_damage": 24,
+    "enemy_HP_before": 33,
+    "enemy_HP_after": 9,
+    "lifesteal_HP": 2,
+    "V_HP_before": 137,
+    "V_HP_after": 139,
+    "BLOOD_nominal_from_hit": 7,
+    "BLOOD_actual_gain": 0,
+    "Maela_bow_shots": 0,
+    "enemy_bow_shots": 0,
+    "parry_uses": 0,
+    "character_EXP_gain": 0,
+    "loot_SOULS": 0,
+    "skill_exp_HuyetAnhBo": 2,
+    "skill_exp_HapHuyet": 2
+  },
+  "terrain_unchanged": true,
+  "T274_not_played": true
+}
