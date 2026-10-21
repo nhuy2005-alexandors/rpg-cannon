@@ -1,0 +1,123 @@
+{
+  "schema": "HN-COMBAT-OVERLAY-V1",
+  "turn": 269,
+  "map_id": "duong-tay-doc-da-xam-camp",
+  "base_svg": "maps/tactical/doc-da-xam-camp-v1.svg",
+  "base_svg_blob_sha": "ea2921b0039beee68642971b3a2dcaae448a17d8",
+  "base_immutable": true,
+  "coords_note": "schematic SVG 720x440 anchor coordinates; not physically measured",
+  "actors": [
+    {
+      "id": "vo-danh",
+      "token": "V",
+      "x": 218,
+      "y": 216,
+      "previous_x": 214,
+      "previous_y": 270,
+      "weapon": "Huyết Nha +3",
+      "sword_ready": true,
+      "crossbow": "STOWED_UNLOADED",
+      "STA": 24,
+      "HP": 145,
+      "status": "NORTHERN_TIP_WEST_BOULDER_BEHIND_PARTIAL_COVER_NOT_CROSSED_EXPOSED_GAP"
+    },
+    {
+      "id": "maela",
+      "token": "M",
+      "x": 178,
+      "y": 229,
+      "previous_x": 160,
+      "previous_y": 261,
+      "weapon": "bow",
+      "arrow_nocked": true,
+      "shot_T269": false,
+      "status": "REAR_LEFT_LOWER_STONE_COVER",
+      "autonomous": true,
+      "uninjured": true
+    }
+  ],
+  "enemies": [
+    {
+      "id": "enemy:doc-da-xam-upper-archer-T265",
+      "level": 7,
+      "rank": "NORMAL",
+      "HP": 50,
+      "maxHP": 85,
+      "DEF": 10,
+      "weapon": "longbow",
+      "token": "?",
+      "last_partial_glimpse_x": 462,
+      "last_partial_glimpse_y": 84,
+      "last_glimpse": "partly visible cloak and bow near higher turn of SAME northern stone switchback",
+      "currently_visible": false,
+      "currently_targetable": false,
+      "current_exact_location": "UNKNOWN_AFTER_WITHDRAWING_HIGHER",
+      "leader_status": "UNVERIFIED",
+      "faction": "UNKNOWN",
+      "shots_T269": 0
+    }
+  ],
+  "corpses": [
+    {
+      "id": "enemy:west-road-cloaked-lookout-T247",
+      "x": 100,
+      "y": 348,
+      "looted": true
+    },
+    {
+      "id": "enemy:west-road-axe-guard-T251",
+      "x": 126,
+      "y": 372,
+      "looted": true
+    },
+    {
+      "id": "enemy:west-road-grey-coat-T256",
+      "x": 529,
+      "y": 325,
+      "looted": true
+    }
+  ],
+  "player_ammo": {
+    "loaded_steel": 0,
+    "reserve_steel": 2,
+    "NanhCotTien": 1
+  },
+  "maela_arrows_known_shot_total": 6,
+  "movement_T269": {
+    "V": [
+      [
+        214,
+        270
+      ],
+      [
+        218,
+        216
+      ]
+    ],
+    "Maela": [
+      [
+        160,
+        261
+      ],
+      [
+        178,
+        229
+      ]
+    ],
+    "via": "existing west boulder stone edge only, no traversing open camp gap",
+    "not_a_metric_route": true
+  },
+  "object_fixed": [
+    "three existing cargo crates",
+    "tarp",
+    "west boulders",
+    "north ascending switchback",
+    "activated alarm wire",
+    "corpses"
+  ],
+  "no_damage": true,
+  "no_shots": true,
+  "no_skill_use": true,
+  "no_passive_regen": true,
+  "next_turn_not_played": 270
+}
