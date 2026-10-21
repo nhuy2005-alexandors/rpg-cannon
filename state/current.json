@@ -1,14 +1,14 @@
 {
-  "snapshot_version": "HN-S204-V1.3-LEAN-CHECKPOINT",
-  "last_completed_turn": 204,
-  "next_turn": 205,
-  "as_of": "2026-10-20",
-  "location": "Bãi Sắt Rỉ, phía trong căn nhà sắt bỏ hoang ở đông bắc; Vô Danh tại góc đông bắc, đứng cạnh tấm ván vừa dời, mặt hướng đông-đông bắc nhìn hốc nông và khe thông khí thấp.",
+  "snapshot_version": "HN-S207-V1.3-LEAN-EARLY-CHECKPOINT",
+  "last_completed_turn": 207,
+  "next_turn": 208,
+  "as_of": "2026-10-21",
+  "location": "Hắc Nha Thành — khu chợ, trước bàn ủy thác; Vô Danh vừa nộp chứng vật Linh Cẩu Móng Đen, hướng đi cuối trên tuyến về thành là Tây, hướng mặt chính xác tại quầy chưa được đo.",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
     "level": 6,
-    "exp": 215,
+    "exp": 245,
     "exp_next": 400,
     "unallocated_points": 0,
     "attributes": {
@@ -34,7 +34,7 @@
         "current": 0,
         "max": 20
       },
-      "souls": 41
+      "souls": 61
     },
     "passives": {
       "HapHuyet": {
@@ -412,7 +412,7 @@
     "TinhLucDuoc": 0,
     "steel_bolts": 3,
     "NanhCotTien": 1,
-    "black_claw_hyena_fang_pairs": 3
+    "black_claw_hyena_fang_pairs": 0
   },
   "base_storage": {
     "NanhLangVuong": 2,
@@ -438,8 +438,10 @@
     "boss_replay": "T128-139 replay replaces original; loot counted once",
     "kharzug_distinct_from_dead_wolf": true,
     "tam_trao_council": "T154 discussion at temple; no departure, no deeper station exploration",
-    "ruined_iron_shed_exploration": "T204 NE board moved; shallow recess with strap, scratches, low vent; no new enemy/loot verified",
-    "blackclaw_quest_evidence_collected_pairs": 3
+    "ruined_iron_shed_exploration": "T204 NE board moved; T205 checked vent/leather/scratches without discovery of new passage; T206 examined overturned table and old boot heel with apparently missing nail impression; unresolved identity/connection. Objects unchanged.",
+    "blackclaw_quest_evidence_collected_pairs": 3,
+    "blackclaw_quest_evidence_submitted_pairs": 3,
+    "blackclaw_quest_reward_paid_T207": true
   },
   "npc_last_verified_T93": {
     "Edran": "alive at temple",
@@ -1795,6 +1797,46 @@
       "hidden_chamber_confirmed": false,
       "loot_received": false,
       "quest_reward_paid": false
+    },
+    "T205": {
+      "result": "NONCOMBAT_SMALL_INSPECTIONS",
+      "location": "NE shed east-center near table",
+      "resources_changed": false,
+      "new_inventory": 0,
+      "unverified_secrets_claimed": 0
+    },
+    "T206": {
+      "result": "NONCOMBAT_TABLE_FLOOR_INSPECTION",
+      "location": "NE shed near overturned table",
+      "resources_changed": false,
+      "table_moved": false,
+      "boot_heel_detail_observed": true,
+      "unverified_secrets_claimed": 0
+    },
+    "T207": {
+      "result": "BOUTY_HANDIN_CONFIRMED",
+      "location": "Hắc Nha Thành market board",
+      "travel_minutes_approx": 35,
+      "proof_pairs_before": 3,
+      "proof_pairs_submitted": 3,
+      "proof_pairs_after": 0,
+      "souls_before": 41,
+      "souls_after": 61,
+      "EXP_before": 215,
+      "EXP_after": 245,
+      "HP_before": 68,
+      "HP_after": 68,
+      "STA_before": 28,
+      "STA_after": 28,
+      "BLOOD_before": 28,
+      "BLOOD_after": 28,
+      "TuHuyet_before": 0,
+      "TuHuyet_after": 0,
+      "level_before": 6,
+      "level_after": 6,
+      "quest_status": "RESOLVED",
+      "reward_received": true,
+      "no_double_pay": true
     }
   },
   "provenance": {
@@ -2003,7 +2045,7 @@
     "black_claw_hyenas_east_scrapyard": {
       "id": "quest:black-claw-hyenas-east-scrapyard",
       "name": "Linh Cẩu Móng Đen",
-      "status": "ACTIVE",
+      "status": "RESOLVED",
       "accepted_turn": 184,
       "issuer": "Người coi bảng ủy thác khu chợ Hắc Nha Thành (chưa biết tên)",
       "category": "BOUNTY_MINOR_HUNT",
@@ -2017,10 +2059,10 @@
         "souls": 20,
         "EXP": 30
       },
-      "reward_received": false,
+      "reward_received": true,
       "source": "events/0184.md",
-      "progress": "A/B trophy pairs extracted T194; C defeated T199, third intact pair extracted T200, 3/3 physically held. No clerk verification or hand-in, bounty 20 Souls +30 character EXP STILL UNPAID. V now investigating northeast shed T204.",
-      "next_step": "Hand in three intact characteristic fang pairs to bounty clerk in Hắc Nha Thành to request validation and payment; optionally finish shed investigation. Never grant +20 Souls/+30EXP without successful hand-in.",
+      "progress": "3/3 fang pairs collected T194/T200; all three intact pairs submitted and verified by the unnamed market bounty clerk T207. Reward paid once: +20 souls, +30 character EXP. Quest RESOLVED. No additional proof or payment outstanding.",
+      "next_step": "NONE — RESOLVED T207; do not offer or pay this bounty again.",
       "reconnaissance_T184": {
         "observation_position": "Bờ tây sau xe quặng lật nghiêng bên gờ đất thấp",
         "enemy_A": {
@@ -2060,8 +2102,8 @@
           "Whether enemies have noticed anything suspicious"
         ]
       },
-      "last_evidence_turn": 200,
-      "evidence_pending_verification": true,
+      "last_evidence_turn": 207,
+      "evidence_pending_verification": false,
       "kill_proof_receipts": [
         {
           "source": "events/0191.md",
@@ -2084,7 +2126,10 @@
           "proof_extracted_turn": 200,
           "pairs": 1
         }
-      ]
+      ],
+      "evidence_submitted_pairs": 3,
+      "completion_turn": 207,
+      "proof_verified_turn": 207
     }
   },
   "archery_training": {
@@ -2676,15 +2721,16 @@
     "reward": "NONE"
   },
   "checkpoint": {
-    "id": "HN-T204",
-    "last_completed_turn": 204,
-    "source_events": "events/0195.md..events/0204.md",
-    "previous_checkpoint_last_completed_turn": 194,
-    "number_narrated_turns": 10,
+    "id": "HN-T207-EARLY-QUEST",
+    "last_completed_turn": 207,
+    "source_events": "events/0205.md..events/0207.md",
+    "previous_checkpoint_last_completed_turn": 204,
+    "number_narrated_turns": 3,
     "gameplay_retcon": false,
-    "notion_sync_status": "HUB_SUMMARY_VERIFIED; HISTORIC_T153_GRAPH_NOT_REBUILT",
+    "notion_sync_status": "T204_HUB_SUMMARY_ONLY; T207_QUEST_RESOLUTION_NOT_PROJECTED; HISTORIC_T153_GRAPH_NOT_REBUILT",
     "chat_only_unsaved_turns_after_verified_write": 0,
     "notion_hub_page_id": "3fe864d2-95ce-8178-95ae-d0bcfde6ac34",
-    "notion_summary_sources_git_commit": "1eaac4e68ac6e2d138818eeb609c3916e275d34e"
+    "notion_summary_sources_git_commit": "1eaac4e68ac6e2d138818eeb609c3916e275d34e",
+    "checkpoint_reason": "MAJOR_QUEST_RESOLVED_T207"
   }
 }
