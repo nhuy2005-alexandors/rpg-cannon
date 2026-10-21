@@ -1,6 +1,36 @@
-# HẮC NHẬT — QUICK START (T240)
+# HẮC NHẬT — QUICK START (T243)
 
-**LATEST VERIFIED GAMEPLAY CHECKPOINT: T240; NEXT USER-DIRECTED TURN: T241.** Permanent quest closure saved early after three narrated turns T238–T240, before ten-turn cadence. `main/state/current.json` is single authority; individual append-only event receipts `main/events/0238.md`, `0239.md`, `0240.md`. **DO NOT replay T238–240, loot corpses again, grant quest reward again, or sleep again automatically.**
+**LATEST VERIFIED GAMEPLAY CHECKPOINT: T243; NEXT USER-DIRECTED TURN T244.** Early save after T241–T243 because named free-hunter Maela agrees to temporary cooperation. Canonical numerical state is `main/state/current.json`; append-only event receipts `events/0241.md`, `events/0242.md`, `events/0243.md`; NPC update `canon/npc/maela.md`. DO NOT replay three turns, charge healing again, grant practice bonuses, depart to western road or auto-spawn bandits without T244.
+
+## PLAYER NOW — TEMPLE TRAINING YARD, AFTER HEALING AND MAELA PRACTICE
+
+**Vô Danh** Lv6 EXP**300/400**, HP **170/170**, STA **75/110** (after coordination practice), BLOOD **28/50**, Tử Huyết **0/20**, Souls **68**, DEF total **22**, Huyết Nha +3 Rare normal sword ATK28–36, Hắc Nha Trọng Kiếm VII ATK29–38, Lang Vương Huyết Bì Giáp Rare. 1 Huyết Dược +30 HP, 3 steel bolts and 1 Nanh Cốt Tiễn, zero carried Lõi Xương Xám (prior bounty surrendered T240). Skills unchanged: Huyết Trảm Nhị Liên Rare Lv2 skill EXP4/135 READY, Gạt Kiếm Cận Chiến Lv2 costs7 STA per legitimate defensive reaction (no free riposte).
+
+**Location:** Hắc Nha Thành **Điện Tế Huyết training yard** with female free hunter **Maela**; both have not departed. Edran, recuperating Kharzug and wolf pup preserve their last-known identities/roles; no unsupported departure or recovery claim. No active combat, no fixed time-of-day or external real-world position inferred.
+
+## T241–T243 EVENTS
+
+- **T241:** Edran clinical exam and NEW T241 quote only. One optional treatment +40 HP cap, cost15 Souls, 2h. Player then HP60 STA110 Souls113, no treatment/fee paid.
+- **T242:** Player authorizes Edran option B TWICE. Two separate approximately2h procedures: HP60→100→140/170, Souls113→98→83 (−30 total). Edran advises rest and reassessment before further strong treatment. Visits Durgan forge for appraisal ONLY, NO equipment/material purchase: new conditional armor reinforcement quote35 Souls +1 Huyết Cốt Lang Vương +2 Trảo Lang Vương (~3h, if completed total DEF22→23); heavy sword tune25 Souls (~2h, if completed ATK29–38→30–39); Huyết Nha +4 requirements Huyết Tinh Tinh Anh and Hắc Thiết Tinh Luyện, currently 0 each, precise +4 cost/stat UNKNOWN. These are still NOT forged.
+- **T243:** Player wants full HP using Souls and to recruit Maela for western-road bandit quest and practice frontline melee/rear archer tactics. V returns to Edran, safely rests a FULL NIGHT as Edran required (no sleep HP gain), Edran rechecks and authorizes third separate +40-cap treatment for15 Souls, +30 actual due HP cap, HP140→170, Souls83→68, about2h. Potion remains1. At temple V invites Maela; she **voluntarily agrees to TEMPORARY western-road bandit-bounty cooperation** subject to scouting before attacks, own tactical agency, independent bow firing lanes, no shooting through V/cover, safe retreat; not permanent follower/pact/romance and no paid fee or profit-share commitment. Around90min practice with Maela's reusable arrows and V's sword: five drills 4 PASS, one FAIL due V blocking firing lane and Maela correctly holding fire. 10 STA warmup +25 STA drills, V STA110→75. No blood/melee power, skill EXP or new ability; no player ammo spent. No new shot/crit bonus, no automatic opportunity attack.
+
+## WEST-ROAD BANDIT LEADER — STILL ACTIVE, UNPAID
+
+Garrick T162–T163 bounty reward **65 Souls +100 EXP** only after verified leader capture/defeat and report, not earned. Patrol verified at **Dốc Đá Xám** damaged wagon with confused tracks up northern rocks; `Suối Cạn` dry wash exposed to elevated attack; main road open, rocky ascent unstable. Wagoner claimed hand signal and possible crossbowman/curved metal shoulder marker, separate clank witness account UNVERIFIED. True bandit chief identity, number/location, camp and ambush trigger UNKNOWN. Maela's volunteer role: oblique rear bow cover, independently chooses angles and possible withdrawal; V sword in front. Training is preparation only, not an automatic party attack on any future turn. Maela has not been paid a fixed share, nor required an up-front reward.
+
+**Previous Hài Cốt Lang Thang quest** RESOLVED/PAID T240, bones3 submitted0 in possession, previous wall unknown as crypt. Other quest status unchanged. Durgan proposals remain QUOTES, not done.
+
+## NEXT
+
+Wait for user **T244**. Sensible grounded choices: safe rest 2 hours to replenish STA75→110 (20/h capped, no HP gain), consult Garrick for new intelligence and decide route, or scout west road with Maela maintaining stealth. Do NOT invent new bandit stats/hidden precommits, location, long-range ammo quantities, free action or payment. GitHub map of old wall stays inactive after T240; no new local atlas required for Maela practice sketch.
+
+**Checkpoint:** `HN-T243-MAELA-COOP-EARLY` (earlier T240). Source T241–T243 saved/readback; new unsaved counter 0. No Notion or Canva writes.
+
+---
+
+## HISTORICAL QUICK START — T240 (ARCHIVED)
+
+**HISTORICAL checkpoint T240, superseded by T243 above.** Permanent quest closure saved early after three narrated turns T238–T240, before ten-turn cadence. `main/state/current.json` is single authority; individual append-only event receipts `main/events/0238.md`, `0239.md`, `0240.md`. **DO NOT replay T238–240, loot corpses again, grant quest reward again, or sleep again automatically.**
 
 ## CURRENT LOCATION AND PLAYER STATUS
 
