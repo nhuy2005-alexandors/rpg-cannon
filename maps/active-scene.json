@@ -1,66 +1,19 @@
 {
   "schema": "HN-MAP-SCENE-V1",
-  "last_completed_turn": 237,
-  "next_turn": 238,
+  "last_completed_turn": 240,
+  "next_turn": 241,
   "map_id": "ngoai-thanh-tuong-da-do",
-  "status_source": "GitHub main/state/current.json T237 and events/0228.md..events/0237.md; feature maps/atlas-v1.json local revision3",
+  "status_source": "main/state/current.json at T240 and events/0238.md..0240.md; feature atlas-v1.json map revision3 still local ruin geometry; player's location now outside atlas area",
   "current": {
-    "tokens": [
-      {
-        "id": "vo-danh",
-        "label": "V",
-        "category": "player",
-        "x": 73,
-        "y": 48,
-        "facing": "SE",
-        "status": "ALIVE",
-        "tactical_state": "SWORD_READY_MELEE_ON_TESTED_PAVERS",
-        "actual_geographic_bearing": "UNKNOWN",
-        "weapon": "Huyết Nha +3 ordinary sword",
-        "position_note": "One short step back after T237 incoming hit; still on probed safe high paving adjacent to leaning rock. Facing SE is SCHEMATIC toward enemy, NOT real southeast."
-      },
-      {
-        "id": "enemy:stone-raker-T234",
-        "label": "E3",
-        "category": "enemy",
-        "x": 88,
-        "y": 63,
-        "facing": "NW",
-        "status": "ALIVE_HOSTILE",
-        "HP_current": 25,
-        "HP_max": 70,
-        "ATK": "28–35",
-        "DEF": 9,
-        "rank": "NORMAL",
-        "level": 5,
-        "arm_right": "SEVERED_T237",
-        "arm_left": "FUNCTIONAL",
-        "actual_geographic_bearing": "UNKNOWN",
-        "position_note": "Enemy on/near checked high pavers at leaning boulder, near unsafe lower lip; alerted to player, melee distance but exact meters UNKNOWN."
-      }
-    ],
+    "tokens": [],
     "movement": [],
-    "visible_hostiles": [
-      {
-        "id": "enemy:stone-raker-T234",
-        "name": "Hài Cốt Gạt Đá",
-        "HP": 25,
-        "max_HP": 70,
-        "level": 5,
-        "rank": "NORMAL",
-        "ATK": "28–35",
-        "DEF": 9,
-        "right_arm": "SEVERED_T237",
-        "left_arm": "ACTIVE",
-        "detected_V": true
-      }
-    ],
+    "visible_hostiles": [],
     "notes": [
-      "T228–T229 second dragging skeleton initially near unsafe lower roots, V covered by boulder; T230 first and second Nhị Liên strikes (one hit, one miss), enemy counter; T231 normal sword and failed-to-trigger Parry due only 3STA; T232 killed second skeleton; T233 looted it once (one provisional bone core, 12 souls), consumed one +30HP potion and rested safely 1h; T234 rested safely 2h (+40STA).",
-      "T234–T235 third skeleton moving stones beside leaning boulder; V stealth-flanked but pebble alerted target. T236 public enemy stat block committed before first damage; T236 ordinary sword 70->47, enemy attack misses. T237 ordinary sword 47->25 and RIGHT arm severed; counter with LEFT arm causes V -6HP (66->60), no RNG receipts.",
-      "T237 ACTIVE fight: V Lv6 HP60 STA63 BLOOD28 TH0 Souls85 EXP265; third skeleton HP25/70 Lv5 Normal ATK28–35 DEF9, left arm still functional. 2/3 provisional grey cores, bounty issuer verification zero and quest unpaid.",
-      "No other currently visible enemy. 2 previously defeated skeleton corpses have been looted exactly once. Number remaining enemy UNKNOWN. No TH-bearing source or valid burial crypt entrance established.",
-      "Structural objects: old wall and groove, root hollow with weak intermittent breeze and unstable lip, tilting boulder and cracked paver (avoided), tested higher paving. Regional bearing and actual metric distances UNKNOWN; map feature base revision3, no unrelated static object moved."
+      "LOCATION TRANSITION: V left the local old wall map and returned to Hắc Nha Thành/Điện Tế Huyết at T240. This is an INACTIVE remote ruin scene; no player token should be positioned at the old wall now.",
+      "T238 third skeleton Hài Cốt Gạt Đá killed by normal sword (25->0, +10 EXP), corpse T239 first looted one provisional grey core +12 Souls. All three observed skeletons now dead and corpses all looted ONCE. No additional enemies confirmed, but total remaining UNKNOWN.",
+      "T240 unnamed Hắc Nha market bounty clerk inspected and accepted 3/3 grey cores as task evidence, took all three, gave +16 Souls/+25 EXP and RESOLVED the Hài Cốt Lang Thang quest exactly once. Authentic core class proof does not verify exact crypt location.",
+      "T240 player spent full safe night in home base Điện Tế Huyết, no fee, STA110/110, HP60/170, BLOOD28/50, TH0/20, Souls113, EXP300/400, potion1, carried core0.",
+      "STATIC ruin atlas revision3 unchanged; leaving region does not prove ruins permanently cleared or that a hidden corridor exists."
     ]
   },
   "legacy_timeline": {
@@ -102,20 +55,59 @@
           "y": 74,
           "status": "DEAD_T232_LOOTED_ONCE_T233",
           "HP": 0
-        }
-      ],
-      "confirmed_active_hostiles": 1,
-      "actual_enemy_population_remaining": "UNKNOWN",
-      "not_crypt_verified": true,
-      "active_hostiles": [
+        },
         {
           "id": "enemy:stone-raker-T234",
-          "status": "ACTIVE_T237_HP25",
-          "right_arm": "SEVERED",
-          "left_arm": "FUNCTIONAL"
+          "x": 88,
+          "y": 63,
+          "status": "DEAD_T238_LOOTED_ONCE_T239",
+          "HP": 0
         }
-      ]
+      ],
+      "confirmed_active_hostiles": 0,
+      "actual_enemy_population_remaining": "UNKNOWN",
+      "not_crypt_verified": true,
+      "active_hostiles": []
     }
   },
-  "contract": "Increment only current tokens, movement, confirmed terrain object updates. Never move static terrain because of a narrative turn alone. Display north and facing arrows distinctly."
+  "contract": "Increment only current tokens, movement, confirmed terrain object updates. Never move static terrain because of a narrative turn alone. Display north and facing arrows distinctly.",
+  "scene_active": false,
+  "inactive_scene_T240": {
+    "map_id": "ngoai-thanh-tuong-da-do",
+    "last_seen_T239": {
+      "tokens": [
+        {
+          "id": "enemy:stone-raker-T234",
+          "label": "E3",
+          "category": "enemy",
+          "x": 88,
+          "y": 63,
+          "facing": "NW",
+          "status": "DEAD_T238_LOOTED_T239",
+          "HP_current": 0,
+          "HP_max": 70,
+          "ATK": "28–35",
+          "DEF": 9,
+          "rank": "NORMAL",
+          "level": 5,
+          "arm_right": "SEVERED_T237",
+          "arm_left": "INERT_AFTER_DEATH",
+          "actual_geographic_bearing": "UNKNOWN",
+          "position_note": "Enemy on/near checked high pavers at leaning boulder, near unsafe lower lip; alerted to player, melee distance but exact meters UNKNOWN."
+        }
+      ],
+      "movement": [],
+      "visible_hostiles": [],
+      "notes": [
+        "T228–T229 second dragging skeleton initially near unsafe lower roots, V covered by boulder; T230 first and second Nhị Liên strikes (one hit, one miss), enemy counter; T231 normal sword and failed-to-trigger Parry due only 3STA; T232 killed second skeleton; T233 looted it once (one provisional bone core, 12 souls), consumed one +30HP potion and rested safely 1h; T234 rested safely 2h (+40STA).",
+        "T234–T235 third skeleton moving stones beside leaning boulder; V stealth-flanked but pebble alerted target. T236 public enemy stat block committed before first damage; T236 ordinary sword 70->47, enemy attack misses. T237 ordinary sword 47->25 and RIGHT arm severed; counter with LEFT arm causes V -6HP (66->60), no RNG receipts.",
+        "T237 ACTIVE fight: V Lv6 HP60 STA63 BLOOD28 TH0 Souls85 EXP265; third skeleton HP25/70 Lv5 Normal ATK28–35 DEF9, left arm still functional. 2/3 provisional grey cores, bounty issuer verification zero and quest unpaid.",
+        "No other currently visible enemy. 2 previously defeated skeleton corpses have been looted exactly once. Number remaining enemy UNKNOWN. No TH-bearing source or valid burial crypt entrance established.",
+        "Structural objects: old wall and groove, root hollow with weak intermittent breeze and unstable lip, tilting boulder and cracked paver (avoided), tested higher paving. Regional bearing and actual metric distances UNKNOWN; map feature base revision3, no unrelated static object moved."
+      ]
+    },
+    "player_left": true,
+    "notes": "Local tactical positions below refer to historical T239, not present player placement"
+  },
+  "current_player_location": "Hắc Nha Thành — Điện Tế Huyết (home base), after full-night rest T240"
 }
