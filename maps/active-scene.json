@@ -1,41 +1,44 @@
 {
   "schema": "HN-MAP-SCENE-V1",
-  "last_completed_turn": 204,
-  "next_turn": 205,
-  "map_id": "nha-sat-dong-bac",
-  "status_source": "state/current.json — battle_state_T204; events/0204.md",
+  "last_completed_turn": 207,
+  "next_turn": 208,
+  "map_id": "hac-nha-east-approach",
+  "status_source": "main/state/current.json — events/0205.md..events/0207.md",
   "current": {
     "tokens": [
       {
         "id": "vo-danh",
         "label": "V",
         "category": "player",
-        "x": 75,
-        "y": 47,
-        "facing": "ENE",
+        "x": 21,
+        "y": 59,
+        "facing": "W",
         "status": "ALIVE",
-        "weapon": "Huyết Nha +3 ready"
+        "weapon": "Huyết Nha +3 carried",
+        "position_note": "At established market bounty board marker, approximate; W represents westbound approach, exact stance in front of clerk unmeasured"
       }
     ],
     "movement": [
       {
         "entity_id": "vo-danh",
         "from": [
-          33,
-          34
+          87,
+          23
         ],
         "to": [
-          75,
-          47
+          21,
+          59
         ],
-        "direction": "NW sector → NE sector",
-        "turn": 204
+        "direction": "NE shed → Hắc Nha Thành market via known east approach; schematic link only, not actual path or meters",
+        "turn": 207
       }
     ],
     "visible_hostiles": [],
     "notes": [
-      "T204 shifted the board to reveal shallow recess and low ventilation slit",
-      "No hidden chamber/trap/enemy or reward confirmed"
+      "Bounty submitted and verified T207, proof 3/3 surrendered, +20 souls +30 EXP paid once",
+      "T205–T206 exploration of NE shed retained in events; static shed terrain objects unchanged",
+      "Journey schematically from east scrapyard to existing city market-board marker; no extra hidden locations or route metrics",
+      "Precise character bearing at clerk is unknown; W is the last known westward approach, not a surveyed final facing"
     ]
   },
   "legacy_timeline": {
