@@ -1,6 +1,21 @@
-# HẮC NHẬT — QUICK START (T204)
+# HẮC NHẬT — QUICK START (T207)
 
-**LATEST VERIFIED RPG CHECKPOINT: T204; NEXT PLAYER-DIRECTED TURN T205.** The complete ten-turn T195–T204 progression and source are recorded in `events/0195.md` through `events/0204.md` and numeric authority `state/current.json`. **V1.3 LEAN remains active.** A note below under "HISTORIC QUICK START" concerns the old T194 snapshot and is not the current situation.
+**LATEST VERIFIED GAMEPLAY CHECKPOINT: T207; NEXT PLAYER-DIRECTED TURN T208.** On 2026-10-21 T205 and T206 were resolved in chat, then T207 was resolved in chat as a successful return and physical bounty hand-in after clerk inspection. `main/state/current.json` and `main/events/0205.md..0207.md` are the numerical and narrative authority. Earlier T204/T194 sections below are ARCHIVED, not current state.
+
+## CURRENT T207 SCENE — HẮC NHA THÀNH MARKET
+
+Vô Danh · Huyết Kiếm Sĩ Lv6, HP **68/170**, STA **28/110**, BLOOD **28/50**, Tử Huyết **0/20**, Souls **61**, Character EXP **245/400**. Now at the **Hắc Nha Thành market bounty board** after ~35 minute westbound return from Bãi Sắt Rỉ; no combat, no resources consumed. The unnamed bounty clerk checked and accepted **3/3 intact Black-Claw Hyena fang pairs**; all proof transferred from inventory **3→0**, bounty status **RESOLVED**, +20 Souls and +30 EXP paid **once**. Western bandit leader bounty stays ACTIVE and unpaid. No new skill EXP or levels.
+
+Map data: use branch `feat/full-atlas-v1-20261020` `maps/atlas-v1.json` / `maps/coverage.json` / `maps/active-scene.json`. Current overlay T207 on `hac-nha-east-approach`, market-board marker (21,59) schematic, not measured geographic coordinates or precise player bearing. **Static terrain is unchanged.** Previously saved T204 PNG/SVG snapshots are historical; no new render was executed at T207. World/Regional/Area map reuse and Canva non-canon boundary: `docs/gm-map-behavior-handoff-v1.md` on feature. Latest game rules: **`main/docs/gm-storyline-protocol.md` and `main/canon/rules.md`**. No routine repo reads every turn; checkpoint again after 10 unsaved turns or major event. The present early checkpoint reason is quest completion.
+
+Current main state: https://github.com/nhuy2005-alexandors/rpg-cannon/blob/main/state/current.json
+Current events: https://github.com/nhuy2005-alexandors/rpg-cannon/blob/main/events/0207.md
+
+---
+
+## HISTORICAL QUICK START — T204 (ARCHIVED)
+
+**HISTORICAL RPG CHECKPOINT: T204; T205 HAS SINCE BEEN PLAYED.** The complete ten-turn T195–T204 progression and source are recorded in `events/0195.md` through `events/0204.md` and numeric authority `state/current.json`. **V1.3 LEAN remains active.** A note below under "HISTORIC QUICK START" concerns the old T194 snapshot and is not the current situation.
 
 ## NEW-SESSION MAP BEHAVIOR HANDOFF — READ FIRST
 
@@ -23,7 +38,7 @@ Atlas coverage is expanded on `feat/full-atlas-v1-20261020`: [evidence inventory
 
 [Canva map atlas — 3 editable pages](https://www.canva.com/d/afa4HjByuyD2Dt6) / [GitHub canonical terrain](../maps/atlas-v1.json) / [T204 dynamic scene & facing](../maps/active-scene.json) / [map workflow](../maps/README.md). From T205 onward, **reuse fixed area terrain and change only player/enemy tokens, facing arrow and movement path**, or confirmed altered terrain objects. Do not regenerate or invent map geography each turn. Canva AI design is a *visual presentation*, not new canon. Notion stores lookup links. No automatic Canva↔GitHub synchronization. The next player action is still T205, no turn advanced by this map setup.
 
-## CURRENT SCENE — T204 (use for all new gameplay)
+## HISTORICAL SCENE — T204 (archived, not current)
 
 Vô Danh Huyết Kiếm Sĩ Lv6, EXP **215/400**, HP **68/170**, STA **28/110**, BLOOD **28/50**, Tử Huyết **0/20**, Souls **41**. **Three intact matching black-claw hyena fang pairs 3/3** physically held but bounty is STILL ACTIVE and **UNPAID**: must deliver to market clerk for validation to collect later **20 Souls +30 EXP**. Potions2 (+30HP each only), steel bolts3 total, Nanh Cốt Tiễn1, Liên Nỏ Hắc Nha UNLOADED/STOWED, Huyết Nha+3 EQUIPPED/READY, heavy sword on back. No free passive rest/recovery or surprise XP/loot. Soul claims A/B T194 12+12, C **T200 first corpse claim 12**, total earned from hyenas36; base5 =>41, and no other soul transaction. C dead T199, body harvested fang pair T200; all three hyenas dead, no verified other hostiles in explored area.
 
