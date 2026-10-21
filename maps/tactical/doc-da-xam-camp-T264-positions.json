@@ -1,0 +1,80 @@
+{
+  "schema": "HN-COMBAT-OVERLAY-V1",
+  "turn": 264,
+  "map_id": "duong-tay-doc-da-xam-camp",
+  "base_svg": "maps/tactical/doc-da-xam-camp-v1.svg",
+  "base_sha256_policy": "IMMUTABLE_SAME_T263_SVG",
+  "coords_note": "720x440 schematic SVG coordinates, not surveyed physical coordinates",
+  "actors": [
+    {
+      "id": "vo-danh",
+      "token": "V",
+      "x": 214,
+      "y": 270,
+      "former_x": 297,
+      "former_y": 283,
+      "weapon": "Liên Nỏ Hắc Nha",
+      "ready": true,
+      "loaded_steel_bolt": 1,
+      "HuyetNha": "SHEATHED",
+      "parry_while_crossbow": "NOT_ALLOWED",
+      "status": "WESTERN_STONE_COVER"
+    },
+    {
+      "id": "maela",
+      "token": "M",
+      "x": 160,
+      "y": 261,
+      "former_x": 204,
+      "former_y": 264,
+      "weapon": "hunter bow",
+      "ready": true,
+      "cover": "WESTERN_STONE_COVER",
+      "autonomous": true
+    }
+  ],
+  "ambiguous_upper_observation": {
+    "token": "?",
+    "last_area_x": 493,
+    "last_area_y": 112,
+    "identified": "NO",
+    "currently_visible_shootable_target": false,
+    "actual_current_coordinates": "UNKNOWN",
+    "note": "No invented enemy stat block or confirmed line of sight"
+  },
+  "corpses": [
+    {
+      "id": "enemy:west-road-cloaked-lookout-T247",
+      "x": 100,
+      "y": 348,
+      "dead": true,
+      "looted": true
+    },
+    {
+      "id": "enemy:west-road-axe-guard-T251",
+      "x": 126,
+      "y": 372,
+      "dead": true,
+      "looted": true
+    },
+    {
+      "id": "enemy:west-road-grey-coat-T256",
+      "x": 529,
+      "y": 325,
+      "dead": true,
+      "looted": true
+    }
+  ],
+  "objects": {
+    "tarp": "BASE_FIXED",
+    "crate1": "BASE_FIXED",
+    "crate2": "BASE_FIXED",
+    "crate3": "BASE_FIXED",
+    "alarm_wire": "BASE_FIXED_ACTIVATED_T260_NOT_TOUCHED_T264"
+  },
+  "last_action": "CAUTIOUS_WESTWARD_WITHDRAWAL_ONLY",
+  "attacks": 0,
+  "ammo_spent": 0,
+  "skill_casts": 0,
+  "resource_costs": 0
+}
