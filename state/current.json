@@ -1,14 +1,14 @@
 {
-  "snapshot_version": "HN-S244-ALLY-BATTLE-AWARENESS-SKILL-EARLY",
-  "last_completed_turn": 244,
-  "next_turn": 245,
+  "snapshot_version": "HN-S254-WESTROAD-TWO-GUARDS",
+  "last_completed_turn": 254,
+  "next_turn": 255,
   "as_of": "2026-10-21",
-  "location": "Hắc Nha Thành — sân tập Điện Tế Huyết sau 2 giờ nghỉ an toàn và bài huấn luyện Nhãn Quan Hiệp Chiến với Maela; chưa rời thành.",
+  "location": "Dốc Đá Xám, khu vực khúc cua đá dưới điểm trú có tấm bạt; Vô Danh gần thi thể người mang rìu, Maela ở góc cung sau bên trái. Người thứ ba chưa xác định vị trí.",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
     "level": 6,
-    "exp": 300,
+    "exp": 320,
     "exp_next": 400,
     "unallocated_points": 0,
     "attributes": {
@@ -19,22 +19,22 @@
     },
     "resources": {
       "HP": {
-        "current": 170,
+        "current": 151,
         "max": 170
       },
       "STA": {
-        "current": 70,
+        "current": 56,
         "max": 110
       },
       "BLOOD": {
-        "current": 28,
+        "current": 50,
         "max": 50
       },
       "TuHuyet": {
         "current": 0,
         "max": 20
       },
-      "souls": 68
+      "souls": 82
     },
     "passives": {
       "HapHuyet": {
@@ -215,12 +215,31 @@
           "rarity": "Common",
           "level": 2,
           "trigger": "DEFENSIVE_REACTION",
-          "skill_exp_current": 0,
+          "skill_exp_current": 4,
           "next_threshold": 90,
           "mastery_receipts": [],
           "next_level_effect_approved": true,
           "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
-          "use_receipts": {},
+          "use_receipts": {
+            "T252/GatKiemCanChien": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "source": "events/0252.md",
+              "practice_context_id": "west-road:first-axe-parry",
+              "rng_version": null
+            },
+            "T253/GatKiemCanChien": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "source": "events/0253.md",
+              "practice_context_id": "west-road:second-axe-parry",
+              "rng_version": null
+            }
+          },
           "next_level_contract": "V1.3-PARRY-L3"
         },
         "HuyetTram": {
@@ -266,12 +285,22 @@
           "rarity": "Rare",
           "level": 1,
           "trigger": "ACTIVE",
-          "skill_exp_current": 0,
+          "skill_exp_current": 2,
           "next_threshold": 60,
           "mastery_receipts": [],
           "next_level_effect_approved": false,
           "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
-          "use_receipts": {}
+          "use_receipts": {
+            "T250/HuyetAnhBo": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "source": "events/0250.md",
+              "practice_context_id": "west-road:first-guard-flank",
+              "rng_version": null
+            }
+          }
         },
         "CuongHuyet": {
           "name": "Cuồng Huyết",
@@ -302,7 +331,7 @@
           "rarity": "Rare",
           "level": 2,
           "trigger": "ACTIVE",
-          "skill_exp_current": 4,
+          "skill_exp_current": 6,
           "next_threshold": 135,
           "mastery_receipts": [
             {
@@ -347,6 +376,15 @@
               "actual_skill_casts": 1,
               "number_of_slashes": 2,
               "landed_slashes": 1
+            },
+            "T253/HuyetTramNhiLien": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "source": "events/0253.md",
+              "practice_context_id": "west-road:two-strike-cast",
+              "rng_version": null
             }
           },
           "next_level_contract": "V1.3-TWO-SLASH-L3"
@@ -383,12 +421,31 @@
           "rarity": "Rare",
           "level": 1,
           "trigger": "PASSIVE_QUALIFYING_TRIGGER",
-          "skill_exp_current": 0,
+          "skill_exp_current": 4,
           "next_threshold": 60,
           "mastery_receipts": [],
           "next_level_effect_approved": false,
           "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
-          "use_receipts": {}
+          "use_receipts": {
+            "T253/HapHuyet": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "source": "events/0253.md",
+              "practice_context_id": "west-road:combo-heal",
+              "rng_version": null
+            },
+            "T254/HapHuyet": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "source": "events/0254.md",
+              "practice_context_id": "west-road:finisher-heal",
+              "rng_version": null
+            }
+          }
         },
         "NgamBanOnDinh": {
           "name": "Ngắm Bắn Ổn Định",
@@ -440,7 +497,7 @@
           "rarity": "Common",
           "level": 1,
           "trigger": "PASSIVE_QUALIFYING_TEAM_AWARENESS",
-          "skill_exp_current": 0,
+          "skill_exp_current": 4,
           "next_threshold": 40,
           "next_level_effect_approved": false,
           "lv2_contract_status": "NOT_DEFINED_APPROVAL_REQUIRED",
@@ -462,7 +519,26 @@
             "no_stacking_with_player_sword_crossbow_penalty_passives"
           ],
           "mastery_receipts": [],
-          "use_receipts": {},
+          "use_receipts": {
+            "T245/NhanQuanHiepChien": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "source": "events/0245.md",
+              "practice_context_id": "west-road:surveillance-stop",
+              "rng_version": null
+            },
+            "T248/NhanQuanHiepChien": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "source": "events/0248.md",
+              "practice_context_id": "west-road:first-live-ambush-cue",
+              "rng_version": null
+            }
+          },
           "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
           "unlock_examination_not_skillEXP": true
         }
@@ -486,7 +562,9 @@
     "steel_bolts": 3,
     "NanhCotTien": 1,
     "black_claw_hyena_fang_pairs": 0,
-    "LoiXuongXam": 0
+    "LoiXuongXam": 0,
+    "DaoNganThuong": 1,
+    "TheSatBaVetKhia": 1
   },
   "base_storage": {
     "NanhLangVuong": 2,
@@ -822,6 +900,24 @@
         "location": "temple practice yard",
         "deployed_to_west": false
       }
+    },
+    "doc_da_xam_T254": {
+      "sighted_armed_at_tarp_T247_min": 3,
+      "cloaked_lookout": {
+        "dead": true,
+        "first_looted_T251": true
+      },
+      "axeman": {
+        "dead": true,
+        "unlooted": true
+      },
+      "third_person_location": "UNKNOWN",
+      "leader_location": "UNKNOWN",
+      "tarp_affiliation": "UNKNOWN",
+      "metallic_clink": "UNVERIFIED",
+      "maela_temporary_voluntary": true,
+      "maela_arrows_used_observed": 3,
+      "maela_remaining_arrows": "UNKNOWN"
     }
   },
   "npc_last_verified_T93": {
@@ -2819,6 +2915,96 @@
       "maela_ammo": "REUSABLE_ALL_RECOVERED",
       "combat": false,
       "west_road_departed": false
+    },
+    "T245": {
+      "source": "events/0245.md",
+      "HP_after": 170,
+      "STA_after": 110,
+      "BLOOD_after": 28,
+      "souls_after": 68,
+      "EXP_after": 300,
+      "TuHuyet_after": 0
+    },
+    "T246": {
+      "source": "events/0246.md",
+      "HP_after": 170,
+      "STA_after": 110,
+      "BLOOD_after": 28,
+      "souls_after": 68,
+      "EXP_after": 300,
+      "TuHuyet_after": 0
+    },
+    "T247": {
+      "source": "events/0247.md",
+      "HP_after": 170,
+      "STA_after": 110,
+      "BLOOD_after": 28,
+      "souls_after": 68,
+      "EXP_after": 300,
+      "TuHuyet_after": 0
+    },
+    "T248": {
+      "source": "events/0248.md",
+      "HP_after": 163,
+      "STA_after": 110,
+      "BLOOD_after": 35,
+      "souls_after": 68,
+      "EXP_after": 300,
+      "TuHuyet_after": 0
+    },
+    "T249": {
+      "source": "events/0249.md",
+      "HP_after": 157,
+      "STA_after": 110,
+      "BLOOD_after": 42,
+      "souls_after": 68,
+      "EXP_after": 300,
+      "TuHuyet_after": 0
+    },
+    "T250": {
+      "source": "events/0250.md",
+      "HP_after": 158,
+      "STA_after": 95,
+      "BLOOD_after": 49,
+      "souls_after": 68,
+      "EXP_after": 310,
+      "TuHuyet_after": 0
+    },
+    "T251": {
+      "source": "events/0251.md",
+      "HP_after": 158,
+      "STA_after": 95,
+      "BLOOD_after": 49,
+      "souls_after": 82,
+      "EXP_after": 310,
+      "TuHuyet_after": 0
+    },
+    "T252": {
+      "source": "events/0252.md",
+      "HP_after": 158,
+      "STA_after": 88,
+      "BLOOD_after": 49,
+      "souls_after": 82,
+      "EXP_after": 310,
+      "TuHuyet_after": 0
+    },
+    "T253": {
+      "source": "events/0253.md",
+      "HP_after": 150,
+      "STA_after": 56,
+      "BLOOD_after": 49,
+      "souls_after": 82,
+      "EXP_after": 310,
+      "TuHuyet_after": 0
+    },
+    "T254": {
+      "source": "events/0254.md",
+      "HP_after": 151,
+      "STA_after": 56,
+      "BLOOD_after": 50,
+      "souls_after": 82,
+      "EXP_after": 320,
+      "TuHuyet_after": 0
     }
   },
   "provenance": {
@@ -2996,10 +3182,10 @@
       },
       "reward_received": false,
       "source": "events/0162.md",
-      "progress": "Garrick T163 reconnaissance briefing remains latest verified enemy intelligence: Dốc Đá Xám ruined cart and high-ground tracks, suspected hand signal & crossbowman WITNESS-ONLY. T243 Maela voluntarily agrees conditional TEMPORARY assistance for west-road leader bounty after in-base 5-part melee/ranged tactics rehearsal 4/5 PASS. Not yet departed or encountered bandits. No location/strength/leader identity established, bounty remains ACTIVE unpaid. T244 V rests2h, practices additional six scored cooperative awareness exercises with Maela 5/6 PASS (one missed new cover/line-of-fire); gains Nhãn Quan Hiệp Chiến Common Lv1 as evidence-backed situational teammate-cue passive. Both remain in temple; no bandit sighting, intelligence on leader or completed quest.",
-      "next_step": "Select T245: rest safe2h to restore STA70->110, consult Garrick with Maela, or cautiously depart for west road. Ally voluntarily agrees for this quest but remains autonomous; no previously verified bandit camp.",
+      "progress": "T245–T254 west-road scouting: dark cloak sighted at broken wagon then followed to tarp/crates with at least3 armed persons seen T247. First Lv6 Normal lookout defeated T250, looted once T251 (+14 Souls and 2 items). Second Lv6 Normal axeman defeated T254, corpse NOT looted. Unknown affiliation/camp leader and third person's present location; quest reward unpaid.",
+      "next_step": "T255 player-directed choice: inspect unlooted axeman under threat, observe tarp, or reposition/withdraw.",
       "notional_target_reputation": "Crossbowman rumored among bandits, unverified",
-      "last_evidence_turn": 244,
+      "last_evidence_turn": 254,
       "intelligence_T163": {
         "source": "events/0163.md",
         "verified_patrol": [
@@ -3684,6 +3870,19 @@
         "TH": 0,
         "quest_material_separate": true,
         "source_precommit_status": "L_reward5 Normal disclosed in narrated T239 before loot; independent reward L_reward NOT preregistered T236. This accepted event cannot be represented as an earlier hidden precommit."
+      },
+      "enemy:west-road-cloaked-lookout-T247": {
+        "claim_id": "claim:T251:west-road-cloaked-lookout:V1.3",
+        "source": "events/0251.md",
+        "loot_turn": 251,
+        "souls": 14,
+        "L_reward": 6,
+        "rank": "normal",
+        "rank_multiplier": 1,
+        "D": 1,
+        "claimed": true,
+        "encounter_bonus": 0,
+        "TH": 0
       }
     },
     "C_status": "DEAD_T199_FIRST_SOUL_CLAIM_COMPLETE_T200_NO_DUPLICATE",
@@ -3849,17 +4048,17 @@
     "reward": "NONE"
   },
   "checkpoint": {
-    "id": "HN-T244-TEAM-AWARENESS-SKILL-EARLY",
-    "last_completed_turn": 244,
-    "source_events": "events/0244.md",
-    "previous_checkpoint_last_completed_turn": 243,
-    "number_narrated_turns": 1,
+    "id": "HN-T254-WESTROAD-TEN-TURNS",
+    "last_completed_turn": 254,
+    "source_events": "events/0245.md..events/0254.md",
+    "previous_checkpoint_last_completed_turn": 244,
+    "number_narrated_turns": 10,
     "gameplay_retcon": false,
-    "notion_sync_status": "No Notion projection or Canva update; GitHub authoritative skill ledger",
+    "notion_sync_status": "NOT_PROJECTED",
     "chat_only_unsaved_turns_after_verified_write": 0,
     "notion_hub_page_id": "3fe864d2-95ce-8178-95ae-d0bcfde6ac34",
-    "notion_summary_sources_git_commit": "1eaac4e68ac6e2d138818eeb609c3916e275d34e",
-    "checkpoint_reason": "EARLY_PERMANENT_LEARNED_COMMON_PASSIVE_VIA_PREDECLARED_5_OF_6_EXAM"
+    "notion_summary_sources_git_commit": null,
+    "checkpoint_reason": "TEN_ACCEPTED_TURNS"
   },
   "battle_state_T237": {
     "enemy_id": "enemy:stone-raker-T234",
@@ -3899,5 +4098,21 @@
     "issuer_reward_paid": true,
     "day_rest_completed": true,
     "unknown_enemy_population_at_ruin": true
+  },
+  "battle_state_T254": {
+    "player_HP": 151,
+    "player_STA": 56,
+    "player_BLOOD": 50,
+    "player_TH": 0,
+    "player_souls": 82,
+    "player_EXP": 320,
+    "first_corpse_looted": true,
+    "second_corpse_looted": false,
+    "visible_living_enemies": 0,
+    "other_armed_presence_possible": true,
+    "other_armed_location": "UNKNOWN",
+    "HuyetAnhBo_CD": 0,
+    "HuyetTramNhiLien_CD": 2,
+    "Maela_position": "rear-left covered bow line"
   }
 }
