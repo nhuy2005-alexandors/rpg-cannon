@@ -1,3 +1,19 @@
+# HẮC NHẬT — QUICK START (T292; next T293)
+
+**VERIFIED SAVED T292. NEXT T293 NOT PLAYED.** Read `state/current.json`, append-only `events/0284.md` through `events/0292.md`, active-scene; prior T283 historical accepted. No hidden preregistered NPC stats or guaranteed loot/leader. No GitHub read for each normal next action after this restore.
+
+**T292 combat:** Vô Danh Lv6, EXP330/400, HP142/170, STA110/110, BLOOD50/50, TH0/20, Souls47, DEF24. At cracked rock on newly observed north-upper transfer post, Huyết Nha+3 Rare ready; Huyết Trảm Nhị Liên Lv2 merely READY, not cast (cost12 HP+25 STA when legally cast; first125%, second100%, independently evaluated, NO free advance). V had pinned gray-shirt spear guard T291, chose lethal action T292; GM disclosed Lv3 NORMAL HP30 DEF6 at combat adjudication, raw sword36−DEF6=30 killed enemy30->0, first corpse UNLOOTED, no Souls. Hấp Huyết +3 HP139->142, mastery12->14/60 baseline +2, no verified RNG bonus. BLOOD already capped50. One short spear fallen near corpse, unclaimed. No character EXP or TH.
+
+**Cloaked man:** The man with curved pale metal near LEFT SHOULDER was followed T287–T290 and observed meeting gray spear guard at northern transfer post (small plank lean-to, low crate, fabric-wrapped goods, 3-mark plank). Claimed Ba Vạch links, true affiliation/leader status, HP/level/skills UNKNOWN. He HEARD V command T292, saw dead guard from cargo edge and drew a one-handed sword; took cover by crate/lean-to. He has NOT counterattacked this beat. No auto boss flag/reward. Possible unseen signal responders UNKNOWN; earlier one clang answered two clangs, no seen second person on later turn.
+
+**Maela:** Voluntary ally on second recon. Alive/unhurt behind prior bend with her own bow, arrow at string. No clean line through rock/turn to cloaked man T292; V ordered shoot ONLY if legal, so she DID NOT shoot and spent 0 ammo. Her ammunition total other than previously verified is UNKNOWN. She does not auto-teleport to new angle or fire through V/rock.
+
+**Gear and mission:** At T285 Durgan forged Lang Vương Huyết Cốt Giáp Rare, DEF22->24 for45 Souls +1 stored Huyết Cốt Lang Vương (stock0). T286 V paid18 Souls to leave Hắc Nha Trọng Kiếm VII with Durgan for approx2 workdays; NOT in carried inventory, work completion unverified. Huyết Nha+3 still ATK28–36, +7 BLOOD ordinary qualifying hit (capped); Liên Nỏ Hắc Nha STOWED UNLOADED, 2 steel bolts +1 Nanh Cốt Tiễn. One military +30HP Huyết Dược remains. No stable Tử Tinh core acquired for sword+4. Souls47. Kerran remains alive9/85 in Garrick temporary guard, not formally transferred. Garrick's western chief bounty ACTIVE UNPAID, requires proof, no inferred leader.
+
+**T293 legal choices:** V can hold the existing cracked-rock cover and watch, reposition along actually observed passage at risk, try lure/communicate, or attempt a legal approach to engage; Nhị Liên can't strike across actual separation. Maela may shoot ONLY once a clear real lane/range exists, subject to actions and independent agency. Cloaked enemy acts autonomously and may alarm, defend, flee or counter within observed possibilities. Preserve source-of-sound and hidden enemies unknown. No fabricated meter distances from SVG sketch. New cargo-post sketch/actor anchors are SCHEMATIC ONLY and do not replace static T263 lower camp map.
+
+---
+
 # HẮC NHẬT — QUICK START (T283, next T284)
 
 **LATEST CHECKPOINT T283. T284 NOT YET PLAYED.** Canon: `state/current.json`, append-only `events/0274.md` through `events/0283.md`, historical `events/0273.md`; `maps/active-scene.json` marks T273 camp combat as inactive. If older archived quick starts disagree with T283, this section supersedes them. T278 old rest-and-return narrative was EXPLICITLY REPLACED; canonical T278 is roadside questioning only.

@@ -1,17 +1,99 @@
 {
   "schema": "HN-MAP-SCENE-V1",
-  "last_completed_turn": 283,
-  "next_turn": 284,
-  "map_id": "duong-tay-doc-da-xam-camp",
-  "status_source": "T283 checkpoint events/0274.md..0283.md; combat camp scene archived after withdrawal by T280, V now at Durgan forge, no confirmed city tactical map coordinates.",
+  "last_completed_turn": 292,
+  "next_turn": 293,
+  "map_id": "duong-tay-doc-da-xam-north-transfer-observed-T290",
+  "status_source": "events/0287.md..0292.md, only observational physical terrain. Current live combat at upper-north transfer stop; prior T273 static camp archived unchanged.",
   "current": {
-    "tokens": [],
-    "movement": [],
-    "visible_hostiles": [],
+    "tokens": [
+      {
+        "id": "vo-danh",
+        "category": "player",
+        "label": "V",
+        "x": 44.7,
+        "y": 72.8,
+        "facing": "N",
+        "status": "CRACKED_ROCK_COVER_SWORD_READY_HP142_STA110"
+      },
+      {
+        "id": "maela",
+        "category": "ally",
+        "label": "M",
+        "x": 46.2,
+        "y": 91.7,
+        "facing": "N",
+        "status": "REAR_BEND_OBSTRUCTED_BOW_NO_SHOT"
+      },
+      {
+        "id": "enemy:west-road-north-transfer-cloaked-shoulder-metal-T288",
+        "category": "enemy",
+        "label": "E",
+        "x": 61.1,
+        "y": 28.6,
+        "facing": "S",
+        "status": "ALERT_SWORD_DRAWN_AT_CRATE_COVER_HP_UNKNOWN"
+      }
+    ],
+    "visible_hostiles": [
+      {
+        "id": "enemy:west-road-north-transfer-cloaked-shoulder-metal-T288",
+        "category": "enemy",
+        "label": "E",
+        "status": "ALERT_HIDING_AT_CRATE_WITH_ONE_HANDED_SWORD_HP_UNKNOWN"
+      }
+    ],
+    "movement": [
+      {
+        "actor": "vo-danh",
+        "turn": 292,
+        "description": "Remained behind actual cracked-rock guard, lethal ordinary sword cut in contact with pinned gray guard; defensive sword stance readied only."
+      },
+      {
+        "actor": "maela",
+        "turn": 292,
+        "description": "Stayed behind previously observed rock bend, no legal arrow lane/shots."
+      }
+    ],
+    "corpses": [
+      {
+        "id": "enemy:west-road-north-transfer-gray-spear-T290",
+        "label": "X",
+        "x": 48.8,
+        "y": 67.9,
+        "dead_turn": 292,
+        "looted": false,
+        "weapon": "short spear nearby dropped, unclaimed"
+      }
+    ],
+    "observed_static_objects": [
+      {
+        "id": "north-transfer-lean-to-T290",
+        "name": "Wood plank shelter against existing rock wall"
+      },
+      {
+        "id": "north-transfer-crate-T290",
+        "name": "Low wood crate by shelter"
+      },
+      {
+        "id": "north-transfer-covered-bundles-T290",
+        "name": "Covered cargo bundles"
+      },
+      {
+        "id": "north-transfer-cracked-rock-cover-T290",
+        "name": "Cracked rock cover at lower entrance"
+      },
+      {
+        "id": "north-transfer-upper-bend-T287",
+        "name": "Known winding upward solid path, unknown beyond seen angle"
+      }
+    ],
     "notes": [
-      "No active combat map as of T283: Vô Danh at Durgan Hắc Thiết forge in Hắc Nha Thành, Maela departed to rest, Kerran under temporary Garrick watch. T273 camp base unchanged and archived.",
-      "Do not interpret cleared active-scene tokens as despawn/retcon of previous camp bodies or landscape.",
-      "World/region/area map geometry is not generated from this update."
+      "North-up relative schematic, numeric markers for drawn local map ONLY; do not infer meters, real LOS, attack reach or exact lat/long.",
+      "Cloaked man confirmed intrusion T292, has sword; HP, class, hidden associates, boss identity UNKNOWN.",
+      "T292 Maela archery conditional unmet due blocking rock and bend; no arrow.",
+      "Grey spear guard died T292, corpse not looted; no Souls, physical spear unclaimed.",
+      "No T293 advance or attack; Huyết Trảm Nhị Liên merely READY (cost HP12 STA25 on a legal future cast).",
+      "Do not redraw/archive-edit old T263 fixed lower camp terrain. This is NEW observed subscene on upper northern path."
     ]
   },
   "legacy_timeline": {
@@ -69,7 +151,7 @@
     }
   },
   "contract": "Increment only current tokens, movement, confirmed terrain object updates. Never move static terrain because of a narrative turn alone. Display north and facing arrows distinctly.",
-  "scene_active": false,
+  "scene_active": true,
   "inactive_scene_T240": {
     "map_id": "ngoai-thanh-tuong-da-do",
     "last_seen_T239": {
@@ -107,7 +189,7 @@
     "player_left": true,
     "notes": "Local tactical positions below refer to historical T239, not present player placement"
   },
-  "current_player_location": "Hắc Nha Thành — Lò Rèn Hắc Nha (Durgan Hắc Thiết), T283",
+  "current_player_location": "Sườn bắc Dốc Đá Xám — trạm chuyển hàng với mái che gỗ vừa phát hiện. Vô Danh sau khối đá nứt cạnh xác người áo xám, Huyết Nha+3 cầm sẵn và Nhị Liên ready; Maela ở khúc cua sau không có đường bắn; người áo choàng ở cạnh thùng hàng/mái che đã phát hiện đột nhập, cầm kiếm một tay. Khoảng cách thực chưa đo.",
   "archived_current_T273": {
     "tokens": [
       {
@@ -181,5 +263,15 @@
     "base_map_svg": "maps/tactical/doc-da-xam-camp-v1.svg",
     "position_overlay": "maps/tactical/doc-da-xam-camp-T273-positions.json",
     "coordinate_note": "Current token x/y in percentages of an UNMEASURED viewBox sketch, NOT physical atlas geography"
+  },
+  "archived_current_T283": {
+    "tokens": [],
+    "movement": [],
+    "visible_hostiles": [],
+    "notes": [
+      "No active combat map as of T283: Vô Danh at Durgan Hắc Thiết forge in Hắc Nha Thành, Maela departed to rest, Kerran under temporary Garrick watch. T273 camp base unchanged and archived.",
+      "Do not interpret cleared active-scene tokens as despawn/retcon of previous camp bodies or landscape.",
+      "World/region/area map geometry is not generated from this update."
+    ]
   }
 }
