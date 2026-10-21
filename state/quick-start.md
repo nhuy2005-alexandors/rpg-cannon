@@ -1,3 +1,23 @@
+# HẮC NHẬT — QUICK START (T264)
+
+**LATEST GAMEPLAY CHECKPOINT T264 / NEXT PLAYER COMMAND T265 NOT PLAYED.** Source of truth: `state/current.json`, append-only `events/0255.md`–`events/0264.md`, `maps/active-scene.json`. T264 is a cautious tactical REPOSITION, not a shot, skill cast, weapon-swap attack, enemy identification, a time skip, or new loot event.
+
+**Player:** Vô Danh Huyết Kiếm Sĩ Lv6, EXP **330/400**, HP **145/170**, STA **24/110**, BLOOD **50/50**, Tử Huyết **0/20**, Souls **110**, DEF22. Huyết Nha+3 ATK28–36 is **SHEATHED**; currently wielding **Liên Nỏ Hắc Nha LOADED with ONE steel bolt**, steel bolts in reserve2, special Nanh Cốt Tiễn1. Hắc Nha Trọng Kiếm VII is carried backup, NOT simultaneously wielded. Cannot Gạt Kiếm/Parry while holding crossbow without a legal weapon change. One military healing potion heals30HP, does not restore STA. Also carried: T251 first ordinary short knife and three-notch iron badge, T262 second ordinary knife, OLD wood hunting crossbow1, crude crossbow bolts2 (compatibility with Liên Nỏ unverified), leather pouch and crude route sketch1. No gear dropped/repaired.
+
+**Current scene:** Dốc Đá Xám **western stone cover** west of the tarp-and-three-crates site. Maela voluntary autonomous temporary ally is uninjured, behind/left with her own bow; four known personal arrows fired T248/T252/T254/T259, recovered3 usable and1 damaged to repair (starting stock UNKNOWN). The bell cord found T257 was pulled by grey-coat at T260; recipients and reinforcements UNKNOWN. In T264, Maela retreats west first and V follows on checked rock, no contact with the wire; a small pebble click may have caused obscured north figure to look toward tarp, but whether anyone identified or saw V/M is **NOT CONFIRMED**. No current clear shot; identity/number/location of occupants of northern path UNKNOWN. Neither ally fired during T264. No auto-ambush or soundless retreat.
+
+**Combat history and rewards:** First cloaked guard Lv6 NORMAL DEAD T250 first looted T251 (+14 Souls, short knife1 and 3-mark badge1); axeman Lv6 NORMAL DEAD T254 first looted T255 (+14 Souls); greycoat Lv6 NORMAL HP85 ATK28–35 DEF10 (public T259 block) DEAD T261 first looted T262 (+14 Souls and other discovered items). First corpse claims completed exactly once for all three; none can pay Souls again. Named bandit chief still NOT identified or proven at this site; Garrick's reward **65 Souls+100 EXP still ACTIVE UNPAID**. Do not infer that 3 people were all occupants or that faction is verified.
+
+**Skills T265:** Huyết Ảnh Bộ Rare Lv1 2/60 READY costs15STA, <=4m only if feasible; Huyết Trảm Nhị Liên Rare Lv2 8/135 READY but currently **cannot afford 25STA** (would also cost12HP), two independently defended 125%/100% blows, cooldown3; Gạt Kiếm Lv2 6/90 7STA defensive reaction ONLY with wielded sword and actual legal melee attack (not ready while holding crossbow); Hấp Huyết Rare Lv1 10/60 valid actual sword HP damage; Nhãn Quan Hiệp Chiến Common Lv1 4/40 only perceivable ally cue (no Lv2 unlocked). Other learned skills unchanged, no RNG +5 bonus executed.
+
+**Combat Map reuse contract:** `maps/tactical/doc-da-xam-camp-v1.svg` is the **immutable terrain base** from T263 (same tarp, three crates, northern elevation, western rocks, tripwire and corpse anchors); T264 only updates V/M via `maps/tactical/doc-da-xam-camp-T264-positions.json` and normalized tokens in `maps/active-scene.json`. These coordinates are SCHEMATIC SVG anchors, not surveyed map data or confirmed enemy position. Future T265+ combats should continue from these exact features, changing overlay/visibility only, not redrawing the fixed world or inventing route metrics.
+
+**Next T265:** From safer western cover, choose observation, cautious further retreat or a deliberately legal shot when a real enemy exposes itself. While crossbow loaded, a fired bolt becomes spent and crossbow UNLOADED; no immediate second shot or sword-parry with crossbow in hands. Maela chooses safe arrow lane independently. No free recovery of STA, inventory drops, enemy generation or quest reward.
+
+---
+
+## Archived prior quick starts (historical only)
+
 # HẮC NHẬT — QUICK START (T254)
 
 **VERIFIED GAMEPLAY SNAPSHOT T254 — NEXT PLAYER TURN T255 NOT YET PLAYED.** See `state/current.json`, events `0245.md`–`0254.md` and `maps/active-scene.json`. Organic Proficiency V1.0 is in effect as manual evidence-gated progression; no global Battle IQ buff or automatic hidden dice.
