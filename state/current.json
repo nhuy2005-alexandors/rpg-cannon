@@ -1,9 +1,9 @@
 {
-  "snapshot_version": "HN-S243-MAELA-WESTERN-COOP-EARLY",
-  "last_completed_turn": 243,
-  "next_turn": 244,
+  "snapshot_version": "HN-S244-ALLY-BATTLE-AWARENESS-SKILL-EARLY",
+  "last_completed_turn": 244,
+  "next_turn": 245,
   "as_of": "2026-10-21",
-  "location": "Hắc Nha Thành — sân tập Điện Tế Huyết, bên cạnh Maela sau huấn luyện hai người Vô Danh cận chiến / Maela cung hỗ trợ; chưa khởi hành tới Đường Tây.",
+  "location": "Hắc Nha Thành — sân tập Điện Tế Huyết sau 2 giờ nghỉ an toàn và bài huấn luyện Nhãn Quan Hiệp Chiến với Maela; chưa rời thành.",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
@@ -23,7 +23,7 @@
         "max": 170
       },
       "STA": {
-        "current": 75,
+        "current": 70,
         "max": 110
       },
       "BLOOD": {
@@ -105,6 +105,26 @@
         "stacking_guard": "Separately Ngắm Bắn Ổn Định Lv2 addresses only actual movement-specific hit penalty up to15pp after <=3m move, full stop and valid aimed shot. Never apply both to a single penalty.",
         "verified_training": "T170 Maela's six multibeat loaded/unloaded crossbow sequences: 1 pass loaded, 2 fail premature trigger on unloaded (no shot), 3 pass loaded, 4 pass properly reloaded, 5 pass loaded, 6 pass properly reloaded; 5/6 meets >=5/6 threshold.",
         "last_upgraded_turn": 170
+      },
+      "NhanQuanHiepChien": {
+        "name": "Nhãn Quan Hiệp Chiến",
+        "rarity": "Common",
+        "level": 1,
+        "unlocked_turn": 244,
+        "trigger": "PASSIVE_QUALIFYING_TEAM_AWARENESS",
+        "effect": "When genuinely cooperating with an ally and alert to physically perceptible signals, expose at most one relevant observable coordination cue per combat beat within ordinary V perception: shooting lane open/blocked, ally visible ready/reposition/retreat. Requires line of sight/hearing, time and genuine ally. GM must adjudicate movement/actions normally; never reveal unseen events.",
+        "limitations": [
+          "no_general_BattleIQ_stat",
+          "no_stat_or_aim_bonus",
+          "no_free_move_or_attack_or_reaction",
+          "no_guaranteed_allied_attack",
+          "no_supernatural_mind_reading",
+          "no_unseen_enemy_information",
+          "no_ally_teleport_or_reloading",
+          "no_stacking_with_player_sword_crossbow_penalty_passives"
+        ],
+        "source": "canon/skills/nhan-quan-hiep-chien-T244.md",
+        "note": "Situational intelligence from visible/audible teammate cues only; no numerical global combat bonus."
       }
     },
     "active_skill_upgrades": {
@@ -413,6 +433,38 @@
           "next_level_effect_approved": false,
           "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
           "use_receipts": {}
+        },
+        "NhanQuanHiepChien": {
+          "name": "Nhãn Quan Hiệp Chiến",
+          "alias_en": "Coordinated Battle Awareness",
+          "rarity": "Common",
+          "level": 1,
+          "trigger": "PASSIVE_QUALIFYING_TEAM_AWARENESS",
+          "skill_exp_current": 0,
+          "next_threshold": 40,
+          "next_level_effect_approved": false,
+          "lv2_contract_status": "NOT_DEFINED_APPROVAL_REQUIRED",
+          "earned_turn": 244,
+          "trainer": "Maela",
+          "source": "events/0244.md",
+          "contract": "canon/skills/nhan-quan-hiep-chien-T244.md",
+          "test_passed": 5,
+          "test_total": 6,
+          "effective_rule": "When genuinely cooperating with an ally and alert to physically perceptible signals, expose at most one relevant observable coordination cue per combat beat within ordinary V perception: shooting lane open/blocked, ally visible ready/reposition/retreat. Requires line of sight/hearing, time and genuine ally. GM must adjudicate movement/actions normally; never reveal unseen events.",
+          "exclusions": [
+            "no_general_BattleIQ_stat",
+            "no_stat_or_aim_bonus",
+            "no_free_move_or_attack_or_reaction",
+            "no_guaranteed_allied_attack",
+            "no_supernatural_mind_reading",
+            "no_unseen_enemy_information",
+            "no_ally_teleport_or_reloading",
+            "no_stacking_with_player_sword_crossbow_penalty_passives"
+          ],
+          "mastery_receipts": [],
+          "use_receipts": {},
+          "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
+          "unlock_examination_not_skillEXP": true
         }
       },
       "rng_reference": "campaign_public_rng",
@@ -756,7 +808,20 @@
       "companionship_at_turn_end": "PRESENT_WITH_V_AT_TEMPLE_RANGE",
       "departure": "NOT_YET",
       "hidden_camp_location": "UNKNOWN",
-      "verified_new_enemy": "NONE"
+      "verified_new_enemy": "NONE",
+      "followup_T244": {
+        "source": "events/0244.md",
+        "rest_hours": 2,
+        "advanced_cooperation_training": "Nhãn Quan Hiệp Chiến",
+        "score": "5/6 PASS",
+        "skill_contract": "canon/skills/nhan-quan-hiep-chien-T244.md",
+        "result": "Common Lv1 EARNED",
+        "effect": "Recognize relevant visible/audible teammate cue during normal tactical awareness, one relevant cue per legitimate combat beat",
+        "limits": "No extra action, accuracy/damage bonus, blind sight or automatic ally shot",
+        "ammunition_delta": 0,
+        "location": "temple practice yard",
+        "deployed_to_west": false
+      }
     }
   },
   "npc_last_verified_T93": {
@@ -2711,6 +2776,49 @@
       "potion_after": 1,
       "westward_departure": false,
       "quest_reward_issued": false
+    },
+    "T244": {
+      "source": "events/0244.md",
+      "action": "SAFE_2H_REST_THEN_NEW_PASSIVE_COORDINATION_TRIAL",
+      "HP_before": 170,
+      "HP_after": 170,
+      "STA_before": 75,
+      "rest_hour1_STA": 95,
+      "rest_hour2_STA": 110,
+      "safe_rest_hours": 2,
+      "actual_rest_recovery_STA": 35,
+      "warmup_STA_cost": 10,
+      "six_scenarios_STA_cost": 30,
+      "practice_minutes_approx": 90,
+      "STA_after": 70,
+      "test_contract_preceded_resolution": "canon/skills/nhan-quan-hiep-chien-T244.md",
+      "exam_six_results": [
+        "PASS",
+        "PASS",
+        "FAIL_BLOCKED_FIRING_LANE_SAFE_HOLD",
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "result_passed": 5,
+      "total": 6,
+      "threshold": 5,
+      "unsafe_shots": 0,
+      "skill_unlocked": "NhanQuanHiepChien Common Lv1",
+      "new_skill_exp_current": 0,
+      "new_skill_exp_delta": 0,
+      "Souls_before": 68,
+      "Souls_after": 68,
+      "EXP_before": 300,
+      "EXP_after": 300,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "potion_after": 1,
+      "steel_bolts_after": 3,
+      "NanhCotTien_after": 1,
+      "maela_ammo": "REUSABLE_ALL_RECOVERED",
+      "combat": false,
+      "west_road_departed": false
     }
   },
   "provenance": {
@@ -2888,10 +2996,10 @@
       },
       "reward_received": false,
       "source": "events/0162.md",
-      "progress": "Garrick T163 reconnaissance briefing remains latest verified enemy intelligence: Dốc Đá Xám ruined cart and high-ground tracks, suspected hand signal & crossbowman WITNESS-ONLY. T243 Maela voluntarily agrees conditional TEMPORARY assistance for west-road leader bounty after in-base 5-part melee/ranged tactics rehearsal 4/5 PASS. Not yet departed or encountered bandits. No location/strength/leader identity established, bounty remains ACTIVE unpaid.",
-      "next_step": "Select T244: recover training STA and scout/plan western approach with Maela, reconsult Garrick or depart alertly together on grounded western road route. No auto-spawn of leader or automatically known camp.",
+      "progress": "Garrick T163 reconnaissance briefing remains latest verified enemy intelligence: Dốc Đá Xám ruined cart and high-ground tracks, suspected hand signal & crossbowman WITNESS-ONLY. T243 Maela voluntarily agrees conditional TEMPORARY assistance for west-road leader bounty after in-base 5-part melee/ranged tactics rehearsal 4/5 PASS. Not yet departed or encountered bandits. No location/strength/leader identity established, bounty remains ACTIVE unpaid. T244 V rests2h, practices additional six scored cooperative awareness exercises with Maela 5/6 PASS (one missed new cover/line-of-fire); gains Nhãn Quan Hiệp Chiến Common Lv1 as evidence-backed situational teammate-cue passive. Both remain in temple; no bandit sighting, intelligence on leader or completed quest.",
+      "next_step": "Select T245: rest safe2h to restore STA70->110, consult Garrick with Maela, or cautiously depart for west road. Ally voluntarily agrees for this quest but remains autonomous; no previously verified bandit camp.",
       "notional_target_reputation": "Crossbowman rumored among bandits, unverified",
-      "last_evidence_turn": 243,
+      "last_evidence_turn": 244,
       "intelligence_T163": {
         "source": "events/0163.md",
         "verified_patrol": [
@@ -3741,17 +3849,17 @@
     "reward": "NONE"
   },
   "checkpoint": {
-    "id": "HN-T243-MAELA-COOP-EARLY",
-    "last_completed_turn": 243,
-    "source_events": "events/0241.md..events/0243.md",
-    "previous_checkpoint_last_completed_turn": 240,
-    "number_narrated_turns": 3,
+    "id": "HN-T244-TEAM-AWARENESS-SKILL-EARLY",
+    "last_completed_turn": 244,
+    "source_events": "events/0244.md",
+    "previous_checkpoint_last_completed_turn": 243,
+    "number_narrated_turns": 1,
     "gameplay_retcon": false,
-    "notion_sync_status": "No Notion/Canva writes; GitHub main state and Maela NPC canon are authority.",
+    "notion_sync_status": "No Notion projection or Canva update; GitHub authoritative skill ledger",
     "chat_only_unsaved_turns_after_verified_write": 0,
     "notion_hub_page_id": "3fe864d2-95ce-8178-95ae-d0bcfde6ac34",
     "notion_summary_sources_git_commit": "1eaac4e68ac6e2d138818eeb609c3916e275d34e",
-    "checkpoint_reason": "EARLY_SIGNIFICANT_NPC_VOLUNTARY_PARTNERSHIP_AND_HEAL_FULL"
+    "checkpoint_reason": "EARLY_PERMANENT_LEARNED_COMMON_PASSIVE_VIA_PREDECLARED_5_OF_6_EXAM"
   },
   "battle_state_T237": {
     "enemy_id": "enemy:stone-raker-T234",
