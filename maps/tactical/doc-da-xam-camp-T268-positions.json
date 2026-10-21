@@ -1,0 +1,72 @@
+{
+  "schema": "HN-COMBAT-OVERLAY-V1",
+  "turn": 268,
+  "base_svg": "maps/tactical/doc-da-xam-camp-v1.svg",
+  "base_sha": "ea2921b0039beee68642971b3a2dcaae448a17d8",
+  "base_immutable": true,
+  "schema_note": "Schematic SVG 720x440; markers not geographic",
+  "actors": [
+    {
+      "id": "vo-danh",
+      "x": 214,
+      "y": 270,
+      "weapon": "Huyết Nha +3 drawn",
+      "crossbow": "UNLOADED STOWED",
+      "HP": 145,
+      "STA": 24
+    },
+    {
+      "id": "maela",
+      "x": 160,
+      "y": 261,
+      "bow_arrow_nocked": true,
+      "shot_this_turn": false,
+      "unhurt": true
+    }
+  ],
+  "enemy": {
+    "id": "enemy:doc-da-xam-upper-archer-T265",
+    "level": 7,
+    "HP": 50,
+    "maxHP": 85,
+    "DEF": 10,
+    "last_partial_hint": [
+      436,
+      122
+    ],
+    "current_position": "UNKNOWN",
+    "visible_target": false,
+    "action": "withdrew under cover along existing northern uphill stone steps",
+    "shot_this_turn": false
+  },
+  "corpses": [
+    {
+      "id": "enemy:west-road-cloaked-lookout-T247",
+      "x": 100,
+      "y": 348,
+      "looted": true
+    },
+    {
+      "id": "enemy:west-road-axe-guard-T251",
+      "x": 126,
+      "y": 372,
+      "looted": true
+    },
+    {
+      "id": "enemy:west-road-grey-coat-T256",
+      "x": 529,
+      "y": 325,
+      "looted": true
+    }
+  ],
+  "player_ammo": {
+    "steel_loaded": 0,
+    "steel_reserve": 2,
+    "special_reserve": 1
+  },
+  "no_shots_T268": true,
+  "no_damage_T268": true,
+  "no_resource_change_T268": true,
+  "terrain_objects_unchanged": true,
+  "next_turn_unplayed": 269
+}
