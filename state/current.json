@@ -1,9 +1,9 @@
 {
-  "snapshot_version": "HN-S264-WESTERN-COVER-LOADED-CROSSBOW",
-  "last_completed_turn": 264,
-  "next_turn": 265,
+  "snapshot_version": "HN-S265-UPPER-ARCHER-ENGAGEMENT-EARLY",
+  "last_completed_turn": 265,
+  "next_turn": 266,
   "as_of": "2026-10-21",
-  "location": "Dốc Đá Xám: phía tây điểm trú tấm bạt, sau khối đá lớn; Vô Danh giữ Liên Nỏ Hắc Nha đã nạp; Maela giữ cung sau đá bên trái. Lối bắc bị che khuất, tình trạng đối tượng chưa xác nhận.",
+  "location": "Dốc Đá Xám, tây điểm trú tấm bạt sau đá lớn: V cầm Liên Nỏ Hắc Nha có một tên thép đã nạp, Maela giữ cung; cung thủ mới xuất hiện trên lối cao đã trúng tên và rút sau đá, vị trí hiện tại không thấy rõ.",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
@@ -1134,6 +1134,66 @@
         "unwanted_noise": "single pebble click, possible enemy suspicion",
         "enemy_attacks_confirmed": 0
       }
+    },
+    "doc_da_xam_T265": {
+      "source": "events/0265.md",
+      "public_encounter": "canon/encounters/west-road-upper-path-archer-T265-public.md",
+      "fixed_map": "maps/tactical/doc-da-xam-camp-v1.svg",
+      "position_overlay": "maps/tactical/doc-da-xam-camp-T265-positions.json",
+      "upper_archer": {
+        "id": "enemy:doc-da-xam-upper-archer-T265",
+        "level": 7,
+        "rank": "NORMAL",
+        "maxHP": 85,
+        "currentHP": 69,
+        "ATK_melee": "30-37",
+        "normal_bow_preDEF_damage": "28-34",
+        "DEF": 10,
+        "weapon_observed": "longbow",
+        "alive": true,
+        "last_seen": "upper north path exposed edge",
+        "currently_visible": false,
+        "shooting_lane_now_blocked": true,
+        "currently_exact_position": "UNKNOWN",
+        "sees_Maela_general_direction": true,
+        "has_detected_V_position": "UNVERIFIED",
+        "identity": "UNKNOWN",
+        "bandit_affiliation": "UNKNOWN",
+        "chief_status": "UNVERIFIED"
+      },
+      "maela": {
+        "normal_bow_shots_T265": 1,
+        "raw": 26,
+        "DEF10_damage": 16,
+        "known_total_bow_shots_on_trip": 5,
+        "recovered_usable_arrows": 3,
+        "damaged_recovered": 1,
+        "T265_arrow_unrecovered": true,
+        "known_usable_arrows_after_T265_at_least": 2,
+        "total_remaining_arrows": "UNKNOWN",
+        "uninjured": true
+      },
+      "enemy_counter": {
+        "bow_shots": 1,
+        "obstructed_by_west_rock": true,
+        "damage_to_maela": 0,
+        "damage_to_V": 0
+      },
+      "V": {
+        "lianno_loaded_steel1": true,
+        "steel_reserve": 2,
+        "sword_sheathed": true,
+        "parry_wielding_crossbow": false,
+        "HP": 145,
+        "STA": 24,
+        "BLOOD": 50,
+        "TuHuyet": 0,
+        "souls": 110,
+        "EXP": 330
+      },
+      "bell_triggered_T260": true,
+      "possible_unidentified_others": "UNKNOWN",
+      "quest_leader": "NOT_CONFIRMED"
     }
   },
   "npc_last_verified_T93": {
@@ -3321,6 +3381,27 @@
       "souls_after": 110,
       "EXP_after": 330,
       "status": "NARRATED_ACCEPTED_CHECKPOINTED_T264"
+    },
+    "T265": {
+      "source": "events/0265.md",
+      "public_enemy_stat_block": "canon/encounters/west-road-upper-path-archer-T265-public.md",
+      "map_overlay": "maps/tactical/doc-da-xam-camp-T265-positions.json",
+      "HP_after": 145,
+      "STA_after": 24,
+      "BLOOD_after": 50,
+      "TuHuyet_after": 0,
+      "souls_after": 110,
+      "EXP_after": 330,
+      "V_crossbow_ammo_loaded_after": 1,
+      "V_steel_reserve_after": 2,
+      "maela_arrow_spent": 1,
+      "enemy_HP_after": 69,
+      "enemy_behind_cover": true,
+      "loot_received": 0,
+      "quest_reward_paid": false,
+      "parry_used": false,
+      "skill_exp_gain": 0,
+      "RNG_verified_draw": false
     }
   },
   "provenance": {
@@ -3498,10 +3579,10 @@
       },
       "reward_received": false,
       "source": "events/0162.md",
-      "progress": "T245–T264: tarp-and-crates site located on northern rocks at Dốc Đá Xám. Three Lv6 NORMAL humans killed (cloaked lookout T250, axe guard T254, grey-cloak knife fighter T261) and all three unique corpses first looted by T262 (14 Souls each). Old wooden hunting crossbow and route sketch with three marks recovered, but none yet verified as bounty leader/robber identity proof. T257 found low metal-noise warning cord; grey-coat triggered T260, alert recipients UNKNOWN. T263 V loaded one steel bolt into Liên Nỏ. T264 V/M withdrew carefully to west boulder; unknown northern figure may have heard pebble; no active target confirmed.",
-      "next_step": "From west stone cover T265 decide observe, shoot only real safely exposed hostile, tactical withdrawal or inspect evidence later; leader/faction not verified. Do not pay Garrick reward.",
+      "progress": "T245–T264: tarp-and-crates site located on northern rocks at Dốc Đá Xám. Three Lv6 NORMAL humans killed (cloaked lookout T250, axe guard T254, grey-cloak knife fighter T261) and all three unique corpses first looted by T262 (14 Souls each). Old wooden hunting crossbow and route sketch with three marks recovered, but none yet verified as bounty leader/robber identity proof. T257 found low metal-noise warning cord; grey-coat triggered T260, alert recipients UNKNOWN. T263 V loaded one steel bolt into Liên Nỏ. T264 V/M withdrew carefully to west boulder; unknown northern figure may have heard pebble; no active target confirmed. T265: a NEW Lv7 Normal human longbow wielder revealed briefly on northern upper path; Maela shot him for16 actual HP (85→69), he fired one return arrow that hit rock, then withdrew behind cover. Identity/faction/bandit-chief status still UNKNOWN. Player's preloaded Liên Nỏ steel1 unspent, no boss proof.",
+      "next_step": "T266 from west cover: observe/retreat/reposition or fire only on re-exposure with legal V or Maela shot line. Do not infer leader identity or award quest.",
       "notional_target_reputation": "Crossbowman rumored among bandits, unverified",
-      "last_evidence_turn": 264,
+      "last_evidence_turn": 265,
       "intelligence_T163": {
         "source": "events/0163.md",
         "verified_patrol": [
@@ -4396,17 +4477,17 @@
     "reward": "NONE"
   },
   "checkpoint": {
-    "id": "HN-T264-WEST-COVER-TEN-TURN-CHECKPOINT",
-    "last_completed_turn": 264,
-    "source_events": "events/0255.md..events/0264.md",
-    "previous_checkpoint_last_completed_turn": 254,
-    "number_narrated_turns": 10,
+    "id": "HN-T265-UPPER-PATH-ARCHER-ENGAGEMENT-EARLY",
+    "last_completed_turn": 265,
+    "source_events": "events/0265.md",
+    "previous_checkpoint_last_completed_turn": 264,
+    "number_narrated_turns": 1,
     "gameplay_retcon": false,
     "notion_sync_status": "NO_NOTION_WRITE_OR_CANVA_UPDATE",
     "chat_only_unsaved_turns_after_verified_write": 0,
     "notion_hub_page_id": "3fe864d2-95ce-8178-95ae-d0bcfde6ac34",
     "notion_summary_sources_git_commit": null,
-    "checkpoint_reason": "TEN_ACCEPTED_COMPLETED_TURNS_T255_T264"
+    "checkpoint_reason": "EARLY_NEW_PUBLIC_ENCOUNTER_AND_COMBAT_HP_CHANGE"
   },
   "battle_state_T237": {
     "enemy_id": "enemy:stone-raker-T234",
@@ -4481,5 +4562,58 @@
     "enemy_corpse_looted_once_count": 3,
     "map_ref": "maps/tactical/doc-da-xam-camp-v1.svg",
     "map_overlay": "maps/tactical/doc-da-xam-camp-T264-positions.json"
+  },
+  "battle_state_T265": {
+    "status": "ENGAGED_LONG_RANGE_ENEMY_ALIVE_IN_NORTHERN_COVER",
+    "player": {
+      "HP": 145,
+      "STA": 24,
+      "BLOOD": 50,
+      "TuHuyet": 0,
+      "souls": 110,
+      "EXP": 330,
+      "weapon": "Liên Nỏ Hắc Nha",
+      "loaded_steel_bolt": 1,
+      "steel_reserve": 2,
+      "HuyetNha_sheathed": true,
+      "parry_unavailable_while_wielding_crossbow": true
+    },
+    "ally": {
+      "name": "Maela",
+      "unhurt": true,
+      "position": "west stone, left of V",
+      "one_arrow_fired_T265": true,
+      "shooting_lane_now": "BLOCKED_TO_TARGET",
+      "bow_needs_regular_next_arrow": true,
+      "arrows_known_used_on_trip": 5
+    },
+    "enemy": {
+      "id": "enemy:doc-da-xam-upper-archer-T265",
+      "lvl": 7,
+      "rank": "NORMAL",
+      "HP": 69,
+      "maxHP": 85,
+      "DEF": 10,
+      "melee_ATK": "30–37",
+      "bow_raw_damage_range": "28–34",
+      "current_position": "UNKNOWN_BEHIND_NORTH_ROCK",
+      "last_sighted_location": "northern upper path",
+      "current_targetable": false,
+      "faction": "UNKNOWN",
+      "confirmed_quest_boss": false
+    },
+    "turn_265_acts": {
+      "maela_one_normal_bow_shot": true,
+      "maela_damage_raw": 26,
+      "maela_damage_actual": 16,
+      "enemy_one_counter_bow_shot": true,
+      "enemy_counter_blocked_by_cover": true,
+      "V_fired_bolt": false,
+      "V_used_skills": false,
+      "character_HP_loss": 0
+    },
+    "map_ref": "maps/tactical/doc-da-xam-camp-v1.svg",
+    "map_overlay": "maps/tactical/doc-da-xam-camp-T265-positions.json",
+    "next_turn": 266
   }
 }
