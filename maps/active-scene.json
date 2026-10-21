@@ -1,9 +1,9 @@
 {
   "schema": "HN-MAP-SCENE-V1",
-  "last_completed_turn": 217,
-  "next_turn": 218,
+  "last_completed_turn": 227,
+  "next_turn": 228,
   "map_id": "ngoai-thanh-tuong-da-do",
-  "status_source": "main/state/current.json — main/events/0217.md; local area atlas on feature branch",
+  "status_source": "main/state/current.json, events/0218.md..events/0227.md and feature maps/atlas-v1.json revision2",
   "current": {
     "tokens": [
       {
@@ -14,20 +14,21 @@
         "y": 28,
         "facing": "S",
         "status": "ALIVE",
-        "tactical_state": "CONCEALED_BEHIND_PARTIAL_COVER",
+        "tactical_state": "BEHIND_PARTIAL_WALL_COVER_READY_SWORD",
         "actual_geographic_bearing": "UNKNOWN",
-        "weapon": "Huyết Nha +3 held quietly",
-        "position_note": "Local schematic token by fallen wall and brush. S only points visually downhill on diagram; NOT proven cardinal south"
+        "weapon": "Huyết Nha +3, ordinary guard",
+        "position_note": "Back behind old ruined wall/brush at high safe edge after inspecting stone joints T227. S is DIAGRAM-DOWN toward low slope, NOT cardinal south."
       }
     ],
     "movement": [],
     "visible_hostiles": [],
     "notes": [
-      "At T217 player motionless behind rubble/bush, only watched/listened about 4 min",
-      "Lower root/stone slope not entered, no undead or crypt entrance verified",
-      "Local diagram vertical axis is illustration ONLY; cardinal bearing, true distance and regional site position UNKNOWN",
-      "Partial cover does not certify impossible detection",
-      "Prior market→outer wall movement T214 documented as uncertain cart route in events, not reconstructed here"
+      "T218 one skeleton emerged by root gap; T219–T222 targeted attacks and counterattack; corpse killed T222, looted once T223 (+12 Souls, one provisional grey bone core); no other hostile confirmed",
+      "T223–T227 only safe-surface scouting; one small hollow, two dressed straight edges, upright flat stone with horizontal joint and intermittent weak draft; groove/pavers could form drainage/foundation system but continuity and purpose UNKNOWN",
+      "T225 qualitative ambiguous Tử Huyết Cảm Tri did NOT confirm a distinct TH-bearing source; TH still 0",
+      "T226 soil slipped on light probing: lower root/lip area UNSAFE and NOT TRAVERSED",
+      "V at T227 is behind partial wall cover with sword ready; a hostile's detection of V NOT provably impossible",
+      "Local map axes and token facing schematic, no surveyed bearing, meters, or verified crypt entrance. Atlas base revision2 on feature branch."
     ]
   },
   "legacy_timeline": {
@@ -53,6 +54,20 @@
         }
       ],
       "no_active_enemy_confirmed": true
+    },
+    "outer_stone_wall": {
+      "corpse": [
+        {
+          "id": "enemy:buried-skeleton-T218",
+          "x": 70,
+          "y": 72,
+          "status": "DEAD_T222_LOOTED_ONCE_T223",
+          "HP": 0
+        }
+      ],
+      "confirmed_active_hostiles": 0,
+      "actual_enemy_population_remaining": "UNKNOWN",
+      "not_crypt_verified": true
     }
   },
   "contract": "Increment only current tokens, movement, confirmed terrain object updates. Never move static terrain because of a narrative turn alone. Display north and facing arrows distinctly."
