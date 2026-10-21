@@ -1,4 +1,18 @@
-# HẮC NHẬT — QUICK START (T244)
+# HẮC NHẬT — QUICK START (T254)
+
+**VERIFIED GAMEPLAY SNAPSHOT T254 — NEXT PLAYER TURN T255 NOT YET PLAYED.** See `state/current.json`, events `0245.md`–`0254.md` and `maps/active-scene.json`. Organic Proficiency V1.0 is in effect as manual evidence-gated progression; no global Battle IQ buff or automatic hidden dice.
+
+Vô Danh **Lv6 EXP320/400**, **HP151/170**, **STA56/110**, **BLOOD50/50**, **Tử Huyết0/20**, **Souls82**, DEF22. Huyết Nha+3 (ATK28–36), secondary Hắc Nha Trọng Kiếm VII, Lang Vương armor, Liên Nỏ Hắc Nha, 3 steel bolts, 1 Nanh Cốt Tiễn, 1 military healing potion (+30HP). Added ordinary short knife and three-notch iron badge, each1, first looted T251.
+
+Current location **Dốc Đá Xám outer rock bend** by the northern tarp/crates group. At least three armed humans were initially seen near tarp at T247, NOT verified to be bandits or their leader. Cloaked Lv6 Normal guard DEAD T250, first looted ONCE at T251: +14 Souls, knife and iron badge. Second short-axe Lv6 Normal guard DEAD T254, corpse **UNLOOTED**; cannot pay Souls for it until a legitimate first-loot action. Third previously sighted armed individual is now unlocated, alarm status UNKNOWN. A metallic clink from tarp at T254 has unknown origin. Bandit chief and genuine hideout are UNKNOWN. Garrick's west-road leader bounty remains **ACTIVE and UNPAID**, reward65 Souls +100EXP only for the correctly identified leader verified and reported back.
+
+**T254 result:** Maela chose one safe shot after V cleared her firing lane, arrow raw26-DEF11=15 (axeman25→10HP); V ONE ordinary sword raw30-DEF11=19 theoretical, actual remaining10HP removed (10→0), no auto-critical. V BLOOD49→50 capped (+1 effective of nominal7), Hấp Huyết heals +1HP (150→151), +10 normal-enemy character EXP310→320. Maela spent a third known personal arrow on this trip (T248/T252/T254), original and remaining arrow count unverified. No player-owned arrow, spell or potion used, no enemy counter successfully completed during the last beat.
+
+**Available combat skills:** Huyết Ảnh Bộ Rare Lv1 SkillEXP2/60, cooldown0 **READY**, cost15STA, <=4m; Huyết Trảm Nhị Liên Rare Lv2 SkillEXP6/135, CD **2 remaining**, costs12HP+25STA when ready, separately defend two strikes 125%/100%; Gạt Kiếm Common Lv2 SkillEXP4/90 costs7STA on genuine eligible defense reaction; Hấp Huyết Rare Lv1 SkillEXP4/60; Nhãn Quan Hiệp Chiến Common Lv1 SkillEXP4/40 with observable ally coordination only and no approved Lv2. All skill RNG bonus +5 omitted when draw not executed. Other learned skills unchanged, Maela's agency intact.
+
+**Next T255:** V can inspect the second corpse quickly at own risk, observe where the remaining armed person went, change cover or withdraw. There is NO current verified live visible enemy and NO confirmed full bandit-camp alarm or boss. Tactical map is provisional; old ruined wall remains archived.
+
+## Historical T244 quick-start (archive only; no longer current)
 
 ## ENGINEERING ADDENDUM — Organic Proficiency V1.0 (NON-GAMEPLAY)
 
@@ -140,7 +154,7 @@ Vô Danh (Huyết Kiếm Sĩ Lv6) is **hidden behind collapsed stone wall and br
 
 **MAP CONTINUITY:** Feature branch `feat/full-atlas-v1-20261020` has newly indexed local-only map ID `ngoai-thanh-tuong-da-do` in `maps/atlas-v1.json`; active scene at T217 is in `maps/active-scene.json` on both main and feature. No Region pin or verified compass bearing; local map token's facing arrow only denotes screen-down toward the lower slope, **NOT true south**. Local scene location and event reports outrank map illustration. Original static T204 World/Regional SVG snapshots remain valid historical assets and are NOT regenerated. Preferred Readable+ dark legible style, reuse static base, update overlays only, no Canva call each turn. Consult feature `docs/gm-map-behavior-handoff-v1.md`. Current rules come from **main** `canon/rules.md`, `docs/gm-storyline-protocol.md`.
 
-**OWNER RULES HANDOFF (2026-10-21):** Consult GitHub main `canon/rules.md` section `OWNER CLARIFICATION T219–T224` for conditional resolution of all custom actions; complete enemy Lv/HP/ATK/DEF and pre/post-DEF combat damage HUD; Hấp Huyết/BLOOD vs undead death-energy and non-automatic Tử Huyết; reuse observed map base, update overlays. Never fake RNG or auto-success. Rules-only sync: T218–T224 remain IN-CHAT UNSAVED narrative; T225 not played.
+**OWNER RULES HANDOFF (2026-10-21):** Consult main `canon/rules.md` section `OWNER CLARIFICATION T219–T224` for mandatory conditional resolution of all custom actions; complete enemy Lv/HP/ATK/DEF and pre/post-DEF combat damage HUD; separation of Hấp Huyết/BLOOD from undead death-energy and non-automatic Tử Huyết; reuse rather than fully redraw observed tactical maps. No fake RNG or automatic hit/cripple. This is RULES-ONLY sync: T218–T224 are still narrated IN CHAT but are not yet a durable gameplay checkpoint; T225 not played.
 
 **CHECKPOINT POLICY:** Normal 10-turn gate closed at T217; next unsaved starts T218, or checkpoint sooner for major/irreversible events. Do not treat archive sections below as current.
 
@@ -164,20 +178,6 @@ Current events: https://github.com/nhuy2005-alexandors/rpg-cannon/blob/main/even
 ## HISTORICAL QUICK START — T204 (ARCHIVED)
 
 **HISTORICAL RPG CHECKPOINT: T204; T205 HAS SINCE BEEN PLAYED.** The complete ten-turn T195–T204 progression and source are recorded in `events/0195.md` through `events/0204.md` and numeric authority `state/current.json`. **V1.3 LEAN remains active.** A note below under "HISTORIC QUICK START" concerns the old T194 snapshot and is not the current situation.
-
-## NEW-SESSION MAP BEHAVIOR HANDOFF — READ FIRST
-
-**Required for new ChatGPT session:** [GM Map Behavior & Session Handoff V1](../docs/gm-map-behavior-handoff-v1.md). [Persisted T204 World/Regional SVG snapshots](../maps/exports/README.md) are available for viewing; Canva designs remain separately editable. This records long-lived map rules, official Canva IDs, rejection of AI-invented cartography, static-vs-dynamic updates, world/region discovery policy, verification limitations and checkpoint boundaries. **Read it ONCE at new-session bootstrap**, not every normal turn. Map expansion stays on feature branch `feat/full-atlas-v1-20261020` until verified/merged; gameplay authority and T204 remain unchanged on `main`. No Canva/ImageGen regeneration each turn; never assume automatic Canva↔GitHub sync.
-
-## TWO-SCALE OVERVIEW MAPS — WORLD + REGIONAL
-
-Use the [editable 2-page Canva World/Regional map](https://www.canva.com/d/Bpix2upN2ykgShg) (design `DAHYjCS3NKI`) or GitHub `maps/atlas-v1.json` IDs `hac-nhat-world` (World, only Hắc Nha discovered) and `vung-hac-nha` (Regional). The regional map confirms west road/Gray Rock Slope and east scrapyard/NE shed relative to city. Other locations appear in a **not-yet-located** list, not arbitrary pins. Always reuse local maps as lower tier. No hidden regions, meter-scale distances or automatic Canva sync. **T204 unchanged and T205 not played.**
-
-## FULL WORLD ATLAS V1.1 — FEATURE BRANCH (NOT MERGED)
-
-Atlas coverage is expanded on `feat/full-atlas-v1-20261020`: [evidence inventory](../maps/coverage.json) (23 entries), [reusable map data](../maps/atlas-v1.json) (17 map scenes, including original 3), [renderer](../maps/render.py), [guide](../maps/README.md). Seven? No: **six** locations/topics stay unplaced as `PLACEHOLDER` or `UNVERIFIED` (Trạm Tam Trảo, Trạm Gác Số Bốn, western bandit hideout, unseen cave depths, unopened coffins, unspecified private NPC location). This is deliberate: no fabricated geometry, hidden loot or additional encounters. Verified separate [15-page editable Canva supplement](https://www.canva.com/d/tpCkYiVOf3jAXHj) (design DAHYiz8iryA); original [3-page Canva atlas](https://www.canva.com/d/afa4HjByuyD2Dt6) unchanged. Neither design is a live JSON/data authority.
-
-**Gameplay remains frozen at T204: T205 NOT PLAYED.** No new player HP, Souls, EXP, potions, item claims, bandit bounty or quest hand-in. Location/facing still northeast iron shed ENE. Normal turns update token overlay instead of rebuilding terrain; the atlas is not a reason for a network call on every turn.
 
 ## EDITABLE MAP ATLAS V1 — mandatory reuse for future maps
 
