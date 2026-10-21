@@ -1,6 +1,32 @@
-# HẮC NHẬT — QUICK START (T237)
+# HẮC NHẬT — QUICK START (T240)
 
-**LATEST VERIFIED GAMEPLAY CHECKPOINT: T237; NEXT USER-DIRECTED TURN T238.** On 2026-10-21 ten narrated turns T228–T237 were appended and readback-verified in `main/events/0228.md..0237.md`. Canonical numeric ledger is `main/state/current.json` T237. **Do not re-run or reinterpret T228–T237**, pay any loot twice, replay recovery/rest, or auto-play T238. Previous checkpoint T227 is historical.
+**LATEST VERIFIED GAMEPLAY CHECKPOINT: T240; NEXT USER-DIRECTED TURN: T241.** Permanent quest closure saved early after three narrated turns T238–T240, before ten-turn cadence. `main/state/current.json` is single authority; individual append-only event receipts `main/events/0238.md`, `0239.md`, `0240.md`. **DO NOT replay T238–240, loot corpses again, grant quest reward again, or sleep again automatically.**
+
+## CURRENT LOCATION AND PLAYER STATUS
+
+**Vô Danh** Huyết Kiếm Sĩ Lv6, character EXP **300/400** (no level-up), HP **60/170** (injuries remain), STA **110/110** (one full uninterrupted night's rest T240 in home base), BLOOD **28/50**, Tử Huyết **0/20**, Souls **113**; defensive armor total DEF22, Huyết Nha +3 Rare ordinary ATK28–36. Potions: **1 military Huyết Dược +30HP**, steel bolts **3**, Nanh Cốt Tiễn **1**; physical quest Lõi Xương Xám **0** (three submitted). Huyết Trảm Nhị Liên Rare Lv2 cooldown READY and Skill EXP4/135, Gạt Kiếm Cận Chiến Common Lv2 defensive reaction costs7STA, no free riposte. V at **Điện Tế Huyết**, safe existing free home base in Hắc Nha Thành, after full night's rest. No active combat or new skill/spend/HP healing; no exact world clock claimed.
+
+**Quest: Hài Cốt Lang Thang RESOLVED/PAID T240.** T223 first, T233 second, T239 third grey bone cores each physically collected from a different defeated skeleton and each corpse looted once. At T240 the same unnamed market bounty clerk independently inspected **all 3 Lõi Xương Xám**, accepted 3/3 as valid evidence, took all three (carried 3→0) and issued bounty reward exactly **+16 Souls (97→113), +25 EXP (275→300)**. No repeat payment or separate reward. Quest status RESOLVED; previous 0/3 verified and 3/3 provisional states are historical, superseded. Acceptance confirms valid bone-core item class, NOT that old masonry site is the old burial crypt or that all regional undead are dead. Previous hyena bounty remains resolved and west-road bandit-leader quest remains ACTIVE. Blood Rats bounty remains OFFERED_NOT_ACCEPTED.
+
+## EVENTS T238–T240
+
+- **T238:** Defeat third undead `enemy:stone-raker-T234` / Hài Cốt Gạt Đá Lv5 Normal HP25/70 ATK28–35 DEF9, RIGHT arm severed earlier T237. Its remaining LEFT arm attack misses after V short safe step, V ordinary Huyết Nha neck sword raw35−DEF9=26 effective, capped actual HP injury25 to 0. +10 character EXP265→275, HP60 STA63 Souls85 unchanged. No crit/double attack/free skill, not looted yet.
+- **T239:** Safe corpse inspection and first unique loot, +12 Souls85→97 (L_reward5 Normal R1 D1 revealed in T239, NOT precommitted T236) and ONE Lõi Xương Xám 2→3 carried/provisional. TH not granted, no other loot. Nearby stone seams near tilting boulder observed, no proven trap, crypt doorway or entire area clear. No loss or resource cost.
+- **T240:** Safe return along known stable route to Hắc Nha Thành, original market clerk verifies and accepts all 3 cores, quest payout ONCE +16 Souls/+25 EXP, physical cores0. V goes to free Điện Tế Huyết home base and sleeps a full uninterrupted night; canon restores STA63→110, HP stays60 (no free HP regeneration), potion remains1, no fees. Next T241 is player-directed.
+
+## MAP / CANON GUARANTEES
+
+The old wall ruin's static local Atlas remains `feat/full-atlas-v1-20261020/maps/atlas-v1.json` area `ngoai-thanh-tuong-da-do` **revision3**. Old-wall `maps/active-scene.json` is synced on main/feature at T240, now INACTIVE with player returned to city; historical three enemy corpses at site all marked DEAD and looted once. The ruins may contain unknown hostiles and unknown passage or masonry structure; do not fabricate new geographic bearings, absolute distances or a discovered crypt entrance. No Canva/Notion export performed as part of normal checkpoint. Reuse the last approved fixed world/area map if revisiting.
+
+**New turn T241** could request medical treatment/healing, new quests, skill training, equipment or further exploration; do not initiate without user. Canon recovery: safe hour +20STA, safe full-night STA max; **sleep alone does not heal HP**. Maintain independent enemy combat, no counterfeit seeded rolls, no double loot, no retroactive quest rewards; owner-approved rules in `canon/rules.md` and `canon/progression-rules-v1.3.md`.
+
+**Checkpoint:** `HN-T240-QUEST-RESOLUTION-EARLY`, previous T237, 3 completed unsaved turns recorded then persisted. Next normal 10-turn checkpoint counting from T241, or earlier for major irreversible change.
+
+---
+
+## HISTORICAL QUICK START — T237 (ARCHIVED)
+
+**HISTORICAL VERIFIED T237; SUPERSEDED BY T240 ABOVE.** On 2026-10-21 ten narrated turns T228–T237 were appended and readback-verified in `main/events/0228.md..0237.md`. Canonical numeric ledger is `main/state/current.json` T237. **Do not re-run or reinterpret T228–T237**, pay any loot twice, replay recovery/rest, or auto-play T238. Previous checkpoint T227 is historical.
 
 ## LIVE T237 BATTLE — THIRD SKELETON
 
