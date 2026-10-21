@@ -1,6 +1,33 @@
-# HẮC NHẬT — QUICK START (T243)
+# HẮC NHẬT — QUICK START (T244)
 
-**LATEST VERIFIED GAMEPLAY CHECKPOINT: T243; NEXT USER-DIRECTED TURN T244.** Early save after T241–T243 because named free-hunter Maela agrees to temporary cooperation. Canonical numerical state is `main/state/current.json`; append-only event receipts `events/0241.md`, `events/0242.md`, `events/0243.md`; NPC update `canon/npc/maela.md`. DO NOT replay three turns, charge healing again, grant practice bonuses, depart to western road or auto-spawn bandits without T244.
+**LATEST VERIFIED GAMEPLAY CHECKPOINT T244; NEXT PLAYER-DIRECTED TURN T245.** The one-turn early checkpoint is caused by a **new permanent Common Lv1 passive skill** earned through actual advanced teamwork testing with Maela, rather than a normal 10-turn batch. Authority: `main/state/current.json`, append-only `events/0244.md`, preregistered public (non-secret) assessment/contract `canon/skills/nhan-quan-hiep-chien-T244.md`, updated `canon/npc/maela.md`. Do not repeat/rest/train T244 on next turn.
+
+## ACTIVE STATE AT T244
+
+Vô Danh, Huyết Kiếm Sĩ Lv6, HP **170/170**, STA **70/110**, BLOOD **28/50**, Tử Huyết **0/20**, Souls **68**, EXP **300/400**. One Huyết Dược Quân Dụng (+30HP), three steel bolts, one Nanh Cốt Tiễn. Equipment unchanged: Huyết Nha +3 Rare ATK28–36, Hắc Nha Trọng Kiếm VII ATK29–38, Lang Vương Huyết Bì Giáp Rare DEF total22. One prior 3/3 bone-core bounty RESOLVED T240 with proof turned in, cannot repay. The west-road bandit-leader bounty is ACTIVE/unpaid; 65 Souls +100 EXP only on independently verified completion.
+
+**Location:** Điện Tế Huyết training yard, Hắc Nha Thành, with female free hunter Maela. Both remain in city; no departure or western enemy sighting; no known bandit camp. Maela voluntarily accepted conditional temporary party cooperation only for western-road bounty T243, retains agency, safe shooting angle/line-of-sight and right to withdraw. No permanent party contract/romance/reward-share established.
+
+## T244 action exactly resolved
+
+- Rest 2 safe uninterrupted hours: STA 75->95->110/110 (+35 actual due cap; no natural HP/BLOOD/TH healing).
+- Proactive Maela advanced cooperative battle-intelligence test, explicitly offered because player wants meaningful earned melee/ranged teammate passive rather than numeric global Battle IQ. A **PUBLIC contract and six-scene exam** saved and read back **BEFORE T244 test resolution** in `canon/skills/nhan-quan-hiep-chien-T244.md` (not a secret precommit or live dice).
+- Warmup -10STA plus six dynamic 5STA scored drills -30STA; final STA110->70/110; about90 min active training. Six outcomes: PASS archer-ready signal/lane, PASS enemy mock marksman shift, FAIL new rock/screen occludes Maela's lane (she SAFE-HOLDS shot), PASS ally changes flank/signal, PASS V screens ally against flanker, PASS coordinated retreat: **5/6 PASS**. No live ammunition consumed, Maela recovers all her reused practice arrows.
+- Earned **Nhãn Quan Hiệp Chiến** (`NhanQuanHiepChien`) **Common Passive Lv1, Skill EXP0/40**. When cooperating with an actually perceivable ally, V can recognize ONE relevant observable ally positioning/readiness/shot-lane cue as part of ordinary tactical awareness in an eligible combat beat. Works with genuinely coordinated teammates, not just Maela, only when signals/stances are visible or audible. This is *recognition of available information*: NOT omniscience, guaranteed hit/attack/dodge, free reload/move/attack/action, stat/accuracy/damage buff, telepathic communication, or guaranteed Maela cover shot. No stacking with V's separate `Phối Hợp Kiếm–Nỏ` self-switch or `Ngắm Bắn Ổn Định` self-aim mechanics.
+- Skill gain is from test certification; **no retroactive Skill EXP**, and exam itself did not earn mastery XP. Future valid effective usages get V1.3 +2, valid failure +1, verified RNG required for +5 and anti-farming applies. **Lv2 effect NOT approved**; at threshold40 future contract must be separately defined/approved.
+- No level EXP or consumable/Souls changes. No combat, quest payout, discoveries or forge upgrades.
+
+## WEST-ROAD INTELLIGENCE / NEXT T245
+
+Garrick's existing patrol findings T163: broken caravan at Dốc Đá Xám, ambiguous footprints/tracks ascending northern broken hillside, dangerous open wagon road, partly sheltered Suối Cạn dry gully. Witness hand signals, possible crossbowman, pale curved metal shoulder marker and clanks are UNVERIFIED; bandit chief identity, hideout, number, true Lv/ATK/DEF and enemy lineup remain UNKNOWN. No teleport or enemy spawn. Maela planned independent oblique rear bow overwatch, V frontline sword, retreat/cover conditions; no future fixed flat accuracy bonus. Next legitimate player command T245 may rest safe 2h for STA70->110 capped, consult Garrick, or travel/scout with Maela. DO NOT take any step on V's behalf before selected.
+
+**Checkpoint id:** `HN-T244-ALLY-BATTLE-AWARENESS-SKILL-EARLY`, last T243, one turn saved; unsaved since checkpoint0. No Notion/Canva write, local wall Atlas remains inactive and structurally unchanged.
+
+---
+
+## HISTORICAL QUICK START — T243 (ARCHIVED)
+
+**HISTORICAL T243; superseded by T244 above.** Early save after T241–T243 because named free-hunter Maela agrees to temporary cooperation. Canonical numerical state is `main/state/current.json`; append-only event receipts `events/0241.md`, `events/0242.md`, `events/0243.md`; NPC update `canon/npc/maela.md`. DO NOT replay three turns, charge healing again, grant practice bonuses, depart to western road or auto-spawn bandits without T244.
 
 ## PLAYER NOW — TEMPLE TRAINING YARD, AFTER HEALING AND MAELA PRACTICE
 
