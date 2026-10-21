@@ -1,3 +1,21 @@
+# HẮC NHẬT — QUICK START (T268)
+
+**LATEST VERIFIED COMBAT CHECKPOINT T268; NEXT T269 NOT PLAYED.** Authority `state/current.json`, `events/0268.md`, `maps/active-scene.json`; static combat map `maps/tactical/doc-da-xam-camp-v1.svg` preserved exact blob `ea2921b0039beee68642971b3a2dcaae448a17d8`, overlay `maps/tactical/doc-da-xam-camp-T268-positions.json`.
+
+**Player:** Vô Danh Huyết Kiếm Sĩ Lv6 EXP330/400 HP145/170 STA24/110 BLOOD50/50 TuHuyet0/20 Souls110 DEF22. T268 V took the one normal combined weapon-management action to physically secure the **UNLOADED Liên Nỏ Hắc Nha** on sling and DRAW **Huyết Nha+3** into WESTERN STONE COVER melee guard. Weapon swap now complete, not instant simultaneous crossbow shot/parry. Liên Nỏ UNLOADED steel loaded0, steel reserve2, special Nanh Cốt Tiễn1, no arrows fired T268. Hắc Nha Trọng Kiếm VII backup carried, not wielded. Huyết Nha ordinary sword ATK28–36; Gạt Kiếm Lv2 **only now available contingent on visible physically deflectable incoming melee attack**, costs7 STA per legal attempt, not used T268. Huyết Ảnh Bộ Rare Lv1 READY 15STA and <=4m legitimate movement; Nhị Liên Rare Lv2 READY but costs25STA +12HP, CURRENTLY cannot afford 25STA. Hấp Huyết skillEXP10/60, Gạt Kiếm6/90, Nhị Liên8/135, Huyết Ảnh Bộ2/60, Nhãn Quan Hiệp Chiến4/40. No rest/recovery, skill EXP or RNG bonus.
+
+**Maela:** Uninjured voluntary temporary independent ally at west-left stone cover (schematic SVG160,261). One personal bow arrow remains nocked and was **NOT FIRED** T268 because no targetable exposed body and clean lane. Personal arrows fired on this expedition6, 3 earlier arrows recovered serviceable and1 damaged; T265 and T266 shots unrecovered; original arrow count/total stock UNKNOWN. Maela chooses legal shot independently and never fires through V or rock.
+
+**Enemy:** `enemy:doc-da-xam-upper-archer-T265`, Lv7 NORMAL HP**50/85** DEF10 longbow, meleeATK30–37, ordinary arrow raw28–34, identity/faction/chief status UNKNOWN. T267 V hit him with one steel bolt19 actual HP on brief exposure at northwest tarp gap. In T268 he autonomously retreated from exposed western camp approach toward **higher north along ALREADY EXISTING stone path**, part dark clothing and bow glimpsed BEHIND stone; no entire target exposed, no shot by either side. Last partial upper-path sight approx SVG(436,122) is NOT verified live position, current targetability false. His intention whether escape/regroup/counter and any alarm listeners UNKNOWN. Three older site guard corpses already each first-looted once, no new Souls or quest evidence.
+
+**Combat Map:** V unchanged at SVG(214,270), Maela unchanged (160,261). Keep EXACT T263 base terrain, wooden crates1–3, tarp, activated cord and west/north stone. Only overlay T268 updates V's wielded sword/empty nỏ and enemy's last partial high north sight. Do not invent upper path shortcut or line of sight through rock. Quest Garrick western bandit leader ACTIVE UNPAID.
+
+**T269 awaiting user**: options include maintaining sword guard, controlled withdrawal, cautious recon toward higher path; no auto-ambush, no free stamina, no Parry absent eligible attack. Do not auto-play T269.
+
+---
+
+## Archived T267 and prior quick starts
+
 # HẮC NHẬT — QUICK START (T267)
 
 **LATEST VERIFIED COMBAT CHECKPOINT T267; NEXT PLAYER COMMAND T268 NOT YET PLAYED.** Authority: `state/current.json`, append-only `events/0267.md`, existing immutable `maps/tactical/doc-da-xam-camp-v1.svg` and delta `maps/tactical/doc-da-xam-camp-T267-positions.json` as mirrored in `maps/active-scene.json`. No future actions auto-played.
