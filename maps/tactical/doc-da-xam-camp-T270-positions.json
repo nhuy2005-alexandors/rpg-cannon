@@ -1,0 +1,136 @@
+{
+  "schema": "HN-COMBAT-OVERLAY-V1",
+  "turn": 270,
+  "map_id": "duong-tay-doc-da-xam-camp",
+  "base_svg": "maps/tactical/doc-da-xam-camp-v1.svg",
+  "base_svg_blob_sha": "ea2921b0039beee68642971b3a2dcaae448a17d8",
+  "base_immutable": true,
+  "coordinate_contract": "Schematic SVG 720x440 illustration, not surveyed physical distances or verified 4m step distances",
+  "actors": [
+    {
+      "id": "vo-danh",
+      "token": "V",
+      "x": 303,
+      "y": 197,
+      "from_x": 218,
+      "from_y": 216,
+      "position": "outer NW edge FIRST ORIGINAL CRATE after crossing initial exposed compacted-gravel patch",
+      "status": "PARTIAL_CRATE_COVER_SWORD_READY",
+      "weapon": "Huyết Nha +3 wielded",
+      "crossbow": "STOWED_UNLOADED",
+      "HP": 137,
+      "STA": 24,
+      "arrow_wound": "ordinary 8HP damage, no proven persistent status",
+      "melee_range_of_enemy": false
+    },
+    {
+      "id": "maela",
+      "token": "M",
+      "x": 178,
+      "y": 229,
+      "from_x": 178,
+      "from_y": 229,
+      "position": "rear-left lower western boulder",
+      "bow": "RELEASED ONE ARROW T270 NEEDS RE-NOCK",
+      "shots_this_turn": 1,
+      "cumulative_known_personal_shots": 7,
+      "uninjured": true
+    }
+  ],
+  "enemies": [
+    {
+      "id": "enemy:doc-da-xam-upper-archer-T265",
+      "rank": "NORMAL",
+      "level": 7,
+      "HP": 33,
+      "max_HP": 85,
+      "DEF": 10,
+      "weapon": "longbow",
+      "last_exposed_schematic_x": 464,
+      "last_exposed_schematic_y": 94,
+      "last_exposure": "brief torso on upper north existing rock turn firing at V",
+      "now_obscured": true,
+      "currently_visible": false,
+      "currently_targetable": false,
+      "exact_current_position": "UNKNOWN_BEHIND_EXISTING_NORTH_ROCK",
+      "faction": "UNKNOWN",
+      "leader_status": "UNVERIFIED",
+      "bow_shots_T270": 1
+    }
+  ],
+  "corpses": [
+    {
+      "id": "enemy:west-road-cloaked-lookout-T247",
+      "x": 100,
+      "y": 348,
+      "looted": true
+    },
+    {
+      "id": "enemy:west-road-axe-guard-T251",
+      "x": 126,
+      "y": 372,
+      "looted": true
+    },
+    {
+      "id": "enemy:west-road-grey-coat-T256",
+      "x": 529,
+      "y": 325,
+      "looted": true
+    }
+  ],
+  "movement": {
+    "V": [
+      [
+        218,
+        216
+      ],
+      [
+        303,
+        197
+      ]
+    ],
+    "Maela": [
+      [
+        178,
+        229
+      ],
+      [
+        178,
+        229
+      ]
+    ],
+    "huyet_anh_bo_attempted": false,
+    "complete_crossing_to_north_path": false,
+    "partial_unsafe_crossing": true,
+    "not_metric": true
+  },
+  "combat": {
+    "enemy_bow_raw": 30,
+    "player_DEF": 22,
+    "player_HP_loss": 8,
+    "Maela_bow_raw": 27,
+    "enemy_DEF": 10,
+    "enemy_HP_loss": 17,
+    "maela_arrow_spent": 1,
+    "enemy_arrow_spent": 1,
+    "parry_attempts": 0,
+    "player_skill_casts": 0
+  },
+  "objects_fixed": [
+    "3 existing crates",
+    "tarp",
+    "western rock",
+    "existing north ascending rocky switchback",
+    "previously activated metal alarm wire",
+    "3 older corpses"
+  ],
+  "player_ammo": {
+    "steel_loaded": 0,
+    "steel_reserve": 2,
+    "NanhCotTien": 1
+  },
+  "no_skill_EXP": true,
+  "no_player_EXP": true,
+  "no_souls": true,
+  "T271_not_played": true
+}
