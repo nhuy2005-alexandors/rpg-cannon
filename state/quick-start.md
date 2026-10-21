@@ -1,6 +1,26 @@
-# HẮC NHẬT — QUICK START (T227)
+# HẮC NHẬT — QUICK START (T237)
 
-**LATEST VERIFIED GAMEPLAY CHECKPOINT: T227; NEXT PLAYER-DIRECTED TURN T228.** On 2026-10-21 ten narrated turns T218–T227 were appended as event files and saved in main state; numerical/source authority: `main/state/current.json`, `main/events/0218.md..0227.md`. NEVER replay T218–T227 or issue the T223 first corpse loot again.
+**LATEST VERIFIED GAMEPLAY CHECKPOINT: T237; NEXT USER-DIRECTED TURN T238.** On 2026-10-21 ten narrated turns T228–T237 were appended and readback-verified in `main/events/0228.md..0237.md`. Canonical numeric ledger is `main/state/current.json` T237. **Do not re-run or reinterpret T228–T237**, pay any loot twice, replay recovery/rest, or auto-play T238. Previous checkpoint T227 is historical.
+
+## LIVE T237 BATTLE — THIRD SKELETON
+
+**Vô Danh** Lv6, HP**60/170**, STA**63/110**, BLOOD**28/50**, Tử Huyết**0/20**, Souls**85**, character EXP**265/400**. Huyết Trảm Nhị Liên Rare Lv2 skill EXP **4/135**, cooldown **0/READY**, no verified bonus roll T230. Huyết Nha +3 (normal sword 28–36), defensive equipment total DEF22, Gạt Kiếm Cận Chiến Lv2 is **DEFENSIVE_REACTION 7 STA** and NOT a passive/free riposte. Carries **1 Huyết Dược Quân Dụng (+30HP)**, three steel bolts, one special arrow, **2 Lõi Xương Xám as PROVISIONAL evidence**; bounty issuer has verified 0, quest **Hài Cốt Lang Thang ACTIVE, unpaid** (+16 Souls/+25 EXP only if completed and verified). Position on safe upper paving by leaning boulder next to lower dangerous root/rubble lip, slight backward step after last hit, sword ready.
+
+**Hostile ACTIVE: Hài Cốt Gạt Đá** instance `enemy:stone-raker-T234`, **Lv5 NORMAL, HP25/70, ATK28–35, DEF9**, RIGHT arm severed T237, LEFT arm still functional and dangerous, both legs previously observed supporting weight; enemy alerted to V. Its numeric public template was saved and independently read back **during T236 BEFORE first T236 damage** in `canon/encounters/stone-raker-T236-public.md`; it did NOT exist as a hidden precommit at T234 or T235; no verified RNG. T236 V ordinary Huyết Nha hit preDEF32−DEF9=23, enemy HP70→47, left arm counter misses. **T237** V once again strikes cracked right shoulder (ordinary strike raw31−DEF9=22), enemy HP47→25, joint severs right arm (local consequence, no weakspot damage bonus); enemy counter left arm raw28−VDEF22=6 actual, V HP66→60. STA remains63; BLOOD28 unchanged; undead does not fuel Hấp Huyết or ordinary weapon +7 BLOOD. No XP, loot, Soul, TH or bone core from living third enemy. Neither an automatic final skeleton nor an authorized TH-bearing source.
+
+**Prior turns T228–T235:** T228 observes additional masonry and a SECOND dragging skeleton; hides. T229 waits, safe sword arc unavailable. T230 casts Lv2 Huyết Trảm Nhị Liên once (-12HP/-25STA, first strike32 actual, second misses, enemy counter -7HP): HP61→42, STA28→3, skill EXP +2 base (2→4, bonus unverified not awarded). Public second-skeleton block saved before T230 attack in `canon/encounters/buried-dragger-T230-public.md` Lv5 Normal HP64 ATK27–34 DEF8. T231 normal sword enemy32→10, enemy counter -6HP V42→36; impossible attempted Parry at STA3<7, not activated or paid, no free riposte. T232 ordinary sword kills second skeleton 10→0, character EXP +10 255→265. T233 loots corpse once +12 Souls73→85 and +1 Lõi Xương Xám 1→2 provisional, drinks ONE military HP potion 2→1, HP36→66, ONE uninterrupted safe hour rest STA3→23. T234 additional TWO uninterrupted safe rest hours STA23→63 and cautious patrol reveals third skeleton near tilted boulder. T235 moves on verified pavers to partial rear-right cover, pebble alerts enemy but initial detection unconfirmed; attack arc still blocked until target moves T236.
+
+**Quest/Map:** 2 previously killed skeleton corpses both LOOTED exactly once (T223, T233), carry 2/3 physical grey cores, **not accepted quest proof until issuer inspection**, old burial crypt location/identity with wall UNKNOWN, no entrance, safe underground path or total enemy number verified. Feature atlas `feat/full-atlas-v1-20261020/maps/atlas-v1.json` map `ngoai-thanh-tuong-da-do` revision3, includes observed leaning boulder, safe paving and cracked paver (avoided) after T234–T237, and prior root hollow and construction. Main and feature `maps/active-scene.json` are synced T237, two dead/looted corpses and third live HP25. Use map base with overlay changes, no full redraw each turn. No new Canva image/export generated.
+
+**Rules:** Main `canon/rules.md` OWNER CLARIFICATION T219–T224: custom actions are only intent; consider reach, footing, low STA, enemy independent retaliation, conditional parry; complete public combat HUD including actual HP after DEF/capping, no fabricated RNG, bloodless undead yields no HP/BLOOD passive or automatic TH. `docs/gm-storyline-protocol.md` FAST MODE: no redundant tools for ordinary turns if complete in-chat context, 10-turn cadence or earlier for material change.
+
+**CHECKPOINT:** Normal 10 unsaved turn gate CLOSED at verified T237, next unsaved T238. Active combat; do not skip player turn, invent new opponent or automatically loot kill. No routine Notion/Canva writes; no extra mystery automatically revealed.
+
+---
+
+## HISTORICAL QUICK START — T227 (ARCHIVED)
+
+**HISTORICAL VERIFIED CHECKPOINT T227; SUPERSEDED BY T237 ABOVE.** On 2026-10-21 ten narrated turns T218–T227 were appended as event files and saved in main state; numerical/source authority: `main/state/current.json`, `main/events/0218.md..0227.md`. NEVER replay T218–T227 or issue the T223 first corpse loot again.
 
 ## CURRENT T227 — OUTER WALL & BURIED STONE
 
