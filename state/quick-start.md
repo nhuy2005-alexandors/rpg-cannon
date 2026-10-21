@@ -1,3 +1,19 @@
+# HẮC NHẬT — QUICK START (T272)
+
+**LATEST VERIFIED T272; NEXT T273 IS NOT PLAYED.** Source `state/current.json`, `events/0272.md`, `maps/active-scene.json`, static `maps/tactical/doc-da-xam-camp-v1.svg` blob ea2921b0039beee68642971b3a2dcaae448a17d8, actor overlay `maps/tactical/doc-da-xam-camp-T272-positions.json`. All T263 fixed terrain and old archival map unchanged.
+
+**Vô Danh:** Huyết Kiếm Sĩ Lv6 EXP330/400 HP137/170 STA24/110 BLOOD50/50 Tử Huyết0/20 Souls110 DEF22; Huyết Nha+3 sword currently WIELDED/READY ATK28–36. Liên Nỏ Hắc Nha UNLOADED and STOWED, steel reserve2, Nanh Cốt Tiễn1; Hắc Nha Trọng Kiếm VII carried backup. Huyết Ảnh Bộ Lv1 EXP2/60 READY at 15STA with only <=4m feasible clear landing, NOT used T272. Gạt Kiếm Lv2 EXP6/90 is reactive 7STA vs a real visibly deflectable MELEE hit, never ordinary ranged longbow arrow; NOT used T272. Huyết Trảm Nhị Liên Lv2 EXP8/135 READY but requires25STA plus12HP, unavailable with STA24. Hấp Huyết EXP10/60 passive not activated as NO sword hit. No injury status apart from HP already lost T270. Military potion +30HP still available, no automatic healing/STA recovery.
+
+**T272 adjudication:** V carefully advances on tested solid edges around north of existing crate2 from T271 waypoint northern gap between crate1/crate2 schematic SVG(393,188) to lower FOOT of the pre-existing winding north ascent near schematic(496,184). He does NOT climb the upper bend, reach enemy melee range or spend Huyết Ảnh Bộ. Fresh blood on natural rock is consistent with wounded bowman but not verified boss proof or exact live tracking. Cautious advance has real exposure. Lv7 NORMAL hostile longbowman HP33/85 autonomously releases exactly ONE standard arrow from existing higher bend; V shifts behind old rocky edge and projectile hits STONE (a MISS), zero HP damage. NOT a Gạt Kiếm interception, no STA spent. Enemy now out of sight behind existing higher bend (current position UNKNOWN). Maela from existing rear-left western boulder (178,229) has a previously NOCKED arrow and independent aim, but only sees partial bow arm through stone/tarp; she HOLDS FIRE, arrow retained. Maela unharmed; her recorded personal arrow shots remain7, original stock UNKNOWN. No other shots, damage, EXP, Souls, loot, skill mastery, RNG rolls or quest payout. End resources exactly unchanged: V HP137 STA24 BLOOD50 TH0 Souls110 EXP330; archer HP33/85.
+
+**Map:** Fixed base SVG remains BYTE-IDENTICAL; three crates, tarp, west boulders, north stone switchback, earlier alarm wire and previously looted corpses unmoved. T272 changes ONLY player token from(393,188) to(496,184), keeps Maela(178,229); '?' is the last partial upper bow-arm sight near(462,94) rather than exact enemy position. SVG marker separation is not real distance; never automatically validate a 4m skill. Exposure and enemy reactions remain grounded.
+
+**T273 player choice** should concern climbing the original northern switchback under cover, observing/waiting for Maela catch-up, or withdrawing; upper enemy might shoot, retreat or evade and is NOT frozen. No free healing, crossbow reload, remote sword block, loot or automatic next turn. Garrick chief mission ACTIVE UNPAID and no new identity proof.
+
+---
+
+## Archived T271 and previous quick starts
+
 # HẮC NHẬT — QUICK START (T271)
 
 **LATEST VERIFIED T271 CHECKPOINT; T272 NOT PLAYED.** Read `state/current.json`, `events/0271.md`, `maps/active-scene.json`, immutable base `maps/tactical/doc-da-xam-camp-v1.svg` (exact T263 blob ea2921b0039beee68642971b3a2dcaae448a17d8) with token delta `maps/tactical/doc-da-xam-camp-T271-positions.json`.
