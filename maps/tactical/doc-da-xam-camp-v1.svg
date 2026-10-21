@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-label="Dốc Đá Xám — sơ đồ địa hình cố định điểm trú, không theo tỷ lệ">
+  <rect width="720" height="440" rx="16" fill="#18201f"/>
+  <g stroke="#d9ded8" opacity=".07" stroke-width="1">
+    <path d="M40 0V440M80 0V440M120 0V440M160 0V440M200 0V440M240 0V440M280 0V440M320 0V440M360 0V440M400 0V440M440 0V440M480 0V440M520 0V440M560 0V440M600 0V440M640 0V440M680 0V440"/>
+    <path d="M0 40H720M0 80H720M0 120H720M0 160H720M0 200H720M0 240H720M0 280H720M0 320H720M0 360H720M0 400H720"/>
+  </g>
+  <path d="M462 12L462 88Q470 108 520 152L528 216" stroke="#877e69" stroke-width="58" fill="none" opacity=".55"/>
+  <path d="M462 12L462 88Q470 108 520 152" stroke="#ddc8a0" stroke-width="2" fill="none" stroke-dasharray="7 7" opacity=".8"/>
+  <g fill="#475750" stroke="#74877a" stroke-width="2">
+    <path d="M260 28L345 20L368 82L333 136L247 114L220 62Z"/>
+    <path d="M565 24L694 18L712 124L654 166L566 124Z"/>
+    <path d="M58 116L170 120L207 182L171 246L58 231L28 173Z"/>
+    <path d="M16 280L132 267L177 329L130 409L10 403Z"/>
+    <path d="M605 270L700 249L712 427L605 415Z"/>
+  </g>
+  <rect x="270" y="155" width="322" height="230" rx="12" fill="#87775a" opacity=".13" stroke="#bdac80" stroke-width="2" stroke-dasharray="8 7"/>
+  <path d="M282 160Q420 139 584 159" fill="none" stroke="#cdb995" stroke-width="8" opacity=".6"/>
+  <g fill="#81715a" stroke="#c9b28c" stroke-width="2">
+    <rect x="314" y="206" width="73" height="49" rx="5"/>
+    <rect x="405" y="217" width="77" height="47" rx="5"/>
+    <rect x="355" y="291" width="92" height="54" rx="5"/>
+  </g>
+  <path d="M450 376L570 366" stroke="#e5a882" stroke-width="2" stroke-dasharray="4 4"/>
+  <circle cx="578" cy="365" r="10" fill="#bb625b" stroke="#efd0b6" stroke-width="2"/>
+  <text x="578" y="370" text-anchor="middle" fill="#fff" font-size="15">!</text>
+  <path d="M216 431L288 373" stroke="#d8c69e" stroke-width="43" opacity=".24" fill="none"/>
+  <text x="24" y="34" fill="#e7eddf" font-size="19" font-weight="600">DỐC ĐÁ XÁM</text>
+  <text x="24" y="55" fill="#b5c0b4" font-size="12">Combat map V1 · mốc địa hình bất biến · KHÔNG theo tỷ lệ</text>
+  <text x="426" y="26" fill="#e8d9c2" font-size="13">↑ BẮC</text>
+  <text x="390" y="101" fill="#e8d9c2" font-size="14">Lối đá cao</text>
+  <text x="403" y="181" fill="#e8d9c2" font-size="15">ĐIỂM TRÚ TẤM BẠT</text>
+  <text x="327" y="237" fill="#fff2db" font-size="12">Thùng 1</text>
+  <text x="417" y="244" fill="#fff2db" font-size="12">Thùng 2</text>
+  <text x="369" y="320" fill="#fff2db" font-size="12">Thùng 3</text>
+  <text x="472" y="405" fill="#edb4a4" font-size="12">Dây báo động</text>
+  <text x="50" y="423" fill="#d8ded3" font-size="13">Đường về khúc cua đá</text>
+</svg>
