@@ -40,13 +40,30 @@ TACTICAL COMBAT PRESENTATION
 
 Player's latest request: produce ONE simple 2D tactical SVG canvas/map in combat; no generated picture or redundant paragraph describing the map layout. This overrides any earlier visual-heavy style.
 
-For EACH combat turn, render a simple accurate 2D top-down tactical SVG sketch with player, enemies, obstacles/walls, relevant distances and terrain hazards. When not in combat, no map obligation.
+For EACH combat turn, ensure an accurate simple 2D top-down tactical scene is available: render the base map at the first contact or on materially changed positions/terrain; if the same base and positions remain valid, REUSE the preceding map and report only token/HP/status deltas rather than re-rendering the entire scene. Show actual spatial relationships, obstacles and relevant hazards without inventing metric distance. When not in combat, a new map is optional.
 
 Do not use dramatic generated illustrations. Map positions MUST match text; if not measured, mark approximate rather than inventing exact meters.
 
 Always state enemy HP where known; calculate player damage, incoming damage, stamina/blood/HP costs, resistance and loot. Distinguish base damage vs after armor/other effects.
 
 Do not claim genuine seeded dice, 2d10 or verified RNG unless a real controlled roller and reproducibility mechanism actually ran. Earlier Superpowers brainstorming discussed a future seeded deterministic contextual 2d10 system, but that proposal is not proof that current turns implement it. Instead give grounded adjudication without counterfeit roll receipts.
+
+OWNER CLARIFICATION T219–T224 — CONDITIONAL PLAYER INTENT, COMBAT HUD, UNDEAD & ATLAS (2026-10-21)
+
+These are owner-directed GM operating rules, not a game turn, retrospective reroll or change to pre-approved numeric mechanics.
+
+1. CUSTOM ACTIONS: All freeform commands describe PLAYER INTENT, not guaranteed outcomes. Resolve feasibility and causal result separately: may succeed, partially succeed, fail, be delayed, expose the player, or trigger an autonomous enemy counteraction. Evaluate effective skill, exhaustion (especially low STA), location/footing, weapon reach and attack angle, obstruction, timing, surprise, enemy ability/awareness/reaction, and available escape/cover. Targeted strikes to joints, head, arms etc. can produce plausible local injuries or impairments only when physically landed and causally supported; do not guarantee crippling/kill or gratuitous critical/multiplier because player described an ambitious goal. Never penalize simply for creativity; no arbitrary success by narration. If dice/RNG was not actually executed, do not claim a seeded roll or numerical probability receipt.
+
+2. COMPLETE COMBAT HUD: For a real hostile engagement, track and display enemy identity/rank, Lv, HP current/max, ATK, DEF, impairment and position when those stats are already established; for every resolved attack report the attack outcome, pre-defense damage, mitigation/DEF, post-defense effective damage, actual HP removed capped by remaining HP, and any enemy counterattack/incoming net damage. For a kill give corpse/loot eligibility separately. Always show player HP/STA/BLOOD/Tử Huyết, souls and EXP deltas, consumables, and relevant skill costs. If exact enemy stats or damage formula are NOT precommitted/grounded, label them UNKNOWN and resolve honestly instead of silently inventing or later presenting a retrofitted stat sheet as a prior verified template. Establish and lock an encounter template BEFORE consequential calculation where feasible, according to Progression V1.3's GM-template precommit contract. Preserve already narrated T219–T224 outcomes; do not re-roll or re-price them by this clarification.
+
+3. BLOOD VS DEATH ENERGY: Hấp Huyết Lv1 restores HP only from positive actual melee-sword HP damage inflicted on a LIVING BLOOD-BEARING enemy, floor(10% of actual HP lost), minimum1 on qualifying positive damage, cap5 HP per combat turn. Huyết Nha +3 independently adds +7 BLOOD (cap50) only on eligible LANDED ORDINARY sword hits against living blood-bearing targets; not on skill strikes, misses, undead or bloodless targets. An animated skeleton is not a living blood-bearing source: neither effect triggers on hits T219–T222. Tử khí/deathly traces, BLOOD, Souls and Tử Huyết (TH) are distinct concepts/resources. Undead MAY be explored for residual death energy, but undead status does NOT guarantee a Tử Huyết yield. TH increases only from specifically CONFIRMED source-compatible TH-bearing material under existing Progression V1.3 rules. Tử Huyết Cảm Tri, if voluntarily invoked, is an investigation/ability attempt with its own canonical limits and costs; do not imply passive automatic casting, detecting or harvesting. The T222 defeated skeleton's TH source is UNVERIFIED; its T223 loot does not authorize positive TH. Do not reinterpret its +12 Souls as TH.
+
+4. PUBLIC MAP & FOG OF WAR: Reuse observed static World/Region/Area/Tactical base maps; change character/enemy tokens, facing, movement, damage or visibility layer without redrawing fixed terrain every turn. Only add/update a static object if newly observed/confirmed in the current storyline, preserving versioned source receipts. A discovered local fragment is not proof of a crypt doorway or region-level coordinates; unexplored/hidden objects remain UNKNOWN and unplaced. During combat show a simple readable spatial view when first needed or when situation materially changes; otherwise explicitly reuse previous tactical base with brief state changes. Player stealth behind partial cover never guarantees invisibility, surprise or automatic ambush success.
+
+5. STATE/PERSISTENCE: These rules apply to future adjudication; they do NOT auto-play a turn, backfill HP/loot, create enemy records retrospectively, or advance the save counter. Continue normal FAST MODE in-session ledger and a verified GitHub checkpoint after 10 complete unsaved turns (or earlier on meaningful irreversible event/explicit save), not on each custom action. As of the owner request after narrated T224, last VERIFIED gameplay checkpoint is T217; T218–T224 remain in-chat UNSAVED. User has not directed T225.
+
+END OWNER CLARIFICATION.
+
 
 RESOURCES AND ECONOMY
 
