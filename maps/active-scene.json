@@ -1,9 +1,9 @@
 {
   "schema": "HN-MAP-SCENE-V1",
-  "last_completed_turn": 240,
-  "next_turn": 241,
+  "last_completed_turn": 243,
+  "next_turn": 244,
   "map_id": "ngoai-thanh-tuong-da-do",
-  "status_source": "main/state/current.json at T240 and events/0238.md..0240.md; feature atlas-v1.json map revision3 still local ruin geometry; player's location now outside atlas area",
+  "status_source": "main/state/current.json T243, events/0241.md..0243.md; old wall atlas base rev3 unchanged",
   "current": {
     "tokens": [],
     "movement": [],
@@ -13,7 +13,9 @@
       "T238 third skeleton Hài Cốt Gạt Đá killed by normal sword (25->0, +10 EXP), corpse T239 first looted one provisional grey core +12 Souls. All three observed skeletons now dead and corpses all looted ONCE. No additional enemies confirmed, but total remaining UNKNOWN.",
       "T240 unnamed Hắc Nha market bounty clerk inspected and accepted 3/3 grey cores as task evidence, took all three, gave +16 Souls/+25 EXP and RESOLVED the Hài Cốt Lang Thang quest exactly once. Authentic core class proof does not verify exact crypt location.",
       "T240 player spent full safe night in home base Điện Tế Huyết, no fee, STA110/110, HP60/170, BLOOD28/50, TH0/20, Souls113, EXP300/400, potion1, carried core0.",
-      "STATIC ruin atlas revision3 unchanged; leaving region does not prove ruins permanently cleared or that a hidden corridor exists."
+      "STATIC ruin atlas revision3 unchanged; leaving region does not prove ruins permanently cleared or that a hidden corridor exists.",
+      "T241 exam, T242 +80 HP/−30 Souls, T243 post-rest final Edran treatment +30 actual HP/−15 Souls. V Lv6 HP170 STA75 BLOOD28 TH0 Souls68 EXP300, Huyết Dược x1.",
+      "T243 Maela voluntary temporary western-road leader-bounty team arrangement: V front sword, Maela rear-oblique ranged support; 5 joint drills 4 PASS 1 line-of-fire FAIL, V −35STA. Both still at Điện Tế Huyết, bandit quest ACTIVE/unpaid, not in ruin."
     ]
   },
   "legacy_timeline": {
@@ -109,5 +111,5 @@
     "player_left": true,
     "notes": "Local tactical positions below refer to historical T239, not present player placement"
   },
-  "current_player_location": "Hắc Nha Thành — Điện Tế Huyết (home base), after full-night rest T240"
+  "current_player_location": "Hắc Nha Thành — sân tập Điện Tế Huyết, together with Maela, T243, not west road"
 }
