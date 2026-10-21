@@ -1,14 +1,14 @@
 {
-  "snapshot_version": "HN-S254-WESTROAD-TWO-GUARDS",
-  "last_completed_turn": 254,
-  "next_turn": 255,
+  "snapshot_version": "HN-S264-WESTERN-COVER-LOADED-CROSSBOW",
+  "last_completed_turn": 264,
+  "next_turn": 265,
   "as_of": "2026-10-21",
-  "location": "Dốc Đá Xám, khu vực khúc cua đá dưới điểm trú có tấm bạt; Vô Danh gần thi thể người mang rìu, Maela ở góc cung sau bên trái. Người thứ ba chưa xác định vị trí.",
+  "location": "Dốc Đá Xám: phía tây điểm trú tấm bạt, sau khối đá lớn; Vô Danh giữ Liên Nỏ Hắc Nha đã nạp; Maela giữ cung sau đá bên trái. Lối bắc bị che khuất, tình trạng đối tượng chưa xác nhận.",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
     "level": 6,
-    "exp": 320,
+    "exp": 330,
     "exp_next": 400,
     "unallocated_points": 0,
     "attributes": {
@@ -19,11 +19,11 @@
     },
     "resources": {
       "HP": {
-        "current": 151,
+        "current": 145,
         "max": 170
       },
       "STA": {
-        "current": 56,
+        "current": 24,
         "max": 110
       },
       "BLOOD": {
@@ -34,7 +34,7 @@
         "current": 0,
         "max": 20
       },
-      "souls": 82
+      "souls": 110
     },
     "passives": {
       "HapHuyet": {
@@ -215,7 +215,7 @@
           "rarity": "Common",
           "level": 2,
           "trigger": "DEFENSIVE_REACTION",
-          "skill_exp_current": 4,
+          "skill_exp_current": 6,
           "next_threshold": 90,
           "mastery_receipts": [
             {
@@ -233,6 +233,14 @@
               "bonus": 0,
               "source": "events/0253.md",
               "action_id": "T253/A02"
+            },
+            {
+              "turn": 261,
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "source": "events/0261.md",
+              "action_id": "T261/A01"
             }
           ],
           "next_level_effect_approved": true,
@@ -255,6 +263,16 @@
               "source": "events/0253.md",
               "practice_context_id": "west-road:second-axe-parry",
               "rng_version": null
+            },
+            "T261/A01": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "rng_version": null,
+              "source": "events/0261.md",
+              "practice_context_id": "west-road-greycoat-actual-dagger-parry",
+              "effective": true
             }
           },
           "next_level_contract": "V1.3-PARRY-L3"
@@ -357,7 +375,7 @@
           "rarity": "Rare",
           "level": 2,
           "trigger": "ACTIVE",
-          "skill_exp_current": 6,
+          "skill_exp_current": 8,
           "next_threshold": 135,
           "mastery_receipts": [
             {
@@ -385,6 +403,14 @@
               "bonus": 0,
               "source": "events/0253.md",
               "action_id": "T253/A01"
+            },
+            {
+              "turn": 259,
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "source": "events/0259.md",
+              "action_id": "T259/A01"
             }
           ],
           "next_level_effect_approved": true,
@@ -419,6 +445,16 @@
               "source": "events/0253.md",
               "practice_context_id": "west-road:two-strike-cast",
               "rng_version": null
+            },
+            "T259/A01": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "rng_version": null,
+              "source": "events/0259.md",
+              "practice_context_id": "west-road-greycoat-real-nhielien:one-hit-one-miss",
+              "effective": true
             }
           },
           "next_level_contract": "V1.3-TWO-SLASH-L3"
@@ -455,7 +491,7 @@
           "rarity": "Rare",
           "level": 1,
           "trigger": "PASSIVE_QUALIFYING_TRIGGER",
-          "skill_exp_current": 4,
+          "skill_exp_current": 10,
           "next_threshold": 60,
           "mastery_receipts": [
             {
@@ -473,6 +509,30 @@
               "bonus": 0,
               "source": "events/0254.md",
               "action_id": "T254/A02"
+            },
+            {
+              "turn": 259,
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "source": "events/0259.md",
+              "action_id": "T259/A02"
+            },
+            {
+              "turn": 260,
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "source": "events/0260.md",
+              "action_id": "T260/A01"
+            },
+            {
+              "turn": 261,
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "source": "events/0261.md",
+              "action_id": "T261/A02"
             }
           ],
           "next_level_effect_approved": false,
@@ -495,6 +555,36 @@
               "source": "events/0254.md",
               "practice_context_id": "west-road:finisher-heal",
               "rng_version": null
+            },
+            "T259/A02": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "rng_version": null,
+              "source": "events/0259.md",
+              "practice_context_id": "west-road-greycoat-combo-actual-lifesteal:3HP",
+              "effective": true
+            },
+            "T260/A01": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "rng_version": null,
+              "source": "events/0260.md",
+              "practice_context_id": "west-road-greycoat-ordinary-sword-heal:2HP",
+              "effective": true
+            },
+            "T261/A02": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "rng_version": null,
+              "source": "events/0261.md",
+              "practice_context_id": "west-road-greycoat-finishing-sword-heal:1HP",
+              "effective": true
             }
           }
         },
@@ -629,18 +719,27 @@
     "ranged": "Liên Nỏ Hắc Nha",
     "armor": "Lang Vương Huyết Bì Giáp Rare; DEF total 22",
     "armguards": "+1 STR",
-    "old_armor": "Giáp Da Hắc Nha +2; stored"
+    "old_armor": "Giáp Da Hắc Nha +2; stored",
+    "ranged_loaded_state": "ONE_STEEL_BOLT_LOADED_READY_T263_UNFIRED_T264",
+    "primary_in_hand": "Liên Nỏ Hắc Nha (loaded 1 steel bolt)",
+    "primary_sword_carried_state": "Huyết Nha +3 SHEATHED; not wielded; Parry unavailable while crossbow held",
+    "secondary_carried_state": "Hắc Nha Trọng Kiếm VII BACKUP CARRIED, NOT WIELDED"
   },
   "inventory": {
     "HuyetDuocQuanDung": 1,
     "heal_HP_each": 30,
     "TinhLucDuoc": 0,
-    "steel_bolts": 3,
+    "steel_bolts": 2,
     "NanhCotTien": 1,
     "black_claw_hyena_fang_pairs": 0,
     "LoiXuongXam": 0,
-    "DaoNganThuong": 1,
-    "TheSatBaVetKhia": 1
+    "DaoNganThuong": 2,
+    "TheSatBaVetKhia": 1,
+    "steel_bolts_loaded": 1,
+    "steel_bolts_total_owned": 3,
+    "NoSanGoCu": 1,
+    "TenNoTho": 2,
+    "TuiDaBanVeDuongNui": 1
   },
   "base_storage": {
     "NanhLangVuong": 2,
@@ -994,6 +1093,47 @@
       "maela_temporary_voluntary": true,
       "maela_arrows_used_observed": 3,
       "maela_remaining_arrows": "UNKNOWN"
+    },
+    "doc_da_xam_T255_T264": {
+      "source_events": "events/0255.md..events/0264.md",
+      "base_map": "maps/tactical/doc-da-xam-camp-v1.svg",
+      "map_actor_overlay": "maps/tactical/doc-da-xam-camp-T264-positions.json",
+      "three_dead_corpses_all_first_looted": true,
+      "tarp_has_three_crates_observed_not_looted": true,
+      "alarm_wire_identified_T257": true,
+      "alarm_wire_triggered_by_greycoat_T260": true,
+      "alarm_wire_unmodified_T264": true,
+      "human_greycoat": {
+        "id": "enemy:west-road-grey-coat-T256",
+        "Lv": 6,
+        "rank": "NORMAL",
+        "HP": 0,
+        "dead_T261": true,
+        "looted_once_T262": true,
+        "leader_proof": "UNKNOWN"
+      },
+      "maela": {
+        "temporary_voluntary_ally": true,
+        "uninjured": true,
+        "personal_arrows_used_explicit": 4,
+        "personal_arrows_recovered_usable": 3,
+        "personal_arrows_recovered_damaged": 1,
+        "total_stock": "UNKNOWN"
+      },
+      "uphill_person": {
+        "last_observed": "partly obscured figure or clothing and faint sounds on northern upper path",
+        "identity": "UNKNOWN",
+        "number": "UNKNOWN",
+        "actual_location": "UNKNOWN",
+        "has_spotted_party": "NOT_CONFIRMED",
+        "has_heard_bell": "UNKNOWN"
+      },
+      "west_retreat_T264": {
+        "V": "western boulder cover, crossbow loaded",
+        "Maela": "left rear western boulder cover, bow ready",
+        "unwanted_noise": "single pebble click, possible enemy suspicion",
+        "enemy_attacks_confirmed": 0
+      }
     }
   },
   "npc_last_verified_T93": {
@@ -3081,6 +3221,106 @@
       "souls_after": 82,
       "EXP_after": 320,
       "TuHuyet_after": 0
+    },
+    "T255": {
+      "source": "events/0255.md",
+      "HP_after": 151,
+      "STA_after": 56,
+      "BLOOD_after": 50,
+      "TuHuyet_after": 0,
+      "souls_after": 96,
+      "EXP_after": 320,
+      "status": "NARRATED_ACCEPTED_CHECKPOINTED_T264"
+    },
+    "T256": {
+      "source": "events/0256.md",
+      "HP_after": 151,
+      "STA_after": 56,
+      "BLOOD_after": 50,
+      "TuHuyet_after": 0,
+      "souls_after": 96,
+      "EXP_after": 320,
+      "status": "NARRATED_ACCEPTED_CHECKPOINTED_T264"
+    },
+    "T257": {
+      "source": "events/0257.md",
+      "HP_after": 151,
+      "STA_after": 56,
+      "BLOOD_after": 50,
+      "TuHuyet_after": 0,
+      "souls_after": 96,
+      "EXP_after": 320,
+      "status": "NARRATED_ACCEPTED_CHECKPOINTED_T264"
+    },
+    "T258": {
+      "source": "events/0258.md",
+      "HP_after": 151,
+      "STA_after": 56,
+      "BLOOD_after": 50,
+      "TuHuyet_after": 0,
+      "souls_after": 96,
+      "EXP_after": 320,
+      "status": "NARRATED_ACCEPTED_CHECKPOINTED_T264"
+    },
+    "T259": {
+      "source": "events/0259.md",
+      "HP_after": 142,
+      "STA_after": 31,
+      "BLOOD_after": 50,
+      "TuHuyet_after": 0,
+      "souls_after": 96,
+      "EXP_after": 320,
+      "status": "NARRATED_ACCEPTED_CHECKPOINTED_T264"
+    },
+    "T260": {
+      "source": "events/0260.md",
+      "HP_after": 144,
+      "STA_after": 31,
+      "BLOOD_after": 50,
+      "TuHuyet_after": 0,
+      "souls_after": 96,
+      "EXP_after": 320,
+      "status": "NARRATED_ACCEPTED_CHECKPOINTED_T264"
+    },
+    "T261": {
+      "source": "events/0261.md",
+      "HP_after": 145,
+      "STA_after": 24,
+      "BLOOD_after": 50,
+      "TuHuyet_after": 0,
+      "souls_after": 96,
+      "EXP_after": 330,
+      "status": "NARRATED_ACCEPTED_CHECKPOINTED_T264"
+    },
+    "T262": {
+      "source": "events/0262.md",
+      "HP_after": 145,
+      "STA_after": 24,
+      "BLOOD_after": 50,
+      "TuHuyet_after": 0,
+      "souls_after": 110,
+      "EXP_after": 330,
+      "status": "NARRATED_ACCEPTED_CHECKPOINTED_T264"
+    },
+    "T263": {
+      "source": "events/0263.md",
+      "HP_after": 145,
+      "STA_after": 24,
+      "BLOOD_after": 50,
+      "TuHuyet_after": 0,
+      "souls_after": 110,
+      "EXP_after": 330,
+      "status": "NARRATED_ACCEPTED_CHECKPOINTED_T264"
+    },
+    "T264": {
+      "source": "events/0264.md",
+      "HP_after": 145,
+      "STA_after": 24,
+      "BLOOD_after": 50,
+      "TuHuyet_after": 0,
+      "souls_after": 110,
+      "EXP_after": 330,
+      "status": "NARRATED_ACCEPTED_CHECKPOINTED_T264"
     }
   },
   "provenance": {
@@ -3258,10 +3498,10 @@
       },
       "reward_received": false,
       "source": "events/0162.md",
-      "progress": "T245–T254 west-road scouting: dark cloak sighted at broken wagon then followed to tarp/crates with at least3 armed persons seen T247. First Lv6 Normal lookout defeated T250, looted once T251 (+14 Souls and 2 items). Second Lv6 Normal axeman defeated T254, corpse NOT looted. Unknown affiliation/camp leader and third person's present location; quest reward unpaid.",
-      "next_step": "T255 player-directed choice: inspect unlooted axeman under threat, observe tarp, or reposition/withdraw.",
+      "progress": "T245–T264: tarp-and-crates site located on northern rocks at Dốc Đá Xám. Three Lv6 NORMAL humans killed (cloaked lookout T250, axe guard T254, grey-cloak knife fighter T261) and all three unique corpses first looted by T262 (14 Souls each). Old wooden hunting crossbow and route sketch with three marks recovered, but none yet verified as bounty leader/robber identity proof. T257 found low metal-noise warning cord; grey-coat triggered T260, alert recipients UNKNOWN. T263 V loaded one steel bolt into Liên Nỏ. T264 V/M withdrew carefully to west boulder; unknown northern figure may have heard pebble; no active target confirmed.",
+      "next_step": "From west stone cover T265 decide observe, shoot only real safely exposed hostile, tactical withdrawal or inspect evidence later; leader/faction not verified. Do not pay Garrick reward.",
       "notional_target_reputation": "Crossbowman rumored among bandits, unverified",
-      "last_evidence_turn": 254,
+      "last_evidence_turn": 264,
       "intelligence_T163": {
         "source": "events/0163.md",
         "verified_patrol": [
@@ -3959,6 +4199,38 @@
         "claimed": true,
         "encounter_bonus": 0,
         "TH": 0
+      },
+      "enemy:west-road-axe-guard-T251": {
+        "claim_id": "claim:T255:west-road-axe-guard:v1.3",
+        "source": "events/0255.md",
+        "loot_turn": 255,
+        "souls": 14,
+        "L_reward": 6,
+        "rank": "normal",
+        "rank_multiplier": 1,
+        "D": 1,
+        "claimed": true,
+        "encounter_bonus": 0,
+        "TH": 0,
+        "arrow_recovery": "two usable for Maela",
+        "not_taken": [
+          "short axe",
+          "damaged leather"
+        ]
+      },
+      "enemy:west-road-grey-coat-T256": {
+        "claim_id": "claim:T262:west-road-greycoat:v1.3",
+        "source": "events/0262.md",
+        "loot_turn": 262,
+        "souls": 14,
+        "L_reward": 6,
+        "rank": "normal",
+        "rank_multiplier": 1,
+        "D": 1,
+        "claimed": true,
+        "encounter_bonus": 0,
+        "TH": 0,
+        "loot_note": "old wood hunting crossbow, two crude bolts, second ordinary dagger, leather bag/route sketch; one Maela arrow recovered"
       }
     },
     "C_status": "DEAD_T199_FIRST_SOUL_CLAIM_COMPLETE_T200_NO_DUPLICATE",
@@ -4124,17 +4396,17 @@
     "reward": "NONE"
   },
   "checkpoint": {
-    "id": "HN-T254-WESTROAD-TEN-TURNS",
-    "last_completed_turn": 254,
-    "source_events": "events/0245.md..events/0254.md",
-    "previous_checkpoint_last_completed_turn": 244,
+    "id": "HN-T264-WEST-COVER-TEN-TURN-CHECKPOINT",
+    "last_completed_turn": 264,
+    "source_events": "events/0255.md..events/0264.md",
+    "previous_checkpoint_last_completed_turn": 254,
     "number_narrated_turns": 10,
     "gameplay_retcon": false,
-    "notion_sync_status": "NOT_PROJECTED",
+    "notion_sync_status": "NO_NOTION_WRITE_OR_CANVA_UPDATE",
     "chat_only_unsaved_turns_after_verified_write": 0,
     "notion_hub_page_id": "3fe864d2-95ce-8178-95ae-d0bcfde6ac34",
     "notion_summary_sources_git_commit": null,
-    "checkpoint_reason": "TEN_ACCEPTED_TURNS"
+    "checkpoint_reason": "TEN_ACCEPTED_COMPLETED_TURNS_T255_T264"
   },
   "battle_state_T237": {
     "enemy_id": "enemy:stone-raker-T234",
@@ -4190,5 +4462,24 @@
     "HuyetAnhBo_CD": 0,
     "HuyetTramNhiLien_CD": 2,
     "Maela_position": "rear-left covered bow line"
+  },
+  "battle_state_T264": {
+    "status": "WESTERN_COVER_WATCHING_POTENTIAL_NORTHERN_MOTION",
+    "confirmed_new_enemy_visible": 0,
+    "unverified_silhouette": true,
+    "alarm_bell_triggered_T260": true,
+    "ally": "Maela west cover bow ready",
+    "player": "V west cover Liên Nỏ with one steel bolt loaded",
+    "HuyetNha_sheathed": true,
+    "HacNhaTrongKiemVII_backup_carried": true,
+    "parry_not_available_while_crossbow_wielded": true,
+    "HuyetAnhBo_CD": 0,
+    "HuyetTramNhiLien_CD": 0,
+    "loaded_steel_bolt": 1,
+    "steel_bolts_reserve": 2,
+    "NanhCotTien_reserve": 1,
+    "enemy_corpse_looted_once_count": 3,
+    "map_ref": "maps/tactical/doc-da-xam-camp-v1.svg",
+    "map_overlay": "maps/tactical/doc-da-xam-camp-T264-positions.json"
   }
 }
