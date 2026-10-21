@@ -1,19 +1,19 @@
 {
   "schema": "HN-MAP-SCENE-V1",
-  "last_completed_turn": 269,
-  "next_turn": 270,
+  "last_completed_turn": 270,
+  "next_turn": 271,
   "map_id": "duong-tay-doc-da-xam-camp",
-  "status_source": "T269 events/0269.md, state/current.json, fixed base svg, overlay T269",
+  "status_source": "T270 event events/0270.md, state/current.json, immutable camp base and overlay T270",
   "current": {
     "tokens": [
       {
         "id": "vo-danh",
         "category": "player",
         "label": "V",
-        "x": 30.28,
-        "y": 49.09,
+        "x": 42.08,
+        "y": 44.77,
         "facing": "NE",
-        "status": "NORTH_TIP_WEST_BOULDER_HUYET_NHA_WIELDED"
+        "status": "FIRST_CRATE_NW_OUTSIDE_CORNER_HUYET_NHA_WIELDED_HP137"
       },
       {
         "id": "maela",
@@ -22,51 +22,52 @@
         "x": 24.72,
         "y": 52.05,
         "facing": "N",
-        "status": "REAR_LEFT_COVER_BOW_ARROW_NOCKED"
+        "status": "REAR_LEFT_COVER_AFTER_ONE_ARROW_NOT_NOCKED"
       }
     ],
     "movement": [
       {
         "actor": "vo-danh",
         "from": [
-          29.72,
-          61.36
-        ],
-        "to": [
           30.28,
           49.09
         ],
-        "turn": 269
+        "to": [
+          42.08,
+          44.77
+        ],
+        "turn": 270
       },
       {
         "actor": "maela",
         "from": [
-          22.22,
-          59.32
+          24.72,
+          52.05
         ],
         "to": [
           24.72,
           52.05
         ],
-        "turn": 269
+        "turn": 270
       }
     ],
     "visible_hostiles": [],
     "notes": [
-      "COMBAT TERRAIN BASE IMMUTABLE: maps/tactical/doc-da-xam-camp-v1.svg SHA ea2921b0039beee68642971b3a2dcaae448a17d8. Exactly same three crates, tarp, north switchback, west boulders, alarm wire and corpses. Update tokens only.",
-      "T269 V advanced under cover to north tip of western boulder at schematic SVG(218,216), Maela moved rear-left to (178,229). Neither crossed exposed loose-gravel approach or reached high path. No measured map units.",
-      "T269 archer Lv7 Normal HP50 kept withdrawing higher on same north route. Only partial silhouette and bow glimpse, not targetable. No shot by anybody, no damage, no skill, parry or resources spent.",
-      "V Lv6 HP145/170 STA24/110 BLOOD50/50 TH0/20 Souls110 EXP330/400 with Huyết Nha+3 WIELDED and Liên Nỏ Hắc Nha unloaded/stowed; steel bolts reserve2, special1.",
-      "Maela unhurt, bow arrow remains nocked; total documented arrows used in excursion6, original total unknown. Garrick quest ACTIVE UNPAID, boss not identified.",
-      "Old ruins preserved in inactive_scene_T240 and legacy_timeline. T270 awaits user."
+      "TERRAIN IMMUTABLE since T263: maps/tactical/doc-da-xam-camp-v1.svg blob ea2921b0039beee68642971b3a2dcaae448a17d8. EXACT same 3 crates, tarp, west rocks, ascending north switchback, bell tripwire and 3 looted corpses. T270 changes token positions ONLY.",
+      "T270 V leaves north tip west boulder (218,216), crosses INITIAL loose gravel segment under arrow fire and reaches PARTIAL cover NW OUTSIDE of first cargo crate at (303,197). No full crossing to north uphill path and no 4m Huyết Ảnh Bộ teleport; cannot infer real meters from SVG.",
+      "T270 Lv7 NORMAL archer at existing upper rock bend exposes torso to shoot at V: bow arrow raw30−DEF22=8, V HP145→137; persistent bleed/wound status NOT established. Gạt Kiếm only parries eligible MELEE, so NOT attempted.",
+      "T270 Maela behind rear-left west boulder (178,229) has real oblique torso line above tarp; independently shoots 1 arrow raw27−enemy DEF10=17, archer HP50→33. Arrow not recovered, 7 personal shots known on outing, initial stock UNKNOWN; bow not re-nocked at end.",
+      "Archer retreated behind rock after Maela shot, alive HP33/85, exact current position NOT observed; no extra bow shots or reinforcements. Quest Garrick leader unverified and reward UNPAID.",
+      "T270 V Lv6 HP137 STA24 BLOOD50 TH0 Souls110 EXP330. Huyết Nha+3 still ready, crossbow empty stowed (steel reserve2, special bolt1). Maela unhurt. No stamina recovery or skill costs.",
+      "T271 NOT PLAYED. Historical maps preserved in inactive_scene_T240 and legacy_timeline."
     ],
     "relative_actor_locations": {
-      "vo_danh": "near north end of existing western boulder on stable rock, before exposed gravel, sword Huyết Nha+3 ready, crossbow stowed empty",
-      "maela": "rear-left on lower west rock cover, bow arrow nocked, independent fire judgment",
-      "upper_archer": "Lv7 Normal HP50 last indirectly glimpsed higher on SAME existing north switchback (schematic approx [462,84]), currently behind cover exact position UNKNOWN"
+      "vo_danh": "(303,197) outer NW corner first original cargo crate, with partial upper bow exposure and lower-body crate cover; sword Huyết Nha+3 WIELDED; north path foot NOT reached",
+      "maela": "(178,229) stays rear-left lower western boulder, expended her nocked arrow, remains healthy, must nock again",
+      "upper_archer": "Lv7 Normal HP33 after Maela hit, last exposed at existing north higher turn (464,94), currently hidden exact location UNKNOWN"
     },
     "base_map_svg": "maps/tactical/doc-da-xam-camp-v1.svg",
-    "position_overlay": "maps/tactical/doc-da-xam-camp-T269-positions.json",
+    "position_overlay": "maps/tactical/doc-da-xam-camp-T270-positions.json",
     "coordinate_note": "Current token x/y in percentages of an UNMEASURED viewBox sketch, NOT physical atlas geography"
   },
   "legacy_timeline": {
