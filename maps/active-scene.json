@@ -1,34 +1,66 @@
 {
   "schema": "HN-MAP-SCENE-V1",
-  "last_completed_turn": 227,
-  "next_turn": 228,
+  "last_completed_turn": 237,
+  "next_turn": 238,
   "map_id": "ngoai-thanh-tuong-da-do",
-  "status_source": "main/state/current.json, events/0218.md..events/0227.md and feature maps/atlas-v1.json revision2",
+  "status_source": "GitHub main/state/current.json T237 and events/0228.md..events/0237.md; feature maps/atlas-v1.json local revision3",
   "current": {
     "tokens": [
       {
         "id": "vo-danh",
         "label": "V",
         "category": "player",
-        "x": 36,
-        "y": 28,
-        "facing": "S",
+        "x": 73,
+        "y": 48,
+        "facing": "SE",
         "status": "ALIVE",
-        "tactical_state": "BEHIND_PARTIAL_WALL_COVER_READY_SWORD",
+        "tactical_state": "SWORD_READY_MELEE_ON_TESTED_PAVERS",
         "actual_geographic_bearing": "UNKNOWN",
-        "weapon": "Huyết Nha +3, ordinary guard",
-        "position_note": "Back behind old ruined wall/brush at high safe edge after inspecting stone joints T227. S is DIAGRAM-DOWN toward low slope, NOT cardinal south."
+        "weapon": "Huyết Nha +3 ordinary sword",
+        "position_note": "One short step back after T237 incoming hit; still on probed safe high paving adjacent to leaning rock. Facing SE is SCHEMATIC toward enemy, NOT real southeast."
+      },
+      {
+        "id": "enemy:stone-raker-T234",
+        "label": "E3",
+        "category": "enemy",
+        "x": 88,
+        "y": 63,
+        "facing": "NW",
+        "status": "ALIVE_HOSTILE",
+        "HP_current": 25,
+        "HP_max": 70,
+        "ATK": "28–35",
+        "DEF": 9,
+        "rank": "NORMAL",
+        "level": 5,
+        "arm_right": "SEVERED_T237",
+        "arm_left": "FUNCTIONAL",
+        "actual_geographic_bearing": "UNKNOWN",
+        "position_note": "Enemy on/near checked high pavers at leaning boulder, near unsafe lower lip; alerted to player, melee distance but exact meters UNKNOWN."
       }
     ],
     "movement": [],
-    "visible_hostiles": [],
+    "visible_hostiles": [
+      {
+        "id": "enemy:stone-raker-T234",
+        "name": "Hài Cốt Gạt Đá",
+        "HP": 25,
+        "max_HP": 70,
+        "level": 5,
+        "rank": "NORMAL",
+        "ATK": "28–35",
+        "DEF": 9,
+        "right_arm": "SEVERED_T237",
+        "left_arm": "ACTIVE",
+        "detected_V": true
+      }
+    ],
     "notes": [
-      "T218 one skeleton emerged by root gap; T219–T222 targeted attacks and counterattack; corpse killed T222, looted once T223 (+12 Souls, one provisional grey bone core); no other hostile confirmed",
-      "T223–T227 only safe-surface scouting; one small hollow, two dressed straight edges, upright flat stone with horizontal joint and intermittent weak draft; groove/pavers could form drainage/foundation system but continuity and purpose UNKNOWN",
-      "T225 qualitative ambiguous Tử Huyết Cảm Tri did NOT confirm a distinct TH-bearing source; TH still 0",
-      "T226 soil slipped on light probing: lower root/lip area UNSAFE and NOT TRAVERSED",
-      "V at T227 is behind partial wall cover with sword ready; a hostile's detection of V NOT provably impossible",
-      "Local map axes and token facing schematic, no surveyed bearing, meters, or verified crypt entrance. Atlas base revision2 on feature branch."
+      "T228–T229 second dragging skeleton initially near unsafe lower roots, V covered by boulder; T230 first and second Nhị Liên strikes (one hit, one miss), enemy counter; T231 normal sword and failed-to-trigger Parry due only 3STA; T232 killed second skeleton; T233 looted it once (one provisional bone core, 12 souls), consumed one +30HP potion and rested safely 1h; T234 rested safely 2h (+40STA).",
+      "T234–T235 third skeleton moving stones beside leaning boulder; V stealth-flanked but pebble alerted target. T236 public enemy stat block committed before first damage; T236 ordinary sword 70->47, enemy attack misses. T237 ordinary sword 47->25 and RIGHT arm severed; counter with LEFT arm causes V -6HP (66->60), no RNG receipts.",
+      "T237 ACTIVE fight: V Lv6 HP60 STA63 BLOOD28 TH0 Souls85 EXP265; third skeleton HP25/70 Lv5 Normal ATK28–35 DEF9, left arm still functional. 2/3 provisional grey cores, bounty issuer verification zero and quest unpaid.",
+      "No other currently visible enemy. 2 previously defeated skeleton corpses have been looted exactly once. Number remaining enemy UNKNOWN. No TH-bearing source or valid burial crypt entrance established.",
+      "Structural objects: old wall and groove, root hollow with weak intermittent breeze and unstable lip, tilting boulder and cracked paver (avoided), tested higher paving. Regional bearing and actual metric distances UNKNOWN; map feature base revision3, no unrelated static object moved."
     ]
   },
   "legacy_timeline": {
@@ -63,11 +95,26 @@
           "y": 72,
           "status": "DEAD_T222_LOOTED_ONCE_T223",
           "HP": 0
+        },
+        {
+          "id": "enemy:dragging-skeleton-T228",
+          "x": 70,
+          "y": 74,
+          "status": "DEAD_T232_LOOTED_ONCE_T233",
+          "HP": 0
         }
       ],
-      "confirmed_active_hostiles": 0,
+      "confirmed_active_hostiles": 1,
       "actual_enemy_population_remaining": "UNKNOWN",
-      "not_crypt_verified": true
+      "not_crypt_verified": true,
+      "active_hostiles": [
+        {
+          "id": "enemy:stone-raker-T234",
+          "status": "ACTIVE_T237_HP25",
+          "right_arm": "SEVERED",
+          "left_arm": "FUNCTIONAL"
+        }
+      ]
     }
   },
   "contract": "Increment only current tokens, movement, confirmed terrain object updates. Never move static terrain because of a narrative turn alone. Display north and facing arrows distinctly."
