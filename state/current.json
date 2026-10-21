@@ -1,9 +1,9 @@
 {
-  "snapshot_version": "HN-S240-V1.3-QUEST-RESOLUTION-CHECKPOINT",
-  "last_completed_turn": 240,
-  "next_turn": 241,
+  "snapshot_version": "HN-S243-MAELA-WESTERN-COOP-EARLY",
+  "last_completed_turn": 243,
+  "next_turn": 244,
   "as_of": "2026-10-21",
-  "location": "Hắc Nha Thành — Điện Tế Huyết (home base), after an uninterrupted full overnight rest. Safe at present; no hostile in active combat. No fee for home base. Next T241 player-directed.",
+  "location": "Hắc Nha Thành — sân tập Điện Tế Huyết, bên cạnh Maela sau huấn luyện hai người Vô Danh cận chiến / Maela cung hỗ trợ; chưa khởi hành tới Đường Tây.",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
@@ -19,11 +19,11 @@
     },
     "resources": {
       "HP": {
-        "current": 60,
+        "current": 170,
         "max": 170
       },
       "STA": {
-        "current": 110,
+        "current": 75,
         "max": 110
       },
       "BLOOD": {
@@ -34,7 +34,7 @@
         "current": 0,
         "max": 20
       },
-      "souls": 113
+      "souls": 68
     },
     "passives": {
       "HapHuyet": {
@@ -645,6 +645,118 @@
       "fee_souls": 0,
       "potions_used": 0,
       "time_of_day_exact": "UNKNOWN"
+    },
+    "edran_HP_therapy_T241_T243": {
+      "source_events": [
+        "events/0241.md",
+        "events/0242.md",
+        "events/0243.md"
+      ],
+      "T241_quote": {
+        "source": "Edran new T241 in-world quote",
+        "per_treatment_hp_recovery_cap": 40,
+        "cost_souls": 15,
+        "duration_hours": 2
+      },
+      "T242_completed_courses": 2,
+      "T242_total_cost_Souls": 30,
+      "T242_HP_before": 60,
+      "T242_HP_after": 140,
+      "T242_recommendation": "Mandatory clinical rest/reexam before another major course",
+      "T243_recovery_night": "UNINTERRUPTED; HP unchanged before next course",
+      "T243_reexam": "PASS",
+      "T243_completed_additional_courses": 1,
+      "T243_souls_cost": 15,
+      "T243_HP_before": 140,
+      "T243_HP_after": 170,
+      "T243_nominal_40_heal_actual_30_due_to_max_cap": true,
+      "player_Souls_after": 68,
+      "potions_consumed": 0,
+      "other_magic_granted": false,
+      "additional_future_healing_not_preapproved": true
+    },
+    "durgan_forge_quotes_T242": {
+      "source": "events/0242.md",
+      "status": "QUOTES_ONLY_NO_CRAFT",
+      "current_gear": {
+        "HuyetNha": "Rare +3 ATK28–36",
+        "HacNhaTrongKiemVII": "ATK29–38",
+        "LangVuongHuyetBiGiap": "Rare, player total DEF22"
+      },
+      "proposals": {
+        "HuyetNhaPlus4": {
+          "requires": [
+            "Huyết Tinh Tinh Anh ≥1",
+            "Hắc Thiết Tinh Luyện ≥1"
+          ],
+          "held_each": 0,
+          "cost_souls": "NOT_QUOTED",
+          "result_stats": "UNVERIFIED"
+        },
+        "armor_reinforce": {
+          "quote_souls": 35,
+          "materials": {
+            "HuyetCotLangVuong": 1,
+            "TraoLangVuong": 2
+          },
+          "duration_hours": 3,
+          "target_total_DEF": 23,
+          "conditional_on_completion": true
+        },
+        "heavy_sword_tune": {
+          "quote_souls": 25,
+          "duration_hours": 2,
+          "expected_ATK": "30–39",
+          "conditional_on_completion": true
+        }
+      },
+      "items_forged": 0,
+      "souls_spent_at_forge": 0,
+      "materials_spent_at_forge": 0,
+      "offer_unexpired_status": "NOT_RECHECKED_AFTER_T243"
+    },
+    "maela_west_road_joint_tactics_T243": {
+      "source": "events/0243.md",
+      "npc": "Maela",
+      "npc_role": "FREE_HUNTER_VOLUNTARY_BOW_SUPPORT",
+      "relationship": "ALLY_VOLUNTARY_TEMPORARY_FOR_WEST_ROAD_BOUNTY",
+      "not_permanent_follower": true,
+      "no_pact_or_romance": true,
+      "verbal_consent": true,
+      "cooperation_conditions": [
+        "Reconnaissance before fighting if enemy strength and ground unknown",
+        "Maela chooses appropriate cover/angle/targets independently",
+        "Do not fire through Vô Danh or cover and no guaranteed line of sight",
+        "Both preserve safe retreat and can abort if untenable",
+        "No fixed fee, reward split or loot-sharing contract agreed"
+      ],
+      "tactical_roles": {
+        "V": "frontline melee with Huyết Nha +3, blocks/repositions but must not obstruct Maela's line of fire",
+        "Maela": "rear-oblique bow overwatch, independent aim/reload/cover with normal ammunition constraints"
+      },
+      "drill_results": {
+        "1_frontline_and_oblique_fire": "PASS",
+        "2_target_transition_to_ranged_dummy": "PASS",
+        "3_player_obstructed_fire_lane": "FAIL_SAFE_HOLD_FIRE",
+        "4_maela_reposition_and_settle_aim": "PASS",
+        "5_coordinated_retreat": "PASS"
+      },
+      "total_passed": 4,
+      "total": 5,
+      "training_resource": {
+        "player_STA_cost": 35,
+        "player_STA_after": 75,
+        "duration_minutes_approx": 90,
+        "practice_ammo_owners": "Maela",
+        "player_ammo_delta": 0,
+        "EXP_delta": 0,
+        "skill_exp_delta": 0
+      },
+      "partnership_scope": "One active quest: Săn Thủ Lĩnh Băng Cướp Đường Tây",
+      "companionship_at_turn_end": "PRESENT_WITH_V_AT_TEMPLE_RANGE",
+      "departure": "NOT_YET",
+      "hidden_camp_location": "UNKNOWN",
+      "verified_new_enemy": "NONE"
     }
   },
   "npc_last_verified_T93": {
@@ -2509,6 +2621,96 @@
       "BLOOD_after": 28,
       "TH_after": 0,
       "remaining_enemy_total_at_ruin": "UNKNOWN"
+    },
+    "T241": {
+      "source": "events/0241.md",
+      "action": "EDRAN_EXAMINATION_AND_QUOTE",
+      "time_minutes_approx": 15,
+      "HP_before": 60,
+      "HP_after": 60,
+      "STA_before": 110,
+      "STA_after": 110,
+      "Souls_before": 113,
+      "Souls_after": 113,
+      "quote_B_one_session": {
+        "maximum_HP_recovery": 40,
+        "fee_Souls": 15,
+        "nominal_duration_hours": 2
+      },
+      "spent": false,
+      "potion_count_after": 1
+    },
+    "T242": {
+      "source": "events/0242.md",
+      "action": "TWO_EdRan_TREATMENTS_AND_DURGAN_FORGE_APPRAISAL_ONLY",
+      "therapies": [
+        {
+          "fee_Souls": 15,
+          "nominal_duration_hours": 2,
+          "HP_before": 60,
+          "HP_after": 100,
+          "souls_before": 113,
+          "souls_after": 98
+        },
+        {
+          "fee_Souls": 15,
+          "nominal_duration_hours": 2,
+          "HP_before": 100,
+          "HP_after": 140,
+          "souls_before": 98,
+          "souls_after": 83,
+          "post_treatment_wait_required_for_further_courses": true
+        }
+      ],
+      "HP_after": 140,
+      "STA_after": 110,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "Souls_after": 83,
+      "potion_count_after": 1,
+      "forge_transaction": "APPRAISAL_AND_NEW_QUOTES_ONLY",
+      "forge_spending": 0,
+      "forge_items_crafted": 0
+    },
+    "T243": {
+      "source": "events/0243.md",
+      "action": "POST_REST_FINAL_EDRAN_THERAPY_AND_MAELA_PARTNERSHIP_REHEARSAL",
+      "pre_HP": 140,
+      "pre_STA": 110,
+      "pre_Souls": 83,
+      "pre_treatment_recovery": "UNINTERRUPTED_FULL_NIGHT_SAFE_REST; HP_unchanged; STA_110",
+      "reexam_by": "Edran",
+      "reexam_passed": true,
+      "third_treatment_fee_Souls": 15,
+      "third_treatment_max_HP": 40,
+      "third_treatment_actual_HP": 30,
+      "third_treatment_duration_hours": 2,
+      "post_cure_HP": 170,
+      "post_cure_Souls": 68,
+      "additional_natural_HP_regen": 0,
+      "maela_response": "TEMPORARY_WEST_ROAD_COOPERATION_ACCEPTED_CONDITIONALLY",
+      "practice_context_id": "maela-west-road-melee-ranged-cover:T243",
+      "practice_duration_minutes": 90,
+      "practice_5_results": [
+        "PASS",
+        "PASS",
+        "FAIL_BLOCKED_SHOT_MAELA_WITHHOLDS",
+        "PASS",
+        "PASS"
+      ],
+      "warmup_STA": 10,
+      "drill_STA": 25,
+      "STA_after": 75,
+      "training_ammo": "MAELA_OWNED_REUSABLE_ALL_RECOVERED",
+      "player_ammo_consumed": 0,
+      "player_skill_level_gain": 0,
+      "skill_exp_gain": 0,
+      "character_EXP_gain": 0,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "potion_after": 1,
+      "westward_departure": false,
+      "quest_reward_issued": false
     }
   },
   "provenance": {
@@ -2517,7 +2719,7 @@
   },
   "npc_verified_T154": {
     "Edran": "confirmed present at temple; tending Kharzug",
-    "Maela": "confirmed present at temple; free hunter, uninjured",
+    "Maela": "Previously verified temple free hunter/mentor; T243 ON-SCREEN present at temple archery range, uninjured; verbally accepted TEMPORARY west-road bandit-bounty joint reconnaissance/combat cooperation with autonomous rear-oblique ranged support and safety/retreat conditions. Coached 5 drills 4 PASS/1 safe blocked shot FAIL; not a permanent follower or pact. Still at range, no west-road travel.",
     "Kharzug": "confirmed present at temple; still recuperating injured hind leg",
     "HuyetLangNon": "confirmed at temple beside Kharzug; collar unchanged"
   },
@@ -2686,10 +2888,10 @@
       },
       "reward_received": false,
       "source": "events/0162.md",
-      "progress": "Garrick T163 patrol and witness briefing obtained; Vô Danh remains in Hắc Nha Thành, no scouting or combat yet",
-      "next_step": "Select safe reconnaissance plan from reports or ask additional witnesses, no camp coordinates confirmed",
+      "progress": "Garrick T163 reconnaissance briefing remains latest verified enemy intelligence: Dốc Đá Xám ruined cart and high-ground tracks, suspected hand signal & crossbowman WITNESS-ONLY. T243 Maela voluntarily agrees conditional TEMPORARY assistance for west-road leader bounty after in-base 5-part melee/ranged tactics rehearsal 4/5 PASS. Not yet departed or encountered bandits. No location/strength/leader identity established, bounty remains ACTIVE unpaid.",
+      "next_step": "Select T244: recover training STA and scout/plan western approach with Maela, reconsult Garrick or depart alertly together on grounded western road route. No auto-spawn of leader or automatically known camp.",
       "notional_target_reputation": "Crossbowman rumored among bandits, unverified",
-      "last_evidence_turn": 163,
+      "last_evidence_turn": 243,
       "intelligence_T163": {
         "source": "events/0163.md",
         "verified_patrol": [
@@ -2712,6 +2914,16 @@
           "Actual bandit strength, line of retreat and ambush trigger"
         ],
         "cannot_be_treated_as_recovered_history": true
+      },
+      "ally_T243": {
+        "name": "Maela",
+        "role": "rear oblique bow support",
+        "status": "VOLUNTARY_TEMPORARY_WEST_ROAD_COOPERATION_AGREED",
+        "conditions": "Scout first; avoid V-blocked line of fire; independent shots, reload and positioning; tactical retreat available.",
+        "training_completed": "4/5 planned cooperative drills; no new skill/guaranteed support shots",
+        "no_fixed_payment_or_shares_agreed": true,
+        "not_permanent_party_member": true,
+        "source": "events/0243.md"
       }
     },
     "black_claw_hyenas_east_scrapyard": {
@@ -3529,17 +3741,17 @@
     "reward": "NONE"
   },
   "checkpoint": {
-    "id": "HN-T240-QUEST-RESOLUTION-EARLY",
-    "last_completed_turn": 240,
-    "source_events": "events/0238.md..events/0240.md",
-    "previous_checkpoint_last_completed_turn": 237,
+    "id": "HN-T243-MAELA-COOP-EARLY",
+    "last_completed_turn": 243,
+    "source_events": "events/0241.md..events/0243.md",
+    "previous_checkpoint_last_completed_turn": 240,
     "number_narrated_turns": 3,
     "gameplay_retcon": false,
-    "notion_sync_status": "No Notion/Canva writes; current authoritative GitHub state reflects bounty closure",
+    "notion_sync_status": "No Notion/Canva writes; GitHub main state and Maela NPC canon are authority.",
     "chat_only_unsaved_turns_after_verified_write": 0,
     "notion_hub_page_id": "3fe864d2-95ce-8178-95ae-d0bcfde6ac34",
     "notion_summary_sources_git_commit": "1eaac4e68ac6e2d138818eeb609c3916e275d34e",
-    "checkpoint_reason": "EARLY_PERMANENT_QUEST_RESOLUTION_AND_REWARD"
+    "checkpoint_reason": "EARLY_SIGNIFICANT_NPC_VOLUNTARY_PARTNERSHIP_AND_HEAL_FULL"
   },
   "battle_state_T237": {
     "enemy_id": "enemy:stone-raker-T234",
