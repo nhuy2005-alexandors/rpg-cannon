@@ -1,0 +1,124 @@
+{
+  "schema": "HN-COMBAT-OVERLAY-V1",
+  "turn": 272,
+  "map_id": "duong-tay-doc-da-xam-camp",
+  "base_svg": "maps/tactical/doc-da-xam-camp-v1.svg",
+  "base_svg_blob_sha": "ea2921b0039beee68642971b3a2dcaae448a17d8",
+  "base_immutable": true,
+  "coordinates": "720x440 schematic only, no physical meters",
+  "actors": [
+    {
+      "id": "vo-danh",
+      "token": "V",
+      "x": 496,
+      "y": 184,
+      "from_x": 393,
+      "from_y": 188,
+      "weapon": "Huyết Nha +3 WIELDED",
+      "HP": 137,
+      "STA": 24,
+      "position": "FOOT_NORTH_ASCENT_AT_EXISTING_STONE_EDGE",
+      "enemy_in_melee_range": false,
+      "HuyetAnhBo_cast": false
+    },
+    {
+      "id": "maela",
+      "token": "M",
+      "x": 178,
+      "y": 229,
+      "from_x": 178,
+      "from_y": 229,
+      "arrow_nocked": true,
+      "shot_T272": false,
+      "uninjured": true,
+      "known_personal_arrows_fired_total": 7
+    }
+  ],
+  "enemy": {
+    "id": "enemy:doc-da-xam-upper-archer-T265",
+    "level": 7,
+    "rank": "NORMAL",
+    "HP": 33,
+    "maxHP": 85,
+    "DEF": 10,
+    "weapon": "longbow",
+    "last_partial_bow_arm_area": [
+      462,
+      94
+    ],
+    "currently_visible": false,
+    "currently_targetable": false,
+    "exact_current_location": "UNKNOWN_BEHIND_HIGH_NORTH_STONE",
+    "arrow_shot_T272": true,
+    "arrow_blocked_by_existing_rock": true,
+    "leader_affiliation": "UNVERIFIED"
+  },
+  "corpses": [
+    {
+      "id": "enemy:west-road-cloaked-lookout-T247",
+      "x": 100,
+      "y": 348,
+      "looted": true
+    },
+    {
+      "id": "enemy:west-road-axe-guard-T251",
+      "x": 126,
+      "y": 372,
+      "looted": true
+    },
+    {
+      "id": "enemy:west-road-grey-coat-T256",
+      "x": 529,
+      "y": 325,
+      "looted": true
+    }
+  ],
+  "movement": {
+    "V": [
+      [
+        393,
+        188
+      ],
+      [
+        496,
+        184
+      ]
+    ],
+    "Maela": [
+      [
+        178,
+        229
+      ],
+      [
+        178,
+        229
+      ]
+    ],
+    "used_existing_rock_and_tarp": true,
+    "reached_foot_of_ascent": true,
+    "crossed_higher_bend": false,
+    "melee_range": false,
+    "metric_distance_NOT_VERIFIED": true
+  },
+  "combat": {
+    "enemy_bow_shots": 1,
+    "enemy_hit": false,
+    "enemy_arrow_rock_block": true,
+    "maela_shots": 0,
+    "V_sword_hits": 0,
+    "parry_attempts": 0,
+    "active_skill_casts": 0,
+    "HP_loss": 0,
+    "STA_cost": 0
+  },
+  "fixed": [
+    "three cargo crates",
+    "tarp",
+    "north stone ascending switchback",
+    "west boulders",
+    "triggered cord",
+    "three corpses"
+  ],
+  "quest_reward": false,
+  "T273_unplayed": true
+}
