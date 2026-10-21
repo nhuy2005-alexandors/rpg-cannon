@@ -293,6 +293,23 @@
       "notes": [
         "Schematic atlas hierarchy, not surveyed coordinates"
       ]
+    },
+    {
+      "id": "ngoai-thanh-tuong-da-do",
+      "label": "Di tích tường đá đổ ngoại vi Hắc Nha Thành",
+      "grade": "SCHEMATIC",
+      "sources": [
+        "events/0214.md",
+        "events/0215.md",
+        "events/0216.md",
+        "events/0217.md"
+      ],
+      "map_id": "ngoai-thanh-tuong-da-do",
+      "aliases": [],
+      "notes": [
+        "Local observed schematic; geographic direction on regional map unknown",
+        "Not established as the old burial crypt"
+      ]
     }
   ]
 }
