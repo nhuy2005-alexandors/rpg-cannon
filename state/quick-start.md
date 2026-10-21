@@ -1,3 +1,19 @@
+# HẮC NHẬT — QUICK START (T269)
+
+**LATEST VERIFIED GAMEPLAY CHECKPOINT T269; T270 NOT PLAYED.** Source `state/current.json`, `events/0269.md`, active map `maps/active-scene.json`, base `maps/tactical/doc-da-xam-camp-v1.svg` (unchanged T263 blob ea2921b0039beee68642971b3a2dcaae448a17d8), delta `maps/tactical/doc-da-xam-camp-T269-positions.json`.
+
+**Vô Danh** Lv6 HP145/170 STA24/110 BLOOD50/50 TH0/20 Souls110 EXP330/400 DEF22. Holds Huyết Nha+3 ready, Liên Nỏ Hắc Nha empty and stowed, 2 steel bolts reserve and 1 Nanh Cốt Tiễn. Gạt Kiếm Lv2 available ONLY against an actual perceivable deflectable melee attack and costs7STA. Huyết Ảnh Bộ Lv1 ready cost15STA, at most4m with real geometry; Huyết Trảm Nhị Liên Lv2 ready but not payable with STA24 (requires25 and12HP). No passive regen or consumable used.
+
+**T269:** Under cover of original western boulder, V advances on tested solid stones to the north tip at schematic SVG(218,216), Maela independently stagger-advances rear-left to lower cover SVG(178,229), her bow remains with one arrow nocked and she did NOT fire. The open loose-gravel interval to the foot of northern ascending rock path is NOT crossed. Enemy Lv7 Normal archer HP50/85 autonomously retreats farther up SAME existing upper path, glimpsed only partially (cloak and longbow) near higher turn schematic approx(462,84), exact current location unknown and not shootable; neither party had a valid safe shot and nobody fired or suffered harm, no Parry, no resource change, no XP or Souls, no dice asserted. Enemy faction/leader status unverified, Garrick quest active unpaid. Neither proximity nor attack position is assumed simply because tokens in SVG appear near each other; map NOT measured.
+
+**Map contract:** fixed terrain includes existing west stones, northern rock switchback, three cargo crates, tarp, activated wire, three looted corpses. Do NOT redraw, add a shortcut, alter rock placement or reveal unseen enemies. T269 is ONLY token/last-sighting delta from T268. Enemy marker is LAST PARTIAL GLIMPSE, not current confirmed sight.
+
+**T270 options:** remain at head of west boulder and spot, carefully cross exposed gravel with genuine risk of archer attack, coordinate Maela bow cover, pursue only along actual ascent, or withdraw. No automatic T270 gameplay.
+
+---
+
+## Archived T268 and prior quick starts
+
 # HẮC NHẬT — QUICK START (T268)
 
 **LATEST VERIFIED COMBAT CHECKPOINT T268; NEXT T269 NOT PLAYED.** Authority `state/current.json`, `events/0268.md`, `maps/active-scene.json`; static combat map `maps/tactical/doc-da-xam-camp-v1.svg` preserved exact blob `ea2921b0039beee68642971b3a2dcaae448a17d8`, overlay `maps/tactical/doc-da-xam-camp-T268-positions.json`.
