@@ -1,8 +1,30 @@
-# HẮC NHẬT — QUICK START (T217)
+# HẮC NHẬT — QUICK START (T227)
 
-**LATEST VERIFIED CHECKPOINT: T217; NEXT PLAYER-DIRECTED TURN T218.** Ten in-session events T208–T217 appended and checkpointed on 2026-10-21. Canon game state: [main/state/current.json](current.json). Event receipts: [events/0208.md](../events/0208.md) through [events/0217.md](../events/0217.md). Preserve accepted T207 reward, do not replay.
+**LATEST VERIFIED GAMEPLAY CHECKPOINT: T227; NEXT PLAYER-DIRECTED TURN T228.** On 2026-10-21 ten narrated turns T218–T227 were appended as event files and saved in main state; numerical/source authority: `main/state/current.json`, `main/events/0218.md..0227.md`. NEVER replay T218–T227 or issue the T223 first corpse loot again.
 
-## CURRENT SCENE — T217
+## CURRENT T227 — OUTER WALL & BURIED STONE
+
+Vô Danh · Huyết Kiếm Sĩ Lv6 · **HP61/170 STA28/110 BLOOD28/50 Tử Huyết0/20 Souls73 EXP255/400**. Two Huyết Dược Quân Dụng, no Tử Huyết gain. Has **1 Lõi Xương Xám** recovered T223 as **PROVISIONAL QUEST PROOF** (not yet verified by issuer, 0/3 formally accepted), quest **Hài Cốt Lang Thang ACTIVE and UNPAID**; reward +16 Souls/+25 EXP remains unclaimed. Western-bandit quest ACTIVE, blood-rats quest OFFERED_NOT_ACCEPTED, Black-claw Hyenas bounty RESOLVED T207 and cannot pay again. No skill mastery award from T225 uncertain Tử Huyết Cảm Tri source or rank.
+
+### T218–T223 fight & loot — concluded
+T218 moving skeletal arm sighted in rock/root gap. T219–T222 defeat one **Hài Cốt Bị Vùi**, Lv5 Normal, HP72→49→29→4→0, enemy ATK29–36 DEF9. GM supplied enemy numeric block only AFTER first T219 attack at owner's request: **NOT a verified precommitted secret enemy template, no executed RNG proof**; don't retroactively repair by pretending it was locked before T219. Narrated hits have pre-DEF→post-DEF T219 32−9=23; T220 29−9=20 (one arm destroyed); T221 34−9=25 (enemy 4HP), enemy 29−V DEF22=7 HP loss (V68→61); T222 30−9=21 potential, actual remaining HP lost4 (enemy0), +10 character EXP 245→255. Undead bloodless, Hấp Huyết HP0 and Huyết Nha ordinary-strike BLOOD+0 throughout. T223 first corpse claim **+12 Souls 61→73** and one provisional bone core; corpse already looted and dead; no TH. Do not imply another visible hostile.
+
+### T224–T227 exploration — current scene
+T224 two relatively straight worked lower-stone edges observed. T225 voluntarily used **Tử Huyết Cảm Tri** from cover; a weak ambiguous lingering sensation near dead skeleton/roots, cannot certify a distinct source or compatible TH, gained0; exact skill rank/cast costs UNVERIFIED, no numeric spend or mastery credited. T226 mild sword-tip probe finds flat upright buried stone and a little hollow beneath roots, possible intermittent weak airflow; soil lip partly crumbled — **UNSTABLE LOWER GROUND**, not crossed. T227 from safe known pavers examined shallow groove at wall foot (slight downslope, likely drainage hypothesis), curved paved stones aligned in direction with two worked lower edges and horizontal joint atop upright stone. **Continuous connection, underground passage, crypt entrance, identity with porter's burial destination, cardinal bearing/distance: UNKNOWN.** V withdrew behind old partly covering wall/bush, sword ready, no confirmed active nearby hostile, no guarantee of undetectability.
+
+**MAP:** Feature branch `feat/full-atlas-v1-20261020` `maps/atlas-v1.json` 20 maps; observed local scene `ngoai-thanh-tuong-da-do` revision2 includes only T214–T227 observed stone wall, groove, pavers, edges, root hollow, soil hazard. No region-coordinate placement or confirmed crypt doorway. `maps/active-scene.json` updated on main and feature for T227; one old looted corpse logged, no current visible enemy, player behind wall cover. Reuse base map instead of redrawing every turn, dynamic overlay only unless terrain visibly changes; no automatically updated Canva snapshot. Static T204 world/region exports remain historical.
+
+**RULES & GM:** main `canon/rules.md` OWNER CLARIFICATION T219–T224 is persistent. Custom commands are *intent, not guaranteed outcomes*; combat HUD needs Lv/HP/ATK/DEF, actual post-DEF and capped HP damage, enemy response, resources; no fake RNG, no auto TH from undead, no blood drain from skeleton. Main `docs/gm-storyline-protocol.md` FAST MODE applies: no routine GitHub reads within complete active same-chat context; do not fetch merely because of next turn. No Notion/Canva writes for routine turns.
+
+**CHECKPOINT:** normal 10-completed-unsaved gate CLOSED at verified T227; next unsaved turn T228 (do not autoplay). Previous T217 and T207 handoffs below are archived; their numerical location cannot override this snapshot.
+
+---
+
+## HISTORICAL QUICK START — T217 (ARCHIVED)
+
+**HISTORICAL VERIFIED CHECKPOINT: T217; SUPERSEDED BY T227 ABOVE.** Ten in-session events T208–T217 appended and checkpointed on 2026-10-21. Canon game state: [main/state/current.json](current.json). Event receipts: [events/0208.md](../events/0208.md) through [events/0217.md](../events/0217.md). Preserve accepted T207 reward, do not replay.
+
+## HISTORICAL CURRENT SCENE — T217
 Vô Danh (Huyết Kiếm Sĩ Lv6) is **hidden behind collapsed stone wall and brush** on the SAFE high edge of a lower root/rubble slope outside Hắc Nha Thành. The stone wall is observed, but NOT confirmed to be the crypt's approach. V has NOT gone downhill. Last move T216: concealed upon a noise, no confirmed enemy or detection. T217: observed a pebble slide by roots and heard faint dry tap during ~4 minutes of silent watching; cause UNKNOWN. No enemy, passage, trap or buried crypt entrance verified.
 
 **Resources unchanged:** HP68/170 STA28/110 BLOOD28/50 Tử Huyết0/20 Souls61 EXP245/400; level6; 2 Huyết Dược Quân Dụng; proof bone cores0/3. No combat, healing or item cost during T208–T217. **Hài Cốt Lang Thang** accepted T210, ACTIVE, reward +16 Souls/+25 EXP UNPAID; exact burial crypt location UNKNOWN. **Ổ Chuột Huyết** still offered/not accepted. West-road bandit leader bounty ACTIVE. Black-claw quest RESOLVED T207, no duplicate payment. A former coffin porter guided only to an unverified old wall then left T215; his safe home arrival UNKNOWN. Former caretaker nickname "lão giữ sổ", identity/whereabouts unknown.
