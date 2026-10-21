@@ -1,9 +1,9 @@
 {
   "schema": "HN-MAP-SCENE-V1",
-  "last_completed_turn": 264,
-  "next_turn": 265,
+  "last_completed_turn": 265,
+  "next_turn": 266,
   "map_id": "duong-tay-doc-da-xam-camp",
-  "status_source": "main/state/current.json T264; events/0255.md..events/0264.md; immutable maps/tactical/doc-da-xam-camp-v1.svg and separate T264 positions overlay",
+  "status_source": "state/current.json T265 and events/0265.md; same immutable combat base SVG, T265 position overlay",
   "current": {
     "tokens": [
       {
@@ -53,22 +53,20 @@
     ],
     "visible_hostiles": [],
     "notes": [
-      "Immutable T263 fixed terrain is stored in maps/tactical/doc-da-xam-camp-v1.svg (three crates, tarp, west rocks, north upper path, alarm wire). Do not move static assets in future updates.",
-      "T255 axeman corpse searched +14 Souls once; T256–T258 grey coat human observed at camp; T259–T261 battle concluded: grey coat dead, T262 searched first-time +14 Souls, total Souls110.",
-      "T257 discovered suspicious alarm cord and T260 greycoat PULLED it; alert sound heard in rocks, identity/number of hearers unknown. T262 three crates observed but unopened, no player cargo inventory from them.",
-      "T262 Maela recovers fourth shot (personal arrows used4, recovered usable3, damaged1; original arrow stock UNKNOWN).",
-      "T263 V legally sheathed sword and loaded Liên Nỏ Hắc Nha ONE steel bolt, steel reserve2 and Nanh Cốt Tiễn1. Hắc Nha Trọng Kiếm VII carried as backup, not held.",
-      "T264 Maela and V withdraw west on firm rock, no wire touch, no shots and no parry while V wielded crossbow. Pebble click could have attracted attention; unidentified movement high north. Two west tokens now out of direct tarp approach.",
-      "V Lv6 HP145/170 STA24/110 BLOOD50 TH0 Souls110 EXP330/400. Garrick leader bounty ACTIVE UNPAID, no confirmed leader or verified armed replacement enemy.",
-      "All old outer-stone-wall features/ruins preserved as historical inactive scene. ViewBox positions are illustrative and not physical measured distances."
+      "STATIC TERRAIN UNCHANGED. maps/tactical/doc-da-xam-camp-v1.svg blob ea2921b0039beee68642971b3a2dcaae448a17d8 is still authority. Only overlay updates. The north ! source/figures on tactical map may not correspond to a previously suspected opponent.",
+      "T265 REAL Lv7 NORMAL upper-path human archer (public encounter block canon/encounters/west-road-upper-path-archer-T265-public.md) briefly drew bow toward western cover, Maela obtained independent fleeting oblique shot raw26−DEF10=16 (enemy85→69). Enemy fired one rushed counter-arrow into west boulder, neither V nor Maela damaged, and retreated behind rock; not currently shootable or confirmed visible.",
+      "V remained holding Liên Nỏ Hắc Nha loaded 1 steel bolt with 2 steel reserves and Nanh Cốt Tiễn1; no firing, no skill cost or parry (Huyết Nha SHEATHED).",
+      "Maela fired 1 new personal arrow (five known used this trip), at least two previously recovered usable arrows available in principle; original count still UNKNOWN and she must take/nock arrow for another shot.",
+      "V HP145 STA24 BLOOD50 TH0 Souls110 EXP330. Garrick west-road bandit leader quest remains ACTIVE UNPAID, new archer affiliation and leader identity UNKNOWN.",
+      "Alarm wire triggered T260, terrain objects stable, no measured georeferenced coordinates. Old stone-wall ruins preserved in history."
     ],
     "relative_actor_locations": {
-      "vo_danh": "western stone cover, Liên Nỏ loaded one steel bolt, Huyết Nha sheathed",
-      "maela": "left-west stone cover with bow, retains autonomous safe shot decisions",
-      "upper_path": "unknown intermittent movement beyond boulder, no confirmed visual target"
+      "vo_danh": "unchanged T264 west cover at schematic (214,270), crossbow loaded; V has no valid shooting lane currently",
+      "maela": "unchanged T264 west-left at (160,261), fired one arrow, next shot requires nocking",
+      "upper_archer": "briefly appeared on north upper-path edge, now behind northern rock UNKNOWN exact current coordinates; alive 69/85 Lv7 Normal"
     },
     "base_map_svg": "maps/tactical/doc-da-xam-camp-v1.svg",
-    "position_overlay": "maps/tactical/doc-da-xam-camp-T264-positions.json",
+    "position_overlay": "maps/tactical/doc-da-xam-camp-T265-positions.json",
     "coordinate_note": "Current token x/y in percentages of an UNMEASURED viewBox sketch, NOT physical atlas geography"
   },
   "legacy_timeline": {
