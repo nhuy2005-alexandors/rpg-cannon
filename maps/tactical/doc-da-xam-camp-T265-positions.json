@@ -1,0 +1,121 @@
+{
+  "schema": "HN-COMBAT-OVERLAY-V1",
+  "turn": 265,
+  "map_id": "duong-tay-doc-da-xam-camp",
+  "base_svg": "maps/tactical/doc-da-xam-camp-v1.svg",
+  "base_svg_blob_sha": "ea2921b0039beee68642971b3a2dcaae448a17d8",
+  "base_immutable": true,
+  "coords_note": "720×440 SVG anchors only, not measured world coordinates",
+  "actors": [
+    {
+      "id": "vo-danh",
+      "token": "V",
+      "x": 214,
+      "y": 270,
+      "weapon": "Liên Nỏ Hắc Nha",
+      "ready": true,
+      "loaded_steel_bolt": 1,
+      "steel_bolts_reserve": 2,
+      "sword": "Huyết Nha+3 SHEATHED",
+      "parry_while_crossbow": "NOT_ALLOWED",
+      "status": "WESTERN_STONE_COVER",
+      "shot_T265": false
+    },
+    {
+      "id": "maela",
+      "token": "M",
+      "x": 160,
+      "y": 261,
+      "weapon": "hunter bow",
+      "status": "WESTERN_STONE_COVER",
+      "autonomous": true,
+      "shot_T265": true,
+      "arrow_ammunition_total": "UNKNOWN",
+      "current_bow_state": "RELEASED_ONE_ARROW_NEEDS_ORDINARY_RENOCK"
+    }
+  ],
+  "enemies": [
+    {
+      "id": "enemy:doc-da-xam-upper-archer-T265",
+      "token": "E",
+      "label": "Lv7 Normal archer",
+      "last_seen_x": 493,
+      "last_seen_y": 112,
+      "HP_current": 69,
+      "HP_max": 85,
+      "DEF": 10,
+      "physical_attack_melee": "30-37",
+      "arrow_attack_preDEF": "28-34",
+      "weapon": "longbow",
+      "status": "ALIVE_RETREATED_BEHIND_NORTHERN_HIGH_ROCK",
+      "currently_visible": false,
+      "currently_shootable": false,
+      "current_coordinates": "UNKNOWN",
+      "knows_ally_shoot_direction": true,
+      "knows_V_exact_position": "UNKNOWN",
+      "faction": "UNKNOWN",
+      "bounty_leader": "UNVERIFIED"
+    }
+  ],
+  "corpses": [
+    {
+      "id": "enemy:west-road-cloaked-lookout-T247",
+      "x": 100,
+      "y": 348,
+      "looted": true
+    },
+    {
+      "id": "enemy:west-road-axe-guard-T251",
+      "x": 126,
+      "y": 372,
+      "looted": true
+    },
+    {
+      "id": "enemy:west-road-grey-coat-T256",
+      "x": 529,
+      "y": 325,
+      "looted": true
+    }
+  ],
+  "terrain_objects_same_base": true,
+  "objects": {
+    "tarp": "BASE_FIXED",
+    "crate1": "BASE_FIXED",
+    "crate2": "BASE_FIXED",
+    "crate3": "BASE_FIXED",
+    "upper_path": "BASE_FIXED",
+    "alarm_wire": "BASE_FIXED_AND_PREVIOUSLY_ACTIVATED_T260"
+  },
+  "ally_shot": {
+    "preDEF": 26,
+    "enemyDEF": 10,
+    "actual_damage": 16,
+    "target_HP_before": 85,
+    "target_HP_after": 69,
+    "arrow_used": 1
+  },
+  "enemy_counter": {
+    "arrow_used": 1,
+    "hit_character": false,
+    "obstructed_by": "western boulder",
+    "damage_to_player": 0,
+    "damage_to_Maela": 0
+  },
+  "player_crossbow_shot": false,
+  "player_crossbow_loaded_after": 1,
+  "player_resources_delta": {
+    "HP": 0,
+    "STA": 0,
+    "BLOOD": 0,
+    "TuHuyet": 0,
+    "Souls": 0,
+    "EXP": 0
+  },
+  "notes": [
+    "Retain EXACT T263 SVG base; no redrawn rock/crates/tarp/alarm wire.",
+    "Only brief target exposure gave Maela a shot. V crossbow lane remained blocked.",
+    "The marked upper enemy anchor is LAST SEEN, never claim he remains exposed or currently targetable.",
+    "No dice/RNG performed and no quest leader identified.",
+    "T266 not played."
+  ]
+}
