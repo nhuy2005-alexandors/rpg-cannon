@@ -947,14 +947,20 @@
       "name": "Di tích tường đá ngoài Hắc Nha Thành",
       "level": "AREA",
       "extent": "LOCAL schematic only; regional bearing UNKNOWN",
-      "revision": 1,
-      "grounded_through_turn": 217,
+      "revision": 2,
+      "grounded_through_turn": 227,
       "evidence_level": "SCHEMATIC",
       "evidence_sources": [
         "events/0214.md",
         "events/0215.md",
         "events/0216.md",
-        "events/0217.md"
+        "events/0217.md",
+        "events/0218.md",
+        "events/0223.md",
+        "events/0224.md",
+        "events/0225.md",
+        "events/0226.md",
+        "events/0227.md"
       ],
       "objects": [
         {
@@ -979,7 +985,7 @@
           "label": "Rãnh chân tường",
           "x": 63,
           "y": 43,
-          "status": "function_unknown"
+          "status": "observed_T215_T227; slopes_toward_lower_terrain; drainage_HYPOTHESIS_NOT_PROVEN"
         },
         {
           "id": "stone-path",
@@ -999,7 +1005,7 @@
               63
             ]
           ],
-          "status": "partial_only"
+          "status": "observed_and_partly_tested; curved; apparent_alignment_to_worked_stone_but_unproven"
         },
         {
           "id": "roots",
@@ -1015,7 +1021,7 @@
           "label": "Đất thấp, đá vụn",
           "x": 69,
           "y": 84,
-          "status": "not_traversed"
+          "status": "not_traversed; T226_small_soil_slip_confirms_hazard"
         },
         {
           "id": "cover",
@@ -1032,6 +1038,38 @@
           "x": 69,
           "y": 74,
           "status": "cause_unknown"
+        },
+        {
+          "id": "lower-dressed-edges",
+          "type": "clue",
+          "label": "Hai cạnh đá gia công",
+          "x": 78,
+          "y": 73,
+          "status": "visually_observed_T224; correspondence_to_paving_unverified"
+        },
+        {
+          "id": "upright-stone-face",
+          "type": "clue",
+          "label": "Mặt đá dựng đứng",
+          "x": 78,
+          "y": 82,
+          "status": "light_sword_tip_probe_T226; shape/function_unknown"
+        },
+        {
+          "id": "root-hollow",
+          "type": "clue",
+          "label": "Khoảng rỗng dưới rễ",
+          "x": 72,
+          "y": 76,
+          "status": "partly_seen_T223_T226; access_unknown; weak_airflow_T226_not_proof_of_tunnel"
+        },
+        {
+          "id": "upper-stone-joint",
+          "type": "clue",
+          "label": "Đường ghép ngang trên đá",
+          "x": 77,
+          "y": 77,
+          "status": "observed_from_stable_angle_T227; connection_to_paving_unverified"
         }
       ],
       "unplaced_known_names": [
@@ -1040,7 +1078,18 @@
       "known_limitations": [
         "NOT proved to be the burial-crypt location",
         "Absolute direction, regional position, physical distances unknown",
-        "No confirmed enemy, entrance or hollow space"
+        "No confirmed enemy, entrance or hollow space",
+        "Intermittent weak apparent draft near root hollow does not establish passage or safe ground",
+        "No verified continuous built channel from groove to dressed lower stones",
+        "T225 ambiguous weak death-energy sensation not a mapped source or detected enemy",
+        "Previously seen single skeleton killed T222 and looted T223; no other opponent confirmed T227"
+      ],
+      "unknowns": [
+        "Crypt entrance/location UNKNOWN",
+        "Whether the old wall is the porter's historic delivery landmark UNKNOWN",
+        "Whether fitted wall groove, paving and buried vertical stone belong to a connected structure UNKNOWN",
+        "Whether low hollow passes to any reachable tunnel UNKNOWN",
+        "Any surviving TH-bearing source or other enemies UNKNOWN"
       ]
     }
   ],
