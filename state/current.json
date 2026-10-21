@@ -1,14 +1,14 @@
 {
-  "snapshot_version": "HN-S227-V1.3-LEAN-10TURN-CHECKPOINT",
-  "last_completed_turn": 227,
-  "next_turn": 228,
+  "snapshot_version": "HN-S237-V1.3-LEAN-10TURN-CHECKPOINT",
+  "last_completed_turn": 237,
+  "next_turn": 238,
   "as_of": "2026-10-21",
-  "location": "Ngoại vi Hắc Nha Thành, tại di tích tường đá đổ (tọa độ và phương hướng vùng UNKNOWN). Vô Danh đang ở sau tường đá đổ/bụi cây trên nền cao đã kiểm tra; khe rễ và đất thấp dễ sạt ở phía trước. Không có lối xuống được xác nhận.",
+  "location": "Ngoại vi Hắc Nha Thành, di tích tường đá đổ: Vô Danh cận chiến trên nền đá vững cạnh khối đá nghiêng, ở gần Hài Cốt Gạt Đá. Đất thấp/rễ cây không an toàn. Phương vị/địa điểm tuyệt đối, cửa hầm chôn cũ UNKNOWN.",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
     "level": 6,
-    "exp": 255,
+    "exp": 265,
     "exp_next": 400,
     "unallocated_points": 0,
     "attributes": {
@@ -19,11 +19,11 @@
     },
     "resources": {
       "HP": {
-        "current": 61,
+        "current": 60,
         "max": 170
       },
       "STA": {
-        "current": 28,
+        "current": 63,
         "max": 110
       },
       "BLOOD": {
@@ -34,7 +34,7 @@
         "current": 0,
         "max": 20
       },
-      "souls": 73
+      "souls": 85
     },
     "passives": {
       "HapHuyet": {
@@ -282,7 +282,7 @@
           "rarity": "Rare",
           "level": 2,
           "trigger": "ACTIVE",
-          "skill_exp_current": 2,
+          "skill_exp_current": 4,
           "next_threshold": 135,
           "mastery_receipts": [
             {
@@ -292,10 +292,20 @@
               "bonus": 0,
               "source": "events/0198.md",
               "action_id": "T198/A01"
+            },
+            {
+              "turn": 230,
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "bonus_status": "UNVERIFIED_NO_BONUS_CREDIT",
+              "source": "events/0230.md",
+              "action_id": "T230/A01",
+              "mastery_practice_context_id": "stone-wall-dragger:T230"
             }
           ],
           "next_level_effect_approved": true,
-          "bonus_randomness_status": "VERIFIED_ROLL_T198_NO_BONUS",
+          "bonus_randomness_status": "T198_VERIFIED_ROLL_NO_BONUS; T230_NO_VERIFIED_DRAW_NO_BONUS_CREDIT",
           "use_receipts": {
             "T198/A01": {
               "base_exp": 2,
@@ -306,6 +316,17 @@
               "rng_action_key": "HuyetTramNhiLien/T198/A01",
               "source": "events/0198.md",
               "practice_context_id": "blackclaw-C:melee-combo:T198"
+            },
+            "T230/A01": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "NO_VERIFIED_DRAW_NO_BONUS_CREDIT",
+              "source": "events/0230.md",
+              "practice_context_id": "stone-wall-dragger:T230",
+              "cooldown": 3,
+              "actual_skill_casts": 1,
+              "number_of_slashes": 2,
+              "landed_slashes": 1
             }
           },
           "next_level_contract": "V1.3-TWO-SLASH-L3"
@@ -407,13 +428,13 @@
     "old_armor": "Giáp Da Hắc Nha +2; stored"
   },
   "inventory": {
-    "HuyetDuocQuanDung": 2,
+    "HuyetDuocQuanDung": 1,
     "heal_HP_each": 30,
     "TinhLucDuoc": 0,
     "steel_bolts": 3,
     "NanhCotTien": 1,
     "black_claw_hyena_fang_pairs": 0,
-    "LoiXuongXam": 1
+    "LoiXuongXam": 2
   },
   "base_storage": {
     "NanhLangVuong": 2,
@@ -455,11 +476,14 @@
         "lower scrub/root slope with loose stones, never descended",
         "T224 two dressed straight edges observed on lower slope, connection to original pavers UNVERIFIED",
         "T226 low hollow and flat upright stone under root gap; weak airflow and unstable lip",
-        "T227 wall-foot groove and buried stone joints show possible engineered drainage/foundation correspondence, no entry"
+        "T227 wall-foot groove and buried stone joints show possible engineered drainage/foundation correspondence, no entry",
+        "T228 another line of dressed stone near wall; aligns roughly with prior architectural traces, continuity UNVERIFIED",
+        "T234 leaning boulder and worn old pavers with cracked section avoided; suitable partial cover/ambush only, not a portal",
+        "T237 third undead close to leaning rock on checked higher paving; root rubble below remains unsafe"
       ],
       "last_observation_T217": "silent hiding four minutes; a pebble fell near roots and faint dry tap, cause UNKNOWN",
-      "player_hidden_in_cover": true,
-      "hidden_detection_status": "No currently visible hostile at T227; V behind partial cover, detection by unseen actors UNKNOWN",
+      "player_hidden_in_cover": false,
+      "hidden_detection_status": "Third undead detected V during T236 attack and is ATTACKING V at T237; no other enemy confirmed",
       "guide_return_status": "LEFT_ALONE_T215; ARRIVAL_HOME_UNCONFIRMED",
       "last_observation_T227": "Wall groove slopes toward low terrain; curved worked-paver alignment and joint on upright buried stone at root gap support engineered drainage/foundation hypothesis, NOT a verified connection or crypt entrance. Weak intermittent airflow and low soil instability; V retreated to firm old wall cover.",
       "observed_undead_T218_T222": {
@@ -481,6 +505,47 @@
         "souls_claimed": 12,
         "death_energy_compatible": "NOT_VERIFIED",
         "TH": 0
+      },
+      "last_observation_T237": "T228–T237 higher pavers and a leaning boulder reached safely; T234 third undead appeared; T237 active melee near boulder. No crypt doorway, reliable bearings or enemy population total established.",
+      "observed_undead_T228_T232": {
+        "id": "enemy:dragging-skeleton-T228",
+        "name": "Hài Cốt Lê Chân",
+        "rank": "NORMAL",
+        "level": 5,
+        "hp_max": 64,
+        "hp_current": 0,
+        "attack_range": "27–34",
+        "defense": 8,
+        "public_template": "canon/encounters/buried-dragger-T230-public.md",
+        "public_template_established": "T230 before T230 attack, NOT a secret precommit at T228 or T229",
+        "defeated_turn": 232,
+        "looted_turn": 233,
+        "looted_once": true,
+        "physical_provisional_core": 1,
+        "souls_first_claim": 12,
+        "TH_source": "UNVERIFIED",
+        "TH_gained": 0
+      },
+      "observed_undead_T234_T237": {
+        "id": "enemy:stone-raker-T234",
+        "name": "Hài Cốt Gạt Đá",
+        "rank": "NORMAL",
+        "level": 5,
+        "hp_max": 70,
+        "hp_current": 25,
+        "attack_range": "28–35",
+        "defense": 9,
+        "public_template": "canon/encounters/stone-raker-T236-public.md",
+        "public_template_established": "T236 before T236 attack, NOT pre-existing T234/T235",
+        "first_sword_damage": 23,
+        "second_sword_damage": 22,
+        "arm_right": "SEVERED_T237",
+        "arm_left": "FUNCTIONAL",
+        "alert": true,
+        "location": "Upper inspected paving adjacent to leaning boulder, lower ground nearby not traversed",
+        "quest_material_presence": "UNKNOWN",
+        "TH_source": "UNVERIFIED",
+        "alive": true
       }
     },
     "bounty_board_T208": {
@@ -510,6 +575,34 @@
       "skill_exact_cost": "UNKNOWN_NO_NUMERIC_SPEND_ASSIGNED",
       "skill_mastery_exp": "NOT_AWARDED_UNVERIFIED_MECHANICS",
       "no_autocast": true
+    },
+    "hai_cot_lang_thang_proof_T233": {
+      "item": "Lõi Xương Xám",
+      "count": 2,
+      "source_corpses": [
+        "enemy:buried-skeleton-T218",
+        "enemy:dragging-skeleton-T228"
+      ],
+      "evidence_status": "PROVISIONAL_NOT_VALIDATED_AT_ISSUER",
+      "quest_paid": false
+    },
+    "T233_T234_safe_rest": {
+      "T233": {
+        "duration_hours": 1,
+        "STA_before": 3,
+        "STA_after": 23,
+        "HP_before": 36,
+        "HP_after_after_one_potion": 66,
+        "HP_rest_regen": 0,
+        "consumed_HuyetDuocQuanDung": 1
+      },
+      "T234": {
+        "duration_hours": 2,
+        "STA_before": 23,
+        "STA_after": 63,
+        "HP_stable": 66
+      },
+      "partial_cover_not_100pct_safe": true
     }
   },
   "npc_last_verified_T93": {
@@ -2161,6 +2254,154 @@
       "TH_after": 0,
       "souls_after": 73,
       "EXP_after": 255
+    },
+    "T228": {
+      "action": "Observe worked masonry and second dragging skeleton, withdraw into cover",
+      "player_HP": 61,
+      "STA": 28,
+      "enemy_sighted": "Hài Cốt Lê Chân",
+      "no_attack": true
+    },
+    "T229": {
+      "action": "Hold until safe melee; target obstructed by rock and terrain",
+      "player_HP": 61,
+      "STA": 28,
+      "enemy_detection": "UNKNOWN",
+      "no_attack": true
+    },
+    "T230": {
+      "action": "Huyết Trảm Nhị Liên Lv2: 1 hit 1 miss; return strike",
+      "HP_before": 61,
+      "HP_cast_cost": 12,
+      "HP_after_cast": 49,
+      "enemy_incoming_raw": 29,
+      "player_DEF": 22,
+      "enemy_incoming_HP_loss": 7,
+      "HP_after": 42,
+      "STA_before": 28,
+      "STA_skill_cost": 25,
+      "STA_after": 3,
+      "enemy_HP_before": 64,
+      "enemy_HP_after": 32,
+      "preDEF_hit1": 40,
+      "DEF_enemy": 8,
+      "postDEF_hit1": 32,
+      "slash2_miss": true,
+      "skill_EXP_gain": 2,
+      "skill_exp_bonus_credited": 0,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "souls_after": 73,
+      "EXP_after": 255
+    },
+    "T231": {
+      "action": "Ordinary sword attack; Parry invalid at 3STA<7STA",
+      "enemy_HP_before": 32,
+      "enemy_HP_after": 10,
+      "raw": 30,
+      "enemy_DEF": 8,
+      "damage": 22,
+      "incoming_raw": 28,
+      "player_DEF": 22,
+      "incoming_actual": 6,
+      "HP_before": 42,
+      "HP_after": 36,
+      "STA_after": 3,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "souls_after": 73,
+      "EXP_after": 255,
+      "parry_performed": false,
+      "parry_exp_gained": 0
+    },
+    "T232": {
+      "action": "Ordinary neck strike kills second undead, no loot yet",
+      "enemy_HP_before": 10,
+      "enemy_HP_after": 0,
+      "raw": 29,
+      "enemy_DEF": 8,
+      "postDEF_damage": 21,
+      "actual_HP_loss": 10,
+      "player_HP_after": 36,
+      "STA_after": 3,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "souls_after": 73,
+      "EXP_gain": 10,
+      "EXP_after": 265
+    },
+    "T233": {
+      "action": "Loot second skeleton once +12 Souls +1 core; potion+30 HP; guarded safe rest one hour +20STA",
+      "souls_before": 73,
+      "souls_after": 85,
+      "cores_before": 1,
+      "cores_after": 2,
+      "potions_before": 2,
+      "potions_after": 1,
+      "HP_before": 36,
+      "HP_after": 66,
+      "STA_before": 3,
+      "STA_after": 23,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "EXP_after": 265
+    },
+    "T234": {
+      "action": "Guarded safe rest 2h +40STA then patrol and discover third undead at leaning rock",
+      "STA_before": 23,
+      "STA_after": 63,
+      "HP_after": 66,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "souls_after": 85,
+      "EXP_after": 265,
+      "third_skeleton_detects_player": "UNKNOWN"
+    },
+    "T235": {
+      "action": "Careful flank via tested pavers, pebble sound alerts third skeleton; sword arc blocked",
+      "no_attack": true,
+      "HP_after": 66,
+      "STA_after": 63,
+      "enemy_detection": "UNCERTAIN",
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "souls_after": 85,
+      "EXP_after": 265
+    },
+    "T236": {
+      "action": "Third undead exposed shoulder, ordinary Huyết Nha attack, enemy counter misses",
+      "enemy_HP_before": 70,
+      "enemy_HP_after": 47,
+      "raw": 32,
+      "enemy_DEF": 9,
+      "damage": 23,
+      "player_HP_after": 66,
+      "STA_after": 63,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "souls_after": 85,
+      "EXP_after": 265,
+      "damage_received": 0
+    },
+    "T237": {
+      "action": "Ordinary sword to wounded shoulder dismembers right arm; left arm counter grazes",
+      "enemy_HP_before": 47,
+      "enemy_HP_after": 25,
+      "raw": 31,
+      "enemy_DEF": 9,
+      "damage": 22,
+      "enemy_right_arm": "SEVERED",
+      "enemy_left_arm": "FUNCTIONAL",
+      "incoming_raw": 28,
+      "player_DEF": 22,
+      "damage_received": 6,
+      "HP_before": 66,
+      "HP_after": 60,
+      "STA_after": 63,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "souls_after": 85,
+      "EXP_after": 265
     }
   },
   "provenance": {
@@ -2467,15 +2708,15 @@
       "hunting_area": "Hầm chôn cũ ngoài khu dân cư; vị trí chính xác UNKNOWN; KHÔNG xác định trùng Nghĩa Địa Tử Thiết hoặc di tích tường đá",
       "evidence_required": "3 lõi xương hợp lệ; phải mang về bàn ủy thác để xác minh",
       "evidence_required_count": 3,
-      "evidence_collected_count": 1,
+      "evidence_collected_count": 2,
       "reward_on_verified_completion": {
         "souls": 16,
         "EXP": 25
       },
       "reward_received": false,
-      "source": "events/0208.md..events/0227.md",
-      "progress": "T218 skeletal limb emerged from under loose roots; T219–T222 combat and kill of Hài Cốt Bị Vùi Lv5 Normal, owner-requested GM-level and stats supplemented after T219 encounter began (not preregistered before initial strike). T223 first corpse loot +12 Souls and one Lõi Xương Xám carried; proof plausible but not verified by quest clerk. T224 new straight-cut stone edges, T225 weak ambiguous Tử Huyết Cảm Tri trace (no TH confirmed), T226 upright dressed stone and low hollow under root gap with intermittent faint airflow and loose collapsing soil, T227 old drainage-like groove and curving paving appear aligned with buried worked stone joint; actual physical connection and safe passage UNKNOWN. V currently behind wall cover, no other confirmed enemy.",
-      "next_step": "Choose T228: safe-angle observation/trace construction, maintain concealment, withdraw for supplies/rest or seek stronger testimony. Do NOT assume crypt entrance or safe lower route; do NOT auto award remaining core/proof, quest payment or TH.",
+      "source": "events/0208.md..events/0237.md",
+      "progress": "T223 one provisional grey core from Hài Cốt Bị Vùi; T228–T232 second Hài Cốt Lê Chân discovered, defeated and T233 first-looted for +12 Souls and another provisional grey core. T233 used one +30HP potion and rested one safe hour for +20 STA. T234 two further safe hours (+40STA) then sighted third undead at leaning boulder. T235 close flank, T236 T237 damage Hài Cốt Gạt Đá 70->47->25 HP; right arm destroyed T237, left arm active and enemy alerted. Two provisional bone cores 2/3 held, clerk has NOT verified or received them, mission ACTIVE UNPAID. Neither site nor enemies confirmed as exact old burial crypt bounty targets. V currently HP60 STA63, TH0.",
+      "next_step": "T238 player-directed combat with Hài Cốt Gạt Đá Lv5 normal HP25/70, ATK28–35 DEF9, right arm severed left arm operational; enemy alert in adjacent stable paving by leaning rock. Player can attack/guard/disengage; evaluate terrain and retaliation without auto win/loot/quest payment.",
       "intelligence": {
         "direct_observation": [
           "A low partially collapsed old masonry wall and flat ground outside residential area; position not precisely mapped",
@@ -2486,7 +2727,9 @@
           "T218–T222 one moving undead skeleton emerged and was killed, not proof this wall is task crypt",
           "T224 two roughly straight worked stone edges on lower untested area",
           "T226 small lower hollow, roughly upright flat worked stone, weak intermittent draft through roots, and local soil slip on light probing",
-          "T227 wall-foot groove slopes toward lower terrain; partly paved stone strip and buried dressed slab share plausible direction/joint lines; connection remains UNVERIFIED"
+          "T227 wall-foot groove slopes toward lower terrain; partly paved stone strip and buried dressed slab share plausible direction/joint lines; connection remains UNVERIFIED",
+          "T228 second undead drags leg, killed T232 and looted once T233: one additional provisional Lõi Xương Xám",
+          "T234 third undead moves pebbles near leaning stone block; T236–T237 fights on tested paving, currently damaged but alive; no verified crypt entry"
         ],
         "eyewitness_prior_history": [
           "Former porter saw an old stone wall and top of downward delivery ramp YEARS ago; uncertain this is same wall",
@@ -2499,10 +2742,11 @@
           "Any undead, traps, treasure or enemy detection",
           "Origin of scraping rumor and dry tapping",
           "Whether lower cavity contains safe access or a second TH-bearing source; NO detection confirmed",
-          "Whether Lõi Xương Xám is acceptable quest proof at the issuer; NOT YET INSPECTED"
+          "Whether Lõi Xương Xám is acceptable quest proof at the issuer; NOT YET INSPECTED",
+          "Third skeleton's potential item/TH yield UNKNOWN until defeated and validly inspected; not necessarily final hostile"
         ]
       },
-      "evidence_provisional_count": 1,
+      "evidence_provisional_count": 2,
       "evidence_verified_by_issuer_count": 0
     }
   },
@@ -2946,6 +3190,21 @@
         "TH": 0,
         "source_precommit_status": "GM_STAT_BLOCK_DISCLOSED_T219_AFTER_INITIAL_ATTACK_BEFORE_LOOT; NO_PRECOMMITTED_HIDDEN_TEMPLATE; NOT_RNG",
         "quest_material_separate": true
+      },
+      "enemy:dragging-skeleton-T228": {
+        "claim_id": "claim:T233:dragging-skeleton:soul-v1.3",
+        "source": "events/0233.md",
+        "loot_turn": 233,
+        "souls": 12,
+        "L_reward": 5,
+        "rank": "normal",
+        "rank_multiplier": 1,
+        "D": 1,
+        "claimed": true,
+        "encounter_bonus": 0,
+        "TH": 0,
+        "source_precommit_status": "Narrated T233 Lv5 normal reward calibration; combat stat block saved T230 but independent L_reward not preregistered before claim. Preserve accepted event, do not claim false prior reward-only commitment.",
+        "quest_material_separate": true
       }
     },
     "C_status": "DEAD_T199_FIRST_SOUL_CLAIM_COMPLETE_T200_NO_DUPLICATE",
@@ -3111,16 +3370,40 @@
     "reward": "NONE"
   },
   "checkpoint": {
-    "id": "HN-T227-NORMAL-10TURN",
-    "last_completed_turn": 227,
-    "source_events": "events/0218.md..events/0227.md",
-    "previous_checkpoint_last_completed_turn": 217,
+    "id": "HN-T237-NORMAL-10TURN",
+    "last_completed_turn": 237,
+    "source_events": "events/0228.md..events/0237.md",
+    "previous_checkpoint_last_completed_turn": 227,
     "number_narrated_turns": 10,
     "gameplay_retcon": false,
-    "notion_sync_status": "No new external Notion graph projection for ordinary unnamed skeleton; GitHub canon authoritative",
+    "notion_sync_status": "No changed named NPC relation; routine scene remains GitHub-only",
     "chat_only_unsaved_turns_after_verified_write": 0,
     "notion_hub_page_id": "3fe864d2-95ce-8178-95ae-d0bcfde6ac34",
     "notion_summary_sources_git_commit": "1eaac4e68ac6e2d138818eeb609c3916e275d34e",
     "checkpoint_reason": "NORMAL_10_COMPLETED_UNSAVED_TURNS"
+  },
+  "battle_state_T237": {
+    "enemy_id": "enemy:stone-raker-T234",
+    "enemy_level": 5,
+    "enemy_rank": "NORMAL",
+    "enemy_HP_current": 25,
+    "enemy_HP_max": 70,
+    "enemy_ATK_range": [
+      28,
+      35
+    ],
+    "enemy_DEF": 9,
+    "enemy_right_arm": "DISABLED_SEVERED",
+    "enemy_left_arm": "ACTIVE",
+    "enemy_alert": true,
+    "player_position": "On tested firm paver by leaning boulder, took small backward step T237",
+    "enemy_position": "Adjacent, near low rubble edge on upper paved section",
+    "weak_ground_not_traversed": true,
+    "loot_eligible": false,
+    "current_skill_cd": {
+      "HuyetTramNhiLien": 0
+    },
+    "rng_receipt": "NOT_EXECUTED_T236_T237",
+    "next_turn": 238
   }
 }
