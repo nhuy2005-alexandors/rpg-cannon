@@ -947,8 +947,8 @@
       "name": "Di tích tường đá ngoài Hắc Nha Thành",
       "level": "AREA",
       "extent": "LOCAL schematic only; regional bearing UNKNOWN",
-      "revision": 2,
-      "grounded_through_turn": 227,
+      "revision": 3,
+      "grounded_through_turn": 237,
       "evidence_level": "SCHEMATIC",
       "evidence_sources": [
         "events/0214.md",
@@ -960,7 +960,17 @@
         "events/0224.md",
         "events/0225.md",
         "events/0226.md",
-        "events/0227.md"
+        "events/0227.md",
+        "events/0228.md",
+        "events/0229.md",
+        "events/0230.md",
+        "events/0231.md",
+        "events/0232.md",
+        "events/0233.md",
+        "events/0234.md",
+        "events/0235.md",
+        "events/0236.md",
+        "events/0237.md"
       ],
       "objects": [
         {
@@ -1070,6 +1080,38 @@
           "x": 77,
           "y": 77,
           "status": "observed_from_stable_angle_T227; connection_to_paving_unverified"
+        },
+        {
+          "id": "leaning-boulder-T234",
+          "type": "cover",
+          "label": "Khối đá nghiêng",
+          "x": 80,
+          "y": 57,
+          "status": "OBSERVED_T234; partial_occluding_cover_T235_T237; not a confirmed entrance"
+        },
+        {
+          "id": "tested-pavers-near-boulder",
+          "type": "terrain",
+          "label": "Nền đá chắc cạnh khối đá",
+          "x": 75,
+          "y": 52,
+          "status": "TESTED_STABLE_T235_T237; V and third undead adjacent in melee"
+        },
+        {
+          "id": "cracked-paver-T235",
+          "type": "hazard-terrain",
+          "label": "Phiến đá nứt đã tránh",
+          "x": 71,
+          "y": 56,
+          "status": "CRACK_OBSERVED_T235; NOT_TRAVERSED"
+        },
+        {
+          "id": "new-worked-edge-T228",
+          "type": "clue",
+          "label": "Đoạn đá ghép song song tường",
+          "x": 55,
+          "y": 48,
+          "status": "OBSERVED_T228; engineering-purpose/unbroken-continuity_UNKNOWN"
         }
       ],
       "unplaced_known_names": [
@@ -1078,18 +1120,22 @@
       "known_limitations": [
         "NOT proved to be the burial-crypt location",
         "Absolute direction, regional position, physical distances unknown",
-        "No confirmed enemy, entrance or hollow space",
+        "At T217 there was no confirmed enemy or hollow space; later T218–T227 observed a single enemy and root cavity, but STILL NO confirmed entrance",
         "Intermittent weak apparent draft near root hollow does not establish passage or safe ground",
         "No verified continuous built channel from groove to dressed lower stones",
         "T225 ambiguous weak death-energy sensation not a mapped source or detected enemy",
-        "Previously seen single skeleton killed T222 and looted T223; no other opponent confirmed T227"
+        "Previously seen single skeleton killed T222 and looted T223; no other opponent confirmed T227",
+        "At T237 third animated skeleton is an ACTIVE adjacent hostile on inspected paving, HP25/70, right arm severed; another corpse killed T232 looted T233. No guarantee of only three enemies in region.",
+        "Local icon/coordinates for leaning boulder and covered paths are illustrative, not surveyed meters, regional bearings or a measured vector."
       ],
       "unknowns": [
         "Crypt entrance/location UNKNOWN",
         "Whether the old wall is the porter's historic delivery landmark UNKNOWN",
         "Whether fitted wall groove, paving and buried vertical stone belong to a connected structure UNKNOWN",
         "Whether low hollow passes to any reachable tunnel UNKNOWN",
-        "Any surviving TH-bearing source or other enemies UNKNOWN"
+        "Any surviving TH-bearing source or other enemies UNKNOWN",
+        "Total number of skeletons in area UNKNOWN; two confirmed dead/looted, third alive at T237",
+        "Whether third undead's remains contain a quest-acceptable core UNKNOWN"
       ]
     }
   ],
