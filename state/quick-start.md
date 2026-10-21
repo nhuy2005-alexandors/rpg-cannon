@@ -1,3 +1,21 @@
+# HẮC NHẬT — QUICK START (T267)
+
+**LATEST VERIFIED COMBAT CHECKPOINT T267; NEXT PLAYER COMMAND T268 NOT YET PLAYED.** Authority: `state/current.json`, append-only `events/0267.md`, existing immutable `maps/tactical/doc-da-xam-camp-v1.svg` and delta `maps/tactical/doc-da-xam-camp-T267-positions.json` as mirrored in `maps/active-scene.json`. No future actions auto-played.
+
+**Player:** Vô Danh Huyết Kiếm Sĩ Lv6 EXP330/400 HP145/170 STA24/110 BLOOD50/50 Tử Huyết0/20 Souls110 DEF22. Holds **Liên Nỏ Hắc Nha UNLOADED** after firing its ONE steel bolt T267; steel reserve **2**, Nanh Cốt Tiễn **1**. Total steel remaining only2. Huyết Nha+3 Rare sword ATK28–36 **SHEATHED**, Hắc Nha Trọng Kiếm VII backup carried. Gạt Kiếm Lv2 7STA NOT LEGAL while wielding crossbow. Huyết Ảnh Bộ Rare Lv1 READY 15STA if real geometry allows <=4m; Huyết Trảm Nhị Liên Rare Lv2 READY but requires25STA (player has24) plus12HP and a wielded sword. No free STA healing, passive Lifesteal from crossbow, +7 BLOOD from non-sword projectile or character EXP this turn. One +30HP Huyết Dược retained, not consumed. All other inventory from T266 unchanged.
+
+**T267 action:** V/M preserved west-stone cover positions V schematic SVG(214,270), Maela SVG(160,261). The new north longbowman `enemy:doc-da-xam-upper-archer-T265` Lv7 NORMAL from pre-committed public block `canon/encounters/west-road-upper-path-archer-T265-public.md` had HP69/85 DEF10. He autonomously advanced along existing northern rock/edge of tarp to NW camp gap near FIRST cargo crate to open a bow flank against Maela's cover. For a brief *actually unobstructed V crossbow line*, V fired ONE previously loaded steel bolt: projectile raw preDEF29−DEF10=19, enemy HP **69→50/85** with no crit, then the man retreated behind original stone; exact live position UNKNOWN and currently NO clean shot. V nỏ **UNLOADED**, not auto-reloaded. Maela already held an arrow nocked but her separate shooting lane was blocked by stone and she did NOT fire T267; total known personal arrows fired on this expedition **6**, original stock unknown. Enemy did NOT finish a retaliation shot T267; nobody wounded. No RNG actually run or claimed.
+
+**Map:** Fixed unchanged `maps/tactical/doc-da-xam-camp-v1.svg` blob `ea2921b0039beee68642971b3a2dcaae448a17d8`. Overlay T267 last sight of archer at schematic SVG(286,188), now obscured (last sight is NOT proof of his current position); player tokens unchanged. No new geometry invented/retconned; old three camp corpses already first-looted and enemy faction/bounty role remains unverified.
+
+**Quest:** Garrick's western bandit chief bounty ACTIVE UNPAID. No loot, skill/character EXP, Souls or quest evidence gained from wounding the upper archer. Alarm cord rang T260, possible distant hearers still unknown.
+
+**Next T268:** Reload steel legally (draw from steel reserve2 and then1 in crossbow), or change to sword legally, or reposition/retreat/observe from west stone; obey enemy agency, obstructed fire, correct available STA and original map. Maela has a nocked arrow but doesn't auto-shoot without legal threat and independent decision. No instant crossbow re-shot, no double ally arrows, no parry with nỏ.
+
+---
+
+## Archived T266 and prior quick starts
+
 # HẮC NHẬT — QUICK START (T266)
 
 **LATEST CHECKPOINT T266; NEXT COMMAND T267 NOT YET PLAYED.** Authority: `state/current.json`, `events/0266.md`, fixed tactical base `maps/tactical/doc-da-xam-camp-v1.svg`, actor/enemy-last-sighting overlay `maps/tactical/doc-da-xam-camp-T266-positions.json`, and `maps/active-scene.json`. The static base remained byte-identical to T263 SHA blob `ea2921b0039beee68642971b3a2dcaae448a17d8`.
