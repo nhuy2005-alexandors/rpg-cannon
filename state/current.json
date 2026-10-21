@@ -1,14 +1,14 @@
 {
-  "snapshot_version": "HN-S217-V1.3-LEAN-10TURN-CHECKPOINT",
-  "last_completed_turn": 217,
-  "next_turn": 218,
+  "snapshot_version": "HN-S227-V1.3-LEAN-10TURN-CHECKPOINT",
+  "last_completed_turn": 227,
+  "next_turn": 228,
   "as_of": "2026-10-21",
-  "location": "Ngoại vi Hắc Nha Thành, tại di tích tường đá đổ chưa định vị trên Regional Map. Vô Danh ẩn nấp sau tường đá và bụi cây phía trên vùng đất thấp có rễ cây; KHÔNG tiến xuống; phương hướng tuyệt đối chưa xác minh.",
+  "location": "Ngoại vi Hắc Nha Thành, tại di tích tường đá đổ (tọa độ và phương hướng vùng UNKNOWN). Vô Danh đang ở sau tường đá đổ/bụi cây trên nền cao đã kiểm tra; khe rễ và đất thấp dễ sạt ở phía trước. Không có lối xuống được xác nhận.",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
     "level": 6,
-    "exp": 245,
+    "exp": 255,
     "exp_next": 400,
     "unallocated_points": 0,
     "attributes": {
@@ -19,7 +19,7 @@
     },
     "resources": {
       "HP": {
-        "current": 68,
+        "current": 61,
         "max": 170
       },
       "STA": {
@@ -34,7 +34,7 @@
         "current": 0,
         "max": 20
       },
-      "souls": 61
+      "souls": 73
     },
     "passives": {
       "HapHuyet": {
@@ -412,7 +412,8 @@
     "TinhLucDuoc": 0,
     "steel_bolts": 3,
     "NanhCotTien": 1,
-    "black_claw_hyena_fang_pairs": 0
+    "black_claw_hyena_fang_pairs": 0,
+    "LoiXuongXam": 1
   },
   "base_storage": {
     "NanhLangVuong": 2,
@@ -451,12 +452,36 @@
         "old collapsed stone wall and flat patch",
         "groove in wall stone with possible drainage but function UNVERIFIED",
         "curving partly buried stone-paved strip",
-        "lower scrub/root slope with loose stones, never descended"
+        "lower scrub/root slope with loose stones, never descended",
+        "T224 two dressed straight edges observed on lower slope, connection to original pavers UNVERIFIED",
+        "T226 low hollow and flat upright stone under root gap; weak airflow and unstable lip",
+        "T227 wall-foot groove and buried stone joints show possible engineered drainage/foundation correspondence, no entry"
       ],
       "last_observation_T217": "silent hiding four minutes; a pebble fell near roots and faint dry tap, cause UNKNOWN",
       "player_hidden_in_cover": true,
-      "hidden_detection_status": "NOT_CONFIRMED_DETECTED; NOT_GUARANTEED_INVISIBLE",
-      "guide_return_status": "LEFT_ALONE_T215; ARRIVAL_HOME_UNCONFIRMED"
+      "hidden_detection_status": "No currently visible hostile at T227; V behind partial cover, detection by unseen actors UNKNOWN",
+      "guide_return_status": "LEFT_ALONE_T215; ARRIVAL_HOME_UNCONFIRMED",
+      "last_observation_T227": "Wall groove slopes toward low terrain; curved worked-paver alignment and joint on upright buried stone at root gap support engineered drainage/foundation hypothesis, NOT a verified connection or crypt entrance. Weak intermittent airflow and low soil instability; V retreated to firm old wall cover.",
+      "observed_undead_T218_T222": {
+        "id": "enemy:buried-skeleton-T218",
+        "name": "Hài Cốt Bị Vùi",
+        "level": 5,
+        "rank": "NORMAL",
+        "GM_enemy_template_status": "DISCLOSED_AFTER_INITIAL_ATTACK_T219_NOT_PRECOMMITTED",
+        "hp_max": 72,
+        "hp_current": 0,
+        "attack_range": "29–36",
+        "defense": 9,
+        "defeated_turn": 222,
+        "looted_turn": 223,
+        "corpse_looted": true,
+        "skull_destroyed": true,
+        "arm_disabled": true,
+        "quest_core_collected_provisional": 1,
+        "souls_claimed": 12,
+        "death_energy_compatible": "NOT_VERIFIED",
+        "TH": 0
+      }
     },
     "bounty_board_T208": {
       "remaining_offers": [
@@ -465,6 +490,26 @@
       "hai_cot_lang_thang_accepted_T210": true,
       "western_road_bandit_remains_active": true,
       "blackclaw_completed": true
+    },
+    "hai_cot_lang_thang_proof_T223": {
+      "item": "Lõi Xương Xám",
+      "count": 1,
+      "corpses": [
+        "enemy:buried-skeleton-T218"
+      ],
+      "evidence_status": "PROVISIONAL_UNVERIFIED_AT_ISSUER",
+      "quest_paid": false
+    },
+    "T225_cam_tri_trace": {
+      "activated": true,
+      "qualitative_trace": "weak decaying residual near looted skeleton, ambiguous weak sense toward rooted gap",
+      "distinct_source_confirmed": false,
+      "TH_yield_authorized": false,
+      "TH_gained": 0,
+      "skill_rank": "UNVERIFIED",
+      "skill_exact_cost": "UNKNOWN_NO_NUMERIC_SPEND_ASSIGNED",
+      "skill_mastery_exp": "NOT_AWARDED_UNVERIFIED_MECHANICS",
+      "no_autocast": true
     }
   },
   "npc_last_verified_T93": {
@@ -1991,6 +2036,131 @@
       "consumables_spent": 0,
       "combat": false,
       "reward_paid": false
+    },
+    "T218": {
+      "action": "Approach sound sword ready; moving skeleton arm first seen",
+      "HP_after": 68,
+      "STA_after": 28,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "souls_after": 61,
+      "EXP_after": 245
+    },
+    "T219": {
+      "action": "Ambush hit shoulder",
+      "enemy": "enemy:buried-skeleton-T218",
+      "enemy_hp_before": 72,
+      "enemy_hp_after": 49,
+      "pre_DEF": 32,
+      "DEF": 9,
+      "post_DEF_damage": 23,
+      "actual_HP_loss": 23,
+      "enemy_template_status": "GM_DISLOSED_AFTER_T219_HIT_NOT_PRECOMMITTED",
+      "HP_after": 68,
+      "STA_after": 28,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "souls_after": 61,
+      "EXP_after": 245
+    },
+    "T220": {
+      "action": "Target previous shoulder wound, dismember one arm",
+      "enemy_hp_before": 49,
+      "enemy_hp_after": 29,
+      "pre_DEF": 29,
+      "DEF": 9,
+      "post_DEF_damage": 20,
+      "actual_HP_loss": 20,
+      "player_damage": 0,
+      "HP_after": 68,
+      "STA_after": 28,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "souls_after": 61,
+      "EXP_after": 245
+    },
+    "T221": {
+      "action": "Skull slash with last-arm glancing retaliatory swipe",
+      "enemy_hp_before": 29,
+      "enemy_hp_after": 4,
+      "pre_DEF": 34,
+      "DEF": 9,
+      "post_DEF_damage": 25,
+      "actual_HP_loss": 25,
+      "incoming_pre_DEF": 29,
+      "player_DEF": 22,
+      "HP_lost": 7,
+      "HP_after": 61,
+      "STA_after": 28,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "souls_after": 61,
+      "EXP_after": 245
+    },
+    "T222": {
+      "action": "Final ordinary skull strike",
+      "enemy_hp_before": 4,
+      "enemy_hp_after": 0,
+      "pre_DEF": 30,
+      "DEF": 9,
+      "post_DEF_damage": 21,
+      "actual_HP_loss": 4,
+      "kill_confirmed": true,
+      "EXP_gained": 10,
+      "HP_after": 61,
+      "STA_after": 28,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "souls_after": 61,
+      "EXP_after": 255
+    },
+    "T223": {
+      "action": "First corpse loot + investigate root gap + return to ambush wall",
+      "bone_core_collected_provisional": 1,
+      "first_soul_claim": 12,
+      "TH_gained": 0,
+      "HP_after": 61,
+      "STA_after": 28,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "souls_after": 73,
+      "EXP_after": 255
+    },
+    "T224": {
+      "action": "Survey stable outer-wall terrain, discover two straight dressed lower stone edges",
+      "HP_after": 61,
+      "STA_after": 28,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "souls_after": 73,
+      "EXP_after": 255
+    },
+    "T225": {
+      "action": "Tử Huyết Cảm Tri qualitative weak trace; compatibility unknown, no TH award, numeric cost and mastery award not predeclared",
+      "HP_after": 61,
+      "STA_after": 28,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "souls_after": 73,
+      "EXP_after": 255
+    },
+    "T226": {
+      "action": "Sword-tip light-probe reveals upright flat buried stone and partial hollow/airflow; loose lip slips, V withdraws",
+      "HP_after": 61,
+      "STA_after": 28,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "souls_after": 73,
+      "EXP_after": 255
+    },
+    "T227": {
+      "action": "Correlate drainage-like groove and paving with buried dressed stone; connection NOT proven, no entry",
+      "HP_after": 61,
+      "STA_after": 28,
+      "BLOOD_after": 28,
+      "TH_after": 0,
+      "souls_after": 73,
+      "EXP_after": 255
     }
   },
   "provenance": {
@@ -2292,27 +2462,31 @@
       "accepted_turn": 210,
       "issuer": "Người coi bảng ủy thác khu chợ Hắc Nha Thành (chưa biết tên)",
       "category": "BOUNTY_MINOR_UNDEAD",
-      "target": "Hài cốt lang thang tại hầm chôn cũ; hiện chưa thấy mục tiêu trực tiếp",
+      "target": "Hài cốt lang thang tại hầm chôn cũ: đã thấy và tiêu diệt một bộ hài cốt chuyển động ở di tích tường đá T218–T222, nhưng vị trí di tích chưa được xác minh trùng hầm chôn cũ, nên đối tượng liên hệ nhiệm vụ chưa được xác nhận",
       "target_count": "UNKNOWN",
       "hunting_area": "Hầm chôn cũ ngoài khu dân cư; vị trí chính xác UNKNOWN; KHÔNG xác định trùng Nghĩa Địa Tử Thiết hoặc di tích tường đá",
       "evidence_required": "3 lõi xương hợp lệ; phải mang về bàn ủy thác để xác minh",
       "evidence_required_count": 3,
-      "evidence_collected_count": 0,
+      "evidence_collected_count": 1,
       "reward_on_verified_completion": {
         "souls": 16,
         "EXP": 25
       },
       "reward_received": false,
-      "source": "events/0208.md..events/0217.md",
-      "progress": "Accepted T210, zero cores collected. T211–T212 interviewed coffin porter (former deliveries but no direct deep-crypt access); caretaker called 'lão giữ sổ', whereabouts UNKNOWN. T213 conditional escort agreed. T214 found old stone wall that porter could not positively identify. T215–T217 locally probed wall/groove/paving/unstable lower root slope; no entrance, undead or trap confirmed; obscure faint tap and falling pebble T217. Vô Danh staying concealed behind wall; no enemy detection confirmed.",
-      "next_step": "From cover decide whether to continue passive observation, carefully survey known stable footing, withdraw for recovery or seek corroborating witness; do not reveal hidden crypt or treat wall as confirmed route.",
+      "source": "events/0208.md..events/0227.md",
+      "progress": "T218 skeletal limb emerged from under loose roots; T219–T222 combat and kill of Hài Cốt Bị Vùi Lv5 Normal, owner-requested GM-level and stats supplemented after T219 encounter began (not preregistered before initial strike). T223 first corpse loot +12 Souls and one Lõi Xương Xám carried; proof plausible but not verified by quest clerk. T224 new straight-cut stone edges, T225 weak ambiguous Tử Huyết Cảm Tri trace (no TH confirmed), T226 upright dressed stone and low hollow under root gap with intermittent faint airflow and loose collapsing soil, T227 old drainage-like groove and curving paving appear aligned with buried worked stone joint; actual physical connection and safe passage UNKNOWN. V currently behind wall cover, no other confirmed enemy.",
+      "next_step": "Choose T228: safe-angle observation/trace construction, maintain concealment, withdraw for supplies/rest or seek stronger testimony. Do NOT assume crypt entrance or safe lower route; do NOT auto award remaining core/proof, quest payment or TH.",
       "intelligence": {
         "direct_observation": [
           "A low partially collapsed old masonry wall and flat ground outside residential area; position not precisely mapped",
           "Shallow groove in wall stone of unconfirmed function",
           "Short narrow paved strip curves near wall then disappears beneath roots",
           "Loose rubble, roots and partially concealed lower slope: footing hazard, not explored",
-          "T216 dry impact noise and pebbles; T217 a falling pebble and faint tap, source UNKNOWN"
+          "T216 dry impact noise and pebbles; T217 a falling pebble and faint tap, source UNKNOWN",
+          "T218–T222 one moving undead skeleton emerged and was killed, not proof this wall is task crypt",
+          "T224 two roughly straight worked stone edges on lower untested area",
+          "T226 small lower hollow, roughly upright flat worked stone, weak intermittent draft through roots, and local soil slip on light probing",
+          "T227 wall-foot groove slopes toward lower terrain; partly paved stone strip and buried dressed slab share plausible direction/joint lines; connection remains UNVERIFIED"
         ],
         "eyewitness_prior_history": [
           "Former porter saw an old stone wall and top of downward delivery ramp YEARS ago; uncertain this is same wall",
@@ -2323,9 +2497,13 @@
           "Whether observed wall is old delivery wall",
           "Present passability of lower slope, any structural cavity",
           "Any undead, traps, treasure or enemy detection",
-          "Origin of scraping rumor and dry tapping"
+          "Origin of scraping rumor and dry tapping",
+          "Whether lower cavity contains safe access or a second TH-bearing source; NO detection confirmed",
+          "Whether Lõi Xương Xám is acceptable quest proof at the issuer; NOT YET INSPECTED"
         ]
-      }
+      },
+      "evidence_provisional_count": 1,
+      "evidence_verified_by_issuer_count": 0
     }
   },
   "archery_training": {
@@ -2642,14 +2820,15 @@
       },
       {
         "name": "Hài Cốt Lang Thang",
-        "status": "OFFERED_NOT_ACCEPTED",
+        "status": "ACCEPTED_T210_ACTIVE",
         "reward": {
           "souls": 16,
           "EXP": 25
         },
         "proof": "3 lõi xương",
         "area": "Hầm chôn cũ ngoài khu dân cư",
-        "blood_bearing": false
+        "blood_bearing": false,
+        "accepted_turn": 210
       }
     ],
     "offer_B_accepted_turn": 184
@@ -2752,6 +2931,21 @@
         "claimed": true,
         "encounter_bonus": 0,
         "TH": 0
+      },
+      "enemy:buried-skeleton-T218": {
+        "claim_id": "claim:T223:buried-skeleton:soul-v1.3",
+        "source": "events/0223.md",
+        "loot_turn": 223,
+        "souls": 12,
+        "L_reward": 5,
+        "rank": "normal",
+        "rank_multiplier": 1,
+        "D": 1,
+        "claimed": true,
+        "encounter_bonus": 0,
+        "TH": 0,
+        "source_precommit_status": "GM_STAT_BLOCK_DISCLOSED_T219_AFTER_INITIAL_ATTACK_BEFORE_LOOT; NO_PRECOMMITTED_HIDDEN_TEMPLATE; NOT_RNG",
+        "quest_material_separate": true
       }
     },
     "C_status": "DEAD_T199_FIRST_SOUL_CLAIM_COMPLETE_T200_NO_DUPLICATE",
@@ -2917,13 +3111,13 @@
     "reward": "NONE"
   },
   "checkpoint": {
-    "id": "HN-T217-NORMAL-10TURN",
-    "last_completed_turn": 217,
-    "source_events": "events/0208.md..events/0217.md",
-    "previous_checkpoint_last_completed_turn": 207,
+    "id": "HN-T227-NORMAL-10TURN",
+    "last_completed_turn": 227,
+    "source_events": "events/0218.md..events/0227.md",
+    "previous_checkpoint_last_completed_turn": 217,
     "number_narrated_turns": 10,
     "gameplay_retcon": false,
-    "notion_sync_status": "No T208-T217 NPC graph projection to Notion; GitHub state/events canon",
+    "notion_sync_status": "No new external Notion graph projection for ordinary unnamed skeleton; GitHub canon authoritative",
     "chat_only_unsaved_turns_after_verified_write": 0,
     "notion_hub_page_id": "3fe864d2-95ce-8178-95ae-d0bcfde6ac34",
     "notion_summary_sources_git_commit": "1eaac4e68ac6e2d138818eeb609c3916e275d34e",
