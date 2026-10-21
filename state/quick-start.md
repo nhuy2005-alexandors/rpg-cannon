@@ -9,6 +9,8 @@ Vô Danh (Huyết Kiếm Sĩ Lv6) is **hidden behind collapsed stone wall and br
 
 **MAP CONTINUITY:** Feature branch `feat/full-atlas-v1-20261020` has newly indexed local-only map ID `ngoai-thanh-tuong-da-do` in `maps/atlas-v1.json`; active scene at T217 is in `maps/active-scene.json` on both main and feature. No Region pin or verified compass bearing; local map token's facing arrow only denotes screen-down toward the lower slope, **NOT true south**. Local scene location and event reports outrank map illustration. Original static T204 World/Regional SVG snapshots remain valid historical assets and are NOT regenerated. Preferred Readable+ dark legible style, reuse static base, update overlays only, no Canva call each turn. Consult feature `docs/gm-map-behavior-handoff-v1.md`. Current rules come from **main** `canon/rules.md`, `docs/gm-storyline-protocol.md`.
 
+**OWNER RULES HANDOFF (2026-10-21):** Consult main `canon/rules.md` section `OWNER CLARIFICATION T219–T224` for mandatory conditional resolution of all custom actions; complete enemy Lv/HP/ATK/DEF and pre/post-DEF combat damage HUD; separation of Hấp Huyết/BLOOD from undead death-energy and non-automatic Tử Huyết; reuse rather than fully redraw observed tactical maps. No fake RNG or automatic hit/cripple. This is RULES-ONLY sync: T218–T224 are still narrated IN CHAT but are not yet a durable gameplay checkpoint; T225 not played.
+
 **CHECKPOINT POLICY:** Normal 10-turn gate closed at T217; next unsaved starts T218, or checkpoint sooner for major/irreversible events. Do not treat archive sections below as current.
 
 ---
