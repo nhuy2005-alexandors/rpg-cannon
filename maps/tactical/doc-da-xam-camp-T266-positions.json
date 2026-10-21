@@ -1,0 +1,119 @@
+{
+  "schema": "HN-COMBAT-OVERLAY-V1",
+  "turn": 266,
+  "map_id": "duong-tay-doc-da-xam-camp",
+  "base_svg": "maps/tactical/doc-da-xam-camp-v1.svg",
+  "base_svg_blob_sha": "ea2921b0039beee68642971b3a2dcaae448a17d8",
+  "base_immutable": true,
+  "coords_note": "720x440 schematic anchors, not physical distances",
+  "actors": [
+    {
+      "id": "vo-danh",
+      "token": "V",
+      "x": 214,
+      "y": 270,
+      "weapon": "Liên Nỏ Hắc Nha",
+      "loaded_steel_bolt": 1,
+      "steel_bolts_reserve": 2,
+      "HuyetNha": "SHEATHED",
+      "parry_unavailable": true,
+      "shot_T266": false,
+      "HP": 145,
+      "STA": 24
+    },
+    {
+      "id": "maela",
+      "token": "M",
+      "x": 160,
+      "y": 261,
+      "weapon": "hunter bow",
+      "injured": false,
+      "arrows_fired_T266": 1,
+      "shot_landed": false,
+      "expedition_arrows_shot_total": 6,
+      "expedition_usable_recovered": 3,
+      "expedition_unrecovered_last_two": 2,
+      "unknown_initial_arrow_stock": true
+    }
+  ],
+  "enemies": [
+    {
+      "id": "enemy:doc-da-xam-upper-archer-T265",
+      "token": "?",
+      "level": 7,
+      "rank": "NORMAL",
+      "HP": 69,
+      "max_HP": 85,
+      "DEF": 10,
+      "weapon": "longbow",
+      "last_exposed_schematic_x": 508,
+      "last_exposed_schematic_y": 148,
+      "last_seen": "lower step along SAME northern upper switchback, briefly exposed torso",
+      "currently_visible": false,
+      "currently_targetable": false,
+      "current_coordinates": "UNKNOWN_BEHIND_NORTH_ROCK",
+      "known_movement": "brief limited reposition along existing high path",
+      "arrow_shots_this_turn": 1,
+      "enemy_arrow_blocked_by_west_stone": true,
+      "faction": "UNKNOWN",
+      "leader_status": "UNVERIFIED"
+    }
+  ],
+  "corpses": [
+    {
+      "id": "enemy:west-road-cloaked-lookout-T247",
+      "x": 100,
+      "y": 348,
+      "looted": true
+    },
+    {
+      "id": "enemy:west-road-axe-guard-T251",
+      "x": 126,
+      "y": 372,
+      "looted": true
+    },
+    {
+      "id": "enemy:west-road-grey-coat-T256",
+      "x": 529,
+      "y": 325,
+      "looted": true
+    }
+  ],
+  "static_landmarks_not_changed": [
+    "tarp",
+    "crate1",
+    "crate2",
+    "crate3",
+    "northern stone switchback",
+    "western rocks",
+    "activated warning wire"
+  ],
+  "maela_shot": {
+    "bow_arrow_used": 1,
+    "landed": false,
+    "reason": "enemy re-entered rock cover before arrow arrived",
+    "enemyHP_before": 69,
+    "enemyHP_after": 69
+  },
+  "enemy_shot": {
+    "bow_arrow_used": 1,
+    "hit_character": false,
+    "obstruction": "western boulder",
+    "HP_loss_V": 0,
+    "HP_loss_Maela": 0
+  },
+  "player_crossbow": {
+    "fired": false,
+    "loaded_steel_after": 1,
+    "steel_reserve_after": 2,
+    "special_reserve_after": 1,
+    "reason": "blocked bolt trajectory behind rock/tarp/crate"
+  },
+  "skill_usage_T266": [],
+  "resources_changed": false,
+  "notes": [
+    "T265 overlay is parent; fixed SVG base SHA matches T263.",
+    "Do not render enemy as currently exposed; ? is a last-sighting marker only.",
+    "T267 not played."
+  ]
+}
