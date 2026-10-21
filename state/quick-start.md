@@ -1,3 +1,21 @@
+# HẮC NHẬT — QUICK START (T273)
+
+**LATEST CHECKPOINT T273; T274 NOT PLAYED.** Authority: `state/current.json`, `events/0273.md`, `maps/active-scene.json`, immutable `maps/tactical/doc-da-xam-camp-v1.svg` (Git blob ea2921b0039beee68642971b3a2dcaae448a17d8), delta `maps/tactical/doc-da-xam-camp-T273-positions.json`.
+
+**Vô Danh:** Huyết Kiếm Sĩ Lv6 HP**139/170**, STA**9/110**, BLOOD50/50, Tử Huyết0/20, Souls110, EXP330/400, DEF22, **Huyết Nha+3 wielded** (normal ATK28–36, landed ordinary hit grants +7 BLOOD up to cap), Liên Nỏ Hắc Nha stowed UNLOADED, steel reserve2, Nanh Cốt Tiễn1, Hắc Nha Trọng Kiếm VII merely backup. One +30HP military healing potion remains UNUSED. Huyết Ảnh Bộ Rare Lv1 skill EXP **4/60**, cast T273 cost15STA and **cooldown3** at end T273; one intervening beat T274 reduces to2 etc., ready no earlier than T277. Hấp Huyết Rare Lv1 skill EXP **12/60**, last +2HP from actual sword damage24 (floor10%, max5HP per combat turn). Gạt Kiếm Lv2 EXP6/90 cost7STA only on perceivable eligible incoming MELEE; currently sword wielded and enough STA9 if legal reaction. Huyết Trảm Nhị Liên Lv2 EXP8/135 ready but cannot afford25STA, also costs12HP. Nhãn Quan Hiệp Chiến Lv1 EXP4/40. No seeded RNG bonus rolls, unverified bonus pending.
+
+**T273 action & arithmetic:** V climbed only ALONG existing high northern rock switchback from lower foot schematic(496,184) while archer independently prepared to draw bow from old upper bend, becoming a visible real threat. After V physically closed along solid stone (no distance inferred from SVG), a clear firm landing approx **3m** to the left flank was observed. V activated **ONE legal Huyết Ảnh Bộ**, STA24→9, no phasing obstacles, arriving near existing upper turn V schematic(477,105). Wounded Lv7 Normal opponent HP33, DEF10 tried sidestep/raise longbow but lost balance; not automatically defenseless. V landed EXACTLY ONE normal Huyết Nha+3 sword swing raw34−DEF10=24 actual damage enemy33→**9/85**, **ALIVE**; no crit, no free second sword strike or execution. Hấp Huyết heals2 V137→139; BLOOD nominal +7 capped at50. SkillEXP Dash2→4, Hấp Huyết10→12, normal characterEXP and Souls unchanged. Bow wielder fell to one knee, **DROPPED** longbow adjacent on rock (not picked up/claimed), begs not to be killed. **He is conscious, living, within V legal sword reach** and may react next turn. Identity, bandit faction, chief status UNKNOWN. No quest proof or payout.
+
+**Maela:** Remains on earlier west cover schematic(178,229), uninjured, 1 personal arrow already nocked and held, did NOT fire T273 due no unobstructed full view of upper melee; 7 known expedition arrow discharges total and starting quiver stock UNKNOWN.
+
+**Map invariant:** Original T263 `maps/tactical/doc-da-xam-camp-v1.svg` fixed same three crates, tarp, earlier bell wire activated T260, lower boulders and existing north switchback; all three earlier enemy corpses already first-looted. Delta overlay T273 only changes V and now actually visible Lv7 archer to upper-turn markers V(477,105), E(460,87), Maela(178,229) unchanged. These are illustrative NOT surveyed distances. Bow has been DROPPED but not transferred to player inventory.
+
+**T274 must be explicitly commanded:** could finish with a separate legal sword attack, demand identity/interrogate, require surrender and disarm or restrain, or withdraw. Do not force kill or quest completion just because bowman is injured/unarmed. No automatic STA recovery, cooldown reduction before intervening turn, free life steal on ranged, or collateral loot. If killed, first corpse Souls only after actual eligible search; chief bounty only with true provable confirmation returned to Garrick.
+
+---
+
+## Archived T272 and earlier quick starts
+
 # HẮC NHẬT — QUICK START (T272)
 
 **LATEST VERIFIED T272; NEXT T273 IS NOT PLAYED.** Source `state/current.json`, `events/0272.md`, `maps/active-scene.json`, static `maps/tactical/doc-da-xam-camp-v1.svg` blob ea2921b0039beee68642971b3a2dcaae448a17d8, actor overlay `maps/tactical/doc-da-xam-camp-T272-positions.json`. All T263 fixed terrain and old archival map unchanged.
