@@ -1,5 +1,11 @@
 # HẮC NHẬT — QUICK START (T244)
 
+## ENGINEERING ADDENDUM — Organic Proficiency V1.0 (NON-GAMEPLAY)
+
+Approved **prospectively after T244**, no new turn played, no change to the T244 numerical state. Lean spec `canon/organic-proficiency-v1.0.md`, pure manual-usage evidence gate `story/proficiency.py`, adversarial regression `verification/test_organic_proficiency.py`, targeted receipt `verification/organic-proficiency-v1.0-review.md`. **31/31 targeted tests PASS** (9 legacy V1.3 +22 new) on exact blob-verified test/runtime code; entire repo E2E was NOT tested. The frozen `story/progression.py` and existing V1.3 values remain untouched.
+
+For future new meaningful, witnessed proficiency use: require stable action/evidence IDs, GM adjudication, actual qualifying context and concrete novelty; max3 equivalent credited uses per practice context, no XP from idle repetition, no duplicated evidence/retroactive T244 exam. Use existing V1.3 Skill EXP +2 effective, +1 legitimate failure, +5 bonus ONLY from actually computed verified seeded public draw; no independent Battle IQ numerical stat, new player action, auto-hit or ally mind reading. `Nhãn Quan Hiệp Chiến` Lv1 0/40 remains as before; no approved Lv2, **automatic level-up forbidden**. Run `proficiency_use` only after a qualified *later* player action; no existing integration hook automatically calls it. Preserve Maela's NPC agency and physical arrow lanes. **NEXT T245 player-directed**, V HP170 STA70 Souls68, all other T244 values unchanged.
+
 **LATEST VERIFIED GAMEPLAY CHECKPOINT T244; NEXT PLAYER-DIRECTED TURN T245.** The one-turn early checkpoint is caused by a **new permanent Common Lv1 passive skill** earned through actual advanced teamwork testing with Maela, rather than a normal 10-turn batch. Authority: `main/state/current.json`, append-only `events/0244.md`, preregistered public (non-secret) assessment/contract `canon/skills/nhan-quan-hiep-chien-T244.md`, updated `canon/npc/maela.md`. Do not repeat/rest/train T244 on next turn.
 
 ## ACTIVE STATE AT T244
