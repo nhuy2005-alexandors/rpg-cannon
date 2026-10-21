@@ -1,44 +1,33 @@
 {
   "schema": "HN-MAP-SCENE-V1",
-  "last_completed_turn": 207,
-  "next_turn": 208,
-  "map_id": "hac-nha-east-approach",
-  "status_source": "main/state/current.json — events/0205.md..events/0207.md",
+  "last_completed_turn": 217,
+  "next_turn": 218,
+  "map_id": "ngoai-thanh-tuong-da-do",
+  "status_source": "main/state/current.json — main/events/0217.md; local area atlas on feature branch",
   "current": {
     "tokens": [
       {
         "id": "vo-danh",
         "label": "V",
         "category": "player",
-        "x": 21,
-        "y": 59,
-        "facing": "W",
+        "x": 36,
+        "y": 28,
+        "facing": "S",
         "status": "ALIVE",
-        "weapon": "Huyết Nha +3 carried",
-        "position_note": "At established market bounty board marker, approximate; W represents westbound approach, exact stance in front of clerk unmeasured"
+        "tactical_state": "CONCEALED_BEHIND_PARTIAL_COVER",
+        "actual_geographic_bearing": "UNKNOWN",
+        "weapon": "Huyết Nha +3 held quietly",
+        "position_note": "Local schematic token by fallen wall and brush. S only points visually downhill on diagram; NOT proven cardinal south"
       }
     ],
-    "movement": [
-      {
-        "entity_id": "vo-danh",
-        "from": [
-          87,
-          23
-        ],
-        "to": [
-          21,
-          59
-        ],
-        "direction": "NE shed → Hắc Nha Thành market via known east approach; schematic link only, not actual path or meters",
-        "turn": 207
-      }
-    ],
+    "movement": [],
     "visible_hostiles": [],
     "notes": [
-      "Bounty submitted and verified T207, proof 3/3 surrendered, +20 souls +30 EXP paid once",
-      "T205–T206 exploration of NE shed retained in events; static shed terrain objects unchanged",
-      "Journey schematically from east scrapyard to existing city market-board marker; no extra hidden locations or route metrics",
-      "Precise character bearing at clerk is unknown; W is the last known westward approach, not a surveyed final facing"
+      "At T217 player motionless behind rubble/bush, only watched/listened about 4 min",
+      "Lower root/stone slope not entered, no undead or crypt entrance verified",
+      "Local diagram vertical axis is illustration ONLY; cardinal bearing, true distance and regional site position UNKNOWN",
+      "Partial cover does not certify impossible detection",
+      "Prior market→outer wall movement T214 documented as uncertain cart route in events, not reconstructed here"
     ]
   },
   "legacy_timeline": {
