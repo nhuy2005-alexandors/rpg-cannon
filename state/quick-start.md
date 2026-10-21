@@ -1,3 +1,19 @@
+# HẮC NHẬT — QUICK START (T270)
+
+**LATEST CHECKPOINT T270; NEXT T271 NOT PLAYED.** Source `state/current.json`, `events/0270.md`, `maps/active-scene.json`, fixed `maps/tactical/doc-da-xam-camp-v1.svg` (T263 immutable blob ea2921b0039beee68642971b3a2dcaae448a17d8), and T270 token overlay `maps/tactical/doc-da-xam-camp-T270-positions.json`.
+
+**Vô Danh:** Lv6 EXP330/400, HP137/170, STA24/110, BLOOD50/50, TuHuyet0/20, Souls110, DEF22. Holds Huyết Nha+3 Rare sword (ATK28–36). Liên Nỏ Hắc Nha STOWED UNLOADED, steel bolts reserve2, Nanh Cốt Tiễn1, Hắc Nha Trọng Kiếm VII merely backup. Huyết Ảnh Bộ Lv1 READY (2/60, cost15STA, max4m only feasible verified landing); WAS NOT USED T270, and no stamina expense. Gạt Kiếm Lv2 (6/90) is eligible only in response to visible feasible incoming MELEE strike (7STA), not ordinary incoming longbow arrow. Huyết Trảm Nhị Liên Lv2 (8/135) READY but not affordable with STA24 vs25 cost (+12HP), not cast. Other skills and inventory from T269 unchanged; 1 military +30HP potion not consumed. No passive or safe-rest recovery.
+
+**T270 events:** Starting from north tip west boulder SVG(218,216), V carefully crosses the initial loose gravel strip in the OPEN, cannot validate the desired opposite landing distance <=4m and does not cast Huyết Ảnh Bộ. The north Lv7 NORMAL archer at an existing upper switchback turn briefly exposes his torso, draws and fires ONE longbow arrow downward at V; preDEF30−V DEF22=8 actual, V HP145→137, ordinary upper-arm graze with NO established lasting bleed/injury. Maela autonomously fires ONE formerly nocked safe oblique arrow through real line above tarp, preDEF27−archer DEF10=17 actual, enemy HP50→33/85. Archer independently withdraws under north high stone after this hit, remaining alive; exact current location UNKNOWN, last exposed approx schematic(464,94). Maela remains uninjured at SVG(178,229), now needs to re-nock another arrow; known own expedition arrows fired total7, no additional recovered shot, original ammo total UNKNOWN. V reaches west/north OUTER CORNER of existing FIRST CRATE around SVG(303,197), which is only PARTIAL cover from higher ground. V has NOT reached foot of ascending northern path or archer melee range. No enemy or friendly additional shots, no parry, sword attack, skill XP, character XP, Souls, loot or verified seeded RNG.
+
+**Tactical geometry:** Same exact combat BASE drawing as T263; no added/moved stone, tarp, crate, alarm cord or corpse. Overlay alone moves V from (218,216) to (303,197); Maela stays (178,229); '?' enemy LAST EXPOSED (464,94) not current confirmed position. SVG coordinates ARE NOT real-world meters nor authorization for instant range closure. An exposed crossing under archer line can inflict damage even if V ultimately reaches partial crate cover. T271 player must choose deliberate next action; no autoplays.
+
+**Quest:** Garrick bandit-chief task ACTIVE and 65 Souls +100 EXP unpaid. No bandit leader positively identified among dead or archer; alarm wire T260 rang earlier and other responses UNKNOWN.
+
+---
+
+## Archived T269 and previous quick starts
+
 # HẮC NHẬT — QUICK START (T269)
 
 **LATEST VERIFIED GAMEPLAY CHECKPOINT T269; T270 NOT PLAYED.** Source `state/current.json`, `events/0269.md`, active map `maps/active-scene.json`, base `maps/tactical/doc-da-xam-camp-v1.svg` (unchanged T263 blob ea2921b0039beee68642971b3a2dcaae448a17d8), delta `maps/tactical/doc-da-xam-camp-T269-positions.json`.
