@@ -940,6 +940,107 @@
           "point_id": "nha-sat-dong-bac"
         }
       ]
+    },
+    {
+      "id": "ngoai-thanh-tuong-da-do",
+      "name": "Di tích tường đá ngoài Hắc Nha Thành",
+      "level": "AREA",
+      "extent": "LOCAL schematic only; regional bearing UNKNOWN",
+      "revision": 1,
+      "grounded_through_turn": 217,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "events/0214.md",
+        "events/0215.md",
+        "events/0216.md",
+        "events/0217.md"
+      ],
+      "objects": [
+        {
+          "id": "wall",
+          "type": "landmark",
+          "label": "Tường đá đổ",
+          "x": 45,
+          "y": 36,
+          "status": "observed"
+        },
+        {
+          "id": "flat-ground",
+          "type": "terrain",
+          "label": "Nền bằng",
+          "x": 25,
+          "y": 40,
+          "status": "observed"
+        },
+        {
+          "id": "groove",
+          "type": "clue",
+          "label": "Rãnh chân tường",
+          "x": 63,
+          "y": 43,
+          "status": "function_unknown"
+        },
+        {
+          "id": "stone-path",
+          "type": "path",
+          "label": "Nền đá cũ",
+          "points": [
+            [
+              29,
+              48
+            ],
+            [
+              45,
+              52
+            ],
+            [
+              66,
+              63
+            ]
+          ],
+          "status": "partial_only"
+        },
+        {
+          "id": "roots",
+          "type": "cover",
+          "label": "Rễ cây, bụi rậm",
+          "x": 67,
+          "y": 69,
+          "status": "observed"
+        },
+        {
+          "id": "lower-rubble",
+          "type": "hazard-terrain",
+          "label": "Đất thấp, đá vụn",
+          "x": 69,
+          "y": 84,
+          "status": "not_traversed"
+        },
+        {
+          "id": "cover",
+          "type": "cover",
+          "label": "Chỗ Vô Danh nấp",
+          "x": 36,
+          "y": 28,
+          "status": "observed"
+        },
+        {
+          "id": "pebble",
+          "type": "clue",
+          "label": "Sỏi trượt, tiếng gõ",
+          "x": 69,
+          "y": 74,
+          "status": "cause_unknown"
+        }
+      ],
+      "unplaced_known_names": [
+        "Hầm chôn cũ (vị trí UNKNOWN)"
+      ],
+      "known_limitations": [
+        "NOT proved to be the burial-crypt location",
+        "Absolute direction, regional position, physical distances unknown",
+        "No confirmed enemy, entrance or hollow space"
+      ]
     }
   ],
   "update_contract": {
