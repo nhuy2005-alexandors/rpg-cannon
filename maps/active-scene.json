@@ -1,9 +1,9 @@
 {
   "schema": "HN-MAP-SCENE-V1",
-  "last_completed_turn": 265,
-  "next_turn": 266,
+  "last_completed_turn": 266,
+  "next_turn": 267,
   "map_id": "duong-tay-doc-da-xam-camp",
-  "status_source": "state/current.json T265 and events/0265.md; same immutable combat base SVG, T265 position overlay",
+  "status_source": "T266 state/current.json, events/0266.md; fixed map doc-da-xam-camp-v1.svg, overlay T266 positions",
   "current": {
     "tokens": [
       {
@@ -53,20 +53,20 @@
     ],
     "visible_hostiles": [],
     "notes": [
-      "STATIC TERRAIN UNCHANGED. maps/tactical/doc-da-xam-camp-v1.svg blob ea2921b0039beee68642971b3a2dcaae448a17d8 is still authority. Only overlay updates. The north ! source/figures on tactical map may not correspond to a previously suspected opponent.",
-      "T265 REAL Lv7 NORMAL upper-path human archer (public encounter block canon/encounters/west-road-upper-path-archer-T265-public.md) briefly drew bow toward western cover, Maela obtained independent fleeting oblique shot raw26−DEF10=16 (enemy85→69). Enemy fired one rushed counter-arrow into west boulder, neither V nor Maela damaged, and retreated behind rock; not currently shootable or confirmed visible.",
-      "V remained holding Liên Nỏ Hắc Nha loaded 1 steel bolt with 2 steel reserves and Nanh Cốt Tiễn1; no firing, no skill cost or parry (Huyết Nha SHEATHED).",
-      "Maela fired 1 new personal arrow (five known used this trip), at least two previously recovered usable arrows available in principle; original count still UNKNOWN and she must take/nock arrow for another shot.",
-      "V HP145 STA24 BLOOD50 TH0 Souls110 EXP330. Garrick west-road bandit leader quest remains ACTIVE UNPAID, new archer affiliation and leader identity UNKNOWN.",
-      "Alarm wire triggered T260, terrain objects stable, no measured georeferenced coordinates. Old stone-wall ruins preserved in history."
+      "STATIC TERRAIN EXACT SAME as T263/T264/T265 SVG maps/tactical/doc-da-xam-camp-v1.svg blob ea2921b0039beee68642971b3a2dcaae448a17d8. Overlay alone changes, keep corpse positions and all three crates, tarp, alarm wire and existing upper path fixed.",
+      "T266 Maela legally nocked another arrow and fired one when a narrow real target sight line appeared; archer independently retreated and her projectile hit adjacent rock, 0 HP damage; Maela has fired six personal arrows on known outing, original total unknown, no new recovery.",
+      "Upper archer Lv7 NORMAL HP69/85, moved along existing upper stone switchback, fired exactly one return longbow arrow at Maela's cover which was blocked by western rock. Now fully concealed with no confirmed current exact position.",
+      "V retains preloaded one steel bolt in Liên Nỏ Hắc Nha, 2 steel reserve, special1, Huyết Nha+3 SHEATHED; V did not fire, reload, use skill, parry or gain STA.",
+      "V HP145/170 STA24/110 BLOOD50/50 TH0/20 Souls110 EXP330/400. Both V and Maela unharmed; quest leader still unconfirmed and bounty unpaid.",
+      "T267 is NOT played; choose next action first. Prior ruins preserve in inactive_scene_T240 and legacy_timeline."
     ],
     "relative_actor_locations": {
-      "vo_danh": "unchanged T264 west cover at schematic (214,270), crossbow loaded; V has no valid shooting lane currently",
-      "maela": "unchanged T264 west-left at (160,261), fired one arrow, next shot requires nocking",
-      "upper_archer": "briefly appeared on north upper-path edge, now behind northern rock UNKNOWN exact current coordinates; alive 69/85 Lv7 Normal"
+      "vo_danh": "unchanged T265 at schematic (214,270), loaded Liên Nỏ Hắc Nha, bolt conserved, sword sheathed",
+      "maela": "unchanged T265 at (160,261), fired one new arrow which hit rock, uninjured, must nock another for next shot",
+      "upper_archer": "briefly exposed on lower section of same existing north switchback near schematic (508,148), currently back behind upper boulder and not shootable; HP69/85"
     },
     "base_map_svg": "maps/tactical/doc-da-xam-camp-v1.svg",
-    "position_overlay": "maps/tactical/doc-da-xam-camp-T265-positions.json",
+    "position_overlay": "maps/tactical/doc-da-xam-camp-T266-positions.json",
     "coordinate_note": "Current token x/y in percentages of an UNMEASURED viewBox sketch, NOT physical atlas geography"
   },
   "legacy_timeline": {
