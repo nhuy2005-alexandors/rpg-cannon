@@ -1,3 +1,19 @@
+# HẮC NHẬT — QUICK START (T265)
+
+**LATEST VERIFIED GAMEPLAY CHECKPOINT T265, NEXT T266 NOT PLAYED.** Source `state/current.json`, `events/0265.md`, `maps/active-scene.json`, fixed `maps/tactical/doc-da-xam-camp-v1.svg` and delta `maps/tactical/doc-da-xam-camp-T265-positions.json`. Early checkpoint because a NEW Lv7 NORMAL enemy became involved with real HP change and public precommit, not because 10 turns elapsed.
+
+**Vô Danh:** Lv6 EXP330/400 HP145/170 STA24/110 BLOOD50/50 Tử Huyết0/20 Souls110 DEF22. Holds **Liên Nỏ Hắc Nha loaded with exactly ONE steel bolt**, 2 spare steel bolts, Nanh Cốt Tiễn1. Huyết Nha+3 sheathed, Hắc Nha Trọng Kiếm VII backup carried; cannot Parry with crossbow in hand. Huyết Ảnh Bộ ready cost15 STA, <=4m; Huyết Trảm Nhị Liên ready but COST25 STA (currently insufficient) and12HP; Gạt Kiếm Lv2 7STA only with wielded sword and eligible physical defense reaction. Hấp Huyết skill EXP10/60, Gạt Kiếm6/90, Nhị Liên8/135, Huyết Ảnh Bộ2/60, Nhãn Quan Hiệp Chiến4/40, no RNG bonuses. Healing potion1 (+30HP, not STA). Owned inventory from T264 preserved.
+
+**T265 new enemy:** After an ambiguous north path observation at T264, a visibly armed NEW human longbowman entered an exposed edge of upper north rocky path and aimed drawn bow toward Maela. New public template saved/read back BEFORE damage at `canon/encounters/west-road-upper-path-archer-T265-public.md`: ID `enemy:doc-da-xam-upper-archer-T265`, **Lv7 NORMAL HP85/85 DEF10 meleeATK30–37, normal arrow raw28–34**; class, boss, faction and identity otherwise unverified. Maela used one safe oblique bow shot raw26−DEF10=16, enemy HP85→69/85; her fifth personally owned shot in known trip, arrow unrecovered. Enemy autonomously released ONE hurried arrow at her; it was blocked by the west stone, zero HP damage to Maela/V, then retreated behind north elevated rock. **Enemy alive HP69, now hidden and NOT currently a confirmed targetable line.** Enemy knows Maela general shooting direction but no confirmed exact V location. V could NOT fire due crate/tarp/rock obstruction and conserved his loaded steel bolt. No skill use, character/skill EXP or new rewards. No RNG actually performed.
+
+**Party/map:** V approx schematic SVG(214,270), Maela(160,261), identical to T264. Enemy last observed around northern path SVG(493,112) but current location behind stone UNKNOWN; overlay marks LAST SEEN, not a real-time accurate position. Static terrain fixed as original T263 SVG (three crates, tarp, west rocks, northern path, metal tripwire). Never redraw/move those anchors in later turns. Maela uninjured, bow requires ordinary nocking before next shot; total remaining arrow stock UNKNOWN (3 recovered reusable, 1 damaged, a fifth now uncollected, original total not inventoried). Garrick west-road leader bounty ACTIVE UNPAID; no enemy proven boss/leader. Alarm bell already triggered T260, response of unseen people UNKNOWN.
+
+**T266:** Wait for re-exposure, change cover or withdraw. Do NOT fire through rock, invent two instant shots, auto-reload or grant free sword parry while V holds nỏ. Do NOT play T266 until user command.
+
+---
+
+## Archived T264 and earlier quick starts
+
 # HẮC NHẬT — QUICK START (T264)
 
 **LATEST GAMEPLAY CHECKPOINT T264 / NEXT PLAYER COMMAND T265 NOT PLAYED.** Source of truth: `state/current.json`, append-only `events/0255.md`–`events/0264.md`, `maps/active-scene.json`. T264 is a cautious tactical REPOSITION, not a shot, skill cast, weapon-swap attack, enemy identification, a time skip, or new loot event.
