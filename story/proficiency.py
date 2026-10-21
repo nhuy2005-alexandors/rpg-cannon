@@ -72,7 +72,7 @@ def proficiency_use(entry: dict, event: dict, *, seed: str | None = None,
                     below_cap, unlocked_before_action, cue_valid))
     result = skill_use(entry, event['use_id'], event['outcome'], seed=seed,
                        skill_id=event['skill_id'], eligible=eligible,
-                       next_contract=next_contract)
+                       next_contract=next_contract if eligible else None)
     receipt = result['use_receipts'][event['use_id']]
     receipt.update({
         'evidence_id': event['evidence_id'],
