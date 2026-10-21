@@ -814,8 +814,8 @@
       "level": "REGION",
       "parent_map_id": "hac-nhat-world",
       "extent": "schematic Hắc Nha region; 0–100 NOT distance",
-      "revision": 1,
-      "grounded_through_turn": 204,
+      "revision": 2,
+      "grounded_through_turn": 217,
       "evidence_level": "SCHEMATIC",
       "evidence_sources": [
         "canon/world/places.md",
@@ -916,7 +916,8 @@
         "Huyết Cốt Động / Trạm Tam Trảo — mối liên hệ được biết, vị trí vùng CHƯA XÁC MINH",
         "Cấm Lao / Hầm Giam — đã biết, vị trí vùng CHƯA XÁC MINH",
         "Kho Quân Vụ Đông — đã biết, vị trí vùng CHƯA XÁC MINH",
-        "Sào huyệt cướp Đường Tây — CHƯA PHÁT HIỆN"
+        "Sào huyệt cướp Đường Tây — CHƯA PHÁT HIỆN",
+        "Di tích tường đá đổ ngoài Hắc Nha Thành (đã quan sát T214–T217; vị trí/phương hướng/khoảng cách chưa biết; KHÔNG xác nhận là hầm chôn)"
       ],
       "links": [
         {
