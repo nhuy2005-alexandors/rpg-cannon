@@ -217,11 +217,28 @@
           "trigger": "DEFENSIVE_REACTION",
           "skill_exp_current": 4,
           "next_threshold": 90,
-          "mastery_receipts": [],
+          "mastery_receipts": [
+            {
+              "turn": 252,
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "source": "events/0252.md",
+              "action_id": "T252/A02"
+            },
+            {
+              "turn": 253,
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "source": "events/0253.md",
+              "action_id": "T253/A02"
+            }
+          ],
           "next_level_effect_approved": true,
           "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
           "use_receipts": {
-            "T252/GatKiemCanChien": {
+            "T252/A02": {
               "base_exp": 2,
               "bonus_exp": 0,
               "bonus_status": "PENDING_UNROLLED",
@@ -230,7 +247,7 @@
               "practice_context_id": "west-road:first-axe-parry",
               "rng_version": null
             },
-            "T253/GatKiemCanChien": {
+            "T253/A02": {
               "base_exp": 2,
               "bonus_exp": 0,
               "bonus_status": "PENDING_UNROLLED",
@@ -287,11 +304,20 @@
           "trigger": "ACTIVE",
           "skill_exp_current": 2,
           "next_threshold": 60,
-          "mastery_receipts": [],
+          "mastery_receipts": [
+            {
+              "turn": 250,
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "source": "events/0250.md",
+              "action_id": "T250/A01"
+            }
+          ],
           "next_level_effect_approved": false,
           "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
           "use_receipts": {
-            "T250/HuyetAnhBo": {
+            "T250/A01": {
               "base_exp": 2,
               "bonus_exp": 0,
               "bonus_status": "PENDING_UNROLLED",
@@ -351,6 +377,14 @@
               "source": "events/0230.md",
               "action_id": "T230/A01",
               "mastery_practice_context_id": "stone-wall-dragger:T230"
+            },
+            {
+              "turn": 253,
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "source": "events/0253.md",
+              "action_id": "T253/A01"
             }
           ],
           "next_level_effect_approved": true,
@@ -377,7 +411,7 @@
               "number_of_slashes": 2,
               "landed_slashes": 1
             },
-            "T253/HuyetTramNhiLien": {
+            "T253/A01": {
               "base_exp": 2,
               "bonus_exp": 0,
               "bonus_status": "PENDING_UNROLLED",
@@ -423,11 +457,28 @@
           "trigger": "PASSIVE_QUALIFYING_TRIGGER",
           "skill_exp_current": 4,
           "next_threshold": 60,
-          "mastery_receipts": [],
+          "mastery_receipts": [
+            {
+              "turn": 253,
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "source": "events/0253.md",
+              "action_id": "T253/A03"
+            },
+            {
+              "turn": 254,
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "source": "events/0254.md",
+              "action_id": "T254/A02"
+            }
+          ],
           "next_level_effect_approved": false,
           "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
           "use_receipts": {
-            "T253/HapHuyet": {
+            "T253/A03": {
               "base_exp": 2,
               "bonus_exp": 0,
               "bonus_status": "PENDING_UNROLLED",
@@ -436,7 +487,7 @@
               "practice_context_id": "west-road:combo-heal",
               "rng_version": null
             },
-            "T254/HapHuyet": {
+            "T254/A02": {
               "base_exp": 2,
               "bonus_exp": 0,
               "bonus_status": "PENDING_UNROLLED",
@@ -518,25 +569,50 @@
             "no_ally_teleport_or_reloading",
             "no_stacking_with_player_sword_crossbow_penalty_passives"
           ],
-          "mastery_receipts": [],
+          "mastery_receipts": [
+            {
+              "turn": 245,
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "source": "events/0245.md",
+              "action_id": "T245/A01"
+            },
+            {
+              "turn": 248,
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "source": "events/0248.md",
+              "action_id": "T248/A01"
+            }
+          ],
           "use_receipts": {
-            "T245/NhanQuanHiepChien": {
+            "T245/A01": {
               "base_exp": 2,
               "bonus_exp": 0,
               "bonus_status": "PENDING_UNROLLED",
               "draw": null,
               "source": "events/0245.md",
               "practice_context_id": "west-road:surveillance-stop",
-              "rng_version": null
+              "rng_version": null,
+              "evidence_id": "T245/A01:observable-ally-cue",
+              "qualified": true,
+              "challenge_signature": "new-risk-of-high-ground-detection",
+              "turn": 245
             },
-            "T248/NhanQuanHiepChien": {
+            "T248/A01": {
               "base_exp": 2,
               "bonus_exp": 0,
               "bonus_status": "PENDING_UNROLLED",
               "draw": null,
               "source": "events/0248.md",
               "practice_context_id": "west-road:first-live-ambush-cue",
-              "rng_version": null
+              "rng_version": null,
+              "evidence_id": "T248/A01:observable-ally-cue",
+              "qualified": true,
+              "challenge_signature": "live-ally-archer-shot-with-V-approach",
+              "turn": 248
             }
           },
           "bonus_randomness_status": "MUST_PROVIDE_VERIFIABLE_ROLL_BEFORE_AWARD",
