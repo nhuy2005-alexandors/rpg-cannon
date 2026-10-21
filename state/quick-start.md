@@ -1,3 +1,23 @@
+# HẮC NHẬT — QUICK START (T271)
+
+**LATEST VERIFIED T271 CHECKPOINT; T272 NOT PLAYED.** Read `state/current.json`, `events/0271.md`, `maps/active-scene.json`, immutable base `maps/tactical/doc-da-xam-camp-v1.svg` (exact T263 blob ea2921b0039beee68642971b3a2dcaae448a17d8) with token delta `maps/tactical/doc-da-xam-camp-T271-positions.json`.
+
+**Character and readiness:** Vô Danh Lv6 EXP330/400 HP137/170 STA24/110 BLOOD50/50 TuHuyet0/20 Souls110 DEF22, Huyết Nha+3 wielded. Liên Nỏ Hắc Nha stowed UNLOADED, steel bolts reserve2, Nanh Cốt Tiễn1; Hắc Nha Trọng Kiếm VII carried backup. Huyết Ảnh Bộ Rare Lv1 READY EXP2/60 cost15STA, only <=4m legal physical landing; NOT cast T271. Gạt Kiếm Common Lv2 ready EXP6/90 cost7STA only for actual perceivable valid incoming MELEE, not ranged arrows; no use T271. Huyết Trảm Nhị Liên Rare Lv2 ready EXP8/135 but requires25STA and12HP, unavailable at current24STA. Hấp Huyết10/60, Nhãn Quan Hiệp Chiến4/40. No EXP/soul rewards or healing/stamina regeneration.
+
+**T271 movement:** From schematic(303,197) at original FIRST cargo crate's west-north edge, V cautiously checks rocks and moves under PARTIAL first-crate/tarp cover to the northern gap between original crates1&2, approx SVG(393,188). Does NOT reach the foot of north rocky ascent, cross any confirmed wire, enter enemy melee range, find a secret route, use Huyết Ảnh Bộ, loot, or incur any cost. SVG anchors are graphic placement NOT verified meters.
+
+**Maela:** Still at (178,229) under rear-left western cover, unhurt, spent T271 appropriately selecting and nocking one personal arrow after T270 shot, but did NOT shoot T271; total known personal arrow shots on trip remains7 and original quiver stock unknown. Bow ready with one nocked arrow.
+
+**Enemy:** Upper north path longbowman Lv7 NORMAL HP33/85 DEF10 with physical arrow raw28–34 as predeclared at `canon/encounters/west-road-upper-path-archer-T265-public.md`. He independently retreated farther up SAME pre-existing north switchback instead of exposing for a clean shot. Partial dark cloth/bow and footsteps do not justify a precise current location; last full torso sight T270 approx(464,94). NOW HIDDEN, NOT CONFIRMED TARGETABLE. No enemy arrow T271, no Maela arrow. Enemy faction, chief status, reinforcements UNKNOWN. Garrick bandit leader quest ACTIVE UNPAID.
+
+**Map invariant:** Must reuse EXACT same base SVG with three fixed crates, tarp, north upper path, west rocks, bell wire already activated T260, three previously looted corpses. T271 only adjusts V token to(393,188), keeps Maela(178,229), enemy marker ? is last earlier sighting / vague higher activity only, not actual position. No measured distance inferred, particularly for 4m ability.
+
+**Next T272** user choice: continue careful advance toward foot of ascent with exposure risk, hold behind existing crates and let Maela watch, or withdraw. Enemy remains autonomous and can shoot/retreat if physically legitimate. DO NOT play T272 automatically.
+
+---
+
+## Archived T270 and previous quick starts
+
 # HẮC NHẬT — QUICK START (T270)
 
 **LATEST CHECKPOINT T270; NEXT T271 NOT PLAYED.** Source `state/current.json`, `events/0270.md`, `maps/active-scene.json`, fixed `maps/tactical/doc-da-xam-camp-v1.svg` (T263 immutable blob ea2921b0039beee68642971b3a2dcaae448a17d8), and T270 token overlay `maps/tactical/doc-da-xam-camp-T270-positions.json`.
