@@ -1,9 +1,9 @@
 {
   "schema": "HN-MAP-SCENE-V1",
-  "last_completed_turn": 243,
-  "next_turn": 244,
+  "last_completed_turn": 244,
+  "next_turn": 245,
   "map_id": "ngoai-thanh-tuong-da-do",
-  "status_source": "main/state/current.json T243, events/0241.md..0243.md; old wall atlas base rev3 unchanged",
+  "status_source": "main/state/current.json T244 and events/0244.md; old wall atlas base rev3 unchanged/inactive",
   "current": {
     "tokens": [],
     "movement": [],
@@ -15,7 +15,8 @@
       "T240 player spent full safe night in home base Điện Tế Huyết, no fee, STA110/110, HP60/170, BLOOD28/50, TH0/20, Souls113, EXP300/400, potion1, carried core0.",
       "STATIC ruin atlas revision3 unchanged; leaving region does not prove ruins permanently cleared or that a hidden corridor exists.",
       "T241 exam, T242 +80 HP/−30 Souls, T243 post-rest final Edran treatment +30 actual HP/−15 Souls. V Lv6 HP170 STA75 BLOOD28 TH0 Souls68 EXP300, Huyết Dược x1.",
-      "T243 Maela voluntary temporary western-road leader-bounty team arrangement: V front sword, Maela rear-oblique ranged support; 5 joint drills 4 PASS 1 line-of-fire FAIL, V −35STA. Both still at Điện Tế Huyết, bandit quest ACTIVE/unpaid, not in ruin."
+      "T243 Maela voluntary temporary western-road leader-bounty team arrangement: V front sword, Maela rear-oblique ranged support; 5 joint drills 4 PASS 1 line-of-fire FAIL, V −35STA. Both still at Điện Tế Huyết, bandit quest ACTIVE/unpaid, not in ruin.",
+      "T244: V rests two safe hours, STA75→110 capped; completes Maela's predeclared six-variation ally-cue exam 5/6 (one covered-shot fail with safe hold), practice -40STA, STA ending70. Earns Nhãn Quan Hiệp Chiến Common Lv1 (observable teammate-cue awareness ONLY), EXP300, HP170, BLOOD28, TH0, Souls68, potion1 unchanged. Both still in temple, no western-road departure."
     ]
   },
   "legacy_timeline": {
@@ -111,5 +112,5 @@
     "player_left": true,
     "notes": "Local tactical positions below refer to historical T239, not present player placement"
   },
-  "current_player_location": "Hắc Nha Thành — sân tập Điện Tế Huyết, together with Maela, T243, not west road"
+  "current_player_location": "Hắc Nha Thành — Điện Tế Huyết training yard, with Maela, after 2-hour rest and new team-awareness skill T244"
 }
