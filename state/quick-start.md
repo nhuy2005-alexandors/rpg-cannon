@@ -1,8 +1,23 @@
-# HẮC NHẬT — QUICK START (T207)
+# HẮC NHẬT — QUICK START (T217)
 
-**LATEST VERIFIED GAMEPLAY CHECKPOINT: T207; NEXT PLAYER-DIRECTED TURN T208.** On 2026-10-21 T205 and T206 were resolved in chat, then T207 was resolved in chat as a successful return and physical bounty hand-in after clerk inspection. `main/state/current.json` and `main/events/0205.md..0207.md` are the numerical and narrative authority. Earlier T204/T194 sections below are ARCHIVED, not current state.
+**LATEST VERIFIED CHECKPOINT: T217; NEXT PLAYER-DIRECTED TURN T218.** Ten in-session events T208–T217 appended and checkpointed on 2026-10-21. Canon game state: [main/state/current.json](current.json). Event receipts: [events/0208.md](../events/0208.md) through [events/0217.md](../events/0217.md). Preserve accepted T207 reward, do not replay.
 
-## CURRENT T207 SCENE — HẮC NHA THÀNH MARKET
+## CURRENT SCENE — T217
+Vô Danh (Huyết Kiếm Sĩ Lv6) is **hidden behind collapsed stone wall and brush** on the SAFE high edge of a lower root/rubble slope outside Hắc Nha Thành. The stone wall is observed, but NOT confirmed to be the crypt's approach. V has NOT gone downhill. Last move T216: concealed upon a noise, no confirmed enemy or detection. T217: observed a pebble slide by roots and heard faint dry tap during ~4 minutes of silent watching; cause UNKNOWN. No enemy, passage, trap or buried crypt entrance verified.
+
+**Resources unchanged:** HP68/170 STA28/110 BLOOD28/50 Tử Huyết0/20 Souls61 EXP245/400; level6; 2 Huyết Dược Quân Dụng; proof bone cores0/3. No combat, healing or item cost during T208–T217. **Hài Cốt Lang Thang** accepted T210, ACTIVE, reward +16 Souls/+25 EXP UNPAID; exact burial crypt location UNKNOWN. **Ổ Chuột Huyết** still offered/not accepted. West-road bandit leader bounty ACTIVE. Black-claw quest RESOLVED T207, no duplicate payment. A former coffin porter guided only to an unverified old wall then left T215; his safe home arrival UNKNOWN. Former caretaker nickname "lão giữ sổ", identity/whereabouts unknown.
+
+**MAP CONTINUITY:** Feature branch `feat/full-atlas-v1-20261020` has newly indexed local-only map ID `ngoai-thanh-tuong-da-do` in `maps/atlas-v1.json`; active scene at T217 is in `maps/active-scene.json` on both main and feature. No Region pin or verified compass bearing; local map token's facing arrow only denotes screen-down toward the lower slope, **NOT true south**. Local scene location and event reports outrank map illustration. Original static T204 World/Regional SVG snapshots remain valid historical assets and are NOT regenerated. Preferred Readable+ dark legible style, reuse static base, update overlays only, no Canva call each turn. Consult feature `docs/gm-map-behavior-handoff-v1.md`. Current rules come from **main** `canon/rules.md`, `docs/gm-storyline-protocol.md`.
+
+**CHECKPOINT POLICY:** Normal 10-turn gate closed at T217; next unsaved starts T218, or checkpoint sooner for major/irreversible events. Do not treat archive sections below as current.
+
+---
+
+## HISTORICAL QUICK START — T207 (ARCHIVED)
+
+**HISTORICAL CHECKPOINT: T207; REPLACED BY T217 ABOVE.** On 2026-10-21 T205 and T206 were resolved in chat, then T207 was resolved in chat as a successful return and physical bounty hand-in after clerk inspection. `main/state/current.json` and `main/events/0205.md..0207.md` are the numerical and narrative authority. Earlier T204/T194 sections below are ARCHIVED, not current state.
+
+## HISTORICAL T207 SCENE — HẮC NHA THÀNH MARKET
 
 Vô Danh · Huyết Kiếm Sĩ Lv6, HP **68/170**, STA **28/110**, BLOOD **28/50**, Tử Huyết **0/20**, Souls **61**, Character EXP **245/400**. Now at the **Hắc Nha Thành market bounty board** after ~35 minute westbound return from Bãi Sắt Rỉ; no combat, no resources consumed. The unnamed bounty clerk checked and accepted **3/3 intact Black-Claw Hyena fang pairs**; all proof transferred from inventory **3→0**, bounty status **RESOLVED**, +20 Souls and +30 EXP paid **once**. Western bandit leader bounty stays ACTIVE and unpaid. No new skill EXP or levels.
 
