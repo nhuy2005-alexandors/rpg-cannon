@@ -157,3 +157,7 @@ User explicitly requested Superpowers methodological audit AFTER storing owner-a
 ## V1.3 lean operational status
 
 The assistant explicitly activated owner-approved V1.3 rule text and helper after T194, without any in-game action. A lightweight deterministic Python policy helper is available, but GM must actually invoke it and log receipts; it is NOT connected to automatic chat turns. For hidden encounters the GM note is a private Notion draft with limited privacy assurance, not a deployed confidential database. Do not claim an unseen private enemy template is locked unless the actual versioned template and hash were saved first. At the historical T194 standoff, C had only a reward-only M1 commitment; do not reinterpret that description as C's current status or retroactively invent combat abilities. Check accepted T195+ events and current state.
+
+## T345 FAST START / State Compaction V1
+
+This maintenance was authorized as a read-only-in-game storage migration, NOT a battle or narrative turn. Start with `state/quick-start.md` then hot `state/current.json`; historical receipts, flags and prior scene data are in linked immutable T345 archives. Treat absent historical properties in hot state as **ARCHIVED**, not nonexistent. When a historical fact is relevant, rehydrate using `state/compaction.py` and verify both cold references. T345 is preserved; T346 is the first unplayed turn. The source rules and combat mechanical coefficients remain unchanged.

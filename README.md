@@ -1,9 +1,9 @@
 # HẮC NHẬT — KỶ NGUYÊN TÀN THẦN
 
-**Canonical saved checkpoint T204; next turn T205.** This PUBLIC repo contains only fictional RPG lore/context, released with the owner's explicit approval 2026-10-19.
+**CURRENT CANON: SAVED T345; next T346 NOT PLAYED.** Prior T204/T153 passages below are HISTORICAL and must not be used as current-state facts. This PUBLIC repo contains only fictional RPG lore/context, released with the owner's explicit approval 2026-10-19.
 
 ## Read first (<60 seconds)
-1. [Fast start](state/quick-start.md)
+1. [FAST START — T345](state/quick-start.md)
 2. [Exact current state](state/current.json)
 3. [NPC canon](canon/npc/) and [world places](canon/world/places.md)
 4. [Relevant historical event ledger](events/)

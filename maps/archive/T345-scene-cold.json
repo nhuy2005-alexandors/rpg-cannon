@@ -1,0 +1,361 @@
+{
+  "schema": "HN-COLD-ARCHIVE-V1",
+  "turn": 345,
+  "path": "maps/archive/T345-scene-cold.json",
+  "source_scene_blob_sha": "207708280dbce4a1b47684248fdf3c18ef01a68d",
+  "historical": {
+    "legacy_timeline": {
+      "bai_sat_ri": {
+        "corpses": [
+          {
+            "id": "enemy:blackclaw-A",
+            "x": 22,
+            "y": 68,
+            "status": "DEAD_T191_LOOTED_T194"
+          },
+          {
+            "id": "enemy:blackclaw-B",
+            "x": 38,
+            "y": 64,
+            "status": "DEAD_T193_LOOTED_T194"
+          },
+          {
+            "id": "enemy:blackclaw-C",
+            "x": 64,
+            "y": 46,
+            "status": "DEAD_T199_LOOTED_T200"
+          }
+        ],
+        "no_active_enemy_confirmed": true
+      },
+      "outer_stone_wall": {
+        "corpse": [
+          {
+            "id": "enemy:buried-skeleton-T218",
+            "x": 70,
+            "y": 72,
+            "status": "DEAD_T222_LOOTED_ONCE_T223",
+            "HP": 0
+          },
+          {
+            "id": "enemy:dragging-skeleton-T228",
+            "x": 70,
+            "y": 74,
+            "status": "DEAD_T232_LOOTED_ONCE_T233",
+            "HP": 0
+          },
+          {
+            "id": "enemy:stone-raker-T234",
+            "x": 88,
+            "y": 63,
+            "status": "DEAD_T238_LOOTED_ONCE_T239",
+            "HP": 0
+          }
+        ],
+        "confirmed_active_hostiles": 0,
+        "actual_enemy_population_remaining": "UNKNOWN",
+        "not_crypt_verified": true,
+        "active_hostiles": []
+      }
+    },
+    "inactive_scene_T240": {
+      "map_id": "ngoai-thanh-tuong-da-do",
+      "last_seen_T239": {
+        "tokens": [
+          {
+            "id": "enemy:stone-raker-T234",
+            "label": "E3",
+            "category": "enemy",
+            "x": 88,
+            "y": 63,
+            "facing": "NW",
+            "status": "DEAD_T238_LOOTED_T239",
+            "HP_current": 0,
+            "HP_max": 70,
+            "ATK": "28–35",
+            "DEF": 9,
+            "rank": "NORMAL",
+            "level": 5,
+            "arm_right": "SEVERED_T237",
+            "arm_left": "INERT_AFTER_DEATH",
+            "actual_geographic_bearing": "UNKNOWN",
+            "position_note": "Enemy on/near checked high pavers at leaning boulder, near unsafe lower lip; alerted to player, melee distance but exact meters UNKNOWN."
+          }
+        ],
+        "movement": [],
+        "visible_hostiles": [],
+        "notes": [
+          "T228–T229 second dragging skeleton initially near unsafe lower roots, V covered by boulder; T230 first and second Nhị Liên strikes (one hit, one miss), enemy counter; T231 normal sword and failed-to-trigger Parry due only 3STA; T232 killed second skeleton; T233 looted it once (one provisional bone core, 12 souls), consumed one +30HP potion and rested safely 1h; T234 rested safely 2h (+40STA).",
+          "T234–T235 third skeleton moving stones beside leaning boulder; V stealth-flanked but pebble alerted target. T236 public enemy stat block committed before first damage; T236 ordinary sword 70->47, enemy attack misses. T237 ordinary sword 47->25 and RIGHT arm severed; counter with LEFT arm causes V -6HP (66->60), no RNG receipts.",
+          "T237 ACTIVE fight: V Lv6 HP60 STA63 BLOOD28 TH0 Souls85 EXP265; third skeleton HP25/70 Lv5 Normal ATK28–35 DEF9, left arm still functional. 2/3 provisional grey cores, bounty issuer verification zero and quest unpaid.",
+          "No other currently visible enemy. 2 previously defeated skeleton corpses have been looted exactly once. Number remaining enemy UNKNOWN. No TH-bearing source or valid burial crypt entrance established.",
+          "Structural objects: old wall and groove, root hollow with weak intermittent breeze and unstable lip, tilting boulder and cracked paver (avoided), tested higher paving. Regional bearing and actual metric distances UNKNOWN; map feature base revision3, no unrelated static object moved."
+        ]
+      },
+      "player_left": true,
+      "notes": "Local tactical positions below refer to historical T239, not present player placement"
+    },
+    "archived_current_T273": {
+      "tokens": [
+        {
+          "id": "vo-danh",
+          "category": "player",
+          "label": "V",
+          "x": 66.25,
+          "y": 23.86,
+          "facing": "NW",
+          "status": "UPPER_NORTH_ROCK_BEND_SWORD_READY_STA9"
+        },
+        {
+          "id": "maela",
+          "category": "ally",
+          "label": "M",
+          "x": 24.72,
+          "y": 52.05,
+          "facing": "N",
+          "status": "WEST_COVER_BOW_ARROW_NOCKED"
+        }
+      ],
+      "movement": [
+        {
+          "actor": "vo-danh",
+          "from": [
+            68.89,
+            41.82
+          ],
+          "to": [
+            66.25,
+            23.86
+          ],
+          "turn": 273
+        },
+        {
+          "actor": "maela",
+          "from": [
+            24.72,
+            52.05
+          ],
+          "to": [
+            24.72,
+            52.05
+          ],
+          "turn": 273
+        }
+      ],
+      "visible_hostiles": [
+        {
+          "id": "enemy:doc-da-xam-upper-archer-T265",
+          "category": "enemy",
+          "label": "E",
+          "x": 63.89,
+          "y": 19.77,
+          "status": "Lv7_NORMAL_HP9_KNEELING_CONSCIOUS_REQUESTING_QUARTER_DROPPED_BOW"
+        }
+      ],
+      "notes": [
+        "STATIC BASE remains byte-identical maps/tactical/doc-da-xam-camp-v1.svg Git blob ea2921b0039beee68642971b3a2dcaae448a17d8; do not move three crates, tarp, northern stone turn, western rocks, alert wire, or three looted older corpses.",
+        "T273 player V climbed actual existing north switchback from foot (496,184) on rock cover, observed wounded Lv7 Normal archer at existing bend, only AFTER normal close saw one firm clear adjacent landing estimated ~3m along stone. One Huyết Ảnh Bộ dash of <=4m costs15 STA (24→9) CD3 after turn, no through-stone movement.",
+        "T273 V performed one separate normal sword strike raw34−DEF10=24 on archer HP33→9/85, still ALIVE and conscious. Wounded archer had longbow up, tried to side-step, caught rocky edge and failed to avoid stroke. No crit, no extra sword strike, no auto kill. Dropped longbow on upper ledge (NOT looted). He kneels, requests mercy, can still react in later turns.",
+        "T273 effective Huyết Ảnh Bộ skillXP2→4 and Hấp Huyết skillXP10→12, life-steal floor24×0.1=2 V HP137→139, sword nominal BLOOD+7 but already capped50. CharEXP330 Souls110, no quest bounty.",
+        "T273 Maela unhurt, west rear-left behind lower stones (178,229), own bow arrow nocked unchanged; she did not fire since upper melee exchange not fully visible, known personal trip arrows used7, original stock UNKNOWN.",
+        "Garrick chief bounty ACTIVE UNPAID. Enemy identity and faction still unverified. T274 NOT PLAYED; user must select finish, interrogate, bind, withdraw. Old map archives preserved."
+      ],
+      "relative_actor_locations": {
+        "vo_danh": "schematic (477,105) at upper north existing stone switchback adjacent bowman after legal dash ~3m final segment, drawn Huyết Nha; HP139 STA9",
+        "maela": "schematic (178,229), remains rear-left west cover with nocked arrow, cannot fully see V upper melee exchange",
+        "upper_archer": "schematic (460,87), ACTUALLY visible adjacent to V, kneeling and conscious with HP9/85 after one ordinary Huyết Nha hit, longbow dropped next to him, asking for mercy; faction unknown"
+      },
+      "base_map_svg": "maps/tactical/doc-da-xam-camp-v1.svg",
+      "position_overlay": "maps/tactical/doc-da-xam-camp-T273-positions.json",
+      "coordinate_note": "Current token x/y in percentages of an UNMEASURED viewBox sketch, NOT physical atlas geography"
+    },
+    "archived_current_T283": {
+      "tokens": [],
+      "movement": [],
+      "visible_hostiles": [],
+      "notes": [
+        "No active combat map as of T283: Vô Danh at Durgan Hắc Thiết forge in Hắc Nha Thành, Maela departed to rest, Kerran under temporary Garrick watch. T273 camp base unchanged and archived.",
+        "Do not interpret cleared active-scene tokens as despawn/retcon of previous camp bodies or landscape.",
+        "World/region/area map geometry is not generated from this update."
+      ]
+    },
+    "archived_current_T292": {
+      "tokens": [
+        {
+          "id": "vo-danh",
+          "category": "player",
+          "label": "V",
+          "x": 44.7,
+          "y": 72.8,
+          "facing": "N",
+          "status": "CRACKED_ROCK_COVER_SWORD_READY_HP142_STA110"
+        },
+        {
+          "id": "maela",
+          "category": "ally",
+          "label": "M",
+          "x": 46.2,
+          "y": 91.7,
+          "facing": "N",
+          "status": "REAR_BEND_OBSTRUCTED_BOW_NO_SHOT"
+        },
+        {
+          "id": "enemy:west-road-north-transfer-cloaked-shoulder-metal-T288",
+          "category": "enemy",
+          "label": "E",
+          "x": 61.1,
+          "y": 28.6,
+          "facing": "S",
+          "status": "ALERT_SWORD_DRAWN_AT_CRATE_COVER_HP_UNKNOWN"
+        }
+      ],
+      "visible_hostiles": [
+        {
+          "id": "enemy:west-road-north-transfer-cloaked-shoulder-metal-T288",
+          "category": "enemy",
+          "label": "E",
+          "status": "ALERT_HIDING_AT_CRATE_WITH_ONE_HANDED_SWORD_HP_UNKNOWN"
+        }
+      ],
+      "movement": [
+        {
+          "actor": "vo-danh",
+          "turn": 292,
+          "description": "Remained behind actual cracked-rock guard, lethal ordinary sword cut in contact with pinned gray guard; defensive sword stance readied only."
+        },
+        {
+          "actor": "maela",
+          "turn": 292,
+          "description": "Stayed behind previously observed rock bend, no legal arrow lane/shots."
+        }
+      ],
+      "corpses": [
+        {
+          "id": "enemy:west-road-north-transfer-gray-spear-T290",
+          "label": "X",
+          "x": 48.8,
+          "y": 67.9,
+          "dead_turn": 292,
+          "looted": false,
+          "weapon": "short spear nearby dropped, unclaimed"
+        }
+      ],
+      "observed_static_objects": [
+        {
+          "id": "north-transfer-lean-to-T290",
+          "name": "Wood plank shelter against existing rock wall"
+        },
+        {
+          "id": "north-transfer-crate-T290",
+          "name": "Low wood crate by shelter"
+        },
+        {
+          "id": "north-transfer-covered-bundles-T290",
+          "name": "Covered cargo bundles"
+        },
+        {
+          "id": "north-transfer-cracked-rock-cover-T290",
+          "name": "Cracked rock cover at lower entrance"
+        },
+        {
+          "id": "north-transfer-upper-bend-T287",
+          "name": "Known winding upward solid path, unknown beyond seen angle"
+        }
+      ],
+      "notes": [
+        "North-up relative schematic, numeric markers for drawn local map ONLY; do not infer meters, real LOS, attack reach or exact lat/long.",
+        "Cloaked man confirmed intrusion T292, has sword; HP, class, hidden associates, boss identity UNKNOWN.",
+        "T292 Maela archery conditional unmet due blocking rock and bend; no arrow.",
+        "Grey spear guard died T292, corpse not looted; no Souls, physical spear unclaimed.",
+        "No T293 advance or attack; Huyết Trảm Nhị Liên merely READY (cost HP12 STA25 on a legal future cast).",
+        "Do not redraw/archive-edit old T263 fixed lower camp terrain. This is NEW observed subscene on upper northern path."
+      ]
+    },
+    "archived_current_T302": {
+      "tokens": [
+        {
+          "id": "vo-danh",
+          "category": "player",
+          "label": "V",
+          "x": 46,
+          "y": 67,
+          "facing": "N",
+          "status": "OUTSIDE_GATE_COMBAT_READY_HP125_STA65"
+        },
+        {
+          "id": "maela",
+          "category": "ally",
+          "label": "M",
+          "x": 48,
+          "y": 89,
+          "facing": "N",
+          "status": "LOWER_APPROACH_UNINJURED_BOW_T302_FIRED_ONE"
+        }
+      ],
+      "movement": [
+        {
+          "actor": "vo-danh",
+          "turn": 300,
+          "description": "Approached via observed stone path and low rock cover below checkpoint, no wall crossing"
+        },
+        {
+          "actor": "maela",
+          "turn": 301,
+          "description": "Covered lower approach and fired once when outer guard appeared beyond V's cover"
+        },
+        {
+          "actor": "vo-danh",
+          "turn": 302,
+          "description": "Pursued wounded guard on true path; cast legal clear-5m Huyết Nguyệt Trảm outside gate, no barrier crossing"
+        },
+        {
+          "actor": "maela",
+          "turn": 302,
+          "description": "Fired one clean-line arrow at exposed outside guard; did not shoot into closed gate"
+        }
+      ],
+      "visible_hostiles": [],
+      "corpses": [
+        {
+          "id": "enemy:west-road-upper-gate-shortcoat-sword-T299",
+          "label": "X",
+          "x": 54,
+          "y": 38,
+          "dead_turn": 302,
+          "looted": false,
+          "weapon": "short sword on ground beside corpse"
+        }
+      ],
+      "observed_static_objects": [
+        {
+          "id": "upper-barricade-timber-palisade-T299",
+          "name": "Wood-and-stone barricade across narrow real uphill road, no secret passage observed"
+        },
+        {
+          "id": "upper-barricade-door-T299",
+          "name": "Gate formerly open and accessible; CLOSED and barred from INSIDE at T302"
+        },
+        {
+          "id": "upper-barricade-lower-rock-cover-T300",
+          "name": "Existing low natural rock cover beneath outer approach"
+        },
+        {
+          "id": "upper-barricade-inside-unknown",
+          "name": "Space behind fence not explored, >=1 voice known; exact location unknown"
+        }
+      ],
+      "notes": [
+        "UNKNOWN at least one adult male inside barricade, alarmed and alive; do not plot unknown actual coordinate as enemy token.",
+        "No confirmed ability of timber door to resist any particular attack; do not automatically break or walk through it.",
+        "V outside gate, short sword dropped by corpse, Soul eligible upon separate unique first valid loot only.",
+        "Northern transfer station has earlier T298 loot staged physically there; it is not on V/M at gate.",
+        "Fixed original lower camp terrain and earlier north-transfer fragment remain unchanged.",
+        "SVG schematic relative coordinates are for drawing only and never measure legal skill distance."
+      ]
+    },
+    "archived_current_T312": {
+      "source": "T312 predecessor from original prepared tree",
+      "current_scene_T312_saved_elsewhere": true
+    }
+  }
+}
