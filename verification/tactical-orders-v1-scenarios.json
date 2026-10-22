@@ -1,0 +1,67 @@
+{
+  "schema": "HN-TACTICAL-ORDERS-V1",
+  "scope": "NON_CANONICAL_SCENARIOS",
+  "rules_source": "canon/tactical-orders-v1.md",
+  "cases": [
+    {
+      "id": "TO-01",
+      "given": "A last seen behind stone, ally LOS blocked",
+      "expected": "HOLD_OR_REPOSITION",
+      "forbidden": "no arrow through stone"
+    },
+    {
+      "id": "TO-02",
+      "given": "Clear arrow lane and visible target",
+      "expected": "SHOT_IS_LEGAL_NOT_GUARANTEED",
+      "forbidden": "no automatic hit"
+    },
+    {
+      "id": "TO-03",
+      "given": "Vô Danh physically blocks Maela's line",
+      "expected": "HOLD_FIRE_OR_REPOSITION",
+      "forbidden": "no friendly pass-through"
+    },
+    {
+      "id": "TO-04",
+      "given": "A breaks visual contact behind north bend",
+      "expected": "FOLLOW_OR_SEARCH_IF_TRAVERSABLE",
+      "forbidden": "no teleport or frozen enemy"
+    },
+    {
+      "id": "TO-05",
+      "given": "Maela cannot keep up due to fatigue or terrain",
+      "expected": "MAY_FALL_BEHIND_OR_HOLD",
+      "forbidden": "no unlimited movement"
+    },
+    {
+      "id": "TO-06",
+      "given": "Instruction includes loot pursue attack",
+      "expected": "SEQUENTIAL_OR_CONDITIONAL_SUBSTEPS",
+      "forbidden": "no instant all-substeps"
+    },
+    {
+      "id": "TO-07",
+      "given": "Enemy has plausible counteraction opportunity",
+      "expected": "INDEPENDENT_LIMITED_RESPONSE",
+      "forbidden": "no perfect omniscience"
+    },
+    {
+      "id": "TO-08",
+      "given": "Legal flank with advantageous cover",
+      "expected": "SUCCESS_PERMITTED_IF_EARNED",
+      "forbidden": "no scripted failure to punish"
+    },
+    {
+      "id": "TO-09",
+      "given": "Maela's exact arrows UNKNOWN",
+      "expected": "TRACK_AMMO_UNKNOWN_NO_INVENTION",
+      "forbidden": "no infinite arrows"
+    },
+    {
+      "id": "TO-10",
+      "given": "Only updating GM rule documents at T345",
+      "expected": "NO_GAME_TURN",
+      "forbidden": "no T346 played or resource change"
+    }
+  ]
+}
