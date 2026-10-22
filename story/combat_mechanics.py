@@ -6,6 +6,10 @@ def _int(v, field):
     return v
 
 def resolve_damage(attack: dict, defender: dict, effects: dict) -> dict:
+    verified=effects.get('verified_evidence_refs', [])
+    if (not isinstance(verified, (list, tuple, set)) or
+        attack.get('source_ref') not in verified):
+        raise ValueError('combat source not independently verified')
     for field in ('action_id','source_ref','rule_version'):
         if not isinstance(attack.get(field), str) or not attack[field].strip():
             raise ValueError(f'missing {field}')
@@ -41,13 +45,15 @@ def resolve_damage(attack: dict, defender: dict, effects: dict) -> dict:
 def check_skill_availability(skill_id: str, pre_state: dict, clock: dict, action_context: dict) -> dict:
     if not isinstance(skill_id,str) or not skill_id.strip():raise ValueError('skill id required')
     sources=action_context.get('evidence_refs', [])
-    if not isinstance(sources,list) or not sources or not action_context.get('known_skill'):
+    trusted=action_context.get('verified_evidence_refs', [])
+    if (not isinstance(trusted,(list,tuple,set)) or not isinstance(sources,list) or not sources or
+        not set(sources).issubset(set(trusted)) or not action_context.get('known_skill')):
         return {'status':'UNKNOWN','reasons':['skill or contract unverified'],'source_refs':sources}
     entry=pre_state.get('cooldowns',{}).get(skill_id)
     now=clock.get('combat_turn')
     if not isinstance(entry,dict) or type(now) is not int or now<0:
         return {'status':'UNKNOWN','reasons':['cooldown or combat clock unknown'],'source_refs':sources}
-    if not entry.get('source_ref'):
+    if not entry.get('source_ref') or entry['source_ref'] not in trusted:
         return {'status':'UNKNOWN','reasons':['cooldown lacks accepted evidence'],'source_refs':sources}
     ready=entry.get('ready_at_combat_turn')
     if type(ready) is not int or ready<0:

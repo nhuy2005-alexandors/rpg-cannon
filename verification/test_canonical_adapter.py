@@ -4,8 +4,20 @@ import json
 import unittest
 from pathlib import Path
 
-from story.canonical_adapter import project_canonical_state
+from story.canonical_adapter import project_canonical_state as _verified_project
 from story.turn_ledger import stage_turn
+
+import hashlib
+
+def project_canonical_state(hot,cold,*,inventory_keys):
+    # Synthetic test pins only; production SHA comes from authoritative repo.
+    if cold is None:
+        raw=b'null'
+    else:
+        raw=json.dumps(cold,sort_keys=True,ensure_ascii=False).encode('utf-8')
+    sha=hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest()
+    return _verified_project(hot,cold,inventory_keys=inventory_keys,
+                             cold_bytes=raw,expected_cold_sha=sha)
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -79,9 +91,8 @@ class CanonicalProjectionTests(unittest.TestCase):
         r = [{'receipt_id':'future-grant','kind':'RESOURCE_GRANT','resource':'souls','amount':12,
               'action_id':'T346/A01','source_ref':'events/synthetic',
               'claim_target_id':'synthetic-never-looted','claim_id':'synthetic-new-claim'}]
-        staged=stage_turn(p,cmd,{'resource_changes':{'souls':12}},r)
-        self.assertEqual(staged['status'],'STAGED')
-        self.assertEqual(staged['projected_post_state']['resources']['souls'],125)
+        with self.assertRaises(ValueError):
+            stage_turn(p,cmd,{'resource_changes':{'souls':12}},r)
         self.assertEqual(p['resources']['souls'],113)
 
 class FutureClaimReplayTests(unittest.TestCase):
@@ -96,6 +107,7 @@ class FutureClaimReplayTests(unittest.TestCase):
                  'claim_target_id':'synthetic-future-target', 'claim_id':claim}]
             return command, r
         intent, rs = input_at(346,'T346/A01','newclaim-1')
+        state['verified_grants']={rs[0]['receipt_id']:copy.deepcopy(rs[0])}
         a = stage_turn(state,intent,{'resource_changes':{'souls':12}},rs)
         accepted=accept_turn(a,{'confirmed':True,'action_id':'T346/A01','disposition':'DONE',
                                 'observed_outcome':'synthetic','verification_refs':['synthetic']})['post_state']

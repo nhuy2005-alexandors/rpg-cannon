@@ -1,6 +1,9 @@
 """Non-simulating tactical legality from externally evidenced categorical observations."""
 
 def check_tactical(intent: dict, observed_world: dict) -> dict:
+    trusted=observed_world.get('verified_evidence_refs', [])
+    if not isinstance(trusted,(list,tuple,set)):
+        trusted=[]
     result=[]
     for step in intent.get('substeps',[]):
         sid=step['id'];verb=step['verb'];facts=observed_world.get('substeps',{}).get(sid,{})
@@ -8,7 +11,7 @@ def check_tactical(intent: dict, observed_world: dict) -> dict:
         status='UNKNOWN';reasons=[]
         if verb not in {'pursue','shoot','reposition','interact'}:
             reasons=['unknown verb']
-        elif not evidence:
+        elif not evidence or not isinstance(evidence,list) or not set(evidence).issubset(set(trusted)):
             reasons=['missing observation evidence']
         else:
             ready=facts.get('actor_ready','unknown')

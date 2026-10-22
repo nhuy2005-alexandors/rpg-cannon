@@ -15,17 +15,17 @@ class MergeBlockerRegression(unittest.TestCase):
 
  def test_stunned_skill_cannot_be_ready(self):
   st={'resources':{'STA':41},'cooldowns':{'dash':{'ready_at_combat_turn':12,'source_ref':'event:T345'}},'status_effects':{'stun':{'source_ref':'event:T345','expires_when':'cured','blocks_skills':True}}}
-  ctx={'known_skill':True,'costs':{'STA':15},'evidence_refs':['event:T345']}
+  ctx={'known_skill':True,'costs':{'STA':15},'evidence_refs':['event:T345'],'verified_evidence_refs':['event:T345']}
   result=check_skill_availability('dash',st,{'combat_turn':12},ctx)
   self.assertEqual(result['status'],'BLOCKED')
 
  def test_unknown_ally_ammo_does_not_allow_shot(self):
   facts={'evidence_refs':['T345'], 'actor_ready':'ready','target_visibility':'visible','los':'clear','crossfire':'clear'}
-  r=check_tactical({'substeps':[{'id':'s','actor':'Maela','verb':'shoot','target':'A'}]}, {'substeps':{'s':facts}})
+  r=check_tactical({'substeps':[{'id':'s','actor':'Maela','verb':'shoot','target':'A'}]}, {'substeps':{'s':facts},'verified_evidence_refs':['T345']})
   self.assertEqual(r['substeps'][0]['disposition'],'UNKNOWN')
 
  def test_confirmed_ammo_allows_attempt_not_hit(self):
   facts={'evidence_refs':['T345'], 'actor_ready':'ready','target_visibility':'visible','los':'clear','crossfire':'clear','ammo':'available'}
-  r=check_tactical({'substeps':[{'id':'s','actor':'Maela','verb':'shoot','target':'A'}]}, {'substeps':{'s':facts}})
+  r=check_tactical({'substeps':[{'id':'s','actor':'Maela','verb':'shoot','target':'A'}]}, {'substeps':{'s':facts},'verified_evidence_refs':['T345']})
   self.assertEqual(r['substeps'][0]['disposition'],'ALLOWED')
   self.assertNotIn('hit',r['substeps'][0])

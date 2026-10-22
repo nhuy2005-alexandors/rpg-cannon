@@ -6,10 +6,24 @@ accepted-action log from freeform historical narrative receipts.
 from __future__ import annotations
 
 from copy import deepcopy
+import hashlib
+import json
+import re
 from state.compaction import restore_state
 
 
-def project_canonical_state(hot: dict, cold: dict, *, inventory_keys: list[str]) -> dict:
+def project_canonical_state(hot: dict, cold: dict, *, inventory_keys: list[str],
+                            cold_bytes: bytes, expected_cold_sha: str) -> dict:
+    if not isinstance(cold_bytes, bytes) or not re.fullmatch(r'[0-9a-f]{40}', str(expected_cold_sha)):
+        raise ValueError('pinned raw archive bytes and trusted Git blob SHA required')
+    actual_sha=hashlib.sha1(b'blob '+str(len(cold_bytes)).encode('ascii')+b'\0'+cold_bytes).hexdigest()
+    if actual_sha != expected_cold_sha:
+        raise ValueError('cold archive differs from independently pinned Git blob SHA')
+    try:
+        if json.loads(cold_bytes) != cold:
+            raise ValueError('parsed cold archive differs from pinned bytes')
+    except (TypeError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+        raise ValueError('cold archive is not valid JSON') from exc
     if not isinstance(hot, dict) or not isinstance(cold, dict):
         raise ValueError('both hot state and pinned cold archive required')
     if not isinstance(inventory_keys, list) or any(not isinstance(x, str) or not x for x in inventory_keys):
@@ -22,7 +36,7 @@ def project_canonical_state(hot: dict, cold: dict, *, inventory_keys: list[str])
     pinned_turn = archive.get('turn')
     if type(pinned_turn) is not int or pinned_turn < 345 or archive.get('path') != f'state/archive/T{pinned_turn}-state-cold.json':
         raise ValueError('invalid versioned cold archive reference')
-    if not isinstance(cold.get('source_state_blob_sha'), str) or not cold['source_state_blob_sha']:
+    if not isinstance(cold.get('source_state_blob_sha'), str) or not re.fullmatch(r'[0-9a-f]{40}', cold['source_state_blob_sha']):
         raise ValueError('cold archive provenance missing')
     full = restore_state(hot, cold)
     player = full.get('player')
@@ -63,6 +77,8 @@ def project_canonical_state(hot: dict, cold: dict, *, inventory_keys: list[str])
             'historical_receipt_ids':sorted(old_receipts),
             'historical_claims':historical_claims,
             'canonical_history_verified':True,
+            'verified_grants':{},
+            'source_archive_blob_sha':expected_cold_sha,
             # Adapter cannot certify cooldown/status or NPC ammo from archival
             # prose; explicit narrow authoritative evidence is still required.
             'cooldowns_status':'UNKNOWN', 'npc_ammunition_status':'UNKNOWN'}

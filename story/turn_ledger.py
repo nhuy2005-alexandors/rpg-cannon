@@ -12,13 +12,23 @@ def _int(v):
 
 def stage_turn(pre_state:dict,intended_turn:dict,proposed_deltas:dict,receipts:list[dict])->dict:
     original=copy.deepcopy(pre_state)
+    original.setdefault('accepted_action_seals', {})
     ident=intended_turn.get('action_id')
     if not isinstance(ident,str) or not ident or not intended_turn.get('evidence_refs') or not intended_turn.get('rule_version'):
         raise ValueError('immutable action id and evidence required')
     if not isinstance(receipts, list) or not isinstance(proposed_deltas, dict):
         raise ValueError('receipts and deltas must have expected types')
+    permitted={'resource_changes','inventory_changes','cooldown_changes','status_changes','elapsed_minutes'}
+    if set(proposed_deltas)-permitted:
+        raise ValueError('unsupported delta field')
     history=original.get('accepted_actions',{})
     if not isinstance(history,dict):raise ValueError('accepted actions ledger missing')
+    # This detects a partial/accidental edit, not an attacker changing both seal and record.
+    seals=original.get('accepted_action_seals', {})
+    if not isinstance(seals,dict):raise ValueError('accepted action seal index missing')
+    for action_id, entry in history.items():
+        if seals.get(action_id) != _hash(entry):
+            raise ValueError('tampered or unsealed accepted action')
     receipt_ids=set()
     previous_ids={r.get('receipt_id') for action in history.values()
                   if isinstance(action,dict) for r in action.get('input_receipts',[])
@@ -37,6 +47,7 @@ def stage_turn(pre_state:dict,intended_turn:dict,proposed_deltas:dict,receipts:l
         # be identical on replay or the caller has supplied a drifted state.
         replay_projection=copy.deepcopy(original)
         replay_projection['accepted_actions'].pop(ident)
+        replay_projection['accepted_action_seals'].pop(ident)
         if prior.get('post_projection_digest') != _hash(replay_projection):
             raise ValueError('replay against changed post-action state')
         return {'status':'REPLAY','input_fingerprint':input_fp,'projected_post_state':original,
@@ -75,6 +86,25 @@ def stage_turn(pre_state:dict,intended_turn:dict,proposed_deltas:dict,receipts:l
             if item.get('kind') == 'RESOURCE_GRANT' and item.get('resource') == 'souls':
                 if not cid or not target:
                     raise ValueError('canonical soul grant requires claim ID and target ID')
+    # Grants must be prevalidated by a separate authoritative caller.
+    # Proposed action/receipt must never manufacture this allowlist.
+    grants=original.get('verified_grants', {})
+    if not isinstance(grants,dict):raise ValueError('verified grant registry missing')
+    def require_grants(kind, resource, expected):
+        if expected<=0:return
+        matching=[r for r in receipts if r.get('kind')==kind and r.get('resource')==resource
+                  and r.get('action_id')==ident and type(r.get('amount')) is int and r['amount']>0]
+        if sum(r['amount'] for r in matching)!=expected or not matching:
+            raise ValueError('missing or mismatched positive grant receipt')
+        for item in matching:
+            if grants.get(item['receipt_id']) != item:
+                raise ValueError('grant source not independently verified')
+    for key,change in proposed_deltas.get('resource_changes',{}).items():
+        _int(change)
+        require_grants('RESOURCE_GRANT', key, change)
+    for key,change in proposed_deltas.get('inventory_changes',{}).items():
+        _int(change)
+        require_grants('INVENTORY_GRANT', key, change)
     turn=_int(intended_turn.get('turn'))
     if turn!=original.get('next_turn') or turn!=original.get('last_completed_turn',-100)+1:
         raise ValueError('nonsequential turn')
@@ -132,4 +162,5 @@ def accept_turn(staged:dict,confirmed_result:dict)->dict:
              'post_projection_digest':_hash(staged['projected_post_state']),
              'verification_status':'ACCEPTED_IN_SESSION_NOT_SAVED'}
     out['accepted_actions'][aid]=receipt
+    out.setdefault('accepted_action_seals', {})[aid]=_hash(receipt)
     return {'post_state':out,'compact_delta':copy.deepcopy(staged['delta']),'accepted_receipt':receipt}
