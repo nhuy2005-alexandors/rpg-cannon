@@ -258,6 +258,81 @@
         "Iron ring former occupant: UNKNOWN",
         "No hidden chamber or loot confirmed"
       ]
+    },
+    {
+      "id": "doc-da-xam-ba-vach-escort-second-bend",
+      "name": "Dốc Đá Xám — khúc ngoặt vận chuyển phía bắc",
+      "extent": "LOCAL_TACTICAL_RELATIVE_NOT_MEASURED",
+      "revision": 1,
+      "grounded_through_turn": 345,
+      "objects": [
+        {
+          "id": "ba-vach-north-s-stone-road",
+          "type": "path",
+          "label": "Lối đá chữ S hướng bắc",
+          "points": [
+            [
+              48,
+              100
+            ],
+            [
+              47,
+              82
+            ],
+            [
+              59,
+              69
+            ],
+            [
+              65,
+              58
+            ],
+            [
+              54,
+              47
+            ],
+            [
+              49,
+              33
+            ],
+            [
+              52,
+              10
+            ]
+          ],
+          "status": "OBSERVED_CONNECTIVITY_NOT_DISTANCE"
+        },
+        {
+          "id": "ba-vach-north-left-boulder",
+          "type": "point",
+          "label": "Đá che góc trái khúc cua",
+          "x": 28,
+          "y": 49,
+          "status": "OBSERVED_STONE_COVER_RELATIVE"
+        },
+        {
+          "id": "ba-vach-north-right-boulder",
+          "type": "point",
+          "label": "Tảng đá phải — hậu vệ ẩn sau",
+          "x": 77,
+          "y": 54,
+          "status": "OBSERVED_STONE_COVER_RELATIVE"
+        },
+        {
+          "id": "ba-vach-north-cargo-bend",
+          "type": "point",
+          "label": "Đoàn chuyển hòm đã khuất phía bắc",
+          "x": 50,
+          "y": 14,
+          "status": "LAST_SEEN_DIRECTION_NOT_LIVE_ENTITY"
+        }
+      ],
+      "unplaced_known_names": [
+        "Khe Đá Khúc Ngoặt stash T344 is south of this tactical fragment, not to scale",
+        "Two cargo carriers current locations UNKNOWN",
+        "Commander Lv8 actual location UNKNOWN"
+      ],
+      "links": []
     }
   ],
   "update_contract": {

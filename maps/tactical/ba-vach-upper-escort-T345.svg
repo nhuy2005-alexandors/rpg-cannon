@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 450" role="img" aria-label="Hắc Nhật Dốc Đá Xám T345 tactical map with schematic stone bends and character positions">
+<rect width="720" height="450" rx="16" fill="#242b30"/>
+<text x="25" y="32" font-size="21" fill="#eff1ef" font-family="sans-serif">Dốc Đá Xám | tuyến Ba Vạch phía bắc | T345</text>
+<text x="25" y="56" font-size="12" fill="#b9c3c5" font-family="sans-serif">SƠ ĐỒ TƯƠNG ĐỐI — KHÔNG ĐO TẦM ĐÁNH BẰNG TỌA ĐỘ</text>
+<path d="M342 440 L340 352 Q346 316 406 281 Q473 238 409 187 Q322 127 359 91 L361 59" fill="none" stroke="#766f64" stroke-width="86" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M342 440 L340 352 Q346 316 406 281 Q473 238 409 187 Q322 127 359 91 L361 59" fill="none" stroke="#d1c2aa" stroke-width="2" stroke-dasharray="8 8"/>
+<path d="M90 192 L160 144 L220 182 L228 276 L147 299 L75 257 Z" fill="#576369" stroke="#9eafb5" stroke-width="2"/>
+<path d="M472 189 L562 142 L641 190 L659 272 L554 314 L477 260 Z" fill="#576369" stroke="#9eafb5" stroke-width="2"/>
+<circle cx="401" cy="342" r="18" fill="#b64a5b" stroke="#f4c8d2" stroke-width="2"/><text x="401" y="349" fill="#fff" font-size="20" font-weight="bold" text-anchor="middle">V</text>
+<circle cx="318" cy="412" r="18" fill="#457eb1" stroke="#dcefff" stroke-width="2"/><text x="318" y="419" fill="#fff" font-size="20" font-weight="bold" text-anchor="middle">M</text>
+<circle cx="383" cy="174" r="19" fill="none" stroke="#e0a867" stroke-dasharray="5 5" stroke-width="2"/><text x="383" y="180" fill="#e0a867" font-size="16" text-anchor="middle">H?</text>
+<text x="423" y="168" font-size="13" fill="#e2d4bd" font-family="sans-serif">Hậu vệ last seen HP73/92; khuất đá</text>
+<text x="388" y="78" font-size="13" fill="#e8e2d8" font-family="sans-serif">Đoàn hàng khuất phía bắc — tọa độ UNKNOWN</text>
+<text x="26" y="402" font-size="13" fill="#d3dadc" font-family="sans-serif">V: Vô Danh / M: Maela (~5m phía sau)</text>
+<text x="26" y="422" font-size="13" fill="#d3dadc" font-family="sans-serif">Đồ T344 cất phía nam, ngoài khung này</text>
+<path d="M42 112 L42 75 L35 88 M42 75 L49 88" fill="none" stroke="#eee" stroke-width="3"/>
+<text x="56" y="91" font-size="14" fill="#eee">BẮC</text>
+</svg>

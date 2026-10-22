@@ -1,14 +1,14 @@
 {
-  "snapshot_version": "HN-S302-UPPER-BARRICADE-GUARD-DEAD-SEALED",
-  "last_completed_turn": 302,
-  "next_turn": 303,
+  "snapshot_version": "HN-S345-BA-VACH-ESCORT-WOUNDED-CARAVAN-UNSEEN",
+  "last_completed_turn": 345,
+  "next_turn": 346,
   "as_of": "2026-10-22",
-  "location": "Dốc Đá Xám · chốt gác thượng tuyến bắc: Vô Danh đứng trên lối đá thật phía NGOÀI cánh cửa hàng rào bằng gỗ vừa đóng/gài từ bên trong; xác lính gác Lv6 Normal T302 nằm sát chân cột phía ngoài, chưa loot. Maela ở phía sau dưới đường, cung sẵn sàng. Ít nhất 1 người còn sống trong chốt đã báo động, quân số không biết.",
+  "location": "Dốc Đá Xám · tuyến vận chuyển phía bắc chốt Ba Vạch, tại khúc ngoặt đá thứ hai. Vô Danh nép phía vách phải, Huyết Nha+3 trong tay; Maela theo sau khoảng 5m cầm cung. Hậu vệ Lv6 Normal HP73/92 sau mũi tên T345 rút khuất sau mỏm đá. Hai người khiêng hòm Ba Vạch phía bắc đã khuất tầm; thủ lĩnh thật chưa được xác nhận. Hai bó loot T343 giấu tại Khe Đá Khúc Ngoặt phía nam.",
   "player": {
     "name": "Vô Danh",
     "class": "Huyết Kiếm Sĩ",
     "level": 6,
-    "exp": 360,
+    "exp": 380,
     "exp_next": 400,
     "unallocated_points": 0,
     "attributes": {
@@ -19,22 +19,22 @@
     },
     "resources": {
       "HP": {
-        "current": 125,
+        "current": 117,
         "max": 170
       },
       "STA": {
-        "current": 65,
+        "current": 41,
         "max": 110
       },
       "BLOOD": {
-        "current": 27,
+        "current": 46,
         "max": 50
       },
       "TuHuyet": {
         "current": 0,
         "max": 20
       },
-      "souls": 71
+      "souls": 113
     },
     "passives": {
       "HapHuyet": {
@@ -867,8 +867,8 @@
     "armguards": "+1 STR",
     "old_armor": "Giáp Da Hắc Nha +2; stored",
     "ranged_loaded_state": "UNLOADED_AFTER_T267_SHOT; STOWED_T268; NEEDS_RELOAD",
-    "primary_in_hand": "Huyết Nha +3 Rare WIELDED AND READY behind cracked rock on north higher road",
-    "primary_sword_carried_state": "DRAWN wielded, attempted ordinary lethal sword hit T292; Huyết Trảm Nhị Liên only READY, NOT CAST",
+    "primary_in_hand": "Huyết Nha +3 DRAWN, ready at real north transfer second stone bend, T345",
+    "primary_sword_carried_state": "DRAWN; no bulky T343 salvage carried after rock-crevice stash T344",
     "secondary_carried_state": "NOT CARRIED: at Durgan forge under 2-workday balance-adjustment agreement from T286; improvement not yet tested/received",
     "ranged_carried_state": "Liên Nỏ Hắc Nha secured on sling, UNLOADED; steel reserve2 special reserve1"
   },
@@ -888,7 +888,7 @@
     "TenNoTho": 2,
     "TuiDaBanVeDuongNui": 1,
     "TenThuong_TuKerran": 2,
-    "XuDong_VatLy_T276": 34,
+    "XuDong_VatLy_T276": 48,
     "VanDon_BaVach_T276": 1,
     "BaVach_CurvedSignalTool_T298": 1,
     "BaVach_ThreeStrokeBadge_FromCloak_T298": 1,
@@ -896,7 +896,25 @@
     "BaVach_DeliveryReceiptsBundle_T298": 1,
     "BaVach_WoodenDocumentTube_T298": 1,
     "BaVach_RouteSketchAndOldManifest_T299": "Retained; existing separate inventory sources canon unchanged.",
-    "Maela_RecoveredBrokenArrowhead_T298": 0
+    "Maela_RecoveredBrokenArrowhead_T298": 0,
+    "BaVach_ThreeStrokeBadge_FromGateGuard_T303": 1,
+    "BaVach_UsableLeatherBelt_FromGateGuard_T303": 1,
+    "BaVach_GateGuardShortSword_T303": {
+      "initially_looted": 1,
+      "current_state": "BROKEN_INTO_OUTSIDE_GATE_FRAGMENTS_T309_AND_T311",
+      "held_usable": 0,
+      "at_gate": "small blade fragments outside; one short steel tip wedged at cracked right gate post foot",
+      "weapon_ready": false
+    },
+    "BaVach_DeliveredOneLooseUnsignedSlip_T306": {
+      "initially_carried_in_receipts_bundle": 1,
+      "quantity_handed_over": 1,
+      "currently_held_by": "UNKNOWN_GATE_DEFENDER_INSIDE_T306",
+      "rest_of_bundle": "V_WITH_OTHER_CARRIED_PAPERS"
+    },
+    "BaVach_Badges_FromSpearmanShieldman_T343": 2,
+    "BaVach_T343_BulkyEquipmentStash": "Two bundled material loot sets (one iron spear, one short sword, cracked shield, two damaged armors, garments/belts/boots) hidden physically at Khe Đá Khúc Ngoặt T344, not currently carried; not in city base storage.",
+    "Maela_ArrowStatus_T345": "One recoverable T341 arrow returned T343; one Maela ordinary arrow consumed T345 and remains in escort; original total personal stock UNKNOWN; earlier T321 arrow not recovered."
   },
   "base_storage": {
     "NanhLangVuong": 2,
@@ -1951,6 +1969,77 @@
         "quest_status": "ACTIVE_UNPAID_LEADER_UNKNOWN",
         "boss_discovered": false
       }
+    },
+    "west_road_T303_T312": {
+      "source_event_paths": [
+        "events/0303.md",
+        "events/0304.md",
+        "events/0305.md",
+        "events/0306.md",
+        "events/0307.md",
+        "events/0308.md",
+        "events/0309.md",
+        "events/0310.md",
+        "events/0311.md",
+        "events/0312.md"
+      ],
+      "gate_status": "CLOSED_AND_BARRED_INSIDE_T312. RIGHT WOODEN POST FOOT significantly splintered from pry T311 and ONE ordinary Huyết Nha+3 sword slash T312; lower wood shifted, low gap enlarged, NOT passable and NOT an archery kill-line. Upper frame and inside bracing support gate; no verified structure HP or automatic break threshold.",
+      "gate_guards": "AT_LEAST_TWO_VOICES_INSIDE; one held gate/spear, other argued; at least one potentially went to upper station but exact movement and recipient UNVERIFIED; enemy knows vulnerable RIGHT foot and actively reinforces from inside.",
+      "gate_outer_corpse": {
+        "id": "enemy:west-road-upper-gate-shortcoat-sword-T299",
+        "killed_T302": true,
+        "first_loot_T303": true,
+        "unique_souls_claim": 14,
+        "rank": "NORMAL",
+        "L_reward_used": 6,
+        "dead_lvl": 6,
+        "physical_loot": {
+          "three_stroke_badge": 1,
+          "copper_coins": 4,
+          "leather_belt": 1,
+          "short_sword": 1
+        },
+        "physical_short_sword_state": "BROKEN_T309_T311_OUTSIDE_GATE"
+      },
+      "numbers_after_T312": {
+        "HP": 125,
+        "STA": 65,
+        "BLOOD": 27,
+        "TH": 0,
+        "Souls": 85,
+        "EXP": 360,
+        "DEF": 24,
+        "copper_coins_total": 38
+      },
+      "item_chain": {
+        "huyet_nha_plus3": "Temporarily laid at outside boulder during feigned surrender T308; RETRIEVED T309 and currently in V hand, undamaged T312",
+        "sacrificial_short_sword": "Taken from gate guard T303, concealed and wedged door T308, broken into pieces and ejected T309, fragment tip used as failed crowbar T311 and stuck at right post foot, NOT carried/usable",
+        "shipment_paper": "One loose unsigned slip sent into gate T306 via small stone, now INSIDE with sentry; V RETAINS other route/shipment docs",
+        "signalling_tool": "T298 cloaked signal man's curved metal clanger still V carries, NOT consumed by clanging T304",
+        "Maela_arrows": "ZERO shots from T303 to T312, preexisting total UNKNOWN"
+      },
+      "observations": [
+        "T304 clanger 2 clangs elicited one returned clang from inside gate, not proof of identity",
+        "T305–T306 real unsigned receipt and correct wording made sentries crack gate, but corpse/arms raised suspicion; no actual admission or legal attack lane",
+        "T307 confirmed inward-swinging wooden leaf with outer iron straps and LEFT hinge, internal latch hidden; gate closed/barred after V refused actual disarm",
+        "T308 temporary wedge did NOT create passable opening",
+        "T310 found water-eroded weak right base, T311 caused initial wood fissure, T312 deepened damage with controlled slash; NO claim gate fully collapsed",
+        "T312 guards pushed wooden pole through low newly widened gap, V dodged physically, no HP lost",
+        "Maela remains uninjured lower road watching gate with bow and unknown arrow count"
+      ],
+      "scene_rules": "Keep fixed upper gate post and observed path, do not invent a new opening/passable tunnel/archer firing line without distinct event.",
+      "story_bounty": "Garrick west road bandit leader remains UNIDENTIFIED, quest ACTIVE, no 65 Soul/100 XP payout."
+    },
+    "ba_vach_northern_checkpoint_T345": {
+      "gate": "RIGHT POST FAILED/BREACHED LOWER T329; temporary board rebuilt while guarded rest T336-T337; breached again T341",
+      "yard_spearman": "DEAD_T334_FIRST_LOOT_T343",
+      "yard_shieldman": "DEAD_T342_FIRST_LOOT_T343",
+      "commander": "Lv8_ELITE_HP140_LAST_VERIFIED_T332; NOT_PROVEN_CHIEF; CURRENT_LOCATION_UNKNOWN",
+      "shipment": "BA_VACH_CHEST_OBSERVED_MOVING_NORTH_T339_TO_T345; CONTENTS_AND_DESTINATION_UNKNOWN",
+      "escort": "Lv6_NORMAL_73_OF_92_LAST_SEEN_T345; AFTER_ARROW_RETREATED_BEHIND_SECOND_BEND_ROCK",
+      "carriers": "TWO_SEEN_T344; CURRENT_POSITION_UNOBSERVED",
+      "stash": "T343_TWO_BUNDLES_HIDDEN_KHE_DA_KHUC_NGOAT_T344",
+      "maela": "FIVE_METER_REAR_COVER_NOT_FIRING_WITH_BLOCKED_LOS"
     }
   },
   "npc_last_verified_T93": {
@@ -4520,10 +4609,10 @@
       },
       "reward_received": false,
       "source": "events/0162.md",
-      "progress": "T245–T264: tarp-and-crates site located on northern rocks at Dốc Đá Xám. Three Lv6 NORMAL humans killed (cloaked lookout T250, axe guard T254, grey-cloak knife fighter T261) and all three unique corpses first looted by T262 (14 Souls each). Old wooden hunting crossbow and route sketch with three marks recovered, but none yet verified as bounty leader/robber identity proof. T257 found low metal-noise warning cord; grey-coat triggered T260, alert recipients UNKNOWN. T263 V loaded one steel bolt into Liên Nỏ. T264 V/M withdrew carefully to west boulder; unknown northern figure may have heard pebble; no active target confirmed. T265: a NEW Lv7 Normal human longbow wielder revealed briefly on northern upper path; Maela shot him for16 actual HP (85→69), he fired one return arrow that hit rock, then withdrew behind cover. Identity/faction/bandit-chief status still UNKNOWN. Player's preloaded Liên Nỏ steel1 unspent, no boss proof. T266: upper Lv7 longbowman sidestepped to lower step of same northern upper path and briefly showed torso; Maela fired one ordinary arrow but it hit adjacent rock, enemy HP remains69. He fired a counter-arrow into western boulder, no injuries, and ducked behind stone. V kept his crossbow loaded one steel bolt because his projectile line remained obstructed. No leader/faction proof. T267: archer shifted along existing north ledge to northwest tarp opening; V got one clear crossbow bolt shot before foe re-concealed. Ordinary bolt preDEF29−DEF10=19, Lv7 archer HP69→50; V's crossbow now unloaded, steel reserve2. Maela did not fire due obstructed individual lane. Enemy leader affiliation unverified. T268: V stowed unloaded Liên Nỏ, drew Huyết Nha+3 and took legal west-rock sword guard; northern Lv7 bowman HP50 visibly moved under cover uphill along existing rock path, exact current location unknown. Maela held nocked arrow without shot, all resources unchanged. No chief proof. T269: V and Maela advanced with cover along north tip of western boulder without crossing open gravel. Upper Lv7 longbowman HP50 retreated up the existing northern path, still unverified identity/faction/chief. No injuries or shots. T270 V exposed himself crossing first patch of loose gravel toward NW outside corner of first crate, archer from existing elevated north bend shot raw30-DEF22=8 actual, V145→137. Maela one valid oblique shot raw27-DEF10=17 actual, enemy archer HP50→33 and retreated into rock cover. No Huyết Ảnh Bộ, no full reaching ascending path, no leader identity. T271 V moved under partial cover from first crate toward north edge of gap before second crate; Maela nocked an arrow without firing. Lv7 archer HP33 moved farther up northern rocks, no clean shot; no leader/faction proof. T272: V reaches existing northern ascent FOOT from gap between first two crates. Lv7 archer HP33 released one bow arrow from higher bend; player ducked behind existing rock, arrow hit stone, no HP loss. Maela held already-nocked bow due blocked lane. No melee, dash, parry, loot, or verified leader proof. T273: V chased north along existing switchback, closed to visible ~3m solid landing after real uphill approach, spent15 STA on Huyết Ảnh Bộ (24→9), landed ONE normal Huyết Nha slash raw34-DEF10=24 on Lv7 archer HP33→9. Hấp Huyết heals2 player137→139; archer dropped longbow, kneeled pleading for mercy at swordpoint, alive and no boss identity proof. T274–T283: Lv7 archer Kerran kept alive (9/85), bound and first-aided; claims Ba Vạch connection unverified. Two documents with similar three-stroke marks, old wagoner and Kerran statements about curved metal left shoulder/two metal clanks, higher north stone route are leads ONLY. Garrick reviewed but NOT verified chief or paid bounty. Kerran at guard station in temporary watch, formal custody unresolved; Maela resting; player at Durgan forge. T284–T292: Durgan reinforced Wolf King armor (DEF24; paid45 Souls) and took spare greatsword balance work paid18. V and Maela redeployed, followed man with curved pale metal near LEFT SHOULDER to newly observed upper north cargo stop bearing three strokes. Heard two metal clanks and one response, saw man meet gray shirt spearman. Gray guard killed T292 while physically grappled, corpse unlooted, no Souls. Cloaked target alerted, armed, HP/leader identity UNKNOWN. Western leader bounty ACTIVE UNPAID. T293–T302: maela+V killed cloaked signalman at north transfer post (T297) and looted two corpses plus station once (T298), first Souls +24 accepted; T299 correction +20 char EXP for prior T292/T297 Normal kills and staged bulky loot at north transfer. Following upper road discovered marked north timber/stone gate with at least 2 voices. T301 outer Lv6 normal guard wounded by V sword+Maela arrow; T302 Maela arrow then legal 5m Huyết Nguyệt Trảm killed outer guard outside gate, +10 charEXP to360. Inside guard closed and barred gate, sounded alarm; no proven chief/quest bounty.",
-      "next_step": "T303: outside closed barred north checkpoint wooden gate, unlooted Lv6 Normal guard corpse at foot of gate, Maela on lower approach. Unverified people inside alarmed, unknown other defenses. Must resolve next player action, no auto-advance/boss/quest reward.",
+      "progress": "T245–T264: tarp-and-crates site located on northern rocks at Dốc Đá Xám. Three Lv6 NORMAL humans killed (cloaked lookout T250, axe guard T254, grey-cloak knife fighter T261) and all three unique corpses first looted by T262 (14 Souls each). Old wooden hunting crossbow and route sketch with three marks recovered, but none yet verified as bounty leader/robber identity proof. T257 found low metal-noise warning cord; grey-coat triggered T260, alert recipients UNKNOWN. T263 V loaded one steel bolt into Liên Nỏ. T264 V/M withdrew carefully to west boulder; unknown northern figure may have heard pebble; no active target confirmed. T265: a NEW Lv7 Normal human longbow wielder revealed briefly on northern upper path; Maela shot him for16 actual HP (85→69), he fired one return arrow that hit rock, then withdrew behind cover. Identity/faction/bandit-chief status still UNKNOWN. Player's preloaded Liên Nỏ steel1 unspent, no boss proof. T266: upper Lv7 longbowman sidestepped to lower step of same northern upper path and briefly showed torso; Maela fired one ordinary arrow but it hit adjacent rock, enemy HP remains69. He fired a counter-arrow into western boulder, no injuries, and ducked behind stone. V kept his crossbow loaded one steel bolt because his projectile line remained obstructed. No leader/faction proof. T267: archer shifted along existing north ledge to northwest tarp opening; V got one clear crossbow bolt shot before foe re-concealed. Ordinary bolt preDEF29−DEF10=19, Lv7 archer HP69→50; V's crossbow now unloaded, steel reserve2. Maela did not fire due obstructed individual lane. Enemy leader affiliation unverified. T268: V stowed unloaded Liên Nỏ, drew Huyết Nha+3 and took legal west-rock sword guard; northern Lv7 bowman HP50 visibly moved under cover uphill along existing rock path, exact current location unknown. Maela held nocked arrow without shot, all resources unchanged. No chief proof. T269: V and Maela advanced with cover along north tip of western boulder without crossing open gravel. Upper Lv7 longbowman HP50 retreated up the existing northern path, still unverified identity/faction/chief. No injuries or shots. T270 V exposed himself crossing first patch of loose gravel toward NW outside corner of first crate, archer from existing elevated north bend shot raw30-DEF22=8 actual, V145→137. Maela one valid oblique shot raw27-DEF10=17 actual, enemy archer HP50→33 and retreated into rock cover. No Huyết Ảnh Bộ, no full reaching ascending path, no leader identity. T271 V moved under partial cover from first crate toward north edge of gap before second crate; Maela nocked an arrow without firing. Lv7 archer HP33 moved farther up northern rocks, no clean shot; no leader/faction proof. T272: V reaches existing northern ascent FOOT from gap between first two crates. Lv7 archer HP33 released one bow arrow from higher bend; player ducked behind existing rock, arrow hit stone, no HP loss. Maela held already-nocked bow due blocked lane. No melee, dash, parry, loot, or verified leader proof. T273: V chased north along existing switchback, closed to visible ~3m solid landing after real uphill approach, spent15 STA on Huyết Ảnh Bộ (24→9), landed ONE normal Huyết Nha slash raw34-DEF10=24 on Lv7 archer HP33→9. Hấp Huyết heals2 player137→139; archer dropped longbow, kneeled pleading for mercy at swordpoint, alive and no boss identity proof. T274–T283: Lv7 archer Kerran kept alive (9/85), bound and first-aided; claims Ba Vạch connection unverified. Two documents with similar three-stroke marks, old wagoner and Kerran statements about curved metal left shoulder/two metal clanks, higher north stone route are leads ONLY. Garrick reviewed but NOT verified chief or paid bounty. Kerran at guard station in temporary watch, formal custody unresolved; Maela resting; player at Durgan forge. T284–T292: Durgan reinforced Wolf King armor (DEF24; paid45 Souls) and took spare greatsword balance work paid18. V and Maela redeployed, followed man with curved pale metal near LEFT SHOULDER to newly observed upper north cargo stop bearing three strokes. Heard two metal clanks and one response, saw man meet gray shirt spearman. Gray guard killed T292 while physically grappled, corpse unlooted, no Souls. Cloaked target alerted, armed, HP/leader identity UNKNOWN. Western leader bounty ACTIVE UNPAID. T293–T302: maela+V killed cloaked signalman at north transfer post (T297) and looted two corpses plus station once (T298), first Souls +24 accepted; T299 correction +20 char EXP for prior T292/T297 Normal kills and staged bulky loot at north transfer. Following upper road discovered marked north timber/stone gate with at least 2 voices. T301 outer Lv6 normal guard wounded by V sword+Maela arrow; T302 Maela arrow then legal 5m Huyết Nguyệt Trảm killed outer guard outside gate, +10 charEXP to360. Inside guard closed and barred gate, sounded alarm; no proven chief/quest bounty. T303 first loot outer T302 Lv6 Normal guard +14 Souls to85, four copper to38, physical short sword (later broken), 3-stroke badge and usable leather belt. T304–T306 instrument/real lower-station paperwork produced suspicious partial communication and gave exactly ONE unsigned slip into defenders' custody, not admission. T307–T309 gate closed/reinforced after short-sword chock broke, V main sword recovered. T310 structural inspection discovered weaker right post foot, T311 physical pry split wood, T312 ONE controlled ordinary Huyết Nha+3 blow deepened splintering/shifted lower frame, but inner bracing kept the gate BARRED and NOT passable; counter pole jab missed. Enemy alert and chief unknown.",
+      "next_step": "T313: V with sword+3 OUTSIDE northern upper palisade gate, Maela lower cover bow ready, right foot cracked/deeply splintered but door still closed/barred inside. At least two sentry voices, internal bracing and possible messenger. No auto-breach, no auto-attack, no boss identity, no currency reward.",
       "notional_target_reputation": "Crossbowman rumored among bandits, unverified",
-      "last_evidence_turn": 302,
+      "last_evidence_turn": 312,
       "intelligence_T163": {
         "source": "events/0163.md",
         "verified_patrol": [
@@ -5286,6 +5375,46 @@
         "encounter_bonus": 0,
         "TH": 0,
         "loot_note": "old wood hunting crossbow, two crude bolts, second ordinary dagger, leather bag/route sketch; one Maela arrow recovered"
+      },
+      "enemy:west-road-upper-gate-shortcoat-sword-T299": {
+        "claim_id": "claim:T303:upper-gate-guard:soul-v1.3",
+        "loot_turn": 303,
+        "source": "events/0303.md",
+        "souls": 14,
+        "L_reward": 6,
+        "rank": "normal",
+        "rank_multiplier": 1,
+        "D": 1,
+        "claimed": true,
+        "TH": 0
+      },
+      "enemy:ba-vach-yard-spearman-T328": {
+        "claim_id": "claim:T343:ba-vach-spearman:soul-v1.3",
+        "source": "events/0313-0345.md",
+        "loot_turn": 343,
+        "souls": 14,
+        "L_reward": 6,
+        "rank": "normal",
+        "rank_multiplier": 1,
+        "D": 1,
+        "claimed": true,
+        "TH": 0,
+        "encounter_bonus": 0,
+        "precommit_note": "T332 stats declared after engagement, not proven prior hash commitment"
+      },
+      "enemy:ba-vach-yard-shieldman-T321": {
+        "claim_id": "claim:T343:ba-vach-shieldman:soul-v1.3",
+        "source": "events/0313-0345.md",
+        "loot_turn": 343,
+        "souls": 14,
+        "L_reward": 6,
+        "rank": "normal",
+        "rank_multiplier": 1,
+        "D": 1,
+        "claimed": true,
+        "TH": 0,
+        "encounter_bonus": 0,
+        "precommit_note": "T332 stats declared after engagement, not proven prior hash commitment"
       }
     },
     "C_status": "DEAD_T199_FIRST_SOUL_CLAIM_COMPLETE_T200_NO_DUPLICATE",
@@ -5451,26 +5580,18 @@
     "reward": "NONE"
   },
   "checkpoint": {
-    "id": "HN-T302-OUTER-GATE-GUARD-DEAD-DOOR-BARRED",
-    "last_completed_turn": 302,
-    "previous_checkpoint_last_completed_turn": 292,
-    "number_narrated_turns": 10,
+    "id": "HN-T345-RECOVERED-HISTORY",
+    "last_completed_turn": 345,
+    "previous_verified_commit": "25e4634893cd0ac454a5b871d6d4f9850969dd1f",
+    "previous_verified_turn": 302,
+    "recovered_uncommitted_tree_T303_T312": "8a39224782e9f466544924e00ca99f41bf731603",
     "source_events": [
-      "events/0293.md",
-      "events/0294.md",
-      "events/0295.md",
-      "events/0296.md",
-      "events/0297.md",
-      "events/0298.md",
-      "events/0299.md",
-      "events/0300.md",
-      "events/0301.md",
-      "events/0302.md"
+      "events/0303.md through events/0312.md (recovered tree)",
+      "events/0313-0345.md"
     ],
+    "status": "WRITTEN_UNVERIFIED_UNTIL_READBACK",
     "gameplay_retcon": false,
-    "notion_sync_status": "NO_NOTION_OR_CANVA_WRITE",
-    "chat_only_unsaved_turns_after_verified_write": 0,
-    "checkpoint_reason": "AUTO_10_COMPLETED_TURNS_AFTER_VERIFIED_T292"
+    "method": "explicit user-requested audit and sync, not a game turn"
   },
   "battle_state_T237": {
     "enemy_id": "enemy:stone-raker-T234",
@@ -6178,5 +6299,64 @@
     "HuyetTramNhiLien": "READY, cost12HP+25STA on valid melee cast",
     "hybrid_inventory": "Documents/carried light; bulky loot staged at unattended north-transfer post, not city",
     "next_turn": 303
+  },
+  "scene_state_T312": {
+    "last_completed_turn": 312,
+    "next_turn": 313,
+    "location": "Dốc Đá Xám · upper northern Ba Vạch-marked timber checkpoint. Vô Danh outside barred wooden gate near cover after ONE cut to cracked RIGHT timber post foot; Maela lower stone on bow overwatch, no line to defenders. Right post base badly split, lower doorframe shifted a little and gap enlarged, but upper links+internal bracing keep door CLOSED. At least 2 male voices behind gate, exact defenders/positions UNKNOWN.",
+    "player_status": "OUTSIDE_GATE_AT_REAL_ROCK_COVER_HUYET_NHA_PLUS3_READY",
+    "ally": "Maela uninjured lower approach bow nocked, no shots T303-T312",
+    "gate": "CLOSED_BARRED_FROM_INSIDE; right post foot deep crack and bigger LOW gap but NOT traversable; inner timber reinforcement still acting",
+    "defenders": "AT_LEAST_TWO_MALE_VOICES_ALERT, specific positions, levels, HP UNKNOWN",
+    "messenger": "possible report upward, unverified",
+    "corpse": "outside Lv6 guard already first looted T303",
+    "gear": "scavenged T303 short sword destroyed into fragments T309/T311; Huyết Nha+3 held and intact",
+    "resources": {
+      "HP": 125,
+      "STA": 65,
+      "BLOOD": 27,
+      "TuHuyet": 0,
+      "Souls": 85,
+      "EXP": 360,
+      "DEF": 24,
+      "copper_coins": 38
+    },
+    "all_skills": "Huyết Nguyệt Trảm READY and Huyết Trảm Nhị Liên READY; no skill cast in T303-T312",
+    "quest": "ACTIVE_UNPAID",
+    "status": "T313 NOT PLAYED"
+  },
+  "scene_state_T345": {
+    "last_completed_turn": 345,
+    "next_turn": 346,
+    "location": "Dốc Đá Xám · tuyến vận chuyển phía bắc chốt Ba Vạch, tại khúc ngoặt đá thứ hai. Vô Danh nép phía vách phải, Huyết Nha+3 trong tay; Maela theo sau khoảng 5m cầm cung. Hậu vệ Lv6 Normal HP73/92 sau mũi tên T345 rút khuất sau mỏm đá. Hai người khiêng hòm Ba Vạch phía bắc đã khuất tầm; thủ lĩnh thật chưa được xác nhận. Hai bó loot T343 giấu tại Khe Đá Khúc Ngoặt phía nam.",
+    "resources": {
+      "HP": 117,
+      "STA": 41,
+      "BLOOD": 46,
+      "TuHuyet": 0,
+      "Souls": 113,
+      "EXP": 380,
+      "DEF": 24,
+      "copper_coins": 48
+    },
+    "enemy_last_seen": {
+      "id": "enemy:ba-vach-escort-rearguard-T345",
+      "HP": 73,
+      "max_HP": 92,
+      "level": 6,
+      "rank": "normal",
+      "DEF": 13,
+      "ATK": "24–30",
+      "position": "behind second-bend rock; not currently visible or legal clean arrow target",
+      "stat_disclosure": "FIRST_DISCLOSED_T345_NOT_PRECOMMITTED"
+    },
+    "maela": "Approximately 5m behind, bow ready, total arrow stock UNKNOWN",
+    "caravan": "Two carriers and Ba Vach marked chest beyond north bend, not currently seen",
+    "map_id": "doc-da-xam-ba-vach-escort-second-bend",
+    "tactical_geometry": "relative schematic only; no actual metric distances from SVG/JSON",
+    "stash": "Khe Đá Khúc Ngoặt: two physical bulky salvage bundles hidden T344, separately from T298 north transfer stash",
+    "quest": "GARRICK_CHIEF_ACTIVE_UNPAID; Elite commander not confirmed chief",
+    "skill_exp_reconciliation": "PENDING_EVIDENCE_REVIEW; do not simulate historical RNG",
+    "T346_NOT_PLAYED": true
   }
 }

@@ -1,89 +1,87 @@
 {
   "schema": "HN-MAP-SCENE-V1",
-  "last_completed_turn": 302,
-  "next_turn": 303,
-  "map_id": "duong-tay-doc-da-xam-north-upper-barricade-observed-T299",
-  "status_source": "T299–T302 events and observation of upper timber/stone sentry gate; closed and barred T302; earlier upper transfer post T290 preserved; lower camp static unchanged.",
+  "last_completed_turn": 345,
+  "next_turn": 346,
+  "map_id": "doc-da-xam-ba-vach-escort-second-bend",
+  "status_source": "events/0313-0345.md",
   "current": {
     "tokens": [
       {
         "id": "vo-danh",
         "category": "player",
         "label": "V",
-        "x": 46,
-        "y": 67,
+        "x": 55,
+        "y": 77,
         "facing": "N",
-        "status": "OUTSIDE_GATE_COMBAT_READY_HP125_STA65"
+        "status": "RIGHT_REAL_STONE_WALL_HUYET_NHA_READY_HP117_STA41"
       },
       {
         "id": "maela",
         "category": "ally",
         "label": "M",
-        "x": 48,
-        "y": 89,
+        "x": 44,
+        "y": 91,
         "facing": "N",
-        "status": "LOWER_APPROACH_UNINJURED_BOW_T302_FIRED_ONE"
+        "status": "~5M_BEHIND_BOW_READY_NO_CURRENT_CLEAN_TARGET_LINE"
       }
     ],
     "movement": [
       {
         "actor": "vo-danh",
-        "turn": 300,
-        "description": "Approached via observed stone path and low rock cover below checkpoint, no wall crossing"
-      },
-      {
-        "actor": "maela",
-        "turn": 301,
-        "description": "Covered lower approach and fired once when outer guard appeared beyond V's cover"
+        "turn": 344,
+        "description": "Stashed bulky loot at first north transport turn, ran unburdened along established S-bend road; not through rocks"
       },
       {
         "actor": "vo-danh",
-        "turn": 302,
-        "description": "Pursued wounded guard on true path; cast legal clear-5m Huyết Nguyệt Trảm outside gate, no barrier crossing"
+        "turn": 345,
+        "description": "Approached second rock bend using legitimate right-side wall cover, outside melee reach, stopped on enemy alert"
       },
       {
         "actor": "maela",
-        "turn": 302,
-        "description": "Fired one clean-line arrow at exposed outside guard; did not shoot into closed gate"
+        "turn": 345,
+        "description": "Followed about 5m behind; legally fired one arrow when escort exposed left upper body and player did not cross the lane"
       }
     ],
     "visible_hostiles": [],
-    "corpses": [
+    "last_seen_hostiles": [
       {
-        "id": "enemy:west-road-upper-gate-shortcoat-sword-T299",
-        "label": "X",
-        "x": 54,
-        "y": 38,
-        "dead_turn": 302,
-        "looted": false,
-        "weapon": "short sword on ground beside corpse"
+        "id": "enemy:ba-vach-escort-rearguard-T345",
+        "label": "H",
+        "HP_current": 73,
+        "HP_max": 92,
+        "DEF": 13,
+        "ATK": "24-30",
+        "level": 6,
+        "rank": "NORMAL",
+        "position": "BEHIND_SECOND_BEND_BOULDER_AFTER_RETREAT",
+        "currently_visible": false
       }
     ],
+    "corpses": [],
     "observed_static_objects": [
       {
-        "id": "upper-barricade-timber-palisade-T299",
-        "name": "Wood-and-stone barricade across narrow real uphill road, no secret passage observed"
+        "id": "north-transport-existing-s-stone-path",
+        "name": "Physically traversed uphill S-bend, no extra shortcut"
       },
       {
-        "id": "upper-barricade-door-T299",
-        "name": "Gate formerly open and accessible; CLOSED and barred from INSIDE at T302"
+        "id": "north-second-bend-cover-left",
+        "name": "Natural rock wall and left boulder intermittently obscure escort"
       },
       {
-        "id": "upper-barricade-lower-rock-cover-T300",
-        "name": "Existing low natural rock cover beneath outer approach"
+        "id": "north-second-bend-cover-right",
+        "name": "Natural right boulder, rear guard used cover behind it"
       },
       {
-        "id": "upper-barricade-inside-unknown",
-        "name": "Space behind fence not explored, >=1 voice known; exact location unknown"
+        "id": "north-first-bend-hidden-crevice-T344",
+        "name": "Two material loot bundles hidden at first transport bend, south of present position, with discreet rock mark"
       }
     ],
     "notes": [
-      "UNKNOWN at least one adult male inside barricade, alarmed and alive; do not plot unknown actual coordinate as enemy token.",
-      "No confirmed ability of timber door to resist any particular attack; do not automatically break or walk through it.",
-      "V outside gate, short sword dropped by corpse, Soul eligible upon separate unique first valid loot only.",
-      "Northern transfer station has earlier T298 loot staged physically there; it is not on V/M at gate.",
-      "Fixed original lower camp terrain and earlier north-transfer fragment remain unchanged.",
-      "SVG schematic relative coordinates are for drawing only and never measure legal skill distance."
+      "STATIC terrain only locally observed. North caravan/commander actual current coordinate UNKNOWN and not token-plotted.",
+      "Relative percentages are map annotation ONLY, not measured distances or legal skill range.",
+      "Maela's T345 arrow penetrated exposed upper left escort body, then escort retreated behind solid rock; bow lane NOW BLOCKED.",
+      "T344 stash remains off present viewport and not inventory/teleport. Older T298 north-transfer stash is separate.",
+      "S342+ shieldman and spearman corpses looted first/once T343; no additional souls."
     ]
   },
   "legacy_timeline": {
@@ -179,7 +177,7 @@
     "player_left": true,
     "notes": "Local tactical positions below refer to historical T239, not present player placement"
   },
-  "current_player_location": "Dốc Đá Xám · chốt gác thượng tuyến bắc: Vô Danh đứng trên lối đá thật phía NGOÀI cánh cửa hàng rào bằng gỗ vừa đóng/gài từ bên trong; xác lính gác Lv6 Normal T302 nằm sát chân cột phía ngoài, chưa loot. Maela ở phía sau dưới đường, cung sẵn sàng. Ít nhất 1 người còn sống trong chốt đã báo động, quân số không biết.",
+  "current_player_location": "Dốc Đá Xám · tuyến vận chuyển phía bắc chốt Ba Vạch, tại khúc ngoặt đá thứ hai. Vô Danh nép phía vách phải, Huyết Nha+3 trong tay; Maela theo sau khoảng 5m cầm cung. Hậu vệ Lv6 Normal HP73/92 sau mũi tên T345 rút khuất sau mỏm đá. Hai người khiêng hòm Ba Vạch phía bắc đã khuất tầm; thủ lĩnh thật chưa được xác nhận. Hai bó loot T343 giấu tại Khe Đá Khúc Ngoặt phía nam.",
   "archived_current_T273": {
     "tokens": [
       {
@@ -355,5 +353,91 @@
       "No T293 advance or attack; Huyết Trảm Nhị Liên merely READY (cost HP12 STA25 on a legal future cast).",
       "Do not redraw/archive-edit old T263 fixed lower camp terrain. This is NEW observed subscene on upper northern path."
     ]
+  },
+  "archived_current_T302": {
+    "tokens": [
+      {
+        "id": "vo-danh",
+        "category": "player",
+        "label": "V",
+        "x": 46,
+        "y": 67,
+        "facing": "N",
+        "status": "OUTSIDE_GATE_COMBAT_READY_HP125_STA65"
+      },
+      {
+        "id": "maela",
+        "category": "ally",
+        "label": "M",
+        "x": 48,
+        "y": 89,
+        "facing": "N",
+        "status": "LOWER_APPROACH_UNINJURED_BOW_T302_FIRED_ONE"
+      }
+    ],
+    "movement": [
+      {
+        "actor": "vo-danh",
+        "turn": 300,
+        "description": "Approached via observed stone path and low rock cover below checkpoint, no wall crossing"
+      },
+      {
+        "actor": "maela",
+        "turn": 301,
+        "description": "Covered lower approach and fired once when outer guard appeared beyond V's cover"
+      },
+      {
+        "actor": "vo-danh",
+        "turn": 302,
+        "description": "Pursued wounded guard on true path; cast legal clear-5m Huyết Nguyệt Trảm outside gate, no barrier crossing"
+      },
+      {
+        "actor": "maela",
+        "turn": 302,
+        "description": "Fired one clean-line arrow at exposed outside guard; did not shoot into closed gate"
+      }
+    ],
+    "visible_hostiles": [],
+    "corpses": [
+      {
+        "id": "enemy:west-road-upper-gate-shortcoat-sword-T299",
+        "label": "X",
+        "x": 54,
+        "y": 38,
+        "dead_turn": 302,
+        "looted": false,
+        "weapon": "short sword on ground beside corpse"
+      }
+    ],
+    "observed_static_objects": [
+      {
+        "id": "upper-barricade-timber-palisade-T299",
+        "name": "Wood-and-stone barricade across narrow real uphill road, no secret passage observed"
+      },
+      {
+        "id": "upper-barricade-door-T299",
+        "name": "Gate formerly open and accessible; CLOSED and barred from INSIDE at T302"
+      },
+      {
+        "id": "upper-barricade-lower-rock-cover-T300",
+        "name": "Existing low natural rock cover beneath outer approach"
+      },
+      {
+        "id": "upper-barricade-inside-unknown",
+        "name": "Space behind fence not explored, >=1 voice known; exact location unknown"
+      }
+    ],
+    "notes": [
+      "UNKNOWN at least one adult male inside barricade, alarmed and alive; do not plot unknown actual coordinate as enemy token.",
+      "No confirmed ability of timber door to resist any particular attack; do not automatically break or walk through it.",
+      "V outside gate, short sword dropped by corpse, Soul eligible upon separate unique first valid loot only.",
+      "Northern transfer station has earlier T298 loot staged physically there; it is not on V/M at gate.",
+      "Fixed original lower camp terrain and earlier north-transfer fragment remain unchanged.",
+      "SVG schematic relative coordinates are for drawing only and never measure legal skill distance."
+    ]
+  },
+  "archived_current_T312": {
+    "source": "T312 predecessor from original prepared tree",
+    "current_scene_T312_saved_elsewhere": true
   }
 }
