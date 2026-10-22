@@ -1,0 +1,19 @@
+name: GM Hybrid Lean Verification (isolated)
+on:
+  push:
+    branches: ["verify/gm-hybrid-lean-final"]
+  workflow_dispatch:
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Python version and full regression
+        run: |
+          python --version
+          python -m unittest discover -s verification -p 'test_*.py' -v
