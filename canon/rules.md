@@ -182,3 +182,9 @@ User-approved objective: realistic self-arising incidents and good/bad fortune w
 ## Tactical Orders & Autonomous Resolution V1.0 — owner-approved, T346+
 
 Binding source: canon/tactical-orders-v1.md. For compound/freeform player instructions, interpret PLAYER INTENT not completed storyline. Check known target vs last seen, real passable route and time, line-of-fire, player STA/cooldowns and Maela readiness; let allies and enemies take plausible independent actions within perception and physical limits. Legal pursuit or clean LOS never guarantees catching, shooting or hitting. Interleave conditional substeps with enemy movement/reactions; do not freeze enemies or invent punitive counterplay. Narrate partial or failed results faithfully and account for actual resources. This behavior refinement does not change numeric mechanics, apply an automatic event roll, advance T346 or trigger external tool calls per normal turn.
+
+
+## Hybrid Lean GM V1.0 — optional pure helpers (under review; not live activation)
+
+Reference: `state/gm-fast-contract.md` (concise *summary only*, never a new canon authority).
+Pure Python: `story/combat_mechanics.py` for confirmed hit math and source-bound cooldown checks, `story/tactical_checks.py` for grounded legality only, and `story/turn_ledger.py` for staged/idempotent turn deltas. No ChatGPT host hook, no automatic invocation, no new Hit/Miss/Critical rate, no additional tool calls each ordinary turn. Until G2/G3/G4 and independent review pass, these files are candidates only: do not advertise them as a validated live GM runtime. Existing accepted rules remain authority. T345 SAVED, T346 UNPLAYED.
