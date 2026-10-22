@@ -114,3 +114,9 @@ User-approved objective: realistic self-arising incidents and good/bad fortune w
 ## Tactical Orders V1.0 — FAST runtime contract (owner-approved T346+)
 
 Canonical policy: canon/tactical-orders-v1.md. Given an order such as "Vô Danh truy sát A, Maela giữ tầm bắn", internally split into player pursuit, allied conditional cover/repositioning and enemy autonomous intention. Verify geometry, last-seen versus visible, LOS, ally awareness/readiness/ammo when known, hazards, viable traversal, opportunity/time, fatigue and cooldown. Resolve only physically plausible substeps, with adversary and ally reactions at meaningful time boundaries; companion maintaining range must not grant a free legal shot. Do not select success because the player requested it, or failure for dramatic contrarianism. Record actual shot/cost/damage/world-clock deltas, not inferred future outcomes. Scenario fixtures in verification/tactical-orders-v1-scenarios.json are NON-CANONICAL; never autoplay them. No full GM engine, new RNG formula, Notion/GitHub call each turn, or T346 advancement by documentation edits.
+
+
+## Hybrid Lean GM V1.0 — optional pure helpers (under review; not live activation)
+
+Reference: `state/gm-fast-contract.md` (concise *summary only*, never a new canon authority).
+Pure Python: `story/combat_mechanics.py` for confirmed hit math and source-bound cooldown checks, `story/tactical_checks.py` for grounded legality only, and `story/turn_ledger.py` for staged/idempotent turn deltas. No ChatGPT host hook, no automatic invocation, no new Hit/Miss/Critical rate, no additional tool calls each ordinary turn. Until G2/G3/G4 and independent review pass, these files are candidates only: do not advertise them as a validated live GM runtime. Existing accepted rules remain authority. T345 SAVED, T346 UNPLAYED.

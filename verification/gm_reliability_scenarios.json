@@ -1,0 +1,1723 @@
+{
+  "schema": "GMR-V1",
+  "scope": "NON_CANONICAL_SYNTHETIC_ONLY",
+  "cases": [
+    {
+      "id": "GMR-01",
+      "group": "combat",
+      "scenario": "overkill",
+      "method": "damage",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "attack": {
+          "action_id": "T346/A01",
+          "source_ref": "noncanon/test",
+          "rule_version": "HN-V1.3",
+          "legal_hit": true,
+          "landed": true,
+          "raw_damage": 35,
+          "kind": "sword",
+          "is_melee_sword": true,
+          "is_ordinary_sword": true
+        },
+        "defender": {
+          "HP_current": 14,
+          "HP_max": 92,
+          "DEF": 12,
+          "living_blood_bearing": true
+        },
+        "effects": {
+          "mitigation": 0,
+          "attacker_HP_current": 117,
+          "attacker_HP_max": 170,
+          "attacker_BLOOD_current": 46,
+          "attacker_BLOOD_max": 50,
+          "hap_heal_already_this_combat_turn": 0
+        }
+      },
+      "assert_key": "actual_hp_lost",
+      "expected": 14,
+      "forbidden": 23
+    },
+    {
+      "id": "GMR-02",
+      "group": "combat",
+      "scenario": "net_after_DEF",
+      "method": "damage",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "attack": {
+          "action_id": "T346/A01",
+          "source_ref": "noncanon/test",
+          "rule_version": "HN-V1.3",
+          "legal_hit": true,
+          "landed": true,
+          "raw_damage": 35,
+          "kind": "sword",
+          "is_melee_sword": true,
+          "is_ordinary_sword": true
+        },
+        "defender": {
+          "HP_current": 14,
+          "HP_max": 92,
+          "DEF": 12,
+          "living_blood_bearing": true
+        },
+        "effects": {
+          "mitigation": 0,
+          "attacker_HP_current": 117,
+          "attacker_HP_max": 170,
+          "attacker_BLOOD_current": 46,
+          "attacker_BLOOD_max": 50,
+          "hap_heal_already_this_combat_turn": 0
+        }
+      },
+      "assert_key": "candidate_damage",
+      "expected": 23,
+      "forbidden": 35
+    },
+    {
+      "id": "GMR-03",
+      "group": "combat",
+      "scenario": "blood_capacity",
+      "method": "damage",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "attack": {
+          "action_id": "T346/A01",
+          "source_ref": "noncanon/test",
+          "rule_version": "HN-V1.3",
+          "legal_hit": true,
+          "landed": true,
+          "raw_damage": 35,
+          "kind": "sword",
+          "is_melee_sword": true,
+          "is_ordinary_sword": true
+        },
+        "defender": {
+          "HP_current": 14,
+          "HP_max": 92,
+          "DEF": 12,
+          "living_blood_bearing": true
+        },
+        "effects": {
+          "mitigation": 0,
+          "attacker_HP_current": 117,
+          "attacker_HP_max": 170,
+          "attacker_BLOOD_current": 46,
+          "attacker_BLOOD_max": 50,
+          "hap_heal_already_this_combat_turn": 0
+        }
+      },
+      "assert_key": "blood_gained",
+      "expected": 4,
+      "forbidden": 7
+    },
+    {
+      "id": "GMR-04",
+      "group": "combat",
+      "scenario": "hap_overkill",
+      "method": "damage",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "attack": {
+          "action_id": "T346/A01",
+          "source_ref": "noncanon/test",
+          "rule_version": "HN-V1.3",
+          "legal_hit": true,
+          "landed": true,
+          "raw_damage": 35,
+          "kind": "sword",
+          "is_melee_sword": true,
+          "is_ordinary_sword": true
+        },
+        "defender": {
+          "HP_current": 14,
+          "HP_max": 92,
+          "DEF": 12,
+          "living_blood_bearing": true
+        },
+        "effects": {
+          "mitigation": 0,
+          "attacker_HP_current": 117,
+          "attacker_HP_max": 170,
+          "attacker_BLOOD_current": 46,
+          "attacker_BLOOD_max": 50,
+          "hap_heal_already_this_combat_turn": 0
+        }
+      },
+      "assert_key": "hap_heal_gained",
+      "expected": 1,
+      "forbidden": 2
+    },
+    {
+      "id": "GMR-05",
+      "group": "combat",
+      "scenario": "invulnerable_by_DEF",
+      "method": "damage",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "attack": {
+          "action_id": "T346/A01",
+          "source_ref": "noncanon/test",
+          "rule_version": "HN-V1.3",
+          "legal_hit": true,
+          "landed": true,
+          "raw_damage": 9,
+          "kind": "sword",
+          "is_melee_sword": true,
+          "is_ordinary_sword": true
+        },
+        "defender": {
+          "HP_current": 14,
+          "HP_max": 92,
+          "DEF": 12,
+          "living_blood_bearing": true
+        },
+        "effects": {
+          "mitigation": 0,
+          "attacker_HP_current": 117,
+          "attacker_HP_max": 170,
+          "attacker_BLOOD_current": 46,
+          "attacker_BLOOD_max": 50,
+          "hap_heal_already_this_combat_turn": 0
+        }
+      },
+      "assert_key": "actual_hp_lost",
+      "expected": 0,
+      "forbidden": 9
+    },
+    {
+      "id": "GMR-06",
+      "group": "combat",
+      "scenario": "skill_no_ordinary_blood",
+      "method": "damage",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "attack": {
+          "action_id": "T346/A01",
+          "source_ref": "noncanon/test",
+          "rule_version": "HN-V1.3",
+          "legal_hit": true,
+          "landed": true,
+          "raw_damage": 35,
+          "kind": "sword",
+          "is_melee_sword": true,
+          "is_ordinary_sword": false
+        },
+        "defender": {
+          "HP_current": 14,
+          "HP_max": 92,
+          "DEF": 12,
+          "living_blood_bearing": true
+        },
+        "effects": {
+          "mitigation": 0,
+          "attacker_HP_current": 117,
+          "attacker_HP_max": 170,
+          "attacker_BLOOD_current": 46,
+          "attacker_BLOOD_max": 50,
+          "hap_heal_already_this_combat_turn": 0
+        }
+      },
+      "assert_key": "blood_gained",
+      "expected": 0,
+      "forbidden": 7
+    },
+    {
+      "id": "GMR-07",
+      "group": "combat",
+      "scenario": "ready",
+      "method": "availability",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "skill_id": "dash",
+        "pre_state": {
+          "cooldowns": {
+            "dash": {
+              "ready_at_combat_turn": 12,
+              "source_ref": "noncanon/test"
+            }
+          },
+          "resources": {
+            "STA": {
+              "current": 41,
+              "max": 110
+            }
+          },
+          "status_effects": {}
+        },
+        "clock": {
+          "combat_turn": 12
+        },
+        "action_context": {
+          "known_skill": true,
+          "costs": {
+            "STA": 10
+          },
+          "required_conditions": {},
+          "evidence_refs": [
+            "noncanon/test"
+          ]
+        }
+      },
+      "assert_key": "status",
+      "expected": "READY",
+      "forbidden": "BLOCKED"
+    },
+    {
+      "id": "GMR-08",
+      "group": "combat",
+      "scenario": "not_ready_yet",
+      "method": "availability",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "skill_id": "dash",
+        "pre_state": {
+          "cooldowns": {
+            "dash": {
+              "ready_at_combat_turn": 12,
+              "source_ref": "noncanon/test"
+            }
+          },
+          "resources": {
+            "STA": {
+              "current": 41,
+              "max": 110
+            }
+          },
+          "status_effects": {}
+        },
+        "clock": {
+          "combat_turn": 11
+        },
+        "action_context": {
+          "known_skill": true,
+          "costs": {
+            "STA": 10
+          },
+          "required_conditions": {},
+          "evidence_refs": [
+            "noncanon/test"
+          ]
+        }
+      },
+      "assert_key": "status",
+      "expected": "BLOCKED",
+      "forbidden": "READY"
+    },
+    {
+      "id": "GMR-09",
+      "group": "combat",
+      "scenario": "missing_cd",
+      "method": "availability",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "skill_id": "dash",
+        "pre_state": {
+          "cooldowns": {},
+          "resources": {
+            "STA": {
+              "current": 41,
+              "max": 110
+            }
+          },
+          "status_effects": {}
+        },
+        "clock": {
+          "combat_turn": 12
+        },
+        "action_context": {
+          "known_skill": true,
+          "costs": {
+            "STA": 10
+          },
+          "required_conditions": {},
+          "evidence_refs": [
+            "noncanon/test"
+          ]
+        }
+      },
+      "assert_key": "status",
+      "expected": "UNKNOWN",
+      "forbidden": "READY"
+    },
+    {
+      "id": "GMR-10",
+      "group": "combat",
+      "scenario": "exhausted",
+      "method": "availability",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "skill_id": "dash",
+        "pre_state": {
+          "cooldowns": {
+            "dash": {
+              "ready_at_combat_turn": 12,
+              "source_ref": "noncanon/test"
+            }
+          },
+          "resources": {
+            "STA": {
+              "current": 4,
+              "max": 110
+            }
+          },
+          "status_effects": {}
+        },
+        "clock": {
+          "combat_turn": 12
+        },
+        "action_context": {
+          "known_skill": true,
+          "costs": {
+            "STA": 10
+          },
+          "required_conditions": {},
+          "evidence_refs": [
+            "noncanon/test"
+          ]
+        }
+      },
+      "assert_key": "status",
+      "expected": "BLOCKED",
+      "forbidden": "READY"
+    },
+    {
+      "id": "GMR-11",
+      "group": "combat",
+      "scenario": "unknown_ailment",
+      "method": "availability",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "skill_id": "dash",
+        "pre_state": {
+          "cooldowns": {
+            "dash": {
+              "ready_at_combat_turn": 12,
+              "source_ref": "noncanon/test"
+            }
+          },
+          "resources": {
+            "STA": {
+              "current": 41,
+              "max": 110
+            }
+          },
+          "status_effects": {
+            "dizzy": {
+              "blocks": "dash",
+              "expiration": "UNKNOWN"
+            }
+          }
+        },
+        "clock": {
+          "combat_turn": 12
+        },
+        "action_context": {
+          "known_skill": true,
+          "costs": {
+            "STA": 10
+          },
+          "required_conditions": {},
+          "evidence_refs": [
+            "noncanon/test"
+          ]
+        }
+      },
+      "assert_key": "status",
+      "expected": "UNKNOWN",
+      "forbidden": "READY"
+    },
+    {
+      "id": "GMR-12",
+      "group": "combat",
+      "scenario": "weapon_unavailable",
+      "method": "availability",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "skill_id": "dash",
+        "pre_state": {
+          "cooldowns": {
+            "dash": {
+              "ready_at_combat_turn": 12,
+              "source_ref": "noncanon/test"
+            }
+          },
+          "resources": {
+            "STA": {
+              "current": 41,
+              "max": 110
+            }
+          },
+          "status_effects": {}
+        },
+        "clock": {
+          "combat_turn": 12
+        },
+        "action_context": {
+          "known_skill": true,
+          "costs": {
+            "STA": 10
+          },
+          "required_conditions": {
+            "weapon_ready": "blocked"
+          },
+          "evidence_refs": [
+            "noncanon/test"
+          ]
+        }
+      },
+      "assert_key": "status",
+      "expected": "BLOCKED",
+      "forbidden": "READY"
+    },
+    {
+      "id": "GMR-13",
+      "group": "tactical",
+      "scenario": "clear_lane",
+      "method": "tactical",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "intent": {
+          "source_ref": "noncanon/order",
+          "turn": 346,
+          "substeps": [
+            {
+              "id": "s1",
+              "actor": "Maela",
+              "verb": "shoot",
+              "target": "A"
+            }
+          ]
+        },
+        "observed_world": {
+          "substeps": {
+            "s1": {
+              "target_visibility": "visible",
+              "los": "clear",
+              "crossfire": "clear",
+              "route": "traversable",
+              "actor_ready": "ready",
+              "evidence_refs": [
+                "noncanon/map"
+              ]
+            }
+          }
+        }
+      },
+      "assert_key": "disposition",
+      "expected": "ALLOWED",
+      "forbidden": "BLOCKED"
+    },
+    {
+      "id": "GMR-14",
+      "group": "tactical",
+      "scenario": "last_seen",
+      "method": "tactical",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "intent": {
+          "source_ref": "noncanon/order",
+          "turn": 346,
+          "substeps": [
+            {
+              "id": "s1",
+              "actor": "Maela",
+              "verb": "shoot",
+              "target": "A"
+            }
+          ]
+        },
+        "observed_world": {
+          "substeps": {
+            "s1": {
+              "target_visibility": "last_seen",
+              "los": "clear",
+              "crossfire": "clear",
+              "route": "traversable",
+              "actor_ready": "ready",
+              "evidence_refs": [
+                "noncanon/map"
+              ]
+            }
+          }
+        }
+      },
+      "assert_key": "disposition",
+      "expected": "BLOCKED",
+      "forbidden": "ALLOWED"
+    },
+    {
+      "id": "GMR-15",
+      "group": "tactical",
+      "scenario": "stone_wall",
+      "method": "tactical",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "intent": {
+          "source_ref": "noncanon/order",
+          "turn": 346,
+          "substeps": [
+            {
+              "id": "s1",
+              "actor": "Maela",
+              "verb": "shoot",
+              "target": "A"
+            }
+          ]
+        },
+        "observed_world": {
+          "substeps": {
+            "s1": {
+              "target_visibility": "visible",
+              "los": "blocked",
+              "crossfire": "clear",
+              "route": "traversable",
+              "actor_ready": "ready",
+              "evidence_refs": [
+                "noncanon/map"
+              ]
+            }
+          }
+        }
+      },
+      "assert_key": "disposition",
+      "expected": "BLOCKED",
+      "forbidden": "ALLOWED"
+    },
+    {
+      "id": "GMR-16",
+      "group": "tactical",
+      "scenario": "friendly_crossfire",
+      "method": "tactical",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "intent": {
+          "source_ref": "noncanon/order",
+          "turn": 346,
+          "substeps": [
+            {
+              "id": "s1",
+              "actor": "Maela",
+              "verb": "shoot",
+              "target": "A"
+            }
+          ]
+        },
+        "observed_world": {
+          "substeps": {
+            "s1": {
+              "target_visibility": "visible",
+              "los": "clear",
+              "crossfire": "blocked",
+              "route": "traversable",
+              "actor_ready": "ready",
+              "evidence_refs": [
+                "noncanon/map"
+              ]
+            }
+          }
+        }
+      },
+      "assert_key": "disposition",
+      "expected": "BLOCKED",
+      "forbidden": "ALLOWED"
+    },
+    {
+      "id": "GMR-17",
+      "group": "tactical",
+      "scenario": "unknown_ammo",
+      "method": "tactical",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "intent": {
+          "source_ref": "noncanon/order",
+          "turn": 346,
+          "substeps": [
+            {
+              "id": "s1",
+              "actor": "Maela",
+              "verb": "shoot",
+              "target": "A"
+            }
+          ]
+        },
+        "observed_world": {
+          "substeps": {
+            "s1": {
+              "target_visibility": "visible",
+              "los": "clear",
+              "crossfire": "clear",
+              "route": "traversable",
+              "actor_ready": "unknown",
+              "evidence_refs": [
+                "noncanon/map"
+              ]
+            }
+          }
+        }
+      },
+      "assert_key": "disposition",
+      "expected": "UNKNOWN",
+      "forbidden": "ALLOWED"
+    },
+    {
+      "id": "GMR-18",
+      "group": "tactical",
+      "scenario": "invalid_target_visibility",
+      "method": "tactical",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "intent": {
+          "source_ref": "noncanon/order",
+          "turn": 346,
+          "substeps": [
+            {
+              "id": "s1",
+              "actor": "Maela",
+              "verb": "shoot",
+              "target": "A"
+            }
+          ]
+        },
+        "observed_world": {
+          "substeps": {
+            "s1": {
+              "target_visibility": "ready",
+              "los": "clear",
+              "crossfire": "clear",
+              "route": "traversable",
+              "actor_ready": "ready",
+              "evidence_refs": [
+                "noncanon/map"
+              ]
+            }
+          }
+        }
+      },
+      "assert_key": "disposition",
+      "expected": "UNKNOWN",
+      "forbidden": "ALLOWED"
+    },
+    {
+      "id": "GMR-19",
+      "group": "tactical",
+      "scenario": "pursue_last_seen",
+      "method": "tactical",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "intent": {
+          "source_ref": "noncanon/order",
+          "turn": 346,
+          "substeps": [
+            {
+              "id": "s1",
+              "actor": "Maela",
+              "verb": "pursue",
+              "target": "A"
+            }
+          ]
+        },
+        "observed_world": {
+          "substeps": {
+            "s1": {
+              "target_visibility": "last_seen",
+              "los": "clear",
+              "crossfire": "clear",
+              "route": "traversable",
+              "actor_ready": "ready",
+              "evidence_refs": [
+                "noncanon/map"
+              ]
+            }
+          }
+        }
+      },
+      "assert_key": "disposition",
+      "expected": "CONDITIONAL",
+      "forbidden": "ALLOWED"
+    },
+    {
+      "id": "GMR-20",
+      "group": "tactical",
+      "scenario": "pursue_blocked_path",
+      "method": "tactical",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "intent": {
+          "source_ref": "noncanon/order",
+          "turn": 346,
+          "substeps": [
+            {
+              "id": "s1",
+              "actor": "Maela",
+              "verb": "pursue",
+              "target": "A"
+            }
+          ]
+        },
+        "observed_world": {
+          "substeps": {
+            "s1": {
+              "target_visibility": "visible",
+              "los": "clear",
+              "crossfire": "clear",
+              "route": "blocked",
+              "actor_ready": "ready",
+              "evidence_refs": [
+                "noncanon/map"
+              ]
+            }
+          }
+        }
+      },
+      "assert_key": "disposition",
+      "expected": "BLOCKED",
+      "forbidden": "ALLOWED"
+    },
+    {
+      "id": "GMR-21",
+      "group": "tactical",
+      "scenario": "pursue_stunned",
+      "method": "tactical",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "intent": {
+          "source_ref": "noncanon/order",
+          "turn": 346,
+          "substeps": [
+            {
+              "id": "s1",
+              "actor": "Maela",
+              "verb": "pursue",
+              "target": "A"
+            }
+          ]
+        },
+        "observed_world": {
+          "substeps": {
+            "s1": {
+              "target_visibility": "visible",
+              "los": "clear",
+              "crossfire": "clear",
+              "route": "traversable",
+              "actor_ready": "blocked",
+              "evidence_refs": [
+                "noncanon/map"
+              ]
+            }
+          }
+        }
+      },
+      "assert_key": "disposition",
+      "expected": "BLOCKED",
+      "forbidden": "ALLOWED"
+    },
+    {
+      "id": "GMR-22",
+      "group": "tactical",
+      "scenario": "reposition_legal",
+      "method": "tactical",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "intent": {
+          "source_ref": "noncanon/order",
+          "turn": 346,
+          "substeps": [
+            {
+              "id": "s1",
+              "actor": "Maela",
+              "verb": "reposition",
+              "target": "A"
+            }
+          ]
+        },
+        "observed_world": {
+          "substeps": {
+            "s1": {
+              "target_visibility": "visible",
+              "los": "clear",
+              "crossfire": "clear",
+              "route": "traversable",
+              "actor_ready": "ready",
+              "evidence_refs": [
+                "noncanon/map"
+              ]
+            }
+          }
+        }
+      },
+      "assert_key": "disposition",
+      "expected": "ALLOWED",
+      "forbidden": "BLOCKED"
+    },
+    {
+      "id": "GMR-23",
+      "group": "tactical",
+      "scenario": "interact_unknown_route",
+      "method": "tactical",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "intent": {
+          "source_ref": "noncanon/order",
+          "turn": 346,
+          "substeps": [
+            {
+              "id": "s1",
+              "actor": "Maela",
+              "verb": "interact",
+              "target": "A"
+            }
+          ]
+        },
+        "observed_world": {
+          "substeps": {
+            "s1": {
+              "target_visibility": "visible",
+              "los": "clear",
+              "crossfire": "clear",
+              "route": "unknown",
+              "actor_ready": "ready",
+              "evidence_refs": [
+                "noncanon/map"
+              ]
+            }
+          }
+        }
+      },
+      "assert_key": "disposition",
+      "expected": "UNKNOWN",
+      "forbidden": "ALLOWED"
+    },
+    {
+      "id": "GMR-24",
+      "group": "tactical",
+      "scenario": "invalid_order",
+      "method": "tactical",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "intent": {
+          "source_ref": "noncanon/order",
+          "turn": 346,
+          "substeps": [
+            {
+              "id": "s1",
+              "actor": "Maela",
+              "verb": "warp",
+              "target": "A"
+            }
+          ]
+        },
+        "observed_world": {
+          "substeps": {
+            "s1": {
+              "target_visibility": "visible",
+              "los": "clear",
+              "crossfire": "clear",
+              "route": "traversable",
+              "actor_ready": "ready",
+              "evidence_refs": [
+                "noncanon/map"
+              ]
+            }
+          }
+        }
+      },
+      "assert_key": "disposition",
+      "expected": "UNKNOWN",
+      "forbidden": "ALLOWED"
+    },
+    {
+      "id": "GMR-25",
+      "group": "ledger",
+      "scenario": "ordinary_spend",
+      "method": "ledger_valid",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "pre_state": {
+          "last_completed_turn": 345,
+          "next_turn": 346,
+          "resources": {
+            "HP": {
+              "current": 117,
+              "max": 170
+            },
+            "STA": {
+              "current": 41,
+              "max": 110
+            },
+            "BLOOD": {
+              "current": 46,
+              "max": 50
+            },
+            "TuHuyet": {
+              "current": 0,
+              "max": 20
+            },
+            "souls": 113,
+            "exp": 380
+          },
+          "inventory_counts": {
+            "arrow": 2,
+            "Maela-arrows": "UNKNOWN"
+          },
+          "cooldowns": {},
+          "status_effects": {},
+          "accepted_actions": {},
+          "claims": {}
+        },
+        "intended_turn": {
+          "turn": 346,
+          "action_id": "T346/A01",
+          "rule_version": "HN-V1.3",
+          "evidence_refs": [
+            "noncanon/event"
+          ]
+        },
+        "proposed_deltas": {
+          "resource_changes": {
+            "STA": -5
+          },
+          "inventory_changes": {},
+          "cooldown_changes": {},
+          "status_changes": {},
+          "elapsed_minutes": 1
+        },
+        "receipts": []
+      },
+      "assert_key": "status",
+      "expected": "STAGED",
+      "forbidden": "REJECTED"
+    },
+    {
+      "id": "GMR-26",
+      "group": "ledger",
+      "scenario": "hp_underflow",
+      "method": "ledger_valid",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "pre_state": {
+          "last_completed_turn": 345,
+          "next_turn": 346,
+          "resources": {
+            "HP": {
+              "current": 117,
+              "max": 170
+            },
+            "STA": {
+              "current": 41,
+              "max": 110
+            },
+            "BLOOD": {
+              "current": 46,
+              "max": 50
+            },
+            "TuHuyet": {
+              "current": 0,
+              "max": 20
+            },
+            "souls": 113,
+            "exp": 380
+          },
+          "inventory_counts": {
+            "arrow": 2,
+            "Maela-arrows": "UNKNOWN"
+          },
+          "cooldowns": {},
+          "status_effects": {},
+          "accepted_actions": {},
+          "claims": {}
+        },
+        "intended_turn": {
+          "turn": 346,
+          "action_id": "T346/A01",
+          "rule_version": "HN-V1.3",
+          "evidence_refs": [
+            "noncanon/event"
+          ]
+        },
+        "proposed_deltas": {
+          "resource_changes": {
+            "HP": -200
+          },
+          "inventory_changes": {},
+          "cooldown_changes": {},
+          "status_changes": {},
+          "elapsed_minutes": 1
+        },
+        "receipts": []
+      },
+      "assert_key": "status",
+      "expected": "REJECTED",
+      "forbidden": "STAGED",
+      "expected_error": "resource out of range HP"
+    },
+    {
+      "id": "GMR-27",
+      "group": "ledger",
+      "scenario": "blood_overflow",
+      "method": "ledger_valid",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "pre_state": {
+          "last_completed_turn": 345,
+          "next_turn": 346,
+          "resources": {
+            "HP": {
+              "current": 117,
+              "max": 170
+            },
+            "STA": {
+              "current": 41,
+              "max": 110
+            },
+            "BLOOD": {
+              "current": 46,
+              "max": 50
+            },
+            "TuHuyet": {
+              "current": 0,
+              "max": 20
+            },
+            "souls": 113,
+            "exp": 380
+          },
+          "inventory_counts": {
+            "arrow": 2,
+            "Maela-arrows": "UNKNOWN"
+          },
+          "cooldowns": {},
+          "status_effects": {},
+          "accepted_actions": {},
+          "claims": {}
+        },
+        "intended_turn": {
+          "turn": 346,
+          "action_id": "T346/A01",
+          "rule_version": "HN-V1.3",
+          "evidence_refs": [
+            "noncanon/event"
+          ]
+        },
+        "proposed_deltas": {
+          "resource_changes": {
+            "BLOOD": 7
+          },
+          "inventory_changes": {},
+          "cooldown_changes": {},
+          "status_changes": {},
+          "elapsed_minutes": 1
+        },
+        "receipts": []
+      },
+      "assert_key": "status",
+      "expected": "REJECTED",
+      "forbidden": "STAGED",
+      "expected_error": "resource out of range BLOOD"
+    },
+    {
+      "id": "GMR-28",
+      "group": "ledger",
+      "scenario": "soul_underflow",
+      "method": "ledger_valid",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "pre_state": {
+          "last_completed_turn": 345,
+          "next_turn": 346,
+          "resources": {
+            "HP": {
+              "current": 117,
+              "max": 170
+            },
+            "STA": {
+              "current": 41,
+              "max": 110
+            },
+            "BLOOD": {
+              "current": 46,
+              "max": 50
+            },
+            "TuHuyet": {
+              "current": 0,
+              "max": 20
+            },
+            "souls": 113,
+            "exp": 380
+          },
+          "inventory_counts": {
+            "arrow": 2,
+            "Maela-arrows": "UNKNOWN"
+          },
+          "cooldowns": {},
+          "status_effects": {},
+          "accepted_actions": {},
+          "claims": {}
+        },
+        "intended_turn": {
+          "turn": 346,
+          "action_id": "T346/A01",
+          "rule_version": "HN-V1.3",
+          "evidence_refs": [
+            "noncanon/event"
+          ]
+        },
+        "proposed_deltas": {
+          "resource_changes": {
+            "souls": -114
+          },
+          "inventory_changes": {},
+          "cooldown_changes": {},
+          "status_changes": {},
+          "elapsed_minutes": 1
+        },
+        "receipts": []
+      },
+      "assert_key": "status",
+      "expected": "REJECTED",
+      "forbidden": "STAGED",
+      "expected_error": "unknown/depleted souls"
+    },
+    {
+      "id": "GMR-29",
+      "group": "ledger",
+      "scenario": "unknown_companion_arrows",
+      "method": "ledger_valid",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "pre_state": {
+          "last_completed_turn": 345,
+          "next_turn": 346,
+          "resources": {
+            "HP": {
+              "current": 117,
+              "max": 170
+            },
+            "STA": {
+              "current": 41,
+              "max": 110
+            },
+            "BLOOD": {
+              "current": 46,
+              "max": 50
+            },
+            "TuHuyet": {
+              "current": 0,
+              "max": 20
+            },
+            "souls": 113,
+            "exp": 380
+          },
+          "inventory_counts": {
+            "arrow": 2,
+            "Maela-arrows": "UNKNOWN"
+          },
+          "cooldowns": {},
+          "status_effects": {},
+          "accepted_actions": {},
+          "claims": {}
+        },
+        "intended_turn": {
+          "turn": 346,
+          "action_id": "T346/A01",
+          "rule_version": "HN-V1.3",
+          "evidence_refs": [
+            "noncanon/event"
+          ]
+        },
+        "proposed_deltas": {
+          "resource_changes": {
+            "STA": -5
+          },
+          "inventory_changes": {
+            "Maela-arrows": -1
+          },
+          "cooldown_changes": {},
+          "status_changes": {},
+          "elapsed_minutes": 1
+        },
+        "receipts": []
+      },
+      "assert_key": "status",
+      "expected": "REJECTED",
+      "forbidden": "STAGED",
+      "expected_error": "unknown or insufficient inventory"
+    },
+    {
+      "id": "GMR-30",
+      "group": "ledger",
+      "scenario": "no_unbacked_souls",
+      "method": "ledger_valid",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "pre_state": {
+          "last_completed_turn": 345,
+          "next_turn": 346,
+          "resources": {
+            "HP": {
+              "current": 117,
+              "max": 170
+            },
+            "STA": {
+              "current": 41,
+              "max": 110
+            },
+            "BLOOD": {
+              "current": 46,
+              "max": 50
+            },
+            "TuHuyet": {
+              "current": 0,
+              "max": 20
+            },
+            "souls": 113,
+            "exp": 380
+          },
+          "inventory_counts": {
+            "arrow": 2,
+            "Maela-arrows": "UNKNOWN"
+          },
+          "cooldowns": {},
+          "status_effects": {},
+          "accepted_actions": {},
+          "claims": {}
+        },
+        "intended_turn": {
+          "turn": 346,
+          "action_id": "T346/A01",
+          "rule_version": "HN-V1.3",
+          "evidence_refs": [
+            "noncanon/event"
+          ]
+        },
+        "proposed_deltas": {
+          "resource_changes": {
+            "souls": 14
+          },
+          "inventory_changes": {},
+          "cooldown_changes": {},
+          "status_changes": {},
+          "elapsed_minutes": 1
+        },
+        "receipts": []
+      },
+      "assert_key": "status",
+      "expected": "REJECTED",
+      "forbidden": "STAGED",
+      "expected_error": "positive resource delta needs evidence receipt"
+    },
+    {
+      "id": "GMR-31",
+      "group": "ledger",
+      "scenario": "duplicate_claim",
+      "method": "ledger_valid",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "pre_state": {
+          "last_completed_turn": 345,
+          "next_turn": 346,
+          "resources": {
+            "HP": {
+              "current": 117,
+              "max": 170
+            },
+            "STA": {
+              "current": 41,
+              "max": 110
+            },
+            "BLOOD": {
+              "current": 46,
+              "max": 50
+            },
+            "TuHuyet": {
+              "current": 0,
+              "max": 20
+            },
+            "souls": 113,
+            "exp": 380
+          },
+          "inventory_counts": {
+            "arrow": 2,
+            "Maela-arrows": "UNKNOWN"
+          },
+          "cooldowns": {},
+          "status_effects": {},
+          "accepted_actions": {},
+          "claims": {
+            "corpse:2": {
+              "source": "noncanon"
+            }
+          }
+        },
+        "intended_turn": {
+          "turn": 346,
+          "action_id": "T346/A01",
+          "rule_version": "HN-V1.3",
+          "evidence_refs": [
+            "noncanon/event"
+          ]
+        },
+        "proposed_deltas": {
+          "resource_changes": {
+            "STA": -5
+          },
+          "inventory_changes": {},
+          "cooldown_changes": {},
+          "status_changes": {},
+          "elapsed_minutes": 1,
+          "unique_claim_ids": [
+            "corpse:2"
+          ]
+        },
+        "receipts": [
+          {
+            "source_ref": "noncanon/loot",
+            "id": "evidence:0"
+          }
+        ]
+      },
+      "assert_key": "status",
+      "expected": "REJECTED",
+      "forbidden": "STAGED",
+      "expected_error": "duplicate unique claim corpse:2"
+    },
+    {
+      "id": "GMR-32",
+      "group": "ledger",
+      "scenario": "negative_elapsed",
+      "method": "ledger_valid",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "pre_state": {
+          "last_completed_turn": 345,
+          "next_turn": 346,
+          "resources": {
+            "HP": {
+              "current": 117,
+              "max": 170
+            },
+            "STA": {
+              "current": 41,
+              "max": 110
+            },
+            "BLOOD": {
+              "current": 46,
+              "max": 50
+            },
+            "TuHuyet": {
+              "current": 0,
+              "max": 20
+            },
+            "souls": 113,
+            "exp": 380
+          },
+          "inventory_counts": {
+            "arrow": 2,
+            "Maela-arrows": "UNKNOWN"
+          },
+          "cooldowns": {},
+          "status_effects": {},
+          "accepted_actions": {},
+          "claims": {}
+        },
+        "intended_turn": {
+          "turn": 346,
+          "action_id": "T346/A01",
+          "rule_version": "HN-V1.3",
+          "evidence_refs": [
+            "noncanon/event"
+          ]
+        },
+        "proposed_deltas": {
+          "resource_changes": {
+            "STA": -5
+          },
+          "inventory_changes": {},
+          "cooldown_changes": {},
+          "status_changes": {},
+          "elapsed_minutes": -1
+        },
+        "receipts": []
+      },
+      "assert_key": "status",
+      "expected": "REJECTED",
+      "forbidden": "STAGED",
+      "expected_error": "invalid elapsed time"
+    },
+    {
+      "id": "GMR-33",
+      "group": "ledger",
+      "scenario": "unsourced_status",
+      "method": "ledger_valid",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "pre_state": {
+          "last_completed_turn": 345,
+          "next_turn": 346,
+          "resources": {
+            "HP": {
+              "current": 117,
+              "max": 170
+            },
+            "STA": {
+              "current": 41,
+              "max": 110
+            },
+            "BLOOD": {
+              "current": 46,
+              "max": 50
+            },
+            "TuHuyet": {
+              "current": 0,
+              "max": 20
+            },
+            "souls": 113,
+            "exp": 380
+          },
+          "inventory_counts": {
+            "arrow": 2,
+            "Maela-arrows": "UNKNOWN"
+          },
+          "cooldowns": {},
+          "status_effects": {},
+          "accepted_actions": {},
+          "claims": {}
+        },
+        "intended_turn": {
+          "turn": 346,
+          "action_id": "T346/A01",
+          "rule_version": "HN-V1.3",
+          "evidence_refs": [
+            "noncanon/event"
+          ]
+        },
+        "proposed_deltas": {
+          "resource_changes": {
+            "STA": -5
+          },
+          "inventory_changes": {},
+          "cooldown_changes": {},
+          "status_changes": {
+            "bleed": {
+              "active": true,
+              "expiration": "3T"
+            }
+          },
+          "elapsed_minutes": 1
+        },
+        "receipts": []
+      },
+      "assert_key": "status",
+      "expected": "REJECTED",
+      "forbidden": "STAGED",
+      "expected_error": "status change lacks source/expiration"
+    },
+    {
+      "id": "GMR-34",
+      "group": "ledger",
+      "scenario": "sourced_cd",
+      "method": "ledger_valid",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "pre_state": {
+          "last_completed_turn": 345,
+          "next_turn": 346,
+          "resources": {
+            "HP": {
+              "current": 117,
+              "max": 170
+            },
+            "STA": {
+              "current": 41,
+              "max": 110
+            },
+            "BLOOD": {
+              "current": 46,
+              "max": 50
+            },
+            "TuHuyet": {
+              "current": 0,
+              "max": 20
+            },
+            "souls": 113,
+            "exp": 380
+          },
+          "inventory_counts": {
+            "arrow": 2,
+            "Maela-arrows": "UNKNOWN"
+          },
+          "cooldowns": {},
+          "status_effects": {},
+          "accepted_actions": {},
+          "claims": {}
+        },
+        "intended_turn": {
+          "turn": 346,
+          "action_id": "T346/A01",
+          "rule_version": "HN-V1.3",
+          "evidence_refs": [
+            "noncanon/event"
+          ]
+        },
+        "proposed_deltas": {
+          "resource_changes": {
+            "STA": -5
+          },
+          "inventory_changes": {},
+          "cooldown_changes": {
+            "dash": {
+              "ready_at_combat_turn": 12,
+              "source_ref": "noncanon/event"
+            }
+          },
+          "status_changes": {},
+          "elapsed_minutes": 1
+        },
+        "receipts": []
+      },
+      "assert_key": "status",
+      "expected": "STAGED",
+      "forbidden": "REJECTED"
+    },
+    {
+      "id": "GMR-35",
+      "group": "ledger",
+      "scenario": "unsourced_cd",
+      "method": "ledger_valid",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "pre_state": {
+          "last_completed_turn": 345,
+          "next_turn": 346,
+          "resources": {
+            "HP": {
+              "current": 117,
+              "max": 170
+            },
+            "STA": {
+              "current": 41,
+              "max": 110
+            },
+            "BLOOD": {
+              "current": 46,
+              "max": 50
+            },
+            "TuHuyet": {
+              "current": 0,
+              "max": 20
+            },
+            "souls": 113,
+            "exp": 380
+          },
+          "inventory_counts": {
+            "arrow": 2,
+            "Maela-arrows": "UNKNOWN"
+          },
+          "cooldowns": {},
+          "status_effects": {},
+          "accepted_actions": {},
+          "claims": {}
+        },
+        "intended_turn": {
+          "turn": 346,
+          "action_id": "T346/A01",
+          "rule_version": "HN-V1.3",
+          "evidence_refs": [
+            "noncanon/event"
+          ]
+        },
+        "proposed_deltas": {
+          "resource_changes": {
+            "STA": -5
+          },
+          "inventory_changes": {},
+          "cooldown_changes": {
+            "dash": {
+              "ready_at_combat_turn": 12
+            }
+          },
+          "status_changes": {},
+          "elapsed_minutes": 1
+        },
+        "receipts": []
+      },
+      "assert_key": "status",
+      "expected": "REJECTED",
+      "forbidden": "STAGED",
+      "expected_error": "cooldown change lacks accepted source/clock"
+    },
+    {
+      "id": "GMR-36",
+      "group": "ledger",
+      "scenario": "cold_archive_unverified",
+      "method": "ledger_valid",
+      "source_ref": "noncanon/gm-v1-synthetic",
+      "input": {
+        "pre_state": {
+          "last_completed_turn": 345,
+          "next_turn": 346,
+          "resources": {
+            "HP": {
+              "current": 117,
+              "max": 170
+            },
+            "STA": {
+              "current": 41,
+              "max": 110
+            },
+            "BLOOD": {
+              "current": 46,
+              "max": 50
+            },
+            "TuHuyet": {
+              "current": 0,
+              "max": 20
+            },
+            "souls": 113,
+            "exp": 380
+          },
+          "inventory_counts": {
+            "arrow": 2,
+            "Maela-arrows": "UNKNOWN"
+          },
+          "cooldowns": {},
+          "status_effects": {},
+          "accepted_actions": {},
+          "claims": {},
+          "historical_claim_coverage": "ARCHIVED_UNVERIFIED"
+        },
+        "intended_turn": {
+          "turn": 346,
+          "action_id": "T346/A01",
+          "rule_version": "HN-V1.3",
+          "evidence_refs": [
+            "noncanon/event"
+          ]
+        },
+        "proposed_deltas": {
+          "resource_changes": {
+            "souls": 12
+          },
+          "inventory_changes": {},
+          "cooldown_changes": {},
+          "status_changes": {},
+          "elapsed_minutes": 1,
+          "unique_claim_ids": [
+            "corpse:old"
+          ]
+        },
+        "receipts": [
+          {
+            "source_ref": "noncanon/event",
+            "id": "evidence:0"
+          }
+        ]
+      },
+      "assert_key": "status",
+      "expected": "REJECTED",
+      "forbidden": "STAGED",
+      "expected_error": "claim sources/archived coverage unresolved"
+    }
+  ]
+}
