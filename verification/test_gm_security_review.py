@@ -13,6 +13,14 @@ def cmd():return {'turn':346,'action_id':'T346/A01','rule_version':'HN-V1.3','ev
 def grant():return {'receipt_id':'r1','action_id':'T346/A01','kind':'RESOURCE_GRANT','resource':'souls','amount':12,'source_ref':'accepted:T346','claim_id':'claim1','claim_target_id':'corpse1'}
 class SecurityReview(unittest.TestCase):
  def state(self):return LedgerTests().s()
+ def test_unverified_status_or_cooldown_effect_denied(self):
+  base=self.state();base['verified_evidence_refs']=['synthetic']
+  for delta in (
+   {'cooldown_changes':{'dash':{'source_ref':'fake','ready_at_combat_turn':5}}},
+   {'status_changes':{'stun':{'source_ref':'fake','expires_when':'cured'}}}
+  ):
+   with self.subTest(delta=delta),self.assertRaises(ValueError):
+    stage_turn(base,cmd(),delta,[])
  def test_duplicate_same_turn_claim_rejected(self):
   state=self.state()
   first=grant();second={**first,'receipt_id':'r2'}

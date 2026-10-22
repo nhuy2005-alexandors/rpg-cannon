@@ -148,8 +148,9 @@ def stage_turn(pre_state:dict,intended_turn:dict,proposed_deltas:dict,receipts:l
         projected['inventory_counts'][item]=old+change
     for field,target in (('cooldown_changes','cooldowns'),('status_changes','status_effects')):
         for key,value in proposed_deltas.get(field,{}).items():
-            if not isinstance(value,dict) or not value.get('source_ref'):
-                raise ValueError('effect needs grounded source')
+            if (not isinstance(value,dict) or not isinstance(value.get('source_ref'),str) or
+                value['source_ref'] not in original.get('verified_evidence_refs', [])):
+                raise ValueError('effect requires independently verified source')
             if field=='status_changes' and not value.get('expires_when'):
                 raise ValueError('effect expiration contract missing')
             projected[target][key]=copy.deepcopy(value)
