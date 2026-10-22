@@ -93,3 +93,20 @@ The player already held a council at the temple with Edran, Maela and Kharzug at
 - Existing integrations that REQUIRE all historical `receipts` or `world_flags` must rehydrate explicitly; they must NOT treat hot-only `current.json` as the complete historical snapshot. Legacy `verification/check_state.py` tests T153 only and is not a live verifier; run `verification/test_state_compaction.py` for the new interface.
 - Keep new event receipts and current changing world flags in hot state; older canon is immutable in archives. Before a subsequent compaction, rehydrate all ancestors and generate a newly versioned cold archive, NEVER overwrite T345 archive or silently discard old receipts. If unable to do that, keep checkpoint un-compacted with explicit bloat warning.
 - For new chats, load only the compact quick start first; verify turn and checkpoint SHA against GitHub as needed, then targeted hot state and relevant canon. Within the SAME chat do not re-fetch GitHub every normal turn. No automatic service is running.
+
+
+## Emergent World Incidents / Fortune V1.0 (future-only T346+, 2026-10-22)
+
+User-approved objective: realistic self-arising incidents and good/bad fortune with causal conditions. Small pure helper 'story/world_incidents.py'; design 'docs/superpowers/specs/2026-10-22-hac-nhat-emergent-world-design.md'. No new automatic runtime hook.
+
+**Qualifying chance:** one verified travel segment, >=30 actual in-world minutes, or genuine stress of a worn, load-bearing item. Never roll for each chat message, default attack, or simply because a turn occurred. Freeze opportunity ID, segment, zone and grounded visible tags before drawing; reuse receipt across retries and change-of-chat restores. New ID for same physical segment is prohibited.
+
+**Starter event frequency per eligible opportunity:** safe 80% none /12% ambient /6% encounter /2% hazard; dangerous 50% none /20% ambient /20% encounter /10% hazard. Drawn category with no eligible physically grounded candidate => none/gated, not a redraw. Hidden world state stays hidden; do not infer enemy presence from model-proposed content alone.
+
+**Fortune:** when an eligible fortune-type encounter is selected, relative tiers ordinary70%, notable23%, rare6%, exceptional1%. Tier is opportunity quality, not automatic gold, Souls, legendary item or ownership. Physical detection, retrieval, legitimate possession and idempotent claims happen separately. Lottery needs established venue, explicit ticket payment, prior fixed odds and real draw; no retroactive jackpot.
+
+**Misfortune:** prior wear and current strain required before strap failure; geography and actual terrain before rocks/weather; enemy proximity and plausible LOS before arrows or ambush. No automatic damage, no unavoidable hit. Enemy can miss or misjudge; Vô Danh can too. Reactions depend on awareness, training, injuries, morale, fatigue, time and cover. Never fabricate exact combat accuracy: 'resolve_contest' requires a separately grounded approved chance in basis points.
+
+**Randomness:** SHA256 seed from existing public V1.3 metadata may be supplied for deterministic, idempotent event draws. PUBLIC SEED IS PREDICTABLE. This is reproducible, NOT cryptographically secret. Do not claim secret dice, anti-forecast private precommit or executed helper unless really executed with a receipt.
+
+**FAST MODE:** never load GitHub/Notion solely to generate every ordinary action. Only evaluate when a real qualified opportunity occurs; store PROPOSED_NOT_ADJUDICATED receipt and apply actual consequences only after GM legality, player/NPC action, physical ledger and checkpoint. No tool installation/background timer/service was added. Technical implementation does NOT advance T345. Respect existing cooldown, Soul claims, NPC autonomy and physical map.

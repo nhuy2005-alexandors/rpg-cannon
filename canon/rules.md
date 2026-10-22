@@ -161,3 +161,20 @@ The assistant explicitly activated owner-approved V1.3 rule text and helper afte
 ## T345 FAST START / State Compaction V1
 
 This maintenance was authorized as a read-only-in-game storage migration, NOT a battle or narrative turn. Start with `state/quick-start.md` then hot `state/current.json`; historical receipts, flags and prior scene data are in linked immutable T345 archives. Treat absent historical properties in hot state as **ARCHIVED**, not nonexistent. When a historical fact is relevant, rehydrate using `state/compaction.py` and verify both cold references. T345 is preserved; T346 is the first unplayed turn. The source rules and combat mechanical coefficients remain unchanged.
+
+
+## Emergent World Incidents / Fortune V1.0 (future-only T346+, 2026-10-22)
+
+User-approved objective: realistic self-arising incidents and good/bad fortune with causal conditions. Small pure helper 'story/world_incidents.py'; design 'docs/superpowers/specs/2026-10-22-hac-nhat-emergent-world-design.md'. No new automatic runtime hook.
+
+**Qualifying chance:** one verified travel segment, >=30 actual in-world minutes, or genuine stress of a worn, load-bearing item. Never roll for each chat message, default attack, or simply because a turn occurred. Freeze opportunity ID, segment, zone and grounded visible tags before drawing; reuse receipt across retries and change-of-chat restores. New ID for same physical segment is prohibited.
+
+**Starter event frequency per eligible opportunity:** safe 80% none /12% ambient /6% encounter /2% hazard; dangerous 50% none /20% ambient /20% encounter /10% hazard. Drawn category with no eligible physically grounded candidate => none/gated, not a redraw. Hidden world state stays hidden; do not infer enemy presence from model-proposed content alone.
+
+**Fortune:** when an eligible fortune-type encounter is selected, relative tiers ordinary70%, notable23%, rare6%, exceptional1%. Tier is opportunity quality, not automatic gold, Souls, legendary item or ownership. Physical detection, retrieval, legitimate possession and idempotent claims happen separately. Lottery needs established venue, explicit ticket payment, prior fixed odds and real draw; no retroactive jackpot.
+
+**Misfortune:** prior wear and current strain required before strap failure; geography and actual terrain before rocks/weather; enemy proximity and plausible LOS before arrows or ambush. No automatic damage, no unavoidable hit. Enemy can miss or misjudge; Vô Danh can too. Reactions depend on awareness, training, injuries, morale, fatigue, time and cover. Never fabricate exact combat accuracy: 'resolve_contest' requires a separately grounded approved chance in basis points.
+
+**Randomness:** SHA256 seed from existing public V1.3 metadata may be supplied for deterministic, idempotent event draws. PUBLIC SEED IS PREDICTABLE. This is reproducible, NOT cryptographically secret. Do not claim secret dice, anti-forecast private precommit or executed helper unless really executed with a receipt.
+
+**FAST MODE:** never load GitHub/Notion solely to generate every ordinary action. Only evaluate when a real qualified opportunity occurs; store PROPOSED_NOT_ADJUDICATED receipt and apply actual consequences only after GM legality, player/NPC action, physical ledger and checkpoint. No tool installation/background timer/service was added. Technical implementation does NOT advance T345. Respect existing cooldown, Soul claims, NPC autonomy and physical map.
