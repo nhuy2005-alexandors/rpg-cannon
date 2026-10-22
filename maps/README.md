@@ -52,3 +52,7 @@ python -m unittest discover -s verification -p test_map_renderer.py -v
 Source feature branch commit `06b6eb62a18c2f3c5b2fe8a8a20263b4d53ec284`, previous main `0e559ed2fe25954a4b92ff1aad267e9fa599f33c`. All existing main map IDs including the old three static maps and newer T345 tactical scene were **retained by ID unchanged**; only 17 unseen feature-branch static maps were added. Now 21 maps, 27 coverage entries. Copy of old T204 dynamic scene deliberately excluded. No gameplay turn advanced; `state/current.json` remains T345, next T346. Historic feature T204 PNG/SVG exports remain labeled T204. World and region unknown geography are still UNKNOWN / unplaced. Canva layer separately editable, not synced. 
 
 Updated original brittle frozen-game-fixture tests to T345 for this checked snapshot; do not assume tests executed in runner just because saved. Follow static base + overlay pattern; no invented metric distances.
+
+## Canva page-preview archive verified 2026-10-22
+
+[Snapshot inventory 20/20](snapshots/T345-canva-20page-preview-index.md), [machine-readable asset IDs](snapshots/T345-canva-20page-preview-manifest.json), [Canva folder](https://www.canva.com/folder/FAHYtldJ3kQ). These assets are thumbnail previews only, not 1920x1080 exports; Canva masters remain separately editable, no master redesign or automation implied.
