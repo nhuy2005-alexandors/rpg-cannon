@@ -1,0 +1,25 @@
+name: GM Hybrid Lean PR Remediation
+on:
+  push:
+    branches: [feat/gm-hybrid-lean-v1-verified]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  security-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate exact canonical T345 Git blobs
+        run: |
+          test "$(git hash-object state/current.json)" = "a03e0bb288fa7bab4bb5147e00c78012edd36acc"
+          test "$(git hash-object maps/active-scene.json)" = "b6fd996a9778b52f8b3bf2d601edcae9ea0fc8c7"
+          test "$(git hash-object state/archive/T345-state-cold.json)" = "59cd3d2b1cf3580f581adced36efebfccc0c3353"
+          test "$(git hash-object maps/archive/T345-scene-cold.json)" = "47d7e05dbddbdb6e344da42d2a475756f83941a9"
+      - name: Full regression and security adversarial
+        run: |
+          python --version
+          python -m unittest discover -s verification -p 'test_*.py' -v
