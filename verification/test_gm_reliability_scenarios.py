@@ -43,7 +43,9 @@ class ScenarioTests(unittest.TestCase):
                     try:
                         out=stage_turn(obj['pre_state'],obj['intended_turn'],obj['proposed_deltas'],obj['receipts'])
                         actual=out['status']
-                    except ValueError:actual='REJECTED'
+                    except ValueError as error:
+                        actual='REJECTED'
+                        self.assertIn(case['expected_error'],str(error))
                 else: self.fail('unknown method '+method)
                 self.assertEqual(actual,case['expected'])
                 self.assertNotEqual(actual,case['forbidden'])

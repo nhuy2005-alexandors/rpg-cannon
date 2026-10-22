@@ -1050,7 +1050,8 @@
       },
       "assert_key": "status",
       "expected": "REJECTED",
-      "forbidden": "STAGED"
+      "forbidden": "STAGED",
+      "expected_error": "resource out of range HP"
     },
     {
       "id": "GMR-27",
@@ -1112,7 +1113,8 @@
       },
       "assert_key": "status",
       "expected": "REJECTED",
-      "forbidden": "STAGED"
+      "forbidden": "STAGED",
+      "expected_error": "resource out of range BLOOD"
     },
     {
       "id": "GMR-28",
@@ -1174,7 +1176,8 @@
       },
       "assert_key": "status",
       "expected": "REJECTED",
-      "forbidden": "STAGED"
+      "forbidden": "STAGED",
+      "expected_error": "unknown/depleted souls"
     },
     {
       "id": "GMR-29",
@@ -1238,7 +1241,8 @@
       },
       "assert_key": "status",
       "expected": "REJECTED",
-      "forbidden": "STAGED"
+      "forbidden": "STAGED",
+      "expected_error": "unknown or insufficient inventory"
     },
     {
       "id": "GMR-30",
@@ -1300,7 +1304,8 @@
       },
       "assert_key": "status",
       "expected": "REJECTED",
-      "forbidden": "STAGED"
+      "forbidden": "STAGED",
+      "expected_error": "positive resource delta needs evidence receipt"
     },
     {
       "id": "GMR-31",
@@ -1367,13 +1372,15 @@
         },
         "receipts": [
           {
-            "source_ref": "noncanon/loot"
+            "source_ref": "noncanon/loot",
+            "id": "evidence:0"
           }
         ]
       },
       "assert_key": "status",
       "expected": "REJECTED",
-      "forbidden": "STAGED"
+      "forbidden": "STAGED",
+      "expected_error": "duplicate unique claim corpse:2"
     },
     {
       "id": "GMR-32",
@@ -1435,7 +1442,8 @@
       },
       "assert_key": "status",
       "expected": "REJECTED",
-      "forbidden": "STAGED"
+      "forbidden": "STAGED",
+      "expected_error": "invalid elapsed time"
     },
     {
       "id": "GMR-33",
@@ -1502,7 +1510,8 @@
       },
       "assert_key": "status",
       "expected": "REJECTED",
-      "forbidden": "STAGED"
+      "forbidden": "STAGED",
+      "expected_error": "status change lacks source/expiration"
     },
     {
       "id": "GMR-34",
@@ -1635,7 +1644,8 @@
       },
       "assert_key": "status",
       "expected": "REJECTED",
-      "forbidden": "STAGED"
+      "forbidden": "STAGED",
+      "expected_error": "cooldown change lacks accepted source/clock"
     },
     {
       "id": "GMR-36",
@@ -1699,13 +1709,15 @@
         },
         "receipts": [
           {
-            "source_ref": "noncanon/event"
+            "source_ref": "noncanon/event",
+            "id": "evidence:0"
           }
         ]
       },
       "assert_key": "status",
       "expected": "REJECTED",
-      "forbidden": "STAGED"
+      "forbidden": "STAGED",
+      "expected_error": "claim sources/archived coverage unresolved"
     }
   ]
 }
