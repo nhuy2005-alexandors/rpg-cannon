@@ -4,7 +4,7 @@ Date: 2026-10-22. Status: **PARTIAL / NO-GO for complete acceptance** until full
 
 ## Observed locally
 - Test-first isolated harness: missing-file/module RED for each main feature; RED actual assertion for malformed LOS, ordinary sword BLOOD edge, and duplicate effect receipt. GREEN after correction.
-- `python -m unittest discover -s verification -p 'test_*.py' -v`: **32 tests, 0 failures, 0 errors** in isolated local workspace.
+- `python -m unittest discover -s verification -p 'test_*.py' -v`: **34 tests, 0 failures, 0 errors** in isolated local workspace.
 - 36 synthetic adversarial case inputs are algorithmically evaluated in two unittest methods: all comparison assertions passed. 12 combat, 12 tactical, 12 ledger. These are **not** 36 independent GM narrative responses.
 - `python -m compileall -q story verification`: exit 0.
 - 20 synthetic local helper calls: p50=0.0151 ms, p95=0.1878 ms, max=0.2956 ms. **NOT ChatGPT turn latency**; no comparable end-to-end FAST baseline.
@@ -20,7 +20,8 @@ Date: 2026-10-22. Status: **PARTIAL / NO-GO for complete acceptance** until full
 ## Self-review findings already RED→GREEN
 - Tactic dictionary mistakenly accepted wrong predicate vocabulary, e.g. target_visibility=ready -> ALLOWED. Fixed with predicate-specific enums.
 - Combat engine tied ordinary sword BLOOD to actual HP loss despite canon only requiring valid landed ordinary hit. Fixed after RED, while Hấp Huyết remains tied to actual positive HP loss.
-- Ledger initially allowed same effect receipt ID under a distinct action and replay changing verification_refs. RED added and corrected.
+- Ledger initially allowed the same effect receipt ID across actions and replay with altered verification_refs. RED added and corrected.
+- Ledger initially ignored invalid UNCHANGED resource pools and accepted an action_id inconsistent with its turn; RED→GREEN completed. Accepted receipt now includes rule_version.
 
 ## Deferred nonblocking limitations
 - Source evidence tags and fictional NPC motives are still asserted by GM, not cryptographically verified by helpers.
