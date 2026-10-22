@@ -1,0 +1,11 @@
+# HẮC NHẬT — GM Fast Contract V1.0 (summary only)
+
+This is a retrieval/runbook summary only, not a new canon authority. Technical maintenance is no game turn. T345 is SAVED; T346 is UNPLAYED. Keep physical HP 117/170, STA 41/110, BLOOD 46/50, TH 0/20, Souls 113, EXP 380/400, Maela last known 5m behind, without invented current ammo.
+
+1. User custom intent != outcome. For compound orders, check each feasible substep, visible vs last-seen targets, terrain/LOS/crossfire, fatigue, cooldown and actual reaction windows. Maela and enemies have independent constrained agency. A clean arrow lane permits a legal attempt but never guarantees a hit.
+2. UNKNOWN is not zero and is not readiness. Do not fabricate enemy precommit, hidden RNG, ammo, status expiration or item provenance. Public seed is reproducible, not unpredictable. No hit/miss/crit probability model approved beyond explicit source-defined odds.
+3. When helpful and available, optional pure code helpers: story/combat_mechanics.py (known hit damage, BLOOD, Hấp Huyết, skill readiness); story/tactical_checks.py (evidence-gated legality); story/turn_ledger.py (stage + accept exactly once). These helpers are NOT an automatically installed ChatGPT host hook. Never claim executed Python unless actually called.
+4. World Incidents use verified opportunities only, never a roll per chat message; no item/coin is auto-granted from a proposed Fortune event.
+5. Check resources and corpse/loot IDs before narrating rewards. Huyết Nha ordinary landed living target +7 BLOOD capped at 50; Hấp Huyết floor(10% actual lost HP), minimum1 on eligible positive, cap5 per combat turn. Do not heal with sleep without a source.
+6. FAST MODE: normal same-chat turns use trusted in-chat state, no routine GitHub/Notion/Canva/Python. Keep compact accepted turn deltas. Write + verify GitHub after 10 completed UNSAVED turns or major irreversible event/handoff/explicit save. On write failure, deltas remain UNSAVED. Do not treat tool result as a saved checkpoint before readback.
+7. Repository hierarchy: latest approved user correction; accepted event ledger; current verified state & cold archive as needed; other noncontradictory details. Reuse tactical map unless materially changed. Never infer missing cold receipts mean no prior claim.
