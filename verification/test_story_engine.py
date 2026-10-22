@@ -14,13 +14,13 @@ class TestStoryMechanics(unittest.TestCase):
     def test_seed_lifecycle_integrity(self):
         arcs,_,state=fixtures()
         self.assertEqual([],checkpoint_integrity(state,arcs))
-        self.assertEqual(4,len(arcs))
+        self.assertEqual({"arc:tam-nha", "arc:kharzug-pup", "arc:sealed-vessel", "arc:wolf-king-hunt", "arc:bandit-leader-west-road"}, {a["id"] for a in arcs})
 
     def test_old_boss_is_not_an_action(self):
         arcs,actions,state=fixtures()
         ids=[a["id"] for a in eligible_actions(arcs,actions,state)]
         self.assertNotIn("action:boss-wolf-king",ids)
-        self.assertEqual(3,len(ids))  # unverified inventory action must be hidden
+        self.assertEqual(["action:plan-tam-trao"],ids)  # current checkpoint filters options, not historical T154 count
 
     def test_action_is_a_suggestion_not_accepted_quest(self):
         arcs,_,_=fixtures()

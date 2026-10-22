@@ -92,6 +92,15 @@ class TestSVGAtlas(unittest.TestCase):
         self.assertIn('data-token-id="vo-danh"', current)
         self.assertIn(f"Cuối T{scene['last_completed_turn']}", current)
 
+    def test_text_only_movement_does_not_invent_coordinates(self):
+        sample = copy.deepcopy(SCENE)
+        sample['current']['movement'] = [{'actor':'vo-danh', 'turn':204,
+                                          'description':'Moved using real cover, no measured endpoints'}]
+        svg = render_map(ATLAS, sample, 'shed')
+        self.assertNotIn('data-entity-id="vo-danh"', svg)
+        self.assertIn('data-token-id="vo-danh"', svg)
+        ET.fromstring(svg)
+
     def test_duplicate_objects_fail_closed(self):
         a = copy.deepcopy(ATLAS)
         a['maps'][0]['objects'].append(copy.deepcopy(a['maps'][0]['objects'][0]))

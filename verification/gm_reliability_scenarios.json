@@ -1,0 +1,653 @@
+{
+  "scope": "NON_CANONICAL",
+  "cases": [
+    {
+      "id": "COMBAT-01",
+      "group": "combat",
+      "case": "overkill",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/combat/0"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "COMBAT-02",
+      "group": "combat",
+      "case": "defense",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/combat/1"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "COMBAT-03",
+      "group": "combat",
+      "case": "heal_cap",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/combat/2"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "COMBAT-04",
+      "group": "combat",
+      "case": "blood_cap",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/combat/3"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "COMBAT-05",
+      "group": "combat",
+      "case": "nonblood",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/combat/4"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "COMBAT-06",
+      "group": "combat",
+      "case": "skill_no_ordinary_blood",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/combat/5"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "COMBAT-07",
+      "group": "combat",
+      "case": "miss",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/combat/6"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "COMBAT-08",
+      "group": "combat",
+      "case": "unknown_def",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/combat/7"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "COMBAT-09",
+      "group": "combat",
+      "case": "cooldown_unknown",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/combat/8"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "COMBAT-10",
+      "group": "combat",
+      "case": "cooldown_blocked",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/combat/9"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "COMBAT-11",
+      "group": "combat",
+      "case": "resource_insufficient",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/combat/10"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "COMBAT-12",
+      "group": "combat",
+      "case": "status_unknown",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/combat/11"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "TACTICS-01",
+      "group": "tactics",
+      "case": "blocked_rock",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/tactics/0"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "TACTICS-02",
+      "group": "tactics",
+      "case": "friendly_fire",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/tactics/1"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "TACTICS-03",
+      "group": "tactics",
+      "case": "last_seen",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/tactics/2"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "TACTICS-04",
+      "group": "tactics",
+      "case": "clean_lane",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/tactics/3"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "TACTICS-05",
+      "group": "tactics",
+      "case": "ally_tired",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/tactics/4"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "TACTICS-06",
+      "group": "tactics",
+      "case": "enemy_flee",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/tactics/5"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "TACTICS-07",
+      "group": "tactics",
+      "case": "compound_chase",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/tactics/6"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "TACTICS-08",
+      "group": "tactics",
+      "case": "unknown_ammo",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/tactics/7"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "TACTICS-09",
+      "group": "tactics",
+      "case": "route_blocked",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/tactics/8"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "TACTICS-10",
+      "group": "tactics",
+      "case": "unknown_los",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/tactics/9"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "TACTICS-11",
+      "group": "tactics",
+      "case": "enemy_blunder",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/tactics/10"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "TACTICS-12",
+      "group": "tactics",
+      "case": "legal_flank",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/tactics/11"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "LEDGER-01",
+      "group": "ledger",
+      "case": "duplicate_action",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/ledger/0"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "LEDGER-02",
+      "group": "ledger",
+      "case": "conflicting_replay",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/ledger/1"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "LEDGER-03",
+      "group": "ledger",
+      "case": "inventory_unknown",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/ledger/2"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "LEDGER-04",
+      "group": "ledger",
+      "case": "soul_claim_once",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/ledger/3"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "LEDGER-05",
+      "group": "ledger",
+      "case": "th_unknown",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/ledger/4"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "LEDGER-06",
+      "group": "ledger",
+      "case": "negative_resource",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/ledger/5"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "LEDGER-07",
+      "group": "ledger",
+      "case": "overflow_resource",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/ledger/6"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "LEDGER-08",
+      "group": "ledger",
+      "case": "effect_no_source",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/ledger/7"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "LEDGER-09",
+      "group": "ledger",
+      "case": "rest_not_cd",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/ledger/8"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "LEDGER-10",
+      "group": "ledger",
+      "case": "missing_cold_receipt",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/ledger/9"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "LEDGER-11",
+      "group": "ledger",
+      "case": "world_incident_no_auto_claim",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/ledger/10"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    },
+    {
+      "id": "LEDGER-12",
+      "group": "ledger",
+      "case": "maintenance_not_turn",
+      "preconditions": {
+        "source": "SYNTHETIC_FIXTURE"
+      },
+      "input": {
+        "action_id": "TEST/ledger/11"
+      },
+      "expected": {
+        "rule": "adjudicate only grounded mechanics"
+      },
+      "forbidden": [
+        "invented success",
+        "unverified resource award"
+      ]
+    }
+  ]
+}

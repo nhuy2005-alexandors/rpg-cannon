@@ -49,8 +49,9 @@ def render_map(atlas: dict, scene: dict | None, map_id: str) -> str:
         if type(scene.get("last_completed_turn")) is not int:
             raise ValueError("Missing completed turn")
     objects = area.get("objects", [])
-    if len(objects) > 14:
-        raise ValueError("Map has more than 14 markers; split into overview/local maps")
+    if len(objects) > 18:
+        raise ValueError("Map has more than 18 markers; split into overview/local maps")
+    legend_step = 21 if len(objects) > 12 else 29
     identifiers = [obj.get("id") for obj in objects]
     if not all(identifiers) or len(identifiers) != len(set(identifiers)):
         raise ValueError("Static map object IDs must be unique")
@@ -110,6 +111,10 @@ def render_map(atlas: dict, scene: dict | None, map_id: str) -> str:
     if scene:
         current = scene.get("current", {})
         for move in current.get("movement", []):
+            # Current canon also stores descriptive, non-metric movement.
+            # Do not fabricate a route when coordinates were not recorded.
+            if "from" not in move or "to" not in move:
+                continue
             x1, y1 = _xy(*move["from"])
             x2, y2 = _xy(*move["to"])
             parts.append(_line(x1, y1, x2, y2, stroke="#77b8d0", stroke_width="3", stroke_dasharray="8 5", marker_end="url(#routeArrow)", **{"data-entity-id": move.get("entity_id", "")}))
@@ -131,7 +136,7 @@ def render_map(atlas: dict, scene: dict | None, map_id: str) -> str:
 
     parts.append('<text x="824" y="117" font-family="sans-serif" font-weight="bold" font-size="18" fill="#f0e6d4">ĐỊA HÌNH ĐÃ BIẾT</text>')
     for idx, label, kind in legend_rows:
-        y = 145 + 29 * (idx - 1)
+        y = 145 + legend_step * (idx - 1)
         parts.append(f'<text x="822" y="{y}" font-family="sans-serif" font-size="14" fill="#f1cf92">{idx:02d}</text>')
         # Keep full text in title; abbreviate visible names before side-panel clipping.
         plain = str(objects[idx-1].get("label", ""))
@@ -140,14 +145,14 @@ def render_map(atlas: dict, scene: dict | None, map_id: str) -> str:
     # Known names with unknown bearings: sidebar text only, never map pins.
     unplaced = area.get("unplaced_known_names", [])
     if unplaced:
-        heading_y = 145 + 29 * len(objects) + 15
-        if heading_y + 23 * len(unplaced) > 540:
+        heading_y = 145 + legend_step * len(objects) + 15
+        if heading_y + 22 * len(unplaced) > 540:
             raise ValueError("Too many unplaced names for sidebar; split into region/area maps")
         parts.append(f'<text x="824" y="{heading_y}" font-family="sans-serif" font-weight="bold" font-size="15" fill="#d6b784">CHƯA ĐỊNH VỊ</text>')
         for i, name in enumerate(unplaced):
             full = escape(str(name))
             short = escape(str(name)[:28] + "…" if len(str(name)) > 29 else str(name))
-            parts.append(f'<text data-unplaced-name="{i}" x="824" y="{heading_y + 23 * (i + 1)}" font-family="sans-serif" font-size="13" fill="#b4c4c9"><title>{full}</title>{short}</text>')
+            parts.append(f'<text data-unplaced-name="{i}" x="824" y="{heading_y + 22 * (i + 1)}" font-family="sans-serif" font-size="13" fill="#b4c4c9"><title>{full}</title>{short}</text>')
     parts.extend([
         '<text x="824" y="566" font-family="sans-serif" font-size="15" fill="#acd5e7">Hướng mặt: đường liền</text>',
         '<text x="824" y="593" font-family="sans-serif" font-size="15" fill="#84b5c9">Di chuyển: nét đứt</text>',
