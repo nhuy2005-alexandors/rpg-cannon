@@ -84,7 +84,7 @@ class TestSVGAtlas(unittest.TestCase):
         root = Path(__file__).resolve().parents[1] / 'maps'
         atlas = json.loads((root / 'atlas-v1.json').read_text(encoding='utf-8'))
         scene = json.loads((root / 'active-scene.json').read_text(encoding='utf-8'))
-        self.assertEqual(len(atlas['maps']), 3)
+        self.assertGreaterEqual(len(atlas['maps']), 21)
         for area in atlas['maps']:
             svg = render_map(atlas, None, area['id'])
             self.assertTrue(ET.fromstring(svg).tag.endswith('svg'))

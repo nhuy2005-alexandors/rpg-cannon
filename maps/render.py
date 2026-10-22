@@ -49,6 +49,8 @@ def render_map(atlas: dict, scene: dict | None, map_id: str) -> str:
         if type(scene.get("last_completed_turn")) is not int:
             raise ValueError("Missing completed turn")
     objects = area.get("objects", [])
+    if len(objects) > 14:
+        raise ValueError("Map has more than 14 markers; split into overview/local maps")
     identifiers = [obj.get("id") for obj in objects]
     if not all(identifiers) or len(identifiers) != len(set(identifiers)):
         raise ValueError("Static map object IDs must be unique")
@@ -67,6 +69,11 @@ def render_map(atlas: dict, scene: dict | None, map_id: str) -> str:
         py = TOP + MAP_H * n / 10
         parts.append(_line(px, TOP, px, TOP + MAP_H, stroke="#35454b", stroke_dasharray="3 7", stroke_width="1"))
         parts.append(_line(LEFT, py, LEFT + MAP_W, py, stroke="#35454b", stroke_dasharray="3 7", stroke_width="1"))
+
+    if not objects and area.get("evidence_level") == "PLACEHOLDER":
+        parts.append('<text x="410" y="362" font-family="sans-serif" font-size="20" text-anchor="middle" fill="#f0cc93">CHƯA CÓ BỐ CỤC ĐƯỢC XÁC MINH</text>')
+    if area.get("evidence_level"):
+        parts.append(f'<text x="824" y="94" font-family="sans-serif" font-size="13" fill="#b4c9d0">{escape(str(area["evidence_level"]))}</text>')
 
     # The static layer is defined by persistent object IDs. No inferred scenery.
     legend_rows = []
@@ -124,10 +131,23 @@ def render_map(atlas: dict, scene: dict | None, map_id: str) -> str:
 
     parts.append('<text x="824" y="117" font-family="sans-serif" font-weight="bold" font-size="18" fill="#f0e6d4">ĐỊA HÌNH ĐÃ BIẾT</text>')
     for idx, label, kind in legend_rows:
-        y = 145 + 32 * (idx - 1)
+        y = 145 + 29 * (idx - 1)
         parts.append(f'<text x="822" y="{y}" font-family="sans-serif" font-size="14" fill="#f1cf92">{idx:02d}</text>')
-        # May be clipped visually if labels are very long: keep full title in SVG <title>.
-        parts.append(f'<text x="858" y="{y}" font-family="sans-serif" font-size="14" fill="#e5e9e8"><title>{label}</title>{label}</text>')
+        # Keep full text in title; abbreviate visible names before side-panel clipping.
+        plain = str(objects[idx-1].get("label", ""))
+        short = escape(plain if len(plain) <= 25 else plain[:22] + "…")
+        parts.append(f'<text x="858" y="{y}" font-family="sans-serif" font-size="14" fill="#e5e9e8"><title>{label}</title>{short}</text>')
+    # Known names with unknown bearings: sidebar text only, never map pins.
+    unplaced = area.get("unplaced_known_names", [])
+    if unplaced:
+        heading_y = 145 + 29 * len(objects) + 15
+        if heading_y + 23 * len(unplaced) > 540:
+            raise ValueError("Too many unplaced names for sidebar; split into region/area maps")
+        parts.append(f'<text x="824" y="{heading_y}" font-family="sans-serif" font-weight="bold" font-size="15" fill="#d6b784">CHƯA ĐỊNH VỊ</text>')
+        for i, name in enumerate(unplaced):
+            full = escape(str(name))
+            short = escape(str(name)[:28] + "…" if len(str(name)) > 29 else str(name))
+            parts.append(f'<text data-unplaced-name="{i}" x="824" y="{heading_y + 23 * (i + 1)}" font-family="sans-serif" font-size="13" fill="#b4c4c9"><title>{full}</title>{short}</text>')
     parts.extend([
         '<text x="824" y="566" font-family="sans-serif" font-size="15" fill="#acd5e7">Hướng mặt: đường liền</text>',
         '<text x="824" y="593" font-family="sans-serif" font-size="15" fill="#84b5c9">Di chuyển: nét đứt</text>',

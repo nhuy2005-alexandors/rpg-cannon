@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="HẮC NHẬT · WORLD MAP">
+<defs><linearGradient id="paper" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#efe3cb"/><stop offset="1" stop-color="#d9c8a7"/></linearGradient><pattern id="hatch" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M0 30L30 0" stroke="#bca98b" stroke-opacity=".24"/></pattern><filter id="shadow"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity=".18"/></filter></defs>
+<rect width="1280" height="720" fill="url(#paper)"/><rect x="35" y="35" width="1210" height="650" rx="18" fill="none" stroke="#63533f" stroke-width="2"/>
+<text x="70" y="101" fill="#322d27" font-family="Georgia,serif" font-size="45" font-weight="700">HẮC NHẬT · WORLD MAP</text>
+<text x="72" y="132" fill="#766246" font-family="sans-serif" font-size="18">L0 · PHẦN THẾ GIỚI ĐÃ BIẾT · BẢN ĐỒ MỞ RỘNG THEO TRUYỆN</text>
+<rect x="82" y="185" width="1116" height="428" rx="14" fill="url(#hatch)" stroke="#b9a789"/>
+<path d="M130 234q93 70 200 0m-85 243q95 70 200 0M846 235q114 60 224 0M858 491q109 71 216-5" stroke="#9e8b6c" stroke-opacity=".38" stroke-width="3" fill="none" stroke-dasharray="11 17"/>
+<text x="183" y="327" font-size="24" font-family="Georgia,serif" fill="#99886f">CHƯA KHÁM PHÁ</text><text x="814" y="520" font-size="24" font-family="Georgia,serif" fill="#99886f">CHƯA KHÁM PHÁ</text>
+<circle cx="646" cy="384" r="162" fill="#c8b38c" fill-opacity=".75" stroke="#75593b" stroke-width="3"/><circle cx="646" cy="384" r="174" fill="none" stroke="#957c57" stroke-dasharray="8 10" stroke-width="2"/>
+<text x="646" y="368" font-size="35" font-family="Georgia,serif" font-weight="700" fill="#3d3228" text-anchor="middle">VÙNG HẮC NHA</text>
+<text x="646" y="407" font-size="18" font-family="sans-serif" fill="#58452f" text-anchor="middle">KHU VỰC TRUYỆN HIỆN TẠI</text>
+<path d="M1174 229v-47m0 0l-10 16m10-16l10 16" stroke="#604d39" stroke-width="3" fill="none"/><text x="1174" y="174" text-anchor="middle" font-size="19" font-family="sans-serif" fill="#604d39">BẮC</text>
+<text x="70" y="669" fill="#766246" font-family="sans-serif" font-size="14">HẮC NHẬT · CẢNH QUAN MINH HỌA / SƠ ĐỒ TƯƠNG ĐỐI · T204 · KHÔNG DÙNG ĐO MÉT</text>
+<text x="1017" y="654" font-family="sans-serif" font-size="14" fill="#6b5942">Map ID: hac-nhat-world</text>
+</svg>

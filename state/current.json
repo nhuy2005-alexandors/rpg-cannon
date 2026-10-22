@@ -1,5 +1,5 @@
 {
-  "snapshot_version": "HN-S345-BA-VACH-ESCORT-WOUNDED-CARAVAN-UNSEEN",
+  "snapshot_version": "HN-T345-MASTERY-ATLAS-RECONCILED-NO-TURN",
   "last_completed_turn": 345,
   "next_turn": 346,
   "as_of": "2026-10-22",
@@ -215,7 +215,7 @@
           "rarity": "Common",
           "level": 2,
           "trigger": "DEFENSIVE_REACTION",
-          "skill_exp_current": 6,
+          "skill_exp_current": 10,
           "next_threshold": 90,
           "mastery_receipts": [
             {
@@ -241,6 +241,26 @@
               "bonus": 0,
               "source": "events/0261.md",
               "action_id": "T261/A01"
+            },
+            {
+              "turn": 325,
+              "action_id": "T325/V13/GatKiemCanChien",
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "source": "events/0313-0345.md",
+              "practice_context_id": "meaningful-GatKiemCanChien-T325"
+            },
+            {
+              "turn": 332,
+              "action_id": "T332/V13/GatKiemCanChien",
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "source": "events/0313-0345.md",
+              "practice_context_id": "meaningful-GatKiemCanChien-T332"
             }
           ],
           "next_level_effect_approved": true,
@@ -273,6 +293,28 @@
               "source": "events/0261.md",
               "practice_context_id": "west-road-greycoat-actual-dagger-parry",
               "effective": true
+            },
+            "T325/V13/GatKiemCanChien": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "rng_version": null,
+              "source": "events/0313-0345.md",
+              "practice_context_id": "meaningful-GatKiemCanChien-T325",
+              "effective": true,
+              "note": "Legal defensive parry against live spear, -7 STA"
+            },
+            "T332/V13/GatKiemCanChien": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "rng_version": null,
+              "source": "events/0313-0345.md",
+              "practice_context_id": "meaningful-GatKiemCanChien-T332",
+              "effective": true,
+              "note": "Legal defensive parry against live spear, -7 STA"
             }
           },
           "next_level_contract": "V1.3-PARRY-L3"
@@ -308,7 +350,7 @@
           "rarity": "Rare",
           "level": 1,
           "trigger": "ACTIVE",
-          "skill_exp_current": 4,
+          "skill_exp_current": 8,
           "next_threshold": 60,
           "mastery_receipts": [
             {
@@ -326,6 +368,26 @@
               "bonus": 0,
               "source": "events/0302.md",
               "action_id": "T302/A02"
+            },
+            {
+              "turn": 324,
+              "action_id": "T324/V13/HuyetNguyetTram",
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "source": "events/0313-0345.md",
+              "practice_context_id": "meaningful-HuyetNguyetTram-T324"
+            },
+            {
+              "turn": 340,
+              "action_id": "T340/V13/HuyetNguyetTram",
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "source": "events/0313-0345.md",
+              "practice_context_id": "meaningful-HuyetNguyetTram-T340"
             }
           ],
           "next_level_effect_approved": false,
@@ -350,6 +412,28 @@
               "source": "events/0302.md",
               "practice_context_id": "western-north:cloaked-or-outpost-combat-302",
               "effective": true
+            },
+            "T324/V13/HuyetNguyetTram": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "rng_version": null,
+              "source": "events/0313-0345.md",
+              "practice_context_id": "meaningful-HuyetNguyetTram-T324",
+              "effective": true,
+              "note": "Effective legal slash, environment T324 or living enemy T340"
+            },
+            "T340/V13/HuyetNguyetTram": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "rng_version": null,
+              "source": "events/0313-0345.md",
+              "practice_context_id": "meaningful-HuyetNguyetTram-T340",
+              "effective": true,
+              "note": "Effective legal slash, environment T324 or living enemy T340"
             }
           }
         },
@@ -358,7 +442,7 @@
           "rarity": "Rare",
           "level": 1,
           "trigger": "ACTIVE",
-          "skill_exp_current": 4,
+          "skill_exp_current": 8,
           "next_threshold": 60,
           "mastery_receipts": [
             {
@@ -376,6 +460,26 @@
               "bonus": 0,
               "source": "events/0273.md",
               "action_id": "T273/A01"
+            },
+            {
+              "turn": 331,
+              "action_id": "T331/V13/HuyetAnhBo",
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "source": "events/0313-0345.md",
+              "practice_context_id": "meaningful-HuyetAnhBo-T331"
+            },
+            {
+              "turn": 334,
+              "action_id": "T334/V13/HuyetAnhBo",
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "source": "events/0313-0345.md",
+              "practice_context_id": "meaningful-HuyetAnhBo-T334"
             }
           ],
           "next_level_effect_approved": false,
@@ -399,6 +503,28 @@
               "source": "events/0273.md",
               "practice_context_id": "west-road:north-upper-switchback-legal-visible-3m-flank",
               "effective": true
+            },
+            "T331/V13/HuyetAnhBo": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "rng_version": null,
+              "source": "events/0313-0345.md",
+              "practice_context_id": "meaningful-HuyetAnhBo-T331",
+              "effective": true,
+              "note": "Legal actual stone dash within 4m, -15 STA"
+            },
+            "T334/V13/HuyetAnhBo": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "rng_version": null,
+              "source": "events/0313-0345.md",
+              "practice_context_id": "meaningful-HuyetAnhBo-T334",
+              "effective": true,
+              "note": "Legal actual stone dash within 4m, -15 STA"
             }
           }
         },
@@ -565,7 +691,7 @@
           "rarity": "Rare",
           "level": 1,
           "trigger": "PASSIVE_QUALIFYING_TRIGGER",
-          "skill_exp_current": 18,
+          "skill_exp_current": 32,
           "next_threshold": 60,
           "mastery_receipts": [
             {
@@ -639,6 +765,76 @@
               "bonus": 0,
               "source": "events/0301.md",
               "action_id": "T301/A02"
+            },
+            {
+              "turn": 328,
+              "action_id": "T328/V13/HapHuyet",
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "source": "events/0313-0345.md",
+              "practice_context_id": "spearman-changing-contact-phase-T328"
+            },
+            {
+              "turn": 331,
+              "action_id": "T331/V13/HapHuyet",
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "source": "events/0313-0345.md",
+              "practice_context_id": "spearman-changing-contact-phase-T331"
+            },
+            {
+              "turn": 332,
+              "action_id": "T332/V13/HapHuyet",
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "source": "events/0313-0345.md",
+              "practice_context_id": "spearman-changing-contact-phase-T332"
+            },
+            {
+              "turn": 333,
+              "action_id": "T333/V13/HapHuyet",
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "source": "events/0313-0345.md",
+              "practice_context_id": "spearman-changing-contact-phase-T333"
+            },
+            {
+              "turn": 334,
+              "action_id": "T334/V13/HapHuyet",
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "source": "events/0313-0345.md",
+              "practice_context_id": "spearman-changing-contact-phase-T334"
+            },
+            {
+              "turn": 341,
+              "action_id": "T341/V13/HapHuyet",
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "source": "events/0313-0345.md",
+              "practice_context_id": "shieldman-changing-contact-phase-T341"
+            },
+            {
+              "turn": 342,
+              "action_id": "T342/V13/HapHuyet",
+              "skill_exp_delta": 2,
+              "effective": true,
+              "bonus": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "source": "events/0313-0345.md",
+              "practice_context_id": "shieldman-changing-contact-phase-T342"
             }
           ],
           "next_level_effect_approved": false,
@@ -731,6 +927,83 @@
               "source": "events/0301.md",
               "practice_context_id": "north-road:lookout-sword-heal2",
               "effective": true
+            },
+            "T328/V13/HapHuyet": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "rng_version": null,
+              "source": "events/0313-0345.md",
+              "practice_context_id": "spearman-changing-contact-phase-T328",
+              "effective": true,
+              "note": "Melee sword damage against actual living foe and +HP proc accepted in narrated ledger"
+            },
+            "T331/V13/HapHuyet": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "rng_version": null,
+              "source": "events/0313-0345.md",
+              "practice_context_id": "spearman-changing-contact-phase-T331",
+              "effective": true,
+              "note": "Melee sword damage against actual living foe and +HP proc accepted in narrated ledger"
+            },
+            "T332/V13/HapHuyet": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "rng_version": null,
+              "source": "events/0313-0345.md",
+              "practice_context_id": "spearman-changing-contact-phase-T332",
+              "effective": true,
+              "note": "Melee sword damage against actual living foe and +HP proc accepted in narrated ledger"
+            },
+            "T333/V13/HapHuyet": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "rng_version": null,
+              "source": "events/0313-0345.md",
+              "practice_context_id": "spearman-changing-contact-phase-T333",
+              "effective": true,
+              "note": "Melee sword damage against actual living foe and +HP proc accepted in narrated ledger"
+            },
+            "T334/V13/HapHuyet": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "rng_version": null,
+              "source": "events/0313-0345.md",
+              "practice_context_id": "spearman-changing-contact-phase-T334",
+              "effective": true,
+              "note": "Melee sword damage against actual living foe and +HP proc accepted in narrated ledger"
+            },
+            "T341/V13/HapHuyet": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "rng_version": null,
+              "source": "events/0313-0345.md",
+              "practice_context_id": "shieldman-changing-contact-phase-T341",
+              "effective": true,
+              "note": "Melee sword damage against actual living foe and +HP proc accepted in narrated ledger"
+            },
+            "T342/V13/HapHuyet": {
+              "base_exp": 2,
+              "bonus_exp": 0,
+              "bonus_status": "PENDING_UNROLLED",
+              "draw": null,
+              "rng_version": null,
+              "source": "events/0313-0345.md",
+              "practice_context_id": "shieldman-changing-contact-phase-T342",
+              "effective": true,
+              "note": "Melee sword damage against actual living foe and +HP proc accepted in narrated ledger"
             }
           }
         },
@@ -6358,5 +6631,20 @@
     "quest": "GARRICK_CHIEF_ACTIVE_UNPAID; Elite commander not confirmed chief",
     "skill_exp_reconciliation": "PENDING_EVIDENCE_REVIEW; do not simulate historical RNG",
     "T346_NOT_PLAYED": true
+  },
+  "skill_mastery_reconciliation_T345": {
+    "source": "events/skill-mastery-audit-T303-T345.md",
+    "date": "2026-10-22",
+    "non_game_turn": true,
+    "prior_commit": "0e559ed2fe25954a4b92ff1aad267e9fa599f33c",
+    "skill_exp_by_skill": {
+      "HuyetNguyetTram": "4→8",
+      "GatKiemCanChien": "6→10",
+      "HuyetAnhBo": "4→8",
+      "HapHuyet": "18→32"
+    },
+    "roll_status": "NO_VERIFIED_BONUS_ROLL_NO_PLUS_FIVE",
+    "anti_farm_note": "distinct active changing enemy responses in live contested fights; once-per-skill-per-turn; no spam/training",
+    "next_turn_unchanged": 346
   }
 }

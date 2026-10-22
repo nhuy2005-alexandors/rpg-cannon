@@ -333,6 +333,864 @@
         "Commander Lv8 actual location UNKNOWN"
       ],
       "links": []
+    },
+    {
+      "id": "hac-nha-thanh-hub",
+      "name": "Hắc Nha Thành — sơ đồ chức năng",
+      "extent": "schematic; relative only, no metric distance",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0163.md"
+      ],
+      "known_limitations": [
+        "Diagram positions are illustrative, NOT surveyed coordinates",
+        "Internal district adjacency is not canon"
+      ],
+      "objects": [
+        {
+          "id": "city-hub",
+          "type": "landmark",
+          "label": "Hắc Nha Thành",
+          "x": 50,
+          "y": 48,
+          "status": "known_context"
+        },
+        {
+          "id": "temple-node",
+          "type": "point",
+          "label": "Điện Tế Huyết (trong thành)",
+          "x": 34,
+          "y": 25,
+          "status": "known_context"
+        },
+        {
+          "id": "forge-node",
+          "type": "point",
+          "label": "Lò rèn Durgan (trong thành)",
+          "x": 66,
+          "y": 29,
+          "status": "known_context"
+        },
+        {
+          "id": "garrick-office",
+          "type": "point",
+          "label": "Bảng nhiệm vụ Garrick",
+          "x": 48,
+          "y": 73,
+          "status": "known_context"
+        }
+      ]
+    },
+    {
+      "id": "dien-te-huyet",
+      "name": "Điện Tế Huyết — căn cứ",
+      "extent": "schematic; relative only, no metric distance",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0160.md"
+      ],
+      "known_limitations": [
+        "Diagram positions are illustrative, NOT surveyed coordinates",
+        "Training positions are conceptual, no detailed floor plan"
+      ],
+      "objects": [
+        {
+          "id": "temple-base",
+          "type": "landmark",
+          "label": "Điện Tế Huyết, nơi ở an toàn",
+          "x": 50,
+          "y": 47,
+          "status": "known_context"
+        },
+        {
+          "id": "training-court",
+          "type": "point",
+          "label": "Sân luyện tập được nhắc T160",
+          "x": 34,
+          "y": 69,
+          "status": "known_context"
+        }
+      ]
+    },
+    {
+      "id": "lo-ren-hac-nha",
+      "name": "Lò Rèn Hắc Nha — Durgan",
+      "extent": "schematic; relative only, no metric distance",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0096-0153.md"
+      ],
+      "known_limitations": [
+        "Diagram positions are illustrative, NOT surveyed coordinates",
+        "Forge interior arrangement unknown"
+      ],
+      "objects": [
+        {
+          "id": "durgan-forge",
+          "type": "landmark",
+          "label": "Xưởng của Durgan",
+          "x": 50,
+          "y": 50,
+          "status": "known_context"
+        }
+      ]
+    },
+    {
+      "id": "garrick-bang-nhiem-vu",
+      "name": "Bảng ủy thác Garrick",
+      "extent": "schematic; relative only, no metric distance",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0163.md"
+      ],
+      "known_limitations": [
+        "Diagram positions are illustrative, NOT surveyed coordinates",
+        "Bounty 3/3 fangs not yet handed in"
+      ],
+      "objects": [
+        {
+          "id": "garrick-board",
+          "type": "landmark",
+          "label": "Bảng nhiệm vụ và văn phòng Garrick",
+          "x": 50,
+          "y": 50,
+          "status": "known_context"
+        }
+      ]
+    },
+    {
+      "id": "duong-gac-tay",
+      "name": "Đường Gác Tây",
+      "extent": "schematic; relative only, no metric distance",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0096-0153.md"
+      ],
+      "known_limitations": [
+        "Diagram positions are illustrative, NOT surveyed coordinates"
+      ],
+      "objects": [
+        {
+          "id": "west-gate",
+          "type": "landmark",
+          "label": "Đường Gác Tây, lối ra phía tây",
+          "x": 50,
+          "y": 50,
+          "status": "known_context"
+        }
+      ]
+    },
+    {
+      "id": "duong-tay-van-tai",
+      "name": "Đường vận tải phía Tây",
+      "extent": "schematic; relative only, no metric distance",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0163.md"
+      ],
+      "known_limitations": [
+        "Diagram positions are illustrative, NOT surveyed coordinates",
+        "No route to bandit hideout established"
+      ],
+      "objects": [
+        {
+          "id": "road-entry",
+          "type": "point",
+          "label": "Đường phía ngoài Đường Gác Tây",
+          "x": 22,
+          "y": 54,
+          "status": "known_context"
+        },
+        {
+          "id": "road-wagon-zone",
+          "type": "point",
+          "label": "Đoạn xe hàng hư tại Dốc Đá Xám",
+          "x": 70,
+          "y": 52,
+          "status": "known_context"
+        },
+        {
+          "id": "western-route",
+          "type": "path",
+          "label": "Lối đường hàng (chỉ kết nối tương đối)",
+          "points": [
+            [
+              27,
+              54
+            ],
+            [
+              46,
+              52
+            ],
+            [
+              63,
+              52
+            ]
+          ],
+          "status": "reported_verified"
+        }
+      ]
+    },
+    {
+      "id": "doc-da-xam",
+      "name": "Dốc Đá Xám — dấu tích xe hàng",
+      "extent": "schematic; relative only, no metric distance",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "events/0163.md"
+      ],
+      "known_limitations": [
+        "Diagram positions are illustrative, NOT surveyed coordinates",
+        "Witness-signaler/crossbow claims unverified; don't place enemies"
+      ],
+      "objects": [
+        {
+          "id": "broken-wagon",
+          "type": "cover",
+          "label": "Xe hàng hỏng bỏ lại",
+          "x": 51,
+          "y": 57,
+          "status": "known_context"
+        },
+        {
+          "id": "north-high-ground",
+          "type": "terrain",
+          "label": "Địa hình cao nhiều đá phía bắc",
+          "x": 49,
+          "y": 24,
+          "status": "known_context"
+        },
+        {
+          "id": "tracks-disappear",
+          "type": "clue",
+          "label": "Dấu vết mất trên nền đá",
+          "x": 73,
+          "y": 30,
+          "status": "known_context"
+        }
+      ]
+    },
+    {
+      "id": "suoi-can",
+      "name": "Suối Cạn — địa hình gần Đường Tây",
+      "extent": "schematic; relative only, no metric distance",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "events/0163.md"
+      ],
+      "known_limitations": [
+        "Diagram positions are illustrative, NOT surveyed coordinates",
+        "No known safe route or precise width"
+      ],
+      "objects": [
+        {
+          "id": "dry-streambed",
+          "type": "terrain",
+          "label": "Suối Cạn, lòng suối khô",
+          "x": 49,
+          "y": 54,
+          "status": "known_context"
+        },
+        {
+          "id": "narrow-channel",
+          "type": "hazard-terrain",
+          "label": "Lòng suối hẹp, có nguy cơ lộ",
+          "x": 76,
+          "y": 57,
+          "status": "known_context"
+        }
+      ]
+    },
+    {
+      "id": "nghia-dia-tu-thiet",
+      "name": "Nghĩa Địa Tử Thiết — vùng săn tử thi",
+      "extent": "schematic historical scene; not scale-accurate",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0050-0095.md",
+        "events/0096-0153.md"
+      ],
+      "known_limitations": [
+        "Only publicly discovered historical features; no undiscovered rooms",
+        "Necropolis tomb arrangements unknown"
+      ],
+      "objects": [
+        {
+          "id": "cemetery-sector",
+          "type": "landmark",
+          "label": "Nghĩa Địa Tử Thiết (chưa đo địa hình)",
+          "x": 50,
+          "y": 49,
+          "status": "OBSERVED_HISTORICAL"
+        }
+      ]
+    },
+    {
+      "id": "rung-xuong",
+      "name": "Rừng Xương — vùng Huyết Lang",
+      "extent": "schematic historical scene; not scale-accurate",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0050-0095.md"
+      ],
+      "known_limitations": [
+        "Only publicly discovered historical features; no undiscovered rooms",
+        "Exact tree and trail geometry unknown"
+      ],
+      "objects": [
+        {
+          "id": "bone-forest",
+          "type": "landmark",
+          "label": "Rừng Xương, vùng sói",
+          "x": 51,
+          "y": 50,
+          "status": "OBSERVED_HISTORICAL"
+        }
+      ]
+    },
+    {
+      "id": "huyet-cot-ngoai-dong",
+      "name": "Huyết Cốt Động — khu ngoài / trận Lang Vương",
+      "extent": "schematic historical scene; not scale-accurate",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "events/0096-0153.md"
+      ],
+      "known_limitations": [
+        "Only publicly discovered historical features; no undiscovered rooms",
+        "RESOLVED_REPLAY_T139",
+        "T128–139 initial branch superseded; no revived boss"
+      ],
+      "objects": [
+        {
+          "id": "outer-cave",
+          "type": "landmark",
+          "label": "Lối tiếp cận Huyết Cốt Động",
+          "x": 54,
+          "y": 54,
+          "status": "OBSERVED_HISTORICAL"
+        },
+        {
+          "id": "historical-boss-field",
+          "type": "point",
+          "label": "Khu giao chiến Huyết Lang Vương (lịch sử)",
+          "x": 58,
+          "y": 32,
+          "status": "RESOLVED_REPLAY_T139"
+        }
+      ]
+    },
+    {
+      "id": "huyet-cot-hanh-lang",
+      "name": "Huyết Cốt Động — hành lang đã đi",
+      "extent": "schematic historical scene; not scale-accurate",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "LAYOUT_CONFIRMED",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0096-0153.md"
+      ],
+      "known_limitations": [
+        "Only publicly discovered historical features; no undiscovered rooms",
+        "Corridor geometry schematic; hanging spikes bypassed, NOT disarmed"
+      ],
+      "objects": [
+        {
+          "id": "cave-entrance",
+          "type": "door",
+          "label": "Cửa vào hành lang đã khám phá",
+          "x": 16,
+          "y": 53,
+          "status": "OBSERVED_HISTORICAL"
+        },
+        {
+          "id": "cave-bone-tripwire",
+          "type": "hazard-terrain",
+          "label": "Bẫy gai xương treo, đã lách tránh nhưng vẫn kích hoạt được",
+          "x": 40,
+          "y": 53,
+          "status": "BYPASSED_NOT_DISARMED"
+        },
+        {
+          "id": "cave-iron-chest",
+          "type": "cover",
+          "label": "Hòm sắt dấu ba trảo đã mở",
+          "x": 66,
+          "y": 48,
+          "status": "OPENED_T145"
+        },
+        {
+          "id": "bat-contact",
+          "type": "point",
+          "label": "Nơi từng giao chiến Huyết Phệ Bức",
+          "x": 67,
+          "y": 26,
+          "status": "HISTORICAL_RESOLVED"
+        }
+      ]
+    },
+    {
+      "id": "cam-lao",
+      "name": "Cấm Lao / Hầm Giam — cổng niêm phong",
+      "extent": "schematic historical scene; not scale-accurate",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0050-0095.md"
+      ],
+      "known_limitations": [
+        "Only publicly discovered historical features; no undiscovered rooms",
+        "Gate SEALED; no secret space beyond shown"
+      ],
+      "objects": [
+        {
+          "id": "cam-lao-sealed-gate",
+          "type": "door",
+          "label": "Cổng Cấm Lao còn niêm phong",
+          "x": 73,
+          "y": 46,
+          "status": "SEALED"
+        },
+        {
+          "id": "three-coffins",
+          "type": "point",
+          "label": "Ba quan tài đã thấy (chưa mở)",
+          "x": 38,
+          "y": 46,
+          "status": "UNOPENED_CONFIRMED"
+        },
+        {
+          "id": "outer-prison-corridor",
+          "type": "point",
+          "label": "Hành lang ngoài Cấm Lao",
+          "x": 19,
+          "y": 51,
+          "status": "KNOWN_ACCESS"
+        }
+      ]
+    },
+    {
+      "id": "kho-quan-vu-dong",
+      "name": "Kho Quân Vụ Đông — khu quân giới",
+      "extent": "schematic historical scene; not scale-accurate",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "events/0050-0095.md"
+      ],
+      "known_limitations": [
+        "Only publicly discovered historical features; no undiscovered rooms",
+        "Rhevik and special inventory history known; no invented room geometry"
+      ],
+      "objects": [
+        {
+          "id": "old-military-store",
+          "type": "landmark",
+          "label": "Kho quân vụ đã khám xét T77–89",
+          "x": 52,
+          "y": 47,
+          "status": "OBSERVED_HISTORICAL"
+        }
+      ]
+    },
+    {
+      "id": "hac-nhat-world",
+      "name": "HẮC NHẬT — Bản đồ thế giới (phần đã biết)",
+      "level": "WORLD",
+      "extent": "unexplored world, conceptual scale",
+      "revision": 1,
+      "grounded_through_turn": 204,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md"
+      ],
+      "known_limitations": [
+        "Only currently explored Hắc Nha region is mapped; world boundaries and adjacent realms UNKNOWN",
+        "North is a diagram convention; no world-scale distances or coordinates confirmed"
+      ],
+      "objects": [
+        {
+          "id": "vung-hac-nha-marker",
+          "type": "landmark",
+          "label": "Vùng Hắc Nha — khu truyện hiện tại",
+          "x": 50,
+          "y": 52,
+          "status": "KNOWN_REGION_SCHEMATIC"
+        }
+      ],
+      "unplaced_known_names": [
+        "Phần còn lại của thế giới Hắc Nhật — CHƯA KHÁM PHÁ, không đặt địa danh tùy ý"
+      ],
+      "links": [
+        {
+          "map_id": "vung-hac-nha",
+          "point_id": "vung-hac-nha-marker"
+        }
+      ]
+    },
+    {
+      "id": "vung-hac-nha",
+      "name": "VÙNG HẮC NHA — Bản đồ khu vực đã biết",
+      "level": "REGION",
+      "parent_map_id": "hac-nhat-world",
+      "extent": "schematic Hắc Nha region; 0–100 NOT distance",
+      "revision": 2,
+      "grounded_through_turn": 217,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "canon/world/places.md",
+        "events/0163.md",
+        "events/0204.md"
+      ],
+      "known_limitations": [
+        "Only two directions grounded from city: western transport road and eastern scrapyard",
+        "Unknown bearings for cemetery, Bone Forest, cave, military store and prison: listed unplaced below",
+        "Symbols within a location are not surveyed footprints; cardinal direction and separation approximate"
+      ],
+      "objects": [
+        {
+          "id": "hac-nha-thanh",
+          "type": "landmark",
+          "label": "Hắc Nha Thành",
+          "x": 49,
+          "y": 48,
+          "status": "KNOWN_HUB"
+        },
+        {
+          "id": "duong-gac-tay",
+          "type": "point",
+          "label": "Đường Gác Tây",
+          "x": 32,
+          "y": 49,
+          "status": "KNOWN_WEST_GATE"
+        },
+        {
+          "id": "doc-da-xam",
+          "type": "point",
+          "label": "Dốc Đá Xám — xe hỏng",
+          "x": 17,
+          "y": 49,
+          "status": "REPORTED_PATROL_VERIFIED"
+        },
+        {
+          "id": "bai-sat-ri",
+          "type": "landmark",
+          "label": "Bãi Sắt Rỉ (phía Đông)",
+          "x": 78,
+          "y": 48,
+          "status": "KNOWN_EAST"
+        },
+        {
+          "id": "nha-sat-dong-bac",
+          "type": "point",
+          "label": "Nhà Sắt Đông Bắc (thuộc bãi)",
+          "x": 88,
+          "y": 32,
+          "status": "KNOWN_WITHIN_SCRAPYARD"
+        },
+        {
+          "id": "duong-tay",
+          "type": "path",
+          "label": "Đường Tây — nối khái niệm",
+          "points": [
+            [
+              45,
+              49
+            ],
+            [
+              32,
+              49
+            ],
+            [
+              17,
+              49
+            ]
+          ],
+          "status": "KNOWN_CONNECTIVITY_NOT_DISTANCE"
+        },
+        {
+          "id": "duong-dong",
+          "type": "path",
+          "label": "Đường Đông — nối khái niệm",
+          "points": [
+            [
+              54,
+              48
+            ],
+            [
+              65,
+              48
+            ],
+            [
+              75,
+              48
+            ]
+          ],
+          "status": "KNOWN_CONNECTIVITY_NOT_DISTANCE"
+        }
+      ],
+      "unplaced_known_names": [
+        "Suối Cạn — gần Đường Tây, hướng và khoảng cách CHƯA XÁC MINH",
+        "Nghĩa Địa Tử Thiết — đã đến, tọa độ CHƯA XÁC MINH",
+        "Rừng Xương — đã biết, tọa độ CHƯA XÁC MINH",
+        "Huyết Cốt Động / Trạm Tam Trảo — mối liên hệ được biết, vị trí vùng CHƯA XÁC MINH",
+        "Cấm Lao / Hầm Giam — đã biết, vị trí vùng CHƯA XÁC MINH",
+        "Kho Quân Vụ Đông — đã biết, vị trí vùng CHƯA XÁC MINH",
+        "Sào huyệt cướp Đường Tây — CHƯA PHÁT HIỆN",
+        "Di tích tường đá đổ ngoài Hắc Nha Thành (đã quan sát T214–T217; vị trí/phương hướng/khoảng cách chưa biết; KHÔNG xác nhận là hầm chôn)"
+      ],
+      "links": [
+        {
+          "map_id": "hac-nha-thanh-hub",
+          "point_id": "hac-nha-thanh"
+        },
+        {
+          "map_id": "duong-gac-tay",
+          "point_id": "duong-gac-tay"
+        },
+        {
+          "map_id": "duong-tay-van-tai",
+          "point_id": "doc-da-xam"
+        },
+        {
+          "map_id": "bai-sat-ri",
+          "point_id": "bai-sat-ri"
+        },
+        {
+          "map_id": "nha-sat-dong-bac",
+          "point_id": "nha-sat-dong-bac"
+        }
+      ]
+    },
+    {
+      "id": "ngoai-thanh-tuong-da-do",
+      "name": "Di tích tường đá ngoài Hắc Nha Thành",
+      "level": "AREA",
+      "extent": "LOCAL schematic only; regional bearing UNKNOWN",
+      "revision": 3,
+      "grounded_through_turn": 237,
+      "evidence_level": "SCHEMATIC",
+      "evidence_sources": [
+        "events/0214.md",
+        "events/0215.md",
+        "events/0216.md",
+        "events/0217.md",
+        "events/0218.md",
+        "events/0223.md",
+        "events/0224.md",
+        "events/0225.md",
+        "events/0226.md",
+        "events/0227.md",
+        "events/0228.md",
+        "events/0229.md",
+        "events/0230.md",
+        "events/0231.md",
+        "events/0232.md",
+        "events/0233.md",
+        "events/0234.md",
+        "events/0235.md",
+        "events/0236.md",
+        "events/0237.md"
+      ],
+      "objects": [
+        {
+          "id": "wall",
+          "type": "landmark",
+          "label": "Tường đá đổ",
+          "x": 45,
+          "y": 36,
+          "status": "observed"
+        },
+        {
+          "id": "flat-ground",
+          "type": "terrain",
+          "label": "Nền bằng",
+          "x": 25,
+          "y": 40,
+          "status": "observed"
+        },
+        {
+          "id": "groove",
+          "type": "clue",
+          "label": "Rãnh chân tường",
+          "x": 63,
+          "y": 43,
+          "status": "observed_T215_T227; slopes_toward_lower_terrain; drainage_HYPOTHESIS_NOT_PROVEN"
+        },
+        {
+          "id": "stone-path",
+          "type": "path",
+          "label": "Nền đá cũ",
+          "points": [
+            [
+              29,
+              48
+            ],
+            [
+              45,
+              52
+            ],
+            [
+              66,
+              63
+            ]
+          ],
+          "status": "observed_and_partly_tested; curved; apparent_alignment_to_worked_stone_but_unproven"
+        },
+        {
+          "id": "roots",
+          "type": "cover",
+          "label": "Rễ cây, bụi rậm",
+          "x": 67,
+          "y": 69,
+          "status": "observed"
+        },
+        {
+          "id": "lower-rubble",
+          "type": "hazard-terrain",
+          "label": "Đất thấp, đá vụn",
+          "x": 69,
+          "y": 84,
+          "status": "not_traversed; T226_small_soil_slip_confirms_hazard"
+        },
+        {
+          "id": "cover",
+          "type": "cover",
+          "label": "Chỗ Vô Danh nấp",
+          "x": 36,
+          "y": 28,
+          "status": "observed"
+        },
+        {
+          "id": "pebble",
+          "type": "clue",
+          "label": "Sỏi trượt, tiếng gõ",
+          "x": 69,
+          "y": 74,
+          "status": "cause_unknown"
+        },
+        {
+          "id": "lower-dressed-edges",
+          "type": "clue",
+          "label": "Hai cạnh đá gia công",
+          "x": 78,
+          "y": 73,
+          "status": "visually_observed_T224; correspondence_to_paving_unverified"
+        },
+        {
+          "id": "upright-stone-face",
+          "type": "clue",
+          "label": "Mặt đá dựng đứng",
+          "x": 78,
+          "y": 82,
+          "status": "light_sword_tip_probe_T226; shape/function_unknown"
+        },
+        {
+          "id": "root-hollow",
+          "type": "clue",
+          "label": "Khoảng rỗng dưới rễ",
+          "x": 72,
+          "y": 76,
+          "status": "partly_seen_T223_T226; access_unknown; weak_airflow_T226_not_proof_of_tunnel"
+        },
+        {
+          "id": "upper-stone-joint",
+          "type": "clue",
+          "label": "Đường ghép ngang trên đá",
+          "x": 77,
+          "y": 77,
+          "status": "observed_from_stable_angle_T227; connection_to_paving_unverified"
+        },
+        {
+          "id": "leaning-boulder-T234",
+          "type": "cover",
+          "label": "Khối đá nghiêng",
+          "x": 80,
+          "y": 57,
+          "status": "OBSERVED_T234; partial_occluding_cover_T235_T237; not a confirmed entrance"
+        },
+        {
+          "id": "tested-pavers-near-boulder",
+          "type": "terrain",
+          "label": "Nền đá chắc cạnh khối đá",
+          "x": 75,
+          "y": 52,
+          "status": "TESTED_STABLE_T235_T237; V and third undead adjacent in melee"
+        },
+        {
+          "id": "cracked-paver-T235",
+          "type": "hazard-terrain",
+          "label": "Phiến đá nứt đã tránh",
+          "x": 71,
+          "y": 56,
+          "status": "CRACK_OBSERVED_T235; NOT_TRAVERSED"
+        },
+        {
+          "id": "new-worked-edge-T228",
+          "type": "clue",
+          "label": "Đoạn đá ghép song song tường",
+          "x": 55,
+          "y": 48,
+          "status": "OBSERVED_T228; engineering-purpose/unbroken-continuity_UNKNOWN"
+        }
+      ],
+      "unplaced_known_names": [
+        "Hầm chôn cũ (vị trí UNKNOWN)"
+      ],
+      "known_limitations": [
+        "NOT proved to be the burial-crypt location",
+        "Absolute direction, regional position, physical distances unknown",
+        "At T217 there was no confirmed enemy or hollow space; later T218–T227 observed a single enemy and root cavity, but STILL NO confirmed entrance",
+        "Intermittent weak apparent draft near root hollow does not establish passage or safe ground",
+        "No verified continuous built channel from groove to dressed lower stones",
+        "T225 ambiguous weak death-energy sensation not a mapped source or detected enemy",
+        "Previously seen single skeleton killed T222 and looted T223; no other opponent confirmed T227",
+        "At T237 third animated skeleton is an ACTIVE adjacent hostile on inspected paving, HP25/70, right arm severed; another corpse killed T232 looted T233. No guarantee of only three enemies in region.",
+        "Local icon/coordinates for leaning boulder and covered paths are illustrative, not surveyed meters, regional bearings or a measured vector."
+      ],
+      "unknowns": [
+        "Crypt entrance/location UNKNOWN",
+        "Whether the old wall is the porter's historic delivery landmark UNKNOWN",
+        "Whether fitted wall groove, paving and buried vertical stone belong to a connected structure UNKNOWN",
+        "Whether low hollow passes to any reachable tunnel UNKNOWN",
+        "Any surviving TH-bearing source or other enemies UNKNOWN",
+        "Total number of skeletons in area UNKNOWN; two confirmed dead/looted, third alive at T237",
+        "Whether third undead's remains contain a quest-acceptable core UNKNOWN"
+      ]
     }
   ],
   "update_contract": {
@@ -341,5 +1199,11 @@
     "revelation": "add discovered landmarks to public map only after gameplay confirmation",
     "private_lore": "store in private GM registry only; do not place in public atlas",
     "rendering": "Canva editable design is the reusable presentation view; JSON is the canonical editable object model"
+  },
+  "integration_note": {
+    "date": "2026-10-22",
+    "source_feature_commit": "06b6eb62a18c2f3c5b2fe8a8a20263b4d53ec284",
+    "base_main_commit": "0e559ed2fe25954a4b92ff1aad267e9fa599f33c",
+    "policy": "Retain ALL existing main map entries by ID; append unseen feature maps; preserve T345 scene separately; world/regional remain schematic"
   }
 }
