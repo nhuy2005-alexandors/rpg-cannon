@@ -2,6 +2,7 @@
 from __future__ import annotations
 import hashlib
 import json
+import re
 from copy import deepcopy
 
 
@@ -27,11 +28,23 @@ def stage_turn(pre_state:dict,intended_turn:dict,proposed_deltas:dict,receipts:l
     turn=intended_turn.get('turn')
     if not isinstance(action,str) or not action or type(turn) is not int or turn < 346 or not isinstance(intended_turn.get('rule_version'),str):
         raise ValueError('action/turn/rules required')
+    if not re.fullmatch(rf'T{turn}/A[0-9]+', action):
+        raise ValueError('action ID must match requested turn')
     refs=intended_turn.get('evidence_refs')
     if not isinstance(refs,list) or not refs or any(not isinstance(r,str) or not r for r in refs):
         raise ValueError('source references required')
     if any(not isinstance(r,dict) or not r.get('source_ref') or not isinstance(r.get('id'),str) or not r['id'] for r in receipts):
         raise ValueError('receipt sources required')
+    pools=pre_state.get('resources')
+    if not isinstance(pools,dict):raise ValueError('resource snapshot required')
+    for key,pool in pools.items():
+        if isinstance(pool,dict):
+            value,cap=pool.get('current'),pool.get('max')
+            if type(value) is not int or type(cap) is not int or cap<0 or not 0<=value<=cap:
+                raise ValueError('invalid prior resource pool '+str(key))
+        elif key in ('souls','exp'):
+            if type(pool) is not int or pool<0:raise ValueError('invalid prior resource '+key)
+        else:raise ValueError('invalid unknown resource '+str(key))
     ids=[r['id'] for r in receipts]
     if len(ids) != len(set(ids)):
         raise ValueError('duplicate effect receipt in action')
@@ -103,7 +116,8 @@ def stage_turn(pre_state:dict,intended_turn:dict,proposed_deltas:dict,receipts:l
     return {'status':'STAGED','action_id':action,'turn':turn,'request_fingerprint':request_fp,
             'pre_state_digest':pre_digest,'post_state_digest':post_digest,
             'projected_post_state':post,'delta':compact,'evidence_refs':list(refs),
-            'receipts':deepcopy(receipts),'effect_ids':list(ids)}
+            'receipts':deepcopy(receipts),'effect_ids':list(ids),
+            'rule_version':intended_turn['rule_version']}
 
 
 def accept_turn(staged:dict,confirmed_result:dict)->dict:
@@ -127,7 +141,8 @@ def accept_turn(staged:dict,confirmed_result:dict)->dict:
     delta.update({'disposition':confirmed_result['disposition'],'observed_outcome':confirmed_result['observed_outcome']})
     receipt={'kind':'GM_TURN_V1','action_id':staged['action_id'],'turn':staged['turn'],
              'pre_state_digest':staged['pre_state_digest'],'post_state_digest':staged['post_state_digest'],
-             'request_fingerprint':staged['request_fingerprint'],'verification_refs':list(refs),
+             'request_fingerprint':staged['request_fingerprint'],
+             'rule_version':staged['rule_version'],'verification_refs':list(refs),
              'verification_status':'CONFIRMED_IN_SESSION_NOT_SAVED'}
     post.setdefault('accepted_actions',{})[staged['action_id']]={
       'request_fingerprint':staged['request_fingerprint'],'pre_state_digest':staged['pre_state_digest'],

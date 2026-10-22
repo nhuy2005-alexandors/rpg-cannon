@@ -81,6 +81,22 @@ class LedgerTests(unittest.TestCase):
             accept_turn(replay,{'confirmed':True,'action_id':'T346/A01','disposition':'PARTIAL',
                   'observed_outcome':'noncanon verified','verification_refs':['evil/unverified']})
 
+    def test_all_unchanged_resource_pools_must_remain_valid(self):
+        invalid = state()
+        invalid['resources']['HP']['current'] = -1
+        with self.assertRaises(ValueError):
+            stage_turn(invalid,intent(),deltas(resource_changes={'STA':-1}),[])
+        invalid = state()
+        invalid['resources']['BLOOD']['current'] = 51
+        with self.assertRaises(ValueError):
+            stage_turn(invalid,intent(),deltas(resource_changes={}),[])
+
+    def test_action_id_turn_and_rule_version_receipted(self):
+        with self.assertRaises(ValueError):
+            stage_turn(state(),intent(action_id='T999/A01'),deltas(),[])
+        result=accept(state())
+        self.assertEqual(result['accepted_receipt']['rule_version'],'HN-V1.3')
+
     def test_unknown_hot_archive_does_not_authorize_duplicate_loot(self):
         s=state();s['historical_claim_coverage']='ARCHIVED_UNVERIFIED'
         with self.assertRaises(ValueError):
