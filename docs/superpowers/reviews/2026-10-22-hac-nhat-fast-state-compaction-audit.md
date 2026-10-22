@@ -22,3 +22,7 @@ Date 2026-10-22. Baseline commit `be13a5aadcce938ed62e92de2a352a83ae696b83`. **R
 ## Success criteria
 
 `state/quick-start.md` <= 8KB; hot state <= 120KB; hot scene <= 5KB (JS char approximation); source-to-restore deep-equality; no historic duplicate loot or deleted world flags; target next T346; target map ID unchanged; existing static atlas untouched; isolated branch commit/readback and Git tree receipt. Whole-suite Python tests require normal checkout with network or a locally mounted repository and remain a separate gate.
+
+## Follow-up defect closed: future-turn archive validation
+
+RED reproducer in isolated Python test: after `split_state(T345)`, advance hot `last_completed_turn=346,next_turn=347` without changing pinned archive ref T345. Previously `restore_state(hot,cold)` incorrectly recomputed expected archive path using live turn T346 and raised `ValueError: cold archive ref/turn mismatch`. Exact same bug affected scene rehydration. FIX: validation now checks the immutable archive's **pinned** turn and path, requires pinned turn <= live turn and rejects missing/wrong/tampered refs. Python regression: **6/6 PASS** (5 existing + 1 future-turn case) with `python -m unittest discover -s verification -p test_state_compaction.py -v`. The game's actual T346 remains NOT PLAYED; fixture is a simulated test only.

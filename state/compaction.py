@@ -91,8 +91,15 @@ def restore_scene(hot, cold):
 def _validate(hot, cold, kind):
     if not isinstance(cold, dict):
         raise ValueError("cold archive is mandatory")
-    ref = _ref(hot, kind)
-    if hot.get("_cold_archive") != ref or any(cold.get(k) != v for k, v in ref.items()):
+    live_turn = _turn(hot)
+    ref = hot.get("_cold_archive")
+    if not isinstance(ref, dict) or type(ref.get("turn")) is not int:
+        raise ValueError("invalid cold archive pointer")
+    pinned_turn = ref["turn"]
+    directory = "state" if kind == "state" else "maps"
+    expected = {"schema": "HN-COLD-ARCHIVE-V1", "turn": pinned_turn,
+                "path": f"{directory}/archive/T{pinned_turn}-{kind}-cold.json"}
+    if pinned_turn < 0 or pinned_turn > live_turn or ref != expected or any(cold.get(k) != v for k, v in expected.items()):
         raise ValueError("cold archive ref/turn mismatch")
     if not isinstance(cold.get("historical"), dict):
         raise ValueError("missing historical keys")

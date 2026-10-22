@@ -46,6 +46,20 @@ class CompactionTests(unittest.TestCase):
         self.assertTrue(restored['receipts']['T153']['paid'])
         self.assertTrue(restored['receipts']['T346']['new'])
 
+    def test_old_archive_remains_readable_after_T346(self):
+        hot, cold = split_state(self.state)
+        hot['last_completed_turn'] = 346
+        hot['next_turn'] = 347
+        hot['receipts']['T346'] = {'new': True}
+        restored = restore_state(hot, cold)
+        self.assertEqual(restored['last_completed_turn'], 346)
+        self.assertTrue(restored['receipts']['T153']['paid'])
+        self.assertTrue(restored['receipts']['T346']['new'])
+        mhot, mcold = split_scene(self.scene)
+        mhot['last_completed_turn'] = 346
+        mhot['next_turn'] = 347
+        self.assertEqual(restore_scene(mhot, mcold)['last_completed_turn'], 346)
+
     def test_scene_round_trip(self):
         original = copy.deepcopy(self.scene)
         hot, cold = split_scene(self.scene)
