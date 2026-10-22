@@ -17,7 +17,7 @@ class ExtraIntegrity(unittest.TestCase):
  def test_positive_souls_with_source_receipt_allowed_once(self):
   t=ledger_fixture.LedgerTests()
   receipt={'receipt_id':'corpse:a', 'kind':'RESOURCE_GRANT','resource':'souls','amount':14,'source_ref':'event:T346','action_id':'T346/A01'}
-  inp=t.i(); state=t.s();state['verified_grants']={receipt['receipt_id']:dict(receipt)}
+  inp=t.i(); state=t.s();state['verified_grants']={receipt['receipt_id']:dict(receipt)};state['verified_evidence_refs']=['event:T346']
   r=stage_turn(state,inp,{'resource_changes':{'souls':14}},[receipt])
   accepted=accept_turn(r,{'confirmed':True,'action_id':'T346/A01','disposition':'SUCCESS','observed_outcome':'looted','verification_refs':['event:T346']})
   self.assertEqual(accepted['post_state']['resources']['souls'],127)

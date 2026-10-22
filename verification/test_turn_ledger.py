@@ -2,7 +2,7 @@ import unittest
 from story.turn_ledger import stage_turn,accept_turn
 
 class LedgerTests(unittest.TestCase):
- def s(self): return {'last_completed_turn':345,'next_turn':346,'resources':{'HP':{'current':117,'max':170},'STA':{'current':41,'max':110},'BLOOD':{'current':46,'max':50},'TuHuyet':{'current':0,'max':20},'souls':113,'exp':380},'inventory_counts':{'arrow':2},'cooldowns':{},'status_effects':{},'accepted_actions':{}}
+ def s(self): return {'last_completed_turn':345,'next_turn':346,'resources':{'HP':{'current':117,'max':170},'STA':{'current':41,'max':110},'BLOOD':{'current':46,'max':50},'TuHuyet':{'current':0,'max':20},'souls':113,'exp':380},'inventory_counts':{'arrow':2},'cooldowns':{},'status_effects':{},'accepted_actions':{},'verified_evidence_refs':['synthetic']}
  def i(self):return {'turn':346,'action_id':'T346/A01','rule_version':'HN-V1.3','evidence_refs':['synthetic']}
  def test_resource_cap_and_pure(self):
   pre=self.s();o=stage_turn(pre,self.i(),{'resource_changes':{'STA':-15},'inventory_changes':{'arrow':-1},'elapsed_minutes':1},[])
@@ -12,7 +12,7 @@ class LedgerTests(unittest.TestCase):
  def test_confirm_idempotent_and_conflict(self):
   pre=self.s();a=stage_turn(pre,self.i(),{'resource_changes':{'STA':-15}},[])
   result=accept_turn(a,{'confirmed':True,'action_id':'T346/A01','disposition':'PARTIAL','observed_outcome':'ran','verification_refs':['synthetic']})
-  again=stage_turn(result['post_state'],self.i(),{'resource_changes':{'STA':-15}},[])
+  again=stage_turn(result['post_state'],self.i(),{'resource_changes':{'STA':-15}},[],replay_commitment=result['acceptance_commitment'])
   self.assertEqual(again['status'],'REPLAY');self.assertEqual(again['projected_post_state'],result['post_state'])
   with self.assertRaises(ValueError):stage_turn(result['post_state'],self.i(),{'resource_changes':{'STA':-20}},[])
  def test_turn_boundary(self):

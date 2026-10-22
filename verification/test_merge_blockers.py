@@ -11,7 +11,7 @@ class MergeBlockerRegression(unittest.TestCase):
   t=ledger_fixture.LedgerTests();first=stage_turn(t.s(),t.i(),{'resource_changes':{'STA':-15}},[])
   result=accept_turn(first,{'confirmed':True,'action_id':'T346/A01','disposition':'PARTIAL', 'observed_outcome':'ran','verification_refs':['synthetic']})
   changed=copy.deepcopy(result['post_state']);changed['resources']['HP']['current']=1
-  with self.assertRaises(ValueError):stage_turn(changed,t.i(),{'resource_changes':{'STA':-15}},[])
+  with self.assertRaises(ValueError):stage_turn(changed,t.i(),{'resource_changes':{'STA':-15}},[],replay_commitment=result['acceptance_commitment'])
 
  def test_stunned_skill_cannot_be_ready(self):
   st={'resources':{'STA':41},'cooldowns':{'dash':{'ready_at_combat_turn':12,'source_ref':'event:T345'}},'status_effects':{'stun':{'source_ref':'event:T345','expires_when':'cured','blocks_skills':True}}}

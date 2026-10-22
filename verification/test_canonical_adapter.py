@@ -108,6 +108,7 @@ class FutureClaimReplayTests(unittest.TestCase):
             return command, r
         intent, rs = input_at(346,'T346/A01','newclaim-1')
         state['verified_grants']={rs[0]['receipt_id']:copy.deepcopy(rs[0])}
+        state['verified_evidence_refs']=['synthetic']
         a = stage_turn(state,intent,{'resource_changes':{'souls':12}},rs)
         accepted=accept_turn(a,{'confirmed':True,'action_id':'T346/A01','disposition':'DONE',
                                 'observed_outcome':'synthetic','verification_refs':['synthetic']})['post_state']

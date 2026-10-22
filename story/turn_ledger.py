@@ -10,7 +10,7 @@ def _int(v):
     if type(v) is not int:raise ValueError('exact integer required')
     return v
 
-def stage_turn(pre_state:dict,intended_turn:dict,proposed_deltas:dict,receipts:list[dict])->dict:
+def stage_turn(pre_state:dict,intended_turn:dict,proposed_deltas:dict,receipts:list[dict], *, replay_commitment:str|None=None)->dict:
     original=copy.deepcopy(pre_state)
     original.setdefault('accepted_action_seals', {})
     ident=intended_turn.get('action_id')
@@ -33,15 +33,27 @@ def stage_turn(pre_state:dict,intended_turn:dict,proposed_deltas:dict,receipts:l
     previous_ids={r.get('receipt_id') for action in history.values()
                   if isinstance(action,dict) for r in action.get('input_receipts',[])
                   if isinstance(r,dict)}
+    claims_this_turn=set()
+    targets_this_turn=set()
     for item in receipts:
         if not isinstance(item,dict) or not isinstance(item.get('receipt_id'),str) or not item['receipt_id']:
             raise ValueError('a receipt requires immutable receipt_id')
         rid=item['receipt_id']
         if rid in receipt_ids:raise ValueError('duplicate receipt in one turn')
         receipt_ids.add(rid)
+        cid=item.get('claim_id');target=item.get('claim_target_id')
+        if cid and target:
+            claim_key=(cid,item.get('kind'),item.get('resource'))
+            target_key=(target,item.get('kind'),item.get('resource'))
+            if claim_key in claims_this_turn or target_key in targets_this_turn:
+                raise ValueError('duplicate reward claim inside one turn')
+            claims_this_turn.add(claim_key);targets_this_turn.add(target_key)
     input_fp=_hash({'intent':intended_turn,'delta':proposed_deltas,'receipts':receipts})
     if ident in history:
         prior=history[ident]
+        # The immutable commitment must come from outside the mutable state.
+        if (not isinstance(replay_commitment,str) or replay_commitment != _hash(prior)):
+            raise ValueError('missing or mismatched external replay commitment')
         if prior['input_fingerprint'] != input_fp:raise ValueError('conflicting replay')
         # The stored post-action projection excludes the receipt itself; it must
         # be identical on replay or the caller has supplied a drifted state.
@@ -144,14 +156,19 @@ def stage_turn(pre_state:dict,intended_turn:dict,proposed_deltas:dict,receipts:l
     if _int(proposed_deltas.get('elapsed_minutes',0))<0:raise ValueError('negative time')
     projected['last_completed_turn']=turn
     projected['next_turn']=turn+1
-    return {'status':'STAGED','input_fingerprint':input_fp,'projected_post_state':projected,
+    return {'trusted_observation_refs':copy.deepcopy(original.get('verified_evidence_refs', [])),
+            'status':'STAGED','input_fingerprint':input_fp,'projected_post_state':projected,
             'pre_state_digest':_hash(original),'intended_turn':copy.deepcopy(intended_turn),
             'delta':copy.deepcopy(proposed_deltas),'receipts':copy.deepcopy(receipts)}
 
 def accept_turn(staged:dict,confirmed_result:dict)->dict:
     if staged.get('status')!='STAGED' or confirmed_result.get('confirmed') is not True or confirmed_result.get('action_id')!=staged['intended_turn']['action_id']:
         raise ValueError('confirmed matching staged action required')
-    if not confirmed_result.get('verification_refs'):raise ValueError('verified source required')
+    trusted=staged.get('trusted_observation_refs', [])
+    refs=confirmed_result.get('verification_refs', [])
+    if (not isinstance(trusted,list) or not isinstance(refs,list) or not refs or
+        any(not isinstance(r,str) or not r or r not in trusted for r in refs)):
+        raise ValueError('confirmed outcome evidence was not independently verified')
     out=copy.deepcopy(staged['projected_post_state'])
     aid=staged['intended_turn']['action_id']
     receipt={'action_id':aid,'turn':staged['intended_turn']['turn'],'rule_version':staged['intended_turn']['rule_version'],
@@ -163,4 +180,5 @@ def accept_turn(staged:dict,confirmed_result:dict)->dict:
              'verification_status':'ACCEPTED_IN_SESSION_NOT_SAVED'}
     out['accepted_actions'][aid]=receipt
     out.setdefault('accepted_action_seals', {})[aid]=_hash(receipt)
-    return {'post_state':out,'compact_delta':copy.deepcopy(staged['delta']),'accepted_receipt':receipt}
+    return {'post_state':out,'compact_delta':copy.deepcopy(staged['delta']),
+            'accepted_receipt':receipt,'acceptance_commitment':_hash(receipt)}

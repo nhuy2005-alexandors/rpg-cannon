@@ -7,3 +7,5 @@ Accepted receipts have separate partial-tampering seals. This is **not** a signa
 Security-review RED reproducers cover phantom rewards, altered receipt metadata, bogus archive provenance, forged skill/LOS/hit evidence and unknown delta fields. No T346 event is played.
 
 Python mechanical tests alone do NOT close behavioral GM evaluation, ChatGPT end-to-end FAST benchmark, or external independent review. Do not merge without those gates.
+
+Re-review follow-up: same-turn claim/target duplicates now rejected for the same reward kind/resource; `accept_turn` requires independently preverified outcome refs; replay requires a digest pinned outside the mutable state. A hostile caller controlling both record and its only externally held digest remains outside pure-helper guarantees.

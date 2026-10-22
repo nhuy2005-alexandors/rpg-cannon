@@ -6,12 +6,36 @@ from story.canonical_adapter import project_canonical_state
 from story.tactical_checks import check_tactical
 from story.combat_mechanics import check_skill_availability,resolve_damage
 from verification.test_turn_ledger import LedgerTests
+from story.turn_ledger import _hash
 
 ROOT=Path(__file__).parents[1]
 def cmd():return {'turn':346,'action_id':'T346/A01','rule_version':'HN-V1.3','evidence_refs':['synthetic']}
 def grant():return {'receipt_id':'r1','action_id':'T346/A01','kind':'RESOURCE_GRANT','resource':'souls','amount':12,'source_ref':'accepted:T346','claim_id':'claim1','claim_target_id':'corpse1'}
 class SecurityReview(unittest.TestCase):
  def state(self):return LedgerTests().s()
+ def test_duplicate_same_turn_claim_rejected(self):
+  state=self.state()
+  first=grant();second={**first,'receipt_id':'r2'}
+  state['verified_grants']={'r1':first,'r2':second}
+  with self.assertRaises(ValueError):
+   stage_turn(state,cmd(),{'resource_changes':{'souls':24}},[first,second])
+ def test_accept_requires_preverified_observation(self):
+  state=self.state();state['verified_evidence_refs']=['synthetic']
+  staged=stage_turn(state,cmd(),{},[])
+  with self.assertRaises(ValueError):
+   accept_turn(staged,{'confirmed':True,'action_id':'T346/A01','disposition':'DONE','observed_outcome':'fake','verification_refs':['fake']})
+  self.assertEqual(accept_turn(staged,{'confirmed':True,'action_id':'T346/A01','disposition':'DONE','observed_outcome':'ok','verification_refs':['synthetic']})['post_state']['next_turn'],347)
+ def test_replay_rejects_edited_receipt_and_seal(self):
+  state=self.state();state['verified_evidence_refs']=['synthetic']
+  staged=stage_turn(state,cmd(),{},[])
+  out=accept_turn(staged,{'confirmed':True,'action_id':'T346/A01','disposition':'DONE','observed_outcome':'ok','verification_refs':['synthetic']})
+  tampered=copy.deepcopy(out['post_state'])
+  tampered['accepted_actions']['T346/A01']['disposition']='FORGED'
+  tampered['accepted_action_seals']['T346/A01']=_hash(tampered['accepted_actions']['T346/A01'])
+  with self.assertRaises(ValueError):
+   stage_turn(tampered,cmd(),{},[],replay_commitment=out['acceptance_commitment'])
+  with self.assertRaises(ValueError):
+   stage_turn(out['post_state'],cmd(),{},[])
  def test_inventory_mint_without_receipt(self):
   with self.assertRaises(ValueError):stage_turn(self.state(),cmd(),{'inventory_changes':{'arrow':1000}},[])
  def test_souls_forged_receipt(self):
@@ -27,7 +51,7 @@ class SecurityReview(unittest.TestCase):
   accepted=accept_turn(staged,{'confirmed':True,'action_id':'T346/A01','disposition':'DONE','observed_outcome':'spent','verification_refs':['synthetic']})['post_state']
   for key,val in [('disposition','FORGED'),('verification_refs',['fake'])]:
    bad=copy.deepcopy(accepted);bad['accepted_actions']['T346/A01'][key]=val
-   with self.subTest(key=key),self.assertRaises(ValueError):stage_turn(bad,cmd(),{'resource_changes':{'STA':-1}},[])
+   with self.subTest(key=key),self.assertRaises(ValueError):stage_turn(bad,cmd(),{'resource_changes':{'STA':-1}},[],replay_commitment=_hash(accepted['accepted_actions']['T346/A01']))
  def test_archive_pin_and_tampered_content(self):
   h=json.loads((ROOT/'state/current.json').read_text());raw=(ROOT/'state/archive/T345-state-cold.json').read_bytes();c=json.loads(raw)
   sha=hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest()
