@@ -1,32 +1,98 @@
-name: GM Hybrid Lean Verification (isolated)
+name: GM Hybrid Lean Verified Candidate
 on:
   push:
     branches: ["verify/gm-hybrid-lean-final"]
   workflow_dispatch:
+permissions:
+  contents: write
 jobs:
-  regression:
+  candidate-regression:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout isolated transport branch
+        uses: actions/checkout@v4
+        with:
+          path: transport
+      - name: Checkout immutable canonical baseline
+        uses: actions/checkout@v4
+        with:
+          ref: c74f77fe83fd490b85d8739be39056e0419331bb
+          path: source
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Python version and full regression
+      - name: Reconstruct and authenticate local candidate patch
+        shell: bash
         run: |
+          python - <<'PY'
+          from pathlib import Path
+          import base64,hashlib,lzma
+          root = Path("transport/.github/gm-hybrid-lean")
+          data = b"".join((root / f"patch.part{i}").read_bytes() for i in (1,2,3))
+          assert len(data) == 17724, "transport length drift"
+          packed = base64.b64decode(data,validate=True)
+          assert hashlib.sha256(packed).hexdigest() == "dc4547f46e238e01875e94404d424df2faa1faeb39432ff079d4e40cc69b4756", "XZ checksum mismatch"
+          patch = lzma.decompress(packed)
+          assert len(patch) == 64967
+          assert hashlib.sha256(patch).hexdigest() == "8d40e7e5a04713caee0e4025c40443293bd2859681bcea0860f012cc77f3957b", "Source patch checksum mismatch"
+          Path("source/integration.patch").write_bytes(patch)
+          print("VERIFIED_SHA256", hashlib.sha256(patch).hexdigest())
+          PY
+          cd source
+          git apply --check integration.patch
+          git apply integration.patch
+          rm integration.patch
+          test -f story/canonical_adapter.py
+          test -f story/turn_ledger.py
+      - name: Canon T345 blob SHA guards
+        shell: bash
+        run: |
+          cd source
+          test "$(git hash-object state/current.json)" = "a03e0bb288fa7bab4bb5147e00c78012edd36acc"
+          test "$(git hash-object maps/active-scene.json)" = "b6fd996a9778b52f8b3bf2d601edcae9ea0fc8c7"
+          test "$(git hash-object state/archive/T345-state-cold.json)" = "59cd3d2b1cf3580f581adced36efebfccc0c3353"
+          test "$(git hash-object maps/archive/T345-scene-cold.json)" = "47d7e05dbddbdb6e344da42d2a475756f83941a9"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          s=json.loads(Path('state/current.json').read_text())
+          assert s['last_completed_turn']==345 and s['next_turn']==346
+          assert s['player']['resources']['HP']['current']==117
+          assert s['player']['resources']['STA']['current']==41
+          assert s['player']['resources']['BLOOD']['current']==46
+          assert s['player']['exp']==380
+          PY
+      - name: Full isolated repository regression
+        shell: bash
+        run: |
+          cd source
           python --version
-          python -m unittest discover -s verification -p 'test_*.py' -v
-      - name: Pack checked-out source for isolated diagnostics
-        if: always()
+          python -m unittest discover -s verification -p 'test_*.py' -v 2>&1 | tee ../candidate-test.log
+          test "${PIPESTATUS[0]}" -eq 0
+      - name: Check changed files and publish candidate feature branch
+        shell: bash
         run: |
-          tar --exclude='.git' -czf /tmp/rpg-cannon-source.tgz .
-          cp /tmp/rpg-cannon-source.tgz checkout-source.tgz
-      - name: Upload source for verification
+          cd source
+          git add -A
+          git diff --cached --stat
+          python - <<'PY'
+          import subprocess
+          changed=subprocess.check_output(['git','diff','--cached','--name-only'], text=True).splitlines()
+          print('CHANGED_FILES',changed)
+          assert len(changed)==19, f'unexpected file count: {len(changed)}'
+          assert not any(x.startswith(('events/','state/current.json','maps/active-scene.json','state/archive/','maps/archive/')) for x in changed)
+          assert 'story/canonical_adapter.py' in changed and 'story/turn_ledger.py' in changed
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c feat/gm-hybrid-lean-v1-verified
+          git commit -m "feat(hac-nhat): Hybrid Lean GM verified candidate"
+          git push origin HEAD:refs/heads/feat/gm-hybrid-lean-v1-verified
+      - name: Upload verification logs
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: rpg-cannon-source
-          path: checkout-source.tgz
-          if-no-files-found: error
-          retention-days: 1
+          name: gm-hybrid-lean-ci-receipts
+          path: candidate-test.log
+          if-no-files-found: warn
+          retention-days: 7
